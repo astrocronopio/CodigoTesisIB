@@ -68,7 +68,7 @@ void readFiles()
 
 	//_______________This is the Winfo data set________________
 	//ifstream infileatm ("utctprh.dat");
-	ifstream infileatm ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather_uis/utctprh.dat");
+	ifstream infileatm ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh.dat");
 
 	if(infileatm.is_open())
 	{    
