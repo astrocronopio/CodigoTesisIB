@@ -1,7 +1,7 @@
 c	  	to compile and link: f77 -o minfit minfit.f -L /cern/2005/lib -l packlib
 c  	where in this case the cern libraries are in /cern/2005/lib
-c		Performs a maximum likelihood fit of the model of weather effects given by Lfunc
-c		using the minfit procedure from the cern libraries
+!!		Performs a maximum likelihood fit of the model of weather effects given by Lfunc
+!!		using the minfit procedure from the cern libraries
 		implicit double precision(a-h,o-z)
 		integer j,i,status,iUTC,ibinWidth
 c		real zenith,azimut,energy,binterval

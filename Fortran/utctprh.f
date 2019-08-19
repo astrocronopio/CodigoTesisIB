@@ -1,11 +1,11 @@
 !! Genera archivo \emph{utctprh.dat}
 !!
-c  reads hexagons every five minutes (utchex5min) and weather data from
-c   weather.dat (CLF filled with LL). It is interpolated 
-c  for less than 2 hs (iw=1), and for bigger holes replaces rho data by 
-c  the one 24 hs before, and P is interpolated (iw=4). 
-c  Average rho is for previous 24 hs. (288 is 24*12= #5' in 1 day)
-c include bad period flag at the end 
+!!  reads hexagons every five minutes (utchex5min) and weather data from
+!!   weather.dat (CLF filled with LL). It is interpolated 
+!!  for less than 2 hs (iw=1), and for bigger holes replaces rho data by 
+!!  the one 24 hs before, and P is interpolated (iw=4). 
+!!  Average rho is for previous 24 hs. (288 is 24*12= #5' in 1 day)
+!! include bad period flag at the end 
 	dimension iutcbadl(5000),iutcbadh(5000),rho(288),ti(288)
 	common/cisbad/iutcbadl,iutcbadh,maxbad
 c	implicit double precision(a-z)

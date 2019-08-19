@@ -1,8 +1,8 @@
 		PROGRAM DSDQ
 c		Minuit test case. Fortran-callable.
-c		Fit randomly-generated leptonic K0 decays to the
-c		time distribution expected for interfering K1 and K2,
-c		with free parameters Re(X), Im(X), DeltaM, and GammaS.
+!!		Fit randomly-generated leptonic K0 decays to the
+!!		time distribution expected for interfering K1 and K2,
+!!		with free parameters Re(X), Im(X), DeltaM, and GammaS.
 		IMPLICIT DOUBLE PRECISION (A-H,O-Z)
 		DIMENSION NPRM(5),VSTRT(5),STP(5),ARGLIS(10)
 		CHARACTER*10 PNAM(5)

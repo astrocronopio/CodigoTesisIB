@@ -1,4 +1,6 @@
-
+#* This plot the output of binData.cc
+#
+#
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as md
@@ -6,7 +8,7 @@ import numpy as np
 import datetime as dt
 import time
 
-filename="/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Code/Cpp/test1.dat"
+filename="/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Code_Github/Cpp/utctprh_filtered_by_bad_period.dat"
 #_______________________________________
 #__Daily
 utc, events, pressure, \
@@ -22,7 +24,7 @@ def plot_utctprh(index, name, utc, data):
 	xfmt = md.DateFormatter('%Y-%m')
 	ax.xaxis.set_major_formatter(xfmt)
 	plt.title(name)
-	plt.plot(utc_date,data)
+	plt.scatter(utc_date,data)
 	pass
 
 #________________________________________

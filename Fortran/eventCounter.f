@@ -9,8 +9,8 @@ c		parameter(nbin = 87671)
 		integer binlist(nbin)
 c		open(unit=1,file='HeraldData4EeV060noiw4.dat')
 c		open(unit=2,file='HeraldData4EeV060noiw4-bins.dat')
-		open(unit=1,file='HeraldWeather060noBPdr6t5.dat')
-		open(unit=2,file='HeraldWeather060noBPdr6t5-bins.dat')
+		open(unit=1,file='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Herald/Archive_v6r2p2.dat')
+		open(unit=2,file='test_events_auger_herald.dat')
 		binWidth =3600 !2592000
 		linfUTC = 1072915200!1072915500 !corresponde a: 01/01/2004 00:00:00 UTC (coincide 1er regitro arch. hexagonos)
 		binlist = 0

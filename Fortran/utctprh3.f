@@ -1,5 +1,5 @@
-c  finds maximum density interpolating between maxima of previous and next day
-c  rewrites utctprh.dat in utctprh2.dat with added column 10
+!!  finds maximum density interpolating between maxima of previous and next day
+!!  rewrites utctprh.dat in utctprh2.dat with added column 10
       parameter(n5=12*36)
       dimension iutck(n5),tk(n5),pk(n5),rk(n5),ravk(n5),
      &    h6k(n5),h5k(n5),iwk(n5),ibk(n5)

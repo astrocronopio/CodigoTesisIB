@@ -1,8 +1,8 @@
 	program minfit
 c  to compile and link: f77 -o minfit minfit.f -L /cern/2003/lib -l packlib
 c   where in this case the cern libraries are in /cern/2003/lib
-c  makes a fit to data in file data:  x    y  sigmay
-c  nhis is the number of  data points, or bins in histogram, to be fitted
+!! makes a fit to data in file data:  x    y  sigmay
+!! nhis is the number of  data points, or bins in histogram, to be fitted
 
  	implicit double precision(a-h,o-z)
 

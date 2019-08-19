@@ -88,7 +88,7 @@ void plot2(const char* fileName,const char* ylabel,double* x1, double* y1, doubl
 	gPad->SetTicks();
 			
 	ge22->Draw("A2");
-	if(fileName=="aP")ge22->GetYaxis()->SetRangeUser(-0.006,0.002); ///aP
+	if(fileName=='aP')ge22->GetYaxis()->SetRangeUser(-0.006,0.002); ///aP
 	if(fileName=="arho")ge22->GetYaxis()->SetRangeUser(-2.8,0.0); ///arho
 	if(fileName=="brho")ge22->GetYaxis()->SetRangeUser(-1.05,0.0); ///brho
 	//ge22->Draw("SAME P");
@@ -261,7 +261,8 @@ void weaCoefvsSec()
 {
 	double sec[5],aP[5],aP_err[5],arho[5],arho_err[5],brho[5],brho_err[5];	
 	string line;
-	ifstream coefs ("wcoefsvssin2a1.dat");
+	//ifstream coefs ("wcoefsvssin2a1.dat");
+	ifstream coefs ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Taborda_Original/wcoefsvssin2a1.dat");
 	if(coefs.is_open())
 	{    
 		int i = 0;

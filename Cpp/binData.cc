@@ -28,19 +28,10 @@ const int nbins = 40000;
 
 vector<double> 	 pres,den,avgden,hex6,pres2,theta,energy_utc, phi;
 vector<double>   humidity_vector, humidity_rho_vector, humidity_av_rho_vector;//Global vectors with weather data
-vector<long int> iutc,iutc2; 					//Global vector with "date" (utc) data
+vector<long long int> iutc,iutc2; 	
 
 int nev[24] = { }; //Number of events in a
 double h6hr[24] = { }; 
-
-//_____________Struct de energia
-
-struct EventAuger
-{
-	unsigned int utc;
-	float E, L, B, The, P;
-
-};
 
 
 //_______________________________________________________________________
@@ -55,7 +46,7 @@ void readFiles()
 
 	long int 	 auger_id, stations;
 	float		 Theta,Phi,l,b;
-	long int 	 utc,tcore;
+	long long int 	 utc,tcore;
 	float		 XCore,YCore, S1000, dS1000, Ra, Dec, dTheta,dPhi, dXCore, dYCore;
 	unsigned int Estimation, IsT5, IsT5p, IsT5pp, Fd_trigger;
 	float 		 GeoFitChi2, LDFfitChi2, GlobfitChi2, GlobNdof, LDFB, LDFG, R, SdId, IsICR;
@@ -145,24 +136,26 @@ void binData()
 {
 	// data input  		
 	readFiles();	
+
+	//This part creates histograms of the data (I will re-do them asap in pyROOT)
 	
 	long int utcmin = 1072915500; ///minimum lower limit, default 01-01-2004
 	long int utcmax = 1545604800;// When the weather seemed wrong
-	int binw = 3600*24;
+	int binw = 3600*24;			 // Choosing if the data will be analized daily, monthly, hourly, yearly
 	int nhr = (utcmax - utcmin)/binw;
 
-	//Histogram of weather data
-	TProfile *hprof_p  		= new TProfile("hprof_p"		,"Pressure profile"		,nhr,utcmin,utcmax);
-	TProfile *hprof_rho  	= new TProfile("hprof_rho"		,"Density profile"		,nhr,utcmin,utcmax);
-	TProfile *hprof_av_rho 	= new TProfile("hprof_av_rho"	,"Mean density profile"	,nhr,utcmin,utcmax);
-	TProfile *hprof_hex  	= new TProfile("hprof_hex"		,"Hexagons profile"		,nhr,utcmin,utcmax);	
+		//Histogram of weather data
+		TProfile *hprof_p  		= new TProfile("hprof_p"		,"Pressure profile"		,nhr,utcmin,utcmax);
+		TProfile *hprof_rho  	= new TProfile("hprof_rho"		,"Density profile"		,nhr,utcmin,utcmax);
+		TProfile *hprof_av_rho 	= new TProfile("hprof_av_rho"	,"Mean density profile"	,nhr,utcmin,utcmax);
+		TProfile *hprof_hex  	= new TProfile("hprof_hex"		,"Hexagons profile"		,nhr,utcmin,utcmax);	
 
-	//hprof_p		->Draw(); 		
-	//hprof_rho  	->Draw();
-	//hprof_av_rho->Draw();	
-	//hprof_hex	->Draw(); 	
+		//hprof_p		->Draw(); 		
+		//hprof_rho  	->Draw();
+		//hprof_av_rho->Draw();	
+		//hprof_hex	->Draw(); 	
 
-	TH1I *hev  = new TH1I("hev","event histogram",nhr,utcmin-300,utcmax-300);
+		TH1I *hev  = new TH1I("hev","event histogram",nhr,utcmin-300,utcmax-300);
 	
 	vector<int>::size_type nb = iutc.size();
 	
@@ -174,7 +167,7 @@ void binData()
 		hprof_hex->		Fill(iutc[i],hex6[i]);		
 	}
 
-	ofstream outfile4("test_energy.dat");
+	ofstream outfile4("energy_utc_theta_phi.dat");
 	
 	nb = iutc2.size();	
 	for (unsigned i = 0; i < nb; i++) 
@@ -182,17 +175,17 @@ void binData()
 		//double st = 1./cos(theta[i]*TMath::Pi()/180);
 		//if(st>1.8 && st<2.0)hev->Fill(iutc2[i]);
 		hev->Fill(iutc2[i]);
-		outfile4<< iutc2[i] - utcmin << "\t"<< energy_utc[i]<<"\t"<< theta[i]<< "\t"<<phi[i] <<endl;
+		outfile4<< iutc2[i] << "\t"<< energy_utc[i]<<"\t"<< theta[i]<< "\t"<<phi[i] <<endl;
 	}
 	//_________________________________________________________
 	//Printing data on files 
 
 
-	ofstream outfile("test1.dat");
+	ofstream outfile("utctprh_filtered_by_bad_period.dat");
 	
 	for(int j=1; j<=nhr; j++)
 	{
-		TAxis *xaxis = hev->GetXaxis();
+		TAxis *xaxis 	= hev->GetXaxis();
 		Double_t utcref = xaxis->GetBinCenter(j);
 		outfile << (long int)utcref << " ";
 		outfile << hev->GetBinContent(j) << " " ;
@@ -202,12 +195,12 @@ void binData()
 	outfile.close();
 
 	
-	ofstream outfile2("test2.dat");
+	ofstream outfile2("histogram_hourly_of_events.dat");
 	
 	for(int j=0; j < 24; j++)
 	{
-		outfile2 << nev[j] << " " << h6hr[j] << endl;
-		cout << nev[j] <<endl;
+		outfile2 << j <<"	"<<nev[j] << " " << h6hr[j] << endl;
+		//cout << nev[j] <<endl;
 	}
 	outfile2.close();
 
