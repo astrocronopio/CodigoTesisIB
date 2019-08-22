@@ -1,5 +1,5 @@
 /*
-* Macro ROOT que toma archivo con los coeficientes de clima en bines de sin^2(theta) (aPvssec,arhovssec,brhovssec) 
+* Macro ROOT que toma archivo con los coeficientes de clima en bines de $sin^2(theta)$ (aPvssec,arhovssec,brhovssec) 
 * y calcula el fit a un polinomio y luego grafica los resultados incluyendo los valores de los parámetros del fit.
 */
 #include <stdlib.h>

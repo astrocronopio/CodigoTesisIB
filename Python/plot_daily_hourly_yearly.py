@@ -1,4 +1,4 @@
-#* This plot the output of binData.cc
+## This plot the output of binData.cc
 #
 #
 
