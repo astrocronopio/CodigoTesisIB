@@ -95,7 +95,7 @@ void readFiles()
 	
 	//_______This is the Auger data set, from the Herald_______(I removed obselet data)
 	//ifstream infiledata ("Archive_v6r2p2.dat");
-	ifstream infiledata ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Herald/Herald_modified.dat");
+	ifstream infiledata ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Herald/Central/Modified/Herald_simple_modified.dat");
 
 	if(infiledata.is_open())
 	{    
@@ -103,16 +103,21 @@ void readFiles()
 			getline(infiledata,line);
 			stringstream liness(line);	
 
-			liness		>>	auger_id 	>>	stations		>>	Theta		>>	Phi 			>>	l 			>>	b ;
-			liness		>>	utc 		>>	tcore			>>	XCore 		>>	YCore 			>>	S1000 		>>	dS1000;
-			liness		>>	Ra 			>>	Dec 			>>	dTheta 		>>	dPhi 			>>	dXCore 		>>	dYCore;
-			liness		>>	Estimation	>>	IsT5			>>	IsT5p		>>	IsT5pp			>>	Fd_trigger	>>	GeoFitChi2;
-			liness		>>	LDFfitChi2	>>	GlobfitChi2		>>	GlobNdof	>>	LDFB			>>	LDFG		>>	R 			>>	SdId;
-			liness		>>	IsICR		>>	S1000_obs		>>	energy		>>	energy_backup	>> 	GPStime		>>	Infill		>>	FitBeta;
-			liness		>>	ntanks 		>>	ntanksCheck		>>	PMTs		>>	TanksFlag		>>	S 			>>	bad_periodFlag;
+		//	liness		>>	auger_id 	>>	stations		>>	Theta		>>	Phi 			>>	l 			>>	b ;
+		//	liness		>>	utc 		>>	tcore			>>	XCore 		>>	YCore 			>>	S1000 		>>	dS1000;
+		//	liness		>>	Ra 			>>	Dec 			>>	dTheta 		>>	dPhi 			>>	dXCore 		>>	dYCore;
+		//	liness		>>	Estimation	>>	IsT5			>>	IsT5p		>>	IsT5pp			>>	Fd_trigger	>>	GeoFitChi2;
+		//	liness		>>	LDFfitChi2	>>	GlobfitChi2		>>	GlobNdof	>>	LDFB			>>	LDFG		>>	R 			>>	SdId;
+		//	liness		>>	IsICR		>>	S1000_obs		>>	energy		>>	energy_backup	>> 	GPStime		>>	Infill		>>	FitBeta;
+		//	liness		>>	ntanks 		>>	ntanksCheck		>>	PMTs		>>	TanksFlag		>>	S 			>>	bad_periodFlag;
 
-			if(Theta <= 60 && energy >= 2.0 && ntanks > 5)
-			{
+
+
+		liness >> utc >> Theta >> Phi >>  S1000 >> dS1000 >> Ra >> Dec >> energy;
+
+			//if(Theta <= 60 && energy >= 2.0 && ntanks > 5)
+		//if(Theta <= 60 && energy >= 2.0)
+			//{
 				iutc2.push_back(utc);
 				energy_utc.push_back(energy);
 				theta.push_back(Theta);
@@ -125,7 +130,7 @@ void readFiles()
 					//cout<<hr<<endl;			///hour of day for current event
 					nev[hr]++;					///sum number of events
 				//}
-			}
+			//}
 		}
 	}
 	else cout << "Unable to open file of the Auger Data!";
