@@ -1,4 +1,4 @@
-## This scripts allows the user to select data, creates a new file with the selected data. Each line has a comment of the command. 
+ ## This scripts allows the user to select data, creates a new file with the selected data. Each line has a comment of the command. 
 ## All the scripts should not be use at the same time. DO NOT FORGET TO COMMENT THE FUNCTION AFTER USE
 
 #The next lines where made by Oscar Taborda
@@ -51,4 +51,9 @@ auger_file_simple_output='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_
 
 #_____________________________________________________________________
 
-weather_file=''
+# $1 	$2		$3		$4		$5		$6		$7 		$8		$9
+# utc 	T 		P 		rho		rho_av	6T5 	5T5		iw		Bad Period
+weather_file='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh.dat'
+weather_file_no_bp='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh_without_badperiod_no_iw.dat'
+
+awk '{if ($8!=4 && $9==1) print $1, $2, $3, $4, $5, $6, $7, $8}' "$weather_file"  > "$weather_file_no_bp"

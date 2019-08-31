@@ -1,4 +1,4 @@
-## This plot the output of binData.cc
+## This plot the output of weather data withou
 #
 #
 
@@ -8,11 +8,10 @@ import numpy as np
 import datetime as dt
 import time
 
-filename="/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Code_Github/Cpp/utctprh_filtered_by_bad_period.dat"
+filename="/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh_without_badperiod_no_iw.dat"
 #_______________________________________
 #__Daily
-utc, events, pressure, \
-rho, av_rho, hexagons = np.loadtxt(filename, unpack=True)
+utc, T, pressure, rho, av_rho, hex_6T5, hex_5T5, iw = np.loadtxt(filename, unpack=True)
 
 
 def plot_utctprh(index, name, utc, data):
@@ -24,16 +23,21 @@ def plot_utctprh(index, name, utc, data):
 	xfmt = md.DateFormatter('%Y-%m')
 	ax.xaxis.set_major_formatter(xfmt)
 	plt.title(name)
-	plt.scatter(utc_date,data)
+	plt.plot(utc_date,data, lw=0.5)
 	pass
 
 #________________________________________
-plot_utctprh(1, "Events", utc, events)
+plot_utctprh(1, "Temperature", utc, T)
 #________________________________________
 plot_utctprh(2, "Pressure", utc, pressure)
 #________________________________________
 plot_utctprh(3, "Density $\\rho$", utc, rho)
 #________________________________________
-plot_utctprh(4, "Daily Averange Density $\\rho_{average}$", utc, pressure)
+plot_utctprh(4, "Daily Averange Density $\\rho_{average}$", utc, av_rho)
+#________________________________________
+plot_utctprh(5, "6T5", utc, hex_6T5)
+#________________________________________
+plot_utctprh(6, "5T5", utc, hex_5T5)
+
 
 plt.show()

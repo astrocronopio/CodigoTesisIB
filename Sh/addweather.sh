@@ -1,7 +1,12 @@
 ## Script para agregar info de clima correspondiente a cada evento de un archivo.
 ##
 
+# $1 	$2		$3		$4		$5		$6		$7 		$8		$9
+# utc 	T 		P 		rho		rho_av	6T5 	5T5		iw		Bad Period
 weather_file='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh.dat'
+
+# $1 	$2		$3		$4		$5		$6		$7 		$8
+#UTC 	The		phi 	S1000 	dS1000	RA 		Dec 	Energy 	
 herald_file='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Herald/Central/Modified/Herald_simple_modified.dat'
 
 herald_weather_files='/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/herald_simple_weather.dat'
