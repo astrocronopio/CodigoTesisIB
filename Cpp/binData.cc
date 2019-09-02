@@ -59,7 +59,7 @@ void readFiles()
 
 	//_______________This is the Winfo data set________________
 	//ifstream infileatm ("utctprh.dat");
-	ifstream infileatm ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh.dat");
+	ifstream infileatm ("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat");
 
 	if(infileatm.is_open())
 	{    
@@ -95,7 +95,7 @@ void readFiles()
 	
 	//_______This is the Auger data set, from the Herald_______(I removed obselet data)
 	//ifstream infiledata ("Archive_v6r2p2.dat");
-	ifstream infiledata ("/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Herald/Central/Modified/Herald_simple_modified.dat");
+	ifstream infiledata ("/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_simple_modified.dat");
 
 	if(infiledata.is_open())
 	{    

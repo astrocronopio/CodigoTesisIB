@@ -8,7 +8,7 @@ import numpy as np
 import datetime as dt
 import time
 
-filename="/home/ponci/Desktop/TesisLicenciaturaBalseiro/Trabajo_de_Coronel/Weather/utctprh_without_badperiod_no_iw.dat"
+filename="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_without_badperiod_no_iw.dat"
 #_______________________________________
 #__Daily
 utc, T, pressure, rho, av_rho, hex_6T5, hex_5T5, iw = np.loadtxt(filename, unpack=True)
