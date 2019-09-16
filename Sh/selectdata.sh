@@ -1,5 +1,8 @@
- ## This scripts allows the user to select data, creates a new file with the selected data. Each line has a comment of the command. 
+## This scripts allows the user to select data, creates a new file with the selected data. Each line has a comment of the command. 
 ## All the scripts should not be use at the same time. DO NOT FORGET TO COMMENT THE FUNCTION AFTER USE
+
+
+
 
 #The next lines where made by Oscar Taborda
 #awk '{if ($1>1104537601 && $1<1220227200) print $0}' HeraldData060_bins.dat > HeraldData060_bins2008.dat
@@ -42,18 +45,28 @@ auger_file_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/H
 #___________________________________________________________________
 
 #This scripts works on the actual auger data set structure (2019) with the simplest data
-auger_file_simple_input='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Archives/Archive_v6r2p2.dat'
+auger_file_simple_input='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Archive/Archive_v6r2p2.dat'
 auger_file_simple_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_simple_modified.dat'
 
-#$8		$3 		$4		$12		$13		$38	
-#UTC 	The		phi 	S1000 	dS1000	Energy 		
-#awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $48==0 && $43==6) print  $8,$3,$4,$12,$13,$38}' "$auger_file_simple_input" > "$auger_file_simple_output"
+#$8		$3 		$4		$12		$13		$38		
+#UTC 	The		phi 	S1000 	dS1000	Energy 	
+awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5) print  $8,$3,$4,$12,$13,$38}' "$auger_file_simple_input" > "$auger_file_simple_output"
 
 #_____________________________________________________________________
 
-# $1 	$2		$3		$4		$5		$6		$7 		$8		$9
-# utc 	T 		P 		rho		rho_av	6T5 	5T5		iw		Bad Period
+# $1 	$2		$3		$4		$5		$6		$7 		$8		$9			$10			$11`			$12
+# utc 	T 		P 		rho		rho_av	6T5 	5T5		iw		Bad Period	Humedad		rho_hum			rho_av,hum
 weather_file='/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat'
 weather_file_no_bp='/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_without_badperiod_no_iw.dat'
 
-#awk '{if ($8!=4 && $9==1) print $1, $2, $3, $4, $5, $6, $7, $8}' "$weather_file"  > "$weather_file_no_bp"
+#awk '{if ($8!=4 && $9==1) print $1, $2, $3, $4, $5, $6, $7, $10, $11, $12}' "$weather_file"  > "$weather_file_no_bp"
+
+#___________________________________________________________________
+
+#This scripts works on the old auger data set structure with the simplest data
+auger_file_5v_input='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Archive/ArchiveICRCnoBP.dat'
+auger_file_5v_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_old_simple_modified.dat'
+
+#$8		$3 		$4		$12		$13		$39	
+#UTC 	The		phi 	S1000 	dS1000	Energy 			para matchear weather
+awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5) print  $8,$3,$4,$12,$13,$39}' "$auger_file_5v_input" > "$auger_file_5v_output"

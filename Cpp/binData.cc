@@ -46,7 +46,7 @@ void readFiles()
 
 	long int 	 auger_id, stations;
 	float		 Theta,Phi,l,b;
-	long long int 	 utc,tcore;
+long long int 	 utc,tcore;
 	float		 XCore,YCore, S1000, dS1000, Ra, Dec, dTheta,dPhi, dXCore, dYCore;
 	unsigned int Estimation, IsT5, IsT5p, IsT5pp, Fd_trigger;
 	float 		 GeoFitChi2, LDFfitChi2, GlobfitChi2, GlobNdof, LDFB, LDFG, R, SdId, IsICR;
@@ -59,18 +59,19 @@ void readFiles()
 
 	//_______________This is the Winfo data set________________
 	//ifstream infileatm ("utctprh.dat");
-	ifstream infileatm ("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat");
+	ifstream infileatm ("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_without_badperiod_no_iw.dat");
 
 	if(infileatm.is_open())
 	{    
 		while (!infileatm.eof() ){			
 			getline(infileatm,line);	//gets a line from the Winfo data set		
 			stringstream liness(line);			
-			liness >> utc >> t >> p >> rho >> av_rho >> h6 >> h5 >> iw >> bad_period>>humidity>>humidity_rho>>humidity_av_rho;
+			//liness >> utc >> t >> p >> rho >> av_rho >> h6 >> h5 >> iw >> bad_period>>humidity>>humidity_rho>>humidity_av_rho; //original format
 
-			if(iw > 4 || bad_period==0)
-			{	
-				h6=0.;h5=0.;}  	//If bad_period==0, data is not used!
+			liness >> utc >> t >> p >> rho >> av_rho >> h6 >> h5 >>humidity>>humidity_rho>>humidity_av_rho; //simplest format
+			//if(iw > 4 || bad_period==0)
+			//{	
+			//	h6=0.;h5=0.;}  	//If bad_period==0, data is not used!
 				iutc.push_back(utc);
 				pres.push_back(p);
 				den.push_back(rho);
@@ -95,14 +96,15 @@ void readFiles()
 	
 	//_______This is the Auger data set, from the Herald_______(I removed obselet data)
 	//ifstream infiledata ("Archive_v6r2p2.dat");
-	ifstream infiledata ("/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_simple_modified.dat");
+	ifstream infiledata ("/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_old_simple_modified.dat");
 
 	if(infiledata.is_open())
 	{    
 		while (!infiledata.eof() ){			
 			getline(infiledata,line);
 			stringstream liness(line);	
-
+			
+		//Original Format	
 		//	liness		>>	auger_id 	>>	stations		>>	Theta		>>	Phi 			>>	l 			>>	b ;
 		//	liness		>>	utc 		>>	tcore			>>	XCore 		>>	YCore 			>>	S1000 		>>	dS1000;
 		//	liness		>>	Ra 			>>	Dec 			>>	dTheta 		>>	dPhi 			>>	dXCore 		>>	dYCore;
@@ -112,8 +114,8 @@ void readFiles()
 		//	liness		>>	ntanks 		>>	ntanksCheck		>>	PMTs		>>	TanksFlag		>>	S 			>>	bad_periodFlag;
 
 
-
-		liness >> utc >> Theta >> Phi >>  S1000 >> dS1000 >> Ra >> Dec >> energy;
+		//Simplest Format
+		liness >> utc >> Theta >> Phi >>  S1000 >> dS1000 >> energy;
 
 			//if(Theta <= 60 && energy >= 2.0 && ntanks > 5)
 		//if(Theta <= 60 && energy >= 2.0)
@@ -185,8 +187,9 @@ void binData()
 	//_________________________________________________________
 	//Printing data on files 
 
+// Esta clasificación la hizo el script selectdata.sh
 
-	ofstream outfile("utctprh_filtered_by_bad_period.dat");
+	/*ofstream outfile("utctprh_filtered_by_bad_period.dat");
 	
 	for(int j=1; j<=nhr; j++)
 	{
@@ -197,7 +200,7 @@ void binData()
 		outfile << hprof_p->GetBinContent(j) << " " << hprof_rho->GetBinContent(j)<< " "<< hprof_av_rho->GetBinContent(j) << " ";
 		outfile << hprof_hex->GetBinContent(j) << endl;			
 	}
-	outfile.close();
+	outfile.close();*/
 
 	
 	ofstream outfile2("histogram_hourly_of_events.dat");
@@ -210,23 +213,23 @@ void binData()
 	outfile2.close();
 
 	//___________________________________
-	/*
+	
 	ofstream outfile3("Herald060noBPa1-bind_wca1.dat");
 	TProfile *hprofh2 	= (TProfile *)  hprof_hex->Rebin(24,"hprofh2");
 	TH1I 	 *hev2 		= (TH1I *)		hev->Rebin(24,"hev2");
-	//TH1D *hr = (TH1D*)hev->Rebin(24,"hr");
+	TH1D *hr = (TH1D*)hev->Rebin(24,"hr");
 	int ndays = hev2->GetNbinsX();
-	//cout << ndays << endl;
+	cout << ndays << endl;
 	
 	for(int j=1; j<=ndays; j++)
 	{
 		if(hprofh2->GetBinContent(j) == 0) continue;
 		Double_t rate 		= hev2->GetBinContent(j)/hprofh2->GetBinContent(j);
 		Double_t rate_err 	= sqrt(hev2->GetBinContent(j))/hprofh2->GetBinContent(j);
-		//hr->SetBinContent(j,rate);
+		hr->SetBinContent(j,rate);
 		outfile2 << (long int)hev2->GetBinCenter(j)<< " " << hev2->GetBinContent(j) << " " << hprofh2->GetBinContent(j) << " " << rate << " " << rate_err << endl;
 	}	
-	hev2->Draw();*/
+	hev2->Draw();
 }
 
 #ifndef __CINT__
