@@ -1,0 +1,50 @@
+FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared/Herald_old_simple_modified_sector1_bins_delay.dat","r"); 
+
+aP		= 0.000638772 +/- 0.00017374 
+arho	= -1.02681 +/- 0.0228854 
+brho	= -0.411693 +/- 0.0258862 
+Lambda	= 0.423717 +/- 0 
+chi2	= 62296.476629  ndof= 55490  chi2/ndof= 1.122661
+
+
+sector 2
+
+aP		= -0.000429946 +/- 0.000158171 
+arho	= -0.937655 +/- 0.0208449 
+brho	= -0.274943 +/- 0.0235739 
+Lambda	= 0.423312 +/- 0 
+chi2	= 64552.792850  ndof= 55490  chi2/ndof= 1.163323
+
+
+sector 3
+
+aP		= -0.000655947 +/- 0.000157382 
+arho	= -0.810674 +/- 0.0207709 
+brho	= -0.281615 +/- 0.0234787 
+Lambda	= 0.449641 +/- 0 
+chi2	= 64256.759433  ndof= 55490  chi2/ndof= 1.157988
+
+sector 4
+
+aP		= -0.00121379 +/- 0.000177552 
+arho	= -0.660202 +/- 0.0234541 
+brho	= -0.18994 +/- 0.0264757 
+Lambda	= 0.46871 +/- 0 
+chi2	= 62402.968431  ndof= 55490  chi2/ndof= 1.124580
+
+sector 5
+
+aP		= -0.00149459 +/- 0.000246654 
+arho	= -0.423779 +/- 0.0328202 
+brho	= -0.0604947 +/- 0.0370746 
+Lambda	= 0.543047 +/- 0 
+chi2	= 61092.994187  ndof= 55490  chi2/ndof= 1.100973
+
+
+FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared/Herald_simple_modified_sector1_bins_delay.dat","r"); 
+
+aP		= 0.000469549 +/- 0.00017205 
+arho	= -0.997677 +/- 0.0226702 
+brho	= -0.402314 +/- 0.0256169 
+Lambda	= 0.420871 +/- 0 
+chi2	= 60946.614506  ndof= 55490  chi2/ndof= 1.098335

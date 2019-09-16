@@ -138,7 +138,7 @@ void MLE_simplified()
 // data input  
 	int i;
 
-	FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/All_data/herald_old_delay.dat","r"); 
+	FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared/Herald_old_simple_modified_sector4_bins_delay.dat","r"); 
 
 	if (! in_data ) // equivalent to saying if ( in_data == NULL ) 
     	{  

@@ -1,4 +1,5 @@
 import numpy as np
+import thread
 
 def bin_archive_data(file_auger, file_events):
 	binWidth =3600 # In seconds
