@@ -10,20 +10,10 @@
 //    Root > minuit->mnhelp("*")  to see the list of possible keywords
 //    Root > minuit->mnhelp("SET") explains most parameters
 
-
 #include "TMinuit.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
-//Run first calMed.sh that counts lines and calculates the total average into tmp.dat
-const Double_t rho0 = 1.05389;
-const Double_t P0 = 861.854;
-const int nbins = 55490;
-const int initial_time= 1104550200;
-
-Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
-Int_t ievents[nbins],iutc[nbins];
 
 //________________________________________________________________________
 ///	function to calculate the natural logarithm of the factorial of N
@@ -79,7 +69,6 @@ void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
 			if(mu == 0.0) continue;
 			flogL -= 2*( ievents[j]*log(mu)-mu-logfact(ievents[j]) );
 	   }
-   
    f = flogL;
 }
 
@@ -131,14 +120,19 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
    //return chi2;
 }
 
-
 //______________________________________________________________________________
-void MLE_simplified()
-{
-// data input  
-	int i;
+void MLE_simplified(const Double_t rho0 = 1.05389, 
+					const Double_t P0 = 861.854, 
+					const int nbins = 55490,
+					const int initial_time= 1104550200, 
+					const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared_all_energy/Herald_old_simple_modified_sector4_bins_delay.dat";
+)
+{	
+	Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
+	Int_t ievents[nbins],iutc[nbins];
 
-	FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared/Herald_old_simple_modified_sector4_bins_delay.dat","r"); 
+// data input  
+	FILE *in_data = fopen(filename,"r"); 
 
 	if (! in_data ) // equivalent to saying if ( in_data == NULL ) 
     	{  
@@ -146,7 +140,7 @@ void MLE_simplified()
         	exit(-1); 
     	}	
 
-    for (i=0; i < nbins; i++) {
+    for (int i=0; i < nbins; i++) {
     	fscanf(in_data, "%d %d %g %g %g %g",&iutc[i], &ievents[i],&pres[i],&rho[i], &rhod[i], &hex6T5[i]);}
 	
 	TMinuit *gMinuit = new TMinuit(4);  //initialize TMinuit with a maximum of 4 params
@@ -193,8 +187,7 @@ void MLE_simplified()
 	gMinuit->mnpout(2, parn, pars[2], errors[2], bnd1,	bnd2,	ivar);
 	gMinuit->mnpout(3, parn, pars[3], errors[3], bnd1,	bnd2,	ivar);
 
-
-// Print results         
+// Print results
 	fcn2(pars,&chi2,&ndof);
 
 	Double_t gamma = 3.23;
@@ -208,13 +201,16 @@ void MLE_simplified()
 
 	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
 
+	printf("%i\n", k );
+
 }
 
 //______________________________________________________________________________
 
 #ifndef __CINT__
-int main() {
-MLE_simplified();
+int main(int argc, char** argv) {
+
+//MLE_simplified(2);
 return 0;
 }
 #endif

@@ -67,7 +67,7 @@ auger_file_energy_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Mod
 
 #$8		$3 		$4		$12		$13		$38		
 #UTC 	The		phi 	S1000 	dS1000	Energy 	
-awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5 $38>1 ) print  $8,$3,$4,$12,$13,$38}' "$auger_file_energy_input" > "$auger_file_energy_output"
+awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5 && $38>1 ) print  $8,$3,$4,$12,$13,$38}' "$auger_file_energy_input" > "$auger_file_energy_output"
 
 #_________________________________Energy below 1 EeV__________________________________
 
@@ -77,4 +77,4 @@ auger_file_5v_energy_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/
 
 #$8		$3 		$4		$12		$13		$39	
 #UTC 	The		phi 	S1000 	dS1000	Energy 			para matchear weather
-awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5 $39>1 ) print  $8,$3,$4,$12,$13,$39}' "$auger_file_5v_energy_input" > "$auger_file_5v_energy_output"
+awk '{if ($3<60 && $22!=0 && $23!=0 && $44!=0 && $43>=5 && $39>1 ) print  $8,$3,$4,$12,$13,$39}' "$auger_file_5v_energy_input" > "$auger_file_5v_energy_output"

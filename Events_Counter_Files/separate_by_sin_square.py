@@ -60,13 +60,13 @@ def the_all_mighty_function(file_auger, file_type, whereisit):
 whereisit= "/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/"
 
 #__New_Data__
-file_new_auger = whereisit+"Herald_simple_modified.dat"
-file_new_type  = "Herald_simple_modified"
+file_new_auger = whereisit+"Herald_energy_modified.dat"
+file_new_type  = "Herald_energy_modified"
 
 
 #__Old_Data__
-file_old_auger = whereisit+"Herald_old_simple_modified.dat"
-file_old_type  = "Herald_old_simple_modified"
+file_old_auger = whereisit+"Herald_old_energy_modified.dat"
+file_old_type  = "Herald_old_energy_modified"
 
 the_all_mighty_function(file_new_auger, file_new_type, whereisit)
 

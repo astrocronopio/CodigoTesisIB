@@ -6,7 +6,7 @@ file_utctprh_avg_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprhcavg-b
 file_delay="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-binsdelayrho.dat" 			#Weather Data delayed by two hours
 
 filepath_sin_square="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/"
-filename_sin_square="Herald_simple_modified_sector5_bins"
+filename_sin_square="Herald_old_energy_modified_sector5_bins"
 
 file_sin_square="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/""$filename_sin_square"".dat"
 
