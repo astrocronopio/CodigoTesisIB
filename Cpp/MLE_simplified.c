@@ -15,23 +15,36 @@
 #include <stdio.h>
 #include <math.h>
 
+
+
+//TMinuit requires the data to fit to be global variables
+//that happens when physicists code :((((((((( so sad
+const Double_t rho0 = 1.05389; 
+const Double_t P0 = 861.854; 
+const int nbins = 55490;
+const int initial_time= 1104550200; 
+const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared_all_energy/Herald_old_simple_modified_sector1_bins_delay.dat";
+const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters.dat";
+
+//Arrays with the data
+Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
+Int_t ievents[nbins],iutc[nbins];
+
 //________________________________________________________________________
 ///	function to calculate the natural logarithm of the factorial of N
 Double_t logfact(Int_t N){
 	int i;
 	Double_t logf = 0.;
 	if(N > 1){
-		for (i = 2; i <= N; i++){
-			logf += log((double) i);
-			}
+		for (i = 2; i <= N; i++) logf += log((double) i); 
 		}
-		return logf;
-	}
+		return logf; 	}
 
 
 //______________________________________________________________________________
-/// input function for minuit 
+/// input function for minuit, structure required by Tminuit in order to minimize
 void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
+
 //calculate log Likelihood
    Double_t flogL = 0.;
    Int_t isumn = 0;
@@ -40,16 +53,12 @@ void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
   
    t0=(nbins*3600)/(365.25*24*3600);
 
-//	calculate R0: average rate we would have observed if the atmospheric 
-//	parameters were always the reference ones
+//	calculate R0: average rate we would have observed if the atmospheric parameters were always the reference ones
 	for (int j = 0; j < nbins; j++) 
 		{
 			isumn += ievents[j];
-
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
-
 			ti=(iutc[j]-initial_time)/(365.25*24*3600);
-
 			ee=exp(-par[3]*(ti-t0));	//factor to take into account the global rate decrease
 			
 			if(ee > 1.0) ee = 1.;
@@ -58,17 +67,20 @@ void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
 
 		R0 = isumn/sumhex;
 
+//Maximum Likehood Estimator
 	for (int j = 0; j < nbins; j++) 
 		{
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
+
 			ti=(iutc[j]-initial_time)/(365.25*24*3600);
 			ee=exp(-par[3]*(ti-t0));
 			if(ee > 1.0) ee = 1.;
 			mu = R0*hex6T5[j]*C*ee;
-//			mu = R0*hex6T5[j]*C;
 			if(mu == 0.0) continue;
 			flogL -= 2*( ievents[j]*log(mu)-mu-logfact(ievents[j]) );
 	   }
+
+//F must be evaluated before exiting the FCN function
    f = flogL;
 }
 
@@ -90,14 +102,12 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 //	parameters were always the reference ones
 	for (j = 0; j < nbins; j++) {
 			isumn += ievents[j];
-			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*
-     			(rho[j]-rhod[j]);
+			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
 			ti=(iutc[j]-initial_time)/(365.25*24*3600);
 
 			ee=exp(-par[3]*(ti-t0));
 			if(ee > 1.0) ee = 1.;
 			sumhex += hex6T5[j]*C*ee;
-//			sumhex += hex6T5[j]*C;
 	}
 		R0 = isumn/sumhex;
 	for (j = 0; j < nbins; j++) {
@@ -108,29 +118,19 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 			ee=exp(-par[3]*(ti-t0));
 			if(ee > 1.0) ee = 1.;
 			mu = R0*hex6T5[j]*C*ee;
-//			mu = R0*hex6T5[j]*C;
+
 			if(mu == 0.0) continue;
 			flogL -= 2*( ievents[j]*log(mu)-mu-logfact(ievents[j]) );
 			ndof++;
 			chi2 += ((double)ievents[j]-mu)*((double)ievents[j]-mu)/mu;
    }
-   //*fval = flogL;
    *pchi2 = chi2;
    *pndof = ndof;
-   //return chi2;
 }
 
 //______________________________________________________________________________
-void MLE_simplified(const Double_t rho0 = 1.05389, 
-					const Double_t P0 = 861.854, 
-					const int nbins = 55490,
-					const int initial_time= 1104550200, 
-					const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared_all_energy/Herald_old_simple_modified_sector4_bins_delay.dat";
-)
+void MLE_simplified()
 {	
-	Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
-	Int_t ievents[nbins],iutc[nbins];
-
 // data input  
 	FILE *in_data = fopen(filename,"r"); 
 
@@ -139,12 +139,12 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 		printf("Error! File can't be read\n"); 
         	exit(-1); 
     	}	
-
+//Read from datafile
     for (int i=0; i < nbins; i++) {
     	fscanf(in_data, "%d %d %g %g %g %g",&iutc[i], &ievents[i],&pres[i],&rho[i], &rhod[i], &hex6T5[i]);}
 	
 	TMinuit *gMinuit = new TMinuit(4);  //initialize TMinuit with a maximum of 4 params
-	gMinuit->SetFCN(fcn);				// Set the function to be minimized
+	gMinuit->SetFCN(fcn);				//Set the function to be minimized
 
 	Double_t arglist[10];
 	Int_t ierflg = 0;
@@ -153,8 +153,10 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 	gMinuit->mnexcm("SET ERR", arglist ,1,ierflg);
 
 // Set starting values and step sizes for parameters
-	static Double_t vstart[4] 	= {0.0 , 0.0 , 0.0 , 0.0};
-	static Double_t step[4] 	= {0.1 , 0.1 , 0.1 , 0.1};	
+
+	printf("\n\n\n\nSet starting values and step sizes for parameters\n" );
+	static Double_t vstart[4] 	= {0.001 , 0.01 , 0.01 , 0.01};
+	static Double_t step[4] 	= {0.01 , 0.01 , 0.01 , 0.01};	
 
 	gMinuit->mnparm(0, "aP", 		vstart[0], step[0], 0,	0,	ierflg);
 	gMinuit->mnparm(1, "arho", 		vstart[1], step[1], 0,	0,	ierflg);
@@ -162,6 +164,8 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 	gMinuit->mnparm(3, "Lambda",	vstart[3], step[3], 0,	0,	ierflg);
 
 // Now ready for minimization step
+
+	printf("\n\n\n\nNow ready for minimization step\n" );
 	arglist[0] = 500;
 	arglist[1] = 1.;
 	gMinuit->mnexcm("MIGRAD", arglist ,2,ierflg);
@@ -178,6 +182,7 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 	gMinuit->mnexcm("MIGRAD", arglist ,2,ierflg);
 
 // Get parameter results
+
 	Double_t pars[4],errors[4],bnd1,bnd2,chi2,fval;
 	Int_t ndof,ivar;
 	char* pname;
@@ -187,7 +192,9 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 	gMinuit->mnpout(2, parn, pars[2], errors[2], bnd1,	bnd2,	ivar);
 	gMinuit->mnpout(3, parn, pars[3], errors[3], bnd1,	bnd2,	ivar);
 
-// Print results
+// Print and writing results
+	printf("\n\n\n\nPrint results\n" );	
+
 	fcn2(pars,&chi2,&ndof);
 
 	Double_t gamma = 3.23;
@@ -201,12 +208,20 @@ void MLE_simplified(const Double_t rho0 = 1.05389,
 
 	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
 
-	printf("%i\n", k );
+	FILE *out_data= fopen(output_file, "a+");
 
+	fprintf(out_data, "Data file: %s 	\n", filename);
+	fprintf(out_data, "aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
+	fprintf(out_data, "arho		= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);
+	fprintf(out_data, "brho		= %g +/- %g \n",pars[2]/pf,	errors[2]/pf);
+	fprintf(out_data, "Lambda	= %g +/- %g \n",pars[3],	errors[3]);
+
+	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
+
+	fclose(out_data);
 }
 
 //______________________________________________________________________________
-
 #ifndef __CINT__
 int main(int argc, char** argv) {
 
