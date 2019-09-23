@@ -5,8 +5,8 @@ file_utctprh_avg_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprhcavg-b
 #----- OPCIONAL: for delay the density 2 hrs--------
 file_delay="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-binsdelayrho.dat" 			#Weather Data delayed by two hours
 
-filepath_sin_square="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/"
-filename_sin_square="Herald_old_energy_modified_sector5_bins"
+filepath_sin_square="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sec_above_1EeV/"
+filename_sin_square="Herald_energy_modified_sector5_bins"
 
 file_sin_square="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/""$filename_sin_square"".dat"
 
@@ -43,7 +43,7 @@ sin_square_analisis(){
 
 sin_square_analisis "$file_sin_square"
 
-filepath_merged="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared/"
+filepath_merged="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sec_above_1EeV/"
 
 herald_utctprh="$filepath_merged""$filename_sin_square""_utctprh.dat"
 herald_delay="$filepath_merged""$filename_sin_square""_delay.dat"

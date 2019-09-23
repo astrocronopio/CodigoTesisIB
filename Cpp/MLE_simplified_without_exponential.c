@@ -24,7 +24,7 @@ const Double_t P0 = 861.854;
 const int nbins = 55490;
 const int initial_time= 1104550200; 
 const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sec_above_1EeV/Herald_energy_modified_sector5_bins_utctprh.dat";
-const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sec.dat";
+const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sec_without_exponential.dat";
 
 //Arrays with the data
 Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
@@ -49,20 +49,14 @@ void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
    Double_t flogL = 0.;
    Int_t isumn = 0;
    Double_t sumhex = 0.;
-   Double_t ti,t0,C,R0,mu,ee;
-  
-   t0=(nbins*3600)/(365.25*24*3600);
+   Double_t ti,C,R0,mu;
 
 //	calculate R0: average rate we would have observed if the atmospheric parameters were always the reference ones
 	for (int j = 0; j < nbins; j++) 
 		{
 			isumn += ievents[j];
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
-			ti=(iutc[j]-initial_time)/(365.25*24*3600);
-			ee=exp(-par[3]*(ti-t0));	//factor to take into account the global rate decrease
-			
-			if(ee > 1.0) ee = 1.;
-			sumhex += hex6T5[j]*C*ee;
+			sumhex += hex6T5[j]*C;
 		}
 
 		R0 = isumn/sumhex;
@@ -71,15 +65,10 @@ void fcn(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag){
 	for (int j = 0; j < nbins; j++) 
 		{
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
-
-			ti=(iutc[j]-initial_time)/(365.25*24*3600);
-			ee=exp(-par[3]*(ti-t0));
-			if(ee > 1.0) ee = 1.;
-			mu = R0*hex6T5[j]*C*ee;
+			mu = R0*hex6T5[j]*C;
 			if(mu == 0.0) continue;
 			flogL -= 2*( ievents[j]*log(mu)-mu-logfact(ievents[j]) );
 	   }
-
 //F must be evaluated before exiting the FCN function
    f = flogL;
 }
@@ -92,32 +81,23 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 	Double_t flogL = 0.;
 	Int_t isumn = 0;
 	Double_t sumhex = 0.;
-	Double_t ti,t0,C,R0,mu,ee,chi2;
+	Double_t ti,C,R0,mu,chi2;
 	Int_t ndof;
 	chi2 = 0.;
 	ndof = 0;
-	t0=(nbins*3600)/(365.25*24*3600);
 
 //	calculate R0: average rate we would have observed if the atmospheric 
 //	parameters were always the reference ones
 	for (j = 0; j < nbins; j++) {
 			isumn += ievents[j];
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
-			ti=(iutc[j]-initial_time)/(365.25*24*3600);
-
-			ee=exp(-par[3]*(ti-t0));
-			if(ee > 1.0) ee = 1.;
-			sumhex += hex6T5[j]*C*ee;
+			sumhex += hex6T5[j]*C;
 	}
 		R0 = isumn/sumhex;
 	for (j = 0; j < nbins; j++) {
-			if(iutc[j] > 1370044800 || iutc[j] < 1104537600) continue;
-			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*
-     			(rho[j]-rhod[j]);
-			ti=(iutc[j]-1104537601)/(365.25*24*3600);
-			ee=exp(-par[3]*(ti-t0));
-			if(ee > 1.0) ee = 1.;
-			mu = R0*hex6T5[j]*C*ee;
+
+			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
+			mu = R0*hex6T5[j]*C;
 
 			if(mu == 0.0) continue;
 			flogL -= 2*( ievents[j]*log(mu)-mu-logfact(ievents[j]) );
@@ -129,7 +109,7 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 }
 
 //______________________________________________________________________________
-void MLE_simplified()
+void MLE_simplified_without_exponential()
 {	
 // data input  
 	FILE *in_data = fopen(filename,"r"); 
@@ -155,13 +135,12 @@ void MLE_simplified()
 // Set starting values and step sizes for parameters
 
 	printf("\n\n\n\nSet starting values and step sizes for parameters\n" );
-	static Double_t vstart[4] 	= {0.001 , 0.01 , 0.01 , 0.01};
-	static Double_t step[4] 	= {0.01 , 0.01 , 0.01 , 0.01};	
+	static Double_t vstart[3] 	= {0.001 , 0.01 , 0.01};
+	static Double_t step[3] 	= {0.01 , 0.01 , 0.01};	
 
 	gMinuit->mnparm(0, "aP", 		vstart[0], step[0], 0,	0,	ierflg);
 	gMinuit->mnparm(1, "arho", 		vstart[1], step[1], 0,	0,	ierflg);
 	gMinuit->mnparm(2, "brho", 		vstart[2], step[2], 0,	0,	ierflg);
-	gMinuit->mnparm(3, "Lambda",	vstart[3], step[3], 0,	0,	ierflg);
 
 // Now ready for minimization step
 
@@ -175,36 +154,38 @@ void MLE_simplified()
 	gMinuit->mnstat(amin,edm,errdef,nvpar,nparx,icstat);
    	gMinuit->mnprin(3,amin);
 
-	arglist[0] = 4;
+	arglist[0] = 3;
 	gMinuit->mnexcm("FIX", arglist ,1,ierflg);
 	arglist[0] = 500;
 	arglist[1] = 1.;
 	gMinuit->mnexcm("MIGRAD", arglist ,2,ierflg);
 
 // Get parameter results
-
-	Double_t pars[4],errors[4],bnd1,bnd2,chi2,fval;
+	Double_t pars[3],errors[3],bnd1,bnd2,chi2,fval;
 	Int_t ndof,ivar;
 	char* pname;
+
+	printf("\n\n\n\nNow ?!!!\n" );	
 	TString parn(pname);
+	printf("\n\n\n\nNow ?!!!\n" );	
 	gMinuit->mnpout(0, parn, pars[0], errors[0], bnd1,	bnd2,	ivar);
 	gMinuit->mnpout(1, parn, pars[1], errors[1], bnd1,	bnd2,	ivar);
 	gMinuit->mnpout(2, parn, pars[2], errors[2], bnd1,	bnd2,	ivar);
-	gMinuit->mnpout(3, parn, pars[3], errors[3], bnd1,	bnd2,	ivar);
 
 // Print and writing results
 	printf("\n\n\n\nPrint results\n" );	
 
 	fcn2(pars,&chi2,&ndof);
 
+//Ratio between alpha and a parameters!
 	Double_t gamma = 3.23;
 	Double_t B = 1.02;
 	Double_t pf = B*(gamma-1.);
 
+// a= pf*alpha
 	printf("aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
 	printf("arho	= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);
 	printf("brho	= %g +/- %g \n",pars[2]/pf,	errors[2]/pf);
-	printf("Lambda	= %g +/- %g \n",pars[3],	errors[3]);
 
 	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
 
@@ -214,7 +195,6 @@ void MLE_simplified()
 	fprintf(out_data, "aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
 	fprintf(out_data, "arho		= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);
 	fprintf(out_data, "brho		= %g +/- %g \n",pars[2]/pf,	errors[2]/pf);
-	fprintf(out_data, "Lambda	= %g +/- %g \n",pars[3],	errors[3]);
 
 	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
 
