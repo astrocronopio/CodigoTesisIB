@@ -165,13 +165,6 @@ void MLE_simplified_without_exponential()
 	Int_t ndof,ivar;
 	char* pname;
 
-	printf("\n\n\n\nNow ?!!!\n" );	
-	TString parn(pname);
-	printf("\n\n\n\nNow ?!!!\n" );	
-	gMinuit->mnpout(0, parn, pars[0], errors[0], bnd1,	bnd2,	ivar);
-	gMinuit->mnpout(1, parn, pars[1], errors[1], bnd1,	bnd2,	ivar);
-	gMinuit->mnpout(2, parn, pars[2], errors[2], bnd1,	bnd2,	ivar);
-
 // Print and writing results
 	printf("\n\n\n\nPrint results\n" );	
 
