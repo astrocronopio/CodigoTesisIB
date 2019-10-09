@@ -23,7 +23,7 @@ const Double_t rho0 = 1.05389;
 const Double_t P0 = 861.854; 
 const int nbins = 55490;
 const int initial_time= 1104550200; 
-const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sec_above_1EeV/Herald_energy_modified_sector5_bins_utctprh.dat";
+const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_filter_by_S38/Sin_squared/Old/Herald_old_S38_sector1merged.dat";
 const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sec_without_exponential.dat";
 
 //Arrays with the data

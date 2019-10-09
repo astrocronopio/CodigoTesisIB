@@ -4,18 +4,16 @@ import sys
 
 file_auger = sys.argv[1]
 file_events= sys.argv[2]
-#file_auger="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Herald_simple_modified.dat"
-#file_events="Herald_simple_modified_bins.dat"
 
-binWidth =3600 # In seconds
+binWidth =3600*12 # In seconds
 
 def bin_archive_data(file_auger, file_events):
-	utc = np.loadtxt(file_auger, dtype= int ,usecols=0)
+	utc, the = np.loadtxt(file_auger,usecols=(0,1), unpack=True)
 	
 	Width = len(utc)
-	linfUTC=utc[0]
+	linfUTC=int(utc[0])
 	
-	nbin=((utc[-1] -linfUTC)/binWidth) + 2
+	nbin=((int(utc[-1]) -linfUTC)/binWidth) + 2
 	
 	binlist=np.zeros(nbin)
 	for flag in xrange(0,Width):
@@ -27,7 +25,7 @@ def bin_archive_data(file_auger, file_events):
 	output_file=open(file_events, "w+")
 	
 	for j in range(0,nbin):
-		output_file.write("%i \t %i \t %f  \n" %(linfUTC + binWidth*j-binWidth/2, binlist[j], np.sqrt(float(binlist[j]))) )
+		output_file.write("%i \t %i \t %f \t %f \n" %(linfUTC + binWidth*j-binWidth/2, binlist[j], np.sqrt(float(binlist[j])), the[j]))
 	
 	output_file.close()
 

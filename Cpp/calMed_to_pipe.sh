@@ -1,6 +1,6 @@
 ## Script que calcula la media de la temperatura y la densidad del archivo utctprh
 
-file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sin_squared_all_energy/Herald_old_simple_modified_sector1_bins_delay.dat"					#Weather Data
+file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/Sin_squared/New/Herald_filter_by_energy_above_1EeV_sector3merged.dat"				#Weather Data
 #file_utctprh=$1
 
 ##

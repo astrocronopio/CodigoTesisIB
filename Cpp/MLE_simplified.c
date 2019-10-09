@@ -19,11 +19,11 @@
 
 //TMinuit requires the data to fit to be global variables
 //that happens when physicists code :((((((((( so sad
-const Double_t rho0 = 1.05389; 
-const Double_t P0 = 861.854; 
-const int nbins = 55490;
-const int initial_time= 1104550200; 
-const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Sec_above_1EeV/Herald_energy_modified_sector5_bins_utctprh.dat";
+const Double_t rho0 = 1.05482; 
+const Double_t P0 = 861.872; 
+const int nbins = 53107;
+const int initial_time= 1108161000; 
+const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_filter_by_S38/Up_to_2019/Sin_squared/New/Herald_S38_sector1merged.dat";
 const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sec.dat";
 
 //Arrays with the data
@@ -186,7 +186,7 @@ void MLE_simplified()
 	Double_t pars[4],errors[4],bnd1,bnd2,chi2,fval;
 	Int_t ndof,ivar;
 
-// Print and writing results
+/*// Print and writing results
 	printf("\n\n\n\nPrint results\n" );	
 
 	fcn2(pars,&chi2,&ndof);
@@ -195,24 +195,12 @@ void MLE_simplified()
 	Double_t B = 1.02;
 	Double_t pf = B*(gamma-1.);
 
-	printf("aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
-	printf("arho	= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);
-	printf("brho	= %g +/- %g \n",pars[2]/pf,	errors[2]/pf);
+	printf("aP		= %g +/- %g \n",pars[0],	errors[0]);
+	printf("arho	= %g +/- %g \n",pars[1],	errors[1]);
+	printf("brho	= %g +/- %g \n",pars[2],	errors[2]);
 	printf("Lambda	= %g +/- %g \n",pars[3],	errors[3]);
 
-	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
-
-	FILE *out_data= fopen(output_file, "a+");
-
-	fprintf(out_data, "Data file: %s 	\n", filename);
-	fprintf(out_data, "aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
-	fprintf(out_data, "arho		= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);
-	fprintf(out_data, "brho		= %g +/- %g \n",pars[2]/pf,	errors[2]/pf);
-	fprintf(out_data, "Lambda	= %g +/- %g \n",pars[3],	errors[3]);
-
-	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);
-
-	fclose(out_data);
+	printf("chi2	= %f  ndof= %d  chi2/ndof= %f\n",chi2,ndof,chi2/ndof);*/
 }
 
 //______________________________________________________________________________

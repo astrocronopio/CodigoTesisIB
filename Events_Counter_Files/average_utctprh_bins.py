@@ -7,8 +7,8 @@ file_utctpth_avg_bins	=sys.argv[3]
 
 output_bins 		 	= open(file_utctpth_bins, "w+")
 
-binWidth 	= 3600	
-n 			= 12
+binWidth 	= 3600*12	
+n 			= 12*12
 
 counter = 0
 avgtemp = 0.0
@@ -16,8 +16,6 @@ avgpres = 0.0
 avgrho 	= 0.0
 avgrhod = 0.0
 shex6T5 = 0.0  
-
-utc_1 = np.loadtxt(file_utctpth, dtype= int ,usecols=0)
 
 with open(file_utctpth) as f:
 	for line in f:
