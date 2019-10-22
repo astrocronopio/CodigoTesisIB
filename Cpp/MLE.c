@@ -152,7 +152,7 @@ void MLE()
 	//FILE *in_data = fopen("OfflineICRC060weathersec1-bin.dat","r"); //read only file
 	//FILE *in_data = fopen("HeraldICRC060noBPweather-bin.dat","r"); //read only file
 	//FILE *in_data = fopen("HeraldGAP060weather-bin.dat","r"); 
-	FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Events_Counter_Files/herald_old_delay.dat","r"); 
+	FILE *in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/Sin_2/New/Herald__sector_1_weather.dat","r"); 
 
 	if (! in_data ) // equivalent to saying if ( in_data == NULL ) 
     	{  
@@ -191,7 +191,7 @@ void MLE()
    	gMinuit->mnprin(3,amin);
 
 	//in_data = fopen("HeraldDatasec5weatherdrno.dat","r");
-	in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Events_Counter_Files/herald_old_delay.dat","r"); 
+	in_data = fopen("/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/Sin_2/New/Herald__sector_1_weather.dat","r"); 
 	if (! in_data ) // equivalent to saying if ( in_data == NULL ) 
     	{  
 		printf("Error! File can't be read\n"); 
@@ -224,6 +224,8 @@ void MLE()
 	Double_t gamma = 3.23;
 	Double_t B = 1.02;
 	Double_t pf = B*(gamma-1.);
+
+	pf=1;
 
 	printf("aP		= %g +/- %g \n",pars[0]/pf,	errors[0]/pf);
 	printf("arho	= %g +/- %g \n",pars[1]/pf,	errors[1]/pf);

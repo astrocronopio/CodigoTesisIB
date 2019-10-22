@@ -1,6 +1,18 @@
-##Con este script contamos la cantidad de eventos en un ancho de tiempo definido
 import numpy as np
 import sys
+
+"""def arho(sin):
+	return
+
+def aP(sin):
+	return
+
+def brho
+
+def fit_weather(the):
+	sin_2= np.sin(the)*np.sin(the)
+"""
+
 
 def bin_archive_data(file_auger, file_events, binWidth):
 	utc = np.loadtxt(file_auger, dtype= int , usecols=0)
@@ -24,15 +36,20 @@ def bin_archive_data(file_auger, file_events, binWidth):
 	
 	output_file.close()
 
-#_________________________________________
+
+from utctprh_bins import bin_weather
+
 
 def main():
-	file_auger 	= sys.argv[1]
-	file_events	= sys.argv[2]
-	binWidth 	= 3600 # In seconds
+ 
+	file_auger	= sys.argv[1]
+	file_utc	= sys.argv[2]
+	file_events	= sys.argv[3]
+	file_bins	= sys.argv[4]
 
-	bin_archive_data(file_auger,file_events, binWidth)
-	print("Done with {}!\n".format(file_events))
-  
+	bin_weather(file_utc, file_bins, 3600*24)
+	bin_archive_data(file_auger, file_events, 3600*24)
+
+
 if __name__== "__main__":
 	main()

@@ -8,5 +8,5 @@
 weather_file='/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat'
 weather_file_no_bp='/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_without_badperiod_no_iw.dat'
 
-#awk '{if ($8!=4 && $9==1) print $1, $2, $3, $4, $5, $6, $7, $10, $11, $12}' "$weather_file"  > "$weather_file_no_bp"
+awk '{if ($8!=4 && $9==1) print $0}' "$weather_file"  > "$weather_file_no_bp"
 

@@ -6,14 +6,16 @@
 #'utctprh.dat'  creates  'utctprhdr-bins.dat' and 'utctprhcavg-binsh.dat'
 
 file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat" 						#Weather Data
-file_utctprh_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-bins-python-perday.dat" 	#Weather Data in bins of a hour
-file_utctprh_avg_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprhcavg-binsh-perday.dat" 	#Weather Data of the average every hour
+file_utctprh_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-bins.dat" 	#Weather Data in bins of a hour
+#file_utctprh_avg_bins="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprhcavg-binsh.dat" 	#Weather Data of the average every hour
 			#per day now
-	python average_utctprh_bins.py "$file_utctprh" "$file_utctprh_bins" "$file_utctprh_avg_bins"
+	python utctprh_bins.py "$file_utctprh" "$file_utctprh_bins" #"$file_utctprh_avg_bins"
 
-#----- Delay the density 2 hrs--------
+#------------------- Delay the density 2 hrs--------
+#1		2		3		4		5		6			
+#utc, avgtemp, avgpres, avgrho, avgrho24, shex6T5)
 
-file_delay="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-binsdelayrho-perday.dat" 			#Weather Data delayed by two hours
+file_delay="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh-binsdelayrho.dat" 			#Weather Data delayed by two hours
 
 	awk '{i=1}
 			{	if(i>2)i=1;
