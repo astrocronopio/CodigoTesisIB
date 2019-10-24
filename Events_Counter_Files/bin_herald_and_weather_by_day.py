@@ -1,3 +1,5 @@
+##This script creates two files with herald and weather bins by hour
+
 import numpy as np
 import sys
 

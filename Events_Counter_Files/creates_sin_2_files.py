@@ -1,3 +1,5 @@
+##Given the herald file, creates 5 files, separating by sin^2, up to 60 sexagesimal degrees
+
 import numpy as np
 import sys
 from eventCounter import bin_archive_data

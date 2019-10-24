@@ -1,3 +1,6 @@
+##This script creates a file with bins of a given width of the average of the
+##weather parameters
+
 import numpy as np
 import sys
 

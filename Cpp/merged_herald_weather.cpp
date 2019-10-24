@@ -9,9 +9,14 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	ifstream eventdata ("../../Herald/Central/Modified/Energy_filter_by_S38/Herald_old_S38.dat"); /// Archive.bz2 file already filtered by filter_by_energy.sh
-	ifstream utctprh ("../../Weather/utctprh.dat");/// weather info file in 5 min bins 
-	ofstream outfile ("../../Merged_Herald_Weather/Another_way_around/Old_herald_weather_S38.dat"); /// output file	
+	//ifstream eventdata ("../../Herald/Central/Modified/All_Energy/Old_Herald_all_energy.dat"); /// Archive.bz2 file already filtered by filter_by_energy.sh
+	//ifstream utctprh ("../../Weather/utctprh.dat");/// weather info file in 5 min bins 
+	//ofstream outfile ("../../Merged_Herald_Weather/Another_way_around/Old_herald_weather.dat"); /// output file	
+
+	ifstream eventdata 	(argv[1]);
+	ifstream utctprh 	(argv[2]);
+	ofstream outfile 	(argv[3]);
+
 	string lineev;
 	string lineatm;
 	if(eventdata.is_open() && utctprh.is_open())	
@@ -23,7 +28,7 @@ int main(int argc, char** argv)
 		int UTC;
 		getline(utctprh,lineatm);
 		stringstream satm(lineatm);
-		satm >> iutc >> t >> p >> rho >> rhod >> h6 >> h5 >> iw >> ib;
+		satm >> iutc >> t >> p >> rho >> rhod >> h6 >> h5 >> iw >> ib >> x3>>x4>> x5;
 		while (!eventdata.eof() && !utctprh.eof() )
 		{
 			getline(eventdata,lineev);			
@@ -32,7 +37,7 @@ int main(int argc, char** argv)
 
 			while (!utctprh.eof() ){			
 				if(UTC <= iutc && UTC > iutc-300){			/// Asuming iutc as the end second of each 5 min bin				
-					outfile << lineev <<  " " << iutc << " "<< t <<" "<< p << " "<<rho <<" "<< rhod <<" "<< iw <<" "<< ib <<endl; /// Appends weather info 
+					outfile << lineev <<  " " << iutc << " "<< t <<" "<< p << " "<<rho <<" "<< rhod <<" "<< iw <<" "<< ib <<"\t" <<h6 <<endl; /// Appends weather info 
 					break;
 				}
 				else{

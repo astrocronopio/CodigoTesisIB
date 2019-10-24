@@ -13,13 +13,14 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 
 	with open(file_utctpth) as f:
 		for line in f:
-			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp,hum,rho_hum,rho_24_hum= line.split()
+			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp,hum ,rho_hum,rho_24_hum= line.split()
 		
 			avgtemp = avgtemp 	+ float(temp)
 			avgpres = avgpres 	+ float(pres)
 			avgrho 	= avgrho 	+ float(rho)
-			avgrho24 = avgrho24 	+ float(rho24)
-			if(int(bp)==1 and int(iw)!= 4):
+			avgrho24= avgrho24 	+ float(rho24)
+			
+			if(int(bp)==1 and int(iw)< 3):
 				shex6T5 = shex6T5 + float(hex6T5)
 				mean+=1
 			
@@ -30,7 +31,7 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 				avgpres = avgpres/counter
 				avgrho 	= avgrho/counter
 				avgrho24= avgrho24/counter
-				shex6T5 = shex6T5/counter
+				shex6T5 = shex6T5/mean if mean!=0 else 0
 
 				output_bins.write("%i \t %.7f \t %.7f \t %.7f \t %f \t %.7f \n"%(int(utc)-binWidth//2, avgtemp, avgpres, avgrho, avgrho24, shex6T5))
 				output_bins.flush()
@@ -44,7 +45,6 @@ def main():
 
 	file_utctpth 			= sys.argv[1]
 	file_utctpth_bins 		= sys.argv[2]
-	#file_utctpth_avg_bins	= sys.argv[3]
 	binWidth 				= 3600	
 
 	bin_weather(file_utctpth, file_utctpth_bins, binWidth)
