@@ -12,7 +12,7 @@ utctprh="$filepath""utctprh.dat"
 
 #--------------------------------------------OLD HERALD---------2005-2015----------------------------------------
 
-eventdata="$project""Herald/Central/Modified/All_Energy/Old_Herald.dat"
+eventdata="$project""Herald/Central/Modified/Energy_above_1EeV/Old_Herald_filter_by_energy_above_1EeV.dat"
 outfile="$project""Merged_Herald_Weather/Old_herald_weather.dat"
 #---------------------------------------------------------------------------------------------
 
@@ -23,14 +23,14 @@ outfile="$project""Merged_Herald_Weather/Old_herald_weather.dat"
 outfiletime="$project""Merged_Herald_Weather/Old_herald_weather_no-badperiod.dat"
 #---------------------------------------------------------------------------------------------
 
-awk '{ if($13==1 && $12<4 && $2<60.0 && $6>=1.0) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
+awk '{ if($13==1 && $12<4 ) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
 
 
 #=================================================================================================
 #=================================================================================================
 
 #--------------------------------------------NEW HERALD------------2005-2015----------------------------------
-eventdata="$project""Herald/Central/Modified/All_Energy/Old_Herald.dat"
+eventdata="$project""Herald/Central/Modified/Energy_above_1EeV/Herald_filter_by_energy_above_1EeV.dat"
 outfile="$project""Merged_Herald_Weather/Herald_weather.dat"
 #---------------------------------------------------------------------------------------------
 
@@ -40,4 +40,4 @@ outfile="$project""Merged_Herald_Weather/Herald_weather.dat"
 
 outfiletime="$project""Merged_Herald_Weather/Herald_weather_no-badperiod.dat"
 #---------------------------------------------------------------------------------------------
-awk '{ if($13==1 && $12<4 && $2<60.0 && $6>=1.0) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
+awk '{ if($13==1 && $12<4 ) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
