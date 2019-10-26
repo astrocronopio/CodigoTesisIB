@@ -45,8 +45,7 @@ def main():
 
 	file_utctpth 			= sys.argv[1]
 	file_utctpth_bins 		= sys.argv[2]
-	binWidth 				= 3600	
-
+	binWidth 				= int(sys.argv[3])
 	bin_weather(file_utctpth, file_utctpth_bins, binWidth)
   
 if __name__== "__main__":

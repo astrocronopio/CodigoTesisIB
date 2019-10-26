@@ -1,18 +1,19 @@
 #----------------------------------------------------------------------------------------------------------------
-project=$1
-filepath=$2
+filepath="/home/ponci/Desktop/TesisIB/Coronel/Weather/"
 
 file_utctprh="$filepath""utctprh.dat" 						#Weather Data
-file_utctprh_bins="$filepath""utctprh-bins.dat" 	#Weather Data in bins of a hour
+file_utctprh_bins="$filepath""utctprh_bins.dat" 	#Weather Data in bins of a hour
+file_utctprh_bins_day="$filepath""utctprh_bins_by_day.dat" 
 
 
-python $1CodigoTesisIB/Python/utctprh_bins.py "$file_utctprh" "$file_utctprh_bins" 
+python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins" 	 3600
+python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins_day"  86400
 
 #---------------------------------------------- Delay the density 2 hrs------------------------------------------
 #1		2		3		4		5		6			
 #utc, avgtemp, avgpres, avgrho, avgrho24, shex6T5)
 
-file_delay="$filepath""utctprh-binsdelayrho.dat" 			#Weather Data delayed by two hours
+file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two hours
 
 #----------------------------------------------------------------------------------------------------------------
 

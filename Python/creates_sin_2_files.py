@@ -2,7 +2,7 @@
 
 import numpy as np
 import sys
-from eventCounter import bin_archive_data
+from bin_herald import bin_archive_data
 
 def the_all_mighty_function(file_auger, file_name, filepath):
 	file_auger_array=[]
