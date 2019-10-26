@@ -1,24 +1,43 @@
-file_herald="../../Merged_Herald_Weather/Another_way_around/Herald_weather.dat"
+##Usa los archivos los archivos del herald, los matchea con el weather y saca los eventos que estuvieron en una mala hora
 
-file_output="../../Merged_Herald_Weather/Another_way_around/Herald_weather_no_badperiods.dat"
+#=================================================================================================
+# 1			2		3		4			5			6			7			8		9			10			11			12			13		14
+# UTC  >>	The	 >>	phi >> 	S1000 >> 	dS1000 >>	Energy >> iutc << " "<< t <<" "<< p << " "<<rho <<" "<< rhod <<" "<< iw <<" "<< ib << h6 
 
-awk '{if ($13==1) print $1, $2, $3, $4, $5, $6}' "$file_herald" > "$file_output"
+#=================================================================================================
+project=$1
+filepath=$2
+#Weather------2005-2015---------------
+utctprh="$filepath""utctprh.dat"
+
+#--------------------------------------------OLD HERALD---------2005-2015----------------------------------------
+
+eventdata="$project""Herald/Central/Modified/All_Energy/Old_Herald.dat"
+outfile="$project""Merged_Herald_Weather/Old_herald_weather.dat"
+#---------------------------------------------------------------------------------------------
+
+		"$project"/CodigoTesisIB/Cpp/merged_herald_weather "$eventdata"  "$utctprh"  "$outfile"
+
+#=================================================================================================
+
+outfiletime="$project""Merged_Herald_Weather/Old_herald_weather_no-badperiod.dat"
+#---------------------------------------------------------------------------------------------
+
+awk '{ if($13==1 && $12<4 && $2<60.0 && $6>=1.0) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
 
 
-file_herald="../../Merged_Herald_Weather/Another_way_around/Old_herald_weather.dat"
+#=================================================================================================
+#=================================================================================================
 
-file_output="../../Merged_Herald_Weather/Another_way_around/Old_herald_weather_no_badperiods.dat"
+#--------------------------------------------NEW HERALD------------2005-2015----------------------------------
+eventdata="$project""Herald/Central/Modified/All_Energy/Old_Herald.dat"
+outfile="$project""Merged_Herald_Weather/Herald_weather.dat"
+#---------------------------------------------------------------------------------------------
 
-awk '{if ($13==1) print $1, $2, $3, $4, $5, $6}' "$file_herald" > "$file_output"
+		"$project"/CodigoTesisIB/Cpp/merged_herald_weather "$eventdata"  "$utctprh"  "$outfile"
 
-file_herald="../../Merged_Herald_Weather/Another_way_around/Herald_weather_S38.dat"
-file_output="../../Merged_Herald_Weather/Another_way_around/Herald_weather_S38_no_badperiods.dat"
+#=================================================================================================
 
-awk '{if ($13==1) print $1, $2, $3, $4, $5, $6}' "$file_herald" > "$file_output"
-
-
-file_herald="../../Merged_Herald_Weather/Another_way_around/Old_herald_weather_S38.dat"
-file_output="../../Merged_Herald_Weather/Another_way_around/Old_herald_weather_S38_no_badperiods.dat"
-
-awk '{if ($13==1) print $1, $2, $3, $4, $5, $6}' "$file_herald" > "$file_output"
-
+outfiletime="$project""Merged_Herald_Weather/Herald_weather_no-badperiod.dat"
+#---------------------------------------------------------------------------------------------
+awk '{ if($13==1 && $12<4 && $2<60.0 && $6>=1.0) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfiletime"
