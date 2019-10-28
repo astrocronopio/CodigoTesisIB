@@ -2,7 +2,8 @@
 ## además de la cantidad de líneas del archivo
 
 #El archivo
-file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Another_way_around/Energy_above_1EeV/Sin_2/New/Herald__sector_1_weather.dat"
+#file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/New/Herald__sector_1_weather.dat"
+file_utctprh=$1
 
 #Mean density
 sumR=$(awk 'BEGIN {sum=0} {sum+=$4} END {print sum/NR}'  $file_utctprh) 
@@ -17,17 +18,24 @@ initial_utc=$(head -n 1 $file_utctprh | awk '{print $1}')
 
 
 #This format is for the MLE.c archive, which fits the parameters
-echo
-echo "const Double_t rho0 = "$sumR";" 
-echo "const Double_t P0 ="$sumP";" 
-echo
+echo "
 
-echo "////////////////////////////////////////////"
-echo "const int nbins = "$Total";"
-echo "const int initial_time= "$initial_utc";"
+#include \"TMinuit.h\"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
-echo "const char* filename= \""$file_utctprh"\";" 
-echo "////////////////////////////////////////////"
-echo
-echo
+const Double_t rho0 = "$sumR";
+const Double_t P0 ="$sumP";
+
+////////////////////////////////////////////
+const int nbins = "$Total";
+const int initial_time= "$initial_utc";
+const char* filename= \""$file_utctprh"\"; 
+////////////////////////////////////////////
+
+const char* output_file=\"/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters.dat\";"  |  cat - ../Cpp/cuerpo_MLE.txt  > MLE.c
+
+root MLE.c
+
 

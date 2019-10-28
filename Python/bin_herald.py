@@ -29,7 +29,7 @@ def bin_archive_data(file_auger, file_events, binWidth):
 def main():
 	file_auger 	= sys.argv[1]
 	file_events	= sys.argv[2]
-	binWidth 	= sys.argv[3]
+	binWidth 	= int(sys.argv[3])
 
 	bin_archive_data(file_auger,file_events, binWidth)
 	print("Done with {}!\n".format(file_events))

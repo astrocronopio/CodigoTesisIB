@@ -28,7 +28,7 @@ int main(int argc, char** argv)
 		int UTC;
 		getline(utctprh,lineatm);
 		stringstream satm(lineatm);
-		satm >> iutc >> t >> p >> rho >> rhod >> h6 >> h5 >> iw >> ib >> x3>>x4>> x5;
+		satm >> iutc >> t >> p >> rho >> rhod >> h6 >> h5 >> iw >> ib;
 		while (!eventdata.eof() && !utctprh.eof() )
 		{
 			getline(eventdata,lineev);			

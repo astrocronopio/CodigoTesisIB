@@ -1,46 +1,7 @@
-/*
-* Macro ROOT que toma archivo con número de eventos e info clima en bines de 1 hora y realiza un Maximum Likelihood 
-* usando Minuit para ajustar los parámetros de clima. 
-*/
-//   The fitting function fcn is a simple likelihood function
-//   
-//   More details on the various functions or parameters for these functions
-//   can be obtained in an interactive ROOT session with:
-//    Root > TMinuit *minuit = new TMinuit(10);
-//    Root > minuit->mnhelp("*")  to see the list of possible keywords
-//    Root > minuit->mnhelp("SET") explains most parameters
-
-#include "TMinuit.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-
-
-
-//TMinuit requires the data to fit to be global variables
-//that happens when physicists code :((((((((( so sad
-
-
-
-const Double_t rho0 = 1.05359;
-const Double_t P0 =861.796;
-
-////////////////////////////////////////////
-const int nbins = 78568;
-const int initial_time= 1108161000;
-const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/Old/Herald_old_sector_5_weather.dat";
-////////////////////////////////////////////
-
-
-const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sin_expo_another_way_around.dat.dat";
-
-
-//const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_without_expo.dat";
-
 
 
 //Arrays with the data
-Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
+Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins], rate[nbins];
 Int_t ievents[nbins],iutc[nbins];
 
 //________________________________________________________________________
@@ -113,6 +74,8 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 			sumhex += hex6T5[j]*C;
 	}
 		R0 = isumn/sumhex;
+	printf("\n EL RATE : %f", R0);
+
 	for (j = 0; j < nbins; j++) {
 			C=1.+par[0]*(pres[j]-P0)+par[1]*(rhod[j]-rho0)+par[2]*(rho[j]-rhod[j]);
 
@@ -128,7 +91,7 @@ void fcn2(Double_t *par,Double_t *pchi2,Int_t *pndof)
 }
 
 //______________________________________________________________________________
-void MLE_simplified_without_exponential()
+void MLE()
 {	
 // data input  
 	FILE *in_data = fopen(filename,"r"); 
@@ -140,7 +103,7 @@ void MLE_simplified_without_exponential()
     	}	
 //Read from datafile
     for (int i=0; i < nbins; i++) {
-    	fscanf(in_data, "%d %d %g %g %g %g",&iutc[i], &ievents[i],&pres[i],&rho[i], &rhod[i], &hex6T5[i]);}
+    	fscanf(in_data, "%d %d %g %g %g %g %g",&iutc[i], &ievents[i],&pres[i],&rho[i], &rhod[i], &hex6T5[i]), &rate[i];}
 	
 	TMinuit *gMinuit = new TMinuit(4);  //initialize TMinuit with a maximum of 4 params
 	gMinuit->SetFCN(fcn);				//Set the function to be minimized
@@ -237,7 +200,7 @@ void MLE_simplified_without_exponential()
 #ifndef __CINT__
 int main(int argc, char** argv) {
 
-
+MLE();
 return 0;
 }
 #endif
