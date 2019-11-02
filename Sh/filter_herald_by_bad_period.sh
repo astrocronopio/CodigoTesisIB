@@ -15,29 +15,23 @@ prepares_files()
 	outfilebp=$4
 	outfile_energy_theta=$5
 	outfile_energy_time=$6
-	
-#---------------------------------------------------------------------------------------------
+	#---------------------------------------------------------------------------------------------
 	../Cpp/merged_herald_weather "$eventdata"  "$utctprh"  "$outfile"
 #---------------------------------------------------------------------------------------------
 	awk '{ if($12<4 && $13==1) print $1,$2,$3,$4,$5,$6 }' "$outfile"  > "$outfilebp" && wc -l  "$outfilebp"
 # Ahora tiene la forma: UTC  >>	The	 >>	phi >> 	S1000 >> 	dS1000 >>	Energy 
-	
-
 #---------------------------------------------------------------------------------------------
 	awk '{if ($2<60 && $6>=1) print $0}' "$outfilebp" > "$outfile_energy_theta" && wc -l  "$outfile_energy_theta"
 #Ahora ya filtré el 60 theta y la energía de 1EeV
-
 #---------------------------------------------------------------------------------------------
 	awk '{if ($1<mktime("2015 12 31 23 59 59") && $1>mktime("2005 01 01 00 00 00")) print $0 }'  "$outfile_energy_theta" > "$outfile_energy_time" && wc -l  "$outfile_energy_time"
 #Ahora ya filtré por tiempo
-	
 #---------------------------------------------------------------------------------------------
 }
 
 echo "filter_herald_by_bad_period.sh"
 
 #-------------------------------------------OLD HERALD---------2005-2015----------------------------------------
-
 echo "Old"
 eventdata="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/All_Energy/Old_Herald.dat"
 outfile="/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/All_Energy/Old_Herald_weather.dat"

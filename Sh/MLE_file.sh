@@ -4,6 +4,7 @@
 #El archivo
 #file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/New/Herald__sector_1_weather.dat"
 file_utctprh=$1
+file_fit=$2
 
 #Mean density
 sumR=$(awk 'BEGIN {sum=0} {sum+=$4} END {print sum/NR}'  $file_utctprh) 
@@ -34,8 +35,9 @@ const int initial_time= "$initial_utc";
 const char* filename= \""$file_utctprh"\"; 
 ////////////////////////////////////////////
 
-const char* output_file=\"/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters.dat\";"  |  cat - ../Cpp/cuerpo_MLE.txt  > MLE.c
+const char* output_file=\"/$file_fit\";"  |  cat - ../Cpp/cuerpo_MLE.txt  > MLE.c
 
 root MLE.c
+
 
 

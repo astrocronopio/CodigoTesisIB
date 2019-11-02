@@ -5,16 +5,16 @@
 #include <stdio.h>
 #include <math.h>
 
-const Double_t rho0 = 1.05236;
-const Double_t P0 =861.729;
+const Double_t rho0 = 1.05547;
+const Double_t P0 =861.777;
 
 ////////////////////////////////////////////
-const int nbins = 71451;
-const int initial_time= 1104550200;
-const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Energy_above_1EeV/Old/Herald_old_sector_2_weather.dat"; 
+const int nbins = 3292;
+const int initial_time= 1104847200;
+const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Bins_by_day/merged.dat"; 
 ////////////////////////////////////////////
 
-const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters.dat";
+const char* output_file="//home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Bins_by_day/fitted_parameters_global_fit.dat";
 
 
 //Arrays with the data

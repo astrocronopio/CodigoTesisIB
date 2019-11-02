@@ -4,6 +4,7 @@
 import numpy as np
 import sys
 
+
 def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 	n=int(binWidth/300)
 	counter = mean	= 0
@@ -20,7 +21,7 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 			avgrho 	= avgrho 	+ float(rho)
 			avgrho24= avgrho24 	+ float(rho24)
 			
-			if(int(bp)==1 and int(iw)< 3):
+			if(int(bp)==1 and int(iw)< 4):
 				shex6T5 = shex6T5 + float(hex6T5)
 				mean+=1
 			

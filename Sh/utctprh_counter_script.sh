@@ -1,5 +1,5 @@
 #----------------------------------------------------------------------------------------------------------------
-filepath="/home/ponci/Desktop/TesisIB/Coronel/Weather/"
+filepath="/home/ponci/Desktop/TesisIB/Coronel/PC_Weather_paper/Weather/"
 
 file_utctprh="$filepath""utctprh.dat" 						#Weather Data
 file_utctprh_bins="$filepath""utctprh_bins.dat" 	#Weather Data in bins of a hour
