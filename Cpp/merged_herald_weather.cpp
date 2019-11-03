@@ -35,12 +35,13 @@ int main(int argc, char** argv)
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
 			//sevent >> utc 	 >>	phi  >>	the>> 	S1000 >> 	dS1000 >>	Energy 	;
-			sevent >> utc 	>>	the>>	Energy 	;
+			sevent >> utc 	>>	the >>	Energy 	;
 
 			while (!utctprh.eof() ){			
-				if(utc <= iutc && utc > iutc-300){			/// Asuming iutc as the end second of each 5 min bin				
+				if(utc <= iutc && utc > iutc-300 ){			/// Asuming iutc as the end second of each 5 min bin				
 					//outfile << "\t" <<utc<< "\t"  << phi<< "\t"  << the<< "\t"  << S1000<< "\t"  << dS1000<< "\t"  << Energy<< "\t"  << p<< "\t"  << rho<< "\t"  << rhod<< "\t"  << iw<< "\n" ; /// Appends weather info 
-					outfile << utc<< "\t"  << the<< "\t" << Energy<< "\t"  << p<< "\t"  << rho<< "\t"  << rhod<< "\t"  << iw<< "\n" ; /// Appends weather info 
+					outfile << utc<< "\t"  << the<< "\t" << Energy<< "\t"  << p<< "\t"  << rho<< "\t"  << rhod<< "\t"  << iw<< "\t" << ib <<"\n" ; /// Appends weather info 
+					//cout<<"xd"<<endl;
 					break;
 				}
 				else{
