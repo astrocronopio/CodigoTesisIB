@@ -12,16 +12,3 @@ auger_file_energy_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Mod
 #awk '{if ($2>2  && $22>0 && $23>0 && $43>5 && $44>0 && $3<=60 && $12*$47/$37>=5.37 ) print  $8,$3,$4,$12,$13,$38}' "$auger_file_energy_input" > "$auger_file_energy_output"
 awk '{if ($2>2  && $22>0 && $23>0 && $43>5 && $44>0 && $3<=60 && $12*$47/$37>=5.37 ) print  $8,$3,$38}' "$auger_file_energy_input" > "$auger_file_energy_output"
 wc -l  "$auger_file_energy_output"
-
-
-#_________________________________Energy below 1 EeV__________________________________
-
-echo "This scripts works on the old auger data set structure with the simplest data"
-auger_file_5v_energy_input='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Archive/ArchiveICRCnoBP.dat'
-auger_file_5v_energy_output='/home/ponci/Desktop/TesisIB/Coronel/Herald/Central/Modified/Energy_filter_by_S38/Herald_old_S38.dat'
-
-#$8		$3 		$4		$12		$13		$39	
-#UTC 	The		phi 	S1000 	dS1000	Energy 			para matchear weather
-#awk '{if ($2>2  && $22>0 && $23>0 && $43>5 && $44>0 && $3<=60 && $47>=5.37  ) print  $8,$3,$4,$12,$13,$39}' "$auger_file_5v_energy_input" > "$auger_file_5v_energy_output"
-awk '{if ($2>2  && $22>0 && $23>0 && $43>5 && $44>0 && $3<=60 && $47>=5.37  ) print  $8,$3,$39}' "$auger_file_5v_energy_input" > "$auger_file_5v_energy_output"
-wc -l  "$auger_file_5v_energy_output"
