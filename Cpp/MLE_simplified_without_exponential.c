@@ -35,10 +35,6 @@ const char* filename= "/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather
 const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_sin_expo_another_way_around.dat.dat";
 
 
-//const char* output_file="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/fitted_parameters_without_expo.dat";
-
-
-
 //Arrays with the data
 Float_t pres[nbins],rho[nbins],rhod[nbins],hex6T5[nbins];
 Int_t ievents[nbins],iutc[nbins];

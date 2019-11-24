@@ -17,8 +17,8 @@ set xlabel "sin^2{/Symbol q}"
 #==============================================================================================================================
 #==============================================================================================================================
 
-#set terminal pngcairo size 1200,750 enhanced font 'Verdana,26'
-set terminal qt 0 enhanced font 'Verdana,26' size 1200,750 
+#set terminal pngcairo size 1000,750 enhanced font 'Verdana,26'
+set terminal qt 0 enhanced font 'Verdana,26' size 1000,750 
 
 set key right top
 first_title="a_P"
@@ -39,15 +39,15 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:($2):3  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
-fit f7(x) "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"		u 1:($2):3  yerror via c07, c17, c27
+replot "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:($2):3  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
+fit f7(x) "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"		u 1:($2):3  yerror via c07, c17, c27
 replot f7(x) 																		lc rgb '#77ac30'		lw 2 t ''#
-#replot "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat" u ($0*0.15 + 0.075):(-0.0032):(0.0002) w yer lw 2	lc rgb color4 	t 'Todo {/Symbol q}<60^o'
+#replot "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat" u ($0*0.15 + 0.075):(-0.0032):(0.0002) w yer lw 2	lc rgb color4 	t 'Todo {/Symbol q}<60^o'
 replot -0.0032 lw 2	lc rgb "red" 	t 'Todo {/Symbol q}<60^o'
 #replot f6(x)-f(x)  lc rgb "red" t "Residual"
 
 
-set terminal png size 1200,750 enhanced font 'Verdana,26'
+set terminal png size 1000,750 enhanced font 'Verdana,26'
 set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/params/ap_ICRC_2015_above_1EeV.png"
 replot
 
@@ -56,7 +56,7 @@ replot
 #==============================================================================================================================
 #==============================================================================================================================
 #==============================================================================================================================
-set terminal qt 2 enhanced font 'Verdana,26' size 1200,750 
+set terminal qt 2 enhanced font 'Verdana,26' size 1000,750 
 
 set autoscale
 first_title="a_{/Symbol r}"
@@ -72,15 +72,15 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 	
-replot "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:4:5  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
-fit f7(x) "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"			u 1:4:5  yerror via c07, c17, c27
+replot "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:4:5  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
+fit f7(x) "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"			u 1:4:5  yerror via c07, c17, c27
 replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
 replot -1.71 lw 2	lc rgb "red" 	t 'Todo {/Symbol q}<60^o'
 		
 			
 #replot f6(x)-f(x)  lc rgb "red" t "Residual"
 
-set terminal png size 1200,750 enhanced font 'Verdana,26'
+set terminal png size 1000,750 enhanced font 'Verdana,26'
 set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/params/arho_ICRC_2015_above_1EeV.png"
 replot
 
@@ -90,7 +90,7 @@ replot
 #==============================================================================================================================
 #==============================================================================================================================
 
-set terminal qt 3  enhanced font 'Verdana,26' size 1200,750
+set terminal qt 3  enhanced font 'Verdana,26' size 1000,750
 
 set autoscale
 first_title="b_{/Symbol r}"
@@ -107,8 +107,8 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:6:7  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
-fit f7(x) "../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"			u 1:6:7  yerror via c07, c17, c27
+replot "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"				u 1:6:7  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'ICRC 2015'
+fit f7(x) "../../../HDD_weather/Herald_old/herald_old_above_1EeV_all_sin2.dat"			u 1:6:7  yerror via c07, c17, c27
 replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
 replot -0.51 lw 2	lc rgb "red" 	t 'Todo {/Symbol q}<60^o'
 		
@@ -116,7 +116,7 @@ replot -0.51 lw 2	lc rgb "red" 	t 'Todo {/Symbol q}<60^o'
 
 #replot f6(x)-f(x)  lc rgb "red" t "Residual"
 
-set terminal png size 1200,750 enhanced font 'Verdana,26'
+set terminal png size 1000,750 enhanced font 'Verdana,26'
 set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/params/brho_ICRC_2015_above_1EeV.png"
 replot
 

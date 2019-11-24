@@ -46,7 +46,7 @@ replot f7(x) 																		lc rgb  "dark-turquoise"			lw 2 t ''#
 
 
 set terminal png size 1200,750 enhanced font 'Verdana,26'
-set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/Capitulo2_Clima/Graphs/ap_ICRC_2019_expected_above_2EeV.png"
+set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/clima/ap_ICRC_2019_expected_above_2EeV.png"
 replot
 
 #======================== ========================================================================================================
@@ -76,7 +76,7 @@ replot f7(x) 																		lc rgb  "dark-turquoise"			lw 2 t ''#
 #replot f6(x)-f(x)  lc rgb "red" t "Residual"
 
 set terminal png size 1200,750 enhanced font 'Verdana,26'
-set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/Capitulo2_Clima/Graphs/arho_ICRC_2019_expected_above_2EeV.png"
+set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/clima/arho_ICRC_2019_expected_above_2EeV.png"
 replot
 
 #================================================================================================================================
@@ -106,7 +106,7 @@ replot f7(x) 																		lc rgb  "dark-turquoise"			lw 2 t ''#
 #replot f6(x)-f(x)  lc rgb "red" t "Residual"
 
 set terminal png size 1200,750 enhanced font 'Verdana,26'
-set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/Capitulo2_Clima/Graphs/brho_ICRC_2019_expected_above_2EeV.png"
+set output "/home/ponci/Desktop/TesisIB/Coronel/TesisIB/IB_style/clima/Graphs/clima/brho_ICRC_2019_expected_above_2EeV.png"
 replot
 
 #================================================================================================================================
