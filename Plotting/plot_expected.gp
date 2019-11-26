@@ -24,7 +24,7 @@ unset title
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset 0, 1.999
 set ytics 0.001
 set tmargin at screen TOP-1.7*DY
@@ -90,7 +90,7 @@ unset title
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset 0, 1.999
 set ytics 0.001
 set tmargin at screen TOP-1.7*DY
@@ -151,7 +151,7 @@ unset title
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset 0, 1.999
 #set ytics 0.001
 set tmargin at screen TOP-1.7*DY
@@ -217,7 +217,7 @@ unset title
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset 0, 1.999
 #set ytics 0.001
 set tmargin at screen TOP-1.7*DY

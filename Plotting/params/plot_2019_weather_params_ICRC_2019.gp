@@ -34,10 +34,10 @@ set yrange [-0.007:]
 #================================================================================================================================
 #Todos los archivos
 #set key horiz
-plot -0.0012 dt 5 lw 2 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
+#plot -0.0012 dt 5 lw 2 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
 #replot -0.0012 dt 3 lw 2 lc rgb 'dark-pink' t  '{/Symbol q}<60^o'
 
-replot 			"../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2 	w yerror 	lc rgb "black"	pt 2   ps 4 	lw 2 t 'Aab A. et al.'
+plot 			"../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2 	w yerror 	lc rgb "black"	pt 2   ps 4 	lw 2 t 'Aab A. et al.'
 fit 	f(x) 	"../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2  	yerror  via c0, c1, c2
 replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 
@@ -73,10 +73,10 @@ set title "Parámetro ".first_title." para eventos mayores a 1 EeV"
 
 #================================================================================================================================
 #Todos los archivos
-plot -0.35 lw 2  dt 3 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
-replot -0.32 dt 3 lw 2 lc rgb 'dark-pink' t  '{/Symbol q}<60^o'
+#plot -0.35 lw 2  dt 3 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
+#replot -0.32 dt 3 lw 2 lc rgb 'dark-pink' t  '{/Symbol q}<60^o'
 
-replot "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:4:5 w yerror 	lc rgb '#7e2f8e'		pt 13  ps 4 lw 2 t '2005 a 2015'
+plot "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:4:5 w yerror 	lc rgb '#7e2f8e'		pt 13  ps 4 lw 2 t '2005 a 2015'
 replot "../../../HDD_weather_2019/Herald/herald_above_1EeV_all_sin2.dat"				u 1:4:5  w yerror 	lc rgb 'dark-pink'		pt 11  ps 4 lw 2 t '2005 a 2018'
 fit f6(x) "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:4:5 yerror via c06, c16
 fit f7(x) "../../../HDD_weather_2019/Herald/herald_above_1EeV_all_sin2.dat"				u 1:4:5 yerror via c07, c17
@@ -110,10 +110,10 @@ set title "Parámetro ".first_title." para eventos mayores a 1 EeV"
 
 #================================================================================================================================
 #Todos los archivos
-plot -0.15 dt 3 lw 2 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
-replot -0.16 dt 3 lw 2 lc rgb 'dark-pink' t  '{/Symbol q}<60^o'
+#plot -0.15 dt 3 lw 2 lc rgb '#7e2f8e' t  '{/Symbol q}<60^o'
+#replot -0.16 dt 3 lw 2 lc rgb 'dark-pink' t  '{/Symbol q}<60^o'
 
-replot "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:6:7 w yerror 	lc rgb '#7e2f8e'		pt 13  ps 4 lw 2 t '2005 a 2015'
+plot "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:6:7 w yerror 	lc rgb '#7e2f8e'		pt 13  ps 4 lw 2 t '2005 a 2015'
 replot "../../../HDD_weather_2019/Herald/herald_above_1EeV_all_sin2.dat"				u 1:6:7  w yerror 	lc rgb 'dark-pink'		pt 11  ps 4 lw 2 t '2005 a 2018'
 fit f6(x) "../../../HDD_weather/Herald/herald_above_1EeV_all_sin2.dat"				u 1:6:7  yerror via c06, c16
 fit f7(x) "../../../HDD_weather_2019/Herald/herald_above_1EeV_all_sin2.dat"				u 1:6:7  yerror via c07, c17

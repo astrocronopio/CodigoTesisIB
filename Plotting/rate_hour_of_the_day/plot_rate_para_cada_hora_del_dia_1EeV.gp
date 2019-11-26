@@ -18,7 +18,7 @@ set yrange [-0.003:0.0025]
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel 'Residual' offset 1.2
 set tmargin at screen TOP-2*DY
 set bmargin at screen TOP-3*DY +0.06
@@ -77,7 +77,7 @@ set yrange [-0.003:0.0025]
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel 'Residual' offset 1.2
 set tmargin at screen TOP-2*DY
 set bmargin at screen TOP-3*DY +0.06
@@ -135,7 +135,7 @@ set yrange [-0.003:0.0025]
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 set xrange [-1:24]
-set xlabel "Hora del día (Hora Local)"
+set xlabel "Hora del día (GMT)"
 set ylabel 'Residual' offset 1.2
 set tmargin at screen TOP-2*DY
 set bmargin at screen TOP-3*DY +0.06

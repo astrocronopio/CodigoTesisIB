@@ -11,7 +11,7 @@ unset title
 set autoscale
 set key left top
 
-set xtics 2; set xtics format '%h';  set xrange [-1:24]; set xlabel "Hora del día (Hora Local)"
+set xtics 2; set xtics format '%h';  set xrange [-1:24]; set xlabel "Hora del día (GMT)"
 set lmargin at screen 0.20; set rmargin at screen 0.95
 
 TOP= 0.98

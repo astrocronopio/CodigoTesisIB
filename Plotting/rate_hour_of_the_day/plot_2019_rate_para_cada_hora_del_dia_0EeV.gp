@@ -26,7 +26,7 @@ set yrange [-0.003:0.0025]
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 
-set xlabel "Hora del día (Hora Local)"; set xrange [-1:24] ; set xtics 2; set xtics format '%h'
+set xlabel "Hora del día (GMT)"; set xrange [-1:24] ; set xtics 2; set xtics format '%h'
 set ylabel 'Residual' offset 1.2
 set tmargin at screen TOP-2*DY
 set bmargin at screen TOP-3*DY +0.06
@@ -55,6 +55,8 @@ set terminal qt 3
 set multiplot
 replot
 unset multiplot
+
+pause(-1)
 
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -86,7 +88,7 @@ set yrange [-0.003:0.0025]
 set multiplot
 set offset 0,0,graph 0.05, graph 0.05
 
-set xlabel "Hora del día (Hora Local)"; set xrange [-1:24] ; set xtics 2; set xtics format '%h'
+set xlabel "Hora del día (GMT)"; set xrange [-1:24] ; set xtics 2; set xtics format '%h'
 set ylabel 'Residual' offset 1.2
 set tmargin at screen TOP-2*DY ; set bmargin at screen TOP-3*DY +0.06
 

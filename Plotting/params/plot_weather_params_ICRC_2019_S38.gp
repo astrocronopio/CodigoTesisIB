@@ -37,8 +37,8 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($2+0.00085*0):3 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
-fit f7(x) "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($2+0.00085*0):3 yerror via c07, c17, c27
+replot "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($2):3 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
+fit f7(x) "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($2):3 yerror via c07, c17, c27
 replot f7(x) 																		lc rgb 'blue'			lw 2 t ''#
 															
 
@@ -67,8 +67,8 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #Todos los archivos
 
 
-replot "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($4-0.099*0):5 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
-fit f7(x) "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:($4-0.099*0):5 yerror via c07, c17, c27
+replot "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"					u 1:($4):5 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
+fit f7(x) "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:($4):5 yerror via c07, c17, c27
 replot f7(x) 																		lc rgb 'blue'			lw 2 t ''#
 	
 
@@ -98,8 +98,8 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:6:7 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
-fit f7(x) "../../../HDD_weather/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:6:7  yerror via c07, c17, c27
+replot "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:6:7 w yerror 	lc rgb 'blue'		pt 13  ps 4 lw 2 t 'S38 - ICRC 2019'
+fit f7(x) "../../../HDD_weather_2019/Herald_S38/S38_above_0EeV_all_sin2.dat"				u 1:6:7  yerror via c07, c17, c27
 replot f7(x) 																		lc rgb 'blue'			lw 2 t ''#
 	
 
