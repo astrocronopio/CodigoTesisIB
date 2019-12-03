@@ -2,7 +2,7 @@
 ## además de la cantidad de líneas del archivo
 
 #El archivo
-file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Herald_S38/Herald_S38_weather_noBP.dat"
+file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Merged_Herald_Weather/Herald/Herald_weather_noBP.dat"
 file_exp="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat"
 #file_utctprh=$1
 #file_fit=$2
@@ -18,11 +18,23 @@ Eventos=$(awk 'BEGIN {sum=0}{ if ($1<mktime("2018 12 31 23 59 59") && $1>mktime(
 ##First entry in the utc column
 ##initial_utc=$(head -n 1 $file_utctprh | awk '{print $1}')
 
-sumE=$(awk 'BEGIN {sum=0} { if ($1<mktime("2018 12 31 23 59 59") && $1>mktime("2004 12 31 23 59 59")) sum+=$3;} END {print sum/NR}'  $file_utctprh) 
+sumE=$(awk 'BEGIN {sum=0; count=0;} { if ($1<mktime("2018 12 31 23 59 59") && $1>mktime("2004 12 31 23 59 59")) sum+=$3; count+=1} END {print sum/count}'  $file_utctprh) 
+
 exp=$(awk 'BEGIN {sum=0} { if ($1<mktime("2018 12 31 23 59 59") && $1>mktime("2004 12 31 23 59 59")) sum+=$7*0.2;} END {print 4.59*sum}'  $file_exp)
 echo "$sumE"
 echo "$Eventos"
+
+
 echo "$exp"
+
+
+#awk '{ if ($1<mktime("2015 12 31 23 59 59") && $1>mktime("2004 12 31 23 59 59")) print $3}'  "$file_utctprh" > energia_2015.dat
+#awk '{ if ($1<mktime("2018 12 31 23 59 59") && $1>mktime("2004 12 31 23 59 59")) print $3}'  "$file_utctprh" > energia_2018.dat
+
+
+sumE1=$(awk 'BEGIN {sum=0} {sum+=$1;} END {print sum/NR}'  energia_2018.dat) 
+echo "$sumE1"
+
 ##This format is for the MLE.c archive, which fits the parameters
 #echo "
 #

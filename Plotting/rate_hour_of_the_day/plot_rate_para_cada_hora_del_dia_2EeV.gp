@@ -35,7 +35,7 @@ set bmargin at screen TOP-2*DY +0.01
 set ytics 0.001
 set autoscale
 #set yrange [0.0415:0.0459]
-set title "Tasa de Eventos media por día  2005-2015 (2EeV)"
+#set title "Tasa de Eventos media por día  2005-2015 (2EeV)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset -0.15
 set xrange [-1:24]
 
@@ -45,7 +45,7 @@ replot "../../../HDD_weather/Herald_old/herald_old_above_2EeV_hour_of_the_day.da
 unset multiplot
 
 
-set terminal qt 1 
+set terminal qt 1 size 1200,750 enhanced font 'Verdana,26'
 set multiplot
 replot
 unset multiplot
@@ -92,19 +92,19 @@ unset xlabel
 #set ylabel 'ylabel 2' offset 0
 set tmargin at screen TOP -0.1
 set bmargin at screen TOP-2*DY +0.01
-set ytics 0.0005
+set ytics 0.001
 #set yrange [0.037:0.041]
 set autoscale
-set title "Tasa de Eventos media por día  2005-2015 (2EeV)"
+#set title "Tasa de Eventos media por día  2005-2015 (2EeV)"
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset 0.9
 set xrange [-1:24]
 
-plot "../../../HDD_weather/Herald/herald_above_2EeV_hour_of_the_day.dat" u 0:(0.004+2.566*24*$2/($4)):(2.566*24*sqrt($2)/($4)) w e  pt 7  ps 2 t  'ICRC 2019'
-replot "../../../HDD_weather/Herald/herald_above_2EeV_hour_of_the_day.dat" u 0:(0.004+2.566*24*$1/($4))  w lp lc rgb "black" lw 1.2  ps 0.8 pt 5  t  'Ajuste'
+plot "../../../HDD_weather/Herald/herald_above_2EeV_hour_of_the_day.dat" u 0:(0.00+2.566*24*$2/($4)):(2.566*24*sqrt($2)/($4)) w e  pt 7  ps 2 t  'ICRC 2019'
+replot "../../../HDD_weather/Herald/herald_above_2EeV_hour_of_the_day.dat" u 0:(0.00+2.566*24*$1/($4))  w lp lc rgb "black" lw 1.2  ps 0.8 pt 5  t  'Ajuste'
 
 unset multiplot
 
-set terminal qt 2 
+set terminal qt 2 size 1200,750 enhanced font 'Verdana,26'
 set multiplot
 replot
 unset multiplot

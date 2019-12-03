@@ -42,7 +42,7 @@ set bmargin at screen TOP-2*DY +0.01
 set ytics 0.002
 set autoscale
 #set yrange [0.1699:0.181]
-set title title_png
+#set title title_png
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset -0.15
 set xrange [-1:24]
 
@@ -51,7 +51,7 @@ plot file_S38 u 0:(2.566*24*$2/($4)):(2.566*24*sqrt($2)/($4)) w e  lc rgb 'blue'
 
 unset multiplot
 
-set terminal qt 3 
+set terminal qt 3   size 1200,750 enhanced font 'Verdana,26'
 set multiplot
 replot
 unset multiplot
