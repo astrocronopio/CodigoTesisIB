@@ -14,7 +14,7 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 
 	with open(file_utctpth) as f:
 		for line in f:
-			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp= line.split()
+			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp,x1,x2,x3= line.split()
 		
 			avgtemp = avgtemp 	+ float(temp)
 			avgpres = avgpres 	+ float(pres)

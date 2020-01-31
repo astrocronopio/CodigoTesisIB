@@ -24,7 +24,7 @@ set xrange [1101127600:1461346500]
 			
 			
 			plot "../../../HDD_weather/Herald_old/herald_old_above_1EeV_rate_day.dat" u 1:(0.15>($2/$4) && ($2/$4) >0.1 ? $2/($4)*2.566/2  :1/0 ):(sqrt($2)/($4)) w e  lc rgb '#77ac30' pt 7  ps 1 t  'ICRC 2015' ,\
-			 "../../../HDD_weather/Herald_old/herald_old_above_1EeV_rate_day.dat" u 1:($3/($4)*2.566/2)  w p lc rgb "black" lw 0.5   ps 0.5 pt 5  t  'Ajuste'
+			"../../../HDD_weather/Herald_old/herald_old_above_1EeV_rate_day.dat" u 1:($3/($4)*2.566/2)  w p lc rgb "black" lw 0.5   ps 0.5 pt 5  t  'Ajuste'
 			
 			
 			

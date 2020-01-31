@@ -1,0 +1,29 @@
+
+
+*******************************************************************************
+Mon Dec 16 20:56:57 2019
+
+
+FIT:    data read from "../../../HDD_weather_2019/Herald/herald_above_2EeV_hour_of_the_day.dat" u 0:(2.566*24*$2/($4)):(2.566*24*sqrt($2)/($4)) yerror
+        format = x:z:s
+        x range restricted to [-1.00000 : 24.0000]
+        #datapoints = 24
+function used for fitting: a
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 2.1797575813e+08   0.00e+00  3.14e+03    1.000000e+00
+   4 3.5702038062e+01  -2.93e-09  3.14e-01    3.887677e-02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 35.702
+rel. change during last iteration : -2.9256e-14
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.2459
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.55226
+p-value of the Chisq distribution (FIT_P)              : 0.0442329
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0388768        +/- 8.111e-05    (0.2086%)
