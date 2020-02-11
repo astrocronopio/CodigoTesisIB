@@ -33,7 +33,7 @@ void weather_correction(float theta, float * aP, float* arho, float *brho)
 	if(*brho >0.) *brho = 0.;
 }
 
-float efficiency(float theta, float weather, float energy)
+/*float efficiency(float theta, float weather, float energy)
 {	
 	float sin2 	= sin(theta*d2r)*sin(theta*d2r);
 
@@ -43,11 +43,11 @@ float efficiency(float theta, float weather, float energy)
     float eff 	= 1 + Bb*weather*power*powf(E05, power)/(powf(energy, power) + powf(E05, power));
 
     return eff;
-}
+}*/
 
 
 void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned long utcf, float period)
-{	std::vector<long double>xnhexhr(24);
+{	std::vector<long double>num_hex_hr(24);
 	std::vector<long double>rnhexhr(24);
 
 
@@ -57,6 +57,7 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 	string line;
 	float fas = period/365.25;
 	long double x1,x2,x3;
+	long double integral=0.0;
 
 	ifstream myweather("../../Weather/utctprh.dat");
 
@@ -69,24 +70,23 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 			if (iutc < utci || iutc > utcf) continue;
 
 			if (iw<4 && ib>0.5){
-				x1=(float(iutc-iutc0)/3600.+ 2.099806667)*fas; //31.4971*24/360 es la hora siderea 2,099806667
+				x1=(float(iutc-iutc0)/3600.+ 2.099807)*fas; //31.4971*24/360 es la hora siderea 2,099806667
 				ihr= int(x1)%24;
-				xnhexhr[ihr] += (3*hex5-hex6)*0.5;
 
-				if (xnhexhr[ihr]>1) rnhexhr[ihr] += xnhexhr[ihr]; 
+				num_hex_hr[ihr] += hex5;
 			}
 		}
 	}
 
-	x2=0;
 	for (int i = 0; i < 24; ++i)
 	{	
-		rnhexhr[i]+=xnhexhr[i];
-		x2+=rnhexhr[i]/24.0;
+		//rnhexhr[i]+=num_hex_hr[i];
+		integral+=num_hex_hr[i]/24.0; 
 	}
 
 	
-	for (int i = 0; i < 24; ++i) vect[i] = rnhexhr[i]/x2;
+	for (int i = 0; i < 24; ++i) vect[i] = num_hex_hr[i]/integral;
+
 }
 
 void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long utci, unsigned long utcf)
@@ -101,12 +101,12 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 
 	float fas = period/365.25;
 
-	ifstream myfile ("../../Herald/Central/Modified/Energy_above_1EeV/Herald_8EeV.dat");
+	ifstream myfile ("../../AllTriggers/AllTriggers_8EeV.dat");
 	//ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
 
 	vector<long double> dnhex(24);
 
-	exposure_weight(dnhex, utci, utcf, period);
+	//exposure_weight(dnhex, utci, utcf, period);
 
 
 	if(myfile.is_open())
@@ -116,8 +116,9 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 			stringstream liness(line);			
 			liness >> utc>>Phi>>Theta>>Ra>>x1>>x3>>energy>>t5; //>> p>> r>> rav>> iw ;
 			//liness>> AugId >> Dec>> Ra>> energy_raw >> energy_cor >> utc >> Theta>>Phi>>t5>>ftr;
-			//energy=energy_cor;
+			//energy=energy_raw;
 			if(utc < utci || utc > utcf || Theta > 80 || energy<=8.0) continue;
+			if(utcf <utc) break;
 		
 			//weather_correction(Theta, &aP, &arho, &brho);
 			//float weather = aP*(p-P0)+arho*(rav-rho0)+brho*(r-rav);
@@ -126,7 +127,7 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 			float  hrs= (float(utc - utc0)/3600.0 + 31.4971*24.0/360.0)*fas; // ésta es la ascensión recta.
 			int nh = (int(hrs)%24);
 
-			float peso =1.0/dnhex[nh];
+			float peso =1.0;//dnhex[nh];
 
 			*sumaN+=peso;
 			float raz = right_ascension(utc, utc0);
@@ -152,7 +153,7 @@ void ray_multifreq(int nf){
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
 
-	ofstream myfile ("ICRC2018_data_file_Eraw_hex.txt");
+	ofstream myfile ("AllTriggers_Oscar_data_file_Eraw.txt");
 
 	for (int i = 0; i < nf; ++i)
 	{	
@@ -185,7 +186,7 @@ void ray_multifreq(int nf){
 
 int main(int argc, char const *argv[])
 {	
-	ray_multifreq(500);
+	ray_multifreq(100);
 	
 	return 0;
 }
