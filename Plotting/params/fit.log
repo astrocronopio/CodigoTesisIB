@@ -3292,3 +3292,521 @@ correlation matrix of the fit parameters:
 c07             1.000 
 c17            -0.886  1.000 
 c27             0.780 -0.972  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:54:34 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 2.6381276425e+07   0.00e+00  9.21e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 2.6822157434e-02  -2.99e-04  9.21e-03    2.023214e-03  -2.594286e-02   2.507937e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0268222
+rel. change during last iteration : -2.98606e-09
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.115806
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0134111
+p-value of the Chisq distribution (FIT_P)              : 0.986678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = 0.00202321       +/- 0.0001179    (5.827%)
+c1              = -0.0259429       +/- 0.0007421    (2.861%)
+c2              = 0.0250794        +/- 0.0009629    (3.839%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:54:34 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_weather_nobp_all_sin2.dat"	u 1:($2):3  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 1.9099043300e+07   0.00e+00  7.93e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 1.0348783501e+00  -5.66e-06  7.93e-03    1.145129e-03  -2.642757e-02   2.910822e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.03488
+rel. change during last iteration : -5.6601e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.719332
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.517439
+p-value of the Chisq distribution (FIT_P)              : 0.596045
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = 0.00114513       +/- 0.0008158    (71.24%)
+c17             = -0.0264276       +/- 0.005256     (19.89%)
+c27             = 0.0291082        +/- 0.006942     (23.85%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.883  1.000 
+c27             0.777 -0.972  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:43 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 2.6381276425e+07   0.00e+00  9.21e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 2.6822157434e-02  -2.99e-04  9.21e-03    2.023214e-03  -2.594286e-02   2.507937e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0268222
+rel. change during last iteration : -2.98606e-09
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.115806
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0134111
+p-value of the Chisq distribution (FIT_P)              : 0.986678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = 0.00202321       +/- 0.0001179    (5.827%)
+c1              = -0.0259429       +/- 0.0007421    (2.861%)
+c2              = 0.0250794        +/- 0.0009629    (3.839%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:43 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_weather_nobp_all_sin2.dat"		u 1:($2):3  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 1.9099043300e+07   0.00e+00  7.93e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 1.0348783501e+00  -5.66e-06  7.93e-03    1.145129e-03  -2.642757e-02   2.910822e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.03488
+rel. change during last iteration : -5.6601e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.719332
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.517439
+p-value of the Chisq distribution (FIT_P)              : 0.596045
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = 0.00114513       +/- 0.0008158    (71.24%)
+c17             = -0.0264276       +/- 0.005256     (19.89%)
+c27             = 0.0291082        +/- 0.006942     (23.85%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.883  1.000 
+c27             0.777 -0.972  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:44 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 1			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 1.7430436162e+03   0.00e+00  7.47e-02    2.023214e-03  -2.594286e-02   2.507937e-02
+   5 4.5714285714e-03  -9.80e-06  7.47e-07   -2.688643e+00   1.455238e+00   2.095238e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00457143
+rel. change during last iteration : -9.80346e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478091
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00228571
+p-value of the Chisq distribution (FIT_P)              : 0.997717
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -2.68864         +/- 0.006953     (0.2586%)
+c1              = 1.45524          +/- 0.04377      (3.008%)
+c2              = 2.09524          +/- 0.05679      (2.71%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:44 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_weather_nobp_all_sin2.dat"			u 1:4:5  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 1.3268434837e+03   0.00e+00  6.46e-02    1.145129e-03  -2.642757e-02   2.910822e-02
+   5 7.9774200830e-01  -4.14e-06  6.46e-07   -2.463491e+00   4.342202e-01   2.929437e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.797742
+rel. change during last iteration : -4.13543e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.631562
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.398871
+p-value of the Chisq distribution (FIT_P)              : 0.671077
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = -2.46349         +/- 0.1027       (4.168%)
+c17             = 0.43422          +/- 0.6623       (152.5%)
+c27             = 2.92944          +/- 0.8749       (29.87%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.883  1.000 
+c27             0.777 -0.972  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:44 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 2			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 1.4628928254e+03   0.00e+00  2.16e+01   -2.688643e+00   1.455238e+00   2.095238e+00
+   5 1.0031746032e+00  -2.35e-07  2.16e-04   -9.711607e-01   1.123810e+00   7.936508e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00317
+rel. change during last iteration : -2.35198e-12
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.708228
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.501587
+p-value of the Chisq distribution (FIT_P)              : 0.605569
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -0.971161        +/- 0.07725      (7.955%)
+c1              = 1.12381          +/- 0.4863       (43.27%)
+c2              = 0.0793651        +/- 0.6309       (795%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:58:44 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_weather_nobp_all_sin2.dat"			u 1:6:7  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 4.0318308875e+02   0.00e+00  1.25e+01   -2.463491e+00   4.342202e-01   2.929437e+00
+   5 6.0774294183e-01  -1.95e-03  1.25e-04   -1.332642e+00   1.837443e+00  -6.288178e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.607743
+rel. change during last iteration : -1.94646e-08
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.551245
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.303871
+p-value of the Chisq distribution (FIT_P)              : 0.737956
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = -1.33264         +/- 0.09172      (6.882%)
+c17             = 1.83744          +/- 0.5913       (32.18%)
+c27             = -0.628818        +/- 0.7813       (124.2%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.884  1.000 
+c27             0.778 -0.972  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 0			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 2.6381276425e+07   0.00e+00  9.21e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 2.6822157434e-02  -2.99e-04  9.21e-03    2.023214e-03  -2.594286e-02   2.507937e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0268222
+rel. change during last iteration : -2.98606e-09
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.115806
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0134111
+p-value of the Chisq distribution (FIT_P)              : 0.986678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = 0.00202321       +/- 0.0001179    (5.827%)
+c1              = -0.0259429       +/- 0.0007421    (2.861%)
+c2              = 0.0250794        +/- 0.0009629    (3.839%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_herald_weather_nobp_all_sin2.dat"		u 1:($2):3  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 1.8412843407e+07   0.00e+00  7.90e+02    1.000000e+00   1.000000e+00   1.000000e+00
+   5 5.5979041232e-01  -1.07e-05  7.90e-03    9.376060e-03  -2.535901e-02   2.649669e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.55979
+rel. change during last iteration : -1.0683e-10
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.529051
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.279895
+p-value of the Chisq distribution (FIT_P)              : 0.755863
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = 0.00937606       +/- 0.0005793    (6.179%)
+c17             = -0.025359        +/- 0.003822     (15.07%)
+c27             = 0.0264967        +/- 0.00512      (19.32%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.880  1.000 
+c27             0.773 -0.971  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 1			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 1.7430436162e+03   0.00e+00  7.47e-02    2.023214e-03  -2.594286e-02   2.507937e-02
+   5 4.5714285714e-03  -9.80e-06  7.47e-07   -2.688643e+00   1.455238e+00   2.095238e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00457143
+rel. change during last iteration : -9.80346e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478091
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00228571
+p-value of the Chisq distribution (FIT_P)              : 0.997717
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -2.68864         +/- 0.006953     (0.2586%)
+c1              = 1.45524          +/- 0.04377      (3.008%)
+c2              = 2.09524          +/- 0.05679      (2.71%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_herald_weather_nobp_all_sin2.dat"			u 1:4:5  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 7.4026312826e+02   0.00e+00  7.55e-02    9.376060e-03  -2.535901e-02   2.649669e-02
+   4 1.7497738136e+00  -1.06e-02  7.55e-06   -1.966067e+00   1.477852e+00   8.062480e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.74977
+rel. change during last iteration : -1.05682e-07
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.935354
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.874887
+p-value of the Chisq distribution (FIT_P)              : 0.416909
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = -1.96607         +/- 0.1467       (7.461%)
+c17             = 1.47785          +/- 0.9682       (65.51%)
+c27             = 0.806248         +/- 1.297        (160.8%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.881  1.000 
+c27             0.774 -0.971  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../parameter_weather.dat"		i 2			u ($0*0.15 + 0.075):1:2  	yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f(x)
+	f(x) =  c0 +  c1*x +  c2*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c0            c1            c2           
+   0 1.4628928254e+03   0.00e+00  2.16e+01   -2.688643e+00   1.455238e+00   2.095238e+00
+   5 1.0031746032e+00  -2.35e-07  2.16e-04   -9.711607e-01   1.123810e+00   7.936508e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00317
+rel. change during last iteration : -2.35198e-12
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.708228
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.501587
+p-value of the Chisq distribution (FIT_P)              : 0.605569
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -0.971161        +/- 0.07725      (7.955%)
+c1              = 1.12381          +/- 0.4863       (43.27%)
+c2              = 0.0793651        +/- 0.6309       (795%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+
+
+*******************************************************************************
+Fri Feb 14 12:59:58 2020
+
+
+FIT:    data read from "../../../weather_code/AllTriggers/AllTriggers_1EeV_herald_weather_nobp_all_sin2.dat"			u 1:6:7  yerror
+        format = x:z:s
+        #datapoints = 5
+function used for fitting: f7(x)
+	f7(x)= c07 + c17*x + c27*x**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c07           c17           c27          
+   0 2.8441134057e+02   0.00e+00  1.01e+01   -1.966067e+00   1.477852e+00   8.062480e-01
+   5 1.0050813809e+00  -2.08e-05  1.01e-04   -9.806782e-01   2.142693e+00  -1.403460e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00508
+rel. change during last iteration : -2.0835e-10
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.708901
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.502541
+p-value of the Chisq distribution (FIT_P)              : 0.604992
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = -0.980678        +/- 0.1132       (11.55%)
+c17             = 2.14269          +/- 0.7474       (34.88%)
+c27             = -1.40346         +/- 1.001        (71.35%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.881  1.000 
+c27             0.774 -0.971  1.000 
