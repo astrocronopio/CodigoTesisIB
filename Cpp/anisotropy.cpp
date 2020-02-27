@@ -13,7 +13,14 @@ float Bb	= 1.03;
 float P0 	= 862.0;
 float rho0	= 1.06;
 
-float right_ascension(unsigned long utc, unsigned long iutcref)
+float T_S	= 23.9344696;
+float T_D 	= 24.0;
+
+const char* in_file = "../../Herald/Central/Modified/Energy_above_1EeV/Old_herald_8EeV_oscar.dat";
+const char* out_file= "../../Anisotropy/ICRC/2015/ICRC2015_data_file_Eraw_new_exp.txt" ;
+
+
+float right_ascension(unsigned long utc, unsigned long iutcref) //Right ascension of the cenith of Auger
 {
 	float raz = float(utc-iutcref)/239.34469 + 31.4971;  //239.34469 es (dia sidereo en segundos)/(360 grados sexagesimales)
 	raz = raz - int(raz/360.)*360.;
@@ -21,36 +28,9 @@ float right_ascension(unsigned long utc, unsigned long iutcref)
 	return raz;
 }
 
-/*
-void weather_correction(float theta, float * aP, float* arho, float *brho)
-{	
-	float sin2 = sin(theta*d2r)*sin(theta*d2r);
-
-	*aP=0.0009-0.011*sin2+0.011*sin2*sin2;
-	*arho=-1.15+0.6*sin2+0.9*sin2*sin2;
-	*brho=-0.42+0.5*sin2-0.001*sin2*sin2;
-
-	if(*arho >0.) *arho = 0.;
-	if(*brho >0.) *brho = 0.;
-}
-
-float efficiency(float theta, float weather, float energy)
-{	
-	float sin2 	= sin(theta*d2r)*sin(theta*d2r);
-
-	float power = 3.8*(sin2)*sin2 - 1.2*sin2 + 3.3;
-    float E05 	= 4.3*(sin2)*sin2*sin2 - 2.2*(sin2)*sin2 - 0.2*sin2 + 0.88 ;
-
-    float eff 	= 1 + Bb*weather*power*powf(E05, power)/(powf(energy, power) + powf(E05, power));
-
-    return eff;
-}*/
-
-
 void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned long utcf, float period)
 {	std::vector<long double>num_hex_hr(24);
 	std::vector<long double>rnhexhr(24);
-
 
 	unsigned long iutc, iutc0 = 1072915200;
 	float t,p,r,rav,hex6, hex5;
@@ -63,37 +43,45 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 	ifstream myweather("../../Weather/utctprh.dat");
 
 	if(myweather.is_open())
-	{	while (!myweather.eof() ){			
+	{	
+		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
 			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
-
-			if (iw<4 && ib>0.5){
+			if (iw<5 && ib>0.5){
+				
 				x1=(float(iutc-iutc0)/3600.+ 2.099807)*fas; //31.4971*24/360 es la hora siderea 2,099806667
-				ihr= int(x1)%24;
+				
+				if (x1>=0)	ihr =  int(x1)%24 ;
+				else ihr =  24+int(x1)%24; 	
 
-				num_hex_hr[ihr] += hex5;
+				num_hex_hr[ihr] += hex6;
+
+				if (num_hex_hr[ihr]>1.0)
+				{
+					rnhexhr[ihr]+=num_hex_hr[ihr];
+					num_hex_hr[ihr]=0.0;
+				}
 			}
 		}
 	}
 
 	for (int i = 0; i < 24; ++i)
 	{	
-		//rnhexhr[i]+=num_hex_hr[i];
-		integral+=num_hex_hr[i]/24.0; 
+		rnhexhr[i]+=num_hex_hr[i];
+		integral+=rnhexhr[i]/24.0; 
 	}
 
 	
-	for (int i = 0; i < 24; ++i) vect[i] = num_hex_hr[i]/integral;
+	for (int i = 0; i < 24; ++i) vect[i] = rnhexhr[i]/integral;
 
 }
 
 void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long utci, unsigned long utcf)
 {
-	unsigned long utc0 = 1072915200;
-	unsigned long iutcref = 1104537600;   //1/1/2005 00:00:00;
+	unsigned long utc0 = 1104537600; //1/1/2005 00:00:00;
 	string line;
 
 	int utc,t5, iw;
@@ -102,42 +90,41 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 
 	float fas = period/365.25;
 
-	ifstream myfile ("../../AllTriggers/AllTriggers_1_2_EeV_herald.dat");
-	//ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
+	//ifstream myfile (in_file);
+	ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
 
 	vector<long double> dnhex(24);
-
-	exposure_weight(dnhex, utci, utcf, period);
+	//exposure_weight(dnhex, utci, utcf, period);
 
 	if(myfile.is_open())
 	{
 		while (!myfile.eof() ){			
 			getline(myfile,line);			
 			stringstream liness(line);			
-			liness >> utc>>Phi>>Theta>>Ra>>x1>>x3>>energy>>t5; //>> p>> r>> rav>> iw ;
-			//liness>> AugId >> Dec>> Ra>> energy_raw >> energy_cor >> utc >> Theta>>Phi>>t5>>ftr;
-			//energy=energy_raw;
-			if(utc < utci || utc > utcf || Theta > 80) continue; 
-			if(utcf <utc) break;
-		
-			//weather_correction(Theta, &aP, &arho, &brho);
-			//float weather = aP*(p-P0)+arho*(rav-rho0)+brho*(r-rav);
-			//float eff= efficiency(Theta,weather, energy);
+		//	liness >> utc>>Phi>>Theta>>Ra>>x1>>x3>>energy>>t5; //>> p>> r>> rav>> iw ;
+			liness>> AugId >> Dec>> Ra>> energy_raw >> energy_cor >> utc >> Theta>>Phi>>t5>>ftr;
+		energy=energy_raw;
+			if(utc < utci || utc > utcf || Theta > 80 || t5 < 6  || energy< 8) continue; 
+			if(utcf < utc) break;
 
 			float  hrs= (float(utc - utc0)/3600.0 + 31.4971*24.0/360.0)*fas; // ésta es la ascensión recta.
-			int nh = (int(hrs)%24);
+			
+			int nh = 0;
 
-			float peso =1.0/dnhex[nh];
+			if (int(hrs)%24>=0) nh= (int(hrs)%24)>0;
+			else  nh=24+(int(hrs)%24)  ;
+
+			float peso =1.0;
+			//float peso =1.0/dnhex[nh];
 
 			*sumaN+=peso;
 			float raz = right_ascension(utc, utc0);
 
 			float arg = 2.0*pi*hrs/24.0 + (Ra-raz)*d2r;
+		
 			*a +=cos(arg)*peso;
 			*b +=sin(arg)*peso;
 			}
-	
-	//cout << *a<< endl;
 	}
 	myfile.close();
 
@@ -146,14 +133,14 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 
 void ray_multifreq(int nf){
 	//int nf=50;
-	unsigned long utci = 1372680308 ;
-	unsigned long utcf = 1498521064;
+	unsigned long utci = 1072969615;//1372699409 ; //1072969615
+	unsigned long utcf = 1535789456;//1496267276 ; //1535789456
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
 
-	ofstream myfile ("AllTriggers_Herald_data_file_Eraw_1_2_EeV_hex.txt");
+	ofstream myfile (out_file);
 
 	for (int i = 0; i < nf; ++i)
 	{	
@@ -176,7 +163,7 @@ void ray_multifreq(int nf){
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
      	sgmra = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN);
+     	r99r  = sqrt(4.*log(99.)/sumaN);
 
      	myfile << period 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
      	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< endl;
@@ -186,7 +173,7 @@ void ray_multifreq(int nf){
 
 int main(int argc, char const *argv[])
 {	
-	ray_multifreq(150);
-	
+	ray_multifreq(500);
+	//cout<< int(-11)%7<< endl;
 	return 0;
 }
