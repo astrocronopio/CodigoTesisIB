@@ -93,7 +93,7 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 	//ifstream myfile (in_file);
 	ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
 
-	vector<long double> dnhex(24);
+//	vector<long double> dnhex(24);
 	//exposure_weight(dnhex, utci, utcf, period);
 
 	if(myfile.is_open())
@@ -111,8 +111,8 @@ void rayleigh( float *a , float *b, float *sumaN, float period, unsigned long ut
 			
 			int nh = 0;
 
-			if (int(hrs)%24>=0) nh= (int(hrs)%24)>0;
-			else  nh=24+(int(hrs)%24)  ;
+			//if (int(hrs)%24>=0) nh= (int(hrs)%24)>0; else  
+			nh=24+(int(hrs)%24)  ;
 
 			float peso =1.0;
 			//float peso =1.0/dnhex[nh];
