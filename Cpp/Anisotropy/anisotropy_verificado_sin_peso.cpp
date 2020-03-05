@@ -38,7 +38,6 @@ void rayleigh( float *a , float *b, float *sumaN,
 	double raz, arg, hrs, peso;
 
 	ifstream myfile (in_file);
-	//ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
 
 	if(myfile.is_open())
 	{
@@ -68,8 +67,8 @@ void rayleigh( float *a , float *b, float *sumaN,
 
 float ray_multifreq( int nf, bool flag, const char* in_file, const char* out_file){
 
-	unsigned long utci =  flag ? 1372699409 :  1072915200;
-	unsigned long utcf =  flag ? 1472688000 :  1544933508;
+	unsigned long utci =  flag ? 1372680068 :  1072959037;
+	unsigned long utcf =  1577836799 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
@@ -111,7 +110,7 @@ int main(int argc, char const *argv[])
 	const char* in_file = argv[1];
 	const char* out_file= argv[2];
 
-	ray_multifreq(500, true, in_file, out_file);
+	ray_multifreq(250, true, in_file, out_file);
 	
 	return 0;
 }

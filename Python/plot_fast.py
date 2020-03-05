@@ -8,7 +8,7 @@ import matplotlib as mpl
 mpl.rcParams.update({'font.size': 18,  'figure.figsize': [8, 6],  'figure.autolayout': True})
 
 
-freq, modulo, por99 = np.loadtxt("Cpp/AllTriggers_Oscar_data_file_Eraw_8EeV_hex_short_range.txt", unpack=True, usecols=(0,4,8))
+freq, modulo, por99 = np.loadtxt("../Cpp/Anisotropy/AllTriggers_2019_data_file_Eraw_1_2_EeV_hex_short_range.txt", unpack=True, usecols=(0,4,8))
 
 plt.title(u"All Triggers Oscar 8 EeV")
 plt.ylabel(u"Amplitud del $1^{er}$ armónico")

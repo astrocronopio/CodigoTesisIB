@@ -1,6 +1,6 @@
 echo "1 EeV con peso Oscar"
 
-in_file="../../AllTriggers/AllTriggers_1EeV.dat"
+in_file="../../../AllTriggers/AllTriggers_1EeV.dat"
 out_file="AllTriggers_Oscar_data_file_Eraw_1EeV_hex_short_range.txt" 
 
 	
@@ -32,11 +32,11 @@ out_file="AllTriggers_Oscar_data_file_Eraw_1_2_EeV_hex_short_range.txt"
 
 echo "1-2 EeV con peso herald" #Este falta 
 
-in_file="../../AllTriggers/AllTriggers_1_2_EeV_herald.dat"
-out_file="AllTriggers_Herald_data_file_Eraw_1_2_EeV_hex_short_range.txt" 
+in_file="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+out_file="AllTriggers_2019_data_file_Eraw_1_2_EeV_hex_short_range.txt" 
 
 	
-	#./anisotropy_verificado_con_peso "$in_file" "$out_file" 
+	./anisotropy_verificado_con_peso "$in_file" "$out_file" 
 
 
 ######################################################################
@@ -46,8 +46,8 @@ out_file="AllTriggers_Herald_data_file_Eraw_1_2_EeV_hex_short_range.txt"
 
 echo "8 EeV con peso herald"
 
-in_file="../../AllTriggers/AllTriggers_8EeV_herald.dat"
-out_file="AllTriggers_Herald_data_file_Eraw_8_EeV_hex_short_range.txt" 
+in_file="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_8EeV_2019.dat"
+out_file="AllTriggers_2019_data_file_Eraw_8_EeV_hex_short_range.txt" 
 
 	
-	./anisotropy_verificado_con_peso "$in_file" "$out_file" 
+	#./anisotropy_verificado_con_peso "$in_file" "$out_file" 
