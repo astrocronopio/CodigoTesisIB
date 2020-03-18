@@ -27,7 +27,7 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 	float t,p,r,rav,hex6, hex5;
 	int iw,ib, ihr;
 	string line;
-	float fas = period/365.25;
+	float fas = period/366.2559; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
 	long double x1,x2,x3;
 	long double integral=0.0;
 
@@ -48,7 +48,7 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 				if (x1>=0)	ihr =  int(x1)%interval ;
 				else ihr =  interval +int(x1)%interval; 	
 
-				num_hex_hr[ihr] += hex6;
+				num_hex_hr[ihr] += hex6;  ///ATENDE ACA  QUE TENES QUE CAMBIAR CUANDO A 1-2 EeV
 
 				if (num_hex_hr[ihr]>1.0)
 				{
@@ -88,7 +88,8 @@ void rayleigh( float *a , float *b, float *sumaN,
 	int utc,t5, iw, nh;
 	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 
-	double fas = *freq/365.25, raz, arg, hrs, peso;
+	double fas = *freq/366.2559, raz, arg, hrs, peso; 	//cambie de 265.25 a este valor, 
+														//es acá donde da una vuelta en el circulo sidereo
 
 	ifstream myfile (in_file);
 	//ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
@@ -156,7 +157,8 @@ float ray_multifreq( int nf, bool flag, const char* in_file, const char* out_fil
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
      	sgmra = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN);
+     	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
+     										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
 
      	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
      	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< endl;

@@ -9,9 +9,9 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	ifstream eventdata 	(argv[1]);
-	ifstream utctprh 	(argv[2]);
-	ofstream outfile 	(argv[3]);
+	ifstream eventdata 	("../../../AllTriggers/Original_Energy/2017/AllTriggers_1EeV_2017.dat");//(argv[1]);
+	ifstream utctprh 	("../../../Weather/utctprh_delay.dat");//(argv[2]);
+	ofstream outfile 	("../../../AllTriggers/Original_Energy/2017/AllTriggers_1EeV_2017_merged_nobp.dat");//(argv[3]);
 
 	string lineev;
 	string lineatm;
@@ -19,9 +19,9 @@ int main(int argc, char** argv)
 	{
 		int i8,i2,iutc,i;		
 		float x3,x4,x5,x6,x7;
-		string i1,t,p,rho,rhod,h5,iw,ib;
-		float the,	phi, S1000, dS1000, Energy, rho2, rho24,h6;
-		int utc;
+		string i1,t,p,rho,rhod,h5,iw;
+		float the,	phi, S1000, S1000_w, Energy, rho2, rho24,h6, S38, ra;
+		int utc, tanks, ib;
 		getline(utctprh,lineatm);
 		stringstream satm(lineatm);
 
@@ -32,15 +32,17 @@ int main(int argc, char** argv)
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
 			//sevent >> utc 	 >>	phi  >>	the>> 	S1000 >> 	dS1000 >>	Energy 	;
-			sevent >> utc >>	the >>	Energy 	;
+			//sevent >> utc >>	the >>	Energy 	;
+			sevent >> utc 	 >>	phi  >>	the>> ra >>	S1000 >> S38 >>	Energy >> tanks >> S1000_w 	;
 
 			while (!utctprh.eof()){
 				if(utc <= iutc && utc > iutc-300)
-				{	outfile << utc<< "\t"  << the<< "\t" << Energy<< "\t"  << p<< "\t"  << rho<< "\t"  << rhod<< "\t"  << iw<< "\t" << ib <<"\n" ; /// Appends weather info 
-					cout<< iutc<<'\t'<<utc-iutc<<'\t'<< ib<<endl;
-					//outfile.flush();
-
-					cout<<"pepe"<<endl;
+				{	
+					if (ib==1)
+					{
+						outfile << utc<< "\t"  << the<< "\t" << S38 << "\t"<< Energy<< "\t"  << p<< "\t"  << rho<< "\t"  << rho24<< "\t"  << iw<< "\t" << "\n" ; /// Appends weather info 
+						outfile.flush();
+					}
 					break;
 				}
 				else

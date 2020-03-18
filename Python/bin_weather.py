@@ -1,6 +1,6 @@
 ##This a very neat python script  to bin by a given a bin width in seconds to generate
 ## a file of the average in that time :)
-
+#
 import numpy as np
 import sys
 
@@ -34,7 +34,7 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 				avgrho24= avgrho24/counter
 				shex6T5 = shex6T5/mean if mean!=0 else 0
 
-				output_bins.write("%i \t %.7f \t %.7f \t %.7f \t %f \t %.7f \n"%(int(utc)-binWidth//2, avgtemp, avgpres, avgrho, avgrho24, shex6T5))
+				output_bins.write("%i \t %.7f \t %.7f \t %.7f \t %f \t %.7f \n"%(int(utc)-binWidth//2, avgtemp, avgpres, avgrho, avgrho24, shex6T5/5.0))
 				output_bins.flush()
 	
 				counter = mean	= 0
@@ -44,9 +44,10 @@ def bin_weather(file_utctpth, file_utctpth_bins, binWidth):
 
 def main():
 
-	file_utctpth 			= sys.argv[1]
-	file_utctpth_bins 		= sys.argv[2]
-	binWidth 				= int(sys.argv[3])
+	file_utctpth 			= sys.argv[1] #"../../Weather/utctprh_05032020.dat"#sys.argv[1]
+	file_utctpth_bins 		= sys.argv[2] #"../../Weather/utctprh_bins_05032020_day.dat"#sys.argv[2]
+	binWidth 				= int(sys.argv[3]) #3600*24 #int(sys.argv[3])
+	
 	bin_weather(file_utctpth, file_utctpth_bins, binWidth)
   
 if __name__== "__main__":

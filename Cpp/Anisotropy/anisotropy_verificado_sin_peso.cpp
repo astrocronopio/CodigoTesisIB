@@ -33,7 +33,7 @@ void rayleigh( float *a , float *b, float *sumaN,
 	int utc,t5, iw;
 	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 
-	double fas = *freq/365.25;
+	double fas = *freq/366.2559; //Ver comentario en el otro código
 
 	double raz, arg, hrs, peso;
 
@@ -97,7 +97,7 @@ float ray_multifreq( int nf, bool flag, const char* in_file, const char* out_fil
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
      	sgmra = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN);
+     	r99r  = sqrt(4.*log(100.)/sumaN); //VER COMENTARIO EN EL OTRO CODIGO
 
      	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
      	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< endl;

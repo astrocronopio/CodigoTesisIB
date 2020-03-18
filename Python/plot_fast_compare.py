@@ -15,7 +15,7 @@ freq1, modulo1, por991 	= np.loadtxt("../Cpp/Anisotropy/AllTriggers_2019_data_fi
 plt.title(u"AllTriggers 2019. Short range. 1 EeV - 2 EeV")
 
 plt.ylabel(u"Amplitud del $1^{er}$ armónico")
-plt.xlabel(u"Período [días]")
+plt.xlabel(u"Período [días sidéreos]")
 
 
 plt.plot(freq, modulo, color="black", label=u"Sin peso", linestyle='--')
@@ -27,9 +27,12 @@ plt.plot(freq1, por991, label="P99-con", color="green", ls=':')
 
 plt.legend(loc=4)
 #plt.xlim(364.0,366.5)
-plt.axvline(x=366.25, color='lightblue', linestyle='--')
-plt.axvline(x=365.25, color='lightblue', linestyle=':')
-plt.axvline(x=364.25, color='lightblue', linestyle='--')
+plt.axvline(x=366.2559, color='green', linestyle='--') 	#	Año sidereo
+plt.axvline(x=365.242190, color='green', linestyle=':')		#	Año normal común y silvestre
 
+
+#plt.axvline(x=364.25, color='lightblue', linestyle='--')
+plt.axvline(x=364.25, color='lightblue', linestyle='--') #Frecuencia antisiderea
+#plt.axvline(x=365.2559, color='pink', linestyle=':')
 
 plt.show()

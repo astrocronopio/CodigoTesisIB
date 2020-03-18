@@ -27,9 +27,9 @@ def bin_archive_data(file_auger, file_events, binWidth):
 #_________________________________________
 
 def main():
-	file_auger 	= sys.argv[1]
-	file_events	= sys.argv[2]
-	binWidth 	= int(sys.argv[3])
+	file_auger 	= sys.argv[1] #"../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV.dat"#sys.argv[1]
+	file_events	= sys.argv[2] #"../../AllTriggers/Energy_Reconstruction/2019/Bins_day_AllTriggers_S38_over_1EeV.dat"#sys.argv[2]
+	binWidth 	= int(sys.argv[3]) #3600*24#int(sys.argv[3])
 
 	bin_archive_data(file_auger,file_events, binWidth)
 	print("Done with {}!\n".format(file_events))
