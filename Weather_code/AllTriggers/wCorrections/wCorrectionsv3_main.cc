@@ -101,11 +101,11 @@ int main(int argc, char** argv)
 
 ///======== Read event data from file =====================================================//
 ///
-	string path 				= "/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2017/AllTriggers_1EeV_2017_merged_nobp.dat";
-	string path_fit				= "../2017/weather_analysis/AllTriggers_cutted_time_S38_1EeV_all_sin2.dat";
-	string path_hour_of_the_day	= "../2017/weather_analysis/AllTriggers_cutted_time_S38_1EeV_hour_of_the_day.dat";  //
-	string path_hour_expected   = "../2017/weather_analysis/AllTriggers_cutted_time_S38_1EeV_rate_hour.dat";	 //
-	string path_rate_expected	= "../2017/weather_analysis/AllTriggers_cutted_time_S38_1EeV_rate_day.dat" ; //
+	string path 				= "/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV_cutted_merged_nobp.dat";
+	string path_fit				= "../2019/weather_analysis/AllTriggers_S38_1EeV_all_sin2.dat";
+	string path_hour_of_the_day	= "../2019/weather_analysis/AllTriggers_S38_1EeV_hour_of_the_day.dat";  //
+	string path_hour_expected   = "../2019/weather_analysis/AllTriggers_S38_1EeV_rate_hour.dat";	 //
+	string path_rate_expected	= "../2019/weather_analysis/AllTriggers_S38_1EeV_rate_day.dat" ; //
 
 	cout << "\n\nFile "<< path <<"\n\n"<< endl;
 	ifstream infiledata (path);	/// Herald
@@ -143,8 +143,8 @@ int main(int argc, char** argv)
 
 ///=========== Bin data using the Bindata class (typically in 1 hour bins)================//
 ///
-	int utcmin = 1372680308;
-	int utcmax = 1496275090;
+	int utcmin = 1388910508;//1372680308;
+	int utcmax = 1550490858;
 	int binw = 3600;	
 	Bindata Bin1hr(utcmin,utcmax,binw,iutc,iutc2,pres,den,avgden,hex6);
 

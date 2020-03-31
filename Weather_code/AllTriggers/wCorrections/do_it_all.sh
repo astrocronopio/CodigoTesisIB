@@ -7,4 +7,6 @@ make all
 ./wCorrectionsv3_main $1 4
 ./wCorrectionsv3_main $1 5
 
-./wCorrectionsv3_main 
+./wCorrectionsv3_main $1
+
+./wCorrectionsv3_main

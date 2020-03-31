@@ -45,18 +45,18 @@ file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two
 	awk 'BEGIN{i=1}
 			{	if(i>144) i=1;
 				if(NR>144)
-					print utc[i], temp[i], pre[i], rho[i], rho24[i], hex6[i], hex5[i], rhod[i], iw[i], rhodelay[i], $5;
-					utc[i]=$1;
-					temp[i]=$2;
-					pre[i]=$3;
-					rho[i]=$4;
-					rho24[i]=$5;
+					print utc[i], temp[i], pre[i], rho[i], rho24[i], hex6[i], hex5[i], rhod[i], iw[i], rhodelay[i], $5/1.0;
+					utc[i]=$1/1.0;
+					temp[i]=$2/1.0;
+					pre[i]=$3/1.0;
+					rho[i]=$4/1.0;
+					rho24[i]=$5/1.0;
 					hex6[i]=$6/5.0;
 					hex5[i]=$7/5.0;
-					rhod[i]=$8;
-					iw[i]=$9;
-					rhodelay[i]=$10;
+					rhod[i]=$8/1.0;
+					iw[i]=$9/1.0;
+					rhodelay[i]=$10/1.0;
 					i++}' test.dat > "$delay"
 #----------------------------------------------------------------------------------------------------------------
 
-##rm test.dat
+rm test.dat

@@ -14,7 +14,10 @@ color4="magenta"
 set xlabel "sin^2{/Symbol q}"
 #==============================================================================================================================
 
-filename= "../Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_1EeV_all_sin2.dat"	
+filename1= "../Weather_code/AllTriggers/2017/weather_analysis/AllTriggers_cutted_time_S38_1EeV_all_sin2.dat"	
+tit1="2017"
+filename2= "../Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_1EeV_all_sin2.dat"	
+tit2="2020"
 #==============================================================================================================================
 
 #set terminal pngcairo size 1000,750 enhanced font 'Verdana,26'
@@ -35,10 +38,11 @@ replot 	f(x)  	lc rgb "black"   		lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot 		filename		u 1:($2):3  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
-fit f7(x) 	filename		u 1:($2):3  yerror via c07, c17, c27
-replot f7(x) lc rgb '#77ac30'		lw 2 t ''
+replot 		filename1		u 1:($2):3  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t tit1
+fit f7(x) 	filename1		u 1:($2):3  yerror via c07, c17, c27
+#replot f7(x) lc rgb '#77ac30'		lw 2 t ''
 
+replot 		filename2		u 1:($2):3  w yerror 	lc rgb 'red'	pt 13  ps 4 lw 2 t tit2
 #==============================================================================================================================
 #==============================================================================================================================
 
@@ -57,9 +61,10 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 	
-replot  	filename 	u 1:4:5  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
-fit f7(x)  	filename 	u 1:4:5  yerror via c07, c17, c27
-replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
+replot  	filename1 	u 1:4:5  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t tit1
+replot  	filename2 	u 1:4:5  w yerror 	lc rgb 'red'	pt 13  ps 4 lw 2 t tit2
+fit f7(x)  	filename1 	u 1:4:5  yerror via c07, c17, c27
+#replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
 
 #==============================================================================================================================
 #==============================================================================================================================
@@ -70,7 +75,7 @@ set autoscale
 first_title="b_{/Symbol r}"
 set ylabel "b_{/Symbol r} [kg^{-1}m^{3}]"
 
-set key right bottom
+set key left top
 #set title "Parámetro ".first_title." para eventos mayores a 1 EeV"
 
 plot 			"parameter_weather.dat"		i 2			u ($0*0.15 + 0.075):1:2 	w yerror 	lc rgb "black"	pt 6   ps 4 	lw 2 t 'Aab A. et al.'
@@ -80,8 +85,9 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot 		filename	u 1:6:7  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
-fit f7(x) 	filename	u 1:6:7  yerror via c07, c17, c27
-replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
+replot 		filename1	u 1:6:7  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t tit1
+replot 		filename2	u 1:6:7  w yerror 	lc rgb 'red'	pt 13  ps 4 lw 2 t tit2
+#fit f7(x) 	filename1	u 1:6:7  yerror via c07, c17, c27
+#replot f7(x) lc rgb '#77ac30'		lw 2 t ''#
 
 pause(-1)

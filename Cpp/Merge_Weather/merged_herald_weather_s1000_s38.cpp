@@ -9,9 +9,9 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	ifstream eventdata ("../../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV_cutted.dat"); /// Archive.bz2 file already filtered by filter_by_energy.sh
+	ifstream eventdata ("../../../AllTriggers/Original_Energy/2019/AllTriggers_1EeV_2019.dat"); /// Archive.bz2 file already filtered by filter_by_energy.sh
 	ifstream utctprh ("../../../Weather/utctprh_delay.dat");/// weather info file in 5 min bins 
-	ofstream outfile ("../../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV_cutted_merged_nobp.dat"); /// output file	
+	ofstream outfile ("../../../AllTriggers/Original_Energy/2019/AllTriggers_1EeV_2019_merged_nobap.dat"); /// output file	
 
 	//ifstream eventdata 	(argv[1]);
 	//ifstream utctprh 	(argv[2]);

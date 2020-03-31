@@ -46,7 +46,7 @@ void fcn(int &npar, double *gin, double &f, double *par, int iflag)
 ///	parameters were always the reference ones
 	for (j = 0; j < fnbins; j++) {
 			//if(fbinData.nevents[j]==0)continue;
-			if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin) continue;
+			if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin || fbinData.binHex6[j] < 140) continue;
 			isumn += fbinData.nevents[j];
 			C=1.+par[0]*(fbinData.binPres[j]-kP0)+par[1]*(fbinData.binADen[j]-krho0)+par[2]*
      			(fbinData.binDen[j]-fbinData.binADen[j]);
@@ -58,7 +58,7 @@ void fcn(int &npar, double *gin, double &f, double *par, int iflag)
 		R0 = isumn/sumhex;
 	for (j = 0; j < fnbins; j++) {
 			//if(fbinData.nevents[j]==0)continue;
-			if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin) continue;
+			if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin || fbinData.binHex6[j] < 140) continue;
 			C=1.+par[0]*(fbinData.binPres[j]-kP0)+par[1]*(fbinData.binADen[j]-krho0)+par[2]*
      			(fbinData.binDen[j]-fbinData.binADen[j]);
 			ti=(fbinData.utcBinCenter[j]-futcmin)/(365.25*24*3600);
@@ -89,7 +89,7 @@ void fcn2(double *par,double *pchi2,int *pndof,TypeBinData *fitData)
 ///	parameters were always the reference ones
 	for (j = 0; j < fnbins; j++) {
 			//if(fbinData.nevents[j]==0)continue;
-		if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin) continue;
+		if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin || fbinData.binHex6[j] < 140) continue;
 		isumn += fbinData.nevents[j];
 		C=1.+par[0]*(fbinData.binPres[j]-kP0)+par[1]*(fbinData.binADen[j]-krho0)+par[2]*
      		(fbinData.binDen[j]-fbinData.binADen[j]);
@@ -101,7 +101,7 @@ void fcn2(double *par,double *pchi2,int *pndof,TypeBinData *fitData)
 	R0 = isumn/sumhex;
 	for (j = 0; j < fnbins; j++) {
 		//if(fbinData.nevents[j]==0)continue;
-		if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin) continue;
+		if(fbinData.utcBinCenter[j] > futcmax || fbinData.utcBinCenter[j] < futcmin || fbinData.binHex6[j] < 140) continue;
 		C=1.+par[0]*(fbinData.binPres[j]-kP0)+par[1]*(fbinData.binADen[j]-krho0)+par[2]*
     		(fbinData.binDen[j]-fbinData.binADen[j]);
 		ti=(fbinData.utcBinCenter[j]-futcmin)/(365.25*24*3600);

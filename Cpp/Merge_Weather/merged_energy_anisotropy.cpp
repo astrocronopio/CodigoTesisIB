@@ -4,14 +4,15 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <math.h>
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-	ifstream eventdata 	("../../AllTriggers/AllTriggers.dat");
-	ifstream utctprh 	("../../AllTriggers/AllTriggers_new.dat");
-	ofstream outfile 	("../../AllTriggers/ArchiveAllTriggers_merged_energy.dat");
+	ifstream eventdata 	("../../../AllTriggers/AllTriggers.dat");
+	ifstream utctprh 	("../../../AllTriggers/AllTriggers_new.dat");
+	ofstream outfile 	("../../../AllTriggers/ArchiveAllTriggers_merged_energy.dat");
 
 	string lineev;
 	string lineatm;
@@ -23,17 +24,17 @@ int main(int argc, char** argv)
 	{
 			getline(utctprh,lineatm);
 			stringstream satm(lineatm);
-			satm >> iutc >> E >> S38;
+			satm >> iutc >> E >> S38; // 2020
 	
 		while (!eventdata.eof() )
 		{
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
-			sevent >> utc >> Energy >> S38_ ;
+			sevent >> utc >> Energy >> S38_ ; //2017
 
 			while (!utctprh.eof() ){			
-				if(utc==iutc){			
-					outfile << utc <<'\t'<<E<<'\t'<< Energy << '\t' << S38 << '\t' << S38_ << endl;
+				if(utc==iutc && utc > ){			
+					outfile << utc <<'\t'<<log(E)<<'\t'<< log(Energy) << '\t' << log(S38) << '\t' << log(S38_) << '\t' <<  E - Energy << '\t' <<  E + Energy <<  endl;
 					outfile.flush();
 					break;
 				}
