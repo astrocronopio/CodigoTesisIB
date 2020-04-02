@@ -6,10 +6,10 @@ set xtics 60
 set xrange [:360]
 set ylabel "Weight" offset 1 
 set xlabel "Right Ascension [^o]"
-plot "../Cpp/Exposure/sideral.txt" w lp tit "Thesis"
-replot "../../Hexagons/dnhex_sideral.dat" w lp tit "Paper"
+plot "../Cpp/Exposure/sideral.txt" u 1:2  w lp tit "Thesis"
+replot "../../Hexagons/dnhex_sideral.dat" u 0:1 w lp tit "Paper"
 
-#pause(-1)
+pause(-1)
 set terminal qt 1 enhanced font 'Verdana,26' size 1000,800 
 set key right bottom
 
@@ -18,7 +18,7 @@ set xtics 3
 set xrange [:24]
 set ylabel "Weight" offset 1 
 set xlabel "Local Hour [hr]"
-plot "../Cpp/Exposure/solar.txt" u 0:2 w lp tit "Thesis" 
-replot "../../Hexagons/dnhex_solar.dat" w lp tit "Paper" 
+plot "../Cpp/Exposure/solar.txt" u 1:2 w lp tit "Thesis" 
+replot "../../Hexagons/dnhex_solar.dat" u 0:1 w lp tit "Paper" 
 
 
