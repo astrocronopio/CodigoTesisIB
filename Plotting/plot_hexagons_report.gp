@@ -154,7 +154,7 @@ replot "../../Hexagons/hexagons_2018/dnhex_solar_288.dat"  		u ($0*360/288):1 w 
 set terminal qt 10 enhanced font 'Verdana,26' size 1000,800 
 set key left  bottom sample 0.1 horiz
 
-set title "paper 2018 N=288" offset 0,-0.5
+set title "paper 2018, my thesis anti N=288" offset 0,-0.5
 set xtics 60
 set xrange [:360]
 set ylabel "Weight" offset 1 
@@ -168,7 +168,7 @@ replot "../Cpp/Exposure/anti_288.txt" 	u ($0*360/288):2 w lp tit "Anti-The"
 set terminal qt 11 enhanced font 'Verdana,26' size 1000,800 
 set key left  bottom sample 0.1 horiz
 
-set title "paper 2018, my thesis  N=288" offset 0,-0.5
+set title "paper 2018, my thesis solar N=288" offset 0,-0.5
 set xtics 60
 set xrange [:360]
 set ylabel "Weight" offset 1 
@@ -204,4 +204,29 @@ set xlabel "Right Ascension [^o]"
 
 plot "../Cpp/Exposure/anti_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
 
+
+
+set terminal qt 14 enhanced font 'Verdana,26' size 1200,800 
+set key left bottom  s 0.5
+
+set xtics 60
+set xrange [:360]
+set title "Diff:  my thesis minus paper 2018, sid N=288 " offset 0,-0.5
+set ylabel "Weight Error %" offset 1 
+set xlabel "Right Ascension [^o]"
+
+plot "../Cpp/Exposure/sideral_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
+
+
+set terminal qt 15 enhanced font 'Verdana,26' size 1000,800 
+set key left  bottom sample 0.1 horiz
+
+set title "paper 2018, my thesis sid N=288" offset 0,-0.5
+set xtics 60
+set xrange [:360]
+set ylabel "Weight" offset 1 
+set xlabel "Right Ascension [^o]"
+
+plot "../../Hexagons/hexagons_2018/dnhex_sidereal_288.dat" u ($0*360/288):1 w lp tit "Solar-18"
+replot "../Cpp/Exposure/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
 

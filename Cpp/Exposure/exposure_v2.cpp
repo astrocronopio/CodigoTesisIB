@@ -34,8 +34,8 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 
 	std::vector< double>num_hex(interval);
 
-	 long  iutc;
-	 double hex6, hex5;
+	long  iutc;
+	double hex6, hex5;
 	int iw,ib, ang;
 	string line;
 	double t,p,r,rav,x2,x3;
@@ -50,16 +50,14 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
-
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2;//>>x3;
+			//cout << iutc <<endl;
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
-				
-				x1= right_ascension(iutc);
-				cout << iutc <<endl;
-				ang =  int(x1*interval/288.);
+				x3= right_ascension(iutc);
+				ang =  int(x3*interval/360.);
+			//	cout << ang << endl;
 				num_hex[ang] += hex6;
-				//myfile <<setprecision (17)<<  x1 << endl;
 			}
 		}
 	}
@@ -122,7 +120,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 			}
 		}
 	}
-	cout << "llegué" <<endl;
+
 	for (int i = 0; i < interval; ++i)
 	{	
 		rnhexhr[i]+=num_hex_hr[i];
@@ -165,20 +163,20 @@ int main(int argc, char const *argv[])
 */
 
 
-	 interval = 288;
+	interval = 288;
 	const char* out_file_S_2 	= "./sideral_288.txt";
-	const char* out_file_2 		= 	"./solar_288.txt";
-	const char* out_file_a_2 	= 	 "./anti_288.txt";
+	//const char* out_file_2 		= 	"./solar_288.txt";
+	//const char* out_file_a_2 	= 	 "./anti_288.txt";
 
 	std::cout << "Sidereal "<< std::endl;
-	exposure_given_period(T_S, out_file_S_2, utci, utcf, interval);
+	exposure_sideral( out_file_S_2, utci, utcf, interval);
 	
 	std::cout << "Solar "<< std::endl;
 
-	exposure_given_period(T_D, out_file_2, utci, utcf, interval);
+	//exposure_given_period(T_D, out_file_2, utci, utcf, interval);
 	std::cout << "Anti-sidereal "<< std::endl;
 	
-	exposure_given_period(T_A, out_file_a_2, utci, utcf, interval);
+	//exposure_given_period(T_A, out_file_a_2, utci, utcf, interval);
 
 	return 0;
 }
