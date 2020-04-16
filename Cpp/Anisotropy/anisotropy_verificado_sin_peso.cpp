@@ -3,24 +3,15 @@
 #include <string>
 #include <sstream>
 #include <math.h>
+#include "../Exposure/exposure_pc_paper.cpp"
 
 
 using namespace std;
 
-float pi 	= M_PI;
-float d2r 	= pi/180.0;
-float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
-
-double T_S	= 23.9344696,  T_D 	= 24.0;
 
 
-double right_ascension(unsigned long utc, unsigned long iutcref)
-{
-	double raz = double(utc-iutcref)/239.345 + 31.4971;
-	raz = raz - floor(raz/360.)*360.;
-	if(raz<0.0) raz = raz + 360;
-	return raz;
-}
+double T_S_dia	= 23.9344696,  T_D_dia 	= 24.0;
+
 
 
 void rayleigh( float *a , float *b, float *sumaN,
@@ -54,7 +45,7 @@ void rayleigh( float *a , float *b, float *sumaN,
 			peso =1.0;
 			
 			*sumaN+=peso;
-			raz = right_ascension(utc, iutcref);
+			raz = right_ascension(utc);
 
 			arg = 2.0*pi*hrs/T_D + (Ra-raz)*d2r;
 			*a +=cos(arg)*peso;

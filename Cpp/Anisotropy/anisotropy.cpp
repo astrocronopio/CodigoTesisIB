@@ -13,8 +13,8 @@ float Bb	= 1.03;
 float P0 	= 862.0;
 float rho0	= 1.06;
 
-float T_S	= 23.9344696;
-float T_D 	= 24.0;
+float T_S_dia	= 23.9344696;
+float T_D_dia 	= 24.0;
 
 const char* in_file = "../../Herald/Central/Modified/Energy_above_1EeV/Old_herald_8EeV_oscar.dat";
 const char* out_file= "../../Anisotropy/ICRC/2015/ICRC2015_data_file_Eraw_new_exp.txt" ;

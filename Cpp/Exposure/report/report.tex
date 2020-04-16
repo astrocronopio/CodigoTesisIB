@@ -1,0 +1,143 @@
+\input{Preamble.sty}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Título%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Pesos de los hexágonos}
+\author{Evelyn~G.~Coronel}
+
+\affiliation{
+Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
+
+\date[]{\lowercase{\today}} %%lw para lw, [] sin date
+
+%\begin{abstract}
+
+%\end{abstract} 
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
+
+
+\section{Dudas sobre los pesos}
+
+¿Por qué verifico esto? Los pesos son importantes para el cálculo de anisotropías, porque las anisotropías son pequeñas y eliminar todo factor espúreo es importante.
+
+¿Por qué me trabé tanto? Cuando uso sólo 24 bines, los números entre el paper del 2018 y los que obtengo con mi código son parecidos. En cambio cuando otro bineado, como 360 bines, con el mismo código, hay una diferencia entre lo que se obtiene en el paper mencionado y el mi tesis.
+
+¿Por qué creo que está pasando esto? Si el código funciona para 24 bines, como se muestra en la Fig.\,\ref{fig:all_24}, y cuando sólo cambio la cantidad de bines, como en las Fig.\,\ref{fig:sid_360} y \ref{fig:anti_360}, se ve que sigue la misma tendencia pero no los mismos números. Yo lo que yo creo es que tiene que ver con la precisión del cálculo. Para calcular cada punto, se realiza una división entre dos números, i.e. 
+\begin{equation}
+	\Delta N = \frac{\text{Los hexágonos integrados en un bin}}{\text{Todos los hexágonos integrados para cada bin}}
+\end{equation}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{solar_anti_sid_my_and_paper_in_24.png}
+	\caption{Usando 24 bines para las frecuencias sidérea, anti-sidérea y solar, se compara el paper del 2018 con lo que obtengo en la tesis.}
+	\label{fig:all_24}
+\end{figure}
+
+
+En el caso de $N=24$, son dos números grandes, por lo tanto solo importan los primeros número a izquierda, pero para  $N=360$ es como menor. Durante la ejecución del programa, para cada valor de utc, se calcula a que bin corresponde esa entrada; verifiqué que el programa del paper y mío fuera iguales a cada paso, y constaté que no había diferencias.
+
+Debido a esto, mi hipótesis es la diferencia entre ambos códigos es por la suma de hexágonos. Lo que me causa ruido de esto es que la diferencia entre los puntos del paper y de mi código, para la frecuencia sidérea,  no es ruido centrado en cero como esperaría que fuera si es un error en la precisión, como se muestra en la Fig.\ref{fig:error_360_sid}, lo que me hace dudar de mi hipótesis. En cambio para la frecuencia anti-sidérea, como se ve en la Fig.\ref{fig:error_360_anti}, el error no tiene ninguna modulación.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{sidereal_my_and_paper_in_360.png}
+	\caption{Usando 360 bines para la frecuencia sidérea.}
+	\label{fig:sid_360}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{sidereal_my_and_paper_in_360_error.png}
+	\caption{Usando los valores del paper como referencia, calculé el error porcentual con lo que yo obtengo para la frecuencia sidérea.}
+	\label{fig:error_360_sid}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{anti_my_and_paper_in_360.png}
+	\caption{Usando 360 bines}
+	\label{fig:anti_360}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{anti_my_and_paper_in_360_error.png}
+	\caption{Usando los valores del paper como referencia, calculé el error porcentual de la frecuencia anti-sidérea.}
+	\label{fig:error_360_anti}
+\end{figure}
+
+
+
+\section{Duda sobre los algoritmos}
+
+Contexto: Yo quiero hacer el análisis de los pesos de los hexágonos para distintas frecuencias, por lo que esperaría que para cada frecuencia a analizar se utilice el mismo algoritmo para todos.
+
+Mi duda: En el código del paper 18, el algoritmo hace distinción entre la frecuencia sidérea y las demás. Comparando ambos algoritmos, como se muestra en la Fig.\,\ref{fig:alter_24}, se ve que ambos dan un resultado similar para los pesos de los hexágonos a menos de un desfase de $75^o$ o $5\,$hrs sidéreas. Los gráficos de esta figura se hicieron con el mismo data set.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{sidereal_paper_in_24_w_alter.png}
+	\caption{Comparando el algoritmo alternativo con el utilizado en el paper 18 con resultados del mismo paper, para 24 bines.}
+	\label{fig:alter_24}
+\end{figure}
+
+
+Otra cosa que me resultó curiosa fue que usando $N=360$, tengo problemas con la frecuencia solar, donde aparecen 0 cada 5 min, coincide con el rate de actualización del archivo de weather. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{solar_my_and_paper_in_360_2.png}
+	\caption{Usando 360 bines, nótese que la media es distinta a la figura anterior.}
+	\label{fig:solar_360}
+\end{figure}
+
+\section{El bineado 288}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{solar_anti_sid_paper2018_in_288.png}
+	\caption{caption}
+	\label{fig:all_288_paper}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{solar_my_and_paper_2018_in_288.png}
+	\caption{solar}
+	\label{fig:solar_288}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{solar_my_and_paper_in_288_error.png}
+	\caption{caption}
+	\label{fig:error_288_solar}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{anti_my_and_paper_2018_in_288.png}
+	\caption{anti}
+	\label{fig:anti_288}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{anti_my_and_paper_in_288_error.png}
+	\caption{caption}
+	\label{fig:error_288_anti}
+\end{figure}
+
+\end{document}

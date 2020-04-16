@@ -29,12 +29,12 @@ long double T_S	= 366.25,  T_D = 365.25,  T_A=364.25 ;
 }
 
 
-void exposure_sideral( const char* out_file, unsigned long utci, unsigned long utcf)
-{ 	int inter= 360;
+void exposure_sideral( const char* out_file, unsigned long utci, unsigned long utcf, int interval)
+{ 	ofstream myfile (out_file);
 
-	ofstream myfile (out_file);
+	double bandwidth= 360/interval;
 
-	std::vector<long double>num_hex(inter, (long double)0.0);
+	std::vector<long double>num_hex(interval);
 
 	unsigned long  utc;
 	long double hex6, hex5;
@@ -43,7 +43,7 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 	double t,p,r,rav,x2,x3;
 	double x1;
 
-	ifstream myweather("../../../Hexagons/utctprhdrc_010104_140916.dat");
+	ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
 
 	if(myweather.is_open())
 	{	
@@ -57,8 +57,8 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 			if (ib==1 &&  iw<5){
 
 				x1= right_ascension(utc);
-				ang =  int(x1)%360;
-				if(hex6>1.0) num_hex[ang] = num_hex[ang] + hex6;
+				ang =  int(x1/bandwidth);
+				num_hex[ang] += hex6;
 				//myfile <<setprecision (17)<<  x1 << endl;
 			}
 		}
@@ -66,13 +66,18 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 
 	long double mean_ra = (long double)0.0;
 
-	for (int i = 0; i < inter; ++i){mean_ra+= num_hex[i]/(long double)360.000; }//cout << setprecision (17)<<num_hex[i] <<"\t" <<mean_ra << endl; }
-	for (int i = 0; i < inter; ++i) myfile <<setprecision (17)<<  i <<"\t"<< num_hex[i]/mean_ra << "\t" << num_hex[i]<<  endl;
+	for (int i = 0; i < interval; ++i)
+		{mean_ra+= num_hex[i]; } 
+		mean_ra=mean_ra/(long double)interval; //cout << setprecision (17)<<num_hex[i] <<"\t" <<mean_ra << endl; }
+	for (int i = 0; i < interval; ++i) myfile <<setprecision (17)<<  i <<"\t"<< num_hex[i]/mean_ra << "\t" << num_hex[i]<<  endl;
+
+	myfile.close();
 }	
 
-/*
-void exposure_given_period(float freq, const char* out_file, unsigned long utci, unsigned long utcf)
-{ 	int interval= 24; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
+
+void exposure_given_period(float freq, const char* out_file, unsigned long utci, unsigned long utcf, int interval)
+{ 	//int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
+	double bandwidth= 360/interval;
 
 	vector<long double> dnhex(interval);
 
@@ -83,29 +88,35 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 
 	unsigned long iutc, iutc0 = 1072915200;
 	float t,p,r,rav,hex6, hex5;
-	int iw,ib, ihr;
+	int iw,ib, ihr, aux;
 	string line;
 	float fas = freq/365.25;
 	long double x1,x2,x3;
 	long double integral=0.0;
 
-	ifstream myweather("../../../Hexagons/utctprhdrc_010104_140916.dat");
+	ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
 
 	if(myweather.is_open())
 	{	
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2>>x3;
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
 				
-				x1=((long double)(iutc-iutc0)/3600.+ 21.)*fas; // hora local
+				x1=((long double)(iutc-iutc0)/3600.+ 21.)*fas*360.0/24.0; // hora local
 				
-				ihr =  int(x1)%interval;
+				ihr =  int(x1)%360 >= 0 ? int(x1)%360 :  360+int(x1)%360  ;
+				aux=  int(ihr/bandwidth);
+				num_hex_hr[aux]+=hex6;
+			
+				if(num_hex_hr[aux]>(long double) 1 ) {
+					rnhexhr[aux]+=num_hex_hr[aux];
+					num_hex_hr[aux]=0;
+				}
 
-				if (hex6>00.0) rnhexhr[ihr]+=hex6;
 			}
 		}
 	}
@@ -116,22 +127,47 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 		integral+=rnhexhr[i]/((float)interval); 
 	}
 
-	for (int i = 0; i < interval; ++i) myfile <<setprecision (17)<< i << "\t" <<rnhexhr[i]/integral<<  endl;
-}*/
+	for (int i = 0; i < interval; ++i){myfile <<setprecision (17)<< i << "\t" <<rnhexhr[i]/integral<<  endl;}
+
+	//myfile.close();
+}
 
 
 int main(int argc, char const *argv[])
 {
-	const char* out_file_S = "./sideral.txt";
+	
 	
 	unsigned long utci =  1104537600; //2005
 	unsigned long utcf =  1451606400; //2016
+	
+	int interval = 24;
+	const char* out_file_S 	= "./sideral_24.txt";
+	const char* out_file 	= 	"./solar_24.txt";
+	const char* out_file_a 	= 	 "./anti_24.txt";
 
-	exposure_sideral(out_file_S, utci, utcf);
+	exposure_sideral(out_file_S, utci, utcf, interval);
+	exposure_given_period(T_D, out_file, utci, utcf, interval);
+	exposure_given_period(T_A, out_file_a, utci, utcf, interval);
+	
 
-	const char* out_file = "./solar.txt";
 
-	//exposure_given_period(T_D, out_file, utci, utcf);
+	interval = 360;
+	const char* out_file_S_1 	= "./sideral_360.txt";
+	const char* out_file_1 		= 	"./solar_360.txt";
+	const char* out_file_a_1 	= 	 "./anti_360.txt";
+	exposure_sideral(out_file_S_1, utci, utcf, interval);
+	exposure_given_period(T_D, out_file_1, utci, utcf, interval);
+	exposure_given_period(T_A, out_file_a_1, utci, utcf, interval);
+	
+
+
+	interval = 288;
+	const char* out_file_S_2 	= "./sideral_288.txt";
+	const char* out_file_2 		= 	"./solar_288.txt";
+	const char* out_file_a_2 	= 	 "./anti_288.txt";
+	exposure_sideral(out_file_S_2, utci, utcf, interval);
+	exposure_given_period(T_D, out_file_2, utci, utcf, interval);
+	exposure_given_period(T_A, out_file_a_2, utci, utcf, interval);
 	
 	return 0;
 }
