@@ -230,3 +230,36 @@ set xlabel "Right Ascension [^o]"
 plot "../../Hexagons/hexagons_2018/dnhex_sidereal_288.dat" u ($0*360/288):1 w lp tit "Solar-18"
 replot "../Cpp/Exposure/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
 
+
+
+
+set terminal qt 16 enhanced font 'Helvetica,26' size 1000,800 
+set key left bottom sample 0.1 horiz
+
+#set title "  " offset 0,-0.5
+set xtics 60
+set xrange [:360]
+set ylabel "Weight" offset 1 
+set xlabel "Right Ascension [^o]"
+
+plot 	"../Cpp/Exposure/sideral_2019_report_on_anisotropy_288.txt" 		u ($0*360/288):2 w lp tit "Sid"
+replot 	"../Cpp/Exposure/anti_2019_report_on_anisotropy_288.txt"	 		u ($0*360/288):2 w lp tit "Anti"
+replot 	"../Cpp/Exposure/solar_2019_report_on_anisotropy_288.txt"  		u ($0*360/288):2 w lp tit "Solar"
+
+
+
+
+
+set terminal qt 17 enhanced font 'Helvetica,26' size 1000,800 
+set key left bottom sample 0.1
+
+#set title "  " offset 0,-0.5
+set xtics 60
+set xrange [:360]
+set ylabel "Weight" offset 1 
+set xlabel "Right Ascension [^o]"
+
+plot 	"../Cpp/Exposure/sideral_2019_report_on_anisotropy_288extended.txt" 		u ($0*360/288):2 w lp tit "Sid"
+replot 	"../Cpp/Exposure/anti_2019_report_on_anisotropy_288extended.txt"	 		u ($0*360/288):2 w lp tit "Anti"
+replot 	"../Cpp/Exposure/solar_2019_report_on_anisotropy_288extended.txt"  		u ($0*360/288):2 w lp tit "Solar"
+

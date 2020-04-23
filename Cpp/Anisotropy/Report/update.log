@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  22 APR 2020 08:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  23 APR 2020 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,7 +714,11 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 3.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 3.
-(./update.aux)
+(./update.aux
+
+LaTeX Warning: Label `fig:48w' multiply defined.
+
+)
 \openout1 = `update.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -729,8 +733,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen139
@@ -826,7 +829,7 @@ Class revtex4-1 Info: Line numbering not turned on yet on input line 3.
 \openout3 = `updateNotes.bib'.
 
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -834,7 +837,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -842,26 +845,87 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+<pesos_side_sola_anti.png, id=1, 752.8125pt x 494.59781pt>
+File: pesos_side_sola_anti.png Graphic file (type png)
+<use pesos_side_sola_anti.png>
+Package pdftex.def Info: pesos_side_sola_anti.png  used on input line 59.
+(pdftex.def)             Requested size: 255.0pt x 167.53462pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+<2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png, id=2, 650.43pt x 433.62pt>
+File: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png Graphic file (type png)
+<use 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>
+Package pdftex.def Info: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png  used on 
+input line 71.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 71--72
+ [][] 
+ []
+
+<2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png, id=4, 650.43pt x 433.62pt>
+File: 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png Graphic file (type png)
+<use 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png>
+Package pdftex.def Info: 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png  used on 
+input line 82.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pesos_side_sola_anti.p
+ng (PNG copy)> <./2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png> <./2019_AllTrig
+gers_2_4_EeV_con_vs_sin_peso.png>]
+<2019_Main_Array_4_8_EeV_con_vs_sin_peso.png, id=17, 650.43pt x 433.62pt>
+File: 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png Graphic file (type png)
+<use 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png>
+Package pdftex.def Info: 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png  used on i
+nput line 96.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 96--97
+ [][] 
+ []
+
+<2019_Main_Array_8_EeV_con_vs_sin_peso.png, id=18, 650.43pt x 433.62pt>
+File: 2019_Main_Array_8_EeV_con_vs_sin_peso.png Graphic file (type png)
+<use 2019_Main_Array_8_EeV_con_vs_sin_peso.png>
+Package pdftex.def Info: 2019_Main_Array_8_EeV_con_vs_sin_peso.png  used on inp
+ut line 108.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 108--109
+ [][] 
+ []
+
 No file update.bbl.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./update.aux) ) 
+[2 <./2019_Main_Array_4_8_EeV_con_vs_sin_peso.png> <./2019_Main_Array_8_EeV_con
+_vs_sin_peso.png>] (./update.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9478 strings out of 494774
- 138347 string characters out of 6176661
- 350846 words of memory out of 5000000
- 12629 multiletter control sequences out of 15000+600000
- 11617 words of font info for 49 fonts, out of 8000000 for 9000
+ 9570 strings out of 494774
+ 140295 string characters out of 6176661
+ 354955 words of memory out of 5000000
+ 12693 multiletter control sequences out of 15000+600000
+ 14920 words of font info for 68 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
- 46i,7n,42p,273b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on update.pdf (1 page, 62758 bytes).
+ 46i,7n,42p,611b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on update.pdf (2 pages, 502945 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11265 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 12826 words of extra memory for PDF output out of 14400 (max. 10000000)
 

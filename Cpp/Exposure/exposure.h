@@ -42,14 +42,14 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 
 	long long iutcref = 1104537600;
 
-	ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
+	ifstream myweather("../../../Weather/utctprh_05032020.dat");
 
 	if(myweather.is_open())
 	{	
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2;//>>x3;
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2>>x3;
 			//cout << iutc <<endl;
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
@@ -92,14 +92,15 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 	long double x1,x2,x3;
 	long double integral=0.0;
 
-	ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
+	//ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
+	ifstream myweather("../../../Weather/utctprh_05032020.dat");
 
 	if(myweather.is_open())
 	{	
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
@@ -111,8 +112,8 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 				aux=ihr;
 				num_hex_hr[aux]+=hex6;
 				
-				if(num_hex_hr[aux]> 1 ) {
-					rnhexhr[aux]+=num_hex_hr[aux];
+				if(num_hex_hr[aux]> 1000000 ) {
+					rnhexhr[aux]+=num_hex_hr[aux]/1000000.0;
 					num_hex_hr[aux]=0;
 				}
 
@@ -122,7 +123,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 
 	for (int i = 0; i < interval; ++i)
 	{	
-		rnhexhr[i]+=num_hex_hr[i];
+		rnhexhr[i]+=num_hex_hr[i]/1000000.0;
 		integral+=rnhexhr[i]/((float)interval); 
 	}
 

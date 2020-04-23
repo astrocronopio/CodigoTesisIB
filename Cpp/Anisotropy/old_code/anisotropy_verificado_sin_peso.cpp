@@ -3,32 +3,15 @@
 #include <string>
 #include <sstream>
 #include <math.h>
-//#include "../Exposure/exposure_pc_paper.cpp"
+#include "../../Exposure/exposure.h"
 
 
 using namespace std;
 
-//Global Parameters
-float pi 	= M_PI;
-float d2r 	= pi/180.0;
-float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
 
 double T_S_dia	= 23.9344696,  T_D_dia 	= 24.0;
 
-//Frequency in SIDEREAL DAYS
-long double T_S	= 366.25,  T_D = 365.25,  T_A=364.25 ;
-
-double right_ascension(long long utc){	
-	long long iutcref = 1104537600;
-	double aux= (utc-iutcref);
-
-	double raz = aux/239.345 + 31.4971;
-
-	raz = raz - int(raz/360.)*360.00;
-	if(raz<0.0) raz = raz + 360.00;
-	return raz;
-}
 
 
 void rayleigh( float *a , float *b, float *sumaN,

@@ -11,7 +11,7 @@ float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
-double T_S	= 23.9344696,  T_D 	= 24.0;
+double T_D 	= 24.0;
 
 //const char* in_file = "../../AllTriggers/AllTriggers_8EeV.dat";
 //const char* out_file= "AllTriggers_Oscar_data_file_Eraw_8EeV_hex_short_range.txt" ;
@@ -19,15 +19,16 @@ double T_S	= 23.9344696,  T_D 	= 24.0;
 const int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned long utcf, float period)
-{ 
+{ 	double bandwidth= 360.0/interval;
+
 	std::vector<long double>num_hex_hr(interval);
 	std::vector<long double>rnhexhr(interval);
 
 	unsigned long iutc, iutc0 = 1072915200;
 	float t,p,r,rav,hex6, hex5;
-	int iw,ib, ihr;
+	int iw,ib, ihr, aux;
 	string line;
-	float fas = period/366.2559; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
+	float fas = period/365.25; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
 	long double x1,x2,x3;
 	long double integral=0.0;
 
@@ -38,30 +39,30 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>x1>>x2>>x3;
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
-			if (iw<5 && ib>0.5){
+			if (iw<5 && ib==1){
 				
-				x1=(float(iutc-iutc0)/3600.+ 2.099807)*fas; //31.4971*24/360 es la hora siderea 2,099806667
+				x1=((long double)(iutc-iutc0)/3600.+ 21.)*fas*interval/24.0; // hora local
 				
-				if (x1>=0)	ihr =  int(x1)%interval ;
-				else ihr =  interval +int(x1)%interval; 	
-
-				num_hex_hr[ihr] += hex6;  ///ATENDE ACA  QUE TENES QUE CAMBIAR CUANDO A 1-2 EeV
-
-				if (num_hex_hr[ihr]>1.0)
-				{
-					rnhexhr[ihr]+=num_hex_hr[ihr];
-					num_hex_hr[ihr]=0.0;
+				ihr =  int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
+				//aux=  int(ihr/bandwidth);
+				aux=ihr;
+				num_hex_hr[aux]+=hex6;
+				
+				if(num_hex_hr[aux]> 1000000 ) {
+					rnhexhr[aux]+=num_hex_hr[aux]/1000000.0;
+					num_hex_hr[aux]=0;
 				}
+
 			}
 		}
 	}
 
 	for (int i = 0; i < interval; ++i)
 	{	
-		rnhexhr[i]+=num_hex_hr[i];
+		rnhexhr[i]+=num_hex_hr[i]/1000000.0;
 		integral+=rnhexhr[i]/((float)interval); 
 	}
 
@@ -69,14 +70,16 @@ void exposure_weight(vector<long double> & vect, unsigned long utci, unsigned lo
 	for (int i = 0; i < interval; ++i) vect[i] = rnhexhr[i]/integral;
 }
 
-double right_ascension(unsigned long utc, unsigned long iutcref)
-{
-	double raz = double(utc-iutcref)/239.345 + 31.4971;
-	raz = raz - floor(raz/360.)*360.;
-	if(raz<0.0) raz = raz + 360;
+double right_ascension(long long utc){	
+	long long iutcref = 1104537600;
+	double aux= (utc-iutcref);
+
+	double raz = aux/239.345 + 31.4971;
+
+	raz = raz - int(raz/360.)*360.00;
+	if(raz<0.0) raz = raz + 360.00;
 	return raz;
 }
-
 
 void rayleigh( float *a , float *b, float *sumaN, 
 				float *freq, unsigned long utci, unsigned long utcf,
@@ -88,8 +91,7 @@ void rayleigh( float *a , float *b, float *sumaN,
 	int utc,t5, iw, nh;
 	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 
-	double fas = *freq/366.2559, raz, arg, hrs, peso; 	//cambie de 265.25 a este valor, 
-														//es acá donde da una vuelta en el circulo sidereo
+	double fas = *freq/365.25, raz, arg, hrs, peso; 													
 
 	ifstream myfile (in_file);
 	//ifstream myfile ("../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");
@@ -108,16 +110,16 @@ void rayleigh( float *a , float *b, float *sumaN,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs= (float(utc - utc0)/3600.0 + 31.4971*T_D/360.0)*fas;
-
-			if (int(hrs)%interval>=0) nh= (int(hrs)%interval); else  	nh=interval+(int(hrs)%interval)  ;
-		
+			hrs=((double)(utc-utc0)/3600.+ 21.)*fas; // hora local
+				
+			nh=  int(hrs*interval/24.0)%interval >= 0 ? int(hrs*interval/24.0)%interval :  interval+int(hrs*interval/24.0)%interval  ;
+				//aux=  int(ihr/bandwidth);
 			peso =1.0/dnhex[nh];
 			
 			*sumaN+=peso;
-			raz = right_ascension(utc, iutcref);
+			raz = right_ascension(utc);
 
-			arg = 2.0*pi*hrs/T_D + (Ra-raz)*d2r;
+			arg = 2.0*pi*hrs/24. + (Ra-raz)*d2r;
 			*a +=cos(arg)*peso;
 			*b +=sin(arg)*peso;
 			}
@@ -127,8 +129,8 @@ void rayleigh( float *a , float *b, float *sumaN,
 }
 
 float ray_multifreq( int nf, bool flag, const char* in_file, const char* out_file){
-	unsigned long utci =  flag ? 1372680068 :  1072959037;
-	unsigned long utcf =  1577836799 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	unsigned long utci =  1104537600; //1372699409 ;
+	unsigned long utcf =  1577825634 ;
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
@@ -172,7 +174,7 @@ int main(int argc, char const *argv[])
 	const char* in_file = argv[1];
 	const char* out_file= argv[2];
 
-	ray_multifreq(250, true, in_file, out_file);
+	ray_multifreq(500, true, in_file, out_file);
 	
 	return 0;
 }
