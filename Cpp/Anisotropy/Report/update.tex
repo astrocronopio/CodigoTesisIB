@@ -36,6 +36,23 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
 \section{Anisotropías  considerando el peso de los hexágonos}
 
+\subsection{Verificando que todo funcione como debe}
+
+
+%Efectos espúreos: Por un lado estan esos piquitos chiquitos, que parecen ser algun problema numerico. Por otro hay todavia demasiados picos arriba de la linea de 99%.
+
+
+%Se me ocurren dos checks que podrias hacer:
+
+\subsubsection{Comparando con los datos de Oscar}
+% 	1-  Uno, que tal vez ya hiciste, es correr tu programa en los datos que uso Oscar y ver de repetir los plots para las dos energias arriba de full efficiency (4-8 y >8)  para ver que el programa funciona igual
+
+\subsubsection{¿Análisis en frecuencia de los hexágonos?}
+% 	2- Otra prueba que podrias hacer es hacer un  analisis en frecuencia  similar al que hiciste pero para la modulacion de hexagonos sola. Esto seria para ver que no hay cosas raras en el rate de hexagonos de estos datos. No tengo del todo claro como se haria. En vez de hacer la suma de senos y cosenos en los tiempos del zenit cuando llega un evento como ahora, habria que hacer esas sumas en un espaciado constante de tiempo (podrian ser los 5' en que estan bineados, y los pesos deberian ser proporcional a la cantidad de hexagonos. Pensalo un poco como se podria implementar y si queres lo charlamos despues.
+
+
+
+
 \subsection{Variación de los pesos en función de la ascensión recta}
 En las figuras de esta sección se muestran el análisis en ascensión recta para los eventos de observatorio considerando las variaciones de la exposición. 
 Los mismos se hicieron en el mismo intervalo de tiempo para poder compararlos entre sí. Elegí el rango presentado en la Tabla \ref{rango_corto}  porque en el mismo se encuentran todos los eventos filtrados por energía, por bad period, por reconstrucción correcta, etc. El rango empieza en el 2013 porque la última versión del archivo de todos los disparos empezó a registrarse desde el  1 de Julio del 2013 a las 12:01:08 GMT (1372680068) hasta el  1 de enero del 2020 a las 11:59:43 (1577879983). Mientras que el archivo del disparo estándar va desde el 01 de enero del 2004.
@@ -106,8 +123,8 @@ Para este caso utilizamos el archivo con el disparo estandar
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{2019_Main_Array_8_EeV_con_vs_sin_peso.png}
-	\caption{Disparos estándar: entre 1 EeV y 2 EeV}
-	\label{fig:48w}
+	\caption{Disparos estándar: encima de 8 EeV}
+	\label{fig:8w}
 \end{figure}
 %fig
 
@@ -116,7 +133,8 @@ Para este caso utilizamos el archivo con el disparo estandar
 
 \subsection{Ampliando el rango de tiempo para el archivo del disparo estándar}
 
-Amplié el rango de tiempo para poder compararlo con los gráficos anteriores, ya que se espera que mientras mayor sea el rango de tiempo
+Amplié el rango de tiempo para poder compararlo con los gráficos anteriores, ya que se espera que mientras mayor sea el rango de tiempo los efectos espúreos disminuyen.
+
 	\begin{table}[H]
 	\centering
 		\begin{tabular}{c|c|c|c}
@@ -125,5 +143,28 @@ Amplié el rango de tiempo para poder compararlo con los gráficos anteriores, y
 	Final 	& 1577825634	&2019-12-31 	&20:53:54		\\
 		\end{tabular}
 	\end{table}
+
+
+\subsubsection{Energía entre 4\,EeV y 8\,EeV}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png}
+	\caption{Disparos estándar: entre 4 EeV y 8 EeV extendiendo el rango hasta el 2005}
+	\label{fig:48w_extended}
+\end{figure}
+%fig
+
+\subsubsection{Energía sobre 8\,EeV}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png}
+	\caption{Disparos estándar: encima de 8 EeV extendiendo el rango hasta el 2005}
+	\label{fig:8w_extended}
+\end{figure}
+%fig
+
 
 \end{document}

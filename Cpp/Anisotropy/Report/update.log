@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  23 APR 2020 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  23 APR 2020 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,11 +714,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 3.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 3.
-(./update.aux
-
-LaTeX Warning: Label `fig:48w' multiply defined.
-
-)
+(./update.aux)
 \openout1 = `update.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -733,7 +729,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen139
@@ -829,7 +826,7 @@ Class revtex4-1 Info: Line numbering not turned on yet on input line 3.
 \openout3 = `updateNotes.bib'.
 
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -837,7 +834,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -848,10 +845,10 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <pesos_side_sola_anti.png, id=1, 752.8125pt x 494.59781pt>
 File: pesos_side_sola_anti.png Graphic file (type png)
 <use pesos_side_sola_anti.png>
-Package pdftex.def Info: pesos_side_sola_anti.png  used on input line 59.
+Package pdftex.def Info: pesos_side_sola_anti.png  used on input line 76.
 (pdftex.def)             Requested size: 255.0pt x 167.53462pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 59--60
+Overfull \hbox (9.0pt too wide) in paragraph at lines 76--77
  [][] 
  []
 
@@ -859,10 +856,10 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 59--60
 File: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png Graphic file (type png)
 <use 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>
 Package pdftex.def Info: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png  used on 
-input line 71.
+input line 88.
 (pdftex.def)             Requested size: 255.0pt x 169.99773pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 71--72
+Overfull \hbox (9.0pt too wide) in paragraph at lines 88--89
  [][] 
  []
 
@@ -870,62 +867,86 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 71--72
 File: 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png Graphic file (type png)
 <use 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png>
 Package pdftex.def Info: 2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png  used on 
-input line 82.
+input line 99.
 (pdftex.def)             Requested size: 255.0pt x 169.99773pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 82--83
+Overfull \hbox (9.0pt too wide) in paragraph at lines 99--100
  [][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pesos_side_sola_anti.p
-ng (PNG copy)> <./2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png> <./2019_AllTrig
-gers_2_4_EeV_con_vs_sin_peso.png>]
-<2019_Main_Array_4_8_EeV_con_vs_sin_peso.png, id=17, 650.43pt x 433.62pt>
+ng (PNG copy)> <./2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>]
+<2019_Main_Array_4_8_EeV_con_vs_sin_peso.png, id=16, 650.43pt x 433.62pt>
 File: 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png Graphic file (type png)
 <use 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png>
 Package pdftex.def Info: 2019_Main_Array_4_8_EeV_con_vs_sin_peso.png  used on i
-nput line 96.
+nput line 113.
 (pdftex.def)             Requested size: 255.0pt x 169.99773pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 96--97
+Overfull \hbox (9.0pt too wide) in paragraph at lines 113--114
  [][] 
  []
 
-<2019_Main_Array_8_EeV_con_vs_sin_peso.png, id=18, 650.43pt x 433.62pt>
+<2019_Main_Array_8_EeV_con_vs_sin_peso.png, id=17, 650.43pt x 433.62pt>
 File: 2019_Main_Array_8_EeV_con_vs_sin_peso.png Graphic file (type png)
 <use 2019_Main_Array_8_EeV_con_vs_sin_peso.png>
 Package pdftex.def Info: 2019_Main_Array_8_EeV_con_vs_sin_peso.png  used on inp
-ut line 108.
+ut line 125.
 (pdftex.def)             Requested size: 255.0pt x 169.99773pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 108--109
+Overfull \hbox (9.0pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
+<2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png, id=18, 650.43pt x 433.62
+pt>
+File: 2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png Graphic file (type p
+ng)
+<use 2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png>
+Package pdftex.def Info: 2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png  
+used on input line 152.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 152--153
+ [][] 
+ []
+
+<2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png, id=19, 650.43pt x 433.62pt
+>
+File: 2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png Graphic file (type png
+)
+<use 2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png>
+Package pdftex.def Info: 2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png  us
+ed on input line 163.
+(pdftex.def)             Requested size: 255.0pt x 169.99773pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 163--164
+ [][] 
+ []
+
+[2 <./2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png> <./2019_Main_Array_4_8_EeV_
+con_vs_sin_peso.png> <./2019_Main_Array_8_EeV_con_vs_sin_peso.png> <./2019_Main
+_Array_4_8_EeV_con_vs_sin_peso_extended.png>]
 No file update.bbl.
-[2 <./2019_Main_Array_4_8_EeV_con_vs_sin_peso.png> <./2019_Main_Array_8_EeV_con
-_vs_sin_peso.png>] (./update.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[3 <./2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png>] (./update.aux) ) 
 Here is how much of TeX's memory you used:
- 9570 strings out of 494774
- 140295 string characters out of 6176661
- 354955 words of memory out of 5000000
- 12693 multiletter control sequences out of 15000+600000
- 14920 words of font info for 68 fonts, out of 8000000 for 9000
+ 9585 strings out of 494774
+ 140895 string characters out of 6176661
+ 352958 words of memory out of 5000000
+ 12702 multiletter control sequences out of 15000+600000
+ 15022 words of font info for 70 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
- 46i,7n,42p,611b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on update.pdf (2 pages, 502945 bytes).
+ 46i,6n,42p,626b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on update.pdf (3 pages, 708904 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 12826 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 12836 words of extra memory for PDF output out of 14400 (max. 10000000)
 

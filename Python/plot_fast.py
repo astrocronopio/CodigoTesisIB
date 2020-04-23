@@ -74,6 +74,8 @@ def plot_only_a_graph():
 	pass
 
 def plot_con_vs_sin_pesos():
+
+	"""
 	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV_peso.dat",
 								"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
@@ -93,13 +95,27 @@ def plot_con_vs_sin_pesos():
 								"../Cpp/Anisotropy/2019_Main_Array_8_EeV.dat",
 								u"(2019) Disparo estándar: sobre 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_8_EeV_con_vs_sin_peso.png", 14)
+
+"""
+	##################################################################################################333
+
+
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_peso_extended.dat",
+								"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_extended.dat",
+								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
+								"../Cpp/Anisotropy/Report/2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png", 23)
+	
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_8_EeV_peso_extended.dat",
+								"../Cpp/Anisotropy/2019_Main_Array_8_EeV_extended.dat",
+								u"(2019) Disparo estándar: sobre 8 EeV", 
+								"../Cpp/Anisotropy/Report/2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png", 24)
 	plt.show()
 
 	pass
 
 def main():
-	#plot_con_vs_sin_pesos()
-	plot_only_a_graph()
+	plot_con_vs_sin_pesos()
+	#plot_only_a_graph()
 
 
 
