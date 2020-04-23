@@ -20,11 +20,11 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 % Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
 
 %\subsubsection{Nomenclatura}
-%
+%ai
 %	\begin{table}[H]
 %	\centering
 %		\begin{tabular}{c|c|c|c}
-%	Archivo AllTriggers  & \text{Eventos} & UTC inicial &  UTC final  \\ \hline
+%	Archivo AllTriggers  & \text{Eventos} & UTC inicial &  UTC final  \\ \hlineaiai
 %	2020			 & 13 739 351	  &  1372680068	&  1577879983 \\ %2019
 %	2019			 & 	8 463 063	  &	 1372680068 &  1496318388 \\ %Herald
 %	2017			 &	8 592 302	  &  1372680068 &  1498521517 \\ %Oscar
@@ -47,9 +47,21 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 \subsubsection{Comparando con los datos de Oscar}
 % 	1-  Uno, que tal vez ya hiciste, es correr tu programa en los datos que uso Oscar y ver de repetir los plots para las dos energias arriba de full efficiency (4-8 y >8)  para ver que el programa funciona igual
 
+\begin{itemize}
+	\item Agregar figuras sin peso 
+	\begin{itemize}
+		\item El de 4-8 para el 2017
+		\item >8 para el 2017
+	\end{itemize}
+	\item buscar los valores de los dipolos conocidos y compararlos con lo que obtengo (usando los pesos)
+\end{itemize}
+
 \subsubsection{¿Análisis en frecuencia de los hexágonos?}
 % 	2- Otra prueba que podrias hacer es hacer un  analisis en frecuencia  similar al que hiciste pero para la modulacion de hexagonos sola. Esto seria para ver que no hay cosas raras en el rate de hexagonos de estos datos. No tengo del todo claro como se haria. En vez de hacer la suma de senos y cosenos en los tiempos del zenit cuando llega un evento como ahora, habria que hacer esas sumas en un espaciado constante de tiempo (podrian ser los 5' en que estan bineados, y los pesos deberian ser proporcional a la cantidad de hexagonos. Pensalo un poco como se podria implementar y si queres lo charlamos despues.
-
+\begin{itemize}
+	\item ¿Barrido en frecuencia en ascensión recta?
+	\item ¿Barriendo el archivo de eventos pero en vez de usar el evento para analizar, uso el valor del peso para el bin correspondiente? Suena bien.
+\end{itemize}
 
 
 
