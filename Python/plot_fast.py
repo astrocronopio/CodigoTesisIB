@@ -19,12 +19,11 @@ def plot_anisotropy_given_name(filename, title_name, png_name, number):
 	plt.plot(freq, por99, label="P99", color="red", ls='--')
 	
 	plt.legend(loc=0, fontsize='small', markerscale=0.8)
-	#plt.xlim(364.0,366.5)
+	plt.xlim(363.25, 367.25)
 	plt.axvline(x=366.25, color='lightblue', linestyle='--')
 	plt.axvline(x=365.25, color='blue', linestyle=':')
 	plt.axvline(x=364.25, color='lightblue', linestyle='--')
 	plt.savefig(png_name)
-	#plt.show()
 	pass
 
 
@@ -46,7 +45,7 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, title_name, png_name,
 	
 
 	plt.legend(loc=0, ncol=3, columnspacing=0.6, fontsize='small', markerscale=0.8)
-	#plt.xlim(364.0,366.5)
+	plt.xlim(363.25,367.25)
 	plt.axvline(x=366.25, color='lightblue', linestyle='--')
 	plt.axvline(x=365.25, color='blue', linestyle=':')
 	plt.axvline(x=364.25, color='lightblue', linestyle='--')
@@ -57,66 +56,68 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, title_name, png_name,
 
 
 def plot_only_a_graph():
-	plot_anisotropy_given_name(	"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV_peso.dat",
-								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
-								"../Cpp/Anisotropy/Report/2019_AllTriggers_1_2_EeV_peso.png", 1)
-	plot_anisotropy_given_name(	"../Cpp/Anisotropy/2019_AllTriggers_2_4_EeV_peso.dat",
-								"(2019) Todos los disparos: entre 2 EeV y 4 EeV", 
-								"../Cpp/Anisotropy/Report/2019_AllTriggers_2_4_EeV_peso.png", 2)
-	plot_anisotropy_given_name(	"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_peso.dat",
-								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
-								"../Cpp/Anisotropy/Report/2019_Main_Array_4_8_EeV_peso.png", 3)
-	plot_anisotropy_given_name(	"../Cpp/Anisotropy/2019_Main_Array_8_EeV_peso.dat",
+	
+	plot_anisotropy_given_name(	"../Cpp/Anisotropy/x2019_Main_Array_8_EeV_peso.dat",
 								u"(2019) Disparo estándar: sobre 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_8_EeV_peso.png", 4)
-	plt.show()
-
+	
+	
+	plot_anisotropy_given_name(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
+								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
+								"../Cpp/Anisotropy/Report/x2019_AllTriggers_1_2_EeV.png", 1)
+	
+	plot_anisotropy_given_name(	"../Cpp/Anisotropy/x2019_AllTriggers_2_4_EeV_peso.dat",
+								"(2019) Todos los disparos: entre 2 EeV y 4 EeV", 
+								"../Cpp/Anisotropy/Report/2019_AllTriggers_2_4_EeV_peso.png", 2)
+	plot_anisotropy_given_name(	"../Cpp/Anisotropy/x2019_Main_Array_4_8_EeV_peso.dat",
+								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
+								"../Cpp/Anisotropy/Report/2019_Main_Array_4_8_EeV_peso.png", 3)
+	
 	pass
-
+	
 def plot_con_vs_sin_pesos():
 
-	"""
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV_peso.dat",
-								"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV.dat",
+	
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat",
+								"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
 								"../Cpp/Anisotropy/Report/2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png", 11)
-
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_AllTriggers_2_4_EeV_peso.dat",
-								"../Cpp/Anisotropy/2019_AllTriggers_2_4_EeV.dat",
+	
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_2_4_EeV_peso.dat",
+								"../Cpp/Anisotropy/x2019_AllTriggers_2_4_EeV.dat",
 								"(2019) Todos los disparos: entre 2 EeV y 4 EeV", 
 								"../Cpp/Anisotropy/Report/2019_AllTriggers_2_4_EeV_con_vs_sin_peso.png", 12)
 	
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_peso.dat",
-								"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV.dat",
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_Main_Array_4_8_EeV_peso.dat",
+								"../Cpp/Anisotropy/x2019_Main_Array_4_8_EeV.dat",
 								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_4_8_EeV_con_vs_sin_peso.png", 13)
-	
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_8_EeV_peso.dat",
-								"../Cpp/Anisotropy/2019_Main_Array_8_EeV.dat",
+		
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_Main_Array_8_EeV_peso.dat",
+								"../Cpp/Anisotropy/x2019_Main_Array_8_EeV.dat",
 								u"(2019) Disparo estándar: sobre 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_8_EeV_con_vs_sin_peso.png", 14)
 
-"""
 	##################################################################################################333
 
 
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_peso_extended.dat",
-								"../Cpp/Anisotropy/2019_Main_Array_4_8_EeV_extended.dat",
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_Main_Array_4_8_EeV_peso_extended.dat",
+								"../Cpp/Anisotropy/x2019_Main_Array_4_8_EeV_extended.dat",
 								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_4_8_EeV_con_vs_sin_peso_extended.png", 23)
 	
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_Main_Array_8_EeV_peso_extended.dat",
-								"../Cpp/Anisotropy/2019_Main_Array_8_EeV_extended.dat",
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_Main_Array_8_EeV_peso_extended.dat",
+								"../Cpp/Anisotropy/x2019_Main_Array_8_EeV_extended.dat",
 								u"(2019) Disparo estándar: sobre 8 EeV", 
 								"../Cpp/Anisotropy/Report/2019_Main_Array_8_EeV_con_vs_sin_peso_extended.png", 24)
-	plt.show()
+	
 
-	pass
 
 def main():
 	plot_con_vs_sin_pesos()
-	#plot_only_a_graph()
+	plot_only_a_graph()
 
+	plt.show()
 
 
 if __name__== "__main__":

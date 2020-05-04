@@ -86,7 +86,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 
 	unsigned long iutc, iutc0 = 1072915200;
 	float t,p,r,rav,hex6, hex5;
-	int iw,ib, ihr, aux;
+	int iw,ib, ihr, aux, ang;
 	string line;
 	float fas = freq/365.25;
 	long double x1,x2,x3;
@@ -104,14 +104,20 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
-				
-				x1=((long double)(iutc-iutc0)/3600.+ 21.)*fas*interval/24.0; // hora local
+				x1=((long double)(iutc-iutc0+5)/3600.+ 21.)*fas*interval/24.0; // hora local
 				
 				ihr =  int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
 				//aux=  int(ihr/bandwidth);
 				aux=ihr;
 				num_hex_hr[aux]+=hex6;
+
 				
+/*				x3= right_ascension(iutc);
+				ang =  int(x3*interval/360.);
+				aux=ang;
+
+				num_hex_hr[aux] += hex6;*/
+
 				if(num_hex_hr[aux]> 1000000 ) {
 					rnhexhr[aux]+=num_hex_hr[aux]/1000000.0;
 					num_hex_hr[aux]=0;

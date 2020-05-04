@@ -4,8 +4,8 @@ int main(int argc, char const *argv[])
 {
 	
 	
-	unsigned long utci =  1104537600; //2005
-	unsigned long utcf =  1577825634; //2016
+	unsigned long utci =  1072915200; //2005
+	unsigned long utcf =  1496270609;//1577825634; //2016
 /*	
 	int interval = 24;
 	const char* out_file_S 	= "./sideral_24.txt";
@@ -30,9 +30,9 @@ int main(int argc, char const *argv[])
 
 
 	int interval = 288;
-	const char* out_file_S_2 	= "./sideral_2019_report_on_anisotropy_288extended.txt";
-	const char* out_file_2 		= 	"./solar_2019_report_on_anisotropy_288extended.txt";
-	const char* out_file_a_2 	= 	 "./anti_2019_report_on_anisotropy_288extended.txt";
+	const char* out_file_S_2 	= "./data_files/sideral_2019_report_on_anisotropy_288_2004_2017.txt";
+	const char* out_file_2 		= 	"./data_files/solar_2019_report_on_anisotropy_288_2004_2017.txt";
+	const char* out_file_a_2 	= 	 "./data_files/anti_2019_report_on_anisotropy_288_2004_2017.txt";
 
 	std::cout << "Sidereal "<< std::endl;
 	exposure_given_period(T_S, out_file_S_2, utci, utcf, interval);

@@ -74,9 +74,9 @@ replot "../../Hexagons/hexagons_2018/dnhex_antisiderea_24.dat" 	u ($0*360/24):1 
 replot "../../Hexagons/hexagons_2018/dnhex_solar_24.dat"  		u ($0*360/24):1 w lp pt 3 ps 3 tit "Solar-18"
 
 
-replot "../Cpp/Exposure/sideral_24.txt" u ($0*360/24):2 w lp pt 4 ps 3 tit "Sid-Thesis"
-replot "../Cpp/Exposure/anti_24.txt" 	u ($0*360/24):2 w lp pt 8 ps 3 tit "Anti-Thesis"
-replot "../Cpp/Exposure/solar_24.txt"  	u ($0*360/24):2 w lp pt 6 ps 3 tit "Solar-Thesis"
+replot "../Cpp/Exposure/data_files/sideral_24.txt" u ($0*360/24):2 w lp pt 4 ps 3 tit "Sid-Thesis"
+replot "../Cpp/Exposure/data_files/anti_24.txt" 	u ($0*360/24):2 w lp pt 8 ps 3 tit "Anti-Thesis"
+replot "../Cpp/Exposure/data_files/solar_24.txt"  	u ($0*360/24):2 w lp pt 6 ps 3 tit "Solar-Thesis"
 
 
 
@@ -90,7 +90,7 @@ set title "Diff:  my thesis minus paper 2018 " offset 0,-0.5
 set ylabel "Weight Error %" offset 1 
 set xlabel "Right Ascension [^o]"
 
-plot "../Cpp/Exposure/sideral_360.txt" u 0:(($2-$3)*100/$3) w lp notit 
+plot "../Cpp/Exposure/data_files/sideral_360.txt" u 0:(($2-$3)*100/$3) w lp notit 
 
 
 
@@ -106,25 +106,25 @@ set xlabel "Right Ascension [^o]"
 
 plot "../../Hexagons/hexagons_2018/dnhex_sidereal_24.dat" 		u ($0*360/24):1 w lp lw 3 pt 1 ps 3 tit "Sid-18"
 replot "../../Hexagons/hexagons_2018/dnhex_sidereal_alternative_24.dat" 	u ($0*360/24):1 w lp lw 1.5 pt 2 ps 3 tit "Sid-18 Altern."
-replot "../../Hexagons/hexagons_2018/dnhex_sidereal_alternative_24.dat" 	u ($0*360/24):2 w lp lw 3 dt 2 pt 3 ps 2 tit "Sid-18 Altern.+75^o"
+replot "../../Hexagons/hexagons_2018/dnhex_sidereal_alternative_24.dat" 	u ($0*360/24):2 w lp lw 3 dt 2 pt 3 ps 1.5 tit "Sid-18 Altern.+75^o"
 
 
 
 
 set terminal qt 7 enhanced font 'Verdana,26' size 1000,800 
-set key right bottom sample 0.1 horiz
+set key right bottom sample 0.3 horiz
 
 set title "Solar Frequency (N=360)" offset 0,-0.5
 set xtics 60
 set xrange [:360]
 set ylabel "Weight" offset 1 
 set xlabel "Right Ascension [^o]"
-plot "../Cpp/Exposure/solar_360.txt" u ($1*360/360):($2>1 ? $2: 1/0)  w lp lw 1.5 pt 3 ps 2  tit "Thesis"
-replot "../../Hexagons/hexagons_2018/dnhex_solar_360.dat" u ($0*360/360):($1>1 ? $1: 1/0) w lp  lw 1.5 pt 4 ps 2 tit "Paper"
+plot "../Cpp/Exposure/data_files/solar_360.txt" u ($1*360/360):($2>1 ? $2: 1/0)  w lp lw 1.5 pt 3 ps 1.5  tit "Thesis"
+replot "../../Hexagons/hexagons_2018/dnhex_solar_360.dat" u ($0*360/360):($1>1 ? $1: 1/0) w lp  lw 1.5 pt 4 ps 1.5 tit "Paper"
 
 
 set terminal qt 8 enhanced font 'Verdana,26' size 1000,800 
-set key right bottom sample 0.1 horiz
+set key right bottom sample 0.3 horiz
 
 set title "My thesis N=288" offset 0,-0.5
 set xtics 60
@@ -132,13 +132,13 @@ set xrange [:360]
 set ylabel "Weight" offset 1 
 set xlabel "Right Ascension [^o]"
 
-plot "../Cpp/Exposure/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Sid"
-replot "../Cpp/Exposure/anti_288.txt" 	u ($0*360/288):2 w lp tit "Anti"
-replot "../Cpp/Exposure/solar_288.txt"  u ($0*360/288):2 w lp tit "Solar"
+plot "../Cpp/Exposure/data_files/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Sid"
+replot "../Cpp/Exposure/data_files/anti_288.txt" 	u ($0*360/288):2 w lp tit "Anti"
+replot "../Cpp/Exposure/data_files/solar_288.txt"  u ($0*360/288):2 w lp tit "Solar"
 
 
 set terminal qt 9 enhanced font 'Verdana,26' size 1000,800 
-set key right bottom sample 0.1 horiz
+set key right bottom sample 0.3 horiz
 
 set title "paper 2018 N=288" offset 0,-0.5
 set xtics 60
@@ -152,7 +152,7 @@ replot "../../Hexagons/hexagons_2018/dnhex_solar_288.dat"  		u ($0*360/288):1 w 
 
 
 set terminal qt 10 enhanced font 'Verdana,26' size 1000,800 
-set key left  bottom sample 0.1 horiz
+set key left  bottom sample 0.3 horiz
 
 set title "paper 2018, my thesis anti N=288" offset 0,-0.5
 set xtics 60
@@ -161,12 +161,12 @@ set ylabel "Weight" offset 1
 set xlabel "Right Ascension [^o]"
 
 plot "../../Hexagons/hexagons_2018/dnhex_antisiderea_288.dat" u ($0*360/288):1 w lp tit "Anti-18"
-replot "../Cpp/Exposure/anti_288.txt" 	u ($0*360/288):2 w lp tit "Anti-The"
+replot "../Cpp/Exposure/data_files/anti_288.txt" 	u ($0*360/288):2 w lp tit "Anti-The"
 
 
 
 set terminal qt 11 enhanced font 'Verdana,26' size 1000,800 
-set key left  bottom sample 0.1 horiz
+set key left  bottom sample 0.3 horiz
 
 set title "paper 2018, my thesis solar N=288" offset 0,-0.5
 set xtics 60
@@ -175,7 +175,7 @@ set ylabel "Weight" offset 1
 set xlabel "Right Ascension [^o]"
 
 plot "../../Hexagons/hexagons_2018/dnhex_solar_288.dat" u ($0*360/288):1 w lp tit "Solar-18"
-replot "../Cpp/Exposure/solar_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
+replot "../Cpp/Exposure/data_files/solar_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
 
 
 
@@ -189,7 +189,7 @@ set title "Diff:  my thesis minus paper 2018, solar N=288 " offset 0,-0.5
 set ylabel "Weight Error %" offset 1 
 set xlabel "Right Ascension [^o]"
 
-plot "../Cpp/Exposure/solar_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
+plot "../Cpp/Exposure/data_files/solar_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
 
 
 
@@ -202,7 +202,7 @@ set title "Diff:  my thesis minus paper 2018, anti N=288 " offset 0,-0.5
 set ylabel "Weight Error %" offset 1 
 set xlabel "Right Ascension [^o]"
 
-plot "../Cpp/Exposure/anti_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
+plot "../Cpp/Exposure/data_files/anti_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
 
 
 
@@ -215,11 +215,11 @@ set title "Diff:  my thesis minus paper 2018, sid N=288 " offset 0,-0.5
 set ylabel "Weight Error %" offset 1 
 set xlabel "Right Ascension [^o]"
 
-plot "../Cpp/Exposure/sideral_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
+plot "../Cpp/Exposure/data_files/sideral_288.txt" u ($0*360/288):(($2-$3)*100/$3) w lp notit 
 
 
 set terminal qt 15 enhanced font 'Verdana,26' size 1000,800 
-set key left  bottom sample 0.1 horiz
+set key left  bottom sample 0.3 horiz
 
 set title "paper 2018, my thesis sid N=288" offset 0,-0.5
 set xtics 60
@@ -228,38 +228,61 @@ set ylabel "Weight" offset 1
 set xlabel "Right Ascension [^o]"
 
 plot "../../Hexagons/hexagons_2018/dnhex_sidereal_288.dat" u ($0*360/288):1 w lp tit "Solar-18"
-replot "../Cpp/Exposure/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
+replot "../Cpp/Exposure/data_files/sideral_288.txt" 	u ($0*360/288):2 w lp tit "Solar-The"
 
 
 
 
-set terminal qt 16 enhanced font 'Helvetica,26' size 1000,800 
-set key left bottom sample 0.1 horiz
+set terminal png 16 enhanced font 'Times,26' size 1200,800 
+set output "../Cpp/Anisotropy/Report/weigth2013-2019.png"
+set key left bottom sample 0.5 vert
 
-#set title "  " offset 0,-0.5
-set xtics 60
-set xrange [:360]
+set title "2013-2019" offset 0,-0.5
+set xtics 4
+set xrange [:24.1]
 set ylabel "Weight" offset 1 
-set xlabel "Right Ascension [^o]"
+set xlabel "Local Hour [hr]"
 
-plot 	"../Cpp/Exposure/sideral_2019_report_on_anisotropy_288.txt" 		u ($0*360/288):2 w lp tit "Sid"
-replot 	"../Cpp/Exposure/anti_2019_report_on_anisotropy_288.txt"	 		u ($0*360/288):2 w lp tit "Anti"
-replot 	"../Cpp/Exposure/solar_2019_report_on_anisotropy_288.txt"  		u ($0*360/288):2 w lp tit "Solar"
+plot 	"../Cpp/Exposure/data_files/sideral_2019_report_on_anisotropy_288.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'   tit "Sid" ,\
+	 	"../Cpp/Exposure/data_files/anti_2019_report_on_anisotropy_288.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'  tit "Anti" ,\
+	 	"../Cpp/Exposure/data_files/solar_2019_report_on_anisotropy_288.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black' tit "Solar"
+
+set terminal qt 16 enhanced font 'Times,26' size 1200,800 
+replot
 
 
 
 
+set terminal png 17 enhanced font 'Times,26' size 1200,800 
+set output "../Cpp/Anisotropy/Report/weigth2005-2019.png"
+set key left bottom sample 0.5 vert
 
-set terminal qt 17 enhanced font 'Helvetica,26' size 1000,800 
-set key left bottom sample 0.1
-
-#set title "  " offset 0,-0.5
-set xtics 60
-set xrange [:360]
+set title "2005-2019" offset 0,-0.5
+set xtics 4
+set xrange [:24.1]
 set ylabel "Weight" offset 1 
-set xlabel "Right Ascension [^o]"
+set xlabel "Local Hour [hr]"
 
-plot 	"../Cpp/Exposure/sideral_2019_report_on_anisotropy_288extended.txt" 		u ($0*360/288):2 w lp tit "Sid"
-replot 	"../Cpp/Exposure/anti_2019_report_on_anisotropy_288extended.txt"	 		u ($0*360/288):2 w lp tit "Anti"
-replot 	"../Cpp/Exposure/solar_2019_report_on_anisotropy_288extended.txt"  		u ($0*360/288):2 w lp tit "Solar"
+plot 	"../Cpp/Exposure/data_files/sideral_2019_report_on_anisotropy_288extended.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'   tit "Sid" ,\
+	 	"../Cpp/Exposure/data_files/anti_2019_report_on_anisotropy_288extended.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'  tit "Anti" ,\
+	 	"../Cpp/Exposure/data_files/solar_2019_report_on_anisotropy_288extended.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black' tit "Solar"
 
+set terminal qt 17 enhanced font 'Times,26' size 1200,800 
+replot
+
+set terminal png 18 enhanced font 'Times,26' size 1200,800 
+set output "../Cpp/Anisotropy/Report/weigth2004-2017.png"
+set key left bottom sample 0.5 vert
+
+set title "2004-2017" offset 0,-0.5
+set xtics 4
+set xrange [:24.1]
+set ylabel "Weight" offset 1 
+set xlabel "Local Hour [hr]"
+
+plot 	"../Cpp/Exposure/data_files/sideral_2019_report_on_anisotropy_288_2004_2017.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'     tit "Sid" ,\
+	 	"../Cpp/Exposure/data_files/anti_2019_report_on_anisotropy_288_2004_2017.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'    tit "Anti" ,\
+	 	"../Cpp/Exposure/data_files/solar_2019_report_on_anisotropy_288_2004_2017.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black'   tit "Solar"
+
+set terminal qt 18 enhanced font 'Times,26' size 1200,800 
+replot
