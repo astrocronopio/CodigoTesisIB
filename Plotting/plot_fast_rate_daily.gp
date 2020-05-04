@@ -6,7 +6,7 @@ set xlabel "Fecha"
 set xrange [1388966739:1577879886]
 
 
-filename="../Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_1EeV_rate_day.dat"
+filename="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_1EeV_rate_day.dat" 
 
 #############P R E F A C T O R E S
 

@@ -160,11 +160,8 @@ int main(int argc, char** argv)
 
 ///======= Performs a Maximum Likelihood fit of event rate using the MLfit class ================//
 ///
-	//MLFit fit(dataBin1hr,1420070400);							//1104537600
-	//RunFit(*dataBin1hr,1122854400,1249084800,1230768000,nbin);//1220227200
-	
 	//					Inicio Fin			
-	RunFit(*dataBin1hr,utcmin,utcmax,1230768000,1325376000,nbin);	///1451347200 1438387500 1420070400 1370044800 1388534400
+	RunFit(*dataBin1hr,utcmin,utcmax,nbin);	///1451347200 1438387500 1420070400 1370044800 1388534400
 
 	TypeFitPars fitp = GetFitPars();
 	cout << "--------------------------------------------------------------" << endl;

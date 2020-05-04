@@ -51,7 +51,7 @@ public:
 /// function to calculate chi2,number of degrees of freedom and expected events from the minuit fit
 	void fcn2(double *par,double *pchi2,int *pndof,TypeBinData *fitData=NULL);
 /// Run minuit to get the Maximum Likelihood parameters
-	void RunFit(TypeBinData binData,int utcmin,int utcmax,int utcsdec,int utcedec,int nbins);
+	void RunFit(TypeBinData binData,int utcmin,int utcmax,int nbins);
 /// Get the fit parameters given by minuit
 	TypeFitPars GetFitPars();
 /// Get vector with the expected number of events using current fit parameters 

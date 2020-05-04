@@ -120,8 +120,6 @@ void RunFit(TypeBinData binData,int utcmin,int utcmax,int nbins)
 	fbinData = binData;
 	futcmin = utcmin;
 	futcmax = utcmax;
-	futcsdec = utcsdec;
-	futcedec = utcedec;
 	fnbins = nbins;
 	TMinuit *gMinuit = new TMinuit(4);  ///initialize TMinuit with a maximum of 4 params	
 	gMinuit->SetFCN(fcn);	/// Set the function to be minimized
