@@ -9,8 +9,6 @@
 #include <sstream>
 
 #include <TMath.h>
-//#include "Bindata.cc"
-//#include "MLFit.cc"
 #include "Bindatav1.h"
 #include "MLFitv5.2.h"
 
@@ -58,14 +56,10 @@ int main(int argc, char** argv)
 		cout << "Parameter must be between 0 and 5" << endl;
 		return 0;
 	}
-	//double ll = 1.0 + (binsec-1)*0.2;
-	//double hl = 1.0 + binsec*0.2;
+
 	double ll = 0.0 + (binsec-1)*0.15;
 	double hl = 0.0 + binsec*0.15;
-	/*double ll = 0.9 + (binsec-1)*0.2;
-	double hl = 0.9 + binsec*0.2;
-	if(binsec==1){ll=1.0;hl=1.1;}
-	if(binsec==5){ll=1.7;hl=2.0;}*/
+
 	
 	vector<double> pres,den,avgden,hex6,pres2,theta;
 	vector<int> iutc,iutc2;
