@@ -36,15 +36,15 @@ int main(int argc, char** argv)
 	int binsec;
 	double E_th;
 
-	if(argc == 6){
+	if(argc == 8){
 		binsec = 0;
 		E_th = 0;
 	}
-	else if(argc == 7){
+	else if(argc == 9){
 		binsec = 0;
 		E_th = atoi(argv[1]);
 	}
-	else if(argc == 8){	
+	else if(argc == 10){	
 		binsec = atoi(argv[2]);
 		E_th = atof(argv[1]);
 	}
@@ -96,11 +96,11 @@ int main(int argc, char** argv)
 
 ///======== Read event data from file =====================================================//
 ///
-	string path 				= argv[1+(argc-6)];//"/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV_cutted_merged_nobp.dat";
-	string path_fit				= argv[2+(argc-6)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_all_sin2.dat";
-	string path_hour_of_the_day	= argv[3+(argc-6)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_hour_of_the_day.dat";  //
-	string path_hour_expected   = argv[4+(argc-6)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_rate_hour.dat";	 //
-	string path_rate_expected	= argv[5+(argc-6)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_rate_day.dat" ; //
+	string path 				= argv[1+(argc-8)];//"/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1EeV_cutted_merged_nobp.dat";
+	string path_fit				= argv[2+(argc-8)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_all_sin2.dat";
+	string path_hour_of_the_day	= argv[3+(argc-8)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_hour_of_the_day.dat";  //
+	string path_hour_expected   = argv[4+(argc-8)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_rate_hour.dat";	 //
+	string path_rate_expected	= argv[5+(argc-8)];//"../2019/weather_analysis/AllTriggers_S38_1EeV_rate_day.dat" ; //
 
 	cout << "\n\nFile "<< path <<"\n\n"<< endl;
 	ifstream infiledata (path);	/// Herald
@@ -116,10 +116,6 @@ int main(int argc, char** argv)
 		
 		//Normal Analysis
 			liness >> utc >> the >> energy >> p >> rho >> rhod >> iw;			/// herald
-
-			//For PC data
-			//liness >> augid >> sdid >> utc >> phi >> the >> dec >> ra >> s1000 >> ds1000 >> energy >> p >> rho >> rhod >> iw;		/// herald
-		
 
 			if(binsec != 0){
 				//double sect = 1./cos(the*TMath::Pi()/180);
@@ -138,8 +134,13 @@ int main(int argc, char** argv)
 
 ///=========== Bin data using the Bindata class (typically in 1 hour bins)================//
 ///
-	int utcmin = 1388910508;//1372680308;
-	int utcmax = 1550490858;
+	char * pEnd;
+
+	unsigned long utcmin =  strtoul(argv[6+(argc-8)], &pEnd, 0); //1104537600; //1372699409 ;
+	unsigned long utcmax =  strtoul(argv[7+(argc-8)], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+
+	//int utcmin = int(utci);//1388628499;//1372680308;
+	//int utcmax = int(utcf);//1550490858;
 	int binw = 3600;	
 	Bindata Bin1hr(utcmin,utcmax,binw,iutc,iutc2,pres,den,avgden,hex6);
 

@@ -22,6 +22,7 @@ double right_ascension(long long utc){
 	return raz;
 }
 
+const int interval =288;
 
 void rayleigh( float *a , float *b, float *sumaN,
 			   float *freq, unsigned long utci, unsigned long utcf,
@@ -48,18 +49,17 @@ void rayleigh( float *a , float *b, float *sumaN,
 
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
+			
+			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
+			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
 
-	//		hrs= (float(utc - utc0+5)/3600.0 + 21.0)*fas;
-			//hrs=((double)(utc-utc0)/3600.+ 21.)*fas; // hora local
-	//		hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
-
-			peso =1.;		
+			aux=hrs*interval/24.0;
+			peso =1.0;		
 			*sumaN+=peso;
-	//		raz = right_ascension(utc);
-
-			//arg = 2.0*pi*hrs/24.0 + (Ra-raz)*d2r;
-			arg = Ra*d2r;
-
+			raz = right_ascension(utc);
+			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
+			//arg = (Ra)*d2r;
+	
 			*a +=cos(arg)*peso;
 			*b +=sin(arg)*peso;
 			}
@@ -81,7 +81,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file,unsigned 
 
 	for (int i = 0; i < nf; ++i)
 	{
-		float freq = 363 + i*4.0/nf;
+		float freq = 363.25 + i*4.0/nf;
 
 		std::cout << " Iteration "<< i +1 <<" of " << nf<< std::endl;
 		

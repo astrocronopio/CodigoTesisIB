@@ -1,3 +1,21 @@
+/*
+################################################
+################################################
+####    1- ($8)   UTC                       ####
+####    2- ($4)   Phi                       ####
+####    3- ($3)   Theta                     ####
+####    4- ($14)  Ra                        ####
+####    5- ($12)  S1000 sin corregir        ####
+####    6- ($47)  S38_w                     ####
+####    7- ($38)  Energy                    ####
+####    8- ($43)  Tanks                     ####
+####    9- ($37)  S1000 con correccion      ####
+################################################
+################################################
+*/
+
+
+
 /// Program to assign the weather info for each event from the Herald Archive
 ///
 #include <iostream>
@@ -20,7 +38,7 @@ int main(int argc, char** argv)
 		int i8,i2,iutc,i;		
 		float x3,x4,x5,x6,x7;
 		float i1,t,p,rho,rhod,h6,h5,iw,ib, ra;
-		float the,	phi, S1000, dS1000, Energy, S38, rho2, rho24, tanks;
+		float the,	phi, S1000, S1000_raw, dS1000, Energy, S38, rho2, rho24, tanks;
 		int utc;
 		getline(utctprh,lineatm);
 		stringstream satm(lineatm);
@@ -31,7 +49,7 @@ int main(int argc, char** argv)
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
 			//sevent >> utc 	 >>	phi  >>	the>> 	S1000 >> 	dS1000 >>	Energy 	;
-			sevent >> utc >> phi>>the >> ra>>x3>>x4>>Energy>>tanks ;
+			sevent >> utc >> phi>>the >> ra>>x3>>x4>>Energy>>tanks>>S1000_raw ;
 
 			while (!utctprh.eof() ){			
 				if(utc <= iutc && utc > iutc-300 ){			/// Asuming iutc as the end second of each 5 min bin				

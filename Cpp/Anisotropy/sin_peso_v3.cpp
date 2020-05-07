@@ -24,52 +24,6 @@ double right_ascension(long long utc){
 }
 
 
-void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsigned long utcf, float period)
-{ 	
-	double bandwidth= 360.0/interval;
-
-	std::vector<long double>num_hex_hr(interval);
-	std::vector<long double>rnhexhr(interval);
-
-	unsigned long iutc, iutc0 = 1072915200;
-	float t,p,r,rav,hex6, hex5;
-	int iw,ib, ihr, aux, ang;
-	std::string line;
-	float fas = period/365.25; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
-	long double x1,x2,x3;
-	long double integral=0.0;
-
-	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_05032020.dat");
-
-	if(myweather.is_open())
-	{	
-		while (!myweather.eof() ){			
-			getline(myweather,line);			
-			std::stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
-
-			if (iutc < utci || iutc > utcf) continue;
-			if (iw<5 && ib==1){
-				x1=((long double)(iutc-iutc0+5.)/3600.+ 21.+5.)*fas*interval/24.0; // hora local
-				aux=  int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
-				num_hex_hr[aux] += hex6;				
-				
-				if(num_hex_hr[aux]> 1000000 ) {
-					rnhexhr[aux]+=num_hex_hr[aux]/1000000.0;
-					num_hex_hr[aux]=0;
-				} 
-			}
-		}
-	}
-
-	for (int i = 0; i < interval; ++i)
-	{	
-		rnhexhr[i]+=num_hex_hr[i]/1000000.0;
-		integral+=rnhexhr[i]/((float)interval); 
-	}
-	for (int i = 0; i < interval; ++i) vect[i] = rnhexhr[i]/integral;
-}
-
 void rayleigh( float *a , float *b, float *sumaN, float *freq, 
 				unsigned long utci, unsigned long utcf, const char* in_file)
 {
@@ -83,9 +37,6 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 
 	std::ifstream myfile (in_file);
 
-	std::vector<long double> dnhex(interval);
-	exposure_weight(dnhex, utci, utcf, *freq);
-
 	if(myfile.is_open())
 	{
 		while (!myfile.eof() ){			
@@ -98,15 +49,11 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 
 			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
 			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
-
 			aux=hrs*interval/24.0;
-			nh=  int(aux)%interval >= 0 ? int(aux)%interval :  interval+int(aux)%interval  ;
-
-			peso =1.0/dnhex[nh];		
+			peso =1.0;		
 			*sumaN+=peso;
 			raz = right_ascension(utc);
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
-			//arg = (Ra)*d2r;
 
 			*a +=cos(arg)*peso;
 			*b +=sin(arg)*peso;
