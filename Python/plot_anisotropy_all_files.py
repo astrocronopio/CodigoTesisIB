@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import matplotlib as mpl
-mpl.rcParams.update({'font.size': 19,  'figure.figsize': [9.5, 6],  'figure.autolayout': True, 'font.family': 'serif', 'font.sans-serif': ['Helvetica']})
+mpl.rcParams.update({'font.size': 19,  'figure.figsize': [13, 8],  'figure.autolayout': True, 'font.family': 'serif', 'font.sans-serif': ['Helvetica']})
 
 def plot_anisotropy_given_name(filename, title_name, png_name, number):
 	plt.figure(number)
@@ -16,7 +16,7 @@ def plot_anisotropy_given_name(filename, title_name, png_name, number):
 	plt.xlabel(u"Período [días]")
 	
 	plt.plot(freq, modulo, color="black")
-	plt.plot(freq, por99, label="P99", color="red", ls='--')
+	plt.plot(freq, por99, label="P99", color="red")
 	
 	plt.legend(loc=0, fontsize='small', markerscale=0.8)
 	plt.xlim(363.25, 367.25)
@@ -40,10 +40,10 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, filename_corr, title_
 	plt.xlabel(u"Período [días]")
 	
 	plt.plot(freq, modulo, color="black", label="Con peso")
-	plt.plot(freq, por99, label="P99", color="red", ls='--')
+	plt.plot(freq, por99, label="P99", color="red")
 	
 	plt.plot(freq1, modulo1, color="brown", label="Sin peso", alpha=0.5, ls=":")
-	plt.plot(freq2, modulo2, color="blue", label="Corr.", alpha=0.5, ls=":")
+	#plt.plot(freq2, modulo2, color="blue", label="Corr.", alpha=0.5, ls=":")
 	
 	#plt.plot(freq1, por991, label="P99", color="pink", ls=':')
 	

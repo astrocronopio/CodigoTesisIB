@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  7 MAY 2020 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  7 MAY 2020 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,75 +852,82 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
-<ap.png, id=2, 752.8125pt x 494.59781pt>
+<hex_rango_corto.png, id=2, 903.375pt x 564.60938pt>
+File: hex_rango_corto.png Graphic file (type png)
+<use hex_rango_corto.png>
+Package pdftex.def Info: hex_rango_corto.png  used on input line 45.
+(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+<ap.png, id=3, 752.8125pt x 494.59781pt>
 File: ap.png Graphic file (type png)
 <use ap.png>
-Package pdftex.def Info: ap.png  used on input line 44.
+Package pdftex.def Info: ap.png  used on input line 54.
 (pdftex.def)             Requested size: 255.0pt x 167.53462pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 44--45
+Overfull \hbox (9.0pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-<arho.png, id=3, 752.8125pt x 564.60938pt>
+<arho.png, id=4, 752.8125pt x 564.60938pt>
 File: arho.png Graphic file (type png)
 <use arho.png>
-Package pdftex.def Info: arho.png  used on input line 50.
+Package pdftex.def Info: arho.png  used on input line 60.
 (pdftex.def)             Requested size: 255.0pt x 191.24957pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 50--51
+Overfull \hbox (9.0pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-<brho.png, id=4, 752.8125pt x 564.60938pt>
+<brho.png, id=5, 752.8125pt x 564.60938pt>
 File: brho.png Graphic file (type png)
 <use brho.png>
-Package pdftex.def Info: brho.png  used on input line 56.
+Package pdftex.def Info: brho.png  used on input line 66.
 (pdftex.def)             Requested size: 255.0pt x 191.24957pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 56--57
+Overfull \hbox (9.0pt too wide) in paragraph at lines 66--67
  [][] 
  []
 
-<ani_corr.png, id=5, 848.4498pt x 433.62pt>
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./rate_1_EeV.png (PNG co
+py)> <./hex_rango_corto.png (PNG copy)> <./ap.png (PNG copy)> <./arho.png (PNG 
+copy)>]
+<ani_corr.png, id=16, 848.4498pt x 433.62pt>
 File: ani_corr.png Graphic file (type png)
 <use ani_corr.png>
-Package pdftex.def Info: ani_corr.png  used on input line 75.
+Package pdftex.def Info: ani_corr.png  used on input line 88.
 (pdftex.def)             Requested size: 255.0pt x 130.3252pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 75--76
+Overfull \hbox (9.0pt too wide) in paragraph at lines 88--89
  [][] 
  []
 
 No file report.bbl.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./rate_1_EeV.png (PNG co
-py)> <./ap.png (PNG copy)> <./arho.png (PNG copy)> <./brho.png (PNG copy)>]
-[2 <./ani_corr.png>] (./report.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
- ) 
+[2 <./brho.png (PNG copy)> <./ani_corr.png>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 9506 strings out of 494774
- 138696 string characters out of 6176661
- 355846 words of memory out of 5000000
- 12650 multiletter control sequences out of 15000+600000
+ 9514 strings out of 494774
+ 138845 string characters out of 6176661
+ 350846 words of memory out of 5000000
+ 12657 multiletter control sequences out of 15000+600000
  11668 words of font info for 50 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
  46i,8n,42p,273b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (2 pages, 484354 bytes).
+</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.
+pfb>
+Output written on report.pdf (2 pages, 591971 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11290 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 11295 words of extra memory for PDF output out of 12000 (max. 10000000)
 

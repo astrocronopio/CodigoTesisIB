@@ -31,6 +31,7 @@ float p0= 862;
 float rho0=1.06;
 float A= 0.185;
 float B= 1.032;
+float Bgamma= 2.36328;
 
 float energy( float S38)
 {
@@ -40,29 +41,29 @@ float energy( float S38)
 
 float ap(float the2)
 {
-	return -0.002 -0.009*the2 + 0.00*the2*the2;
+	return -0.002 -0.009*the2 + 0.0062*the2*the2;
 }
 
 
 float arho(float the2)
 {
-	return -2.26228  +  0.*the2 + 2.78692*the2*the2;
+	return -2.24974  +  0.47*the2 + 2.615*the2*the2;
 }
 
 
 float brho(float the2)
 {
-	return  -0.73557 -0. *the2 + 1.71033 *the2*the2;
+	return  -0.752264 -0.36 *the2 + 1.56833 *the2*the2;
 }
 
 
 float energy_reconstruction(float S38, float p, float rho, float rhod, float the) 
 {	float the2= the*the;
 	
-	float factor =1+ ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho);
+	float factor =1+ (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))*Bgamma;
 	float S38_w = S38/factor;
 
-	return energy(S38);
+	return energy(S38_w);
 }
 
 

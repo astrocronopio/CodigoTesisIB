@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  28 APR 2020 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  8 MAY 2020 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,26 +1000,36 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip57
+\L@UnitsRaiseTextstyle=\skip58
+\L@UnitsRaiseScriptstyle=\skip59
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )) (./update_beamer.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `update_beamer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1086,7 +1096,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1096,9 +1106,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./update_beamer.out) (./update_beamer.out)
 \@outlinefile=\write5
@@ -1129,39 +1139,84 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
  (./update_beamer.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
-] [3
+]
+<tesis.png, id=53, 1034.86626pt x 622.325pt>
+File: tesis.png Graphic file (type png)
+<use tesis.png>
+Package pdftex.def Info: tesis.png  used on input line 69.
+(pdftex.def)             Requested size: 291.92444pt x 175.55075pt.
+ [3
+
+ <./tesis.png>] [4
+
+] [5
 
 ]
-<./../../Cpp/Anisotropy/Report/weigth2005-2019.png, id=46, 903.375pt x 602.25pt
->
-File: ./../../Cpp/Anisotropy/Report/weigth2005-2019.png Graphic file (type png)
-
-<use ./../../Cpp/Anisotropy/Report/weigth2005-2019.png>
-Package pdftex.def Info: ./../../Cpp/Anisotropy/Report/weigth2005-2019.png  use
-d on input line 98.
+<./../../Cpp/Anisotropy/report_2_27_04_2020/weigth2005-2019.png, id=77, 903.375
+pt x 602.25pt>
+File: ./../../Cpp/Anisotropy/report_2_27_04_2020/weigth2005-2019.png Graphic fi
+le (type png)
+<use ./../../Cpp/Anisotropy/report_2_27_04_2020/weigth2005-2019.png>
+Package pdftex.def Info: ./../../Cpp/Anisotropy/report_2_27_04_2020/weigth2005-
+2019.png  used on input line 126.
 (pdftex.def)             Requested size: 291.92444pt x 194.61699pt.
 
-Overfull \vbox (7.26878pt too high) detected at line 98
+Overfull \vbox (9.21275pt too high) detected at line 126
  []
 
-[4
+[6
 
- <./../../Cpp/Anisotropy/Report/weigth2005-2019.png>]
+ <./../../Cpp/Anisotropy/report_2_27_04_2020/weigth2005-2019.png>]
+<./../../Plotting/weigth2014-2019_jan.png, id=84, 903.375pt x 602.25pt>
+File: ./../../Plotting/weigth2014-2019_jan.png Graphic file (type png)
+<use ./../../Plotting/weigth2014-2019_jan.png>
+Package pdftex.def Info: ./../../Plotting/weigth2014-2019_jan.png  used on inpu
+t line 137.
+(pdftex.def)             Requested size: 291.92444pt x 194.61699pt.
+
+Overfull \vbox (9.21275pt too high) detected at line 137
+ []
+
+[7
+
+ <./../../Plotting/weigth2014-2019_jan.png>]
+Overfull \hbox (6.05365pt too wide) detected at line 165
+[]
+ []
+
+[8
+
+]
+<./../../Python/xx2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png, id=99, 939.51pt
+ x 578.16pt>
+File: ./../../Python/xx2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png Graphic fil
+e (type png)
+<use ./../../Python/xx2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>
+Package pdftex.def Info: ./../../Python/xx2019_AllTriggers_1_2_EeV_con_vs_sin_p
+eso.png  used on input line 181.
+(pdftex.def)             Requested size: 307.28987pt x 189.09956pt.
+
+Overfull \vbox (4.25075pt too high) detected at line 181
+ []
+
+[9
+
+ <./../../Python/xx2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>]
 \tf@nav=\write6
 \openout6 = `update_beamer.nav'.
 
@@ -1171,35 +1226,44 @@ Overfull \vbox (7.26878pt too high) detected at line 98
 \tf@snm=\write8
 \openout8 = `update_beamer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
- (./update_beamer.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+
+(./update_beamer.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `update_beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 564501FFDDFBEA0398472DEF1BB15F65;146.
+(rerunfilecheck)             Checksum: C133AE24F914B829DC84F26773697CCF;409.
  ) 
 Here is how much of TeX's memory you used:
- 18115 strings out of 494774
- 333571 string characters out of 6176661
- 412894 words of memory out of 5000000
- 21027 multiletter control sequences out of 15000+600000
- 13962 words of font info for 40 fonts, out of 8000000 for 9000
+ 18265 strings out of 494774
+ 336351 string characters out of 6176661
+ 417301 words of memory out of 5000000
+ 21150 multiletter control sequences out of 15000+600000
+ 15661 words of font info for 48 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
- 48i,11n,51p,799b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,51p,799b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ponci/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600
 pk> </home/ponci/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.60
 0pk> </home/ponci/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.6
 00pk> </home/ponci/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.
-600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
-.pfb>
-Output written on update_beamer.pdf (4 pages, 74792 bytes).
+600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb>
+Output written on update_beamer.pdf (9 pages, 413106 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 72 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

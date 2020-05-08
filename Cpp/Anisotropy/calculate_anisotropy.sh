@@ -5,7 +5,7 @@ rango2005=1104537600
 rango2013=1388628499 #Nuevo piso
 rango2017=1472688000
 #rango2019=1577825634
-rango2019=1550534100
+rango2019=1546387228
 
 #Entre 1-2 EeV lo hacemos con todos los triggers
 file_1_2="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"

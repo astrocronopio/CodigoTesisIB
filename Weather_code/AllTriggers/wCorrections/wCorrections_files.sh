@@ -8,7 +8,7 @@ path_hour_of_the_day="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_
   path_rate_expected="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_rate_day.dat" 
 
   utci=1388628499
-  utcf=1550534100
+  utcf=1546387228
 
 
 energy_threshold=0

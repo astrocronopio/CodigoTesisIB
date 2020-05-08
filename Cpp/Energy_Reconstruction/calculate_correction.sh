@@ -5,19 +5,21 @@ rango2005=1104537600
 rango2013=1388628499 #Nuevo piso
 rango2017=1472688000
 #rango2019=1577825634
-rango2019=1550534100
+#rango2019=1550534100
+rango2019=1546387228
+
 
 #Entre 1-2 EeV lo hacemos con todos los triggers
 file_1_2="../../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1_2_EeV_2019_corr.dat"
 
 #./sin_peso_v3 "$file_1_2"  corr_2019_AllTriggers_1_2_EeV.dat  				"$(($rango2013))" "$(($rango2019))"  
-#./con_peso_v3 "$file_1_2"  corr_2019_AllTriggers_1_2_EeV_peso.dat   			"$(($rango2013))" "$(($rango2019))"  
+./con_peso_v3 "$file_1_2"  corr_2019_AllTriggers_1_2_EeV_peso.dat   			"$(($rango2013))" "$(($rango2019))"  
 
 #Entre 2-4 EeV tambien con todos los triggers
 file_2_4="../../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_2_4_EeV_2019_corr.dat"
 
-./sin_peso_v3 "$file_2_4"  corr2019_AllTriggers_2_4_EeV.dat	 		"$(($rango2013))" "$(($rango2019))"  	
-./con_peso_v3 "$file_2_4"  corr2019_AllTriggers_2_4_EeV_peso.dat 		"$(($rango2013))" "$(($rango2019))"  	
+#./sin_peso_v3 "$file_2_4"  corr2019_AllTriggers_2_4_EeV.dat	 		"$(($rango2013))" "$(($rango2019))"  	
+#./con_peso_v3 "$file_2_4"  corr2019_AllTriggers_2_4_EeV_peso.dat 		"$(($rango2013))" "$(($rango2019))"  	
 
 #Para 4-8 con el main array
 #file_4_8="../../../Herald/Central/2019/Main_Array_4_8_EeV_2019.dat"
