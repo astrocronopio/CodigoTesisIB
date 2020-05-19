@@ -6,7 +6,7 @@ set xlabel "Fecha"
 set xrange [1388577600:1577880000]
 
 
-filename="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_1EeV_rate_day.dat" 
+filename="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_rate_day.dat" 
 
 #############P R E F A C T O R E S
 
@@ -25,6 +25,6 @@ set terminal qt 3  size 1200,650 enhanced font 'Helvetica,26'
 set ylabel "Tasa [km^{-2}día^{-1}]"  offset -0.15
 
 
-plot filename u 1:(  $2/($4*1.949) ):(sqrt($2)/($4)) w e  lc rgb 'blue' pt 7  ps 1 t  'Datos' #,\
- 	 #filename u ($1>1388628499 ? $1: 1/0):( $3/($4*1.949) -0.0)  w p lc rgb "black" lw 0.5   ps 0.5 pt 5  t  'Ajuste'
+plot filename u 1:(  $2/($4*1.949) ):(sqrt($2)/($4)) w e  lc rgb 'blue' pt 7  ps 1 t  'Datos' ,\
+ 	 filename u 1:( $3/($4*1.949))  w p lc rgb "black" lw 0.5   ps 0.5 pt 5  t  'Ajuste'
 

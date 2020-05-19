@@ -35,14 +35,16 @@ Para constatar que no exista ninguna anomalía en los pesos de los hexágonos, s
 \end{figure}
 
 \section{Anisotropía}
+El archivo de de todos los disparon empieza el Mon, 1 July 2013 12:05:08 GMT \footnote{$1372680308$}. Para trabajar en una cantidad entera de años, se trabaja a partir del  Thur, 1 January 2014 12:00:00 GMT \footnote{$1388577600$} y hasta el Thursday, 1 January 2020 12:00:00 GMT \footnote{$1577880000$}.  En este rango se tiene la tasa de eventos por día que se muestra en la Fig.\,\ref{tasa_total_diaria}.
 
-En el rango $1372680308$ \footnote{Mon, 1 July 2013 12:05:08 GMT} y $1388577600$ \footnote{Thur, 1 January 2014 12:00:00 GMT}, la tasa de eventos del archivo $\text{All Triggers}$, tenía una tasa de eventos por debajo de lo normal. Por esto, se utiliza los eventos a partir del  1388577600. La tasa de eventos que se utiliza se puede ver a continuación:
+% En el rango $1372680308$ \footnote{Mon, 1 July 2013 12:05:08 GMT} y $1388577600$ \footnote{Thur, 1 January 2014 12:00:00 GMT}, la tasa de eventos del archivo $\text{All Triggers}$, tenía una tasa de eventos por debajo de lo normal. Por esto, se utiliza los eventos a partir del  1388577600. La tasa de eventos que se utiliza se puede ver a continuación:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{rate_total.png}
+	\caption{Tasa  de eventos en el rango de tiempo a trabajar}
+	\label{tasa_total_diaria}
 \end{figure}
-
 
 \subsection{Lista detallada de los filtros aplicados de datos del herald}
 
@@ -68,7 +70,7 @@ Con estos filtros se tienen $1\,092\,753$ eventos
 Estos son los filtros para los datos a utilizar para el cálculo de los parámetros del clima:
 
 \begin{enumerate}
-	\item Eventos con valor de señal de $S_{38}$ por encima de  $5.36\,\text{VEM}$. Este valor corresponde a $\sim 1\,$ EeV  en VEM.
+	\item Eventos con valor de señal de $S_{38}$\footnote{Valor de S38 sin la correccón del clima del paper del 2017} por encima de  $5.36\,\text{VEM}$. Este valor corresponde a $\sim 1\,$ EeV  en VEM.
 	\item Rango de tiempo:
 	\begin{itemize}
 		\item[-] Inicial:1388577600 \\ (Thursday, 1 January 2014 12:00:00 GMT)
@@ -80,6 +82,16 @@ Estos son los filtros para los datos a utilizar para el cálculo de los parámet
 	\item $ib=1$ Bad period flag del herald.  Un valor de 1 indica un buen periodo
 	\item $ib=1$ Bad period flag de los datos del clima. Un valor de 1 indica un buen periodo
 \end{enumerate}
+
+
+Con estos filtros se tienen $1\,208\,615$ eventos, con una tasa de eventos que se muestra en la Fig.\,\ref{tasa_total_diaria_ajuste_weather}. En la figura se observa que utilizando el corte en la señal de S38 sin corregir por la modulación del clima del herald \footnote{Las correcciones se calcularon para el archivo del disparo estándar} se observa una modulación anual.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{rate_total_ajuste_weather.png}
+	\caption{Tasa  de eventos en el rango de tiempo a trabajar para el ajuste de los parámetros del clima.}
+	\label{tasa_total_diaria_ajuste_weather}
+\end{figure}
 
 
 \subsection{Análisis en frecuencia}
@@ -103,17 +115,20 @@ Estos son los filtros para los datos a utilizar para el cálculo de los parámet
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{ap.png}
+	\includegraphics[width=0.5\textwidth]{ap_6t5.png}
+	\caption{Parámetro de clima $a_P$ calculado para la corrección del archivo de todos los disparos}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{arho.png}
+	\includegraphics[width=0.5\textwidth]{arho_6t5.png}
+	\caption{Parámetro de clima $a_\rho$ calculado para la corrección del archivo de todos los disparos}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{brho.png}
+	\includegraphics[width=0.5\textwidth]{brho_6t5.png}
+	\caption{Parámetro de clima $b_\rho$ calculado para la corrección del archivo de todos los disparos}
 \end{figure}
 
 

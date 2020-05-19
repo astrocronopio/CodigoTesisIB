@@ -9,9 +9,10 @@ import numpy as np
 import matplotlib as mpl
 mpl.rcParams.update({'font.size': 18,  'figure.figsize': [12, 6],  'figure.autolayout': True})
 
+plt.figure(2)
 
-freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/AllTriggers_2019_data_file_Eraw_1_2_EeV_short_range.txt", unpack=True, usecols=(0,4,8))
-freq1, modulo1, por991 	= np.loadtxt("../Cpp/Anisotropy/AllTriggers_2019_data_file_Eraw_1_2_EeV_hex_short_range.txt", unpack=True, usecols=(0,4,8))
+freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat", unpack=True, usecols=(0,4,8))
+freq1, modulo1, por991 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat", unpack=True, usecols=(0,4,8))
 plt.title(u"AllTriggers 2019. Short range. 1 EeV - 2 EeV")
 
 plt.ylabel(u"Amplitud del $1^{er}$ armónico")

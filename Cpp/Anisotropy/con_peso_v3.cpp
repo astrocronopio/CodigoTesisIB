@@ -46,7 +46,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			std::stringstream liness(line);	
-			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib;//>>x1>>x2>>x3;
+			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>ang>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
@@ -125,7 +125,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
 
-	std::ofstream myfile (out_file);
+	std::ofstream myfile (out_file );
 
 	for (int i = 0; i < nf; ++i)
 	{
