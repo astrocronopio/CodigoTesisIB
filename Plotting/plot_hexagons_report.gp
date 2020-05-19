@@ -290,18 +290,18 @@ replot
 
 
 set terminal png 19 enhanced font 'Times,26' size 1200,800 
-set output "weigth2014-2019_jan.png"
+set output "weigth2014-2020_jan.png"
 set key left bottom sample 0.5 vert
 
-set title "Jan 2014 - Jan 2019" offset 0,-0.5
+set title "Jan 2014 - Jan 2020" offset 0,-0.5
 set xtics 4
 set xrange [:24.1]
 set ylabel "Weight" offset 1 
 set xlabel "Local Hour [hr]"
 
-plot 	"../Cpp/Exposure/sideral_2019_report_on_anisotropy_288_2013_2019_1.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'     tit "Sid" ,\
-	 	"../Cpp/Exposure/anti_2019_report_on_anisotropy_288_2013_2019.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'    tit "Anti" ,\
-	 	"../Cpp/Exposure/solar_2019_report_on_anisotropy_288_2013_2019.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black'   tit "Solar"
+plot 	"../Cpp/Exposure/sideral_2019_report_288_2014_2020_1.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'     tit "Sid" ,\
+	 	"../Cpp/Exposure/anti_2019_report_288_2014_2020.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'    tit "Anti" ,\
+	 	"../Cpp/Exposure/solar_2019_report_288_2014_2020.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black'   tit "Solar"
 
 set terminal qt 19 enhanced font 'Times,26' size 1200,800 
 replot

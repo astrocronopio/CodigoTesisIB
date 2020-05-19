@@ -86,8 +86,6 @@ int main(int argc, char** argv)
 			iutc.push_back(utc);
 			pres.push_back(p);
 			den.push_back(rho);
-			//den.push_back(rho_old);
-			//avgden.push_back(rhod);
 			avgden.push_back(rhod12);
 			hex6.push_back(h6);			
 		}

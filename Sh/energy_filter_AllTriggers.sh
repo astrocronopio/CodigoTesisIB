@@ -38,7 +38,7 @@ echo "Entre 4 EeV y 8 EeV"
   #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=4 && $38<8) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_4_8"
 
 echo "Entre 1 EeV y 2 EeV"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=1 && $38<2) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1_2"
+  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1 && $38<2 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1_2"
 
 echo "Entre 2 EeV y 4 EeV"
   #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=2 && $38<4) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_2_4"
@@ -68,7 +68,7 @@ echo "Entre 1 EeV y 2 EeV"
   #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=1 && $39<2) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_1_2"
 
 echo "Entre 2 EeV y 4 EeV"
-awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=2 && $39<4) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_2_4"
+  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=2 && $39<4) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_2_4"
 
 
 

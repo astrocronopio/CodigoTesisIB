@@ -17,8 +17,8 @@ set xlabel "sin^2{/Symbol q}"
 filename= "/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Weather_code/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_all_sin2.dat"
 #==============================================================================================================================
 
-#set terminal pngcairo size 1000,750 enhanced font 'Verdana,26'
-set terminal qt 10 enhanced font 'Verdana,26' size 1000,750 
+#set terminal pngcairo size 1200,750 enhanced font 'Helvetica,26'
+set terminal qt 10 enhanced font 'Helvetica,26' size 1200,750 
 
 set key right top
 first_title="a_P"
@@ -35,14 +35,14 @@ replot 	f(x)  	lc rgb "black"   		lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot 		filename		u 1:($2):3  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
+replot 		filename		u 1:($2):3  w yerror 	lc rgb 'dark-pink'	pt 13  ps 4 lw 2 t 'Herald'
 fit f7(x) 	filename		u 1:($2):3  yerror via c07, c17, c27
-replot f7(x) lc rgb '#77ac30'		lw 2 t ''
+replot f7(x) lc rgb 'dark-pink'		lw 2 t ''
 
 #==============================================================================================================================
 #==============================================================================================================================
 
-set terminal qt 12 enhanced font 'Verdana,26' size 1000,750 
+set terminal qt 12 enhanced font 'Helvetica,26' size 1200,750 
 
 set autoscale
 first_title="a_{/Symbol r}"
@@ -57,14 +57,14 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 	
-replot  	filename 	u 1:4:5  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
+replot  	filename 	u 1:4:5  w yerror 	lc rgb 'dark-pink'	pt 13  ps 4 lw 2 t 'Herald'
 fit f5(x)  	filename 	u 1:4:5  yerror via c05, c15, c25
-replot f5(x) lc rgb '#77ac30'		lw 2 t ''#
+replot f5(x) lc rgb 'dark-pink'		lw 2 t ''#
 
 #==============================================================================================================================
 #==============================================================================================================================
 
-set terminal qt 13  enhanced font 'Verdana,26' size 1000,750
+set terminal qt 13  enhanced font 'Helvetica,26' size 1200,750
 
 set autoscale
 first_title="b_{/Symbol r}"
@@ -80,8 +80,8 @@ replot 	f(x)  	lc rgb "black"   				lw 2 t ''
 #================================================================================================================================
 #Todos los archivos
 
-replot 		filename	u 1:6:7  w yerror 	lc rgb '#77ac30'	pt 13  ps 4 lw 2 t 'Herald'
+replot 		filename	u 1:6:7  w yerror 	lc rgb 'dark-pink'	pt 13  ps 4 lw 2 t 'Herald'
 fit f6(x) 	filename	u 1:6:7  yerror via c06, c16, c26
-replot f6(x) lc rgb '#77ac30'		lw 2 t ''#
+replot f6(x) lc rgb 'dark-pink'		lw 2 t ''#
 
 pause(-1)

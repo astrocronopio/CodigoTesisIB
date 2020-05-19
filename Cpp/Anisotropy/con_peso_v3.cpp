@@ -39,7 +39,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	long double x1,x2,x3;
 	long double integral=0.0;
 
-	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_05032020.dat");
+	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat");
 
 	if(myweather.is_open())
 	{	

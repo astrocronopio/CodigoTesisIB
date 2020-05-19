@@ -41,26 +41,27 @@ float energy( float S38)
 
 float ap(float the2)
 {
-	return -0.002 -0.009*the2 + 0.0062*the2*the2;
+	return -0.0012 -0.0079*the2 + 0.0017*the2*the2;
 }
 
 
 float arho(float the2)
 {
-	return -2.24974  +  0.47*the2 + 2.615*the2*the2;
+	return -2.2888  -0.2 *the2 + 3.605*the2*the2;
 }
 
 
 float brho(float the2)
 {
-	return  -0.752264 -0.36 *the2 + 1.56833 *the2*the2;
+	return  -0.7259 -0.1833 *the2 + 1.272 *the2*the2;
 }
 
 
 float energy_reconstruction(float S38, float p, float rho, float rhod, float the) 
-{	float the2= the*the;
+{	float the2= sin(the*M_PI/180.)*(the*M_PI/180.);
 	
-	float factor =1+ (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))*Bgamma;
+	float factor =1+ (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma;
+	cout << factor << endl;
 	float S38_w = S38/factor;
 
 	return energy(S38_w);
@@ -96,7 +97,8 @@ int main(int argc, char** argv)
 				if(utc <= iutc && utc > iutc-300 )
 				{	
 					energy_corr = energy_reconstruction( S38,  p,  rho, rhod, the) ;
-					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t"<< S1000<<"\t" << S38 << "\t" <<energy_corr <<"\t"<< tanks << "\t" << S1000_raw << "\n" ;
+					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t";
+					outfile << S1000<<"\t" << S38 << "\t" <<energy_corr <<"\t"<< tanks << "\t" << S1000_raw << "\n" ;
 
 					outfile.flush();
 					break;

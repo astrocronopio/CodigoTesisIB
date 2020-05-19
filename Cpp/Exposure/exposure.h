@@ -42,7 +42,7 @@ void exposure_sideral( const char* out_file, unsigned long utci, unsigned long u
 
 	long long iutcref = 1104537600;
 
-	ifstream myweather("../../../Weather/utctprh_05032020.dat");
+	ifstream myweather("../../../Weather/utctprh_12052020.dat");
 
 	if(myweather.is_open())
 	{	
@@ -93,7 +93,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 	long double integral=0.0;
 
 	//ifstream myweather("../../../Hexagons/hexagons_2018/utctprhdrc_010104_180219.dat");
-	ifstream myweather("../../../Weather/utctprh_05032020.dat");
+	ifstream myweather("../../../Weather/utctprh_12052020.dat");
 
 	if(myweather.is_open())
 	{	

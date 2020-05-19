@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------------------------------------------
 filepath="/home/ponci/Desktop/TesisIB/Coronel/Weather/"
 
-file_utctprh="$filepath""utctprh_05032020.dat" 
+file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat" 
 	   delay="$filepath""utctprh_delay.dat" 		#Weather Data
 file_utctprh_bins="$filepath""utctprh_bins.dat" 	#Weather Data in bins of a hour
 file_utctprh_bins_day="$filepath""utctprh_bins_by_day.dat" 
