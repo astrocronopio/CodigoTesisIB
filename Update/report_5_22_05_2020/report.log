@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  19 MAY 2020 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  22 MAY 2020 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**report_4_12_05_2020.tex
-(./report_4_12_05_2020.tex
+**report.tex
+(./report.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 11 language(s) loaded.
 (./Preamblev2.sty (/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
@@ -823,8 +823,8 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 3.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 3.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 3.
-(./report_4_12_05_2020.aux)
-\openout1 = `report_4_12_05_2020.aux'.
+No file report.aux.
+\openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -840,7 +840,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
@@ -907,16 +906,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
-
-(./report_4_12_05_2020.out) (./report_4_12_05_2020.out)
 \@outlinefile=\write5
-\openout5 = `report_4_12_05_2020.out'.
+\openout5 = `report.out'.
 
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 3.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input 
 line 3.
 Class revtex4-1 Info: Line numbering not turned on yet on input line 3.
-\openout3 = `report_4_12_05_2020Notes.bib'.
+\openout3 = `reportNotes.bib'.
 
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 3.
 Package babel Info: Redefining spanish shorthand <<
@@ -931,253 +928,67 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 18.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 18.
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
+No file report.bbl.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 36.
-<weigth2014-2020_jan.png, id=33, 903.375pt x 602.25pt>
-File: weigth2014-2020_jan.png Graphic file (type png)
-<use weigth2014-2020_jan.png>
-Package pdftex.def Info: weigth2014-2020_jan.png  used on input line 40.
-(pdftex.def)             Requested size: 255.0pt x 169.9981pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 40--41
- [][] 
- []
-
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 43.
-<rate_total.png, id=38, 903.375pt x 489.32813pt>
-File: rate_total.png Graphic file (type png)
-<use rate_total.png>
-Package pdftex.def Info: rate_total.png  used on input line 52.
-(pdftex.def)             Requested size: 255.0pt x 138.12344pt.
+(babel)             in language  on input line 21.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 52--53
- [][] 
- []
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 58.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 77.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 77.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 77.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 77.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 77.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 77.
-<2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png, id=39, 939.51pt x 578.16pt>
-File: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png Graphic file (type png)
-<use 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png>
-Package pdftex.def Info: 2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png  used on 
-input line 81.
-(pdftex.def)             Requested size: 255.0pt x 156.9169pt.
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 81--82
- [][] 
- []
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  6E6C24DBC572C24EF31B52E621F2C8C0;66.
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./weigth2014-2020_jan.pn
-g> <./rate_total.png (PNG copy)>]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
-<rate_Ajuste.png, id=68, 903.375pt x 489.32813pt>
-File: rate_Ajuste.png Graphic file (type png)
-<use rate_Ajuste.png>
-Package pdftex.def Info: rate_Ajuste.png  used on input line 91.
-(pdftex.def)             Requested size: 255.0pt x 138.12344pt.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 91--92
- [][] 
- []
 
-<ap.png, id=69, 903.375pt x 564.60938pt>
-File: ap.png Graphic file (type png)
-<use ap.png>
-Package pdftex.def Info: ap.png  used on input line 98.
-(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 98--99
- [][] 
- []
-
-<arho.png, id=70, 903.375pt x 564.60938pt>
-File: arho.png Graphic file (type png)
-<use arho.png>
-Package pdftex.def Info: arho.png  used on input line 103.
-(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 103--104
- [][] 
- []
-
-<brho.png, id=71, 903.375pt x 564.60938pt>
-File: brho.png Graphic file (type png)
-<use brho.png>
-Package pdftex.def Info: brho.png  used on input line 108.
-(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 108--109
- [][] 
- []
-
-(./report_4_12_05_2020.bbl
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 9.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 9.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-)
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 112.
- [2 <./2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png> <./rate_Ajuste.png (PNG co
-py)> <./ap.png (PNG copy)> <./arho.png (PNG copy)> <./brho.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
- (./report_4_12_05_2020.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
-Package rerunfilecheck Info: File `report_4_12_05_2020.out' has not changed.
-(rerunfilecheck)             Checksum: FA47B75780FB3895AE75653FEDFBC973;519.
  ) 
 Here is how much of TeX's memory you used:
- 13003 strings out of 494774
- 192393 string characters out of 6176661
- 434090 words of memory out of 5000000
- 16072 multiletter control sequences out of 15000+600000
- 15757 words of font info for 73 fonts, out of 8000000 for 9000
+ 12717 strings out of 494774
+ 187917 string characters out of 6176661
+ 424657 words of memory out of 5000000
+ 15894 multiletter control sequences out of 15000+600000
+ 5407 words of font info for 26 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
- 46i,5n,42p,746b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on report_4_12_05_2020.pdf (2 pages, 660281 bytes).
+ 46i,4n,42p,250b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (1 page, 42621 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 15452 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 29 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 8705 words of extra memory for PDF output out of 10000 (max. 10000000)
 
