@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import matplotlib as mpl
-mpl.rcParams.update({'font.size': 19,  'figure.figsize': [9, 6],  'figure.autolayout': True, 'font.family': 'serif', 'font.sans-serif': ['Helvetica']})
+mpl.rcParams.update({'font.size': 19,  'figure.figsize': [8, 8],  'figure.autolayout': True, 'font.family': 'serif', 'font.sans-serif': ['Helvetica']})
 
 def plot_anisotropy_given_name(filename, title_name, png_name, number):
 	plt.figure(number)
@@ -44,11 +44,18 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, title_name, png_name,
 	#plt.plot(freq1, por991, label="P99", color="pink", ls=':')
 	
 
-	plt.legend(loc=0, ncol=3, columnspacing=0.6, fontsize='small', markerscale=0.8)
-	plt.xlim(363.25,367.25)
+
+	plt.xlim(366.11, 366.61)
+	plt.ylim(0.000,0.006)
 	plt.axvline(x=366.25, color='lightblue', linestyle='--')
 	plt.axvline(x=365.25, color='blue', linestyle=':')
 	plt.axvline(x=364.25, color='lightblue', linestyle='--')
+	
+	plt.axvline(x=366.21, color='green', linestyle='-.')#, label="366.21")
+	plt.axvline(x=366.506, color='green', linestyle='-.')#, label="366.506")
+	
+	plt.legend(loc=3, ncol=1, columnspacing=0.6, fontsize='small', markerscale=0.8)
+	
 	plt.savefig(png_name)
 	#plt.show()
 	pass
@@ -114,9 +121,13 @@ def plot_con_vs_sin_pesos():
 
 
 def main():
-	plot_con_vs_sin_pesos()
-	plot_only_a_graph()
+	#plot_con_vs_sin_pesos()
+	#plot_only_a_graph()
 
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat",
+								"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
+								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
+								"../Update/report_5_22_05_2020/zoom_anis.png", 11)
 	plt.show()
 
 

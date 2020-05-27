@@ -39,7 +39,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	long double x1,x2,x3;
 	long double integral=0.0;
 
-	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat");
+	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_05032020.dat");
 
 	if(myweather.is_open())
 	{	
@@ -167,14 +167,15 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 
 	std::ofstream myfile (out_file);
 
-	for (int i = 0; i < 20; ++i)
+
+	for (int i = 0; i < 50; ++i)
 	{
-		float freq = 366.1 + i*0.5/20;
-		std::cout << " Iteration "<< i +1 <<" of " << 1<< std::endl;
+		float freq_1 = freq + 0.01*i ;
+		std::cout << " Iteration "<< i +1 <<" of " << 50<< std::endl;
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
-		rayleigh(&a, &b, &sumaN, &freq, utci, utcf, in_file);
+		rayleigh(&a, &b, &sumaN, &freq_1, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
@@ -190,7 +191,7 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
      	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
      										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
 
-     	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
+     	myfile << freq_1 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
      	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< std::endl;
 	}
 }
@@ -205,12 +206,20 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
-	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
-	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
-	
-	ray_multifreq(400,  in_file, out_file, utci, utcf);
 
-	//ray_given_freq(366.25, in_file, argv[5], utci, utcf);
+	unsigned long rango2013=1388577600; 
+	unsigned long rango2017=1472688000;
+	unsigned long rango2019=1546344000;
+	unsigned long rango2020=1577880000;
+	unsigned long utci =  rango2013;
+	unsigned long utcf =  rango2019;
+
+	//unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
+	//unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	
+	//ray_multifreq(400,  in_file, out_file, utci, utcf);
+
+	ray_given_freq(366.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
 	
 	return 0;
 }
