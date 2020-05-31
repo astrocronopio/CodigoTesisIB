@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  22 MAY 2020 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.11)  29 MAY 2020 07:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -826,7 +826,8 @@ Class revtex4-1 Info: Line numbering not turned on yet on input line 3.
 \openout3 = `reportNotes.bib'.
 
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 3.
- (./pesos.tex
+
+(./report_1_pesos_v1.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -843,119 +844,125 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<solar_anti_sid_my_and_paper_in_24.png, id=1, 903.375pt x 602.25pt>
-File: solar_anti_sid_my_and_paper_in_24.png Graphic file (type png)
-<use solar_anti_sid_my_and_paper_in_24.png>
-Package pdftex.def Info: solar_anti_sid_my_and_paper_in_24.png  used on input l
-ine 16.
+<Graficos/solar_anti_sid_my_and_paper_in_24.png, id=1, 903.375pt x 602.25pt>
+File: Graficos/solar_anti_sid_my_and_paper_in_24.png Graphic file (type png)
+<use Graficos/solar_anti_sid_my_and_paper_in_24.png>
+Package pdftex.def Info: Graficos/solar_anti_sid_my_and_paper_in_24.png  used o
+n input line 16.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<sidereal_my_and_paper_in_360.png, id=2, 851.43094pt x 639.89063pt>
-File: sidereal_my_and_paper_in_360.png Graphic file (type png)
-<use sidereal_my_and_paper_in_360.png>
-Package pdftex.def Info: sidereal_my_and_paper_in_360.png  used on input line 2
-8.
+<Graficos/sidereal_my_and_paper_in_360.png, id=2, 851.43094pt x 639.89063pt>
+File: Graficos/sidereal_my_and_paper_in_360.png Graphic file (type png)
+<use Graficos/sidereal_my_and_paper_in_360.png>
+Package pdftex.def Info: Graficos/sidereal_my_and_paper_in_360.png  used on inp
+ut line 28.
 (pdftex.def)             Requested size: 229.49844pt x 172.47986pt.
-<sidereal_my_and_paper_in_360_error.png, id=3, 903.375pt x 602.25pt>
-File: sidereal_my_and_paper_in_360_error.png Graphic file (type png)
-<use sidereal_my_and_paper_in_360_error.png>
-Package pdftex.def Info: sidereal_my_and_paper_in_360_error.png  used on input 
-line 36.
+<Graficos/sidereal_my_and_paper_in_360_error.png, id=3, 903.375pt x 602.25pt>
+File: Graficos/sidereal_my_and_paper_in_360_error.png Graphic file (type png)
+<use Graficos/sidereal_my_and_paper_in_360_error.png>
+Package pdftex.def Info: Graficos/sidereal_my_and_paper_in_360_error.png  used 
+on input line 36.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<anti_my_and_paper_in_360.png, id=4, 752.8125pt x 602.25pt>
-File: anti_my_and_paper_in_360.png Graphic file (type png)
-<use anti_my_and_paper_in_360.png>
-Package pdftex.def Info: anti_my_and_paper_in_360.png  used on input line 45.
+<Graficos/anti_my_and_paper_in_360.png, id=4, 752.8125pt x 602.25pt>
+File: Graficos/anti_my_and_paper_in_360.png Graphic file (type png)
+<use Graficos/anti_my_and_paper_in_360.png>
+Package pdftex.def Info: Graficos/anti_my_and_paper_in_360.png  used on input l
+ine 45.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./solar_anti_sid_my_and
-_paper_in_24.png (PNG copy)> <./sidereal_my_and_paper_in_360.png (PNG copy)> <.
-/sidereal_my_and_paper_in_360_error.png (PNG copy)>]
-<anti_my_and_paper_in_360_error.png, id=16, 903.375pt x 602.25pt>
-File: anti_my_and_paper_in_360_error.png Graphic file (type png)
-<use anti_my_and_paper_in_360_error.png>
-Package pdftex.def Info: anti_my_and_paper_in_360_error.png  used on input line
- 53.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Graficos/solar_anti_s
+id_my_and_paper_in_24.png (PNG copy)> <./Graficos/sidereal_my_and_paper_in_360.
+png (PNG copy)> <./Graficos/sidereal_my_and_paper_in_360_error.png (PNG copy)>]
+<Graficos/anti_my_and_paper_in_360_error.png, id=16, 903.375pt x 602.25pt>
+File: Graficos/anti_my_and_paper_in_360_error.png Graphic file (type png)
+<use Graficos/anti_my_and_paper_in_360_error.png>
+Package pdftex.def Info: Graficos/anti_my_and_paper_in_360_error.png  used on i
+nput line 53.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<sidereal_paper_in_24_w_alter.png, id=17, 903.375pt x 602.25pt>
-File: sidereal_paper_in_24_w_alter.png Graphic file (type png)
-<use sidereal_paper_in_24_w_alter.png>
-Package pdftex.def Info: sidereal_paper_in_24_w_alter.png  used on input line 6
-8.
+<Graficos/sidereal_paper_in_24_w_alter.png, id=17, 903.375pt x 602.25pt>
+File: Graficos/sidereal_paper_in_24_w_alter.png Graphic file (type png)
+<use Graficos/sidereal_paper_in_24_w_alter.png>
+Package pdftex.def Info: Graficos/sidereal_paper_in_24_w_alter.png  used on inp
+ut line 68.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<solar_my_and_paper_in_360_2.png, id=18, 752.8125pt x 602.25pt>
-File: solar_my_and_paper_in_360_2.png Graphic file (type png)
-<use solar_my_and_paper_in_360_2.png>
-Package pdftex.def Info: solar_my_and_paper_in_360_2.png  used on input line 77
-.
+<Graficos/solar_my_and_paper_in_360_2.png, id=18, 752.8125pt x 602.25pt>
+File: Graficos/solar_my_and_paper_in_360_2.png Graphic file (type png)
+<use Graficos/solar_my_and_paper_in_360_2.png>
+Package pdftex.def Info: Graficos/solar_my_and_paper_in_360_2.png  used on inpu
+t line 77.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
-<solar_anti_sid_paper2018_in_288.png, id=19, 752.8125pt x 602.25pt>
-File: solar_anti_sid_paper2018_in_288.png Graphic file (type png)
-<use solar_anti_sid_paper2018_in_288.png>
-Package pdftex.def Info: solar_anti_sid_paper2018_in_288.png  used on input lin
-e 87.
+<Graficos/solar_anti_sid_paper2018_in_288.png, id=19, 752.8125pt x 602.25pt>
+File: Graficos/solar_anti_sid_paper2018_in_288.png Graphic file (type png)
+<use Graficos/solar_anti_sid_paper2018_in_288.png>
+Package pdftex.def Info: Graficos/solar_anti_sid_paper2018_in_288.png  used on 
+input line 87.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
- [2 <./anti_my_and_paper_in_360.png (PNG copy)> <./anti_my_and_paper_in_360_err
-or.png (PNG copy)> <./sidereal_paper_in_24_w_alter.png (PNG copy)> <./solar_my_
-and_paper_in_360_2.png (PNG copy)>]
-<sidereal_my_and_paper_in_288.png, id=24, 752.8125pt x 602.25pt>
-File: sidereal_my_and_paper_in_288.png Graphic file (type png)
-<use sidereal_my_and_paper_in_288.png>
-Package pdftex.def Info: sidereal_my_and_paper_in_288.png  used on input line 9
-6.
+ [2 <./Graficos/anti_my_and_paper_in_360.png (PNG copy)> <./Graficos/anti_my_an
+d_paper_in_360_error.png (PNG copy)> <./Graficos/sidereal_paper_in_24_w_alter.p
+ng (PNG copy)> <./Graficos/solar_my_and_paper_in_360_2.png (PNG copy)>]
+<Graficos/sidereal_my_and_paper_in_288.png, id=24, 752.8125pt x 602.25pt>
+File: Graficos/sidereal_my_and_paper_in_288.png Graphic file (type png)
+<use Graficos/sidereal_my_and_paper_in_288.png>
+Package pdftex.def Info: Graficos/sidereal_my_and_paper_in_288.png  used on inp
+ut line 96.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
-<sidereal_my_and_paper_in_288_error.png, id=25, 903.375pt x 602.25pt>
-File: sidereal_my_and_paper_in_288_error.png Graphic file (type png)
-<use sidereal_my_and_paper_in_288_error.png>
-Package pdftex.def Info: sidereal_my_and_paper_in_288_error.png  used on input 
-line 104.
+<Graficos/sidereal_my_and_paper_in_288_error.png, id=25, 903.375pt x 602.25pt>
+File: Graficos/sidereal_my_and_paper_in_288_error.png Graphic file (type png)
+<use Graficos/sidereal_my_and_paper_in_288_error.png>
+Package pdftex.def Info: Graficos/sidereal_my_and_paper_in_288_error.png  used 
+on input line 104.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<solar_my_and_paper_2018_in_288.png, id=26, 752.8125pt x 602.25pt>
-File: solar_my_and_paper_2018_in_288.png Graphic file (type png)
-<use solar_my_and_paper_2018_in_288.png>
-Package pdftex.def Info: solar_my_and_paper_2018_in_288.png  used on input line
- 114.
+<Graficos/solar_my_and_paper_2018_in_288.png, id=26, 752.8125pt x 602.25pt>
+File: Graficos/solar_my_and_paper_2018_in_288.png Graphic file (type png)
+<use Graficos/solar_my_and_paper_2018_in_288.png>
+Package pdftex.def Info: Graficos/solar_my_and_paper_2018_in_288.png  used on i
+nput line 114.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
-<solar_my_and_paper_in_288_error.png, id=27, 903.375pt x 602.25pt>
-File: solar_my_and_paper_in_288_error.png Graphic file (type png)
-<use solar_my_and_paper_in_288_error.png>
-Package pdftex.def Info: solar_my_and_paper_in_288_error.png  used on input lin
-e 122.
+<Graficos/solar_my_and_paper_in_288_error.png, id=27, 903.375pt x 602.25pt>
+File: Graficos/solar_my_and_paper_in_288_error.png Graphic file (type png)
+<use Graficos/solar_my_and_paper_in_288_error.png>
+Package pdftex.def Info: Graficos/solar_my_and_paper_in_288_error.png  used on 
+input line 122.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
-<anti_my_and_paper_2018_in_288.png, id=28, 752.8125pt x 602.25pt>
-File: anti_my_and_paper_2018_in_288.png Graphic file (type png)
-<use anti_my_and_paper_2018_in_288.png>
-Package pdftex.def Info: anti_my_and_paper_2018_in_288.png  used on input line 
-131.
+<Graficos/anti_my_and_paper_2018_in_288.png, id=28, 752.8125pt x 602.25pt>
+File: Graficos/anti_my_and_paper_2018_in_288.png Graphic file (type png)
+<use Graficos/anti_my_and_paper_2018_in_288.png>
+Package pdftex.def Info: Graficos/anti_my_and_paper_2018_in_288.png  used on in
+put line 131.
 (pdftex.def)             Requested size: 229.49844pt x 183.59868pt.
- [3 <./solar_anti_sid_paper2018_in_288.png (PNG copy)> <./sidereal_my_and_paper
-_in_288.png (PNG copy)> <./sidereal_my_and_paper_in_288_error.png (PNG copy)> <
-./solar_my_and_paper_2018_in_288.png (PNG copy)> <./solar_my_and_paper_in_288_e
-rror.png (PNG copy)>]
-<anti_my_and_paper_in_288_error.png, id=32, 903.375pt x 602.25pt>
-File: anti_my_and_paper_in_288_error.png Graphic file (type png)
-<use anti_my_and_paper_in_288_error.png>
-Package pdftex.def Info: anti_my_and_paper_in_288_error.png  used on input line
- 139.
+ [3 <./Graficos/solar_anti_sid_paper2018_in_288.png (PNG copy)> <./Graficos/sid
+ereal_my_and_paper_in_288.png (PNG copy)> <./Graficos/sidereal_my_and_paper_in_
+288_error.png (PNG copy)> <./Graficos/solar_my_and_paper_2018_in_288.png (PNG c
+opy)> <./Graficos/solar_my_and_paper_in_288_error.png (PNG copy)>]
+<Graficos/anti_my_and_paper_in_288_error.png, id=32, 903.375pt x 602.25pt>
+File: Graficos/anti_my_and_paper_in_288_error.png Graphic file (type png)
+<use Graficos/anti_my_and_paper_in_288_error.png>
+Package pdftex.def Info: Graficos/anti_my_and_paper_in_288_error.png  used on i
+nput line 139.
 (pdftex.def)             Requested size: 229.49844pt x 152.99736pt.
 )
 No file report.bbl.
-[4 <./anti_my_and_paper_2018_in_288.png (PNG copy)> <./anti_my_and_paper_in_288
-_error.png (PNG copy)>] (./report.aux) ) 
+[4 <./Graficos/anti_my_and_paper_2018_in_288.png (PNG copy)> <./Graficos/anti_m
+y_and_paper_in_288_error.png (PNG copy)>] (./report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
 Here is how much of TeX's memory you used:
- 9591 strings out of 494774
- 141405 string characters out of 6176661
+ 9590 strings out of 494774
+ 141938 string characters out of 6176661
  353047 words of memory out of 5000000
  12695 multiletter control sequences out of 15000+600000
- 11038 words of font info for 61 fonts, out of 8000000 for 9000
+ 10987 words of font info for 60 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
- 46i,6n,42p,577b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (4 pages, 2072179 bytes).
+ 46i,6n,42p,589b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (4 pages, 2072391 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

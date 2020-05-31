@@ -9,6 +9,7 @@ mpl.rcParams.update({'font.size': 19,  'figure.figsize': [8, 8],  'figure.autola
 
 def plot_anisotropy_given_name(filename, title_name, png_name, number):
 	plt.figure(number)
+	
 	freq, modulo, por99 = np.loadtxt(filename, unpack=True, usecols=(0,4,8))
 	
 	#plt.title(title_name)

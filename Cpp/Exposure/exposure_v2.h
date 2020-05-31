@@ -80,7 +80,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 		integral+=rnhexhr[i]/((float)interval); 
 	}
 
-	for (int i = 0; i < interval; ++i){myfile <<setprecision (17)<< i << "\t" <<rnhexhr[i]/integral<< "\t" << rnhexhr[i]<<  endl;}
+	for (int i = 0; i < interval; ++i){myfile <<setprecision (17)<< i*360.0/288.0 << "\t" <<rnhexhr[i]/integral<< "\t" << rnhexhr[i]<<  endl;}
 
 	//myfile.close();
 	myweather.close();

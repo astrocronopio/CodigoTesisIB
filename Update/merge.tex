@@ -10,12 +10,11 @@
 % que necesite
 \usepackage{ibextra}
 \usepackage[utf8]{inputenc}
-\usepackage{subcaption}  % Enable figure captions or figure notes
+\usepackage{caption}  % Enable figure captions or figure notes
 \usepackage{float}
 \usepackage{nicefrac}
 \usepackage{mathtools}
 \usepackage{textcomp}
-
 \usepackage{amsfonts}
 
 \newcommand{\done}{\item[\checkmark]}
@@ -45,14 +44,17 @@
 %\setcounter{secnumdepth}{4}
 \begin{document}
 
+\chapter{Introducción}
+\graphicspath{{report_0_Introduccion/}}
+\input{report_0_Introduccion/introduccion}
 
 \chapter{Report \#1: 13/04/2020 - Pesos de los hexágonos}
 \graphicspath{{report_1_13_04_2020/}}
-\input{report_1_13_04_2020/report_1_pesos}
+\input{report_1_13_04_2020/report_1_pesos_v1}
 
-% \chapter{Report \#2: 27/04/2020 - Anisotropías para todos los disparos y pesos de los hexágonos}
-% \graphicspath{{report_2_27_04_2020/}}
-% \input{report_2_27_04_2020/anisotropia_pesos}
+\chapter{Report \#2: 27/04/2020 - Anisotropías para todos los disparos y pesos de los hexágonos}
+\graphicspath{{report_2_27_04_2020/}}
+\input{report_2_27_04_2020/report_2_anisotropia_pesos_v1}
 
 % \chapter{Report \#3: 07/05/2020 - Reconstrucción de energía}
 % \graphicspath{{report_3_07_05_2020/}}
@@ -64,11 +66,11 @@
 
 \chapter{Report \#5: 22/05/2020 - Dipolo en el bin 1 EeV - 2 EeV}
 \graphicspath{{report_5_22_05_2020/}}
-\input{report_5_22_05_2020/seno_anisotropy}
+\input{report_5_22_05_2020/report_5_seno_anisotropia}
 
 
 \appendix
 \chapter{Cosas para hacer:  Mails con Mollerach}
-\input{pepe}
+\input{todolist}
 
 \end{document}
