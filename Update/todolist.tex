@@ -1,3 +1,23 @@
+Fecha: 13/05/2020
+
+\begin{itemize}
+	\item sobre la selecci=C3=B3n de los eventos: cuando vamos a energias bajas, por ej hasta 1 EeV, hay eventos que disparan pocas estaciones, de modo que no podemos permitir
+que haya estaciones apagadas cerca de la de mayor se=C3=B1al para asegurarnos que estamos haciendo una buena reconstruccion, o sea hay que considerar solo eventos 6T5, toda la corona activa. 
+\item Cuando analizamos eventos de mayores energias, en particular arriba de 4EeV, estos hacen diparar tipicamente mas de 5-6 detectores, de modo que se puede permitir que uno de
+los detectores de la corona este apagado sin afectar demasiado la reconstruccion, solo ahi es que se consideran los eventos 5T5.
+Para calcular los coeficientes del weather, queremos los mejores eventos, asi que tambien se usan solo los 6T5 (no es tan importante ganar un poquito mas de estadistica
+arribade 4 EeV para eso). El parametro ib es el el de bad period? Decis que es irrelevante porque ya filtras esos eventos durante la selecci=C3=B3n de eventos?
+
+\item La aceptancia es la eficiencia de disparo, que que es casi 1 para eventos arriba de 1 EeV y hasta 60 grados cuando usamos el dataset con todos los disparos. No se que archivo es el energy filter Alltriggers.sh. Para que lo usas?
+
+\item En resumen usa los cortes 6T5 y theta<60 para anisotropias y para weather correction. El corte de quality weather flag solo se usa para seleccionar los eventos
+para calcular las correcciones del weather. NO HAY que usarlo para seleccionar los datos para analisis de anisotropias. Si sacas esos eventos podes estar introduciendo efectos espurios (porque no se descartan los hexagonos en los momentos que no funcionan los registros del weather). Tal vez la correccion de weather que se les hace a esos eventos no es tan precisa como la de los demas, pero es mejor que nada.
+
+\item Ahi entiendo que ya hay algo para corregir. Los resultados nuevos son un poco raros, en siderea desaparecio toda la se=C3=B1al cuando pones pesos 1, y despues crece algo con los pesos. Revisa con los cortes bien puestos. Pone una tabla con amplitud y fase con y sin peso tambien.
+\end{itemize}
+
+
+
 \begin{itemize}
 \done Para calcular los coeficientes del weather, queremos los mejores eventos, asi que tambien se usan solo los 6T5 (no es tan importante ganar un poquito mas de estadistica arribade 4 EeV para eso).
 
@@ -12,7 +32,7 @@
 \end{itemize}
 
 
-20/05/2020
+Fecha: 20/05/2020
 
 \begin{itemize}
 
@@ -29,7 +49,7 @@
 
 
 
-27/05/2020
+Fecha: 27/05/2020
 
 \begin{itemize}
 	\done los eventos son los 6T5 con cenit < 60 grados? Cuantos eventos son? (Pone siempre esos datos asi se sabe de quienes hablas)
@@ -44,14 +64,25 @@
 28/05/2020
 
 \begin{itemize}
-	\item llama la atencion la modulacion de los hexagonos y de los pesos que pones en la tabla 1.3. Deberian tener aprox la misma amplitud y fase opuesta. Creo que estan mal los valores del fit a los hexagonos, deberia ser a ojo una amplitud cerca a 0.0035 y una fase cerca de 100. Igual es raro porque las curvas en el plot tienen pinta razonable.
-Fijate que cuando fiteas un coseno 1+A*cos(RA-B) va con menos B, asi B es la fase donde la funcion tiene el maximo. Fijate que si fiteas a una funcion con media distinta de 1, la amplitud es el factor A en C*(1+A*cos(RA-B)) y  no el factor  A en C+A*cos(RA-B)
-\item  el test que queriamos hacer para ver si son compatibles las amplitudes de Fourier del primer armonico con y sin peso con la modulacion de los pesos no estaria funcionando. La idea es que si sumas vectorialmente un vector con amplitud igual a amplitud del primer armonico sin pesos apuntando en la direccion de la fase sin pesos mas otro vector con amplitud igual a la del fit a los pesos de los eventos apuntando en la fase del maximo del coseno, el vector suma deberia tener amplitud igual a la amplitud del analisis de fourier con pesos y apuntar en la direccion de la fase de ese analisis. No se en cual de los pedazos estara el error.
-\item Para ir chequeando todo podrias:
-\begin{itemize}
-\item  binear los eventos en RA, por ejemplo en bines de 10 grados. Plotear el numero de evento en cada bin dividido la media (esta va a ser Ntotal/36) en funcion de la RA. Fitearle un coseno 1+A*cos(RA-B) a ese plot, te deberia dar aprox lo mismo que hacer el analisis de Fourier de los eventos sin peso. Asi podes comprobar si ese analisis te esta dando bien. Ademas es lindo hacer el plot y mostrar la distribucion en RA de los eventos.
-\item  despues haces lo mismo poniendole los pesos a los eventos y comprobas si estas haciendo bien el analisis de Fourier con pesos.
-\item  Me acabo de acordar que en algun momento tenias un lio con el  cero de donde contar la ascencion recta. Asegurate que los pesos los estas poniendo con la fase correcta, o sea que el tiempo sidereo en el que pones los hexagonos se corresponde bien con la RA del cenit del observatorio en ese momento (me parece que el problema podria venir de un corrimiento del cero, ya que eso da un error en la fase de los hexagonos)
+	\done llama la atencion la modulacion de los hexagonos y de los pesos que pones en la tabla 1.3. Deberian tener aprox la misma amplitud y fase opuesta. Creo que estan mal los valores del fit a los hexagonos, deberia ser a ojo una amplitud cerca a 0.0035 y una fase cerca de 100. Igual es raro porque las curvas en el plot tienen pinta razonable. Fijate que cuando fiteas un coseno 1+A*cos(RA-B) va con menos B, asi B es la fase donde la funcion tiene el maximo. Fijate que si fiteas a una funcion con media distinta de 1, la amplitud es el factor A en C*(1+A*cos(RA-B)) y  no el factor  A en C+A*cos(RA-B)
+
+	\item  el test que queriamos hacer para ver si son compatibles las amplitudes de Fourier del primer armonico con y sin peso con la modulacion de los pesos no estaria funcionando. La idea es que si sumas vectorialmente un vector con amplitud igual a amplitud del primer armonico sin pesos apuntando en la direccion de la fase sin pesos mas otro vector con amplitud igual a la del fit a los pesos de los eventos apuntando en la fase del maximo del coseno, el vector suma deberia tener amplitud igual a la amplitud del analisis de fourier con pesos y apuntar en la direccion de la fase de ese analisis. No se en cual de los pedazos estara el error.
+	
+	\item Para ir chequeando todo podrias:
+	\begin{itemize}
+	
+		\item  binear los eventos en RA, por ejemplo en bines de 10 grados. Plotear el numero de evento en cada bin dividido la media (esta va a ser Ntotal/36) en funcion de la RA. Fitearle un coseno 1+A*cos(RA-B) a ese plot, te deberia dar aprox lo mismo que hacer el analisis de Fourier de los eventos sin peso. Asi podes comprobar si ese analisis te esta dando bien. Ademas es lindo hacer el plot y mostrar la distribucion en RA de los eventos.
+	
+		\item  despues haces lo mismo poniendole los pesos a los eventos y comprobas si estas haciendo bien el analisis de Fourier con pesos.
+	
+		\item  Me acabo de acordar que en algun momento tenias un lio con el  cero de donde contar la ascencion recta. Asegurate que los pesos los estas poniendo con la fase correcta, o sea que el tiempo sidereo en el que pones los hexagonos se corresponde bien con la RA del cenit del observatorio en ese momento (me parece que el problema podria venir de un 	corrimiento del cero, ya que eso da un error en la fase de los hexagonos)
+	\end{itemize}
+
 \end{itemize}
 
+
+02/06/2020
+
+\begin{itemize}
+	\item Actualizar la tabla de la fase
 \end{itemize}

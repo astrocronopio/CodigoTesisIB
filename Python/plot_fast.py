@@ -46,7 +46,7 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, title_name, png_name,
 	
 
 
-	plt.xlim(366.11, 366.61)
+	plt.xlim(363.25, 367.25)
 	plt.ylim(0.000,0.006)
 	plt.axvline(x=366.25, color='lightblue', linestyle='--')
 	plt.axvline(x=365.25, color='blue', linestyle=':')
@@ -125,8 +125,8 @@ def main():
 	#plot_con_vs_sin_pesos()
 	#plot_only_a_graph()
 
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat",
-								"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV_peso.dat",
+								"../Cpp/Anisotropy/2019_AllTriggers_1_2_EeV.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
 								"../Update/report_5_22_05_2020/zoom_anis.png", 11)
 	plt.show()

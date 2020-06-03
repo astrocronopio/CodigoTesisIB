@@ -1,5 +1,5 @@
 pi=3.14159265359
-f(x) = a*cos((w*x -b )*pi/180.0) + c
+f(x) = (a*cos((w*x -b )*pi/180.0) +1.0)*c
 
 a=0.005
 b=300
@@ -24,7 +24,7 @@ plot "./sideral_2020.txt" u 1:(1/$2 ) notit
 
 #set arrow from 317,0.99 to 317,1.01, graph 1 nohead
 
-fit f(x) "sideral_2020.txt" u 1:(1/$2 ) via a,b
+fit f(x) "sideral_2020.txt" u 1:(1/$2 ) via a,b,c
 replot f(x) tit "Ajuste: a·cos(w·x-b) + c"
 
 rep
@@ -35,9 +35,9 @@ rep
 # inversa de los pesos
 
 pi=3.14159265359
-f1(x) = a1*cos((w1*x -b1)*pi/180.0) + c1
+f1(x) = (a1*cos((w1*x -b1)*pi/180.0) + 1.0)*c1
 
-a1=0.01
+a1=0.005
 b1=300
 w1=1
 c1=2.

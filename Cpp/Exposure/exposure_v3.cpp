@@ -1,13 +1,15 @@
-#include "exposure_v2.h"
+#include "exposure_v3.h"
+
+unsigned long rango2004=1072915200;
+unsigned long rango2005=1104537600;
+unsigned long rango2013=1388577600; 
+unsigned long rango2017=1472688000;
+unsigned long rango2019=1546344000;
+unsigned long rango2020=1577880000;
+
 
 int version()
 {
-	unsigned long rango2004=1072915200;
-	unsigned long rango2005=1104537600;
-	unsigned long rango2013=1388577600; 
-	unsigned long rango2017=1472688000;
-	unsigned long rango2019=1546344000;
-	unsigned long rango2020=1577880000;
 	
 	unsigned long utci =  rango2013; //2005
 	unsigned long utcf =  rango2020;//1577825634; //2016
@@ -33,12 +35,7 @@ int version()
 }
 
 int version_V2()
-{	unsigned long rango2013=1388577600; 
-	unsigned long rango2017=1472688000;
-	
-	unsigned long rango2019=1546344000;
-	unsigned long rango2020=1577880000;
-	
+{
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2019;
 
@@ -50,8 +47,6 @@ int version_V2()
 	std::cout << "Sidereal 2020:"<< std::endl;
 	utcf =  rango2020;
 	exposure_given_period(T_S, "sideral_2020.txt", utci, utcf, interval);
-
-
 
 	return 0;
 
