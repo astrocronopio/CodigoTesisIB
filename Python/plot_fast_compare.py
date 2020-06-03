@@ -17,7 +17,7 @@ plt.xlabel(u"Período [días sidéreos]")
 
 
 
-freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat", unpack=True, usecols=(0,4,8))
+freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/auxiliar.txt", unpack=True, usecols=(0,4,8))
 plt.plot(freq, modulo, color="black", label=u"Sin peso", linestyle='--')
 plt.plot(freq, por99, label="P99-sin", color="red", ls='--')
 

@@ -59,10 +59,9 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 			if (iw<5 && ib==1)
 			{
 				x3	=  	fmod(right_ascension(iutc)*fas, 360);
-				ang =  	int(x3*interval/360.);
-				num_hex_hr[ang] += 	hex6;
-				aux	=	ang;
-
+				aux =  	int(x3*interval/360.);
+				num_hex_hr[aux] += 	hex6;
+				
 				if(num_hex_hr[aux]> 1000000 ) 
 				{
 					rnhexhr[aux]	+=	num_hex_hr[aux]/1000000.0;

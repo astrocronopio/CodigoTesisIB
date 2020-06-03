@@ -51,7 +51,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
 				x1=((long double)(iutc-iutc0+5.)/3600.+ 21.+5.)*fas*interval/24.0; // hora local
-				aux=  int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
+				aux=    int(fmod(x1, interval));//int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
 				num_hex_hr[aux] += hex6;				
 				
 				if(num_hex_hr[aux]> 1000000 ) {
@@ -100,7 +100,8 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
 
 			aux=hrs*interval/24.0;
-			nh=  int(aux)%interval >= 0 ? int(aux)%interval :  interval+int(aux)%interval  ;
+			nh=    int(fmod(aux, interval));//int(aux)%interval >= 0 ? int(aux)%interval :  interval+int(aux)%interval  ;
+
 
 			peso =1.0/dnhex[nh];		
 			*sumaN+=peso;
@@ -212,14 +213,14 @@ int main(int argc, char const *argv[])
 	unsigned long rango2019=1546344000;
 	unsigned long rango2020=1577880000;
 	unsigned long utci =  rango2013;
-	unsigned long utcf =  rango2019;
+	unsigned long utcf =  rango2020;
 
 	//unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	//unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
 	//ray_multifreq(400,  in_file, out_file, utci, utcf);
 
-	ray_given_freq(366.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
+	ray_given_freq(365.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
 	
 	return 0;
 }

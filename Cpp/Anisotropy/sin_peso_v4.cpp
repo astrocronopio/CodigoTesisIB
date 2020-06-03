@@ -47,7 +47,8 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
+			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
+			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
 			aux=hrs*interval/24.0;
 			peso =1.0;		
 			*sumaN+=peso;
@@ -62,8 +63,12 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 	myfile.close();
 }
 
-float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf)
-{	float a =0.0  , b=0.0, sumaN=0.0 ;
+float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
+	
+	//unsigned long utci =  1104537600; //1372699409 ;
+	//unsigned long utcf =  1577825634 ;
+
+	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
 
@@ -100,6 +105,9 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 
 float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
+	//unsigned long utci =  1104537600; //1372699409 ;
+	//unsigned long utcf =  1577825634 ;
+
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;

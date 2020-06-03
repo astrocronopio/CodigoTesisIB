@@ -12,6 +12,11 @@ float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 const int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 
+unsigned long rango2013=1388577600; 
+unsigned long rango2017=1472688000;
+unsigned long rango2019=1546344000;
+unsigned long rango2020=1577880000;
+
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;
 	double aux= (utc-iutcref);
@@ -35,7 +40,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	float t,p,r,rav,hex6, hex5;
 	int iw,ib, ihr, aux, ang;
 	std::string line;
-	float fas = period/366.25; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
+	float fas = period/365.25; //aca tambien cambie para que la fase sea 1 vuelta en a sidereal year
 	long double x1,x2,x3;
 	long double integral=0.0;
 
@@ -43,32 +48,30 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 
 	if(myweather.is_open())
 	{	
-		while (!myweather.eof() )
-		{			
+		while (!myweather.eof() ){			
 			getline(myweather,line);			
 			std::stringstream liness(line);	
 			liness>>iutc>>t>>p>>r>>rav>>hex6>>hex5>> iw>>ib>>ang>>x2>>x3;
 
 			if (iutc < utci || iutc > utcf) continue;
-			if (iw<5 && ib==1)
-			{				
-				x3=  fmod(right_ascension(iutc)*fas, 360);
-				ang =  int(x3*interval/360.);
-
-				num_hex_hr[ang] += hex6;
-				aux=ang;
-
-				if(num_hex_hr[aux]> 1000000 ) 
-				{
+			if (iw<5 && ib==1){
+				x1=((long double)(iutc-iutc0)/3600.)*fas*interval/24.0; // hora local
+				aux=    int(fmod(x1, interval));
+				//int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
+				num_hex_hr[aux] += hex6;				
+				
+				if(num_hex_hr[aux]> 1000000 ) {
 					rnhexhr[aux]+=num_hex_hr[aux]/1000000.0;
 					num_hex_hr[aux]=0;
-	}}}}
+				} 
+			}
+		}
+	}
 
 	for (int i = 0; i < interval; ++i)
 	{	
 		rnhexhr[i]+=num_hex_hr[i]/1000000.0;
 		integral+=rnhexhr[i]/((float)interval); 
-		std::cout<< rnhexhr[i]<<std::endl;
 	}
 	for (int i = 0; i < interval; ++i) vect[i] = rnhexhr[i]/integral;
 }
@@ -99,10 +102,12 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
-			
+			hrs=((double)(utc-utc0)/3600.)*fas; // hora local
+			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
+
 			aux=hrs*interval/24.0;
-			nh=  int(aux)%interval >= 0 ? int(aux)%interval :  interval+int(aux)%interval  ;
+			nh=    int(fmod(aux, interval));//int(aux)%interval >= 0 ? int(aux)%interval :  interval+int(aux)%interval  ;
+
 
 			peso =1.0/dnhex[nh];		
 			*sumaN+=peso;
@@ -120,6 +125,9 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 
 float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
+	//unsigned long utci =  1104537600; //1372699409 ;
+	//unsigned long utcf =  1577825634 ;
+
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
@@ -166,13 +174,11 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 
 	std::ofstream myfile (out_file);
 
-	int iterations=50;
 
-
-	for (int i = 0; i < iterations; ++i)
+	for (int i = 0; i < 50; ++i)
 	{
 		float freq_1 = freq + 0.01*i ;
-		std::cout << " Iteration "<< i +1 <<" of " << iterations<< std::endl;
+		std::cout << " Iteration "<< i +1 <<" of " << 50<< std::endl;
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
@@ -197,6 +203,9 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 	}
 }
 
+
+
+
 int main(int argc, char const *argv[])
 {	// true		== short range,  
 	// false	== long range (only for ICRCs)
@@ -204,21 +213,15 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
+	unsigned long utci =  rango2013;
+	unsigned long utcf =  rango2020;
 
-	unsigned long rango2013=1388577600; 
-	unsigned long rango2017=1472688000;
-	unsigned long rango2019=1546344000;
-	unsigned long rango2020=1577880000;
+	//unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
+	//unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	
+	//ray_multifreq(400,  in_file, out_file, utci, utcf);
 
-	unsigned long utci =  strtoul(argv[3], &pEnd, 0); 
-	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); 
-
-	ray_multifreq(400,  in_file, out_file, utci, utcf);
-
-/*	unsigned long utci =  rango2013;
-	unsigned long utcf =  rango2019;*/
-
-	//ray_given_freq(366.00, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
+	ray_given_freq(365.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
 	
 	return 0;
 }
