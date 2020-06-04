@@ -34,37 +34,40 @@ rep
 # plot de los heaxogonos
 # inversa de los pesos
 
-pi=3.14159265359
-f1(x) = (a1*cos((w1*x -b1)*pi/180.0) + 1.0)*c1
+# pi=3.14159265359
+# f1(x) = (a1*cos((w1*x -b1)*pi/180.0) + 1.0)*c1
 
-a1=0.005
-b1=300
-w1=1
-c1=2.
+# a1=0.005
+# b1=300
+# w1=1
+# c1=2.
 
-set term png  23 enhanced font 'Helvetica,26' size 1100,750 
-set output "../../Update/report_5_22_05_2020/ajuste_pesos.png"
-replot
+# set term png  23 enhanced font 'Helvetica,26' size 1100,750 
+# set output "../../Update/report_5_22_05_2020/ajuste_pesos.png"
+# replot
 
-set terminal qt 11 enhanced font 'Helvetica,26' size 1100,750 
+# set terminal qt 11 enhanced font 'Helvetica,26' size 1100,750 
 
-set ylabel "Hexagonos [10^{6}]"
-set ytics 0.01
-set yrange [2.01:]
+# set ylabel "Hexagonos [10^{6}]"
+# set ytics 0.01
+# set yrange [2.01:]
 
-#plot "sideral_2019.txt" u ($1*360/288):2
-plot "sideral_2020.txt" u ($1):($3/5) notit
-#replot f(x)
-#pause(5)
+# #plot "sideral_2019.txt" u ($1*360/288):2
+# plot "sideral_2020.txt" u ($1):($3/5) notit
+# #replot f(x)
+# #pause(5)
 
 
-#set arrow from 317,2.02 to 317,2.06, graph 1 nohead
+# #set arrow from 317,2.02 to 317,2.06, graph 1 nohead
 
-fit f1(x) "sideral_2020.txt" u 1:($3/5) via a1,b1,c1
-rep f1(x) tit "Ajuste: a·cos(w·x-b) + c"
+# fit f1(x) "sideral_2020.txt" u 1:($3/5) via a1,b1,c1
+# rep f1(x) tit "Ajuste: a·cos(w·x-b) + c"
 
-set term png 33  enhanced font 'Helvetica,26' size 1100,750 
-set output "../../Update/report_5_22_05_2020/ajuste_hexagonos.png"
-replot
+# set term png 33  enhanced font 'Helvetica,26' size 1100,750 
+# set output "../../Update/report_5_22_05_2020/ajuste_hexagonos.png"
+# replot
 
-set term qt
+# set term qt
+
+
+pause(-1)

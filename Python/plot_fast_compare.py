@@ -11,7 +11,7 @@ mpl.rcParams.update({'font.size': 18,  'figure.figsize': [12, 6],  'figure.autol
 
 plt.figure(2)
 
-plt.title(u"AllTriggers 2019. Short range. 1 EeV - 2 EeV")
+plt.title(u"AllTriggers 2019. 1 EeV - 2 EeV")
 plt.ylabel(u"Amplitud del $1^{er}$ armónico")
 plt.xlabel(u"Período [días sidéreos]")
 
