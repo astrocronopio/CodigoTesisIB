@@ -8,6 +8,9 @@ c=1.0
 
 set auto 
 
+#filepepe="../../../Hexagons/dnhex_sid_288.dat" #Este es la posta
+filepepe="sideral_2020.txt"
+
 #set  xrange [0:360]
 set xtics 45
 set xlabel "RA [^o]" offset 0,0.5
@@ -19,12 +22,12 @@ set ytics 0.005
 set ylabel "Peso de cada evento"
 
 #plot "sideral_2019.txt" u ($1*360/288):2
-plot "./sideral_2020.txt" u 1:(1/$2 ) notit
+plot filepepe u ($0*360/288):(1/$1 ) notit
 #pause(5)
 
 #set arrow from 317,0.99 to 317,1.01, graph 1 nohead
 
-fit f(x) "sideral_2020.txt" u 1:(1/$2 ) via a,b,c
+fit f(x) filepepe u ($0*360/288):(1/$1 ) via a,b,c
 replot f(x) tit "Ajuste: a·cos(w·x-b) + c"
 
 rep

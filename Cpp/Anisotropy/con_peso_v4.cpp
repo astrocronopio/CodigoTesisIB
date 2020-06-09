@@ -12,11 +12,6 @@ float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 const int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 
-unsigned long rango2013=1388577600; 
-unsigned long rango2017=1472688000;
-unsigned long rango2019=1546344000;
-unsigned long rango2020=1577880000;
-
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;
 	double aux= (utc-iutcref);
@@ -55,9 +50,8 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1){
-				x1=((long double)(iutc-iutc0)/3600.)*fas*interval/24.0; // hora local
-				aux=    int(fmod(x1, interval));
-				//int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
+				x1=((long double)(iutc-iutc0+5.)/3600.+ 21.+5.)*fas*interval/24.0; // hora local
+				aux=    int(fmod(x1, interval));//int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
 				num_hex_hr[aux] += hex6;				
 				
 				if(num_hex_hr[aux]> 1000000 ) {
@@ -102,7 +96,7 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600. - 3 )*fas; // hora local
 			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
 
 			aux=hrs*interval/24.0;
@@ -213,6 +207,11 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
+
+	unsigned long rango2013=1388577600; 
+	unsigned long rango2017=1472688000;
+	unsigned long rango2019=1546344000;
+	unsigned long rango2020=1577880000;
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
 
