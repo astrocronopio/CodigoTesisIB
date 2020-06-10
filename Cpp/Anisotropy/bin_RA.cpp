@@ -6,6 +6,12 @@
 #include <vector>
 #include <iomanip>
 
+
+unsigned long rango2013=1388577600; 
+unsigned long rango2017=1472688000;
+unsigned long rango2019=1546344000;
+unsigned long rango2020=1577880000;
+
 float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
@@ -72,11 +78,6 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
-
-	unsigned long rango2013=1388577600; 
-	unsigned long rango2017=1472688000;
-	unsigned long rango2019=1546344000;
-	unsigned long rango2020=1577880000;
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
 

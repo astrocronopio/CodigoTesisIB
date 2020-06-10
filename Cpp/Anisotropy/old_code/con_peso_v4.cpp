@@ -96,7 +96,7 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600. - 3 )*fas; // hora local
+			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
 			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
 
 			aux=hrs*interval/24.0;

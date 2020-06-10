@@ -5,6 +5,8 @@
 #include <math.h>
 #include <vector>
 
+/*STABLE*/
+
 float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
@@ -47,12 +49,13 @@ void rayleigh( float *a , float *b, float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600.+ 21.+5)*fas; // hora local
-			aux=hrs*interval/24.0;
+			hrs=((double)(utc-utc0)/3600.+ 21.+5); // hora local
+			//hrs= right_ascension(utc)*fas*24./360.; 	   // hora siderea
+			aux=hrs*interval*fas/24.0;
 			peso =1.0;		
 			*sumaN+=peso;
 			raz = right_ascension(utc);
-			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
+			arg = 2.0*pi*(hrs/(24)) + (Ra-raz)*d2r;
 
 			*a +=cos(arg)*peso;
 			*b +=sin(arg)*peso;
@@ -103,9 +106,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 }
 
 float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
-	
-	//unsigned long utci =  1104537600; //1372699409 ;
-	//unsigned long utcf =  1577825634 ;
+
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;

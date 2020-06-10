@@ -1,7 +1,0 @@
-\babel@toc {spanish}{}
-\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
-\beamer@sectionintoc {2}{Update}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{C\IeC {\'a}lculo de Rayleigh.}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{Pesos de los hex\IeC {\'a}gonos}{6}{0}{2}
-\beamer@subsectionintoc {2}{3}{C\IeC {\'a}lculo de Rayleigh.}{8}{0}{2}
-\beamer@subsectionintoc {2}{4}{Resultados con el rango de energ\IeC {\'\i }a 1 EeV - 2 EeV}{9}{0}{2}

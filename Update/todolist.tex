@@ -1,74 +1,103 @@
 Fecha: 13/05/2020
 
+% \begin{itemize}
+% 	\done Para calcular los coeficientes del weather, queremos los mejores eventos, asi que tambien se usan solo los 6T5 (no es tan importante ganar un poquito mas de estadistica arribade 4 EeV para eso).
 
+% 	\done En resumen usa los cortes 6T5 y $\theta<60$ para anisotropias y para weather correction.
 
-\begin{itemize}
-\done Para calcular los coeficientes del weather, queremos los mejores eventos, asi que tambien se usan solo los 6T5 (no es tan importante ganar un poquito mas de estadistica arribade 4 EeV para eso).
+% 	\done El corte de quality weather flag solo se usa para seleccionar los eventos para calcular las correcciones del weather.
 
-\done En resumen usa los cortes 6T5 y $\theta<60$ para anisotropias y para weather correction.
+% 	\done Los resultados nuevos son un poco raros, en siderea desaparecio toda la señal cuando pones pesos 1, y despues crece algo con los pesos. Revisa con los cortes bien puestos.
 
-\done El corte de quality weather flag solo se usa para seleccionar los eventos para calcular las correcciones del weather.
-
-\done Los resultados nuevos son un poco raros, en siderea desaparecio toda la señal cuando pones pesos 1, y despues crece algo con los pesos. Revisa con los cortes bien puestos.
-
-\done Pone una tabla con amplitud y fase con y sin peso tambien.
-
-\end{itemize}
+% 	\done Pone una tabla con amplitud y fase con y sin peso tambien.
+% \end{itemize}
 
 
 Fecha: 20/05/2020
 
-\begin{itemize}
+% \begin{itemize}
 
+% 	\done Una cosa que se me ocurre es que al plot de hexagonos en frecuencia siderea le fitees un coseno. De ahi saca la amplitud del primer armónico de la modulación y la fase en RA donde esta el maximo.
 
-\done Una cosa que se me ocurre es que al plot de hexagonos en frecuencia siderea le fitees un coseno. De ahi saca la amplitud del primer armónico de la modulación y la fase en RA donde esta el maximo.
+% 	\done Despues hace el analisis de anisotropia en los eventos sin pesos y con pesos, y obtene la amplitud de la modulación y las fases del máximo en ambos casos.
 
-\done Despues hace el analisis de anisotropia en los eventos sin pesos y con pesos, y obtene la amplitud de la modulación y las fases del máximo en ambos casos.
+% 	\done De ahi podriamos ver comparando las cantidades vectoriales (no solo la amplitud de la modulacion sino para donde apunta) qué es lo que esta pasando.
 
-\done De ahi podriamos ver comparando las cantidades vectoriales (no solo la amplitud de la modulacion sino para donde apunta) qué es lo que esta pasando.
-
-\done Haceme un mail con esos resultados cuando los tengas, a ver si entendemos eso.
-
-\end{itemize}
-
+% 	\done Haceme un mail con esos resultados cuando los tengas, a ver si entendemos eso.
+% \end{itemize}
 
 
 Fecha: 27/05/2020
 
+% \begin{itemize}
+% 	\done los eventos son los 6T5 con cenit < 60 grados? Cuantos eventos son? (Pone siempre esos datos asi se sabe de quienes hablas)
+% 	\done En la parte que fiteas el coseno, estas dejando libre una frecuencia, w en tu formula? 
+% 	\done Lo que es relevante en el analisis que hacemos es el primer armonico de la funcion, aunque no de un buen fit. lo que afecta el valor del dipolo va ser la amplitud y fase en 1+A*cos(RA-B). Proba hacer ese fit y reporta los valores de A y B
+% 	\done Otra cosa, no entiendo porque la figura de hexagonos y la de pesos tienen el maximo y minimo en los mismos valores. Los pesos son proporcionales a la inversa de los hexagonos.
+% 	\done Porque no es periodica
+% \end{itemize}
+
+
+Fecha: 28/05/2020
+
 \begin{itemize}
-	\done los eventos son los 6T5 con cenit < 60 grados? Cuantos eventos son? (Pone siempre esos datos asi se sabe de quienes hablas)
-	\done En la parte que fiteas el coseno, estas dejando libre una frecuencia, w en tu formula? 
-	\done Lo que es relevante en el analisis que hacemos es el primer armonico de la funcion, aunque no de un buen fit. lo que afecta el valor del dipolo va ser la amplitud y fase en 1+A*cos(RA-B). Proba hacer ese fit y reporta los valores de A y B
-	\done Otra cosa, no entiendo porque la figura de hexagonos y la de pesos tienen el maximo y minimo en los mismos valores. Los pesos son proporcionales a la inversa de los hexagonos.
-	\done Porque no es periodica
-\end{itemize}
-
-
-
-28/05/2020
-
-\begin{itemize}
-	\done llama la atencion la modulacion de los hexagonos y de los pesos que pones en la tabla 1.3. Deberian tener aprox la misma amplitud y fase opuesta. Creo que estan mal los valores del fit a los hexagonos, deberia ser a ojo una amplitud cerca a 0.0035 y una fase cerca de 100. Igual es raro porque las curvas en el plot tienen pinta razonable. Fijate que cuando fiteas un coseno 1+A*cos(RA-B) va con menos B, asi B es la fase donde la funcion tiene el maximo. Fijate que si fiteas a una funcion con media distinta de 1, la amplitud es el factor A en C*(1+A*cos(RA-B)) y  no el factor  A en C+A*cos(RA-B)
+	\item llama la atencion la modulacion de los hexagonos y de los pesos que pones en la tabla 1.3. Deberian tener aprox la misma amplitud y fase opuesta. Creo que estan mal los valores del fit a los hexagonos, deberia ser a ojo una amplitud cerca a 0.0035 y una fase cerca de 100. Igual es raro porque las curvas en el plot tienen pinta razonable. Fijate que cuando fiteas un coseno 1+A*cos(RA-B) va con menos B, asi B es la fase donde la funcion tiene el maximo. Fijate que si fiteas a una funcion con media distinta de 1, la amplitud es el factor A en C*(1+A*cos(RA-B)) y  no el factor  A en C+A*cos(RA-B)
 
 	\item  el test que queriamos hacer para ver si son compatibles las amplitudes de Fourier del primer armonico con y sin peso con la modulacion de los pesos no estaria funcionando. La idea es que si sumas vectorialmente un vector con amplitud igual a amplitud del primer armonico sin pesos apuntando en la direccion de la fase sin pesos mas otro vector con amplitud igual a la del fit a los pesos de los eventos apuntando en la fase del maximo del coseno, el vector suma deberia tener amplitud igual a la amplitud del analisis de fourier con pesos y apuntar en la direccion de la fase de ese analisis. No se en cual de los pedazos estara el error.
 	
 	\item Para ir chequeando todo podrias:
+
 	\begin{itemize}
 	
 		\item  binear los eventos en RA, por ejemplo en bines de 10 grados. 
+		
 		\item Plotear el numero de evento en cada bin dividido la media (esta va a ser Ntotal/36) en funcion de la RA. 
+		
 		\item Fitearle un coseno 1+A*cos(RA-B) a ese plot, te deberia dar aprox lo mismo que hacer el analisis de Fourier de los eventos sin peso. Asi podes comprobar si ese analisis te esta dando bien. Ademas es lindo hacer el plot y mostrar la distribucion en RA de los eventos.
-	
+
 		\item  despues haces lo mismo poniendole los pesos a los eventos y comprobas si estas haciendo bien el analisis de Fourier con pesos.
 	
-		\item  Me acabo de acordar que en algun momento tenias un lio con el  cero de donde contar la ascencion recta. Asegurate que los pesos los estas poniendo con la fase correcta, o sea que el tiempo sidereo en el que pones los hexagonos se corresponde bien con la RA del cenit del observatorio en ese momento (me parece que el problema podria venir de un 	corrimiento del cero, ya que eso da un error en la fase de los hexagonos)
+		\item  Me acabo de acordar que en algun momento tenias un lio con el  cero de donde contar la ascencion recta. Asegurate que los pesos los estas poniendo con la fase correcta, o sea que el tiempo sidereo en el que pones los hexagonos se corresponde bien con la RA del cenit del observatorio en ese momento (me parece que el problema podria venir de un corrimiento del cero, ya que eso da un error en la fase de los hexagonos)
 	\end{itemize}
-
 \end{itemize}
 
 
-02/06/2020
+Fecha: 09/06/2020
+
+Hay algunas cosas, al menos de notación, que  seria bueno mejorar y ver que no esten afectando los resultados.
 
 \begin{itemize}
-	\item Actualizar la tabla de la fase
-\end{itemize}
+	\item No cambies la notación de los papers de Auger( y la tesis de Oscar) para evitar confusiones. En particular, siguiendo la numeracion de tus puntos:
+
+	\begin{itemize}
+		\item 1 - periodo T: aca pones el periodo en segundos de la frecuencia que queres estudiar? por ejemplo para solar 24x3600? y para siderea 24x3600*365.25/366.25?
+
+		\done 2 - hora local se entiende la hora del reloj en Malargue. Mejor usa t en vez de hora local, aclarando que es el utc del evento (no tiene que estar entre 0 y 24 hs)
+
+		\done - Parece que estas intercambiando lo que normalmente se entiende como frecuencia y lo que se entiende como periodo:
+
+			\begin{itemize}
+
+				\item la frecuencia solar equivale a $\sim$ 365,25 ciclos por año, y el periodo es la duracion de cada ciclo, y siempre se denoto con T, asi que seria mas correcto definir la coordenada angular asociada a cada frecuencia f\_x (sol, sid, antisid,..., con periodo T\_x), medida por ejemplo en horas,  como h\_x= 24 (t-t\_0)/T\_x + h\_x(t\_0)  (en tu ecuacion parece estar al reves, o sea T\_x multiplicando, fijate si esta bien en el programa)
+
+				\item para el grafico de las amplitudes para distintas frecuencias no importa el valor de h\_x(t\_0), solo que tiene que ser consistente el valor para los hexagonos y los eventos, asi que ahi eventualmente podes tomar simplemente h\_x=24  t/T\_x  (si queres el resultado en horas, yo te aconsejaria ponerlo directamente en radianes para el analisis de Fourier, reemplazando 24 por 2 pi)
+
+				\item Si queres calcular la fase siderea, sí es importante que h\_sid coincida con el right ascension, y sabemos que el right ascension del zenith vale  31.4971 grados para t0=1104537600 sec  (donde t es el UTC).
+
+				\done Del mismo modo para solar podrias ver cual es la hora solar en Malargue para un dado utc conocido (por ejemplo son las 21hs para las 0GMT de un dia particular)
+
+			\end{itemize}
+
+		\done 3 - En este punto decis que tomas el mod dado que T/Tsolar podria ser mayor que 1 y por eso h\_x podria ser mayor a 24. No importa cual sea el cociente entre los periodos, h\_x siempre va a llegar a valores MUCHO mayores que 24 porque t dura varios años (tu comentario me hace preocupar si en la ecuacion para h estabas realmente poniendo la hora local, entre 0 y 24) 
+
+		(esto lo estaba haciendo para el deltaN)
+
+		\done 4 - es confuso llamar peso whex a la modulacion en los hexagonos, siempre se llamo w a la inversa de eso, o sea el factor de peso para los eventos. Mejor llamalo delta N 
+
+	\end{itemize}
+
+	\item Para el analisis de Fourier valen los mismos comentarios
+
+	\item Cuando tengas los resultados de solar y siderea, con y sin pesos, mandalos, despues hay que revisar que los resultados del barrido en frecuencia coincida en esos dos casos.
+
+	\end{itemize}

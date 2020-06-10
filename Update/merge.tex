@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\documentclass[12pt,papel,twoside]{ibtesis}
-\documentclass[singlespace]{ibtesis}
+\documentclass{ibtesis}
 
 % \documentclass[12pt,papel,singlespace,oneside]{ibtesis}
 % \documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
@@ -10,11 +10,12 @@
 % que necesite
 \usepackage{ibextra}
 \usepackage[utf8]{inputenc}
-\usepackage{caption}  % Enable figure captions or figure notes
+\usepackage{subcaption}  % Enable figure captions or figure notes
 \usepackage{float}
 \usepackage{nicefrac}
 \usepackage{mathtools}
 \usepackage{textcomp}
+
 \usepackage{amsfonts}
 
 \newcommand{\done}{\item[\checkmark]}
@@ -40,13 +41,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\setcounter{tocdepth}{4}
-%\setcounter{secnumdepth}{4}
+% \setcounter{tocdepth}{4}
+% \setcounter{secnumdepth}{4}
 \begin{document}
 
 \chapter{Introducción}
 \graphicspath{{report_0_Introduccion/}}
-\input{report_0_Introduccion/introduccion_v1}
+\input{report_0_Introduccion/introduccion_v2}
 
 % \chapter{Report \#1: 13/04/2020 - Pesos de los hexágonos}
 % \graphicspath{{report_1_13_04_2020/}}
@@ -73,12 +74,23 @@
 % \input{report_6_02_06_2020/report_6_bin_1_2}
 
 
-% \appendix
-% \chapter{Cosas para hacer:  Mails con Mollerach}
-% \input{todolist}
+
+\appendix
+\chapter{Cosas para hacer:  Mails con Mollerach}
+\input{todolist}
 
 
-% \chapter{Comentarios:  Mails con Mollerach}
-% \input{comentarios}
+\chapter{Comentarios:  Mails con Mollerach}
+\input{comentarios}
+
+
+
+\begin{biblio}
+	\bibliography{mibib}
+\end{biblio}
+
+
+
+
 
 \end{document}
