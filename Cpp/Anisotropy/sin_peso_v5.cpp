@@ -57,16 +57,14 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 
 			*a +=cos(arg)*peso; 
 			*b +=sin(arg)*peso;
-			}
+		}
 	}
+
 	myfile.close();
 }
 
 float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
-	//unsigned long utci =  1104537600; //1372699409 ;
-	//unsigned long utcf =  1577825634 ;
-
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
 	float sigma=0.0, sgmra=0.0;
@@ -104,8 +102,6 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 
 float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
-	//unsigned long utci =  1104537600; //1372699409 ;
-	//unsigned long utcf =  1577825634 ;
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;

@@ -12,7 +12,6 @@ float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
 
-
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;
 	double aux= (utc-iutcref);
@@ -24,8 +23,8 @@ double right_ascension(long long utc){
 
 int method_weight_solar(int utc, float fas, int interval){
 	unsigned iutc0 = 1072915200;
-	float x1=((long double)(utc-iutc0)/3600.)*fas*interval; // hora local
-	int	aux=    int(fmod(x1/24.0, interval));//int(x1)%interval >= 0 ? int(x1)%interval :  interval+int(x1)%interval  ;
+	float x1=((long double)(utc-iutc0)/3600. + 21.)*fas*interval; // hora local
+	int	aux=  int(fmod(x1/24.0, interval));
 				
 	return aux;
 }
@@ -42,7 +41,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 	std::vector<long double> dnhex(interval);
 
 	std::ofstream myfile (out_file);
-	std::ifstream myweather("../../../Hexagons/utctprhdrc_010104_140916.dat");
+	std::ifstream myweather("../../../Weather/utctprh_05032020.dat");
 
 	std::vector<long double>num_hex_hr(interval);
 	std::vector<long double>rnhexhr(interval);
@@ -70,7 +69,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 				num_hex_hr[aux] += 	hex6/5.0;
 			
 			//Esto lo hago para sumar numeros mas razonables, sumo cada un millon
-				if(num_hex_hr[aux]> 1000000 ) 
+				if(num_hex_hr[aux]> 1000000.0 ) 
 				{
 					rnhexhr[aux]	+=	num_hex_hr[aux]/1000000.0;
 					num_hex_hr[aux]	=	0;

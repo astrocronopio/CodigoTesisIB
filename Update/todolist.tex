@@ -67,32 +67,38 @@ Fecha: 09/06/2020
 Hay algunas cosas, al menos de notación, que  seria bueno mejorar y ver que no esten afectando los resultados.
 
 \begin{itemize}
-	\item No cambies la notación de los papers de Auger( y la tesis de Oscar) para evitar confusiones. En particular, siguiendo la numeracion de tus puntos:
+	\item
+	% \done No cambies la notación de los papers de Auger( y la tesis de Oscar) para evitar confusiones. En particular, siguiendo la numeracion de tus puntos:
 
 	\begin{itemize}
-		\item 1 - periodo T: aca pones el periodo en segundos de la frecuencia que queres estudiar? por ejemplo para solar 24x3600? y para siderea 24x3600*365.25/366.25?
+		% \done 1 - periodo T: aca pones el periodo en segundos de la frecuencia que queres estudiar? por ejemplo para solar 24x3600? y para siderea 24x3600*365.25/366.25?
 
-		\done 2 - hora local se entiende la hora del reloj en Malargue. Mejor usa t en vez de hora local, aclarando que es el utc del evento (no tiene que estar entre 0 y 24 hs)
+		% \done 2 - hora local se entiende la hora del reloj en Malargue. Mejor usa t en vez de hora local, aclarando que es el utc del evento (no tiene que estar entre 0 y 24 hs)
 
-		\done - Parece que estas intercambiando lo que normalmente se entiende como frecuencia y lo que se entiende como periodo:
+		% \done - Parece que estas intercambiando lo que normalmente se entiende como frecuencia y lo que se entiende como periodo:
+		\item
 
 			\begin{itemize}
 
-				\item la frecuencia solar equivale a $\sim$ 365,25 ciclos por año, y el periodo es la duracion de cada ciclo, y siempre se denoto con T, asi que seria mas correcto definir la coordenada angular asociada a cada frecuencia f\_x (sol, sid, antisid,..., con periodo T\_x), medida por ejemplo en horas,  como h\_x= 24 (t-t\_0)/T\_x + h\_x(t\_0)  (en tu ecuacion parece estar al reves, o sea T\_x multiplicando, fijate si esta bien en el programa)
+				\done la frecuencia solar equivale a $\sim$ 365,25 ciclos por año, y el periodo es la duracion de cada ciclo, y siempre se denoto con T, asi que seria mas correcto definir la coordenada angular asociada a cada frecuencia f\_x (sol, sid, antisid,..., con periodo T\_x), medida por ejemplo en horas,  como 
 
-				\item para el grafico de las amplitudes para distintas frecuencias no importa el valor de h\_x(t\_0), solo que tiene que ser consistente el valor para los hexagonos y los eventos, asi que ahi eventualmente podes tomar simplemente h\_x=24  t/T\_x  (si queres el resultado en horas, yo te aconsejaria ponerlo directamente en radianes para el analisis de Fourier, reemplazando 24 por 2 pi)
+				$h_x= 24 \frac{t-t_0}{T_x} + h_x(t_0)$
+
+				(en tu ecuacion parece estar al reves, o sea $T_x$ multiplicando, fijate si esta bien en el programa)
+
+				\done  para el grafico de las amplitudes para distintas frecuencias no importa el valor de $h_x(t_0)$, solo que tiene que ser consistente el valor para los hexagonos y los eventos, asi que ahi eventualmente podes tomar simplemente$ h_x=24  t/T_x$  (si queres el resultado en horas, yo te aconsejaria ponerlo directamente en radianes para el analisis de Fourier, reemplazando 24 por 2 pi)
 
 				\item Si queres calcular la fase siderea, sí es importante que h\_sid coincida con el right ascension, y sabemos que el right ascension del zenith vale  31.4971 grados para t0=1104537600 sec  (donde t es el UTC).
 
-				\done Del mismo modo para solar podrias ver cual es la hora solar en Malargue para un dado utc conocido (por ejemplo son las 21hs para las 0GMT de un dia particular)
+				% \done Del mismo modo para solar podrias ver cual es la hora solar en Malargue para un dado utc conocido (por ejemplo son las 21hs para las 0GMT de un dia particular)
 
 			\end{itemize}
 
-		\done 3 - En este punto decis que tomas el mod dado que T/Tsolar podria ser mayor que 1 y por eso h\_x podria ser mayor a 24. No importa cual sea el cociente entre los periodos, h\_x siempre va a llegar a valores MUCHO mayores que 24 porque t dura varios años (tu comentario me hace preocupar si en la ecuacion para h estabas realmente poniendo la hora local, entre 0 y 24) 
+		% \done 3 - En este punto decis que tomas el mod dado que T/Tsolar podria ser mayor que 1 y por eso $h_x$ podria ser mayor a 24. No importa cual sea el cociente entre los periodos, $h_x$ siempre va a llegar a valores MUCHO mayores que 24 porque t dura varios años (tu comentario me hace preocupar si en la ecuacion para h estabas realmente poniendo la hora local, entre 0 y 24) 
 
-		(esto lo estaba haciendo para el deltaN)
+		% (esto lo estaba haciendo para el deltaN)
 
-		\done 4 - es confuso llamar peso whex a la modulacion en los hexagonos, siempre se llamo w a la inversa de eso, o sea el factor de peso para los eventos. Mejor llamalo delta N 
+		% \done 4 - es confuso llamar peso whex a la modulacion en los hexagonos, siempre se llamo w a la inversa de eso, o sea el factor de peso para los eventos. Mejor llamalo delta N 
 
 	\end{itemize}
 

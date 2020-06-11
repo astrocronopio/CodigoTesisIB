@@ -201,16 +201,16 @@ int main(int argc, char const *argv[])
 	const char* in_file = argv[1];
 	const char* out_file= argv[2];
 	char * pEnd;
-/*
+
 	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	ray_multifreq(200,  in_file, out_file, utci, utcf);
-*/
-	unsigned long utci =  rango2013;
+	ray_multifreq(250,  in_file, out_file, utci, utcf);
+
+/*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
 	ray_given_freq(365.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
-	
+	*/
 	
 	return 0;
 }
