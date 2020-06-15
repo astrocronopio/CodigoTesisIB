@@ -11,13 +11,13 @@ unsigned long rango2020=1577880000;
 long double T_S	= 366.25,  T_D = 365.25,  T_A=364.25 ;
 
 
-int version_v1()
+int interval = 288;
+
+/*int version_v1()
 {
 	
 	unsigned long utci =  rango2013; //2005
 	unsigned long utcf =  rango2020;//1577825634; //2016
-
-	int interval = 288;
 	const char* out_file_sidereal	= "./sideral_2019_report_288_2014_2020.txt";
 	const char* out_file_2 			= 	"./solar_2019_report_288_2014_2020.txt";
 	const char* out_file_a_2 		= 	 "./anti_2019_report_288_2014_2020.txt";
@@ -34,8 +34,8 @@ int version_v1()
 
 	return 0;
 }
-
-int version_V2()
+*/
+/*int version_V2()
 {
 	unsigned long utci =  rango2004;
 	unsigned long utcf =  rango2017;
@@ -51,13 +51,30 @@ int version_V2()
 
 	return 0;
 
-}
+}*/
 
+
+
+int version_v3()
+{
+	//exposure_given_period(T_S, "sidereal_2020_sol_sin_2.txt", rango2013, rango2020, interval,							method_weight_solar);
+	//exposure_given_period(T_S, "sidereal_2020_sid.txt", rango2013, rango2020, interval,	method_weight_sidereal);
+	
+	exposure_given_period(T_D, "solar_2020_sol.txt", rango2013, rango2020,  interval, method_weight_solar);
+	//exposure_given_period(T_D, "solar_2020_sid.txt", rango2013, rango2020, 	interval, method_weight_sidereal);
+
+//	exposure_given_period(T_A, "antisiderea_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
+//	exposure_given_period(T_A, "antisiderea_2020_sid.txt", rango2013, rango2020, interval, method_weight_sidereal);
+
+	return 0;
+}
 
 int main(int argc, char const *argv[])
 {
 	//version_v1();
-	version_V2();
+	//version_V2();
+	
+	version_v3();
 
 	return 0;
 }

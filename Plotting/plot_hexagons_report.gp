@@ -289,19 +289,39 @@ replot
 
 
 
-set terminal png 19 enhanced font 'Times,26' size 1200,800 
+set terminal qt 19 enhanced font 'Times,26' size 1200,800 
 set output "weigth2014-2020_jan.png"
 set key left bottom sample 0.5 vert
 
 set title "Jan 2014 - Jan 2020" offset 0,-0.5
 set xtics 4
-set xrange [:24.1]
+set xrange [:24]
 set ylabel "Weight" offset 1 
 set xlabel "Local Hour [hr]"
 
 plot 	"../Cpp/Exposure/sideral_2019_report_288_2014_2020_1.txt" 		u ($0*24/288):2 w lp pt 4 ps 1.5 lc rgb 'red'     tit "Sid" ,\
 	 	"../Cpp/Exposure/anti_2019_report_288_2014_2020.txt"	 		u ($0*24/288):2 w lp pt 6 ps 1.5 lc rgb 'blue'    tit "Anti" ,\
 	 	"../Cpp/Exposure/solar_2019_report_288_2014_2020.txt"  		u ($0*24/288):2 w lp pt 8 ps 1.5 lc rgb 'black'   tit "Solar"
+
+set terminal qt 19 enhanced font 'Times,26' size 1200,800 
+replot
+
+
+
+set terminal qt 19 enhanced font 'Times,26' size 1200,800 
+#set output "weigths_2020.png"
+set key right bottom sample 0.5 horiz
+
+set title "Enero 2014 - Enero 2020" offset 0,-0.5
+set xtics 3
+set xrange [:24]
+set ylabel "{/Symbol D} N_{cell,k}" offset 1 
+set xlabel "h' [hr]" offset 0,0.5
+
+
+plot 	"../Cpp/Exposure/sidereal_2020_sol.txt" 		u ($0*24/288):($1) w lp pt 4 ps 1.5 lc rgb 'red'     tit "Sid" ,\
+	 	"../Cpp/Exposure/antisiderea_2020_sol.txt"	 	u ($0*24/288):($1) w lp pt 6 ps 1.5 lc rgb 'blue'    tit "Anti" ,\
+	 	"../Cpp/Exposure/solar_2020_sol.txt"  		u ($0*24/288):($1) w lp pt 8 ps 1.5 lc rgb 'black'   tit "Solar"
 
 set terminal qt 19 enhanced font 'Times,26' size 1200,800 
 replot

@@ -11,20 +11,19 @@ mpl.rcParams.update({'font.size': 18,  'figure.figsize': [12, 6],  'figure.autol
 
 plt.figure(2)
 
-plt.title(u"AllTriggers 2019. 1 EeV - 2 EeV")
+plt.title(u"AllTriggers: 1 EeV - 2 EeV")
 plt.ylabel(u"Amplitud del $1^{er}$ armónico")
 plt.xlabel(u"Período [días sidéreos]")
 
 
-
-freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/auxiliar.txt", unpack=True, usecols=(0,4,8))
+freq, modulo, por99 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat", unpack=True, usecols=(0,4,8))
 plt.plot(freq, modulo, color="black", label=u"Sin peso", linestyle='--')
 plt.plot(freq, por99, label="P99-sin", color="red", ls='--')
 
 
-# freq1, modulo1, por991 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat", unpack=True, usecols=(0,4,8))
-# plt.plot(freq1, modulo1, color="blue", label=u"Con peso", linestyle=':')
-# plt.plot(freq1, por991, label="P99-con", color="green", ls=':')
+freq1, modulo1, por991 	= np.loadtxt("../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat", unpack=True, usecols=(0,4,8))
+plt.plot(freq1, modulo1, color="blue", label=u"Con peso", linestyle=':')
+plt.plot(freq1, por991, label="P99-con", color="green", ls=':')
 
 
 plt.legend(loc=4)

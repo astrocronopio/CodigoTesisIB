@@ -212,15 +212,15 @@ int main(int argc, char const *argv[])
 	unsigned long rango2017=1472688000;
 	unsigned long rango2019=1546344000;
 	unsigned long rango2020=1577880000;
-	unsigned long utci =  rango2013;
-	unsigned long utcf =  rango2020;
+	//unsigned long utci =  rango2013;
+	//unsigned long utcf =  rango2020;
 
-	//unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
-	//unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
+	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	//ray_multifreq(400,  in_file, out_file, utci, utcf);
+	ray_multifreq(400,  in_file, out_file, utci, utcf);
 
-	ray_given_freq(365.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
+	//ray_given_freq(365.82, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar.txt", utci, utcf);
 	
 	return 0;
 }

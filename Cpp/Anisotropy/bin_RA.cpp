@@ -16,7 +16,7 @@ float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
-const int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
+const int interval= 36; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;
@@ -56,14 +56,17 @@ float bin_RA_counter( const char* in_file, const char* out_file, unsigned long u
 			liness >> iutc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 			
 			if (iutc < utci || iutc > utcf) continue;
 			
-			ang =  int(fmod(Ra*interval/360., interval));
+			ang =  int( fmod((Ra)*interval/360., interval));
+			
+			ang = ang< 0? ang +360. : ang;
 			rnhexhr[ang] += 1;
 			}
 		}
 
 		for (int i = 0; i < interval; ++i) integral +=rnhexhr[i]/interval;
 
-		for (int i = 0; i < interval; ++i){myfile_out <<std::setprecision (17)<< i*360.0/288.0 << "\t" <<rnhexhr[i]/integral<<  std::endl;}
+		for (int i = 0; i < interval; ++i){myfile_out <<std::setprecision (17)<< i*360.0/interval +360*0.5/interval
+													<< "\t" <<rnhexhr[i]/integral<< "\t" << rnhexhr[i] <<  std::endl;}
 
 		myfile_out.close();
 		myfile_in.close();
@@ -74,9 +77,6 @@ float bin_RA_counter( const char* in_file, const char* out_file, unsigned long u
 int main(int argc, char const *argv[])
 {	// true		== short range,  
 	// false	== long range (only for ICRCs)
-	const char* in_file = argv[1];
-	const char* out_file= argv[2];
-	char * pEnd;
 
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;

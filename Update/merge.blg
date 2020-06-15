@@ -3,44 +3,51 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: merge.aux
 The style file: ibtesis.bst
 Database file #1: mibib.bib
-You've used 3 entries,
+Warning--entry type for "taborda" isn't style-file defined
+--line 36 of file mibib.bib
+Repeated entry---line 47 of file mibib.bib
+ : @mastersthesis{taborda
+ :                       ,
+I'm skipping whatever remains of this entry
+You've used 4 entries,
             2634 wiz_defined-function locations,
-            1049 strings with 10257 characters,
-and the built_in function-call counts, 1553 in all, are:
-= -- 92
-> -- 84
+            1053 strings with 10421 characters,
+and the built_in function-call counts, 1734 in all, are:
+= -- 102
+> -- 88
 < -- 0
-+ -- 42
-- -- 21
-* -- 103
-:= -- 179
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 3
++ -- 44
+- -- 22
+* -- 105
+:= -- 200
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 144
-empty$ -- 130
-format.name$ -- 24
-if$ -- 323
+cite$ -- 4
+duplicate$ -- 162
+empty$ -- 154
+format.name$ -- 25
+if$ -- 364
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 45
-newline$ -- 20
-num.names$ -- 3
-pop$ -- 51
+int.to.str$ -- 4
+missing$ -- 50
+newline$ -- 24
+num.names$ -- 4
+pop$ -- 65
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 48
+skip$ -- 54
 stack$ -- 0
 substring$ -- 62
-swap$ -- 111
+swap$ -- 122
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 8
-width$ -- 4
-write$ -- 37
+while$ -- 9
+width$ -- 5
+write$ -- 45
+(There was 1 error message)

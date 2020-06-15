@@ -23,19 +23,23 @@ double right_ascension(long long utc){
 
 int method_weight_solar(int utc, float fas, int interval){
 	unsigned iutc0 = 1072915200;
-	float x1=((long double)(utc-iutc0)/3600. + 21.)*fas*interval; // hora local
+
+
+	float x1=((long double)(utc-iutc0)/3600. +2.0 )*fas*interval; // hora local
 	int	aux=  int(fmod(x1/24.0, interval));
 				
 	return aux;
 }
 
 int method_weight_sidereal(int utc, float fas, int interval){
+		
+	fas=fas*365.25/366.25;
 	float x3	=  	fmod(right_ascension(utc)*fas, 360);
-	int aux =  	int(x3*interval/360.);
+	int 	aux =  	int(x3*interval/360.);
 	return aux;
 }
 
-void exposure_given_period(float freq, const char* out_file, unsigned long utci, unsigned long utcf, int interval)
+void exposure_given_period(float freq, const char* out_file, unsigned long utci, unsigned long utcf, int interval, int (*f)(int, float, int))
 { 	double bandwidth= 360.0/interval;
 
 	std::vector<long double> dnhex(interval);
@@ -50,7 +54,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 	float t,p,r,rav,hex6, hex5;
 	int iw,ib, ihr, aux, ang;
 	std::string line;
-	float fas = freq/366.25;
+	float fas = freq/365.25;
 	long double x1,x2,x3;
 	long double integral=0.0;
 
@@ -65,7 +69,7 @@ void exposure_given_period(float freq, const char* out_file, unsigned long utci,
 			if (iutc < utci || iutc > utcf) continue;
 			if (iw<5 && ib==1)
 			{
-				aux = method_weight_sidereal(iutc, fas, interval);
+				aux = (*f)(iutc, fas, interval);
 				num_hex_hr[aux] += 	hex6/5.0;
 			
 			//Esto lo hago para sumar numeros mas razonables, sumo cada un millon
