@@ -11,15 +11,17 @@ float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
 const int interval= 288; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
+unsigned long rango2004=1072915200; // 01/01 00:00 GMT
+unsigned long rango2005=1104537600; // 01/01 00:00 GMT
 
+unsigned long rango2013=1388577600;  
+unsigned long rango2017=1472688000; 
 
-
-unsigned long rango2013=1388577600; 
-unsigned long rango2017=1472688000;
 unsigned long rango2019=1546344000;
 unsigned long rango2020=1577880000;
 
-double right_ascension(long long utc){	
+double right_ascension(long long utc)
+{	
 	long long iutcref = 1104537600;
 	double aux= (utc-iutcref);
 
@@ -39,6 +41,7 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 
 	int utc,t5, iw, nh;
 	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
+	float AugId,Eraw,Ecor,UTC;
 
 	double fas = freq/365.25, raz, arg, hrs, peso,aux; 													
 
@@ -50,12 +53,17 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 		{			
 			getline(myfile,line);			
 			std::stringstream liness(line);			
+			
 			liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
-
+			
+			//liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			//energy=Eraw;
+			//if (energy<8.) continue;
+			
 			if(utcf < utc) break;
-			if(utc  < utci || Theta > 60) continue;
+			if(utc  < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600. +2.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
 			peso =1.0;		
 			*sumaN+=peso;
 			raz = right_ascension(utc);
@@ -77,9 +85,11 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 
 	std::ofstream myfile (out_file);
 
+	float freq=0.0;
+
 	for (int i = 0; i < nf; ++i)
 	{
-		float freq = 363.25 + i*4.0/nf;
+		freq = 363.25 + i*4.0/nf;
 
 		std::cout << " Iteration "<< i +1 <<" of " << nf<< std::endl;
 		
@@ -151,19 +161,19 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 int main(int argc, char const *argv[])
 {	// true		== short range,  
 	// false	== long range (only for ICRCs)
-/*	const char* in_file = argv[1];
+	const char* in_file = argv[1];
 	const char* out_file= argv[2];
 	char * pEnd;
 
 	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	ray_multifreq(250,  in_file, out_file, utci, utcf);
-*/
-	unsigned long utci =  rango2013;
+	ray_multifreq(400,  in_file, out_file, utci, utcf);
+
+/*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
 	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
-	
+	*/
 	
 	return 0;
 }

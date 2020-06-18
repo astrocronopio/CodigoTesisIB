@@ -1,13 +1,11 @@
-	Los pesos de los eventos son importantes para el cálculo de anisotropías, ya que las mismas son pequeñas y eliminar todo factor espúreo en el análisis es importante. Para una representación fiel entre los registros de los hexágonos y los pesos de los eventos, se optó por utilizar $288$ segmentos ya que si consideramos para $24$ hrs del día, cada segmento tiene un ancho de $5$\, min. Esto es conveniente ya que la actualización tanto del clima como de los hexágonos se realiza una vez cada $5$\,min.
-
-	\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{Graficos/solar_anti_sid_my_and_paper_in_24.png}
-	\caption{Usando 24 bines para las frecuencias sidérea, anti-sidérea y solar, se compara el paper del 2018 con lo que obtengo en la tesis.}
-	\label{fig:all_24}
-	\end{figure}
 
 
+	\subsection{Pesos de los eventos}
+
+	Considerando los algoritmos en las secciones \ref{peso_hexagonos} y \ref{rayleigh}
+
+		
+		Para solucionar el desfase entre los pesos que obtengo mediante la hora local y la ascensión recta, lo que hice fue poner adrede un valor de desfase cuando calculo el valor $h$, le agregue $2\,$hr. 
 
 \subsection{Acerca del algoritmo}
 
@@ -42,7 +40,7 @@
 	\end{figure}
 
 
-	Ya en la Fig.\,\ref{fig:sidereal_288}, se ve que la media de los pesos es algo razonable comparándolo con N=360, Fig.\ref{fig:solar_360}. Además que el error porcentual, usando como referencia los resultados del paper del 2018, es pequeña. La misma se muestra en la Fig.\,\ref{fig:error_288_solar}.
+	Ya en la Fig.\,\ref{fig:sidereal_288}, se ve que la media de los pesos es algo razonable comparándolo con N=360, Fig.\ref{fig:solar_360}. Además que el error porcentual, usando como referencia los resultados del paper del 2018, es pequeña
 
 	\begin{figure}[H]
 	\centering
@@ -52,8 +50,7 @@
 	\end{figure}
 
 
-	Para la frecuencia anti-sidérea no hay mucha diferencia a los obtenido para el caso de N=360. Los pesos se muestran en la Fig.\,\ref{fig:anti_288} y el error con respecto al valor del paper se muestra en la Fig.\,\ref{fig:error_288_anti}.
-
+	Para la frecuencia anti-sidérea no hay mucha diferencia a los obtenido para el caso de N=360. Los pesos se muestran en la Fig.\,\ref{fig:anti_288} 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Graficos/anti_my_and_paper_2018_in_288.png}

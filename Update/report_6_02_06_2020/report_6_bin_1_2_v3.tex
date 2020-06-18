@@ -19,44 +19,6 @@
 	Aplicando estos filtros, se tienen $1\,081\,844$ eventos para estudiar en este rango de energía.
 
 
-\subsection{Pesos de los eventos}
-
-Considerando los algoritmos en las secciones \ref{peso_hexagonos} y \ref{rayleigh}
-
-
-Aca quiero explicar porque es el óptimo 288..
-Aca quiero mostrar lo que es con 8 EeV
-		
-		Para solucionar el desfase entre los pesos que obtengo mediante la hora local y la ascensión recta, lo que hice fue poner adrede un valor de desfase cuando calculo el valor $h$, le agregue $2\,$hr. 
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=\linewidth]{eventos_hora_local.png}
-			\caption{Usando el valor $h$ para calcular los pesos.}
-		\end{figure}
-		
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=\linewidth]{eventos_RA.png}
-			\caption{Usando la ascensión recta para calcular los pesos.}
-		\end{figure}
-		
-
-	\subsubsection{Bineado de eventos  (va a ir al final)}
-
-Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{bineado_eventos_herald_por_RA.png}
-	\caption{}
-\end{figure}
-
-Si realizamos un ajuste de una función del tipo $f(x) = c\cdot(1 + a\cdot\cos{(\omega x - \phi)})$, se obtiene los siguientes valores
-		
-	Fase $\phi$ : $288(60)^o$  \\
-	Amplitud $a$: 0.002(2) \footnote{Sí, el error es del 100\% para el ajuste.}  	 \\
-		
 
 
 
@@ -128,4 +90,20 @@ Si realizamos un ajuste de una función del tipo $f(x) = c\cdot(1 + a\cdot\cos{(
 		\caption{TAbla}
 		\end{table}
 		
+		
+
+
+	\subsubsection{Bineado de eventos  (va a ir al final)}
+
+Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{bineado_eventos_herald_por_RA.png}
+	\caption{}
+\end{figure}
+
+Si realizamos un ajuste de una función del tipo $f(x) = c\cdot(1 + a\cdot\cos{(\omega x - \phi)})$, se obtiene los siguientes valores
+		
+	Fase $\phi$ : $288(60)^o$  \\
+	Amplitud $a$: 0.002(2) \footnote{Sí, el error es del 100\% para el ajuste.}  	 \\
 		

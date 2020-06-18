@@ -177,7 +177,7 @@ SUBROUTINE calc_hex(utci,utcf,freq)
   if(.not.allocated(dnhex)) allocate(dnhex(24))
   
 !  open(unit=8,file='../datos_auger/utctprh_010104_030817.dat')
-  open(unit=8,file='../datos_auger/utctprh_010104_140916.dat')
+  open(unit=8,file='utctprh_010104_140916.dat')
   
 61 read (8,*,end=60)iutc,t,p,r,rav,xnhex,xnhex5,iw,ib
 

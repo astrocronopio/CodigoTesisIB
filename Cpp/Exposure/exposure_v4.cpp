@@ -57,15 +57,15 @@ int interval = 288;
 
 int version_v3()
 {
-	exposure_given_period(T_S, "sidereal_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
-	exposure_given_period(T_S, "sidereal_2020_sid.txt", rango2013, rango2020, interval,	method_weight_sidereal);
-/*	
-	exposure_given_period(T_D, "solar_2020_sol.txt", rango2013, rango2020,  interval, method_weight_solar);
-	exposure_given_period(T_D, "solar_2020_sid.txt", rango2013, rango2020, 	interval, method_weight_sidereal);
+	exposure_given_period(T_S, "sidereal_2020_sol.txt", rango2004, rango2017, interval, method_weight_solar);
+	/*exposure_given_period(T_S, "sidereal_2020_sid.txt", rango2013, rango2020, interval,	method_weight_sidereal);*/
+	
+	exposure_given_period(T_D, "solar_2020_sol.txt", rango2004, rango2017,  interval, method_weight_solar);
+	/*exposure_given_period(T_D, "solar_2020_sid.txt", rango2013, rango2020, 	interval, method_weight_sidereal);*/
 
-	exposure_given_period(T_A, "antisiderea_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
-	exposure_given_period(T_A, "antisiderea_2020_sid.txt", rango2013, rango2020, interval, method_weight_sidereal);
-*/
+	exposure_given_period(T_A, "antisiderea_2020_sol.txt", rango2004, rango2017, interval, method_weight_solar);
+	/*exposure_given_period(T_A, "antisiderea_2020_sid.txt", rango2013, rango2020, interval, method_weight_sidereal);*/
+
 	return 0;
 }
 

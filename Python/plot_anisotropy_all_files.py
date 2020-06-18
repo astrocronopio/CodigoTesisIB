@@ -108,12 +108,13 @@ def plot_only_a_graph():
 	pass
 	
 def plot_con_sin_corr_pesos():
+	"""
 	plot_anisotropy_con_sin_corr (	"../Cpp/Anisotropy/xx2019_AllTriggers_1_2_EeV_peso.dat",
 								"../Cpp/Anisotropy/xx2019_AllTriggers_1_2_EeV.dat",
 								"../Cpp/Energy_Reconstruction/corr_2019_AllTriggers_1_2_EeV_peso.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
 								"../Update/report_4_12_05_2020/2019_AllTriggers_1_2_EeV_con_vs_sin_peso.png", 11)
-	"""
+	
 	plot_anisotropy_con_sin_corr(	"../Cpp/Anisotropy/xx2019_AllTriggers_2_4_EeV_peso.dat",
 									"../Cpp/Anisotropy/xx2019_AllTriggers_2_4_EeV.dat",
 									"(2019) Todos los disparos: entre 2 EeV y 4 EeV", 
@@ -145,11 +146,13 @@ def plot_con_sin_corr_pesos():
 
 
 def plot_con_vs_sin_pesos():
+	
+	"""
 	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat",
 								"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
 								"../Update/report_6_02_06_2020/pesos_sin_con_1_2_EeV.png", 11)
-	"""
+	
 	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/xx2019_AllTriggers_2_4_EeV_peso.dat",
 								"../Cpp/Anisotropy/xx2019_AllTriggers_2_4_EeV.dat",
 								"(2019) Todos los disparos: entre 2 EeV y 4 EeV", 
@@ -159,11 +162,12 @@ def plot_con_vs_sin_pesos():
 								"../Cpp/Anisotropy/xx2019_Main_Array_4_8_EeV.dat",
 								u"(2019) Disparo estándar: entre 4 EeV y 8 EeV", 
 								"../Cpp/Anisotropy/Report/xx2019_Main_Array_4_8_EeV_con_vs_sin_peso.png", 13)
-		
+	
 	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/xx2019_Main_Array_8_EeV_peso.dat",
 								"../Cpp/Anisotropy/xx2019_Main_Array_8_EeV.dat",
 								u"(2019) Disparo estándar: sobre 8 EeV", 
 								"../Cpp/Anisotropy/Report/xx2019_Main_Array_8_EeV_con_vs_sin_peso.png", 14)
+	
 
 	##################################################################################################333
 

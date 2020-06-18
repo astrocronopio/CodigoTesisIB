@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{12}%
+\begin{thebibliography}{14}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -119,6 +119,19 @@
   \bibinfo {note} {La funci\IeC {\'o}n techo da como resultado el n\IeC
   {\'u}mero entero m\IeC {\'a}s pr\IeC {\'o}ximo por exceso}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Aab}\ \emph {et~al.}(2018)\citenamefont {Aab},
+  \citenamefont {Abreu}, \citenamefont {Aglietta}, \citenamefont {Albuquerque},
+  \citenamefont {Albury},\ and\ \citenamefont {et~al.}}]{referencia_pesos}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Aab}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Abreu}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Aglietta}}, \bibinfo {author}
+  {\bibfnamefont {I.~F.~M.}\ \bibnamefont {Albuquerque}}, \bibinfo {author}
+  {\bibfnamefont {J.~M.}\ \bibnamefont {Albury}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {I.~A.}\ \bibnamefont {et~al.}},\ }\href {\doibase
+  10.3847/1538-4357/aae689} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Astrophysical Journal}\ }\textbf {\bibinfo {volume} {868}},\ \bibinfo {pages}
+  {4} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{Note2()}]{Note2}%
   \BibitemOpen
   \bibinfo {note} {El archivo que bajo de \protect \url
@@ -142,6 +155,10 @@
   \bibinfo {note} {Las correcciones se calcularon para el archivo del disparo
   est\IeC {\'a}ndar}\BibitemShut {NoStop}%
 \bibitem [{Note8()}]{Note8}%
+  \BibitemOpen
+  \bibinfo {note} {El peso de los eventos es la inversa del peso de los hex\IeC
+  {\'a}gonos}\BibitemShut {NoStop}%
+\bibitem [{Note9()}]{Note9}%
   \BibitemOpen
   \bibinfo {note} {S\IeC {\'\i }, el error es del 100\protect \% para el
   ajuste.}\BibitemShut {Stop}%
