@@ -1,0 +1,148 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{12}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Abraham}\ \emph {et~al.}(2009)\citenamefont
+  {Abraham}, \citenamefont {Abreu}, \citenamefont {Aglietta}, \citenamefont
+  {Aguirre}, \citenamefont {Ahn}, \citenamefont {Allard}, \citenamefont
+  {Allekotte}, \citenamefont {Allen}, \citenamefont {Allison}, \citenamefont
+  {Alvarez-Muniz} \emph {et~al.}}]{abraham2009atmospheric}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Abraham}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Abreu}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Aglietta}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Aguirre}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Ahn}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Allard}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Allekotte}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Allen}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Allison}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Alvarez-Muniz}},  \emph {et~al.},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astroparticle Physics}\ }\textbf
+  {\bibinfo {volume} {32}},\ \bibinfo {pages} {89} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Abreu}\ \emph {et~al.}(2012)\citenamefont {Abreu},
+  \citenamefont {Aglietta}, \citenamefont {Ahlers}, \citenamefont {Ahn},
+  \citenamefont {Albuquerque}, \citenamefont {Allard}, \citenamefont
+  {Allekotte}, \citenamefont {Allen}, \citenamefont {Allison}, \citenamefont
+  {Almela} \emph {et~al.}}]{abreu2012description}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Abreu}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Aglietta}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ahlers}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {Ahn}}, \bibinfo {author}
+  {\bibfnamefont {I.~F. d.~M.}\ \bibnamefont {Albuquerque}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Allard}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Allekotte}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Allen}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Allison}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Almela}},  \emph {et~al.},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Astroparticle Physics}\ }\textbf {\bibinfo
+  {volume} {35}},\ \bibinfo {pages} {591} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aab}\ \emph {et~al.}(2017)\citenamefont {Aab},
+  \citenamefont {Abreu}, \citenamefont {Aglietta}, \citenamefont {Al~Samarai},
+  \citenamefont {Albuquerque}, \citenamefont {Allekotte}, \citenamefont
+  {Almela}, \citenamefont {Castillo}, \citenamefont {Alvarez-Muniz},
+  \citenamefont {Anastasi} \emph {et~al.}}]{aab2017impact}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Aab}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Abreu}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Aglietta}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Al~Samarai}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Albuquerque}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Allekotte}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Almela}}, \bibinfo {author} {\bibfnamefont
+  {J.~A.}\ \bibnamefont {Castillo}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Alvarez-Muniz}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Anastasi}},  \emph {et~al.},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Instrumentation}\ }\textbf
+  {\bibinfo {volume} {12}},\ \bibinfo {pages} {P02006} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Taborda}(2017)}]{taborda}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Taborda}},\ }\href@noop {} {\enquote {\bibinfo {title} {{Estudios de
+  anisotropías a grandes escalas angulares de los rayos cósmicos de alta
+  energía detectados por el observatorio Pierre Auger}},}\ } (\bibinfo {year}
+  {2017})\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {La funci\IeC {\'o}n techo da como resultado el n\IeC
+  {\'u}mero entero m\IeC {\'a}s pr\IeC {\'o}ximo por exceso}\BibitemShut
+  {NoStop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {El archivo que bajo de \protect \url
+  {http://ipnwww.in2p3.fr/~augers/AugerProtected/herald.php}}\BibitemShut
+  {NoStop}%
+\bibitem [{Note3()}]{Note3}%
+  \BibitemOpen
+  \bibinfo {note} {$1372680308$}\BibitemShut {NoStop}%
+\bibitem [{Note4()}]{Note4}%
+  \BibitemOpen
+  \bibinfo {note} {$1388577600$}\BibitemShut {NoStop}%
+\bibitem [{Note5()}]{Note5}%
+  \BibitemOpen
+  \bibinfo {note} {$1577880000$}\BibitemShut {NoStop}%
+\bibitem [{Note6()}]{Note6}%
+  \BibitemOpen
+  \bibinfo {note} {Valor de S38 sin la correcc\IeC {\'o}n del clima del paper
+  del 2017}\BibitemShut {NoStop}%
+\bibitem [{Note7()}]{Note7}%
+  \BibitemOpen
+  \bibinfo {note} {Las correcciones se calcularon para el archivo del disparo
+  est\IeC {\'a}ndar}\BibitemShut {NoStop}%
+\bibitem [{Note8()}]{Note8}%
+  \BibitemOpen
+  \bibinfo {note} {S\IeC {\'\i }, el error es del 100\protect \% para el
+  ajuste.}\BibitemShut {Stop}%
+\end{thebibliography}%

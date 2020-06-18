@@ -33,7 +33,7 @@ int method_weight_solar(int utc, float fas, int interval){
 	unsigned iutc0 = 1072915200;
 
 
-	float x1=((long double)(utc-iutc0)/3600. +2. )*fas; // hora local
+	float x1=((long double)(utc-iutc0)/3600. +  2.099806667)*fas; // hora local
 	int	aux=  int(fmod(x1*interval/24.0, interval));
 				
 	return aux;
@@ -114,11 +114,12 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 60) continue;
 
-			hrs =((double)(utc-utc0)/3600.+2)*fas;
+			hrs =((double)(utc-utc0)/3600.+31.4971*24/360)*fas;
 
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 
 			peso= 1.0/dnhex[nh];		
+			
 			*sumaN+=peso;
 			raz = right_ascension(utc);
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
@@ -206,8 +207,6 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 	
      	std::cout <<  "Frecuencia: "<< freq_1 		<< "\nAmplitud: " << rtilde << "\n";
      	std::cout <<  "Probabilidad: "<<prtilde 	<< "\nFase: " << pha/d2r  << "\nPercentil 99: "<< r99r << "\t"<< std::endl;
-
-
 	}
 }
 
@@ -223,7 +222,7 @@ int main(int argc, char const *argv[])
 	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	ray_multifreq(200,  in_file, out_file, utci, utcf);
+	ray_multifreq(400,  in_file, out_file, utci, utcf);
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;

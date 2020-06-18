@@ -1,4 +1,4 @@
-#include "exposure_v4.h"
+#include "exposure_v5.h"
 
 unsigned long rango2004=1072915200;
 unsigned long rango2005=1104537600;
@@ -57,15 +57,15 @@ int interval = 288;
 
 int version_v3()
 {
-	//exposure_given_period(T_S, "sidereal_2020_sol_sin_2.txt", rango2013, rango2020, interval,							method_weight_solar);
-	//exposure_given_period(T_S, "sidereal_2020_sid.txt", rango2013, rango2020, interval,	method_weight_sidereal);
-	
+	exposure_given_period(T_S, "sidereal_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
+	exposure_given_period(T_S, "sidereal_2020_sid.txt", rango2013, rango2020, interval,	method_weight_sidereal);
+/*	
 	exposure_given_period(T_D, "solar_2020_sol.txt", rango2013, rango2020,  interval, method_weight_solar);
-	//exposure_given_period(T_D, "solar_2020_sid.txt", rango2013, rango2020, 	interval, method_weight_sidereal);
+	exposure_given_period(T_D, "solar_2020_sid.txt", rango2013, rango2020, 	interval, method_weight_sidereal);
 
-//	exposure_given_period(T_A, "antisiderea_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
-//	exposure_given_period(T_A, "antisiderea_2020_sid.txt", rango2013, rango2020, interval, method_weight_sidereal);
-
+	exposure_given_period(T_A, "antisiderea_2020_sol.txt", rango2013, rango2020, interval, method_weight_solar);
+	exposure_given_period(T_A, "antisiderea_2020_sid.txt", rango2013, rango2020, interval, method_weight_sidereal);
+*/
 	return 0;
 }
 

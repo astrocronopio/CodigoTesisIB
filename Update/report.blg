@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: report.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: reportNotes.bib
+Database file #2: mibib.bib
+Warning--entry type for "taborda" isn't style-file defined
+--line 36 of file mibib.bib
+Repeated entry---line 47 of file mibib.bib
+ : @mastersthesis{taborda
+ :                       ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+You've used 12 entries,
+            5847 wiz_defined-function locations,
+            1647 strings with 16337 characters,
+and the built_in function-call counts, 8264 in all, are:
+= -- 521
+> -- 255
+< -- 47
++ -- 94
+- -- 68
+* -- 1383
+:= -- 806
+add.period$ -- 13
+call.type$ -- 12
+change.case$ -- 57
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 687
+empty$ -- 540
+format.name$ -- 146
+if$ -- 1595
+int.to.chr$ -- 1
+int.to.str$ -- 20
+missing$ -- 73
+newline$ -- 88
+num.names$ -- 12
+pop$ -- 272
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 276
+stack$ -- 0
+substring$ -- 201
+swap$ -- 689
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 166
+warning$ -- 0
+while$ -- 11
+width$ -- 0
+write$ -- 115
+(There was 1 error message)
