@@ -5,8 +5,6 @@
 #include <math.h>
 #include <vector>
 
-unsigned long rango2004=1072915200; // 01/01 00:00 GMT
-unsigned long rango2005=1104537600; // 01/01 00:00 GMT
 
 unsigned long rango2013=1388577600; 
 unsigned long rango2017=1472688000;
@@ -33,12 +31,12 @@ double right_ascension(long long utc){
 int method_weight_solar(int utc, float fas, int interval){
 	unsigned iutc0 = 1072915200;
 
+
 	float x1=((long double)(utc-iutc0)/3600. +  2.099806667)*fas; // hora local
 	int	aux=  int(fmod(x1*interval/24.0, interval));
 				
 	return aux;
 }
-
 
 void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsigned long utcf, float period)
 { 	
@@ -57,6 +55,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	long double x1,x2,x3, integral=0.0;
 
 	std::ifstream myweather("/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_05032020.dat");
+
 
 	if(myweather.is_open())
 	{	
@@ -114,7 +113,7 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 60) continue;
 
-			hrs =((double)(utc-utc0)/3600.+31.4971*24/360)*fas;
+			hrs =((double)(utc-utc0)/3600.+31.4971*24./360.)*fas;
 
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 

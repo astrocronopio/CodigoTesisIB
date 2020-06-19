@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{abraham2009atmospheric}
+Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
+  \emph{et~al.}
+\newblock Atmospheric effects on extensive air showers observed with the
+  surface detector of the pierre auger observatory.
+\newblock \emph{Astroparticle Physics}, \textbf{32}~(2), 89--99, 2009.
+
+\bibitem{abreu2012description}
+Abreu, P., Aglietta, M., Ahlers, M., Ahn, E., Albuquerque, I. F. d.~M., Allard,
+  D., \emph{et~al.}
+\newblock Description of atmospheric conditions at the pierre auger observatory
+  using the global data assimilation system (gdas).
+\newblock \emph{Astroparticle Physics}, \textbf{35}~(9), 591--607, 2012.
+
+\bibitem{aab2017impact}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock {Impact of atmospheric effects on the energy reconstruction of air
+  showers observed by the surface detectors of the Pierre Auger Observatory}.
+\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
+
+\bibitem{taborda}
+Taborda, O.
+\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
+  cósmicos de alta energía detectados por el observatorio Pierre Auger},
+  2017.
+
+\bibitem{referencia_pesos}
+Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
+  I.~A.
+\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
+  pierre auger observatory.
+\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
+
+\end{thebibliography}

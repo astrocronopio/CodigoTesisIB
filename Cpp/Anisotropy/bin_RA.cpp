@@ -16,7 +16,7 @@ float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
-const int interval= 36; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
+const int interval= 12; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;

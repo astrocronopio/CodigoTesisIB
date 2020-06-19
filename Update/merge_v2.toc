@@ -1,0 +1,41 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {ii}}{section*.1}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.3}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Acerca de la tesis de licenciatura}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Acerca del archivo con todos los disparos}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Acerca de los eventos}{1}{section.1.3}
+\contentsline {section}{\numberline {1.4}C\IeC {\'a}lculo de los coeficientes de Fourier para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a en ascensi\IeC {\'o}n recta}{2}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Variaciones relativas de los hex\IeC {\'a}gonos}{2}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}C\IeC {\'a}lculo de Rayleigh para una frecuencia dada}{4}{subsection.1.4.2}
+\contentsline {chapter}{\numberline {2}Report \#3: 07/05/2020 - Reconstrucci\IeC {\'o}n de energ\IeC {\'\i }a}{6}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Rango de tiempo}{6}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}Tasa de eventos}{6}{subsection.2.0.2}
+\contentsline {subsection}{\numberline {2.0.3}P\IeC {\'a}rametros del clima}{7}{subsection.2.0.3}
+\contentsline {subsection}{\numberline {2.0.4}Anisotrop\IeC {\'\i }a en el rango 1-2 EeV}{9}{subsection.2.0.4}
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Update}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}C\IeC {\'a}lculo de Rayleigh.}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Pesos de los hex\IeC {\'a}gonos}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}C\IeC {\'a}lculo de Rayleigh.}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Resultados con el rango de energ\IeC {\'\i }a 1 EeV - 2 EeV}{12}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Modulaci\IeC {\'o}n del clima para todos los disparos (2014-2020)}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pesos de los hex\IeC {\'a}gonos}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Anisotrop\IeC {\'\i }a}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Lista detallada de los filtros aplicados de datos del herald}{14}{subsection.3.2.1}
+\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{14}{section*.22}
+\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{14}{section*.23}
+\contentsline {subsection}{\numberline {3.2.2}An\IeC {\'a}lisis en frecuencia}{15}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Correcci\IeC {\'o}n del clima}{16}{section.3.3}
+\contentsline {chapter}{\numberline {4}Report \#5: 22/05/2020 - Dipolo en el bin 1 EeV - 2 EeV}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Anisotrop\IeC {\'\i }as}{17}{section.4.1}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del conjunto de datos del reporte}{17}{section*.30}
+\contentsline {section}{\numberline {4.2}Ajuste del primer arm\IeC {\'o}nico de la variaci\IeC {\'o}n de hex\IeC {\'a}gonos y pesos}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Dipolo en el bin 1 EeV - 2 EeV}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Caracter\IeC {\'\i }sticas del conjunto de datos}{20}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Grafico de la anisotropia}{20}{subsection.5.1.1}
+\contentsline {subsubsection}{Tabla comparando:}{21}{section*.38}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta}{22}{section*.42}
+\contentsline {subsubsection}{Bineado de eventos (va a ir al final)}{23}{section*.46}
+\contentsline {chapter}{\numberline {A}Cosas para hacer: Mails con Mollerach}{24}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{25}{section*.48}

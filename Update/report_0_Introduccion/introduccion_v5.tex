@@ -67,26 +67,22 @@ A partir de los registros de eventos del arreglo principal con todos los disparo
          \langle N \rangle &= \sum^{L}_{i=1} \frac{N_{hex, i}}{L}  \qquad
          \Delta N_{cell,k} = \frac{N_{cell, k}}{\langle N \rangle}  \label{epepe}
        \end{align}
-      %  una vez obtenido este valor, podemos calcular  $\Delta N_{cell,k}$, como 
-      
-      % \begin{align}
-         
-      % \end{align} 
-      % %\end{enumerate}
 
       En la Fig.\ref{fig:pesos_referencia} se muestran las variaciones relativas de los hexágonos en función de la ascensión recta del cenit del observatorio para las frecuencias sidérea, solar y antisidérea. Este análisis fue realizado en el marco del trabajo \cite{referencia_pesos} en el periodo 2004-2017. 
 
-       En la Fig.\ref{fig:pesos_ejemplo} se observa valores obtenidos de $\Delta N_{cell,k}$ en función de la ascensión recta del cenit  para $L=288$ segmentos con el programa escrito para este informe, utilizando el mismo conjunto de datos que el utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia} desde el 1 de Enero del 2004 a las $00:00:00\,$hrs GMT  hasta el 1 de Enero del 2017 a las $00:00:00\,$hrs GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
- 
-    \begin{figure}[H]
+          \begin{figure}[H]
           \centering
-              \includegraphics[width=0.75\linewidth]{pesos_referencia.png}  
+              \includegraphics[width=0.8\linewidth]{pesos_referencia.png}  
               \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite{referencia_pesos}.}
               \label{fig:pesos_referencia}
         \end{figure}
+
+       En la Fig.\ref{fig:pesos_ejemplo} se observa valores obtenidos de $\Delta N_{cell,k}$ en función de la ascensión recta del cenit  para $L=288$ segmentos con el programa escrito para este informe, utilizando el mismo conjunto de datos que el utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia} desde el 1 de Enero del 2004 a las $00:00:00\,$hrs GMT  hasta el 1 de Enero del 2017 a las $00:00:00\,$hrs GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
+ 
+
        \begin{figure}[H]
           \centering
-              \includegraphics[width=0.75\linewidth]{weigths_2020.png}
+              \includegraphics[width=0.8\linewidth]{weigths_2020.png}
               \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.}
               \label{fig:pesos_ejemplo}
         \end{figure}
