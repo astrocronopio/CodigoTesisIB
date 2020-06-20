@@ -63,7 +63,7 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 			if(utcf < utc) break;
 			if(utc  < utci || Theta > 80) continue;
 
-			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
+			hrs=((double)(utc-iutcref)/3600. + 31.4971*24./360.)*fas; // hora local
 			peso =1.0;		
 			*sumaN+=peso;
 			raz = right_ascension(utc);
@@ -172,7 +172,7 @@ int main(int argc, char const *argv[])
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
-	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
+	ray_given_freq(366.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
 	*/
 	
 	return 0;

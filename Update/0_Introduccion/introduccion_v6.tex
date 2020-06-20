@@ -1,0 +1,33 @@
+% INTRODUCCION
+
+\section{Acerca de la tesis de licenciatura}
+
+En el trabajo de tesis de licenciatura se analizaron los efectos de las variaciones de los parámetros del clima sobre el desarrollo en la atmósfera de las lluvias atmosféricas. Se analizaron datos del arreglo de detectores espaciados 1500 m entre sí, conocido como \emph{arreglo principal}, del Observatorio Pierre Auger en el periodo 2005-2018,  extendiendo  así los periodos de tiempo estudiados anteriormente en los siguientes trabajos \cite{abraham2009atmospheric}, \cite{abreu2012description}   y \cite{aab2017impact}. Se emuló los resultados de la corrección de la modulación del clima sobre el periodo 2005-2015 de la colaboración Pierre Auger \cite{aab2017impact}, obteniéndose resultados compatibles. Se observó que posterior a la corrección, la modulación del clima se vio disminuida. Para eventos con energía mayor a $2\,$EeV, esta modulación es despreciable.
+
+En el mismo trabajo, se estudió la modulación del clima mediante el valor del $S_{38}$ sin la corrección propuesta por trabajos anteriores. Se observó que los parámetros del clima obtenidos de estos datos son compatibles con los utilizados en la reconstrucción oficial. Se realizó una corrección de los efectos atmosféricos a la energía con estos coeficientes, observándose que la modulación era despreciable para energías mayores a $2\,$EeV al igual que la reconstrucción oficial. 
+
+\section{Acerca del archivo con todos los disparos}
+
+El análisis anterior fue realizado sobre los eventos medidos por el arreglo principal utilizando el disparo estándar. Este disparo tiene una eficiencia completa para eventos de energía mayor a $2.5\,$EeV. La eficiencia del SD varía con la energía del CR. Para el disparo estandar, los eventos con energía mayor a $3\,$EeV y $\theta_{max}<60^o$ o  por encima de $4\,$EeV y $\theta_{max}<80^o$, son detectados con una eficiencia del 100\%. Por lo que el análisis de anisotropías en el rango de energía entre $1\,$EeV - $2\,$EeV, requiere factores relacionados a la eficiencia función de la energía que se obteniendo de manera fenomenológica \cite{taborda}. Para todos los disparos, la eficiencia completa de   alcanza por encima de 1\,EeV. Por lo tanto sin trabajamos con eventos donde la eficiencia es completa y sólo puede afectar el cambio de la exposición del observatorio, y   no es necesario tener en cuenta en el peso la eficiencia.
+
+Para superar esta dificultad,  a partir del año 2013 se implementó otros protocolos de disparo en el arreglo principal, llamados Mops y ToTs. Con esta mejora, la eficiencia completa se alcanza para una energía mayor a $1\,$EeV. De esta manera se aumenta la cantidad de eventos a estudiar en el rango $1\,$EeV - $2\,$EeV y no son necesarios factores relacionados a la eficiencia. La desventaja es que el disparo estándar tiene una mayor cantidad de datos ya que se adquieren datos  desde el año 2004 con ese protocolo.
+
+\section{Acerca de los eventos} \label{filtro}
+
+Para poder prescindir de los factores de corrección a los datos de los eventos, se aplican cortes a los datos para asegurar la eficiencia completa de los detectores. Por eso se implementan  límites en ángulo cenital, en la cantidad de vecinos al tanque de mayor señal, además de restringirse a los datos fueron medidos en condiciones normales, es decir cuando los sistemas de comunicación del Observatorio funciona sin incovenientes.
+
+%  Esto da como resultado límites superiores
+% al ángulo cenital θ max y umbrales de energía para los cuales se satisface la condición de
+% eciencia. En Auger por ejemplo, el SD principal tiene eciencia de 100 % para energías
+% arriba de 3 EeV para θ max = 60 ◦ o arriba de 4 EeV para θ max = 80 ◦ .
+
+A partir de los registros de eventos del arreglo principal con todos los disparos, se consideran solamente los eventos que cumplan las siguientes características:
+
+    \begin{enumerate}
+      \item Ángulo cenital $\theta < 60^o$
+      \item $ib=1$ \emph{Bad period flag}. Un valor de 1 indica un buen periodo en el cual los datos son recopilados sin inconvenientes.
+      \item Buena reconstrucción de la lluvia atmósferica asociada al evento
+      \item La cantidad de vecinos alrededor del tanque con mayor señal sea de 6 tanques.
+    \end{enumerate}
+
+

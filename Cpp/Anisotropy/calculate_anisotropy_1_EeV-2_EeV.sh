@@ -10,6 +10,6 @@ rango2020=1577880000
 
 #Entre 1-2 EeV lo hacemos con todos los triggers
 file_1_2="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
-#./sin_peso_v5 "$file_1_2"  x2019_AllTriggers_1_2_EeV.dat 			"$(($rango2013))" "$(($rango2020))"  
-./con_peso_v5	 "$file_1_2"  x2019_AllTriggers_1_2_EeV_peso.dat 		"$(($rango2013))" "$(($rango2020))"  
+./sin_peso_v5_checked "$file_1_2"  xx2019_AllTriggers_1_2_EeV.dat 			"$(($rango2013))" "$(($rango2020))"  
+#./con_peso_v5	 "$file_1_2"  xx2019_AllTriggers_1_2_EeV_peso.dat 		"$(($rango2013))" "$(($rango2020))"  
 

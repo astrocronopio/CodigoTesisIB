@@ -1,30 +1,18 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{3}{figure.caption.5}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{4}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Comparaci\IeC {\'o}n entre los an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a hechos para el mismo conjunto de datos, con el c\IeC {\'o}digo de \cite {taborda} y con el c\IeC {\'o}digo escrito para este trabajo.\relax }}{5}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Tasa de eventos para eventos por encima de 1 EeV.\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hex\IeC {\'a}gonos\relax }}{7}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Un ejemplo de pesos de los hex\IeC {\'a}gonos en el rango 2005-2019 para distintas frecuencias.\relax }}{11}{figure.caption.17}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Un ejemplo de pesos de los hex\IeC {\'a}gonos en el rango Enero 2014- Enero 2019 para distintas frecuencias.\relax }}{11}{figure.caption.18}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An\IeC {\'a}lisis en frecuencia para el bin 1 EeV - 2 EeV, entre Enero 2014- Enero 2019 (Cantidad de eventos $ \approx 10^6$).\relax }}{12}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{5}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparaci\IeC {\'o}n entre los an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a hechos para el mismo conjunto de datos, con el c\IeC {\'o}digo de \cite {taborda} y con el c\IeC {\'o}digo escrito para este trabajo.\relax }}{6}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pesos de los hex\IeC {\'a}gonos\relax }}{13}{figure.caption.20}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{14}{figure.caption.21}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los par\IeC {\'a}metros del clima.\relax }}{15}{figure.caption.24}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces An\IeC {\'a}lisis en frecuencia en ascensi\IeC {\'o}n recta en rango 1 EeV - 2 EeV\relax }}{15}{figure.caption.25}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Par\IeC {\'a}metro de clima $a_P$ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{16}{figure.caption.27}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Par\IeC {\'a}metro de clima $a_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{16}{figure.caption.28}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Par\IeC {\'a}metro de clima $b_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{16}{figure.caption.29}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pesos de los hex\IeC {\'a}gonos\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los par\IeC {\'a}metros del clima.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An\IeC {\'a}lisis en frecuencia en ascensi\IeC {\'o}n recta en rango 1 EeV - 2 EeV\relax }}{9}{figure.caption.13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Par\IeC {\'a}metro de clima $a_P$ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Par\IeC {\'a}metro de clima $a_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{10}{figure.caption.16}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Par\IeC {\'a}metro de clima $b_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{10}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Anisotrop\IeC {\'\i }a para el intervalo 2014-2020\relax }}{17}{figure.caption.31}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Zoom en el pico de anisotrop\IeC {\'\i }a cercana para la frecuencia sid\IeC {\'e}rea para el intervalo 2014-2020\relax }}{18}{figure.caption.33}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pesos de los eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta para la frecuencia sid\IeC {\'e}rea en el periodo 2014-2020\relax }}{19}{figure.caption.35}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Hex\IeC {\'a}gonos para la frecuencia sid\IeC {\'e}rea en el periodo 2014-2020\relax }}{19}{figure.caption.36}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces El ajuste hecho a la frecuencia sid\IeC {\'e}rea usando el valor de $h$ para clasificar.\relax }}{21}{figure.caption.40}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces El ajuste hecho a la frecuencia sid\IeC {\'e}rea usando el valor de la ascensi\IeC {\'o}n recta para clasificar.\relax }}{22}{figure.caption.41}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia, se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos\relax }}{22}{figure.caption.43}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces \relax }}{23}{figure.caption.47}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ajuste de los pesos de los eventos para varias frecuencias a primer orden en ascensi\IeC {\'o}n recta\relax }}{12}{figure.caption.18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia, se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos\relax }}{13}{figure.caption.21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta.\relax }}{14}{figure.caption.24}

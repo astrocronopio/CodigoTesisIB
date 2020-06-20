@@ -31,8 +31,8 @@ double right_ascension(long long utc){
 }
 
 int method_weight_solar(int utc, float fas, int interval){
-	unsigned iutc0 = 1072915200;
-
+	//unsigned iutc0 = 1072915200;
+	unsigned iutc0  = 1104537600;
 	float x1=((long double)(utc-iutc0)/3600. +  2.099806667)*fas; // hora local
 	int	aux=  int(fmod(x1*interval/24.0, interval));
 				
@@ -47,7 +47,7 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	std::vector<long double>num_hex_hr(interval);
 	std::vector<long double>rnhexhr(interval);
 
-	unsigned long iutc, iutc0 = 1072915200;
+	unsigned long iutc;
 	float t,p,r,rav,hex6, hex5;
 	int iw,ib, ihr, aux, ang;
 	
@@ -114,7 +114,7 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 60) continue;
 
-			hrs =((double)(utc-utc0)/3600.+31.4971*24/360)*fas;
+			hrs =((double)(utc-iutcref)/3600.+31.4971*24/360)*fas;
 
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 
@@ -223,8 +223,8 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
 	ray_multifreq(400,  in_file, out_file, utci, utcf);
-
-/*	unsigned long utci =  rango2013;
+/*
+	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
 	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
 */	

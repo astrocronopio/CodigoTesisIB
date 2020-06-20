@@ -37,4 +37,10 @@ Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
 \newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
 \newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
 
+\bibitem{analisis_fourier}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
+
 \end{thebibliography}
