@@ -1,7 +1,7 @@
 
 
 % ARCHIVOS DE DATOS Y SUS DIFERENCIAS
-  \section{Características de los datos}
+  %\section{Características de los datos}
 
 % RESULTADOS PARA ANISOTROPÍAS EN RA PARA LOS ICRC
   \section{Anisotropías en ascensión recta en los archivos del ICRC 2017 y ICRC 2019}
@@ -10,7 +10,7 @@
     \subsection{Eventos por encima de 8 EeV }
 
 % ------> CARACTERISTICAS
-      \subsubsection{Características de los datos analizados}
+     % \subsubsection{Características de los datos analizados}
 
 % ------> ICRC 2017
       \subsubsection{Resultados para los datos del ICRC 2017}
@@ -102,34 +102,34 @@
           \label{fig:calibracionE}
         \end{figure}
 
-% ---> 1 EeV 
-    \subsection{Eventos por encima de 1 EeV }
-% ------> CARACTERISTICAS
-      \subsubsection{Características de los datos analizados}
+% % ---> 1 EeV 
+%     \subsection{Eventos por encima de 1 EeV }
+% % ------> CARACTERISTICAS
+%       \subsubsection{Características de los datos analizados}
 
-      Comparando las cantidad de eventos por encima de 1 EeV para cada conjunto de datos
+%       Comparando las cantidad de eventos por encima de 1 EeV para cada conjunto de datos
 
-        \begin{table}[H]
-          \centering
-            \begin{tabular}{c|c|c|c}
-            \textbf{Archivo} & \text{Eventos}   & UTC inicial &  UTC final  \\ \hline
-            2020       & 1\,515\,872    & 1372680308  & 1577879886 \\
-            %2019      & 647\, 656    & 1372699410  & 1496267276 \\
-            2017       & 635\, 353    & 1372680308  & 1496275090 \\
-            \end{tabular}
-        \end{table}
+%         \begin{table}[H]
+%           \centering
+%             \begin{tabular}{c|c|c|c}
+%             \textbf{Archivo} & \text{Eventos}   & UTC inicial &  UTC final  \\ \hline
+%             2020       & 1\,515\,872    & 1372680308  & 1577879886 \\
+%             %2019      & 647\, 656    & 1372699410  & 1496267276 \\
+%             2017       & 635\, 353    & 1372680308  & 1496275090 \\
+%             \end{tabular}
+%         \end{table}
 
-{\bf hasta acá está verificado}
+% {\bf hasta acá está verificado}
 % ------> ALL TRIGGERS 2017
-      \subsubsection{Resultados del archivo de 2017}
+      % \subsubsection{Resultados del archivo de 2017}
 
-        \begin{figure}[H]
-          \centering
-          \includegraphics[width=0.95\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png}
-        \end{figure}
-      En el gráfico de todos los disparos para el archivo de 2017, se ve que hay una modulación anual importante. Es de esperarse ya que la correción del clima aun no fue implementada para este conjuntos de datos.
+      %   \begin{figure}[H]
+      %     \centering
+      %     \includegraphics[width=0.95\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png}
+      %   \end{figure}
+      % En el gráfico de todos los disparos para el archivo de 2017, se ve que hay una modulación anual importante. Es de esperarse ya que la correción del clima aun no fue implementada para este conjuntos de datos.
 
-      Comentario: {\sl Para el análisis en frecuencias, no hace ruido el hecho que la línea del P99 esté tan bajo, siendo que solo depende de la cantidad de eventos, }
+      % Comentario: {\sl Para el análisis en frecuencias, no hace ruido el hecho que la línea del P99 esté tan bajo, siendo que solo depende de la cantidad de eventos, }
 
 
 % ------> ALL TRIGGERS 2019
@@ -142,123 +142,3 @@
     % \end{figure}
 
 % --> WEATHER STUFF
-
-{\bf Hasta acá está verificado}
-% --------> ALL TRIGGERS 2017
-% --------> ALL TRIGGERS 2019
-
-% ---> 1-2 EeV 
-    \subsection{Eventos entre 1 EeV y 2 EeV }
-% ------> CARACTERISTICAS
-      \subsubsection{Características de los datos analizados}
-
-          \begin{table}[H]
-          \centering
-            \begin{tabular}{c|c|c|c}
-              \textbf{Archivo} & \text{Eventos} & UTC inicial &  UTC final  \\ \hline
-              2019       & 550 744      & 1372680789  & 1496318166\\
-              2017       & 541 622      & 1372680472  & 1498521064\\
-            \end{tabular}
-          \end{table}
-
-
-          Comparando eventos que están en cada conjunto de datos (entre AllTriggers de 2017 y el AllTriggers del 2019)
-
-          \begin{table}[H]
-          \centering
-          
-            \begin{tabular}{c| c| c}
-            UTC     & Energia 2019 & Energía 2017\\ \hline
-            1372682356  & 1.21       & 1.13     \\
-            1415133899  & 1.09       & 1.24     \\
-            1470143731  & ---(seguro $<1$) & 1.04     \\
-            1470143712  & 1.21       & 1.26
-            
-            \end{tabular}
-          \end{table}
-
-% ------> ALL TRIGGERS 2017
-      \subsubsection{Resultados del archivo de 2017}
-
-          \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.8\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2017_Short_range_Between_1_2_EeV.png}
-            \caption{Comparando el primer armónico en ascensión recta para el archivo de 2017}
-          \end{figure}
-
-% ------> ALL TRIGGERS 2019
-      \subsubsection{Resultados del archivo del 2019}
-
-          \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.8\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2019_Short_range_Between_1_2_EeV.png}
-            \caption{Comparando el primer armónico en ascensión recta para el archivo del 2019}
-          \end{figure}
-
-
-% ---> 8 EeV 
-    \subsection{Eventos por encima de 8 EeV }
-
-% ------> CARACTERISTICAS
-      \subsubsection{Características de los datos analizados}
-
-        Comparando la cantidad de eventos entre las dos versiones %en el rango mencionado anteriormente
-        
-        \begin{table}[H]
-        \centering
-          \begin{tabular}{c|c|c}
-          \textbf{Archivo} & \text{Eventos en general} & Eventos estudiados  \\ \hline
-          2019       &  17671             & 15417\\ 
-          2017       &  22398             & 19376\\
-          \end{tabular}
-        \end{table}
-        
-        Comparando algunos de los eventos por encima de 8 EeV para el archivo de 2017 y el del 2019
-        \begin{table}[H]
-        \centering
-        
-          \begin{tabular}{c| c| c}
-          UTC     & Energia 2019 & Energía 2017\\ \hline
-          1496194311  & 23.75      &  22.74   \\
-          1396706347  & 8.78       &  9.75    \\
-          1425129321  & 10.92      &  13.44   \\
-          
-          \end{tabular}
-        \end{table}
-        
-
-% ------> ALL TRIGGERS 2017
-      \subsubsection{Resultados del archivo de 2017}
-      \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.95\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2017_Short_range_Above_8_EeV.png}
-      \end{figure}
-% ------> ALL TRIGGERS 2019
-      \subsubsection{Resultados del archivo del 2019}
-      \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.95\textwidth]{../0_Introduccion/AllTriggers/AllTriggers_2019_Short_range_Above_8_EeV.png}
-      \end{figure}
-
-% ------> COMPARACION CON LOS ICRC  (ANEXO)
-      \subsubsection{Comparado en el análisis del ICRC en el mismo rango de tiempo}
-        Hice esto para verificar que  lo que estoy midiendo por encima de 8 EeV con el trigger estandar no es muy diferente que lo que mido con todos los triggers.
-
-        \begin{figure}[H]
-          \begin{subfigure}[b]{0.5\textwidth}
-          \centering
-            \includegraphics[width=0.9\textwidth]{../0_Introduccion/ICRC/ICRC_2017_Short_time_Above_8_EeV.png}
-            \caption{ICRC 2017.}  \label{fig:8EeV_short_range_ICRC2017}
-          \end{subfigure}%
-          \begin{subfigure}[b]{0.5\textwidth}
-          \centering
-            \includegraphics[width=0.9\textwidth]{../0_Introduccion/ICRC/ICRC_2019_Short_time_Above_8_EeV.png}
-            \caption{ICRC 2019.}  \label{fig:8EeV_short_range_ICRC2019}
-          \end{subfigure}
-          \caption{Primer armónico en ascensión recta de los datos de los ICRC en el mismo rango de tiempo donde se estudia a todos los disparos.}
-        \end{figure}
-
-
-% --------> ALL TRIGGERS 2017
-% --------> ALL TRIGGERS 2019
-

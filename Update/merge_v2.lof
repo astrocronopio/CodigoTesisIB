@@ -1,38 +1,6 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{4}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{5}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparaci\IeC {\'o}n entre los an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a hechos para el mismo conjunto de datos, con el c\IeC {\'o}digo de \cite {taborda} y con el c\IeC {\'o}digo escrito para este trabajo.\relax }}{7}{figure.caption.9}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta de los datos del ICRC 2017\relax }}{9}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta de los datos del ICRC 2019.\relax }}{10}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diferencia entre las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{11}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Calibraci\IeC {\'o}n de las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{11}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparando el primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta para el archivo de 2017\relax }}{13}{figure.caption.26}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparando el primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta para el archivo del 2019\relax }}{13}{figure.caption.28}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta de los datos de los ICRC en el mismo rango de tiempo donde se estudia a todos los disparos.\relax }}{15}{figure.caption.37}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pesos de los hex\IeC {\'a}gonos\relax }}{16}{figure.caption.38}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{17}{figure.caption.39}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los par\IeC {\'a}metros del clima.\relax }}{18}{figure.caption.42}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An\IeC {\'a}lisis en frecuencia en ascensi\IeC {\'o}n recta en rango 1 EeV - 2 EeV\relax }}{18}{figure.caption.43}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Par\IeC {\'a}metro de clima $a_P$ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{19}{figure.caption.45}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Par\IeC {\'a}metro de clima $a_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{19}{figure.caption.46}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Par\IeC {\'a}metro de clima $b_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{19}{figure.caption.47}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Pesos de los hex\IeC {\'a}gonos\relax }}{20}{figure.caption.48}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{21}{figure.caption.49}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los par\IeC {\'a}metros del clima.\relax }}{22}{figure.caption.52}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces An\IeC {\'a}lisis en frecuencia en ascensi\IeC {\'o}n recta en rango 1 EeV - 2 EeV\relax }}{22}{figure.caption.53}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Par\IeC {\'a}metro de clima $a_P$ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{23}{figure.caption.55}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Par\IeC {\'a}metro de clima $a_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{23}{figure.caption.56}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Par\IeC {\'a}metro de clima $b_\rho $ calculado para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{23}{figure.caption.57}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Tasa de eventos diaria por encima de 1 EeV para los datos de todos los disparos.\relax }}{24}{figure.caption.59}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos de 2017. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{25}{figure.caption.60}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{26}{figure.caption.62}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{27}{figure.caption.63}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Variaciones de los hex\IeC {\'a}gonos para frecuencias caracter\IeC {\'\i }sticas en rango mencionado. \relax }}{29}{figure.caption.64}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Ajuste de los pesos de los eventos para varias frecuencias a primer orden en ascensi\IeC {\'o}n recta\relax }}{30}{figure.caption.65}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia, se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos\relax }}{31}{figure.caption.68}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta.\relax }}{32}{figure.caption.71}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta de los datos del ICRC 2017\relax }}{2}{figure.caption.8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Primer arm\IeC {\'o}nico en ascensi\IeC {\'o}n recta de los datos del ICRC 2019.\relax }}{3}{figure.caption.10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Diferencia entre las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{4}{figure.caption.12}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Calibraci\IeC {\'o}n de las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{4}{figure.caption.13}
