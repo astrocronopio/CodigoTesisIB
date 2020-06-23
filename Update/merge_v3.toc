@@ -1,0 +1,56 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {ii}}{section*.1}
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {v}}{section*.3}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vii}}{section*.5}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Acerca de la tesis de licenciatura}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Acerca de todos los disparos del SD}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Acerca de los eventos}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Acerca del registro de hex\IeC {\'a}gonos}{2}{section.1.4}
+\contentsline {chapter}{\numberline {2}M\IeC {\'e}todos}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}C\IeC {\'a}lculo de los coeficientes de Fourier para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a en ascensi\IeC {\'o}n recta}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Variaciones relativas de los hex\IeC {\'a}gonos}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}C\IeC {\'a}lculo de Rayleigh para una frecuencia dada}{5}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {3}Anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta en los archivos con el disparo est\IeC {\'a}ndar}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta en los archivos del ICRC 2017 y ICRC 2019}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Eventos por encima de 8 EeV }{8}{subsection.3.1.1}
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{8}{section*.10}
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{9}{section*.12}
+\contentsline {section}{\numberline {3.2}Anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta en los archivos con todos los disparos}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Caracter\IeC {\'\i }sticas de los archivos de datos analizados}{10}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Report \#2: 27/04/2020 - Anisotrop\IeC {\'\i }as para todos los disparos y pesos de los hex\IeC {\'a}gonos}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Anisotrop\IeC {\'\i }as considerando el peso de los hex\IeC {\'a}gonos}{12}{section.4.1}
+\contentsline {subsubsection}{Comparando los pesos en sid\IeC {\'e}rea, solar y antisiderea.}{12}{section*.17}
+\contentsline {subsection}{\numberline {4.1.1}Variaci\IeC {\'o}n de los pesos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta}{12}{subsection.4.1.1}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a entre 1\tmspace +\thinmuskip {.1667em}EeV y 2\tmspace +\thinmuskip {.1667em}EeV}{12}{section*.19}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a entre 2\tmspace +\thinmuskip {.1667em}EeV y 4\tmspace +\thinmuskip {.1667em}EeV}{13}{section*.22}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a entre 4\tmspace +\thinmuskip {.1667em}EeV y 8\tmspace +\thinmuskip {.1667em}EeV}{13}{section*.24}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a sobre 8\tmspace +\thinmuskip {.1667em}EeV}{14}{section*.26}
+\contentsline {subsection}{\numberline {4.1.2}Ampliando el rango de tiempo para el archivo del disparo est\IeC {\'a}ndar}{14}{subsection.4.1.2}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a entre 4\tmspace +\thinmuskip {.1667em}EeV y 8\tmspace +\thinmuskip {.1667em}EeV}{15}{section*.29}
+\contentsline {subsubsection}{Energ\IeC {\'\i }a sobre 8\tmspace +\thinmuskip {.1667em}EeV}{15}{section*.31}
+\contentsline {chapter}{\numberline {5}Modulaci\IeC {\'o}n del clima para todos los disparos (2014-2020)}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Pesos de los hex\IeC {\'a}gonos}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Anisotrop\IeC {\'\i }a}{17}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Lista detallada de los filtros aplicados de datos del herald}{17}{subsection.5.2.1}
+\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{17}{section*.35}
+\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{17}{section*.36}
+\contentsline {subsection}{\numberline {5.2.2}An\IeC {\'a}lisis en frecuencia}{18}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Correcci\IeC {\'o}n del clima}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Pesos de los hex\IeC {\'a}gonos}{19}{section.5.4}
+\contentsline {section}{\numberline {5.5}Anisotrop\IeC {\'\i }a}{19}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Lista detallada de los filtros aplicados de datos del herald}{20}{subsection.5.5.1}
+\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{20}{section*.42}
+\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{20}{section*.43}
+\contentsline {subsection}{\numberline {5.5.2}An\IeC {\'a}lisis en frecuencia}{21}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Correcci\IeC {\'o}n del clima}{21}{section.5.6}
+\contentsline {subsubsection}{Modulaci\IeC {\'o}n del clima para todos los triggers}{22}{section*.48}
+\contentsline {chapter}{\numberline {6}Dipolo en el rango 1 EeV - 2 EeV}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}Caracter\IeC {\'\i }sticas del conjunto de datos}{26}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pesos de los eventos para frecuencias de referencia}{27}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Gr\IeC {\'a}ficos de los ajustes}{28}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Tabla comparando los ajustes:}{28}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Gr\IeC {\'a}fico de la anisotrop\IeC {\'\i }a}{29}{section.6.3}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta}{29}{section*.57}
+\contentsline {subsubsection}{Bineado de eventos }{29}{section*.60}
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{31}{section*.62}

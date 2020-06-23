@@ -12,9 +12,9 @@ set terminal qt 1 enhanced font 'Times,26' size 1200,800
 
 set xran [:360]
 set xtic 40
-set key left top
+set key at 170, 0.995#center bottom
 #set yti 0.002
-#set yr [:1.010]
+set yr [:1.011]
 
 set xlabel "RA [^o]"
 set ylabel "N_{bin} {/=30 /} N_{media}"
