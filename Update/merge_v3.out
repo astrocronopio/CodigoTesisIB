@@ -10,30 +10,17 @@
 \BOOKMARK [1][-]{section.2.1}{C\341lculo de los coeficientes de Fourier para el an\341lisis de anisotrop\355a en ascensi\363n recta}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.1.1}{Variaciones relativas de los hex\341gonos}{section.2.1}% 11
 \BOOKMARK [2][-]{subsection.2.1.2}{C\341lculo de Rayleigh para una frecuencia dada}{section.2.1}% 12
-\BOOKMARK [0][-]{chapter.3}{Anisotrop\355as en ascensi\363n recta en los archivos con el disparo est\341ndar}{}% 13
-\BOOKMARK [1][-]{section.3.1}{Anisotrop\355as en ascensi\363n recta en los archivos del ICRC 2017 y ICRC 2019}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.1.1}{Eventos por encima de 8 EeV }{section.3.1}% 15
-\BOOKMARK [1][-]{section.3.2}{Anisotrop\355as en ascensi\363n recta en los archivos con todos los disparos}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.2.1}{Caracter\355sticas de los archivos de datos analizados}{section.3.2}% 17
-\BOOKMARK [0][-]{chapter.4}{Report \0432: 27/04/2020 - Anisotrop\355as para todos los disparos y pesos de los hex\341gonos}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Anisotrop\355as considerando el peso de los hex\341gonos}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.1.1}{Variaci\363n de los pesos en funci\363n de la ascensi\363n recta}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.2}{Ampliando el rango de tiempo para el archivo del disparo est\341ndar}{section.4.1}% 21
-\BOOKMARK [0][-]{chapter.5}{Modulaci\363n del clima para todos los disparos \(2014-2020\)}{}% 22
-\BOOKMARK [1][-]{section.5.1}{Pesos de los hex\341gonos}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.2}{Anisotrop\355a}{chapter.5}% 24
-\BOOKMARK [2][-]{subsection.5.2.1}{Lista detallada de los filtros aplicados de datos del herald}{section.5.2}% 25
-\BOOKMARK [2][-]{subsection.5.2.2}{An\341lisis en frecuencia}{section.5.2}% 26
-\BOOKMARK [1][-]{section.5.3}{Correcci\363n del clima}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.4}{Pesos de los hex\341gonos}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.5}{Anisotrop\355a}{chapter.5}% 29
-\BOOKMARK [2][-]{subsection.5.5.1}{Lista detallada de los filtros aplicados de datos del herald}{section.5.5}% 30
-\BOOKMARK [2][-]{subsection.5.5.2}{An\341lisis en frecuencia}{section.5.5}% 31
-\BOOKMARK [1][-]{section.5.6}{Correcci\363n del clima}{chapter.5}% 32
-\BOOKMARK [0][-]{chapter.6}{Dipolo en el rango 1 EeV - 2 EeV}{}% 33
-\BOOKMARK [1][-]{section.6.1}{Caracter\355sticas del conjunto de datos}{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.2}{Pesos de los eventos para frecuencias de referencia}{chapter.6}% 35
-\BOOKMARK [2][-]{subsection.6.2.1}{Gr\341ficos de los ajustes}{section.6.2}% 36
-\BOOKMARK [2][-]{subsection.6.2.2}{Tabla comparando los ajustes:}{section.6.2}% 37
-\BOOKMARK [1][-]{section.6.3}{Gr\341fico de la anisotrop\355a}{chapter.6}% 38
-\BOOKMARK [0][-]{section*.62}{Bibliograf\355a}{}% 39
+\BOOKMARK [0][-]{chapter.3}{Dipolo en el rango 1 EeV - 2 EeV}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Caracter\355sticas del conjunto de datos}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Pesos de los eventos para frecuencias de referencia}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{Gr\341ficos de los ajustes}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{Tabla comparando los ajustes:}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Gr\341fico de la anisotrop\355a}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Ajuste del primer arm\363nico de la variaci\363n de hex\341gonos y pesos}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Modulaci\363n del clima para todos los disparos \(2014-2020\)}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Pesos de los hex\341gonos}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Anisotrop\355a}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{Lista detallada de los filtros aplicados de datos del herald}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.2}{An\341lisis en frecuencia}{section.4.2}% 24
+\BOOKMARK [1][-]{section.4.3}{Correcci\363n del clima}{chapter.4}% 25
+\BOOKMARK [0][-]{section*.38}{Bibliograf\355a}{}% 26

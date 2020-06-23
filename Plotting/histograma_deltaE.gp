@@ -1,4 +1,4 @@
-set terminal qt 0 enhanced font 'Verdana,26' size 1000,800 
+set terminal qt 0 enhanced font 'times,26' size 1200,800 
 set key left
 
 #set title "Histograma {/Symbol D}E"
@@ -19,6 +19,6 @@ set format y "10^{%L}"
 #set yrange [-0.0001: 0.021]
 #count and plot
 N = 6902210 
-plot "../../AllTriggers/ArchiveAllTriggers_merged_energy.dat" u (0.5*hist(($6),width)):(1.0/(N)) smooth freq w boxes lc rgb "blue" notitle
+plot "../../Trash/ArchiveAllTriggers_merged_energy.dat" u (0.5*hist(($6),width)):(1.0/(N)) smooth freq w boxes lc rgb "blue" notitle
 
 pause(-1)

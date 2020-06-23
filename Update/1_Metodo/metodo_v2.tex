@@ -2,7 +2,7 @@
 
 \section{Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}
 
-Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de CRs, por lo que eliminar todo factor espúreo en el análisis es importante.  Podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación de la exposición del observatorio durante el rango de tiempo estudiado. La misma puede deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. Además esta variación puede modular el número de  eventos en función del tiempo y aparecer como una anisotropía. Este efecto está dado por un error sistemático en la adquisición de datos y no por fluctuaciones sobre el flujo de CRs.
+Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de CRs, por lo que eliminar todo factor espúreo en el análisis es importante.  Podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación de la exposición direccional del observatorio durante el rango de tiempo estudiado. La misma puede deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. Además esta variación puede modular el número de  eventos en función del tiempo y aparecer como una anisotropía. Este efecto está dado por un error sistemático en la adquisición de datos y no por fluctuaciones sobre el flujo de CRs.
 
   \subsection{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
 
@@ -34,7 +34,7 @@ Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de C
 
         \item Una vez clasificado todos los datos del registro de hexágonos, se calcula la suma  $N_{hex, j}$ de los datos que cayeron un segmento $j$ dado. Para definir la variación relativa de hexágonos  $\Delta N_{cell,k}$ de un segmento $k$ en particular, se necesita la media de hexágonos por segmento $ \langle N \rangle$  para normalizar las variaciones.
        \begin{align}
-         \langle N \rangle &= \sum^{L}_{i=1} \frac{N_{hex, i}}{L}  \qquad
+         \langle N \rangle &= \sum^{L}_{i=1} \frac{N_{cell, i}}{L}  \qquad
          \Delta N_{cell,k} = \frac{N_{cell, k}}{\langle N \rangle}  \label{epepe}
        \end{align}
 
@@ -63,11 +63,25 @@ Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de C
     Para una representación fiel entre los registros de los hexágonos y los pesos de los eventos, se optó por clasificar los datos de los hexágonos en $288$ segmentos, donde cada segmento tiene un ancho de $1.25^o$. Esto es conveniente ya que la actualización del registro de hexágonos se realiza una vez  cada $5\,$min como se menciona en la sección \ref{hexagonos_rate}. Esta tasa de actualización es equivalente a decir que la adquisición se realiza cada vez que el cenit del observatorio barre  $1.25^o$ en ascensión recta sobre la esfera celeste.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%hasta acá está chequeado
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hasta acá está chequeado
 
   \subsection{Cálculo de Rayleigh para una frecuencia dada} \label{rayleigh}
 
-  La distribución en ascensión recta del flujo de RCs que llega al arreglo principal puede caracterizarse por las amplitudes $r_n$ y fases $\phi_n$ de su expansión en serie de Fourier al $n-$simo orden. Por lo discutido en la sección anterior, puede existir una modulación debido a las variaciones de la exposición.  Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, donde no consideramos la corrección de la exposición. En caso contrario, se habla de análisis \textit{con pesos} de los hexágonos  y estos pesos se calculan como en la sección anterior.
+  La distribución en ascensión recta $\alpha$ del flujo de RCs $I(\alpha)$ que llega al arreglo principal puede caracterizarse por las amplitudes $r_k$ y fases $\phi_k$ de su expansión en serie de Fourier al $k-$ésimo orden. 
+
+  \begin{equation}
+    I(\alpha) = I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) = I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) 
+  \end{equation}
+  donde $a_k=r_k\cos\phi_k$ y $b_k=r_k\sin\phi_k$, y $I_0$ es el flujo medio. La distribución $I(\alpha)$ puede obtenerse a partir de la distribución de direcciones de arribo de los eventos observados. En este trabajo, se considera que todos los eventos $N$tienen una distribución uniforme en ascensión recta, es decir, $\nicefrac{dN}{d\alpha}= \sum^N_{i=1} \delta(\alpha - \alpha_i)$ \cite{taborda}. 
+
+  Los análisis en ascensión recta están asociados a la frecuencia sidérea.  Para realizar el análisis de los eventos en cualquier frecuencia arbitraria, es necesario modificar $\alpha$ por $\tilde{\alpha}$. Esta nueva variable tiene la forma como se utiliza en el trabajo \cite{taborda}:
+  \begin{equation}
+    \tilde{\alpha} = 2\pi f_x t_i + \alpha_i - \alpha_i^0(t_i) \label{ra_mod}
+  \end{equation}
+  donde $f_x$ es el frecuencia arbitraria a estudiar, $t_i$ es el momento en que ocurrió el evento y $\alpha_i^0(t_i)$ es la ascensión recta del cenit del observatorio en el momento del evento. Si la frecuencia a analizar es la sidérea, el análisis con $\alpha$ y $\tilde{\alpha}$ arrojar los mismo parámetros $r_k$ y $\phi_k$.
+
+  Por lo discutido en la sección anterior, puede existir una modulación debido a las variaciones de la exposición direccional.  Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, donde no consideramos la corrección de la exposición. En caso contrario, se habla de análisis \textit{con pesos} de los hexágonos  y estos pesos se calculan como se menciona en la sección anterior.
 
   Para realizar el análisis de frecuencias de los eventos, a primer orden en la expansión de Fourier, se siguen los siguientes pasos.
 
@@ -80,13 +94,14 @@ Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de C
         \begin{equation*}
            w_{i}= (\Delta N_{cell,k})^{-1}
         \end{equation*} 
+        
         Caso contrario, se toman que todos los eventos tiene $w_i=1$.
         
-        \item Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna un ángulo $\tilde{\alpha}_i$ como:
+        \item Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna el ángulo $\tilde{\alpha}_i$ definida en la Ec.\ref{ra_mod}. La implementación en el código es de la siguiente manera:
         \begin{equation}
          \tilde{\alpha}_i = 2\pi \frac{h}{24} + \alpha_i -\alpha_{cenit,i}
         \end{equation}
-        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha_{cenit,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. A partir de este ángulo $\tilde{\alpha}_i$ se realiza en análisis en frecuencias.
+        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha_{cenit,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. %A partir de este ángulo $\tilde{\alpha}_i$ se realiza en análisis en frecuencias.
 
         \item Para calcular los coeficientes de Fourier del primer armónico $a$ y $b$, se siguen los siguiente pasos:
         \begin{enumerate}

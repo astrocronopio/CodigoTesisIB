@@ -10,11 +10,23 @@ En el mismo trabajo, se estudió la modulación del clima mediante el valor del 
 
 \section{Acerca de todos los disparos del SD}
 
-El análisis anterior fue realizado sobre los eventos medidos utilizando el disparo estándar del arreglo principal, cuya eficiencia varía con la energía del CR. Para el disparo estándar, los eventos con energía mayor a $3\,$EeV y $\theta_{max}<60^o$ o  por encima de $4\,$EeV y $\theta_{max}<80^o$, son detectados con una eficiencia del 100\%. Por lo tanto, el análisis de anisotropías en el rango de energía entre $1\,$EeV - $2\,$EeV, se requieren factores relacionados a la eficiencia del disparo en función de la energía. Estos factores son obtenidos de manera fenomenológica \cite{taborda}. 
 
-Para superar esta dificultad,  a partir del año 2013  se implementó otros algoritmos de disparo en los SD, llamados ToTd y MoPS \cite{pierre2013plans}. Estos algoritmos de disparo se mencionan en este trabajo como \textit{todos los disparos}. Con esta mejora, la eficiencia completa se alcanza a partir de una energía mayor a $1\,$EeV. De tal manera que, al estudiar los eventos en el rango $1\,$EeV - $2\,$EeV,  no son necesarios los factores de eficiencia y sólo pueden afectar los cambios de la exposición del observatorio.
+A medida que los tanques pasan más tiempo midiendo, también van perdiendo sensibilidad a los eventos de bajas energías. Esto es una desventaja del disparo estándar en los SDs en el rango $1\,$EeV - $2\,$EeV. En la Fig.\ref{fig:futuro}, para los datos presentados en el ICRC 2019, se observa como la media de los eventos para distintos rangos de tiempo va aumentando con el tiempo. Además que la proporción de eventos por debajo de $3\,$ EeV disminuye. 
 
-Una desventaja de todos los disparos sobre el disparo estándar, es que el último tiene una mayor cantidad de eventos en el rango $1\,$EeV - $2\,$EeV, ya que se adquieren datos  desde el año 2004 con ese algoritmo. Por lo que el análisis de anisotropía con todos los disparos solo es posible desde el año 2013.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.75\textwidth]{histograma_evolucion_eventos.png}
+	\caption{Histograma de eventos por rango de tiempo medido por el Observatorio Pierre Auger}
+	\label{fig:futuro}
+\end{figure}
+
+
+El análisis del trabajo anterior fue realizado sobre los eventos medidos utilizando el disparo estándar del arreglo principal, cuya eficiencia varía con la energía del CR. Para el disparo estándar, los eventos con energía mayor a $3\,$EeV y $\theta_{max}<60^o$ o  por encima de $4\,$EeV y $\theta_{max}<80^o$, son detectados con una eficiencia del 100\%. Por lo tanto, el análisis de anisotropías en el rango de energía entre $1\,$EeV - $2\,$EeV, se requieren factores relacionados a la eficiencia del disparo en función de la energía. Estos factores son obtenidos de manera fenomenológica \cite{taborda}. 
+
+Para superar esta dificultad y para poder recuperar la sensibilidad para bajas energías, a partir del año 2013  se implementó otros algoritmos de disparo en los SDs, llamados ToTd y MoPS \cite{pierre2013plans}. Estos algoritmos de disparo se mencionan en este trabajo como \textit{todos los disparos}. Con esta mejora, la eficiencia completa se alcanza a partir de una energía mayor a $1\,$EeV. De tal manera que, al estudiar los eventos en el rango $1\,$EeV - $2\,$EeV,  no son necesarios los factores de eficiencia y sólo pueden afectar los cambios de la exposición del observatorio.
+
+Una desventaja de todos los disparos sobre el disparo estándar, es que el último tiene una mayor cantidad de eventos en el rango $1\,$EeV - $2\,$EeV, ya que se adquieren datos  desde el año 2004 con ese algoritmo. Por lo que el análisis de anisotropía con todos los disparos solo es posible desde el año 2013. 
+
 
 
 
@@ -30,7 +42,6 @@ A partir de los registros de eventos del arreglo principal con todos los disparo
       \item Buena reconstrucción de la lluvia atmosférica asociada al evento.
       \item La cantidad de vecinos alrededor del tanque con mayor señal sea de 6 tanques, es decir, que el tanque de mayor señal este en el interior de un hexágono de tanques activos. Estos eventos se conocen como \textit{eventos 6T5}.
     \end{enumerate}
-
 
 
 \section{Acerca del registro de hexágonos}\label{hexagonos_rate}
