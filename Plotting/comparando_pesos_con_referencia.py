@@ -45,11 +45,11 @@ plt.scatter(angle, pesos_sid, s=20, marker='*' , color="black")
 
 plt.legend(loc=0)
 
-#sns.set_style("ticks",{'font.size': 24,  'font.family': 'sans-serif'})
-sns.set_style("whitegrid")
+sns.set_style("ticks",{'font.size': 24,  'font.family': 'sans-serif'})
+#sns.set_style("whitegrid")
 
 
 
-plt.savefig("../Update/report_0_Introduccion/weigths_2020.png")
+plt.savefig("../Update/6_Dipole_1-2_EeV/weights_2013_2020.png")
 plt.show()
 

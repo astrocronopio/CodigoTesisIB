@@ -16,7 +16,7 @@ float pi 	= M_PI;
 float d2r 	= pi/180.0;
 float Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
-const int interval= 12; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
+const int interval= 10; //every 5 min in sidereal time or every 1.25 sexagesimal degrees
 
 double right_ascension(long long utc){	
 	long long iutcref = 1104537600;
@@ -29,6 +29,17 @@ double right_ascension(long long utc){
 	return raz;
 }
 
+
+int method_weight_solar(int utc, float fas, int interval){
+	unsigned iutc0 = 1072915200;
+
+	float x1=((long double)(utc-iutc0)/3600. +  2.099806667)*fas; // hora local
+	int	aux=  int(fmod(x1*interval/24.0, interval));
+				
+	return aux;
+}
+
+
 float bin_RA_counter( const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf)
 { 	
 	double bandwidth= 360.0/interval;
@@ -37,10 +48,10 @@ float bin_RA_counter( const char* in_file, const char* out_file, unsigned long u
 	unsigned long iutc, iutc0 = 1072915200;
 	float t,p,r,rav,hex6, hex5;
 	int iw,ib, ihr, aux, ang, utc, t5;
-	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
+	float Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr, raz;
 	std::string line;
 
-	int x1,x2,x3;
+	int x1,x2,x3, hrs;
 	long double integral=0.0;
 
 	std::ifstream myfile_in (in_file);
@@ -56,9 +67,18 @@ float bin_RA_counter( const char* in_file, const char* out_file, unsigned long u
 			liness >> iutc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 			
 			if (iutc < utci || iutc > utcf) continue;
 			
-			ang =  int( fmod((Ra)*interval/360., interval));
+			//ang =  int( fmod((Ra)*interval/360., interval));
+			//ang =  method_weight_solar(iutc, 1, interval);
+
 			
-			ang = ang< 0? ang +360. : ang;
+			//hrs =((double)(iutc-1104537600)/3600.+31.4971*24./360.);
+
+			//raz = right_ascension(utc);
+			//ang = 360*(hrs/24.0) + (Ra-raz);
+
+			ang = int(fmod(Ra*interval/360., interval));//ang< 0? ang + 360. : ang;
+			
+			std::cout << ang<< std::endl;
 			rnhexhr[ang] += 1;
 			}
 		}

@@ -2,38 +2,37 @@
 
 \section{Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}
 
+Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de CRs, por lo que eliminar todo factor espúreo en el análisis es importante.  Podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación de la exposición del observatorio durante el rango de tiempo estudiado. La misma puede deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. Además esta variación puede modular el número de  eventos en función del tiempo y aparecer como una anisotropía. Este efecto está dado por un error sistemático en la adquisición de datos y no por fluctuaciones sobre el flujo de CRs.
+
   \subsection{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
 
-    Las anisotropías son variaciones pequeñas sobre el flujo casi isotrópico de CRs, eliminar todo factor espúreo en el análisis es importante. Los pesos de los eventos tiene en cuenta la variación en el número de tanques activos del observatorio durante un rango de tiempo entre $t_{i}$ y $t_f$. La variación puede deberse al crecimiento del arreglo durante los años,  por caídas en la comunicación por tormentas u otros motivos. La misma puede modular el número de  eventos en función del tiempo y aparacer como un anisotropía que es propia  de la distribución de CRs y más bien un efecto sistemático de la adquisición de datos.
 
-    Para una representación fiel entre los registros de los hexágonos y los pesos de los eventos, se optó por clasificar los datos en $288$ segmentos sobre $360^o$. Cada segmento tiene un ancho de $1.25^o$. Esto es conveniente ya que la actualización tanto del clima como de los hexágonos se realiza una vez  cada $5\,$min. Esta tasa de actualización es equivalente a decir que la adquisión de datos se realiza cada vez que el cenit del observatorio barre  $1.25^o$ sobre la esféra celeste.
-
-    Para calcular estos pesos, se sigue el algoritmo a continuación:
+    Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuación:
      
       \begin{enumerate}
-        \item Se establece una frecuencia a estudiar $f$ y el rango de tiempo de análisis, por ejemplo la frecuencia solar $f_{Solar}= 365.25\,$ ciclos en un año entre los años 2013 y 2019. 
+        \item Se establecen una frecuencia $f$  y un rango de tiempo a estudiar, por ejemplo la frecuencia solar $f_{Solar}= 365.25\,$ ciclos entre los años 2013 y 2019. 
 
-        Existe un registro del Observatorio de los hexágonos 6T5 que se actualiza cada 5 min. Cada dato tomado en un momento $t$ durante el rango seleccionado, se clasifica se clasifica el mismo según la cantidad de horas desde un momento de referencia $t_0$. Esta referencia $t_0$ es el 1 de Enero del 2005 a las 00:00:00 GMT, o  $21\,$hrs del 31 de Diciembre del 2004, según la hora local de Malargüe.
+        \item Cada dato del registro de hexágonos, tomado en un momento $t$ durante el rango seleccionado, se clasifica según la cantidad de horas desde un momento de referencia $t_0$. Esta referencia $t_0$ es el 1 de Enero del 2005 a las 00:00:00 GMT, o  $21\,$hs del 31 de Diciembre del 2004, según la hora local de Malargüe.
 
         \item Podemos asociar una coordenada angular $h$ a $t$  y $f$  utilizando la siguiente expresión:
          \begin{equation}
           h = (t-t_0) \times \frac{360^o}{24\text{hs}} \times\frac{f}{f_{Solar}} + h_0
           \label{eq:h_horas} 
         \end{equation}
-        El factor $\nicefrac{f}{f_{Solar}}$ sirve para hacer un escaleo de las horas entre diferentes frecuencias. Se usa como referencia la $f_{Solar}$ dado que las horas (solares) se basan en esta frecuencia, y el valor de $h_0=31.4971^o$ representa la ascensión recta del cenit en el momento utilizado como referencia.
+        El factor $\nicefrac{f}{f_{Solar}}$ sirve para hacer un escaleo entre los periodos de distintas frecuencias. Se usa como referencia la $f_{Solar}$ dado que las horas (solares) se basan en esta frecuencia, y el valor de $h_0=31.4971^o$ representa la ascensión recta del cenit en el momento utilizado como referencia.
         
-        \item  Para simplificar el cálculo del peso de los hexágonos, se divide los $360^o$ de la ascensión recta en $L$ segmentos de $\nicefrac{360}{L} ^o$ cada uno. En este trabajo se utilizó $L=288$ por razones discutidas anteriormente. Para clasificar un dato se  toma  el valor $h$  y se calcula
+        \item  Para simplificar el cálculo del peso de los hexágonos, se divide los $360^o$ de la ascensión recta en $L$ segmentos de $\nicefrac{360}{L} ^o$ cada uno. Para clasificar un dato se  toma  el valor $h$  y se calcula
         \begin{equation}
-          h' = h\, fmod \,360 
+          h' = h\, mod \,360 %=  h - 360\Big \lfloor \frac{h}{360} \Big \rfloor
           \label{eq:h_primado}
         \end{equation}
-        donde la función $fmod$ representa la función módulo que devuelve un número real. Luego con el valor de $h'$ se asigna al dato con el segmento $k$ correspondiente mediante la siguiente expresión
+        donde la función $mod$ representa la función módulo que devuelve un número real positivo. Con el valor de $h'$ del dato, se asigna el mismo al segmento $k$ que le corresponde, mediante la siguiente expresión
         \begin{equation}
           k = \bigg \lceil \frac{h'}{360}\times L \bigg \rceil
         \end{equation}
-        done $\lceil a \rceil$ representa la función techo \footnote{La función techo da como resultado el número entero más próximo por exceso}. Por ejemplo, si optamos por $L=24$ y un registro en particular resulta con  $h=395\,^o$, esto implica que $h'= 35^o$ y que $k=\lceil 2.3 \rceil=3$, por lo tanto, este registro corresponde al segmento en la $3^{a}$ posición.
+        donde $\lceil a \rceil$ representa la función techo \footnote{La función techo da como resultado el número entero más próximo por exceso}. Por ejemplo, si optamos por $L=24$ y un dato en particular resulta con  $h=395\,^o$, esto implica que $h'= 35^o$ y que $k=\lceil 2.\hat{3} \rceil=3$, por lo tanto, este registro corresponde al segmento en la $3^{a}$ posición.
 
-        \item Una vez clasificado todos los datos del registro de hexágonos, se calcula la suma  $N_{hex, j}$ de los registros de hexágonos que cayeron un segmento $j$ dado. Para definir la variación relativa de hexágonos  $\Delta N_{cell,k}$ de un segmento $k$ en particular, se necesita la media de hexágonos por segmento $ \langle N \rangle$  para normalizar las variaciones.
+        \item Una vez clasificado todos los datos del registro de hexágonos, se calcula la suma  $N_{hex, j}$ de los datos que cayeron un segmento $j$ dado. Para definir la variación relativa de hexágonos  $\Delta N_{cell,k}$ de un segmento $k$ en particular, se necesita la media de hexágonos por segmento $ \langle N \rangle$  para normalizar las variaciones.
        \begin{align}
          \langle N \rangle &= \sum^{L}_{i=1} \frac{N_{hex, i}}{L}  \qquad
          \Delta N_{cell,k} = \frac{N_{cell, k}}{\langle N \rangle}  \label{epepe}
@@ -41,7 +40,7 @@
 
       \end{enumerate}
 
-      En la Fig.\ref{fig:pesos_referencia} se muestran las variaciones relativas de los hexágonos en función de la ascensión recta del cenit del observatorio para las frecuencias sidérea, solar y antisidérea. Este análisis fue realizado en el marco del trabajo \cite{referencia_pesos} en el periodo 2004-2017. 
+      En la Fig.\ref{fig:pesos_referencia} se muestran las variaciones relativas de los hexágonos en función de la ascensión recta del cenit del observatorio para las frecuencias sidérea, solar y anti-sidérea. Este análisis fue realizado en el marco del trabajo \cite{referencia_pesos} con eventos del periodo 2004-2017. 
 
           \begin{figure}[H]
           \centering
@@ -50,8 +49,8 @@
               \label{fig:pesos_referencia}
         \end{figure}
 
-       En la Fig.\ref{fig:pesos_ejemplo} se observa valores obtenidos de $\Delta N_{cell,k}$ en función de la ascensión recta del cenit  para $L=288$ segmentos con el programa escrito para este informe, utilizando el mismo conjunto de datos que el utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia} desde el 1 de Enero del 2004 a las $00:00:00\,$hrs GMT  hasta el 1 de Enero del 2017 a las $00:00:00\,$hrs GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
- 
+       En la Fig.\ref{fig:pesos_ejemplo} se observa valores obtenidos de $\Delta N_{cell,k}$  con el código escrito para este trabajo, en función de la ascensión recta del cenit  para $L=288$ segmentos. Se analizó el conjunto de datos  utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia}, con el fin de validar dicho código. Los datos se analizaron desde el 1 de Enero del 2004 a las 00:00:00\,GMT  hasta el 1 de Enero del 2017 a las 00:00:00\,GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
+      
 
        \begin{figure}[H]
           \centering
@@ -60,26 +59,29 @@
               \label{fig:pesos_ejemplo}
         \end{figure}
 
+%En este trabajo se utilizó $L=288$ por razones discutidas anteriormente. 
+    Para una representación fiel entre los registros de los hexágonos y los pesos de los eventos, se optó por clasificar los datos de los hexágonos en $288$ segmentos, donde cada segmento tiene un ancho de $1.25^o$. Esto es conveniente ya que la actualización del registro de hexágonos se realiza una vez  cada $5\,$min como se menciona en la sección \ref{hexagonos_rate}. Esta tasa de actualización es equivalente a decir que la adquisición se realiza cada vez que el cenit del observatorio barre  $1.25^o$ en ascensión recta sobre la esfera celeste.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%hasta acá está chequeado
 
   \subsection{Cálculo de Rayleigh para una frecuencia dada} \label{rayleigh}
 
+  La distribución en ascensión recta del flujo de RCs que llega al arreglo principal puede caracterizarse por las amplitudes $r_n$ y fases $\phi_n$ de su expansión en serie de Fourier al $n-$simo orden. Por lo discutido en la sección anterior, puede existir una modulación debido a las variaciones de la exposición.  Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, donde no consideramos la corrección de la exposición. En caso contrario, se habla de análisis \textit{con pesos} de los hexágonos  y estos pesos se calculan como en la sección anterior.
 
-Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, caso contrario, se habla de análisis \textit{con pesos} de los hexágonos.
-
-Para realizar el análisis con pesos de los hexágonos, se siguen los siguientes pasos.
+  Para realizar el análisis de frecuencias de los eventos, a primer orden en la expansión de Fourier, se siguen los siguientes pasos.
 
         \begin{enumerate}
         \item Fijando un rango de tiempo y un rango de energía en el cual se desea estudiar la anisotropía, se establece una frecuencia en particular $f$ a analizar.
 
         \item Con los eventos ya filtrados según el criterio de la sección \ref{filtro}, asigno cada evento $i$ un valor $h_i$, definida en la Ec.\ref{eq:h_horas}
 
-        \item Para asignar el peso correspondiente al evento, se asocia a un segmento $k$, calculado en la sección \ref{peso_hexagonos}, mediante el valor de $h'_i$ definido en la Ec.\,\ref{eq:h_primado}. Luego, el peso asignado $w_i$  al evento $i$ es
+        \item En caso de considerar los pesos de los hexágonos, para asignar el peso correspondiente al evento, se asocia a un segmento $k$, calculado en la sección \ref{peso_hexagonos}, mediante el valor de $h'_i$ definido en la Ec.\,\ref{eq:h_primado}. Luego, el peso asignado $w_i$  al evento $i$ es
         \begin{equation*}
            w_{i}= (\Delta N_{cell,k})^{-1}
         \end{equation*} 
-         
+        Caso contrario, se toman que todos los eventos tiene $w_i=1$.
+        
         \item Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna un ángulo $\tilde{\alpha}_i$ como:
         \begin{equation}
          \tilde{\alpha}_i = 2\pi \frac{h}{24} + \alpha_i -\alpha_{cenit,i}
@@ -102,10 +104,8 @@ Para realizar el análisis con pesos de los hexágonos, se siguen los siguientes
         \end{enumerate}
         \item Con los coeficientes es posible calcular la amplitud de la frecuencia estudiada $\tilde{r}$ y la fase $\phi$. Otros parámetros calculados para el análisis son la probabilidad $P(\tilde{r})$  y $r_{99}$. Cabe resaltar que el P99 depende solamente de los pesos de los eventos que se está estudiando. La interpretación  de este valor es cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica., y el valor de amplitud $r_{99}$ para que dicha probabilidad sea del $1$\%. 
         \begin{alignat}{3}
-            \tilde{r} &= \sqrt{a^2 +b^2}             
-               \qquad &&   \phi&&= \arctan\frac{a}{b}\\
-          P(\tilde{r})&= \exp(-\mathcal{N}\frac{\tilde{r}^2}{4}) 
-             \qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
+            \tilde{r} &= \sqrt{a^2 +b^2}                        \qquad &&   \phi&&= \arctan\frac{a}{b}\\
+          P(\tilde{r})&= \exp(-\mathcal{N}\frac{\tilde{r}^2}{4})\qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
         \end{alignat}
 
       \end{enumerate}

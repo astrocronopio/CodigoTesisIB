@@ -39,10 +39,10 @@ def plot_anisotropy_con_vs_sin(filename_con, filename_sin, title_name, png_name,
 	pass
 
 def main():
-	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV_peso.dat",
-								"../Cpp/Anisotropy/x2019_AllTriggers_1_2_EeV.dat",
+	plot_anisotropy_con_vs_sin(	"../Cpp/Anisotropy/xx2019_AllTriggers_1_2_EeV_peso.dat",
+								"../Cpp/Anisotropy/xx2019_AllTriggers_1_2_EeV.dat",
 								"(2019) Todos los disparos: entre 1 EeV y 2 EeV", 
-								"../Update/report_6_02_06_2020/pesos_sin_con_1_2_EeV.png", 11)
+								"../Update/6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png", 11)
 	plt.show()
 
 

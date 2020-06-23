@@ -1,28 +1,59 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {ii}}{section*.1}
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}{section*.3}
+\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {ii}}{section*.1}
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {v}}{section*.3}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vii}}{section*.5}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Acerca de la tesis de licenciatura}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Acerca del archivo con todos los disparos}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Acerca de todos los disparos del SD}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Acerca de los eventos}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Acerca del registro de hex\IeC {\'a}gonos}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}M\IeC {\'e}todos}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}C\IeC {\'a}lculo de los coeficientes de Fourier para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a en ascensi\IeC {\'o}n recta}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Variaciones relativas de los hex\IeC {\'a}gonos}{3}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}C\IeC {\'a}lculo de Rayleigh para una frecuencia dada}{5}{subsection.2.1.2}
-\contentsline {chapter}{\numberline {3}Modulaci\IeC {\'o}n del clima para todos los disparos (2014-2020)}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Pesos de los hex\IeC {\'a}gonos}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Anisotrop\IeC {\'\i }a}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Lista detallada de los filtros aplicados de datos del herald}{8}{subsection.3.2.1}
-\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{8}{section*.10}
-\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{8}{section*.11}
-\contentsline {subsection}{\numberline {3.2.2}An\IeC {\'a}lisis en frecuencia}{9}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Correcci\IeC {\'o}n del clima}{10}{section.3.3}
-\contentsline {chapter}{\numberline {4}Dipolo en el rango 1 EeV - 2 EeV}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Caracter\IeC {\'\i }sticas del conjunto de datos}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pesos de los eventos para frecuencias de referencia}{11}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Gr\IeC {\'a}ficos de los ajustes}{12}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Tabla comparando los ajustes:}{12}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Gr\IeC {\'a}fico de la anisotrop\IeC {\'\i }a}{13}{section.4.3}
-\contentsline {subsubsection}{An\IeC {\'a}lisis de anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta}{13}{section*.20}
-\contentsline {subsubsection}{Bineado de eventos }{13}{section*.23}
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{15}{section*.25}
+\contentsline {chapter}{\numberline {3}Fuera del canon}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Caracter\IeC {\'\i }sticas de los datos}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta en los archivos del ICRC 2017 y ICRC 2019}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Eventos por encima de 8 EeV }{8}{subsection.3.2.1}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de los datos analizados}{8}{section*.10}
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{8}{section*.11}
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{9}{section*.13}
+\contentsline {section}{\numberline {3.3}Anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta en los archivos con todos los disparos}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Caracter\IeC {\'\i }sticas de los archivos de datos analizados}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Eventos por encima de 1 EeV }{11}{subsection.3.3.2}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de los datos analizados}{11}{section*.18}
+\contentsline {subsubsection}{Resultados del archivo de 2017}{12}{section*.20}
+\contentsline {subsection}{\numberline {3.3.3}Eventos entre 1 EeV y 2 EeV }{12}{subsection.3.3.3}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de los datos analizados}{12}{section*.22}
+\contentsline {subsubsection}{Resultados del archivo de 2017}{13}{section*.25}
+\contentsline {subsubsection}{Resultados del archivo del 2019}{13}{section*.27}
+\contentsline {subsection}{\numberline {3.3.4}Eventos por encima de 8 EeV }{13}{subsection.3.3.4}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de los datos analizados}{13}{section*.29}
+\contentsline {subsubsection}{Resultados del archivo de 2017}{14}{section*.32}
+\contentsline {subsubsection}{Resultados del archivo del 2019}{14}{section*.34}
+\contentsline {subsubsection}{Comparado en el an\IeC {\'a}lisis del ICRC en el mismo rango de tiempo}{14}{section*.36}
+\contentsline {chapter}{\numberline {4}Modulaci\IeC {\'o}n del clima para todos los disparos (2014-2020)}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pesos de los hex\IeC {\'a}gonos}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Anisotrop\IeC {\'\i }a}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Lista detallada de los filtros aplicados de datos del herald}{17}{subsection.4.2.1}
+\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{17}{section*.40}
+\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{17}{section*.41}
+\contentsline {subsection}{\numberline {4.2.2}An\IeC {\'a}lisis en frecuencia}{18}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Correcci\IeC {\'o}n del clima}{19}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pesos de los hex\IeC {\'a}gonos}{20}{section.4.4}
+\contentsline {section}{\numberline {4.5}Anisotrop\IeC {\'\i }a}{20}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Lista detallada de los filtros aplicados de datos del herald}{21}{subsection.4.5.1}
+\contentsline {subsubsection}{Datos para el an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a}{21}{section*.50}
+\contentsline {subsubsection}{Datos para el c\IeC {\'a}lculo de las correcciones del clima}{21}{section*.51}
+\contentsline {subsection}{\numberline {4.5.2}An\IeC {\'a}lisis en frecuencia}{22}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Correcci\IeC {\'o}n del clima}{22}{section.4.6}
+\contentsline {subsubsection}{Modulaci\IeC {\'o}n del clima para todos los triggers}{23}{section*.58}
+\contentsline {chapter}{\numberline {5}Dipolo en el rango 1 EeV - 2 EeV}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Caracter\IeC {\'\i }sticas del conjunto de datos}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Pesos de los eventos para frecuencias de referencia}{29}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Gr\IeC {\'a}ficos de los ajustes}{30}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Tabla comparando los ajustes:}{30}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Gr\IeC {\'a}fico de la anisotrop\IeC {\'\i }a}{31}{section.5.3}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta}{31}{section*.67}
+\contentsline {subsubsection}{Bineado de eventos }{31}{section*.70}
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{33}{section*.72}
