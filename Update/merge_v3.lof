@@ -2,23 +2,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Histograma de eventos por rango de tiempo medido por el Observatorio Pierre Auger\relax }}{2}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{4}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{5}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparaci\IeC {\'o}n entre los an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a hechos para el mismo conjunto de datos, con el c\IeC {\'o}digo de \cite {taborda} y con el c\IeC {\'o}digo escrito para este trabajo.\relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{6}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparaci\IeC {\'o}n entre los an\IeC {\'a}lisis de anisotrop\IeC {\'\i }a hechos para el mismo conjunto de datos, con el c\IeC {\'o}digo de \cite {taborda} y con el c\IeC {\'o}digo escrito para este trabajo.\relax }}{8}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diferencia entre las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{9}{figure.caption.11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Calibraci\IeC {\'o}n de las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{9}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Variaciones de los hex\IeC {\'a}gonos para frecuencias caracter\IeC {\'\i }sticas en rango mencionado. \relax }}{10}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Ajuste de los pesos de los eventos para varias frecuencias a primer orden en ascensi\IeC {\'o}n recta\relax }}{11}{figure.caption.14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia, se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta.\relax }}{12}{figure.caption.20}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pesos de los hex\IeC {\'a}gonos\relax }}{14}{figure.caption.24}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{15}{figure.caption.25}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los par\IeC {\'a}metros del clima.\relax }}{16}{figure.caption.28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An\IeC {\'a}lisis en frecuencia en ascensi\IeC {\'o}n recta en rango 1 EeV - 2 EeV\relax }}{16}{figure.caption.29}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Par\IeC {\'a}metros de clima calculados para la correcci\IeC {\'o}n del archivo de todos los disparos\relax }}{17}{figure.caption.31}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tasa de eventos diaria por encima de 1 EeV para los datos de todos los disparos.\relax }}{18}{figure.caption.33}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos de 2017. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{19}{figure.caption.34}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{20}{figure.caption.36}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Par\IeC {\'a}metros de la modulaci\IeC {\'o}n del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{21}{figure.caption.37}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diferencia entre las energ\IeC {\'\i }as de entre la reconstrucci\IeC {\'o}n del 2017 y del 2019\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Calibraci\IeC {\'o}n de las energ\IeC {\'\i }as del archivo de 2017 y el archivo del 2019\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Variaciones de los hex\IeC {\'a}gonos para frecuencias caracter\IeC {\'\i }sticas en rango mencionado. \relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ajuste de los pesos de los eventos para varias frecuencias a primer orden en ascensi\IeC {\'o}n recta\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia, se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos\relax }}{13}{figure.caption.19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta.\relax }}{14}{figure.caption.22}

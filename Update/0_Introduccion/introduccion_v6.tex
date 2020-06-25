@@ -1,33 +1,35 @@
 % INTRODUCCION
 
-\section{Acerca de la tesis de licenciatura}
+La parte superior de la atmósfera terrestres esta siendo constantemente bombardeada con partículas de energía del orden de los $10^10\,$eV para arriba. Estas partículas son conocidas como rayos cósmicos (RC) y han sido medidas desde mediados del año 1961 \cite{linsley1961extremely}, pero los mecanismos que las producen y sus zonas donde se originan siguen siendo investigadas (citar experimentos). %La información sobre su origen puede ser obtenidas mediante el estudio de sus direcciones de arribo, también mediante el espectro de energía y sus composición de masa (cite y cite), aunque se espera que la evidencia más directa de la localización de su origen sea mediante  el estudio de la distribución de  las direcciones de arribo. La búsqueda de anisotropías a grandes escalas angulares suelen ser hechas sobre las irregularidades de la distribución de eventos en ascensión recta $\alpha$ ya que el arreglo principal tiene una exposición en función de este coordenada es casi constante \cite{referencia_anis}.
 
-Durante la tesis de licenciatura se analizaron las variaciones en los parámetros del clima. Los mismos son utilizados en la corrección de los eventos adquiridos por el observatorio Pierre Auger. Estas variaciones son causadas por las distintas condiciones atmosféricas durante el desarrollo de las EAS. Se analizaron los datos adquiridos durante en el periodo 2005-2018 por el arreglo de SDs espaciados 1500 m entre sí, conocido como \emph{arreglo principal}. De esta manera, se extendió los periodos estudiados anteriormente en los siguientes trabajos \cite{abraham2009atmospheric}, \cite{abreu2012description}   y \cite{aab2017impact}. 
 
-También se emuló el análisis de la modulación del clima sobre el periodo 2005-2015 \cite{aab2017impact}, obteniéndose resultados compatibles. Se observó que en los eventos posteriores a la corrección, la modulación del clima se vio disminuida. Esta modulación es despreciable para eventos con energía mayor a $2\,$EeV.
+Por encima de una energía de $\sim10^14$EeV, los RCs que llegan a la atmósfera producen cascadas de partículas secundarias que pueden llegar hasta la superficie  de la Tierra. Estas cascadas son conocidas como lluvia atmosférica extendida o EAS. Estas lluvias contienen un componente electromagnética, que consiste en electrones, positrones y fotones, y una componente muónica que pueden ser medidas usando detectores de partículas sobre la superficie. Las partículas cargadas también pueden excitar moléculas de nitrógeno en el aire que producen fotones de fluorescencia, que pueden ser observadas por telescopios durante noches claras.
 
-En el mismo trabajo, se estudió la modulación del clima mediante el valor del $S_{38}$ sin la corrección propuesta por trabajos mencionados. Se observó que los parámetros del clima obtenidos en este análisis son compatibles con los utilizados en la reconstrucción oficial. Se realizó una corrección de los efectos atmosféricos a la energía con estos coeficientes, observándose que la modulación es despreciable para energías mayores a $2\,$EeV al igual que la reconstrucción oficial. 
+
+El observatorio Pierre Auger está ubicado en la ciudad de Malargüe, provincia de Mendoza. El mismo fue construido para detectar las partículas secundarias de la EAS producidas por RCs con energía por encima de $0.1\,$EeV. El observatorio posee un sistema híbrido de detección, ya que combina un arreglo de detectores de partículas superficiales y un conjunto de telescopios que detectan los fotones de fluorescencia.
+
+
+Los análisis presentados en este trabajo fueron realizados con los eventos obtenidos por $\sim 1600$ detectores Cherenkov, dispuestos en una superficie de $\sim 3000\,\text{km}^2$ en un arreglo de forma hexagonal a una distancia de $1500\,$m entre sí, esta disposición de tanques se menciona como \textit{arreglo principal}. Cada detector en un tanque cilindro con 12 toneladas de agua ultra-pura de $1.2\,$m de alto, en la parte superior del tanque tiene 3 foto-multiplicadores que monitorean la radiación Cherenkov en el agua. El conjunto del tanque con la electrónica de detector se menciona durante el trabajo como \textit{Surface Detector} o \textit{SD}.  Cada detector está midiendo constantemente los fotones en el agua. Muchos de los estos fotones son producidos por ruido y otros por partículas secundarias de una EAS. Los SDs cuentan con algoritmos o reglas para discernir ruido de un evento causado por un rayo cósmico, estos son los algoritmos de disparo (cite).
+
 
 \section{Acerca de todos los disparos del SD}
 
+A medida que los tanques pasan más tiempo midiendo, también van perdiendo sensibilidad a los eventos de bajas energías. Esto es una desventaja del disparo estándar en los SDs en el rango $1\,$EeV - $2\,$EeV. En la Fig.\ref{fig:futuro}, para los datos presentados en el ICRC 2019, se observa como la energía media de los eventos para distintos rangos de tiempo va aumentando con el tiempo. Además que la proporción de eventos por debajo de $3\,$ EeV disminuye. 
 
-A medida que los tanques pasan más tiempo midiendo, también van perdiendo sensibilidad a los eventos de bajas energías. Esto es una desventaja del disparo estándar en los SDs en el rango $1\,$EeV - $2\,$EeV. En la Fig.\ref{fig:futuro}, para los datos presentados en el ICRC 2019, se observa como la media de los eventos para distintos rangos de tiempo va aumentando con el tiempo. Además que la proporción de eventos por debajo de $3\,$ EeV disminuye. 
-
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.75\textwidth]{histograma_evolucion_eventos.png}
+	\includegraphics[width=0.8\textwidth]{histograma_evolucion_eventos.png}
 	\caption{Histograma de eventos por rango de tiempo medido por el Observatorio Pierre Auger}
 	\label{fig:futuro}
 \end{figure}
 
 
-El análisis del trabajo anterior fue realizado sobre los eventos medidos utilizando el disparo estándar del arreglo principal, cuya eficiencia varía con la energía del CR. Para el disparo estándar, los eventos con energía mayor a $3\,$EeV y $\theta_{max}<60^o$ o  por encima de $4\,$EeV y $\theta_{max}<80^o$, son detectados con una eficiencia del 100\%. Por lo tanto, el análisis de anisotropías en el rango de energía entre $1\,$EeV - $2\,$EeV, se requieren factores relacionados a la eficiencia del disparo en función de la energía. Estos factores son obtenidos de manera fenomenológica \cite{taborda}. 
+El análisis del trabajo de licenciatura fue realizado sobre los eventos medidos utilizando el disparo estándar del arreglo principal, cuya eficiencia varía con la energía del CR. Para el disparo estándar, los eventos con energía mayor a $3\,$EeV y $\theta_{max}<60^o$ o  por encima de $4\,$EeV y $\theta_{max}<80^o$, son detectados con una eficiencia del 100\%. Por lo tanto, el análisis de anisotropías en el rango de energía entre $1\,$EeV - $2\,$EeV, se requieren factores relacionados a la eficiencia del disparo en función de la energía. Estos factores son obtenidos de manera fenomenológica \cite{taborda}. 
 
-Para superar esta dificultad y para poder recuperar la sensibilidad para bajas energías, a partir del año 2013  se implementó otros algoritmos de disparo en los SDs, llamados ToTd y MoPS \cite{pierre2013plans}. Estos algoritmos de disparo se mencionan en este trabajo como \textit{todos los disparos}. Con esta mejora, la eficiencia completa se alcanza a partir de una energía mayor a $1\,$EeV. De tal manera que, al estudiar los eventos en el rango $1\,$EeV - $2\,$EeV,  no son necesarios los factores de eficiencia y sólo pueden afectar los cambios de la exposición del observatorio.
-
-Una desventaja de todos los disparos sobre el disparo estándar, es que el último tiene una mayor cantidad de eventos en el rango $1\,$EeV - $2\,$EeV, ya que se adquieren datos  desde el año 2004 con ese algoritmo. Por lo que el análisis de anisotropía con todos los disparos solo es posible desde el año 2013. 
+Para superar esta dificultad y para poder recuperar la sensibilidad para bajas energías, a partir del año 2013  se implementó otros algoritmos de disparo en los SDs, llamados ToTd y MoPS \cite{pierre2013plans}. Estos algoritmos de disparo se mencionan en este trabajo como \textit{todos los disparos}. La implementación de los ToTd y MoPS fue llevada a cabo mediante una actualización de la electrónica de los SDs para bajar el umbral de disparo, en particular para las señales de la componente electromagnética de la EAS, mejorando la reconstrucción mediante la separación fotón/hadrón para bajas energías. Con esta mejora, la eficiencia completa se alcanza a partir de una energía mayor a $1\,$EeV. De tal manera que, al estudiar los eventos en el rango $1\,$EeV - $2\,$EeV,  no son necesarios los factores de eficiencia y sólo pueden afectar los cambios de la exposición del observatorio.
 
 
+Una desventaja de todos los disparos sobre el disparo estándar, es que el último tiene una mayor cantidad de años medidos en el rango $1\,$EeV - $2\,$EeV, ya que se adquieren datos  desde el año 2004 con ese algoritmo. Esto es conveniente ya que mientras más años han sido medidos es más factible efectos espúreos se cancelen. En cambio, para todos los disparos, el análisis de anisotropía con todos los disparos solo es posible desde el año 2013. Entre inicios del 2004 y finales del 2019, el conjunto de eventos del disparo estándar tiene $6\,975\,194$ eventos sin clasificar. En cambio entre mediados del 2013 hasta fines del 2019, el archivo de eventos para todos los disparos tiene $13\,739\,351$ eventos. El menor tiempo se compensa con la eficiencia de todos los disparos.
 
 
 \section{Acerca de los eventos} \label{filtro}
@@ -37,14 +39,28 @@ Se aplican cortes a los eventos para asegurar la eficiencia completa de los dete
 A partir de los registros de eventos del arreglo principal con todos los disparos, se consideran solamente los eventos que cumplan las siguientes características:
 
     \begin{enumerate}
-      \item Ángulo cenital $\theta < 60^o$
+      \item La calidad de la reconstrucción depende de la energía y del ángulo cenital $\theta$ del evento.  Para eventos por debajo de los $4\,$EeV, se consideran los eventos con $\theta < 60^o$, en cambio para eventos por encima de esta energía se consideran $\theta < 80^o$.
       \item Los datos del evento son recopilados sin inconvenientes. Este filtro se conoce como \emph{Bad period flag} o $ib$. Un valor de 1 indica un buen periodo.
       \item Buena reconstrucción de la lluvia atmosférica asociada al evento.
       \item La cantidad de vecinos alrededor del tanque con mayor señal sea de 6 tanques, es decir, que el tanque de mayor señal este en el interior de un hexágono de tanques activos. Estos eventos se conocen como \textit{eventos 6T5}.
     \end{enumerate}
 
 
-\section{Acerca del registro de hexágonos}\label{hexagonos_rate}
+\subsection{Acerca del registro de hexágonos}\label{hexagonos_rate}
 
-La cantidad distribución de los hexágonos activos sobre el observatorio está relacionado con el filtro de eventos $6T5$, que garantiza la calidad de la reconstrucción del evento. El observatorio lleva un registro de la cantidad de hexágonos activos cada 5 min, además de registrar las condiciones atmosféricas en distintas estaciones de clima sobre la superficie del observatorio. 
+La cantidad de los hexágonos activos sobre el observatorio está relacionado con el filtro de eventos $6T5$, que garantiza la calidad de la reconstrucción del evento. El observatorio lleva un registro de la cantidad de hexágonos activos cada 5 min, además de registrar las condiciones atmosféricas en distintas estaciones de clima sobre la superficie del observatorio. 
 
+
+\section{Acerca de la tesis de licenciatura}
+
+Durante la tesis de licenciatura se analizaron los efectos de las condiciones atmosféricas durante el desarrollo de las EAS.  Se analizaron los datos adquiridos durante en el periodo 2005-2018 por el arreglo principal. De esta manera, se extendió los periodos estudiados anteriormente en los siguientes trabajos \cite{abraham2009atmospheric}, \cite{abreu2012description}   y \cite{aab2017impact}. 
+
+Los efectos atmosféricos afectan principalmente a la atenuación  longitudinal y lateral de la componente electromagnética  de la EAS, en particular dependen fuertemente de la temperatura y presión. Estos efectos del clima sobre los eventos se caracterizan por parámetros dependientes de la presión, densidad y temperatura del momento de la detección del evento. Los mismos también dependen del ángulo cenital de los eventos y se utilizan para corregir las señales registradas por los SDs. Las correcciones del clima utilizadas por la colaboración Pierre Auger fueron implementadas a partir del trabajo \cite{aab2017impact}. 
+
+Durante el trabajo de la licenciatura se imitó el análisis de la modulación del clima sobre el periodo 2005-2015 de \cite{aab2017impact}, obteniéndose resultados compatibles. También se estudió la modulación del clima mediante el valor del $S_{38}$ sin la corrección propuesta por \cite{aab2017impact} aumentando el rango de tiempo analizado hasta el 2018. Se observó que los parámetros del clima obtenidos en este análisis sobre  $S_{38}$  son compatibles con los utilizados en la reconstrucción oficial. %Se realizó una corrección de los efectos atmosféricos a la energía con estos coeficientes, observándose que la modulación es despreciable para energías mayores a $3\,$EeV al igual que la reconstrucción oficial.
+
+
+%Durante la tesis de licenciatura se analizaron las variaciones en los parámetros del clima. Los mismos son utilizados en la corrección de los eventos adquiridos por el observatorio Pierre Auger. Estas variaciones son causadas por las distintas condiciones atmosféricas durante el desarrollo de las EAS. Se analizaron los datos adquiridos durante en el periodo 2005-2018 por el arreglo de SDs espaciados 1500 m entre sí, conocido como \emph{arreglo principal}. De esta manera, se extendió los periodos estudiados anteriormente en los siguientes trabajos \cite{abraham2009atmospheric}, \cite{abreu2012description}   y \cite{aab2017impact}. 
+
+
+%This signal is corrected for atmospheric effects [18] that would otherwise introduce systematic modulations to the rates as a function of time of day or season. This could result in spurious influences on the distribution in sidereal time (a time scale that is based on the Earth’s rate of rotation measured relative to the fixed stars rather than the Sun, corresponding to 366.25 cycles/year) and hence could be a source of systematic effects for the anisotropies inferred. The atmospheric effects arise from the dependences of the longitudinal and lateral attenuation of the electromagnetic component of air showers on atmospheric conditions, in particular temperature and pressure. If not corrected, these could cause a modulation of the rates of up to $\pm$ 1.7\% in solar time.
