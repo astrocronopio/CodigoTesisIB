@@ -20,7 +20,7 @@ set xlabel "RA [^o]"
 set ylabel "N_{bin} {/=30 /} N_{media}"
 
 plot "bineado_RA_eventos_pesos.txt" u 1:2 w lp  lc rgb "blue" pt 6 ps 2 lw 2  tit "Con pesos"
-#replot "bineado_RA_eventos_pesos.txt" u 1:2:(sqrt(1/$3)) w yerr  lc rgb "blue" pt 6 ps 0 lw 1.3  notit
+replot "bineado_RA_eventos_pesos.txt" u 1:2:(sqrt(2/$3)) w yerr  lc rgb "blue" pt 6 ps 0 lw 1.3  notit
 
 replot "bineado_RA_eventos_pesos.txt" u 1:(1)  w l lc rgb "black"  notit  
 
@@ -33,7 +33,7 @@ f1(x) = (a1*cos((x -b1 )*pi/180.0) +1.0)
 
 
 replot "bineado_RA_eventos.txt" u 1:2 w lp  lc rgb "red" pt 4 ps  2 lw 2 tit "Sin pesos"
-#replot "bineado_RA_eventos.txt" u 1:2:(sqrt(1/$3)) w yerr lc rgb "red"  ps  0 lw 1.3 notit 
+replot "bineado_RA_eventos.txt" u 1:2:(sqrt(2/$3)) w yerr lc rgb "red"  ps  0 lw 1.3 notit 
 
 
 #fit f1(x) "bineado_RA_eventos.txt" u 1:2 via a1,b1

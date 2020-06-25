@@ -2,31 +2,16 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem{referencia_pesos}
-Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
-  I.~A.
-\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
-  pierre auger observatory.
-\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
-\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
+\bibitem{linsley1961extremely}
+Linsley, J., Scarsi, L., Rossi, B.
+\newblock Extremely energetic cosmic-ray event.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{6}~(9), 485, 1961.
 
 \bibitem{taborda}
 Taborda, O.
 \newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
   cósmicos de alta energía detectados por el observatorio Pierre Auger}.
 \newblock Proyecto Fin de Carrera, Instituto Balseiro, 7 2018.
-
-\bibitem{linsley1961extremely}
-Linsley, J., Scarsi, L., Rossi, B.
-\newblock Extremely energetic cosmic-ray event.
-\newblock \emph{Phys. Rev. Lett.}, \textbf{6}~(9), 485, 1961.
-
-\bibitem{referencia_anis}
-Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
-  I., \emph{et~al.}
-\newblock Observation of a large-scale anisotropy in the arrival directions of
-  cosmic rays above 8$\times$ 1018 ev.
-\newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
 
 \bibitem{pierre2013plans}
 {Pierre Auger Collaboration}.
@@ -53,6 +38,21 @@ Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
 \newblock {Impact of atmospheric effects on the energy reconstruction of air
   showers observed by the surface detectors of the Pierre Auger Observatory}.
 \newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
+
+\bibitem{referencia_anis}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock Observation of a large-scale anisotropy in the arrival directions of
+  cosmic rays above 8$\times$ 1018 ev.
+\newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
+
+\bibitem{referencia_pesos}
+Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
+  I.~A.
+\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
+  pierre auger observatory.
+\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
 
 \bibitem{analisis_fourier}
 Linsley, J.
