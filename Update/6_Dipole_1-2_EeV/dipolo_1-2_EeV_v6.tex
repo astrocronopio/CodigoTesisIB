@@ -8,11 +8,7 @@
     %COMPARANDO LA CURVA DE CALIBRACIÓN ENTRE LOS DOS ARCHIVOS
       Puede verse en la Fig.\,\ref{fig:calibracionE} que la curva de calibración entre ambos archivos es distinta, ya que la coordenada al origen como la pendiente es difieren entre para ambos archivos. Esto implica que los valores A y B de la curva $E=A\times (S_{38})^B$ son distintos para ambos conjunto de datos. Esto afectaría en primer lugar en el valor de la energía, y segundo a cualquier análisis que dependan de estos parámetros, como el análisis de la modulación del clima.
 
-	%%%%%%%%%%%%%%%555
-	%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%5555555tttttttt
-
-	Además de los filtros aplicados mencionados en la sección \ref{filtro}, se aplican filtros adicionales sobre la energía y el rango de tiempo. Para estudiar los eventos en esta sección, consideramos los eventos entre 1\,EeV y 2\,EeV de energía y que ocurrieron entre las 12:00:00 GMT del 1 de enero de 2013 y las 12:00:00 GMT del 1 de enero de 2020. Se centró en este rango de tiempo, ya que el registro de eventos más reciente al que se tuvo para hacer este trabajo termina el 1 de Enero del 2020  a las 11:59:43 GMT, además de para estudiar una cantidad entera de años, se optó por considerar los eventos desde el 1 de Enero del 2013 a las 12:00:00 GMT.
+	Además de los filtros aplicados mencionados en la sección \ref{filtro}, se aplican filtros adicionales sobre la energía y el rango de tiempo. Para estudiar los eventos en esta sección, consideramos los eventos entre 1\,EeV y 2\,EeV de energía y que ocurrieron entre las 12:00:00 GMT del 1 de enero de 2014 y las 12:00:00 GMT del 1 de enero de 2020. Se centró en este rango de tiempo, ya que el registro de eventos más reciente al que se tuvo para hacer este trabajo termina el 1 de Enero del 2020  a las 11:59:43 GMT, además de para estudiar una cantidad entera de años, se optó por considerar los eventos desde el 1 de Enero del 2014 a las 12:00:00 GMT.
 
 	Un resumen de todos los filtros aplicados se encuentra a continuación
 		\begin{enumerate}
@@ -20,8 +16,8 @@
 			\item Energía entre  [1 EeV , 2 EeV)
 			\item Rango de tiempo:
 			\begin{itemize}
-				\item[-] Inicial:1388577600 (Jueves, 1 de Enero de 2014 12:00:00 GMT)
-				\item[-] Final: 1577880000  (Jueves, 1 de Enero de 2020 12:00:00 GMT)
+				\item[-] Inicial:Jueves, 1 de Enero de 2014 12:00:00 GMT o 1388577600 UTC
+				\item[-] Final:  Jueves, 1 de Enero de 2020 12:00:00 GMT o 1577880000 UTC
 			\end{itemize}
 
 		\end{enumerate}
@@ -138,17 +134,17 @@ Amplitud $a$:	& 0.00784107 				&  0.00384774 				&0.004676\\
 
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c}
-				& Con Peso 	& Sin peso 		\\ \hline
-Frecuencia:		& 366.25 	& 366.25 		\\
-Fase:			& 329.865 	& 292.312		\\
-$P(r)$:			& 0.76398\%	& 26.6838 \% 	\\
-Amplitud:		& 0.004676 	& 0.00243515	\\
-\end{tabular}
-\caption{Fase, $r_{99}$ y $P_{99}$ del análisis de anisotropía entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
-\end{table}
+% \begin{table}[H]
+% \centering
+% \begin{tabular}{l|c|c}
+% 				& Con Peso 	& Sin peso 		\\ \hline
+% Frecuencia:		& 366.25 	& 366.25 		\\
+% Fase:			& 329.865 	& 292.312		\\
+% $P(r)$:			& 0.76398\%	& 26.6838 \% 	\\
+% Amplitud:		& 0.004676 	& 0.00243515	\\
+% \end{tabular}
+% \caption{Fase, $r_{99}$ y $P_{99}$ del análisis de anisotropía }
+% \end{table}
 
 
 
@@ -164,17 +160,28 @@ Amplitud:		& 0.004676 	& 0.00243515	\\
 			\caption{Anisotropía en función de la frecuencia, se comparan los análisis sin los pesos y con los pesos de los hexágonos}
 		\end{figure}
 		
-		
+
 		\begin{table}[H]
 		\centering
-		\begin{tabular}{c|c|c|c|c|c}
-					& Solar (sin peso)	& Solar (con peso)	&& Sidérea (sin peso) 	& Sidérea (con peso)	 \\ \hline
-		Fase $\phi$ & 251	    		& 288	    		&& 289				& 335				\\
-		Amplitud $r$& 0.0061	    	& 0.0038	  		&&0.0018		& 0.0039			\\
+		\begin{tabular}{l|l|l|l|l}
+			\multicolumn{1}{c}{}  & \multicolumn{2}{c}{Sin pesos}  & \multicolumn{2}{|c}{Con pesos} \\ \hline
+			Frecuencia:   & Solar         & Sidérea        & Solar         & Sidérea        \\ \hline
+			Fase $\phi$:  & 251           & 289            & 288           & 335            \\ \hline
+			Amplitud $r$: & 0.0061        & 0.0018         & 0.0038        & 0.0039         \\ \hline
+			$P(r)$:	      & 0.004 \%	  & 41\%	   	   & 2 \%          & 1 \% 	\\
 		\end{tabular}
-		\caption{Comparación de los parámetros de fase y amplitud para las frecuencias sidérea y solar, analizando sin pesos y con los pesos de los hexágonos con el análisis de Rayleigh}
+		\caption{Comparación de los parámetros de fase y amplitud para las frecuencias sidérea y solar, analizando sin pesos y con los pesos de los hexágonos con el análisis de Rayleigh entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
 		\end{table}
+		
+		% \begin{table}[H]
+		% \centering
+		% \begin{tabular}{c|c|c|c|c|c}
+		% Frecuencia	& Solar (sin peso)	& Solar (con peso)	&& Sidérea (sin peso) 	& Sidérea (con peso)	 \\ \hline
+		% Fase $\phi$ & 251	    		& 288	    		&& 289				& 335				\\
+		% Amplitud $r$& 0.0061	    	& 0.0038	  		&&0.0018		& 0.0039			\\
+		% \end{tabular}
 
+		% \end{table}
 
 	\subsubsection{Bineado de eventos }
 
@@ -183,7 +190,13 @@ Amplitud:		& 0.004676 	& 0.00243515	\\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.75\linewidth]{eventos_clasificados_por_RA_v4.png}
-		\caption{Distribución de la cantidad relativa de eventos en función de la ascensión recta.}
+		\caption{Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden.}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\linewidth]{eventos_clasificados_por_RA_v6_orden_2.png}
+		\caption{Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden.}
 	\end{figure}
 
 
@@ -205,17 +218,17 @@ futuros de esta característica podrían ser interesantes para determinar su ori
 
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{l|c|c|c|c}
-				& Con Peso 		& Sin peso 		& Con Peso 		& Sin peso 		\\ \hline
-Frecuencia:		& 366.21 		& 366.21 		& $\sim$366.505 & 366.506 		\\
-Fase:			& 151.032 		& 121.695		& $\sim$190 	& 73.8188		\\
-$P(r)$:		   & 0.289882\%	  & 46.9691 \% 	& $\sim$96\%	& 0.24013 \% 	\\
-Amplitud:		& 0.00512146	& 0.0018417		& $\sim$0.0006	& 0.00520328	\\
-\end{tabular}
-\caption{Fase, $r_{99}$ y $P_{99}$ del análisis de anisotropía entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
-\label{tabla:pico}
-\end{table}
+% \begin{table}[H]
+% \centering
+% \begin{tabular}{l|c|c|c|c}
+% 				& Con Peso 		& Sin peso 		& Con Peso 		& Sin peso 		\\ \hline
+% Frecuencia:		& 366.21 		& 366.21 		& $\sim$366.505 & 366.506 		\\
+% Fase:			& 151.032 		& 121.695		& $\sim$190 	& 73.8188		\\
+% $P(r)$:		   & 0.289882\%	  & 46.9691 \% 	& $\sim$96\%	& 0.24013 \% 	\\
+% Amplitud:		& 0.00512146	& 0.0018417		& $\sim$0.0006	& 0.00520328	\\
+% \end{tabular}
+% \caption{Fase, $r_{99}$ y $P_{99}$ del análisis de anisotropía entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
+% \label{tabla:pico}
+% \end{table}
 
 

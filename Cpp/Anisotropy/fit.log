@@ -3570,3 +3570,643 @@ correlation matrix of the fit parameters:
                 a1     b1     
 a1              1.000 
 b1              0.000  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 00:55:02 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2
+        format = x:z
+        #datapoints = 12
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 4.1292568700e-04   0.00e+00  7.68e-03    3.800000e-03   2.800000e+02   1.000000e-02  -1.000000e+01
+   7 1.0006561535e-04  -3.00e-02  7.68e-10    3.259452e-03   3.792492e+02   7.303443e-03  -2.345922e+01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000100066
+rel. change during last iteration : -2.9988e-07
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00353669
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.25082e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00325945       +/- 0.001444     (44.3%)
+b               = 379.249          +/- 25.38        (6.692%)
+c               = 0.00730344       +/- 0.001444     (19.77%)
+d               = -23.4592         +/- 5.664        (24.14%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b               0.003  1.000 
+c               0.000 -0.000  1.000 
+d              -0.000  0.000 -0.000  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 00:57:55 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.4404898958e-14   0.00e+00  3.31e-07    3.259450e-03   1.924900e+01   7.303440e-03   3.300000e+02
+   3 1.2369128780e-14  -4.78e-01  3.31e-10    3.268056e-03   1.952647e+01   7.330714e-03   3.365199e+02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -4.7815e-06
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:00:38 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.5380011838e-14   0.00e+00  3.46e-07    3.268060e-03   3.000000e+02   7.330710e-03   3.365200e+02
+   5 1.2369128772e-14  -6.43e-04  3.46e-12    3.268067e-03   3.795283e+02   7.330716e-03   3.365199e+02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -6.43116e-09
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326807       +/- 0.001447     (44.27%)
+b               = 379.528          +/- 25.35        (6.68%)
+c               = 0.00733072       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.004  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:00:56 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128772e-14   0.00e+00  3.49e-07    3.268067e-03   3.795283e+02   7.330716e-03   3.365199e+02
+   1 1.2369128772e-14  -1.53e-10  3.49e-07    3.268067e-03   3.795283e+02   7.330716e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -1.53064e-15
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326807       +/- 0.001447     (44.27%)
+b               = 379.528          +/- 25.35        (6.68%)
+c               = 0.00733072       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.004  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:00:58 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128772e-14   0.00e+00  3.49e-07    3.268067e-03   3.795283e+02   7.330716e-03   3.365199e+02
+   1 1.2369128772e-14  -1.15e-10  3.49e-08    3.268067e-03   3.795283e+02   7.330716e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -1.14798e-15
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326807       +/- 0.001447     (44.27%)
+b               = 379.528          +/- 25.35        (6.68%)
+c               = 0.00733072       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.004  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:01:13 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:01:42 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:02:11 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:05:36 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:05:53 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:06:21 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:06:30 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 01:06:57 2020
+
+
+FIT:    data read from "bineado_RA_eventos_pesos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 1.2369128780e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+   1 1.2369128780e-14  -2.29e-06  3.39e-08    3.268060e-03   1.952651e+01   7.330712e-03   3.365199e+02
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.23691e-14
+rel. change during last iteration : -2.29064e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.9321e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.54614e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00326806       +/- 0.001447     (44.27%)
+b               = 19.5265          +/- 25.35        (129.8%)
+c               = 0.00733071       +/- 0.001445     (19.71%)
+d               = 336.52           +/- 5.659        (1.682%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b              -0.007  1.000 
+c              -0.001 -0.005  1.000 
+d               0.002  0.001  0.008  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 20:40:28 2020
+
+
+FIT:    data read from "bineado_RA_eventos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.8251626587e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+  10 1.1783569357e-14  -1.53e-04  3.39e-16    2.108225e-03  -6.429744e+01   5.527044e-03   3.260358e+02
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.17836e-14
+rel. change during last iteration : -1.52654e-09
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.8379e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47295e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00210823       +/- 0.001414     (67.09%)
+b               = -64.2974         +/- 38.34        (59.62%)
+c               = 0.00552704       +/- 0.00141      (25.52%)
+d               = 326.036          +/- 7.333        (2.249%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b               0.004  1.000 
+c               0.002  0.001  1.000 
+d              -0.002 -0.000  0.006  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 20:42:36 2020
+
+
+FIT:    data read from "bineado_RA_eventos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.8251626587e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+  10 1.1783569357e-14  -1.53e-04  3.39e-16    2.108225e-03  -6.429744e+01   5.527044e-03   3.260358e+02
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.17836e-14
+rel. change during last iteration : -1.52654e-09
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.8379e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47295e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00210823       +/- 0.001414     (67.09%)
+b               = -64.2974         +/- 38.34        (59.62%)
+c               = 0.00552704       +/- 0.00141      (25.52%)
+d               = 326.036          +/- 7.333        (2.249%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b               0.004  1.000 
+c               0.002  0.001  1.000 
+d              -0.002 -0.000  0.006  1.000 
+
+
+*******************************************************************************
+Fri Jun 26 20:52:47 2020
+
+
+FIT:    data read from "bineado_RA_eventos.txt" u 1:2:3 yerr
+        format = x:z:s
+        x range restricted to [* : 360.000]
+        #datapoints = 12
+function used for fitting: f(x)
+	f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 2.8251626587e-14   0.00e+00  3.39e-07    3.268060e-03   1.952650e+01   7.330710e-03   3.365200e+02
+  10 1.1783569357e-14  -1.53e-04  3.39e-16    2.108225e-03  -6.429744e+01   5.527044e-03   3.260358e+02
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 1.17836e-14
+rel. change during last iteration : -1.52654e-09
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.8379e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47295e-15
+p-value of the Chisq distribution (FIT_P)              : 1
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00210823       +/- 0.001414     (67.09%)
+b               = -64.2974         +/- 38.34        (59.62%)
+c               = 0.00552704       +/- 0.00141      (25.52%)
+d               = 326.036          +/- 7.333        (2.249%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      
+a               1.000 
+b               0.004  1.000 
+c               0.002  0.001  1.000 
+d              -0.002 -0.000  0.006  1.000 

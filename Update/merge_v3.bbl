@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
@@ -45,6 +45,12 @@ Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
 \newblock Observation of a large-scale anisotropy in the arrival directions of
   cosmic rays above 8$\times$ 1018 ev.
 \newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
+
+\bibitem{farley1954sidereal}
+Farley, F., Storey, J.
+\newblock The sidereal correlation of extensive air showers.
+\newblock \emph{Proceedings of the Physical Society. Section A},
+  \textbf{67}~(11), 996, 1954.
 
 \bibitem{referencia_pesos}
 Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,

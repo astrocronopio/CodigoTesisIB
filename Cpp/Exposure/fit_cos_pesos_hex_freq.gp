@@ -1,3 +1,5 @@
+set encoding utf8
+
 pi=3.14159265359
 f(x) = (a*cos((w*x -b )*pi/180.0) +1.0)*c
 
@@ -9,8 +11,8 @@ c=1.0
 set auto 
 
 # #filepepe="../../../Hexagons/dnhex_sid_288.dat" #Este es la posta
-# filepepe="antisiderea_2020_sol.txt"
-# title_plot="Frecuencia Anti-sidérea"
+filepepe="antisiderea_2020_sol.txt"
+title_plot="Frecuencia Anti-sidérea"
 
 
 
@@ -19,8 +21,8 @@ set auto
 
 
 
-filepepe="solar_2020_sol.txt"
-title_plot="Frecuencia Solar"
+# filepepe="solar_2020_sol.txt"
+# title_plot="Frecuencia Solar"
 
 
 
@@ -30,10 +32,10 @@ set xtics 40
 set xlabel "Ascensión Recta [^o]" offset 0,0.5
 set key center top
 
-set terminal qt 1 enhanced font 'Times,26' size 1200,800 
+set terminal qt 1 enhanced font 'Times,26' size 950,800 
 
-set ytics 0.007
-#set yran [0.97:]
+#set ytics 0.007
+set yran [0.98:1.020]
 
 set ylabel "Peso de cada evento w_{i}"
 
@@ -45,7 +47,7 @@ plot filepepe u ($0*360/288):(1/$1 ) w lp pt 4 lc rgb 'red' notit
 #set arrow from 317,0.99 to 317,1.01, graph 1 nohead
 
 fit f(x) filepepe u ($0*360/288):(1/$1 ) via a,b
-replot f(x) dt 3  lw 2  lc rgb 'black'  tit "Ajuste: f(x)= a·cos(x-b) + 1"
+replot f(x) dt 3  lw 2  lc rgb 'black'  tit "Ajuste: f(α)= 1 + r_1cos(α-φ_1)"
 
 rep
 

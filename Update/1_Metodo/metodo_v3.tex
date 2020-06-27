@@ -1,20 +1,35 @@
 % METODOS
 La información sobre el origen de los RCs puede ser obtenida mediante el estudio de la distribución de las direcciones de arribo de los eventos. Las irregularidades sobre el flujo casi isotrópico de los RCs, en un rango de energía, pueden deberse a  zonas del espacio donde se producen más RCs que en otras, estas irregularidades se conocen como anisotropías. 
 
-La búsqueda de anisotropías a grandes escalas angulares suele ser hecha sobre las irregularidades de la distribución de eventos en ascensión recta $\alpha$, ya que el arreglo principal tiene una exposición en función de este coordenada es casi constante \cite{referencia_anis}.
+El análisis de anisotropías a grandes escalas angulares suele ser hecho sobre las irregularidades de la distribución de eventos en ascensión recta $\alpha$, ya que el arreglo principal tiene una exposición direccional en función de esta coordenada casi constante \cite{referencia_anis}.
 
 \section{Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}
 
-Las anisotropías son variaciones pequeñas, por lo que eliminar todo factor espúreo en el análisis es importante. Las anisotropías en ascensión recta  aparecen 
+Las anisotropías son variaciones pequeñas por lo que eliminar todo factor espurio en el análisis es importante. Para obtener la amplitud de la misma en ascensión recta, se estudia la frecuencia sidérea ($f_{sid}=366.25\,$ ciclos/año) \cite{taborda}. Los errores sistemáticos debido a la modulación de eventos por el clima u otros errores propios de la adquisición de datos, aparecen en la frecuencia solar  ($f_{sid}=365.25\,$ ciclos/año), por lo que se debe tener en consideración el análisis de esta frecuencia. La frecuencia anti-sidérea ($f_a=364.25\,$ ciclos/año) es una frecuencia que puede indicar efectos sistemáticos en la amplitud de la anisotropía en la frecuencia sidérea \cite{farley1954sidereal}. La mezcla entre modulaciones diarias y anuales induce bandas laterales ubicadas a $\pm1\,$ciclo/año con respecto a la solar \cite{taborda}. Por estos motivos se toman estas frecuencias  como referencia.
 
-La frecuencia sidérea, como ya se mencionó antes, es la frecuencia en la cual las anisotropías reales en la distribución en ascensión recta de los RCs deberían aparecer. La frecuencia solar es importante para chequear la existencia de efectos sistemáticos asociados a particularidades propias del experimento y/o de las condiciones atmosféricas. La frecuencia anti-sidérea es una frecuencia arbitraria que se encuentra a la misma distancia (1 ciclo/año) de la solar que la frecuencia sidérea pero en el lado opuesto. La frecuencia anti-sidérea adquirió cierta relevancia por los trabajos de Farley y Storey [89] en los que se mostraba, para un modelo específico, que la mezcla de modulaciones.
+%(REDACTAR)La frecuencia sidérea, como ya se mencionó antes, es la frecuencia en la cual las anisotropías reales en la distribución en ascensión recta de los RCs deberían aparecer. La frecuencia solar es importante para chequear la existencia de efectos sistemáticos asociados a particularidades propias del experimento y/o de las condiciones atmosféricas. 
+
+% La frecuencia anti-sidérea es una frecuencia arbitraria que se encuentra a la misma distancia (1 ciclo/año) de la solar que la frecuencia sidérea pero en el lado opuesto. La frecuencia anti-sidérea adquirió cierta relevancia por los trabajos de Farley y Storey [89] en los que se mostraba, para un modelo específico, que la mezcla de modulaciones.que la mezcla de modu-
+% laciones con diferentes frecuencias genera bandas lateralesalrededor de la frecuencia natural de la señal. Por ejemplo, una variación del flujo de
+% RCs que combina modulaciones anuales y diarias de la forma
+
+% Dicho de otro modo, esta mezcla de frecuencias induce bandas laterales ubicadas a
+% ± 1 ciclo/año. La frecuencia f sol + 1 es la sidérea y f sol − 1 es la anti-sidérea. Por esta
+% razón, es útil chequear las amplitudes en anti-sidéreo porque dan una idea de efectos
+% sistemáticos remanentes que podrían estar afectando también a la señal en tiempo
+% sidéreo
 
 
-Podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación de la exposición direccional $\Delta N_{cell}(\alpha^0)$ en función del la ascensión recta del cenit del observatorio $\alpha^0$ durante el rango de tiempo estudiado. Estas variaciones pueden deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. 
+  \subsection{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
 
-El factor $\Delta N _{cell}(\alpha^0)$ tiene en cuenta que la exposición  direccional  el observatorio no es uniforme en tiempo sidéreo.  Se obtiene sumando el número de celdas durante el periodo de medición, con eventos descartados con tiempo muerto debido a probables de alimentación o problemas de comunicación o adquisición.  El número total de celdas en cada segmento de $\alpha^0$ es normalizada a valor medio. Este término afecta solamente el análisis de Fourier en ascensión recta.
+Para corregir las variaciones de la exposición del observatorio, podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación  $\Delta N_{cell}(\alpha^0)$ en función de la ascensión recta del cenit del observatorio $\alpha^0$ durante el rango de tiempo estudiado. Estas variaciones pueden deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. 
 
-Si este este efecto no es corregido, dan lugar a una aparente está dado por un error sistemático en la adquisición de datos y no por fluctuaciones sobre el flujo de CRs. (REDACTAR) Además esta variación puede modular el número de  eventos en función del tiempo y aparecer como una anisotropía.
+El factor $\Delta N _{cell}(\alpha^0)$ tiene en cuenta que la exposición  direccional  el observatorio no es uniforme en tiempo sidéreo.  Se obtiene sumando el número de celdas durante el periodo de medición, en cada segmento de $\alpha^0$ y luego se normaliza con el valor medio de los segmentos. Este término afecta solamente el análisis de Fourier en ascensión recta.
+
+
+%El factor $\Delta N _{cell}(\alpha^0)$ tiene en cuenta que la exposición  direccional  el observatorio no es uniforme en tiempo sidéreo.  Se obtiene sumando el número de celdas durante el periodo de medición, con eventos descartados con tiempo muerto debido a probables de alimentación o problemas de comunicación o adquisición.  El número total de celdas en cada segmento de $\alpha^0$ es normalizada a valor medio. Este término afecta solamente el análisis de Fourier en ascensión recta.
+
+%Si este este efecto no es corregido, dan lugar a una aparente está dado por un error sistemático en la adquisición de datos y no por fluctuaciones sobre el flujo de CRs. (REDACTAR) Además esta variación puede modular el número de  eventos en función del tiempo y aparecer como una anisotropía.
 
 %$\Delta N _{cell}(\alpha^0)$ , allows for the fact that the effective aperture of the observatory is not uniform in sidereal time. This factor corresponds to the relative number of detector cells, i.e. the active detectors surrounded by at least five other active detectors, present when the right ascension of the zenith of the observatory equals $\alpha^0$ within binning accuracy. 
 
@@ -22,14 +37,10 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
 
 %The total number of cells within each $\alpha^0$ bin is normalized to the average value [22].$\Delta N _{cell}(\alpha^0)$ is plotted in Fig. S2 with a bin width of $1^o$ . This term affects only the Fourier analysis in right ascension,
 
-  \subsection{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
-
-    (REDACTAR) Acá quiero que se entienda que estos pasos son para rango y frecuencias bien especificas.
-
     Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuación:
      
       \begin{enumerate}
-        \item Se establecen una frecuencia $f$  y un rango de tiempo a estudiar, por ejemplo la frecuencia solar $f_{Solar}= 365.25\,$ ciclos por año entre los años 2013 y 2019. 
+        \item Se establecen una frecuencia $f$  y un rango de tiempo a estudiar. Por ejemplo, se desea estudiar la frecuencia solar entre el 1 de Enero del 2014 a las 12:00:00 GMT y 2019 hasta el 1 de Enero del 2020 a las 12:00:00 GMT.
 
         \item Cada dato del registro de hexágonos, tomado en un momento $t$ durante el rango seleccionado, se clasifica según la cantidad de horas desde un momento de referencia $t_0$. Esta referencia $t_0$ es el 1 de Enero del 2005 a las 00:00:00 GMT, o  $21\,$hs del 31 de Diciembre del 2004, según la hora local de Malargüe.
 
@@ -38,7 +49,7 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
           h = (t-t_0) \times \frac{360^o}{24\text{hs}} \times\frac{f}{f_{Solar}} + h_0
           \label{eq:h_horas} 
         \end{equation}
-        El factor $\nicefrac{f}{f_{Solar}}$ sirve para hacer un cambio de escala temporal entre los periodos de distintas frecuencias. Se usa como referencia la $f_{Solar}$ dado que las horas (solares) se basan en esta frecuencia, y el valor de $h_0=31.4971^o$ representa la ascensión recta del cenit en el momento utilizado como referencia.
+        El factor $\nicefrac{f}{f_{Solar}}$ sirve para hacer un cambio de escala temporal entre los periodos de distintas frecuencias. Se usa como referencia la $f_{Solar}$ dado que las horas (solares) se basan en esta frecuencia, y el valor de $h_0=31.4971^o$ representa la ascensión recta del cenit del observatorio en el momento utilizado como referencia.
         
         \item  Para simplificar el cálculo del peso de los hexágonos, se divide los $360^o$ de la ascensión recta en $L$ segmentos de $\nicefrac{360}{L} ^o$ cada uno. Para clasificar un dato se  toma  el valor $h$  y se calcula
         \begin{equation}
@@ -49,26 +60,27 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
         \begin{equation}
           k = \bigg \lceil \frac{h'}{360}\times L \bigg \rceil
         \end{equation}
-        donde $\lceil a \rceil$ representa la función techo \footnote{La función techo da como resultado el número entero más próximo por exceso}. Por ejemplo, si optamos por $L=24$ y un dato en particular resulta con  $h=395\,^o$, esto implica que $h'= 35^o$ y que $k=\lceil 2.\hat{3} \rceil=3$, por lo tanto, este registro corresponde al segmento en la $3^{a}$ posición.
+        donde $\lceil a \rceil$ representa la función techo \footnote{La función techo da como resultado el número entero más próximo por exceso}. Por ejemplo, si optamos por $L=24$ y un dato en particular resulta con  $h=395\,^o$, esto implica que $h'= 35^o$ y que $k=\lceil 2.333 \rceil=3$, por lo tanto, este registro corresponde al segmento en la $3^{a}$ posición.
 
-        \item Una vez clasificados todos los datos del registro de hexágonos, se calcula la suma  $N_{hex, j}$ de los datos que cayeron un segmento $j$ dado. Para definir la variación relativa de hexágonos  $\Delta N_{cell,k}$ de un segmento $k$ en particular, se necesita la media de hexágonos por segmento $ \langle N \rangle$  para normalizar las variaciones.
+        \item Una vez clasificados todos los datos del registro de hexágonos, se calcula la suma  $N_{hex, j}$ de los datos que cayeron un segmento $j$ dado. Para definir la variación relativa de hexágonos  $\Delta N_{cell,k}$ de un segmento $k$ en particular, necesitamos la media de hexágonos por segmento $ \langle N \rangle$  para normalizar las variaciones.
        \begin{align}
          \langle N \rangle &= \sum^{L}_{i=1} \frac{N_{cell, i}}{L}  \qquad
          \Delta N_{cell,k} = \frac{N_{cell, k}}{\langle N \rangle}  \label{epepe}
        \end{align}
 
       \end{enumerate}
-      Se toman las frecuencia anti-sidérea ($f_a=364.25\,$ciclos), solar ($f_{Solar}= 365.25\,$ciclos) y sidérea ($f_{sid}= 366.25\,$ciclos) como referencia. En la Fig.\ref{fig:pesos_referencia} se muestran las variaciones relativas de los hexágonos en función de la ascensión recta del cenit del observatorio para las frecuencias mencionadas. Este análisis fue realizado en el marco del trabajo \cite{referencia_pesos} con eventos del periodo 2004-2017. 
+ En la Fig.\ref{fig:pesos_referencia} se muestran las variaciones relativas de los hexágonos en función de la ascensión recta del cenit del observatorio para las frecuencias mencionadas. Este análisis fue realizado en el marco del trabajo \cite{referencia_pesos} con eventos del periodo 2004-2017. 
 
-          \begin{figure}[H]
+
+
+       En la Fig.\ref{fig:pesos_ejemplo} se observan los valores obtenidos de $\Delta N_{cell,k}$  con el código escrito para este trabajo, en función de la ascensión recta del cenit  para $L=288$ segmentos. Se analizó el conjunto de datos  utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia}, con el fin de validar dicho código. Los datos se analizaron desde el 1 de Enero del 2004 a las 00:00:00\,GMT  hasta el 1 de Enero del 2017 a las 00:00:00\,GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
+      
+      \begin{figure}[H]
           \centering
               \includegraphics[width=0.5\linewidth]{pesos_referencia.png}  
               \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite{referencia_pesos}.}
               \label{fig:pesos_referencia}
         \end{figure}
-
-       En la Fig.\ref{fig:pesos_ejemplo} se observan los valores obtenidos de $\Delta N_{cell,k}$  con el código escrito para este trabajo, en función de la ascensión recta del cenit  para $L=288$ segmentos. Se analizó el conjunto de datos  utilizado para obtener los resultados la Fig.\ref{fig:pesos_referencia}, con el fin de validar dicho código. Los datos se analizaron desde el 1 de Enero del 2004 a las 00:00:00\,GMT  hasta el 1 de Enero del 2017 a las 00:00:00\,GMT. Se  observa que estos los resultados obtenidos son compatibles con la Fig.\ref{fig:pesos_referencia}
-      
 
        \begin{figure}[H]
           \centering
@@ -77,7 +89,7 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
               \label{fig:pesos_ejemplo}
         \end{figure}
 
-      Para la frecuencia solar, se observa una variación apreciable con respecto al $1$. Esto se debe a un problema en la 
+     %Para la frecuencia solar, se observa una variación apreciable con respecto al $1$. Esto se debe a un problema en las
 
     Para una representación fiel entre los registros de los hexágonos y los pesos de los eventos, se optó por clasificar los datos de los hexágonos en $288$ segmentos, donde cada segmento tiene un ancho de $1.25^o$. Esto es conveniente ya que la actualización del registro de hexágonos se realiza una vez  cada $5\,$min como se menciona en la sección \ref{hexagonos_rate}. Esta tasa de actualización es equivalente a decir que la adquisición se realiza cada vez que el cenit del observatorio barre  $1.25^o$ en ascensión recta sobre la esfera celeste.
 
@@ -86,35 +98,35 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
 
 %Rayleigh analysis in right ascension: A standard approach for studying the large-scale anisotropies in the arrival directions of cosmic rays is to perform a harmonic analysis in right ascension, $\alpha$. The first-harmonic Fourier components are given by 
   
-  Un procedimiento para estudiar anisotropías en la direcciones de los RCs es realizar un análisis de Fourier en ascensión recta $\alpha$. La distribución en ascensión recta $\alpha$ del flujo de RCs $I(\alpha)$ que llega al arreglo principal puede caracterizarse por las amplitudes $r_k$ y fases $\phi_k$ de su expansión en serie de Fourier al $k-$ésimo orden. 
+  Un procedimiento para estudiar anisotropías en la direcciones de arribos de los RCs es realizar un análisis de Fourier en ascensión recta $\alpha$. La distribución en ascensión recta $\alpha$ del flujo de RCs $I(\alpha)$ que llega al arreglo principal puede caracterizarse por las amplitudes $r_k$ y fases $\phi_k$ de su expansión en serie de Fourier al $k-$ésimo orden. 
 
   \begin{equation}
     I(\alpha) = I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) = I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) 
   \end{equation}
-  donde $a_k=r_k\cos\phi_k$ y $b_k=r_k\sin\phi_k$, y $I_0$ es el flujo medio. La distribución $I(\alpha)$ puede obtenerse a partir de la distribución de direcciones de arribo de los eventos observados. (REDACTAR) En este trabajo, se considera que todos los eventos $N$tienen una distribución uniforme en ascensión recta, es decir, $\nicefrac{dN}{d\alpha}= \sum^N_{i=1} \delta(\alpha - \alpha_i)$ \cite{taborda}. 
+  donde $a_k=r_k\cos\phi_k$ y $b_k=r_k\sin\phi_k$, y $I_0$ es el flujo medio. La distribución $I(\alpha)$ puede obtenerse a partir de la distribución de direcciones de arribo de los eventos observados.  En este trabajo, suponiendo que existieron $N$ eventos en el rango analizado, se considera que los mismos tienen una distribución en ascensión recta del tipo $\nicefrac{dN}{d\alpha}= \sum^N_{i=1} \delta(\alpha - \alpha_i)$ \cite{taborda}, de esta manera se simplifica el cálculo de $r_k$ y $\phi_k$. 
 
-  Los análisis en ascensión recta están asociados a la frecuencia sidérea.  Para realizar el análisis de los eventos en cualquier frecuencia arbitraria, es necesario modificar $\alpha$ por $\tilde{\alpha}$. Esta nueva variable tiene la forma como se utiliza en el trabajo \cite{taborda}:
+  Como se mencionó anteriormente, los análisis en ascensión recta están asociados a la frecuencia sidérea. Para realizar el análisis de los eventos en cualquier frecuencia arbitraria, es necesario modificar $\alpha$ por $\tilde{\alpha}$. Esta nueva variable tiene la forma como se utiliza en el trabajo \cite{taborda}:
   \begin{equation}
     \tilde{\alpha} = 2\pi f_x t_i + \alpha_i - \alpha_i^0(t_i) \label{ra_mod}
   \end{equation}
   donde $f_x$ es el frecuencia arbitraria a estudiar, $t_i$ es el momento en que ocurrió el evento y $\alpha_i^0(t_i)$ es la ascensión recta del cenit del observatorio en el momento del evento. Si la frecuencia a analizar es la sidérea, el análisis con $\alpha$ y $\tilde{\alpha}$ arrojan los mismos parámetros $r_k$ y $\phi_k$.
 
-  Por lo discutido en la sección anterior, puede existir una modulación debido a las variaciones de la exposición direccional.  (REDACTAR) Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, donde no consideramos la corrección de la exposición. En caso contrario, se habla de análisis \textit{con pesos} de los hexágonos  y estos pesos se calculan como se menciona en la sección anterior.
+ Clasificando a los eventos mencionados en la sección \ref{specs} según el valor de la ascensión recta y considerando que todos los eventos tienen un peso uniforme de $w_i=1$, se dicen que los eventos fueron analizados \textit{sin pesos}, donde no consideramos la corrección de la exposición. En caso contrario, se habla de análisis \textit{con pesos} de los hexágonos  y estos pesos se calculan como se menciona en la sección anterior.
 
   Para realizar el análisis de frecuencias de los eventos, a primer orden en la expansión de Fourier, se siguen los siguientes pasos.
 
         \begin{enumerate}
-        \item Fijando un rango de tiempo y un rango de energía en el cual se desea estudiar la anisotropía, se establece una frecuencia en particular $f$ a analizar.
+        \item Fijando un rango de tiempo y un rango de energía en el cual se desea estudiar la anisotropía, se establece una frecuencia en particular $f$ a analizar. Siguiendo el ejemplo de la sección anterior, se analiza la frecuencia solar entre el 1 de Enero del 2014 a las 12:00:00 GMT y 2019 hasta el 1 de Enero del 2020 a las 12:00:00 GMT.
 
         \item Con los eventos ya filtrados según el criterio de la sección \ref{filtro}, asigno cada evento $i$ un valor $h_i$, definida en la Ec.\ref{eq:h_horas}
 
         \item En caso de considerar los pesos de los hexágonos, para asignar el peso correspondiente al evento, se asocia a un segmento $k$, calculado en la sección \ref{peso_hexagonos}, mediante el valor de $h'_i$ definido en la Ec.\,\ref{eq:h_primado}. Luego, el peso asignado $w_i$  al evento $i$ es: $ w_{i}= (\Delta N_{cell,k})^{-1}$, caso contrario, se toman que todos los eventos tiene $w_i=1$.
         
-        \item ( (REDACTAR) de tal forma que tenga información de la frecuencia, por ejemplo en h esta la info de la freq) Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna el ángulo $\tilde{\alpha}_i$ definida en la Ec.\ref{ra_mod}. La implementación en el código es de la siguiente manera: 
+        \item Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna el ángulo $\tilde{\alpha}_i$ definida en la Ec.\ref{ra_mod}. La implementación en el código es de la siguiente manera: 
         \begin{equation}
          \tilde{\alpha}_i = 2\pi \frac{h}{24} + \alpha_i -\alpha_{cenit,i}
         \end{equation}
-        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha_{cenit,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. %A partir de este ángulo $\tilde{\alpha}_i$ se realiza en análisis en frecuencias.
+        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha_{cenit,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. Cabe resaltar que la información de la frecuencia que se está estudiando, se encuentra en el cálculo de $h$. Si la frecuencia a estudiar fuera la sidérea, el término $2\pi \frac{h}{24} $ seguiría el cenit del observatorio, por lo que este término sería equivalente a $\alpha_{cenit,i}$, por lo tanto en esta frecuencia $ \tilde{\alpha}_i =\alpha_i$. %A partir de este ángulo $\tilde{\alpha}_i$ se realiza en análisis en frecuencias.
 
         \item Para calcular los coeficientes de Fourier del primer armónico $a$ y $b$, se siguen los siguiente pasos:
         \begin{enumerate}
@@ -130,15 +142,16 @@ Si este este efecto no es corregido, dan lugar a una aparente está dado por un 
             b = \frac{2}{\mathcal{N}} \sum^{Eventos}_i b_i'  
          \end{alignat}
         \end{enumerate}
-        \item Con los coeficientes es posible calcular la amplitud de la frecuencia estudiada $\tilde{r}$ y la fase $\phi$. Otros parámetros calculados para el análisis son la probabilidad $P(\tilde{r})$  y $r_{99}$.((REDACTAR)) Cabe resaltar que el P99 depende solamente de los pesos de los eventos que se está estudiando. La interpretación  de este valor es cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica., y el valor de amplitud $r_{99}$ para que dicha probabilidad sea del $1$\%.
+        \item Con los coeficientes es posible calcular la amplitud de la frecuencia estudiada $\tilde{r}$ y la fase $\phi$. Otros parámetros calculados para el análisis son la probabilidad $P(\tilde{r})$  y $r_{99}$. 
         \begin{alignat}{3}
             \tilde{r} &= \sqrt{a^2 +b^2}                        \qquad &&   \phi&&= \arctan\frac{a}{b}\\
           P(\tilde{r})&= \exp(-\mathcal{N}\frac{\tilde{r}^2}{4})\qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
         \end{alignat}
-
+        Cabe resaltar que el $r_{99}$ depende solamente de los pesos de los eventos que se está estudiando. La interpretación  de este valor es cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica sea del $1$\%
+        %., y el valor de amplitud $r_{99}$ para que dicha probabilidad sea del $1$\%.
       \end{enumerate}
 
-    Una forma de validar el código para el análisis de anisotropía es comparar los resultados del código con los obtenidos en otros trabajos \cite{taborda}. En la Fig.\ref{fig:sin_pesos_referencia} se muestra el análisis hecho sobre el mismo conjunto de eventos. Estos eventos fueron adquiridos con el disparo estándar desde el 1 de Enero del 2004 a las 00:00:00\,GMT  hasta el 1 de Enero del 2017 a las 00:00:00\,GMT. Se consideraron los eventos por encima de $8\,$EeV que además cumplan las condiciones dadas en la sección \ref{filtro}.  En esta figura que los resultados obtenidos en \cite{taborda} y con el código utilizado por este trabajo son indistinguibles. 
+    Una forma de validar el código para el análisis de anisotropía es comparar los resultados del código con los obtenidos en otros trabajos \cite{taborda}. En la Fig.\ref{fig:sin_pesos_referencia} se muestra el análisis hecho sobre el mismo conjunto de eventos. Estos eventos fueron adquiridos con el disparo estándar desde el 1 de Enero del 2004 a las 00:00:00 GMT  hasta el 1 de Enero del 2017 a las 00:00:00 GMT. Se consideraron los eventos por encima de $8\,$EeV que además cumplan las condiciones dadas en la sección \ref{filtro}.  En esta figura que los resultados obtenidos en \cite{taborda} y con el código utilizado por este trabajo son indistinguibles. 
 
       \begin{figure}[H]
         \centering

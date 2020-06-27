@@ -30,7 +30,7 @@ double right_ascension(long long utc){
 int method_weight_solar(int utc, float fas, int interval){
 	unsigned iutc0 = 1104537600;
 
-	float x1=((long double)(utc-iutc0)/3600. +  2.099806667)*fas; // hora local
+	float x1=((long double)(utc-iutc0)/3600. *fas +  2.099806667); // hora local
 	int	aux=  int(fmod(x1*interval/24.0, interval));
 				
 	return aux;
@@ -122,7 +122,7 @@ float bin_RA_counter( const char* in_file, const char* out_file, unsigned long u
 			ang = ang< 0? ang +360. : ang;
 			*/
 
-			hrs =((double)(iutc-1104537600)/3600.+31.4971*24./360.)*366.25/365.25;
+			hrs =((double)(iutc-1104537600)/3600.)*366.25/365.25 +31.4971*24./360.;
 
 			nh 	= int(fmod(hrs*288/24.0, 288));
 
