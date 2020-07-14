@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[12pt,papel,twoside]{ibtesis}
+\documentclass{ibtesis}
+
+% \documentclass[12pt,papel,singlespace,oneside]{ibtesis}
+% \documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
+
+%%%%%%%%%%%%%%%%%%%%% Paquetes extra %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Por conveniencia: aqu\'{\i} puede cargar todos los paquetes y definir los comandos 
+% que necesite
+\usepackage{ibextra}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}  % Enable figure captions or figure notes
+\usepackage{float}
+\usepackage{nicefrac}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\decimalpoint
+\usepackage{amsfonts}
+
+\newcommand{\done}{\item[\checkmark]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Informe de Avance: Análisis de las direcciones de arribo de rayos cósmicos de ultra-alta energía en el Observatorio Pierre Auger}
+\author{Evelyn~G.~Coronel}
+\director{Dra.~Silvia Mollerach}
+
+\carrera{Tesis de Maestría en Ciencias F\'{\i}sicas}
+\grado{Maestrando}
+\laboratorio{Partículas y Campos -- Centro At\'{o}mico Bariloche}
+\jurado{Dr.~Diego~Harari (Instituto Balseiro)}
+
+\palabrasclave{Rayos Cósmicos, Análisis de datos, Instituto Balseiro}
+%\keywords{Cosmic Rays, Data Analysis, Balseiro Institute}
+%\neembaeguasu{Mba'e michĩ yvágagui ouva, Mbo'ehaoguasu Balseiro}
+% Si queremos poner la fecha manualmente:
+% \date{Diciembre de 2099}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\titlepagefalse 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \setcounter{tocdepth}{4}
+% \setcounter{secnumdepth}{4}
+\begin{document}
+
+\begin{preliminary}
+
+%%% \'{I}ndices %%%%
+
+\begin{abreviaturas}
+
+\begin{tabular}{l l}
+CR: 		& Rayos cósmicos  (\emph{Cosmic Rays}) \\
+SD: 		& Detector de Superficie (\emph{Surface Detector})  \\
+EAS: 		& Lluvia Atmosférica Extendida  (\emph{Extensive Air Shower})    \\
+S(1000): 	& Señal a 1000\,m del núcleo de la lluvia y al nivel del suelo \\
+S(1000)$_w$:& Señal de S(1000) corregida por la modulación del clima. \\
+S$_{38}$: 	& Señal a 1000\,m del núcleo y al nivel del suelo si el ángulo cenital del evento fuera de $38^o$\\
+S$_{38,w}$: & Señal S$_{38}$ corregida por la modulación del clima \\
+eV: 		& electrón Voltio, $1\,$eV$= 1.602\times 10^{-19}\,$J \\
+EeV: 		& $1\,$EeV$=10^{18}\,$eV\\
+ICRC: 		& Conferencia Internacional de Rayos Cósmicos (\emph{International Cosmic Ray Conference})\\
+\end{tabular}
+                     %Abreviaturas
+\end{abreviaturas}
+
+	\tableofcontents                %\'{I}ndice
+	\listoffigures                  %Figuras
+	%\listoftables                  %Tablas
+
+	%\input{../Resumen/resumen.tex}
+
+\end{preliminary}
+
+
+\chapter{Introducción}
+\graphicspath{{0_Introduccion/}}
+\input{0_Introduccion/introduccion_v8}
+
+
+\chapter{Métodos}
+\graphicspath{{1_Metodo/}}
+\input{1_Metodo/metodo_v5}
+
+
+\chapter{Dipolo en el rango 1 EeV - 2 EeV}
+\graphicspath{{6_Dipole_1-2_EeV/}}
+\input{6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8}
+
+\begin{biblio}
+	\bibliography{mibib}
+\end{biblio}
+
+\end{document}

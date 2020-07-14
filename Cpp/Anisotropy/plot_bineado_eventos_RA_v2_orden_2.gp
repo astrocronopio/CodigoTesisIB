@@ -1,14 +1,14 @@
 pi=3.14159265359
 f(x) = (a*cos((x -b )*pi/180.0) +1.0 + c*cos((2*(x-d)*pi/180.0)))
 
-a               = 0.00326806    #   +/- 0.001447     (44.27%)
-b               = 19.5265       #   +/- 25.35        (129.8%)
-c               = 0.00733071    #   +/- 0.001445     (19.71%)
-d               = 336.52        #   +/- 5.659   
-
-
-
-
+#a               = 0.00326806    #   +/- 0.001447     (44.27%)
+#b               = 19.5265       #   +/- 25.35        (129.8%)
+#c               = 0.00733071    #   +/- 0.001445     (19.71%)
+#d               = 336.52        #   +/- 5.659   
+a               = 0.0040    #   +/- 0.001447     (44.27%)
+b               = 336      #   +/- 25.35        (129.8%)
+c               = 0.0042    #   +/- 0.001445     (19.71%)
+d               = 339        #   +/- 5.659   
 
 set terminal qt 1 enhanced font 'Times,26' size 1200,800 
 
@@ -21,9 +21,9 @@ set yr [0.985:1.01]
 set xlabel "RA [^o]"
 set ylabel "N_{bin} {/=30 /} N_{media}"
 
-plot "bineado_RA_eventos.txt" u 1:2 w lp  lc rgb "blue" pt 6 ps 2 lw 2  tit "Sin pesos"
-replot "bineado_RA_eventos.txt" u 1:2:(sqrt(2/$3)) w yerr  lc rgb "blue" pt 6 ps 0 lw 1.3  notit
-fit f(x) "bineado_RA_eventos.txt" u 1:2:3 yerr via a,b,c,d
+plot "bineado_RA_eventos_pesos.txt" u 1:2 w lp  lc rgb "blue" pt 6 ps 2 lw 2  tit "Con pesos"
+replot "bineado_RA_eventos_pesos.txt" u 1:2:(sqrt(2/$3)) w yerr  lc rgb "blue" pt 6 ps 0 lw 1.3  notit
+#fit f(x) "bineado_RA_eventos.txt" u 1:2:3 yerr via a,b,c,d
 
 # replot 1 lc rgb "black"  lw 1 notit  
 

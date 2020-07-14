@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: merge_v4.aux
+The style file: ibtesis.bst
+Database file #1: mibib.bib
+You've used 11 entries,
+            2634 wiz_defined-function locations,
+            1102 strings with 11994 characters,
+and the built_in function-call counts, 4182 in all, are:
+= -- 259
+> -- 172
+< -- 0
++ -- 86
+- -- 43
+* -- 241
+:= -- 485
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 9
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 418
+empty$ -- 395
+format.name$ -- 50
+if$ -- 888
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 124
+newline$ -- 62
+num.names$ -- 11
+pop$ -- 163
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 101
+stack$ -- 0
+substring$ -- 145
+swap$ -- 299
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 23
+width$ -- 13
+write$ -- 126

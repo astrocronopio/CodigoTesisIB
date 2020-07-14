@@ -33,7 +33,7 @@ double right_ascension(long long utc)
 }
 
 
-void rayleigh( float *a , float *b, float *sumaN, float freq, 
+void rayleigh( float *a1 , float *b1, float *a2 , float *b2,  float *sumaN, float freq, 
 				unsigned long utci, unsigned long utcf, const char* in_file)
 {
 	unsigned long utc0 = 1072915200,   iutcref = 1104537600  ; //1/1/2005 00:00:00;
@@ -69,8 +69,11 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 			raz = right_ascension(utc);
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
 
-			*a +=cos(arg)*peso; 
-			*b +=sin(arg)*peso;
+			*a1 +=cos(arg)*peso; 
+			*b1 +=sin(arg)*peso;
+			
+			*a2 +=cos(2*arg)*peso; 
+			*b2 +=sin(2*arg)*peso;
 		}
 	}
 
@@ -79,8 +82,9 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 
 float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
-	float a =0.0  , b=0.0, sumaN=0.0 ;
-	float rtilde,pha,prtilde,r99r;
+	float a1 =0.0  , b1=0.0, a2=0, b2=0, sumaN=0.0 ;
+	float rtilde1,pha1, prtilde1,r99r;
+	float rtilde2,pha2, prtilde2;
 	float sigma=0.0, sgmra=0.0;
 
 	std::ofstream myfile (out_file);
@@ -93,34 +97,51 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 
 		std::cout << " Iteration "<< i +1 <<" of " << nf<< std::endl;
 		
-		a=0.0; b=0.0; sumaN=0.0;
+		a1=0.0; b1=0.0; 
+		a2=0.0; b2=0.0; 
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		sumaN=0.0;
 
-		a = 2.*a/sumaN;
-     	b = 2.*b/sumaN;
-     	pha= atan(b/a);
+		rayleigh(&a1, &b1, &a2, &b2, &sumaN, freq, utci, utcf, in_file);
 
-     	if (a < 0) pha= pha+pi;
-     	if (a>0 && b< 0) pha = pha +2.*pi;
+		a1 = 2.*a1/sumaN;
+     	b1 = 2.*b1/sumaN;
 
-     	rtilde= sqrt(a*a + b*b);
-     	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
-     	sigma = sqrt(2./sumaN);
-     	sgmra = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
+		a2 = 2.*a2/sumaN;
+     	b2 = 2.*b2/sumaN;
+
+     	pha1= atan(b1/a1);
+     	pha2 = 0.5*atan(b1/a1);
+
+     	if (a1 < 0) pha1= pha1+pi;
+     	if (a1>0 && b1< 0) pha1= pha1 +2.*pi;
+
+     	if (a2 < 0) pha2= pha2+pi;
+     	if (a2>0 && b2< 0) pha2 = pha2 +2.*pi;
+
+     	rtilde1= sqrt(a1*a1 + b1*b1);
+     	prtilde1 = exp(-sumaN*rtilde1*rtilde1/4.0);
+     	r99r  = sqrt(4.*log(100.)/sumaN); 
+
+     	rtilde2= sqrt(a2*a2 + b2*b2);
+     	prtilde2 = exp(-sumaN*rtilde2*rtilde2/4.0);
+     	     		// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
      										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
 
-     	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
-     	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< std::endl;
+     	myfile << freq 		<< rtilde1 << "\t" << rtilde2 << "\t";
+     	myfile 				<< pha1 << "\t" << pha2 << "\t";
+     	myfile <<r99r<<std::endl;
+     	
+     	
 	}
 }
 
 float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
 
-	float a =0.0  , b=0.0, sumaN=0.0 ;
-	float rtilde,pha,prtilde,r99r;
+	float a1 =0.0  , b1=0.0, a2=0, b2=0, sumaN=0.0 ;
+	float rtilde1,pha1, prtilde1,r99r;
+	float rtilde2,pha2, prtilde2;
 	float sigma=0.0, sgmra=0.0;
 
 	std::ofstream myfile (out_file);
@@ -132,26 +153,42 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 		float freq1 = freq + i*0.01;
 		std::cout << " Iteration "<< i +1 <<" of " <<Iterations<< std::endl;
 		
-		a=0.0; b=0.0; sumaN=0.0;
+				
+		a1=0.0; b1=0.0; 
+		a2=0.0; b2=0.0; 
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		sumaN=0.0;
 
-		a = 2.*a/sumaN;
-     	b = 2.*b/sumaN;
-     	pha= atan(b/a);
+		rayleigh(&a1, &b1, &a2, &b2, &sumaN, freq, utci, utcf, in_file);
 
-     	if (a < 0) pha= pha+pi;
-     	if (a>0 && b< 0) pha = pha +2.*pi;
+		a1 = 2.*a1/sumaN;
+     	b1 = 2.*b1/sumaN;
 
-     	rtilde= sqrt(a*a + b*b);
-     	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
-     	sigma = sqrt(2./sumaN);
-     	sgmra = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
-     										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
+		a2 = 2.*a2/sumaN;
+     	b2 = 2.*b2/sumaN;
 
-     	std::cout <<  "Frecuencia: "<< freq1 		<< "\t Amplitud: " << rtilde << "\t";
-     	std::cout <<  "Probabilidad: "<<prtilde 	<< "\t Fase: " << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< std::endl;
+     	pha1= atan(b1/a1);
+     	pha2 = 0.5*atan(b2/a2);
+
+     	if (a1 < 0) pha1= pha1+pi;
+     	if (a1>0 && b1< 0) pha1= pha1 +2.*pi;
+
+     	if (a2 < 0) pha2= pha2+pi;
+     	if (a2>0 && b2< 0) pha2 = pha2 +2.*pi;
+
+     	rtilde1= sqrt(a1*a1 + b1*b1);
+     	prtilde1 = exp(-sumaN*rtilde1*rtilde1/4.0);
+     	r99r  = sqrt(4.*log(100.)/sumaN); 
+
+     	rtilde2= sqrt(a2*a2 + b2*b2);
+     	prtilde2 = exp(-sumaN*rtilde2*rtilde2/4.0);
+
+
+     	std::cout << freq 		<< rtilde1 << "\t" << rtilde2 << "\t";
+     	std::cout 		 		<< prtilde1 << "\t" << prtilde2 << "\t";
+     	std::cout 				<< pha1/d2r << "\t" << pha2/d2r << "\t";
+     	std::cout <<r99r<<std::endl;
+     	
 	}
 }
 
@@ -172,7 +209,7 @@ int main(int argc, char const *argv[])
 */
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
-	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
+	ray_given_freq(366.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
 	
 	
 	return 0;

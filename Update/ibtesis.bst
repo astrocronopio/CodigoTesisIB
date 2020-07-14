@@ -277,7 +277,7 @@ FUNCTION {bbl.techrep}
 { "Inf.\ T\'ec." }
 
 FUNCTION {bbl.mthesis}
-{ "Proyecto Fin de Carrera" }
+{ "Tesis de Maestría" }
 
 FUNCTION {bbl.phdthesis}
 { "Tesis Doctoral" }

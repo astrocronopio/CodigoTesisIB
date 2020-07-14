@@ -11,12 +11,18 @@ Linsley, J., Scarsi, L., Rossi, B.
 Taborda, O.
 \newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
   cósmicos de alta energía detectados por el observatorio Pierre Auger}.
-\newblock Proyecto Fin de Carrera, Instituto Balseiro, 7 2018.
+\newblock Tesis de Maestría, Instituto Balseiro, 7 2018.
 
 \bibitem{pierre2013plans}
 {Pierre Auger Collaboration}.
 \newblock Plans for a proposal to upgrade the Pierre Auger Observatory.
 \newblock Pierre Auger Collaboration, 2013.
+
+\bibitem{triggers_ref}
+Justin M.~Albury, B. R.~D., Jose A.~Bellido.
+\newblock Exploring the energy threshold for full trigger efficiency of the
+  surface detector with hybrid events {GAP 2018-038}.
+\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
 
 \bibitem{abraham2009atmospheric}
 Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
@@ -29,7 +35,7 @@ Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
 Abreu, P., Aglietta, M., Ahlers, M., Ahn, E., Albuquerque, I. F. d.~M., Allard,
   D., \emph{et~al.}
 \newblock Description of atmospheric conditions at the pierre auger observatory
-  using the global data assimilation system (gdas).
+  using the global data assimilation system {(GDAS)}.
 \newblock \emph{Astroparticle Physics}, \textbf{35}~(9), 591--607, 2012.
 
 \bibitem{aab2017impact}
