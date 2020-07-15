@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Histograma de eventos por rango de tiempo medido por el Observatorio Pierre Auger\relax }}{2}{figure.caption.7}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces La eficiencia del disparo en funci\IeC {\'o}n de la energ\IeC {\'\i }a para eventos con \IeC {\'a}ngulo cenital menor a $60^o$. Este figura fue extra\IeC {\'\i }da del trabajo \cite {triggers_ref}\relax }}{3}{figure.caption.8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces La eficiencia del disparo en funci\IeC {\'o}n de la energ\IeC {\'\i }a para eventos con \IeC {\'a}ngulo cenital $\theta $ menor a $60^o$. Este figura fue extra\IeC {\'\i }da del trabajo \cite {triggers_ref}\relax }}{3}{figure.caption.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{7}{figure.caption.9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el c\IeC {\'o}digo escrito en este trabajo.\relax }}{7}{figure.caption.10}
@@ -13,3 +13,4 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Anisotrop\IeC {\'\i }a en funci\IeC {\'o}n de la frecuencia para el rango de energ\IeC {\'\i }a 1 EeV - 2 EeV. Se comparan los an\IeC {\'a}lisis sin los pesos y con los pesos de los hex\IeC {\'a}gonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{12}{figure.caption.15}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta a primer orden, en el rango de energ\IeC {\'\i }a $1$ EeV - $2$ EeV.\relax }}{13}{figure.caption.17}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Distribuci\IeC {\'o}n de la cantidad relativa de eventos en funci\IeC {\'o}n de la ascensi\IeC {\'o}n recta a segundo orden en el rango de energ\IeC {\'\i }a $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.\relax }}{13}{figure.caption.18}
+\addvspace {10\p@ }

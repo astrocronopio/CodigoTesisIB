@@ -1,22 +1,23 @@
-\subsubsection*{To do list }
-\begin{itemize}
+\subsection*{To do list }
+%\begin{itemize}
       % \done (DONE) ¿estoy haciendo bien la cuenta? 
       % \done (DONE) el log en ln o log10 para cpp? es ln==log en cpp
       % \done¿Hay algo en la aproximación de rayleigh que se pasó por alto? Sigo buscando
       % \done (DONE?) ¿Entiendo bien la approx? --Creo que sí, leí el paper que referencian, pero puede que un detalle se me halla escapado
-  \item Hacer 4-8 EeV
+ % \item Hacer 4-8 EeV
   % \done Comparar con ICRC por debajo de full efficency (¿necesario?): {\sl No, no es necesario}
   % \done Entender que está pasando con el percentil 99 : {\sl Se discutió con Mollerach}
   % \done {\sl (DONE)} Actualizar los gráficos para long range 
   % \done {\sl (DONE sort of)} Verificar el weather de AllTriggers2017 por encima de 1 EeV
-  \item Empezar el código para analizar más momentos (dipole, quadruplo): {\sl work in progress}
+  %\item Empezar el código para analizar más momentos (dipole, quadruplo): {\sl work in progress}
 %   \done {\sl (DONE)} Mandar mail
 %   \done Actualizar los rango de tiempo del ICRC 2019 y el AllTriggers 2019
-\end{itemize}
+
+%\end{itemize}
 
 
 
-\subsubsection*{How to do the analisis right?}
+%\subsection*{How to do the analisis right?}
 
 % \begin{itemize}
 %   \done Fijate que el rango de tiempo esté bien
@@ -24,7 +25,7 @@
 %   \done Fijarse si tengo que usar 5t5 o 6t5
 % \end{itemize}
 
-\subsubsection*{Comentarios importantes}
+\subsection*{Comentarios importantes}
 
 \begin{itemize}
   \item Para el rango de energía 2 EeV para arriba usamos el  Main\_Array, porque ya es más o menos full eficiency
@@ -66,7 +67,7 @@
 % \end{itemize}
 
 
-Fecha: 27/05/2020
+\section{Fecha: 27/05/2020}
 
 % \begin{itemize}
 % 	\done los eventos son los 6T5 con cenit < 60 grados? Cuantos eventos son? (Pone siempre esos datos asi se sabe de quienes hablas)
@@ -77,7 +78,7 @@ Fecha: 27/05/2020
 % \end{itemize}
 
 
-% Fecha: 28/05/2020
+ \section{Fecha: 28/05/2020}
 
 % \begin{itemize}
 	% \done llama la atencion la modulacion de los hexagonos y de los pesos que pones en la tabla 1.3. Deberian tener aprox la misma amplitud y fase opuesta. Creo que estan mal los valores del fit a los hexagonos, deberia ser a ojo una amplitud cerca a 0.0035 y una fase cerca de 100. Igual es raro porque las curvas en el plot tienen pinta razonable. Fijate que cuando fiteas un coseno 1+A*cos(RA-B) va con menos B, asi B es la fase donde la funcion tiene el maximo. Fijate que si fiteas a una funcion con media distinta de 1, la amplitud es el factor A en C*(1+A*cos(RA-B)) y  no el factor  A en C+A*cos(RA-B)
@@ -102,7 +103,7 @@ Fecha: 27/05/2020
 %\end{itemize}
 
 
-% Fecha: 09/06/2020
+ \section{Fecha: 09/06/2020}
 
 % Hay algunas cosas, al menos de notación, que  seria bueno mejorar y ver que no esten afectando los resultados.
 
@@ -148,10 +149,24 @@ Fecha: 27/05/2020
 
 	% \end{itemize}
 
-
-Fecha  15-06-2020
+\section{Fecha  15-06-2020}
 
 \begin{itemize}
 	\item Es que cada evento va pesado con los hexagonos del momento en que el evento fue registrado. El RA del cenit de Malargue en ese momento te dice cual es la correspondencia con el bin de los hexagonos que hay que usar. No se puede a ojo sumar o restar 2hs o lo que sea.
 	\item A lo mejor no te estoy entendiendo bien lo que decir de las 2hs que agregaste, pero no hay nada arbitrario en la frecuencia siderea, hay que poner todo consistentemente.
+\end{itemize}
+
+
+
+
+\section{Fecha: 14 de Julio de 2020 - Comentarios de Harari}
+
+\begin{itemize}
+\done pag 2: no diría $\theta_{max} < 60^o$, diría $\theta < 60^o$ (o $\theta_max=60^o$)
+\done p 2: la frase "la eficiencia completa se alcanza a partir de una energía mayor cercana a 1 EeV" me parece algo confusa, no queda claro si queres decir que la eficiencia completa es a energias mayores que 1 EeV u otra cosa, lo relevante seria destacar que el umbral de eficiencia completa es menor que con el disparo estandar  
+\item p 6: se justifica dar tantas cifras significativas en  h0 = 31.4971$^o$? 
+\done p. 6: "que estos los resultados "  (eliminar estos) 
+\done p 11: "no esta centrada 0 y aparenta tener una modulación del clima cuya una amplitud pequeña respecto al corrimiento con respecto al 0." (arreglar redacción) 
+\done ref 2: es tesis de maestria o doctorado? 
+\done en algunas refs Pierre Auger está en minusculas, unificar a  mayusculas
 \end{itemize}

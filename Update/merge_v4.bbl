@@ -11,11 +11,11 @@ Linsley, J., Scarsi, L., Rossi, B.
 Taborda, O.
 \newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
   cósmicos de alta energía detectados por el observatorio Pierre Auger}.
-\newblock Tesis de Maestría, Instituto Balseiro, 7 2018.
+\newblock Tesis Doctoral, Instituto Balseiro, 2018.
 
 \bibitem{pierre2013plans}
 {Pierre Auger Collaboration}.
-\newblock Plans for a proposal to upgrade the Pierre Auger Observatory.
+\newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
 \newblock Pierre Auger Collaboration, 2013.
 
 \bibitem{triggers_ref}
@@ -28,28 +28,28 @@ Justin M.~Albury, B. R.~D., Jose A.~Bellido.
 Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
   \emph{et~al.}
 \newblock Atmospheric effects on extensive air showers observed with the
-  surface detector of the pierre auger observatory.
+  surface detector of the {Pierre Auger Observatory}.
 \newblock \emph{Astroparticle Physics}, \textbf{32}~(2), 89--99, 2009.
 
 \bibitem{abreu2012description}
 Abreu, P., Aglietta, M., Ahlers, M., Ahn, E., Albuquerque, I. F. d.~M., Allard,
   D., \emph{et~al.}
-\newblock Description of atmospheric conditions at the pierre auger observatory
-  using the global data assimilation system {(GDAS)}.
+\newblock Description of atmospheric conditions at the {Pierre Auger
+  Observatory} using the global data assimilation system {(GDAS)}.
 \newblock \emph{Astroparticle Physics}, \textbf{35}~(9), 591--607, 2012.
 
 \bibitem{aab2017impact}
 Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
   I., \emph{et~al.}
 \newblock {Impact of atmospheric effects on the energy reconstruction of air
-  showers observed by the surface detectors of the Pierre Auger Observatory}.
+  showers observed by the surface detectors of the {Pierre Auger Observatory}}.
 \newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
 
 \bibitem{referencia_anis}
 Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
   I., \emph{et~al.}
 \newblock Observation of a large-scale anisotropy in the arrival directions of
-  cosmic rays above 8$\times$ 1018 ev.
+  cosmic rays above 8$\times 10^18$ ev.
 \newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
 
 \bibitem{farley1954sidereal}
@@ -62,7 +62,7 @@ Farley, F., Storey, J.
 Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
   I.~A.
 \newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
-  pierre auger observatory.
+  {Pierre Auger Observatory}.
 \newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
 \newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
 

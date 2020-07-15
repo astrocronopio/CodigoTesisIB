@@ -16,4 +16,10 @@
 \contentsline {subsection}{\numberline {3.1.1}Pesos de los eventos para frecuencias de referencia}{11}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis de anisotrop\IeC {\'\i }as en ascensi\IeC {\'o}n recta para el primer arm\IeC {\'o}nico}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Trabajo a futuro}{14}{subsection.3.2.1}
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{15}{section*.20}
+\contentsline {chapter}{\numberline {A}Cosas para hacer: Mails con Mollerach y correcciones}{15}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Fecha: 27/05/2020}{15}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Fecha: 28/05/2020}{15}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Fecha: 09/06/2020}{15}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Fecha 15-06-2020}{15}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Fecha: 14 de Julio de 2020 - Comentarios de Harari}{16}{section.Alph1.5}
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{17}{section*.22}
