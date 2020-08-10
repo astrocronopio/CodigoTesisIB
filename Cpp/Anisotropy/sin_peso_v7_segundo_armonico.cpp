@@ -130,6 +130,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 
      	myfile << freq 		<< rtilde1 << "\t" << rtilde2 << "\t";
      	myfile 				<< pha1 << "\t" << pha2 << "\t";
+     	std::cout<< (sigma/rtilde1)/d2r<<"err"<<(sigma/rtilde2)/d2r <<"\t";
      	myfile <<r99r<<std::endl;
      	
      	
@@ -168,13 +169,15 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
      	b2 = 2.*b2/sumaN;
 
      	pha1= atan(b1/a1);
-     	pha2 = 0.5*atan(b2/a2);
+     	pha2 = atan(b2/a2);
 
      	if (a1 < 0) pha1= pha1+pi;
      	if (a1>0 && b1< 0) pha1= pha1 +2.*pi;
 
      	if (a2 < 0) pha2= pha2+pi;
      	if (a2>0 && b2< 0) pha2 = pha2 +2.*pi;
+
+     	sigma = sqrt(2./sumaN);
 
      	rtilde1= sqrt(a1*a1 + b1*b1);
      	prtilde1 = exp(-sumaN*rtilde1*rtilde1/4.0);
@@ -186,7 +189,8 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 
      	std::cout << freq 		<< rtilde1 << "\t" << rtilde2 << "\t";
      	std::cout 		 		<< prtilde1 << "\t" << prtilde2 << "\t";
-     	std::cout 				<< pha1/d2r << "\t" << pha2/d2r << "\t";
+     	std::cout 				<< pha1/d2r << "\t" << 0.5*pha2/d2r << "\t";
+     	std::cout<< (sigma/rtilde1)/d2r<<"err"<<(sigma/rtilde2)/d2r <<"\t";
      	std::cout <<r99r<<std::endl;
      	
 	}
@@ -209,7 +213,7 @@ int main(int argc, char const *argv[])
 */
 	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
-	ray_given_freq(366.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
+	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
 	
 	
 	return 0;

@@ -96,9 +96,9 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
         
         \item Para el análisis en frecuencias, a partir del valor de $h_i$ se asigna el ángulo $\tilde{\alpha}_i$ definida en la Ec.\ref{ra_mod}. La implementación en el código es de la siguiente manera: 
         \begin{equation}
-         \tilde{\alpha}_i = 2\pi \frac{h_i}{24} + \alpha_i -\alpha^0_{i}
+         \tilde{\alpha}_i = 2\pi \frac{h_i}{360^o} + \alpha_i -\alpha^0_{i}
         \end{equation}
-        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha^0_{,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. Cabe resaltar que la información de la frecuencia que se está estudiando se encuentra en el valor de $h$. Si la frecuencia a estudiar fuera la sidérea, el término $2\pi \frac{h}{24} $ seguiría el cenit del observatorio, por lo que este término sería equivalente a $\alpha^0_{i}$, por lo tanto en esta frecuencia $ \tilde{\alpha}_i =\alpha_i$ como es de esperarse. 
+        donde $\alpha_i$  representa la ascensión recta del evento y $\alpha^0_{,i}$ la ascensión recta en el cenit del observatorio en el momento del evento. Cabe resaltar que la información de la frecuencia que se está estudiando se encuentra en el valor de $h$. Si la frecuencia a estudiar fuera la sidérea, el término $2\pi \frac{h}{360^o} $ seguiría el cenit del observatorio, por lo que este término sería equivalente a $\alpha^0_{i}$, por lo tanto en esta frecuencia $ \tilde{\alpha}_i =\alpha_i$ como es de esperarse. 
         
         \item Para calcular los coeficientes de Fourier del k-ésimo armónico $a_k$ y $b_k$, se siguen los siguiente pasos:
         \begin{enumerate}
