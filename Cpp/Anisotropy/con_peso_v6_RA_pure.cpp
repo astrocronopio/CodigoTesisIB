@@ -132,7 +132,7 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 	myfile.close();
 }
 
-float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
+void ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
@@ -157,7 +157,10 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
      	if (a < 0) pha= pha+pi;
      	if (a>0 && b< 0) pha = pha +2.*pi;
 
+     	
+
      	rtilde= sqrt(a*a + b*b);
+     	std::cout<<rtilde<<std::endl;
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
      	sgmra = sigma/rtilde;
@@ -168,7 +171,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 	}
 }
 
-float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
+void ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
@@ -214,7 +217,7 @@ float ray_given_freq( float freq, const char* in_file, const char* out_file, uns
 int main(int argc, char const *argv[])
 {	// true		== short range,  
 	// false	== long range (only for ICRCs)
-/*	
+	
 	const char* in_file = argv[1];
 	const char* out_file= argv[2];
 	char * pEnd;
@@ -222,12 +225,12 @@ int main(int argc, char const *argv[])
 	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	ray_multifreq(400,  in_file, out_file, utci, utcf);
-*/
-	unsigned long utci =  rango2013;
+	ray_multifreq(100,  in_file, out_file, utci, utcf);
+
+/*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
-	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
-	
+	ray_given_freq(360, "../../Cpp/Energy_Reconstruction/test", "auxiliar_anti.txt", utci, utcf);
+	*/
 	
 	return 0;
 }

@@ -150,7 +150,7 @@ int main(int argc, char** argv)
 /////////////////////////////////////////////////////
 	
 	for(int i = 0;i < nbin; i++)
-	{	if (dataBin1hr->binHex6[i]>690)
+	{	//if (dataBin1hr->binHex6[i]>690)
 		{
 			outfile << dataBin1hr->utcBinCenter[i] << "\t" << dataBin1hr->nevents[i] << "\t" << dataBin1hr->binPres[i] << "\t" << dataBin1hr->binDen[i] << "\t" << dataBin1hr->binADen[i] << "\t" << dataBin1hr->binHex6[i] << endl;
 		}

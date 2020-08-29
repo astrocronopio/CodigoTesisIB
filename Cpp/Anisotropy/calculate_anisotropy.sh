@@ -29,7 +29,7 @@ file_4_8="../../../Herald/Central/2019/Main_Array_4_8_EeV_2019.dat"
 #file_8="../../../Herald/Central/2019/Main_Array_8EeV_2019.dat"
 file_8="../../Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
 
-./sin_peso_v5 "$file_8"  xx2019_Main_Array_8_EeV_04_17.dat			"$(($rango2004))" "$(($rango2017))"  
+#./sin_peso_v5 "$file_8"  xx2019_Main_Array_8_EeV_04_17.dat			"$(($rango2004))" "$(($rango2017))"  
 #./con_peso_v3 "$file_8"  xx2019_Main_Array_8_EeV_peso.dat			"$(($rango2013))" "$(($rango2019))"  
 
 #######################################################3
@@ -51,3 +51,5 @@ file_8="../../../Herald/Central/2019/Main_Array_8EeV_2019.dat"
 
 #######################################################3
 # Para comparar con los resultados de Oscar
+
+

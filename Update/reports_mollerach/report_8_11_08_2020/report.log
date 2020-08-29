@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.11)  11 AUG 2020 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.11)  29 AUG 2020 08:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,33 +647,149 @@ Class revtex4-1 Info: Line numbering not turned on yet on input line 3.
 \openout3 = `reportNotes.bib'.
 
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 3.
- (./vacaciones.tex)
+ (./vacaciones.tex
+<figura_harari.png, id=21, 867.24pt x 578.16pt>
+File: figura_harari.png Graphic file (type png)
+<use figura_harari.png>
+Package pdftex.def Info: figura_harari.png  used on input line 17.
+(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+<figura_rate_durante_6_anhos.png, id=24, 903.375pt x 489.32813pt>
+File: figura_rate_durante_6_anhos.png Graphic file (type png)
+<use figura_rate_durante_6_anhos.png>
+Package pdftex.def Info: figura_rate_durante_6_anhos.png  used on input line 51
+.
+(pdftex.def)             Requested size: 255.0pt x 138.12344pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+<figura_tasa_por_hora_del_dia.png, id=26, 903.375pt x 564.60938pt>
+File: figura_tasa_por_hora_del_dia.png Graphic file (type png)
+<use figura_tasa_por_hora_del_dia.png>
+Package pdftex.def Info: figura_tasa_por_hora_del_dia.png  used on input line 5
+9.
+(pdftex.def)             Requested size: 229.49844pt x 143.43503pt.
+
+Underfull \hbox (badness 1342) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/10 (+20) Fig. 3: |Ta-sa de even-tos por ho-ra por en-ci-ma de
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figura_harari.png> <./
+figura_rate_durante_6_anhos.png (PNG copy)>]
+<figura_a_p.png, id=55, 903.375pt x 564.60938pt>
+File: figura_a_p.png Graphic file (type png)
+<use figura_a_p.png>
+Package pdftex.def Info: figura_a_p.png  used on input line 69.
+(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
+<figura_a_rho.png, id=56, 903.375pt x 564.60938pt>
+File: figura_a_rho.png Graphic file (type png)
+<use figura_a_rho.png>
+Package pdftex.def Info: figura_a_rho.png  used on input line 77.
+(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 77--78
+ [][] 
+ []
+
+<figura_b_rho.png, id=57, 903.375pt x 564.60938pt>
+File: figura_b_rho.png Graphic file (type png)
+<use figura_b_rho.png>
+Package pdftex.def Info: figura_b_rho.png  used on input line 84.
+(pdftex.def)             Requested size: 255.0pt x 159.37321pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+</home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Update/6_Dipole_1-2_EeV/peso
+s_sin_con_1_2_EeV.png, id=60, 939.51pt x 578.16pt>
+File: /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Update/6_Dipole_1-2_EeV
+/pesos_sin_con_1_2_EeV.png Graphic file (type png)
+<use /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Update/6_Dipole_1-2_EeV/
+pesos_sin_con_1_2_EeV.png>
+Package pdftex.def Info: /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Upda
+te/6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png  used on input line 126.
+(pdftex.def)             Requested size: 255.0pt x 156.9169pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 126--127
+ [][] 
+ []
+
+<sucio.pdf, id=61, 1204.5pt x 803.0pt>
+File: sucio.pdf Graphic file (type pdf)
+<use sucio.pdf>
+Package pdftex.def Info: sucio.pdf  used on input line 132.
+(pdftex.def)             Requested size: 255.0pt x 169.99503pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 132--133
+ [][] 
+ []
+
+) [2 <./figura_tasa_por_hora_del_dia.png (PNG copy)> <./figura_a_p.png (PNG cop
+y)> <./figura_a_rho.png (PNG copy)> <./figura_b_rho.png (PNG copy)>]
 No file report.bbl.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[3 </home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Update/6_Dipole_1-2_EeV/p
+esos_sin_con_1_2_EeV.png> <./sucio.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 7E4DED116A35C73DCB5E189A01D72645;104.
+(rerunfilecheck)             Checksum: 26097F5200E2BD2F9BC49CA7EE1C9EFA;297.
  ) 
 Here is how much of TeX's memory you used:
- 13678 strings out of 483048
- 215250 string characters out of 5962772
- 626401 words of memory out of 5000000
- 28477 multiletter control sequences out of 15000+600000
- 534667 words of font info for 39 fonts, out of 8000000 for 9000
+ 13938 strings out of 483048
+ 219883 string characters out of 5962772
+ 634990 words of memory out of 5000000
+ 28637 multiletter control sequences out of 15000+600000
+ 544537 words of font info for 88 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 53i,4n,50p,262b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,50p,635b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (1 page, 61251 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (3 pages, 768071 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 10761 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 14921 words of extra memory for PDF output out of 17280 (max. 10000000)
 
