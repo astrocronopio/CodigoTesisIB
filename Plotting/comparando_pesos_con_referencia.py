@@ -18,7 +18,7 @@ title="paper 2018 N=288"
 #plt.title("Enero 2004 - Enero 2017")
 
 plt.xlim(0,360)
-plt.ylabel( "$\\Delta N_{cell}$" )
+plt.ylabel("w" )#"$\\Delta N_{cell}$" )
 plt.xlabel( u"Ascensión Recta [$^o$]")
 
 # plot "../../Hexagons/hexagons_2018/dnhex_sidereal_288.dat" 		u ($0*360/288):1 w lp lc rgb "red" tit "Sid"
@@ -33,14 +33,14 @@ pesos_sol = np.loadtxt("../Cpp/Exposure/solar_2020_sol.txt" , unpack=True, useco
 
 angle = 360*np.arange(len(pesos_sol))/288
 
-plt.plot(angle, pesos_ant, color="blue", label=u"Anti-sidérea")
-plt.plot(angle, pesos_sol, color="red", label="Solar")
-plt.plot(angle, pesos_sid, color="black", label=u"Sidérea")
+#plt.plot(angle, pesos_ant, color="blue", label=u"Anti-sidérea")
+plt.plot(angle, 1.0/pesos_sol, color="red", label="Solar")
+#plt.plot(angle, pesos_sid, color="black", label=u"Sidérea")
 
 
-plt.scatter(angle, pesos_ant, s=20, marker='s' , color="blue")
-plt.scatter(angle, pesos_sol, s=20, marker='o' , color="red")
-plt.scatter(angle, pesos_sid, s=20, marker='*' , color="black")
+#plt.scatter(angle, pesos_ant, s=20, marker='s' , color="blue")
+plt.scatter(angle, 1.0/pesos_sol, s=20, marker='o' , color="red")
+#plt.scatter(angle, pesos_sid, s=20, marker='*' , color="black")
 
 
 plt.legend(loc=0)
@@ -50,6 +50,6 @@ sns.set_style("ticks",{'font.size': 24,  'font.family': 'sans-serif'})
 
 
 
-plt.savefig("../Update/6_Dipole_1-2_EeV/weights_2013_2020.png")
+#plt.savefig("../Update/6_Dipole_1-2_EeV/weights_2013_2020.png")
 plt.show()
 

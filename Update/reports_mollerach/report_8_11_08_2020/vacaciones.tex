@@ -53,7 +53,7 @@ Para tener una idea si el modelo se ajusta a  lo observado experimentalmente, se
 	\label{fig:tasa}
 \end{figure}
 
-Si hacemos un promedio de la tasa por cada hora durante los años 2014 al 2019, se obtiene la figura \ref{fig:hora}. Con respecto al disparo estándar se obtiene un curva de ajuste menos suave por la menor cantidad de años de eventos (por lo menos eso es lo que se me ocurre)
+Si hacemos un promedio de la tasa por cada hora durante los años 2014 al 2019, se obtiene la figura \ref{fig:hora}. Con respecto al disparo estándar se obtiene un curva de ajuste menos suave por la menor cantidad de años de eventos (por lo menos eso es lo que se me ocurre). Podemos comparar esta figura con la variación de los hexágonos en la frecuencia solar de la Fig.\,\ref{fig:pesos_solar}. A la $0$\,hrs GMT, el observatorio tiene su cenit a $\sim 30^o$, usando esto como referencia,  se observa que los máximos de estas dos figuras están a la misma hora aproximadamente. Esto se debe a que la mayor cantidad de eventos durante  las $16 - 20$ hrs GMT coincide con la mayor cantidad de tanques activos.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.45\textwidth]{figura_tasa_por_hora_del_dia.png}
@@ -61,8 +61,21 @@ Si hacemos un promedio de la tasa por cada hora durante los años 2014 al 2019, 
 	\label{fig:hora}
 \end{figure}
 
-Para los parámetros del clima en función del ángulo sólido, los ajustes obtenidos se presentan en las figs\ref{fig:ap}, \ref{fig:arho} y \ref{fig:brho}. Se comparan con los valores de la corrección del clima sobre el arreglo principal con el disparo estándar.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figura_hexagonos_solar.pdf}
+	\caption{Hexágonos en la frecuencia  solar}
+	\label{fig:pesos_solar}
+\end{figure}
 
+Para  calcular los parámetros del clima en función del ángulo sólido, se clasifican los eventos en 5 segmentos de $\sin^2\theta$, la Fig.\,\ref{fig:angulo} se muestra la distribución de los eventos, normalizados por la media, por encima de $1$ Eev y $3$ EeV. En el mismo se observa que existen menos eventos verticales que la media. Los ajustes  obtenidos para los parámetros del clima se presentan en las figs\ref{fig:ap}, \ref{fig:arho} y \ref{fig:brho}. Se comparan con los valores de la corrección del clima sobre el arreglo principal con el disparo estándar.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figura_bines_1_3_EeV.pdf}
+	\caption{Eventos por segmento de ángulo sólido}
+	\label{fig:angulo}
+\end{figure}
 
 \begin{figure}[H]
 	\centering

@@ -42,9 +42,9 @@ float energy( float S38)
 float c17 = -0.008;//-0.00797134;
 float c27 = 0.0;//0.00302032 ;*/
 
-float c07             = -0.0057;//7
-float c17             = 0.02379;//5
-float c27             = -0.0320;//8
+float c07             = 0.00202321 ;//-0.0057;//7
+float c17             = -0.0259429 ;//0.02379;//5
+float c27             = 0.0250794  ;//-0.0320;//8
 
 
 float ap(float the2)
@@ -58,9 +58,9 @@ float c15 = 0.0;//-0.0982754 ;
 float c25 = 3.3421     ;*/
 
 
-float c05             = 0.901;//        +/- 0.04811      (5.34%)
-float c15             = -1.59;//        +/- 0.3099       (19.37%)
-float c25             = -0.00;//        +/- 0.4117       (405.2%)
+float c05    = -2.68864;//        = 0.901;//        +/- 0.04811      (5.34%)
+float c15    = 1.45524 ;//        = -1.59;//        +/- 0.3099       (19.37%)
+float c25    = 2.09524 ;//        = -0.00;//        +/- 0.4117       (405.2%)
 
 float arho(float the2)
 {
@@ -72,9 +72,9 @@ float arho(float the2)
 float c16 = 0.0;//-0.0774352;
 float c26 = 1.16;//1.15814   ;*/
 
-float c06             = 0.45;//5417 ;
-float c16             = -1.2;//3877 ;
-float c26             = 0.0;//1208 ;
+float c06               = -0.971161 ;//         = 0.45;//5417 ;
+float c16               = 1.12381   ;//         = -1.2;//3877 ;
+float c26               = 0.0793651 ;//         = 0.0;//1208 ;
 
 
 float brho(float the2)
@@ -90,7 +90,7 @@ float energy_reconstruction(float S38_sin_w, float p, float rho, float rhod, flo
 	//Bien, se debe dividir porque  a =  Bgamma * alpha, y los parametros son de ap
 	float factor =1+ (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma; 
 	cout << factor << endl;
-	float S38 = S38_sin_w/factor;   // S = S_0 * factor, pero S_0 es para calcular la energia
+	float S38 = S38_sin_w*factor;   // S = S_0 * factor, pero S_0 es para calcular la energia
 
 	return energy(S38);
 }

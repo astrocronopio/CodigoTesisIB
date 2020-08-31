@@ -32,9 +32,8 @@ int interval = 288;
 	
 	exposure_given_period(T_A, out_file_a_2, utci, utcf, interval);
 
-	return 0;
-}
-*/
+	return 0;}*/
+
 /*int version_V2()
 {
 	unsigned long utci =  rango2004;
@@ -49,10 +48,7 @@ int interval = 288;
 	utcf =  rango2020;
 	exposure_given_period(T_S, "solar_2020.txt", utci, utcf, interval);
 
-	return 0;
-
-}*/
-
+	return 0;}*/
 
 
 int version_v3()

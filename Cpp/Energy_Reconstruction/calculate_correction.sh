@@ -13,5 +13,5 @@ file_1_2="../../../AllTriggers/Energy_Reconstruction/2019/AllTriggers_S38_over_1
 
 #../Anisotropy/sin_peso_v3 "$file_1_2"  corr_2019_AllTriggers_1_2_EeV.dat  				"$(($rango2013))" "$(($rango2020))"  
 #../Anisotropy/con_peso_v3 "$file_1_2"  test.dat		"$(($rango2013))" "$(($rango2020))"  
-./merged_v3_energy_reconst  "$file_1_2" test_4
+./merged_v3_energy_reconst  "$file_1_2" test_5
  
