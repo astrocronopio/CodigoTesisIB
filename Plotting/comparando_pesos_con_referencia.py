@@ -17,9 +17,13 @@ mpl.rcParams.update({
 title="paper 2018 N=288"
 #plt.title("Enero 2004 - Enero 2017")
 
-plt.xlim(0,360)
-plt.ylabel("w" )#"$\\Delta N_{cell}$" )
-plt.xlabel( u"Ascensión Recta [$^o$]")
+#plt.xlim(0,360)
+plt.xlim(0,24)
+#plt.ylabel("w" )
+plt.xticks(np.arange(0, 25, 3))
+plt.ylabel("$\\Delta N_{cell}$" )
+plt.xlabel("Hora  GMT")
+#plt.xlabel( u"Ascensión Recta [$^o$]")
 
 # plot "../../Hexagons/hexagons_2018/dnhex_sidereal_288.dat" 		u ($0*360/288):1 w lp lc rgb "red" tit "Sid"
 # replot "../../Hexagons/hexagons_2018/dnhex_antisiderea_288.dat" u ($0*360/288):1 w lp lc rgb "blue" tit "Anti"
@@ -31,15 +35,15 @@ pesos_ant = np.loadtxt("../Cpp/Exposure/antisiderea_2020_sol.txt", unpack=True, 
 pesos_sol = np.loadtxt("../Cpp/Exposure/solar_2020_sol.txt" , unpack=True, usecols=(0)) #		u ($0*360/288):1 w lp lc rgb "black" tit "Solar"
 
 
-angle = 360*np.arange(len(pesos_sol))/288
+angle = 24*np.arange(len(pesos_sol))/288 
 
 #plt.plot(angle, pesos_ant, color="blue", label=u"Anti-sidérea")
-plt.plot(angle, 1.0/pesos_sol, color="red", label="Solar")
+plt.plot(angle, pesos_sol, color="red", label="Solar")
 #plt.plot(angle, pesos_sid, color="black", label=u"Sidérea")
 
 
 #plt.scatter(angle, pesos_ant, s=20, marker='s' , color="blue")
-plt.scatter(angle, 1.0/pesos_sol, s=20, marker='o' , color="red")
+plt.scatter(angle, pesos_sol, s=20, marker='o' , color="red")
 #plt.scatter(angle, pesos_sid, s=20, marker='*' , color="black")
 
 

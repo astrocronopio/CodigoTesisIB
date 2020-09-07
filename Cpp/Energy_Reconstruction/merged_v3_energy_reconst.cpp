@@ -127,7 +127,7 @@ int main(int argc, char** argv)
 					//Importante fijarse si S38 esta corregida  o no
 					energy_corr = energy_reconstruction( S38,  p,  rho, rhod, the) ;
 					
-					if (energy_corr>2.0 || energy_corr <1.0) break;
+					if (energy_corr> 2.0 || energy_corr <1.0) break;
 
 					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t";
 					outfile << S1000<<"\t" << S38 << "\t" <<energy_corr <<"\t"<< tanks << "\t" << S1000_raw << "\n" ;

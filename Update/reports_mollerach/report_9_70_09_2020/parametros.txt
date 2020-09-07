@@ -1,0 +1,132 @@
+gnuplot> l "plot_weather_params_AllTriggers.gp"       
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.0268222
+rel. change during last iteration : -1.66833e-10
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.115806
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0134111
+p-value of the Chisq distribution (FIT_P)              : 0.986678
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = 0.00202321       +/- 0.0001179    (5.827%)
+c1              = -0.0259429       +/- 0.0007421    (2.861%)
+c2              = 0.0250794        +/- 0.0009629    (3.839%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+         
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 4.17939
+rel. change during last iteration : -1.70011e-15
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.44558
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.08969
+p-value of the Chisq distribution (FIT_P)              : 0.123725
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c07             = -0.00244139      +/- 0.001221     (50.03%)
+c17             = -0.00797134      +/- 0.007816     (98.05%)
+c27             = 0.00302032       +/- 0.01032      (341.8%)
+
+correlation matrix of the fit parameters:
+                c07    c17    c27    
+c07             1.000 
+c17            -0.884  1.000 
+c27             0.778 -0.972  1.000 
+         
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00457143
+rel. change during last iteration : -9.8079e-11
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0478091
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00228571
+p-value of the Chisq distribution (FIT_P)              : 0.997717
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -2.68864         +/- 0.006953     (0.2586%)
+c1              = 1.45524          +/- 0.04377      (3.008%)
+c2              = 2.09524          +/- 0.05679      (2.71%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+      
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1.15596
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.76025
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.577981
+p-value of the Chisq distribution (FIT_P)              : 0.56103
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c05             = -2.11829         +/- 0.09283      (4.382%)
+c15             = -0.0982754       +/- 0.5946       (605%)
+c25             = 3.3421           +/- 0.7858       (23.51%)
+
+correlation matrix of the fit parameters:
+                c05    c15    c25    
+c05             1.000 
+c15            -0.884  1.000 
+c25             0.778 -0.972  1.000 
+      
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.00317
+rel. change during last iteration : -2.35331e-12
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.708228
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.501587
+p-value of the Chisq distribution (FIT_P)              : 0.605569
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c0              = -0.971161        +/- 0.07725      (7.955%)
+c1              = 1.12381          +/- 0.4863       (43.27%)
+c2              = 0.0793651        +/- 0.6309       (795%)
+
+correlation matrix of the fit parameters:
+                c0     c1     c2     
+c0              1.000 
+c1             -0.885  1.000 
+c2              0.781 -0.973  1.000 
+     
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.576893
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.537072
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.288446
+p-value of the Chisq distribution (FIT_P)              : 0.749427
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c06             = -0.734659        +/- 0.06777      (9.225%)
+c16             = -0.0774352       +/- 0.435        (561.8%)
+c26             = 1.15814          +/- 0.5757       (49.71%)
+
+correlation matrix of the fit parameters:
+                c06    c16    c26    
+c06             1.000 
+c16            -0.884  1.000 
+c26             0.778 -0.972  1.000 
