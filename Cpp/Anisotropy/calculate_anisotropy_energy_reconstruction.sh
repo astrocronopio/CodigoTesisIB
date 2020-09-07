@@ -8,6 +8,6 @@ rango2017=1472688000
 rango2019=1546344000
 rango2020=1577880000
 
-file_1_2="../Energy_Reconstruction/test_5"
+file_1_2="../Energy_Reconstruction/test_6"
 
-./con_peso_v6_RA_pure  "$file_1_2"    test_rayleigh_5	 "$(($rango2013))" "$(($rango2020))"  
+./con_peso_v6_RA_pure  "$file_1_2"    test_rayleigh_6	 "$(($rango2013))" "$(($rango2020))"  

@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------------------------------------------
 filepath="/home/ponci/Desktop/TesisIB/Coronel/Weather/"
 
-file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat" 
+file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_05032020.dat" 
 	   delay="$filepath""utctprh_delay.dat" 		#Weather Data
 file_utctprh_bins="$filepath""utctprh_bins.dat" 	#Weather Data in bins of a hour
 file_utctprh_bins_day="$filepath""utctprh_bins_by_day.dat" 
@@ -51,8 +51,8 @@ file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two
 					pre[i]=$3/1.0;
 					rho[i]=$4/1.0;
 					rho24[i]=$5/1.0;
-					hex6[i]=$6/5.0;
-					hex5[i]=$7/5.0;
+					hex6[i]=$6;
+					hex5[i]=$7;
 					rhod[i]=$8/1.0;
 					iw[i]=$9/1.0;
 					rhodelay[i]=$10/1.0;

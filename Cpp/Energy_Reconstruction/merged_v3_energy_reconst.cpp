@@ -14,7 +14,8 @@
 ################################################
 */
 
-
+/* No necesita el merged con el clima porque lee la informacion del
+archivo de clima */
 
 /// Program to assign the weather info for each event from the Herald Archive
 ///
@@ -88,7 +89,7 @@ float energy_reconstruction(float S38_sin_w, float p, float rho, float rhod, flo
 {	float the2= sin(the*M_PI/180.)*(the*M_PI/180.);
 	
 	//Bien, se debe dividir porque  a =  Bgamma * alpha, y los parametros son de ap
-	float factor =1+ (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma; 
+	float factor =1 - (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma; 
 	cout << factor << endl;
 	float S38 = S38_sin_w*factor;   // S = S_0 * factor, pero S_0 es para calcular la energia
 
