@@ -160,7 +160,7 @@ int main(int argc, char** argv)
 ///======= Performs a Maximum Likelihood fit of event rate using the MLfit class ================//
 ///
 	//					Inicio Fin			
-	RunFit(*dataBin1hr,utcmin,utcmax,nbin);	
+	RunFit(*dataBin1hr,utcmin,utcmax,nbin);	///1451347200 1438387500 1420070400 1370044800 1388534400
 
 	TypeFitPars fitp = GetFitPars();
 	cout << "--------------------------------------------------------------" << endl;
@@ -179,6 +179,7 @@ int main(int argc, char** argv)
 /////////////////////////////////////////////////////////////////////
 		double sect = (ll+hl)/2;
 		double pf = 1.023*(3.29-1);
+		//file << sect << "\t" << fitp.alphaP << "\t" << fitp.alphaP_err << "\t" << fitp.alphaRho << "\t" << fitp.alphaRho_err<< "\t" << fitp.betaRho << "\t" << fitp.betaRho_err << endl;
 		file << sect << "\t" << fitp.alphaP*pf << "\t" << fitp.alphaP_err*pf << "\t" << fitp.alphaRho*pf << "\t" << fitp.alphaRho_err*pf<< "\t" << fitp.betaRho*pf << "\t" << fitp.betaRho_err*pf <<"\t"<<  fitp.redChi2  << endl;
 		return 0;
 	}

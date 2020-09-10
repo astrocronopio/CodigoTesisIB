@@ -1,54 +1,55 @@
-/*=======================================================================================================
+/*===========================================================
 				v7 changes:
-				Le quite el damping porque no se usa
-==========================================================================================================*/
+				Simplifying the code
+=============================================================*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <iostream>
+
 
 #include "TMinuit.h"
 
-#include "Bindatav1.h"
-#include "MLFitv6.h"
+#include "Bindata_v2.h"
+#include "MLFitv7.h"
 
-
-double logfact(int N){
+double logfact(int N)
+{
 	double logf = 0.0;
 	if(N > 1)
 			for (int i = 2; i <= N; i++) logf += log((double) i);
 	return logf;
 }
-//______________________________________________________________________________
-/// input function for minuit 
 
+/// input function for minuit 
 void fcn(int &npar, double *gin, double &f, double *par, int iflag)
 {
-/// calculate log Likelihood
-	int j;
+	/// calculate log Likelihood
+
 	double flogL = 0.;
    	int isumn = 0;
    	double sumhex = 0.;
-   	double ti,t0,tf,C,R0,mu;
+   	double C,R0,mu;
 
-///	calculate R0: average rate we would have observed if the atmospheric 
-///	parameters were always the reference ones
+	///	calculate R0: average rate we would have observed if the atmospheric 
+	///	parameters were always the reference ones
 
-	for (j = 0; j < fnbins; j++) 
+	for (int j = 0; j < fnbins; j++) 
 	{		
 		if(fbinData.utcBinCenter[j] > futcmax || // outside time range
 		   fbinData.utcBinCenter[j] < futcmin || // outside time range
-		   fbinData.binHex6[j] < 140) continue;  // minimum value of hexagons considered
+		   fbinData.binHex6[j] < 515) continue;  // minimum value of hexagons considered for   the MAIN ARRAY
 
 		isumn += fbinData.nevents[j];
-		sumhex += fbinData.binHex6[j]*C;
+		sumhex += fbinData.binHex6[j];
 	}
 		R0 = isumn/sumhex; // Average Rate of events
 
-	for (j = 0; j < fnbins; j++) 
+	for (int j = 0; j < fnbins; j++) 
 	{
 		if( fbinData.utcBinCenter[j] > futcmax || // outside time range
 			fbinData.utcBinCenter[j] < futcmin || // outside time range
-			fbinData.binHex6[j] < 140) continue;  // minimum value of hexagons considered
+			fbinData.binHex6[j] < 515) continue;  // minimum value of hexagons considered
 
 		C=  1.	+par[0]*(fbinData.binPres[j]-kP0) 				 //Pressure
 				+par[1]*(fbinData.binADen[j]-krho0) 			 //Density
@@ -59,13 +60,13 @@ void fcn(int &npar, double *gin, double &f, double *par, int iflag)
 		flogL -= 2*(fbinData.nevents[j]*log(mu)-mu-logfact(fbinData.nevents[j]));
    	}
    
-   f = flogL;
+   f = flogL; // ROOT Maximum Likehood 
 }
 
 //______________________________________________________________________________
 void fcn2(double *par,double *pchi2,int *pndof, TypeBinData *fitData)
 {
-/// calculate log Likelihood
+	/// calculate log Likelihood
 	int j;
 	double flogL = 0.;
 	int    isumn = 0 ;
@@ -73,25 +74,27 @@ void fcn2(double *par,double *pchi2,int *pndof, TypeBinData *fitData)
 	double C,R0,mu,chi2=0.0;
 	int ndof=0;
 
-///	calculate R0: average rate we would have observed if the atmospheric 
-///	parameters were always the reference ones
+	///	calculate R0: average rate we would have observed if the atmospheric 
+	///	parameters were always the reference ones
 	for (j = 0; j < fnbins; j++) 
 	{	
 		if(fbinData.utcBinCenter[j] > futcmax 
 		|| fbinData.utcBinCenter[j] < futcmin 
-		|| fbinData.binHex6[j] < 140) continue;
+		|| fbinData.binHex6[j] < 515) continue;
+
 
 		isumn  += fbinData.nevents[j];
-		sumhex += fbinData.binHex6[j]*C;
+
+		sumhex += fbinData.binHex6[j];
 	}
 	
-	R0 = isumn/sumhex;
+	R0 = isumn/sumhex; //Rate
 	
 	for (j = 0; j < fnbins; j++) 
 	{
 		if(fbinData.utcBinCenter[j] > futcmax 
 		|| fbinData.utcBinCenter[j] < futcmin 
-		|| fbinData.binHex6[j] < 140) continue;
+		|| fbinData.binHex6[j] < 515) continue;
 
 		C=1.+par[0]*(fbinData.binPres[j]-kP0)
 			+par[1]*(fbinData.binADen[j]-krho0)
@@ -132,9 +135,9 @@ void RunFit(TypeBinData binData,int utcmin,int utcmax,int nbins)
 	arglist[0] = 1;
 	gMinuit->mnexcm("SET ERR", arglist ,1,ierflg);
 	
-/// Set starting values and step sizes for parameters
+	/// Set starting values and step sizes for parameters
 	static double vstart[4] = {0.0 , 0.0 , 0.0 , 0.0};
-	static double step[4]   = {0.1 , 0.1 , 0.1 , 0.01};
+	static double step[4]   = {0.01 , 0.01 , 0.01 , 0.01};
 
 	gMinuit->mnparm(0, "aP", 	vstart[0], step[0], 0,0,ierflg);
 	gMinuit->mnparm(1, "arho", 	vstart[1], step[1], 0,0,ierflg);
@@ -161,7 +164,7 @@ void RunFit(TypeBinData binData,int utcmin,int utcmax,int nbins)
 	arglist[1] = 1.;
 	gMinuit->mnexcm("HESSE", arglist ,2,ierflg);
 	
-/// Get parameter results
+	/// Get parameter results
 	double bnd1,bnd2,chi2,fval;
 	int ivar;
 	char* pname;
@@ -184,14 +187,14 @@ TypeFitPars GetFitPars()
 	
 	double pf = kB*(kgamma-1.);
 
-	fitPars.alphaP 		= fpars[0]/pf;
-	fitPars.alphaP_err 	= ferrors[0]/pf;
+	fitPars.alphaP 		= fpars[0];
+	fitPars.alphaP_err 	= ferrors[0];
 	
-	fitPars.alphaRho 	= fpars[1]/pf;
-	fitPars.alphaRho_err= ferrors[1]/pf;
+	fitPars.alphaRho 	= fpars[1];
+	fitPars.alphaRho_err= ferrors[1];
 	
-	fitPars.betaRho 	= fpars[2]/pf;
-	fitPars.betaRho_err = ferrors[2]/pf;
+	fitPars.betaRho 	= fpars[2];
+	fitPars.betaRho_err = ferrors[2];
 	
 	fitPars.lambda 		= fpars[3];
 	fitPars.lambda_err 	= ferrors[3];
@@ -202,7 +205,8 @@ TypeFitPars GetFitPars()
 	return fitPars;
 }
 
-void GetExpev(TypeBinData *fitData){
+void GetExpev(TypeBinData *fitData)
+{
 	double chi2;
 	int dof;
 	fcn2(fpars,&chi2,&dof,fitData);
