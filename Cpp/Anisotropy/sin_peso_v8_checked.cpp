@@ -12,11 +12,9 @@ double Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 double right_ascension(long long utc)
 {	
 	long long iutcref = 1104537600;
-	double aux= (utc-iutcref);
+	double raz = (double)(utc-iutcref)/239.345 + 31.4971;
 
-	double raz = aux/239.345 + 31.4971;
-
-	raz = raz - int(raz/360.)*360.00;
+	raz = raz - int(raz/360.)*360.0;
 	if(raz<0.0) raz = raz + 360.00;
 	return raz;
 }
@@ -45,13 +43,13 @@ void rayleigh( double *a , double *b, double *sumaN, double freq,
 			
 			//liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
 			
-			liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
 			
-			energy=Eraw;
-			if (energy<8.) continue;
+			// energy=Eraw;
+			// if (energy<8.) continue;
 			
 			if(utcf < utc) break;
-			if(utc  < utci || Theta > 60) continue;
+			if(utc  < utci || Theta > 80) continue;
 
 			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
 			peso =1.0;		
@@ -155,8 +153,8 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
-	long long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
-	long long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	long long utci = strtoul(argv[3], &pEnd, 0);  //1072915200;
+	long long utcf =  strtoul(argv[4], &pEnd, 0); //1496275200;
 	
 	ray_multifreq(500,  in_file, out_file, utci, utcf);
 

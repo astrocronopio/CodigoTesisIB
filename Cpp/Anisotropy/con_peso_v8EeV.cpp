@@ -97,8 +97,8 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 
 	std::ifstream myfile (in_file);
 
-	//std::vector<long double> dnhex(interval);
-	//exposure_weight(dnhex, utci, utcf, *freq);
+	std::vector<long double> dnhex(interval);
+	exposure_weight(dnhex, utci, utcf, *freq);
 
 	float AugId, ds1000, Ecor, Eraw;
 
@@ -108,22 +108,22 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 			getline(myfile,line);			
 			std::stringstream liness(line);			
 			
-			//liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
+			liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
 			
 		//For PC data
-			liness>> AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			//liness>> AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
 
-			energy=Eraw;
+			//energy=Eraw;
 
 			if(utcf < utc) break;
-			if(utc < utci || Theta > 80) continue;
-			if (energy < energy_threshold) continue;
+			if(utc < utci || Theta > 60) continue;
+			//if (energy < energy_threshold) continue;
 
 			hrs =((double)(utc-utc0)/3600.+31.4971*24/360)*fas ;
 
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 
-			peso= 1.0;///dnhex[nh];		
+			peso= 1.0/dnhex[nh];		
 			
 			*sumaN+=peso;
 			raz = right_ascension(utc);
@@ -235,7 +235,7 @@ int main(int argc, char const *argv[])
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 
 	std::cout<<"Eth: "<<energy_threshold<<std::endl;
-	ray_multifreq(500,  in_file, out_file, utci, utcf);
+	ray_multifreq(100,  in_file, out_file, utci, utcf);
 
 	/*	
 	unsigned long utci =  rango2013;

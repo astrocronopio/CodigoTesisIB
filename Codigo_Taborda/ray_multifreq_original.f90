@@ -19,14 +19,16 @@ PROGRAM ray_multifreq
   INTEGER,PARAMETER :: nf = 500
   REAL(pr) :: freq,a,b,sumaN,rtilde,pha,prtilde,r99r
   
-  open(unit=3,file='ray_multfrq_4-8_04-0816_Eraw.dat')
-
+  !open(unit=3,file='ray_multfrq_4-8_04-0816_Eraw.dat')
+  open(unit=3,file='ray_multfrq_test.dat')
   utci = 1072915200
   utcf = 1472688000!1496275200
 
   DO i=1,nf     
      freq = 363.25 + i*4._pr/nf !366.25
+
      call rayleigh(utci,utcf,freq,a,b,sumaN)
+     
      a = 2.*a/sumaN
      b = 2.*b/sumaN
      pha = atan(b/a)
