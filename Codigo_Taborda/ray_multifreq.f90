@@ -20,6 +20,7 @@ PROGRAM ray_multifreq
   REAL(pr) :: freq,a,b,sumaN,rtilde,pha,prtilde,r99r
   
   !open(unit=3,file='ray_multfrq_4-8_04-0816_Eraw.dat')
+  open(unit=3,file='try.dat')
 
   utci = 1072915200
   utcf = 1472688000!1496275200

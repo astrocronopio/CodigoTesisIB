@@ -79,7 +79,8 @@ void read_from_event_file(	std::string path_event_file	, float E_th, int binsec,
 	double high_limit = binsec*0.15;
 
 	int utc;
-	float the, energy, p, rho, rhod, iw, sect;
+	double the, energy, p, rho, rhod, iw, sect;
+	double augid,sdid, phi, dec, ra, s1000, ds1000;
 
 	std::cout << "\n\nFile "<< path_event_file <<"\n\n"<< endl;
 	ifstream infiledata (path_event_file);	/// Herald
@@ -94,6 +95,10 @@ void read_from_event_file(	std::string path_event_file	, float E_th, int binsec,
 		
 		//Normal Analysis
 			liness >> utc >> the >> energy >> p >> rho >> rhod >> iw;			/// herald
+
+		//For PC data
+			//liness >> augid >> sdid >> utc >> phi >> the >> dec >> ra >> s1000 >> ds1000 >> energy >> p >> rho >> rhod >> iw;		/// herald
+		
 
 			if(binsec != 0)
 			{
@@ -249,6 +254,7 @@ int main(int argc, char** argv)
 	int 	nev[24] = { };
 	double nexp[24] = { };
 	double h6hr[24] = { };	
+	double counter[24] = {0};
 	
 	nbin = (int)fitData.utcBinCenter.size();
 	
@@ -262,6 +268,7 @@ int main(int argc, char** argv)
 		outfile2 << fitData.binHex6[i] 		<< endl;
 
 		int hr    = (int(fitData.utcBinCenter[i]/3600))%24;	/// hour of day for current bin
+		counter[hr]+=1.0;
 		nev[hr]  += fitData.nevents[i];						/// sum number of events,
 		nexp[hr] += fitData.expevents[i];					/// expected events and
 		h6hr[hr] += fitData.binHex6[i];						/// active hexagons for each hour of day		
@@ -271,19 +278,29 @@ int main(int argc, char** argv)
 	ofstream outfile3(path_hour_of_the_day);
 
 		for(int j=0;j< 24;j++)
-			outfile3 << nexp[j] << "\t"<< nev[j]<< "\t"<< sqrt(nev[j]) << "\t" << h6hr[j] << endl;
-	
+		{	
+			outfile3 << j << "\t";
+			outfile3 << nexp[j] << "\t";
+			outfile3 << nev[j]  << "\t";
+			//outfile3 << sqrt(nev[j]) << "\t";
+			outfile3 << h6hr[j] << "\t"<< counter[j] <<endl;
+		}
+
 	Bin1hr.SetExpFit(fitData.utcBinCenter, fitData.expevents);
-	Bin1hr.SetBinWidth(86400); /// set one day bins
+	Bin1hr.SetBinWidth(86400); /// set one day bins for printing!
 	
-	TypeBinData *dataBin1day = Bin1hr.GetData(1);//,isMainArray);
+	TypeBinData *dataBin1day = Bin1hr.GetData(1);
+	ofstream outfile4(path_rate_expected); 
 	
-	ofstream outfile4(path_rate_expected);
-	if(dataBin1day!=NULL){
+	if(dataBin1day!=NULL)
+	{
 		nbin = Bin1hr.GetNBins();
 		for(int i = 0;i < nbin; i++)
 		{
-			 outfile4 << dataBin1day->utcBinCenter[i] << "\t" << dataBin1day->nevents[i] << "\t" << dataBin1day->expevents[i] <<  "\t" << dataBin1day->binHex6[i] << endl;
+			outfile4 << dataBin1day->utcBinCenter[i]<< "\t";
+			outfile4 << dataBin1day->nevents[i] 	<< "\t";
+			outfile4 << dataBin1day->expevents[i] 	<< "\t";
+			outfile4 << dataBin1day->binHex6[i] 	<< endl;
 		}
 	}
 	else std::cout << "Error ocurred!!!";
