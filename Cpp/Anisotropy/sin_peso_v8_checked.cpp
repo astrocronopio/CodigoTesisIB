@@ -9,6 +9,8 @@ double pi 	= M_PI;
 double d2r 	= pi/180.0;
 double Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 
+double energy_threshold=0;
+
 double right_ascension(long long utc)
 {	
 	long long iutcref = 1104537600;
@@ -41,15 +43,17 @@ void rayleigh( double *a , double *b, double *sumaN, double freq,
 			getline(myfile,line);			
 			std::stringstream liness(line);			
 			
-			//liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
+			liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
 			
-			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			//liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
 			
-			// energy=Eraw;
-			// if (energy<8.) continue;
+			//energy=Eraw;
+			//if (energy<8.) continue;
+
+			if (energy<energy_threshold) continue;
 			
 			if(utcf < utc) break;
-			if(utc  < utci || Theta > 80) continue;
+			if(utc  < utci || Theta > 60) continue;
 
 			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
 			peso =1.0;		
@@ -153,10 +157,11 @@ int main(int argc, char const *argv[])
 	const char* out_file= argv[2];
 	char * pEnd;
 
-	long long utci = strtoul(argv[3], &pEnd, 0);  //1072915200;
-	long long utcf =  strtoul(argv[4], &pEnd, 0); //1496275200;
+	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
+	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
+	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
-	ray_multifreq(500,  in_file, out_file, utci, utcf);
+	ray_multifreq(200,  in_file, out_file, utci, utcf);
 
 /*	long long utci =  rango2013;
 	long long utcf =  rango2020;

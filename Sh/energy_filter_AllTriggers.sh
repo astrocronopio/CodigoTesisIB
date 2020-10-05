@@ -1,5 +1,4 @@
 ################################################
-################################################
 ####    1- ($8)   UTC                       ####
 ####    2- ($4)   Phi                       ####
 ####    3- ($3)   Theta                     ####
@@ -10,7 +9,7 @@
 ####    8- ($43)  Tanks                     ####
 ####    9- ($37)  S1000 con correccion      ####
 ################################################
-################################################
+
 
 
 
@@ -19,28 +18,29 @@ echo "filter_herald.sh"
 
 #------------------------------------------------------------------------------------------------------------------------------------
 echo "Este es el archivo que baje en el 2020"
-       auger_file_simple_input="/home/ponci/Desktop/TesisIB/Coronel/Raw_files/AllTriggers/ArchiveAllTriggers_v6r2p2_311219.dat"
-    auger_file_simple_output_1="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1EeV_2019.dat"
-  auger_file_simple_output_1_2="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
- auger_file_simple_output_1_2_50="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019_50.dat"
-  auger_file_simple_output_2_4="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_2_4_EeV_2019.dat"
-  auger_file_simple_output_2="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_2_EeV_2019.dat"
+        auger_file_simple_input="/home/ponci/Desktop/TesisIB/Coronel/Raw_files/AllTriggers/ArchiveAllTriggers_v6r2p2_311219.dat"
+        
+     auger_file_simple_output_1="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1EeV_2019.dat"
+   auger_file_simple_output_1_2="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+auger_file_simple_output_1_2_50="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019_50.dat"
+   auger_file_simple_output_2_4="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_2_4_EeV_2019.dat"
+     auger_file_simple_output_2="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_2_EeV_2019.dat"
   
-  auger_file_simple_output_4_8="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_4_8_EeV_2019.dat"
-auger_file_simple_output_theta="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_8EeV_2019.dat"
+   auger_file_simple_output_4_8="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_4_8_EeV_2019.dat"
+ auger_file_simple_output_theta="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_8EeV_2019.dat"
 #1372699409 && $8<=1496267276  
 
 
 
 echo "Entre 0.5 EeV y 1 EeV"
-  auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
+#   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
 
-  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<1 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
+#   awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<1 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
 
 echo "Entre 0.25 EeV y 0.5 EeV"
-  auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
+#   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
 
-  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.25 && $38<0.5 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
+#   awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.25 && $38<0.5 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
 
 
 echo "Para 8 EeV"

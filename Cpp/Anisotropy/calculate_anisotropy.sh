@@ -1,52 +1,56 @@
 #Para calcular distintos archivos
-rango2004=1072915200
+rango2004=1072915200 
 rango2005=1104537600
 
-rango2013=1388577600 #Nuevo piso
-rango2017=1472688000
+rango2015=1451566800
+rangomid2014=1420113404 #Para archivos de old herald / Pc weather
+rangomid2013=1372680068
+rango2014=1388577600 #Nuevo piso para AllTriggers
+
+rango2017=1472688000 #
+
+rangoPC2017=1496275200 
+#importante, este es el final de PC,
+#que lo uso de referencia
+
 
 rango2019=1546344000
 rango2020=1577880000
 
-#Entre 1-2 EeV lo hacemos con todos los triggers
-file_1_2="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
-#./sin_peso_v3 "$file_1_2"  xx2019_AllTriggers_1_2_EeV.dat 			"$(($rango2013))" "$(($rango2020))"  
-#./con_peso_v3 "$file_1_2"  xx2019_AllTriggers_1_2_EeV_peso.dat 		"$(($rango2013))" "$(($rango2020))"  
+energy_threshold="0"
 
-#Entre 2-4 EeV tambien con todos los triggers
-file_2_4="../../../AllTriggers/Original_Energy/2019/AllTriggers_2_4_EeV_2019.dat"
+file_cmp="./Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
 
-#./sin_peso_v3 "$file_2_4"  xx2019_AllTriggers_2_4_EeV.dat			"$(($rango2013))" "$(($rango2019))"  	
-#./con_peso_v3 "$file_2_4"  xx2019_AllTriggers_2_4_EeV_peso.dat		"$(($rango2013))" "$(($rango2019))"  	
+#file_input="../../../AllTriggers/S38_analisis/2019/AllTriggers_S38_over_1_2_EeV_2019.dat"
+#file_input="./../Energy_Reconstruction/Files_AllTriggers_S38/AllTriggers_1_2.dat"
+file_input="./../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
 
-#Para 4-8 con el main array
-file_4_8="../../../Herald/Central/2019/Main_Array_4_8_EeV_2019.dat"
-
-#./sin_peso_v3 "$file_4_8"  xx2019_Main_Array_4_8_EeV.dat			"$(($rango2013))" "$(($rango2019))" 
-#./con_peso_v3 "$file_4_8"  xx2019_Main_Array_4_8_EeV_peso.dat		"$(($rango2013))" "$(($rango2019))"  		
-
-#Para 8 y arriba con el main array
-#file_8="../../../Herald/Central/2019/Main_Array_8EeV_2019.dat"
-file_8="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
-
-./sin_peso_v5_checked    "$file_8"  xx2019_Main_Array_8_EeV_04_17.dat			"$(($rango2004))" "$(($rango2017))"  
-#./con_peso_v3 "$file_8"  xx2019_Main_Array_8_EeV_peso.dat			"$(($rango2013))" "$(($rango2019))"  
-
-#######################################################3
-# Extendi el rango de timepo
-
-#Para 4-8 con el main array
-file_4_8="../../../Herald/Central/2019/Main_Array_4_8_EeV_2019.dat"
-
-#./sin_peso_v3 "$file_4_8"  xx2019_Main_Array_4_8_EeV_extended.dat 		"$(($rango2005))" "$(($rango2019))"  
-#./con_peso_v3 "$file_4_8"  xx2019_Main_Array_4_8_EeV_peso_extended.dat 	"$(($rango2005))" "$(($rango2019))"  
-
-#Para 8 y arriba con el main array
-file_8="../../../Herald/Central/2019/Main_Array_8EeV_2019.dat"
+#folder="./Files_AllTriggers_S38/"
+folder="./Files_AllTriggers_Recons/"
 
 
-#./sin_peso_v3 "$file_8"  xx2019_Main_Array_8_EeV_extended.dat      "$(($rango2005))" "$(($rango2019))"  
-#./con_peso_v3 "$file_8"  xx2019_Main_Array_8_EeV_peso_extended.dat "$(($rango2005))" "$(($rango2019))"  
+mkdir "$folder"
+
+sin_peso="sin_peso_v8_checked"
+con_peso="con_peso_v9"
+
+algoritmo="$con_peso"
+file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
+
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+
+#### Exec ####
+
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+
+####
+gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
 
 
-#######################################################3
+####
+
+# file_sin="$folder""output_threshold_""$energy_threshold""$sin_peso"".dat"
+# file_con="$folder""output_threshold_""$energy_threshold""$con_peso"".dat"
+
+# gnuplot -e "file_sin='$file_sin'; file_con='$file_con'"  plotting_anisotropy_sin_con.gp
+

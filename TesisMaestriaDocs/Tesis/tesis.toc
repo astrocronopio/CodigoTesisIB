@@ -50,26 +50,12 @@
 \contentsline {subsubsection}{Resultados del archivo de 2017}{32}{section*.51}%
 \contentsline {subsubsection}{Modulación del clima para todos los triggers}{32}{section*.53}%
 \contentsline {chapter}{\numberline {6}Conclusiones}{37}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Introducción}{38}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Acerca de todos los disparos del SD}{39}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Acerca de los eventos}{40}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Acerca del registro de hexágonos}{41}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Acerca de la tesis de licenciatura}{41}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Métodos}{42}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}{42}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Variaciones relativas de los hexágonos}{42}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{44}{subsection.8.1.2}%
-\contentsline {chapter}{\numberline {9}Dipolo en el rango 1 EeV - 2 EeV}{47}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Características del conjunto de datos}{47}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Pesos de los eventos para frecuencias de referencia}{48}{subsection.9.1.1}%
-\contentsline {section}{\numberline {9.2}Análisis de anisotropías en ascensión recta para el primer armónico}{49}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Trabajo a futuro}{51}{subsection.9.2.1}%
-\contentsline {chapter}{\numberline {A}Este capítulo es una ayuda-memoria}{52}{appendix.Alph1}%
-\contentsline {subsubsection}{Cortes a los datos}{52}{section*.75}%
-\contentsline {section}{\numberline {A.1}Análisis de los parametros del clima}{52}{section.Alph1.1}%
-\contentsline {subsection}{\numberline {A.1.1}Preparando los datos}{52}{subsection.Alph1.1.1}%
-\contentsline {subsubsection}{Que hice de esto hasta ahora}{53}{section*.76}%
-\contentsline {subsection}{\numberline {A.1.2}Agregar a cada evento el clima}{53}{subsection.Alph1.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Haciendo el ajuste}{53}{subsection.Alph1.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Problemas que tuve con el ajuste}{53}{subsection.Alph1.1.4}%
-\contentsline {subsubsection}{Tasa de eventos rara para AllTriggers ICRC 2019}{53}{section*.77}%
+\contentsline {chapter}{\numberline {A}Este capítulo es una ayuda-memoria}{38}{appendix.Alph1}%
+\contentsline {subsubsection}{Cortes a los datos}{38}{section*.62}%
+\contentsline {section}{\numberline {A.1}Análisis de los parametros del clima}{38}{section.Alph1.1}%
+\contentsline {subsection}{\numberline {A.1.1}Preparando los datos}{38}{subsection.Alph1.1.1}%
+\contentsline {subsubsection}{Que hice de esto hasta ahora}{39}{section*.63}%
+\contentsline {subsection}{\numberline {A.1.2}Agregar a cada evento el clima}{39}{subsection.Alph1.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Haciendo el ajuste}{39}{subsection.Alph1.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Problemas que tuve con el ajuste}{39}{subsection.Alph1.1.4}%
+\contentsline {subsubsection}{Tasa de eventos rara para AllTriggers ICRC 2019}{39}{section*.64}%

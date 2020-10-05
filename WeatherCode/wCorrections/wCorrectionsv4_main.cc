@@ -102,10 +102,11 @@ void read_from_event_file(	std::string path_event_file	, float E_th, int binsec,
 
 			if(binsec != 0)
 			{
-				double sect = sin(the*TMath::Pi()/180)*sin(the*TMath::Pi()/180);
+				double sect = sin(the*TMath::Pi()/180.0)*sin(the*TMath::Pi()/180.0);
 				if(sect<low_limit || sect>high_limit) continue;
 			}
-			if(energy<E_th)continue;
+			if(energy<E_th) continue;
+
 			if(iw <= 2 ){	
 				utc_event->push_back(utc);
 				theta->push_back(the);
@@ -118,18 +119,18 @@ void read_from_event_file(	std::string path_event_file	, float E_th, int binsec,
 int main(int argc, char** argv)
 //void wCorrections()
 {
-	int binsec;
+	int binsec=0;
 	double E_th;
 
-	if(argc == 8){
+	if(argc == 8){ //All Data Set!
 		binsec = 0;
 		E_th = 0;
 	}
-	else if(argc == 9){
+	else if(argc == 9){// Now this the threshold
 		binsec = 0;
 		E_th = atoi(argv[1]);
 	}
-	else if(argc == 10){	
+	else if(argc == 10){	 // 
 		binsec = atoi(argv[2]);
 		E_th = atof(argv[1]);
 	}
@@ -142,6 +143,8 @@ int main(int argc, char** argv)
 		cout << "Parameter must be between 0 and 5" << endl;
 		return 0;
 	}
+
+	std::cout<<E_th<<std::endl;
 
 	//given sin^2(theta) bin value limits
 	double low_limit = (binsec-1)*0.15;
@@ -185,6 +188,7 @@ int main(int argc, char** argv)
 					binw		,utc_utctprh,
 					utc_event	,pressure	,
 					density		,average_density, hex6);
+
 
 	// This is the line where the binning is done
 	bool isExp = 0;//given sin^2(theta) bin
@@ -236,7 +240,8 @@ int main(int argc, char** argv)
 		else file.open(path_fit,ios::app); /// 'app' is an option to 'app'end to the file (no rewrite)		
 
 		double sect = (low_limit+high_limit)/2;
-		double pf = 1.023*(3.29-1);
+		double B = 1.073;
+		double pf = B*(3.29-1);
 
 		file << sect << "\t" ;
 		file << fitp.alphaP   << "\t" << fitp.alphaP_err  	<< "\t";
@@ -245,7 +250,6 @@ int main(int argc, char** argv)
 		file << fitp.redChi2  << endl;
 		return 0;
 	}
-
 
 	///=========== writes ASCII file with data fitted================//
 	
@@ -282,7 +286,6 @@ int main(int argc, char** argv)
 			outfile3 << j << "\t";
 			outfile3 << nexp[j] << "\t";
 			outfile3 << nev[j]  << "\t";
-			//outfile3 << sqrt(nev[j]) << "\t";
 			outfile3 << h6hr[j] << "\t"<< counter[j] <<endl;
 		}
 

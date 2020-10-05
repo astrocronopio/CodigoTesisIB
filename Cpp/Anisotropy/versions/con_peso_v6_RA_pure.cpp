@@ -105,8 +105,8 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 
 	std::ifstream myfile (in_file);
 
-	//std::vector<long double> dnhex(interval);
-	//exposure_weight(dnhex, utci, utcf, *freq);
+	std::vector<long double> dnhex(interval);
+	exposure_weight(dnhex, utci, utcf, *freq);
 
 	float AugId, ds1000, Ecor, Eraw;
 
@@ -116,12 +116,12 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 			getline(myfile,line);			
 			std::stringstream liness(line);			
 			
-			//liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
+			liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
 			
 		//For PC data
-			liness>> AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			//liness>> AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
 
-			energy=Ecor;
+			//energy=Ecor;
 
 			if(utcf < utc) break;
 			if(utc < utci || Theta > 80) continue;
@@ -131,7 +131,7 @@ void rayleigh( float *a 		 , float *b 		 , float *sumaN, float *freq,
 
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 
-			peso= 1.0;///dnhex[nh];		
+			peso= 1.0/dnhex[nh];		
 			
 			*sumaN+=peso;
 			raz = right_ascension(utc);

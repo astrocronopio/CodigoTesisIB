@@ -40,6 +40,9 @@ int main(int argc, char** argv)
 		float i1,t,p,rho,rhod,h6,h5,iw,ib, ra;
 		float the,	phi, S1000, S1000_raw, dS1000, Energy, S38, rho2, rho24, tanks;
 		int utc;
+
+		float AugId, Dec, Eraw, Ecor, ftr;
+
 		getline(utctprh,lineatm);
 		stringstream satm(lineatm);
 		satm >> iutc >> t >> p >> rho >> rhod >> h6 >> h5 >> iw >> ib >> rho2>> rho24;
@@ -48,16 +51,22 @@ int main(int argc, char** argv)
 		{
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
+			
 			sevent >> utc >> phi >> the >> ra >> S1000 >> S38 >> Energy >> tanks >> S1000_raw ;
+			
+			//pc DATA
+			//sevent >> AugId>>Dec>>ra>>Eraw>>Ecor>>utc>>the>>phi>>tanks>>ftr;
+
 
 			while (!utctprh.eof() ){			
 				if(utc <= iutc && utc > iutc-300 )
 				{	/// Asuming iutc as the end second of each 5 min bin				
 					
-					//outfile << utc<<"\t"<< phi<<"\t"<<   the <<"\t"<< ra <<"\t"<< S1000 <<"\t"<< S38 <<"\t";
-					//outfile << Energy <<"\t"<< tanks<<"\t"<< p<<"\t"<< rho <<"\t"<< rhod<<"\t"<< iw<<"\t"<< ib<<"\n" ; /// Appends weather info 4515					//cout<<"xd"<<endl;
-					
 					outfile << utc<<"\t"<< the <<"\t"<< Energy <<"\t"<< p << "\t" << rho <<"\t"<< rhod << "\t" <<  iw <<"\n" ;
+					
+					// //PC data
+					// outfile << utc<<"\t"<< the <<"\t"<< Eraw<< "\t"<< Ecor ;
+					// outfile <<"\t"<< p << "\t" << rho <<"\t"<< rhod << "\t" <<  iw <<"\n" ;
 
 					outfile.flush();
 					break;

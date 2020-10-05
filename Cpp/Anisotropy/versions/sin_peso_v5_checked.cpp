@@ -77,7 +77,7 @@ void rayleigh( float *a , float *b, float *sumaN, float freq,
 	myfile.close();
 }
 
-float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
+void ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
 	float a =0.0  , b=0.0, sumaN=0.0 ;
 	float rtilde,pha,prtilde,r99r;
@@ -116,7 +116,7 @@ float ray_multifreq( int nf, const char* in_file, const char* out_file, unsigned
 	}
 }
 
-float ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
+void ray_given_freq( float freq, const char* in_file, const char* out_file, unsigned long utci , unsigned long utcf){
 	
 
 	float a =0.0  , b=0.0, sumaN=0.0 ;
@@ -168,7 +168,7 @@ int main(int argc, char const *argv[])
 	unsigned long utci =  strtoul(argv[3], &pEnd, 0); //1104537600; //1372699409 ;
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	
-	ray_multifreq(400,  in_file, out_file, utci, utcf);
+	ray_multifreq(100,  in_file, out_file, utci, utcf);
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;

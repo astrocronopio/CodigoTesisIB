@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.11)  18 SEP 2020 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.11)  18 SEP 2020 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1892,300 +1892,14 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [36]
 Cap\'{\i }tulo 6.
-) [37
+) (../Apendice/apend1.tex [37
 
 ]
-Cap\'{\i }tulo 7.
-(../0_Introduccion/introduccion_v8.tex
-
-Package natbib Warning: Citation `linsley1961extremely' on page 38 undefined on input line 3.
-
-
-LaTeX Warning: Reference `fig:futuro' on page 38 undefined on input line 17.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38
-
-]
-<../0_Introduccion/histograma_evolucion_eventos.png, id=393, 939.51pt x 556.479pt>
-File: ../0_Introduccion/histograma_evolucion_eventos.png Graphic file (type png)
-<use ../0_Introduccion/histograma_evolucion_eventos.png>
-Package pdftex.def Info: ../0_Introduccion/histograma_evolucion_eventos.png  used on input line 21.
-(pdftex.def)             Requested size: 352.8155pt x 208.9763pt.
-
-
-Package natbib Warning: Citation `taborda' on page 39 undefined on input line 27.
-
-
-Package natbib Warning: Citation `pierre2013plans' on page 39 undefined on input line 29.
-
-
-Package natbib Warning: Citation `pierre2013plans' on page 39 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig:triggers' on page 39 undefined on input line 31.
-
-<../0_Introduccion/comparacion_triggers.png, id=394, 636.3775pt x 360.34625pt>
-File: ../0_Introduccion/comparacion_triggers.png Graphic file (type png)
-<use ../0_Introduccion/comparacion_triggers.png>
-Package pdftex.def Info: ../0_Introduccion/comparacion_triggers.png  used on input line 36.
-(pdftex.def)             Requested size: 330.76328pt x 187.29315pt.
-
-Package natbib Warning: Citation `triggers_ref' on page 39 undefined on input line 37.
-
-
-Package natbib Warning: Citation `triggers_ref' on page 39 undefined on input line 37.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [39 <../0_Introduccion/histograma_evolucion_eventos.png>]
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
- [40 <../0_Introduccion/comparacion_triggers.png>]
-
-Package natbib Warning: Citation `abraham2009atmospheric' on page 41 undefined on input line 66.
-
-
-Package natbib Warning: Citation `abreu2012description' on page 41 undefined on input line 66.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 41 undefined on input line 66.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 41 undefined on input line 68.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 41 undefined on input line 70.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 41 undefined on input line 70.
-
-)
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [41]
-Cap\'{\i }tulo 8.
-(../1_Metodo/metodo_v5.tex
-
-Package natbib Warning: Citation `referencia_anis' on page 42 undefined on input line 4.
-
-
-Package natbib Warning: Citation `taborda' on page 42 undefined on input line 8.
-
-
-Package natbib Warning: Citation `farley1954sidereal' on page 42 undefined on input line 8.
-
-
-Package natbib Warning: Citation `taborda' on page 42 undefined on input line 8.
-
-[42
-
-]
-
-LaTeX Warning: Reference `fig:pesos_referencia' on page 43 undefined on input line 48.
-
-
-Package natbib Warning: Citation `referencia_pesos' on page 43 undefined on input line 48.
-
-
-LaTeX Warning: Reference `fig:pesos_ejemplo' on page 43 undefined on input line 52.
-
-
-LaTeX Warning: Reference `fig:pesos_referencia' on page 43 undefined on input line 52.
-
-
-LaTeX Warning: Reference `fig:pesos_referencia' on page 43 undefined on input line 52.
-
-<../1_Metodo/pesos_referencia.png, id=429, 645.41125pt x 563.10374pt>
-File: ../1_Metodo/pesos_referencia.png Graphic file (type png)
-<use ../1_Metodo/pesos_referencia.png>
-Package pdftex.def Info: ../1_Metodo/pesos_referencia.png  used on input line 56.
-(pdftex.def)             Requested size: 220.50885pt x 192.3807pt.
-
-Package natbib Warning: Citation `referencia_pesos' on page 43 undefined on input line 57.
-
-
-Package natbib Warning: Citation `referencia_pesos' on page 43 undefined on input line 57.
-
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
-[43]
-<../1_Metodo/weigths_2020.png, id=444, 867.24pt x 578.16pt>
-File: ../1_Metodo/weigths_2020.png Graphic file (type png)
-<use ../1_Metodo/weigths_2020.png>
-Package pdftex.def Info: ../1_Metodo/weigths_2020.png  used on input line 63.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-
-
-LaTeX Warning: Reference `hexagonos_rate' on page 44 undefined on input line 68.
-
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
-[44 <../1_Metodo/pesos_referencia.png> <../1_Metodo/weigths_2020.png>]
-
-Package natbib Warning: Citation `taborda' on page 45 undefined on input line 78.
-
-
-Package natbib Warning: Citation `taborda' on page 45 undefined on input line 80.
-
-
-LaTeX Warning: Reference `specs' on page 45 undefined on input line 86.
-
-
-LaTeX Warning: Reference `filtro' on page 45 undefined on input line 93.
-
-
-LaTeX Warning: Reference `eq:h_horas' on page 45 undefined on input line 93.
-
-
-LaTeX Warning: Reference `peso_hexagonos' on page 45 undefined on input line 95.
-
-
-LaTeX Warning: Reference `eq:h_primado' on page 45 undefined on input line 95.
-
-
-LaTeX Warning: Reference `ra_mod' on page 45 undefined on input line 97.
-
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
-[45]
-
-Package natbib Warning: Citation `analisis_fourier' on page 46 undefined on input line 110.
-
-
-Package natbib Warning: Citation `taborda' on page 46 undefined on input line 126.
-
-
-LaTeX Warning: Reference `fig:sin_pesos_referencia' on page 46 undefined on input line 126.
-
-
-LaTeX Warning: Reference `filtro' on page 46 undefined on input line 126.
-
-
-Package natbib Warning: Citation `taborda' on page 46 undefined on input line 126.
-
-<../1_Metodo/sin_pesos_referencia_8_EeV.png, id=466, 867.24pt x 578.16pt>
-File: ../1_Metodo/sin_pesos_referencia_8_EeV.png Graphic file (type png)
-<use ../1_Metodo/sin_pesos_referencia_8_EeV.png>
-Package pdftex.def Info: ../1_Metodo/sin_pesos_referencia_8_EeV.png  used on input line 130.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-
-Package natbib Warning: Citation `taborda' on page 46 undefined on input line 131.
-
-
-Package natbib Warning: Citation `taborda' on page 46 undefined on input line 131.
-
-)
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [46 <../1_Metodo/sin_pesos_referencia_8_EeV.png>]
-Cap\'{\i }tulo 9.
-(../6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8.tex
-
-LaTeX Warning: Reference `filtro' on page 47 undefined on input line 3.
-
-
-LaTeX Warning: Reference `fig:rate_2020_AllTriggers' on page 47 undefined on input line 3.
-
-<../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png, id=480, 903.375pt x 489.32813pt>
-File: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png  used on input line 7.
-(pdftex.def)             Requested size: 330.76328pt x 179.16699pt.
-[47
-
- <../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:deltaE' on page 48 undefined on input line 27.
-
-
-LaTeX Warning: Reference `fig:histograma' on page 48 undefined on input line 27.
-
-<../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png, id=491, 903.375pt x 602.25pt>
-File: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png  used on input line 33.
-(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-<../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png, id=492, 903.375pt x 602.25pt>
-File: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png  used on input line 38.
-(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-
-LaTeX Warning: Reference `pesos_bin_1_2' on page 48 undefined on input line 46.
-
-
-LaTeX Warning: Reference `specs' on page 48 undefined on input line 46.
-
-<../6_Dipole_1-2_EeV/weights_2013_2020.png, id=493, 867.24pt x 578.16pt>
-File: ../6_Dipole_1-2_EeV/weights_2013_2020.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/weights_2013_2020.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/weights_2013_2020.png  used on input line 50.
-(pdftex.def)             Requested size: 264.61331pt x 176.40471pt.
-
-LaTeX Warning: Reference `anisotropia_rayleigh' on page 48 undefined on input line 58.
-
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
-[48 <../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png (PNG copy)> <../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png (PNG copy)> <../6_Dipole_1-2_EeV/weights_2013_2020.png>]
-<../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png, id=502, 939.51pt x 578.16pt>
-File: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png  used on input line 62.
-(pdftex.def)             Requested size: 374.86774pt x 230.68646pt.
-
-
-LaTeX Warning: Reference `table:parametros_rayleigh' on page 49 undefined on input line 70.
-
-
-LaTeX Warning: Reference `fig:bin_events_first_order' on page 49 undefined on input line 86.
-
-
-LaTeX Warning: Reference `table:parametros_rayleigh' on page 49 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:bin_events_second_order_con' on page 49 undefined on input line 86.
-
-
-LaTeX Warning: Reference `table:parametros_second_order' on page 49 undefined on input line 86.
-
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png, id=503, 903.375pt x 602.25pt>
-File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png  used on input line 89.
-(pdftex.def)             Requested size: 286.65881pt x 191.10657pt.
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
-[49 <../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>]
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=513, 903.375pt x 602.25pt>
-File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png  used on input line 98.
-(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=514, 903.375pt x 602.25pt>
-File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png Graphic file (type png)
-<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png>
-Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png  used on input line 103.
-(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-
-Underfull \vbox (badness 3229) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [50 <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>]) (../Apendice/apend1.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [51]
 Ap\'{e}ndice A.
-[52
+[38
 
 ]
-<../Apendice/draft_s38_1EeV_weather_for_reconstruction.png, id=545, 1204.5pt x 652.4375pt>
+<../Apendice/draft_s38_1EeV_weather_for_reconstruction.png, id=406, 1204.5pt x 652.4375pt>
 File: ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png Graphic file (type png)
 <use ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png>
 Package pdftex.def Info: ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png  used on input line 79.
@@ -2193,10 +1907,10 @@ Package pdftex.def Info: ../Apendice/draft_s38_1EeV_weather_for_reconstruction.p
 )
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [53]
+ [39]
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [54 <../Apendice/draft_s38_1EeV_weather_for_reconstruction.png>]
+ [40 <../Apendice/draft_s38_1EeV_weather_for_reconstruction.png>]
 No file tesis.bbl.
 
 Package natbib Warning: There were undefined citations.
@@ -2217,7 +1931,7 @@ Package rerunfilecheck Warning: File `tesis.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `tesis.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1C03328ED93B721A586241A3BFDCE568;5171.
+(rerunfilecheck)             After:  3925591BE73B52068221D4D8C9672582;3932.
 
 LaTeX Warning: There were undefined references.
 
@@ -2227,18 +1941,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 11991 strings out of 483048
- 202433 string characters out of 5962772
+ 11801 strings out of 483048
+ 197192 string characters out of 5962772
  449084 words of memory out of 5000000
- 26333 multiletter control sequences out of 15000+600000
+ 26241 multiletter control sequences out of 15000+600000
  549421 words of font info for 89 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 49i,13n,49p,1759b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,13n,49p,1759b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ponci/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on tesis.pdf (66 pages, 3385615 bytes).
+Output written on tesis.pdf (52 pages, 2172492 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 276 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 575 PDF objects out of 1000 (max. 8388607)
+ 459 compressed objects within 5 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
