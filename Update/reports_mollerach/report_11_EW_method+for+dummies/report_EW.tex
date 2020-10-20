@@ -1,0 +1,228 @@
+\input{Preamblev2.sty}
+\usepackage{scalerel}
+\usepackage{physics}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Título%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{How to: East-West Method}
+\author{Evelyn~G.~Coronel}
+
+\affiliation{
+Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
+
+\date[]{\lowercase{\today}} %%lw para lw, [] sin date
+
+
+\maketitle
+%\onecolumngrid
+
+Este método se basa en el análisis de la diferencia entre las tasas de eventos provenientes del Este y del Oeste.
+
+La exposición del observatorio en un momento dado es la misma para el Este como para el Oeste, si se considera que la misma depende del ángulo cenital $\theta$ solamente, y no del ángulo azimutal $\phi$. \footnote{Tengo que agregar un apéndice explicando las coordenadas locales.}
+
+Si se consideran las modulaciones espurias producidas por los efectos atmosféricos y sistemáticos son las mismas en ambas direcciones \footnote{¿Cuán factible es afirmar esto? No discuto que funciona, sino porqué :)}, la diferencia de tasas remueve sin realizar correcciones teniendo una ventaja en el caso de no poder corregir efectos sistemáticos. La desventaja es que la sensibilidad de este método es menor  que el análisis de Rayleigh \footnote{Agregar referencia}.
+
+
+
+\begin{enumerate}
+
+
+    \item Un forma de obtener flujo de eventos $I(\alpha)$  para un $\alpha$ dado es la siguiente:
+        \begin{equation}
+            I(\alpha) = \int_{\delta_{min}}^{\delta_{max}} d\delta \cos \delta \dv{N(\alpha,\delta)}{\Omega}
+            \label{eq:i_alpha_phi}
+        \end{equation}
+    \noindent donde $\Omega$ es el ángulo sólido en la esfera celeste expresada en las coordenadas ecuatoriales.
+
+    \item Considerando que la distribución de direcciones observada es un convolución entre e flujo de RCs $\Phi$ y la exposición direccional $\omega$:
+    
+        \begin{equation}
+            \tilde{N} = \int d\Omega \Phi(\alpha, \delta) \omega(\alpha, \delta),
+            \label{eq:conv}
+        \end{equation}
+    \noindent y junto a la Ec.\ref{eq:i_alpha_phi}  se obtiene lo siguiente:
+    \begin{equation}
+        I(\alpha) =  \int_{\delta_{min}}^{\delta_{max}} d\delta \cos\delta \,\, \Phi(\alpha, \delta) \omega(\alpha, \delta)
+        \label{eq:i_coor_ecua}
+    \end{equation}
+    
+
+    
+    
+
+    \item El flujo de eventos observado $I^{obs}$ para la ascensión recta del cenit $\alpha_0$, entre los ángulos azimutales $\phi_1$ y $\phi_2$ puede calcularse mediante el flujo total de RCs $\Phi$ (expresado en coordenadas locales) como
+    \begin{equation}
+        I^{obs}(\alpha_0) = \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \tilde{\omega}(\theta, \alpha^0) \Phi(\theta, \phi, \alpha_0),
+        \label{eq:rate_general}
+    \end{equation}
+    \noindent  donde  el término $\tilde{\omega}$ representa la exposición del observatorio, este término incluye los efectos sistemáticos y atmosféricos, como la variación de los hexágonos del arreglo y las correcciones de la modulación del clima, mediante  la dependencia con $\alpha_0$.
+
+    \item Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos:
+    \begin{itemize}
+        \item Para el Este: entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$.
+        \item Para el Oeste: entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
+    \end{itemize}
+
+    \item Se considera que las amplitudes de las variaciones asociadas a $\tilde{\omega}$ son pequeñas con respecto al valor medio de $\tilde{\omega}$, y que pueden  desacoplarse de la dependencia de $\theta$. Por lo tanto, por lo que podemos expresar $\tilde{\omega}$ de la siguiente manera:
+    \begin{equation}
+        \tilde{\omega}(\theta, \alpha_0) = \omega(\theta)\big(1 + \eta(\alpha_0) \big)
+        \label{eq:omega_expandido}
+    \end{equation}
+
+    \item Una anisotropía dipolar se puede describir de la siguiente manera:
+    \begin{equation}
+        \Phi(\hat{\bf{u}}) = \Phi_0(1+\bf{d}\cdot\hat{\bf{u}})
+        \label{eq:dipolo_general}
+    \end{equation}
+    \noindent donde $\Phi_0$ es el flujo medio, $\hat{\bf{u}}$ es un versor que apunta a alguna dirección a estudiar y $\bf{d}$ es el vector con módulo $d$ igual a la amplitud del dipolo y  con dirección  con eje del dipolo, Tomando coordenadas ecuatoriales \footnote{Agregar también un apéndice de ecuatoriales}, la dirección de $\bf{d}$ es $(\alpha_d, \delta_d$)\footnote{Agregar fórmulas de cambio de sistema de referencia ecuatorial-local} y  de $\hat{\bf{u}}$ es $(\alpha, \delta)$, por lo tanto  el producto se puede escribir de la siguiente manera \footnote{Faltaría mencionar el producto de versor de esta representación para decir sale de acá, en el apéndice capaz. No sé, al final el cálculo me  sale fácil poniendo  todo en cartesianas.)}:
+    \begin{equation*}
+        \textbf{d}\cdot\hat{\bf{u}}= d (\cos\delta_d \cos\delta \cos(\alpha - \alpha_d) + \sin\delta_d  \sin\delta)
+        \label{eq:product_ud}
+    \end{equation*}
+
+    % \item Considerando las siguientes igualdades del  informe del semestre anterior:
+    
+    % \begin{itemize}
+    %     \item Consideremos que es posible escribir el flujo de eventos para un $\alpha$ dado con un expansión en Fourier: 
+    
+    %     \begin{align}
+    %         I(\alpha) &= I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) \\ 
+    %         &= I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) 
+    %       \end{align}
+    %       donde $a_k=r_k\cos k\phi_k$ y $b_k=r_k\sin k \phi_k$, y $I_0$ es el flujo medio.
+      
+    %     \item Un forma naïve de obtener el flujo medio es la siguiente:
+    %     \begin{align}
+    %          I_0 &= \frac{1}{2\pi} \int_{0}^{2\pi} I(\alpha) \\
+    %             &= \frac{1}{2\pi} \sum_i^{\scaleto{Eventos}{2.5pt}} w_i
+    %             &=\frac{\tilde{N}}{2\pi}
+    %     \end{align}
+    %     \noindent la última ecuación es válida si la exposición direccional \footnote{La que tiene que ver con  los hexágonos} no depende de $\alpha$
+
+    %     \item  Entonces, las amplitudes $r_k$  y fases $\phi_k$ van estar dadas por:
+    %     \begin{align}
+    %     a_k &= \frac{1}{\pi I_0} \int_{0}^{2\pi} I(\alpha)\cos(k\alpha) \label{ak}\\
+    %     b_k &= \frac{1}{\pi I_0} \int_{0}^{2\pi}  I(\alpha)\sin(k\alpha) \label{bk}\\ 
+    %     r_k &= \sqrt{a^2_k + b^2_k}\\ 
+    %     \phi_k &= \arctan\big(\frac{b_k}{a_k}\big)
+    %     \end{align}
+    % \end{itemize}
+
+    \item Por una cuestión de notación, definimos la siguiente expresión:
+    \begin{equation}
+        \overline{f(\theta)} = \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta) f(\theta)
+        \label{eq:media_angular}
+    \end{equation}
+    \noindent donde $\bar{f(\theta)}$ es la media de la función $f(\theta)$ sobre el ángulo cenital pesado por la exposición del observatorio, hasta  un ángulo máximo. En este trabajo se centra en el rango de energía 1 EeV - 2 EeV, por lo que $\theta_{max}=60^o$ para los datos del observatorio. 
+
+    \item Teniendo en cuenta la Ec.\ref{eq:omega_expandido} y \ref{eq:dipolo_general}, se tiene la siguiente expresión:
+    \begin{align*}
+        I^{obs}(\alpha_0) &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta  \sin\theta \omega(\theta)\big(1 + \eta(\alpha_0) \big) \Phi_0 ( 1 +  \textbf{d}\cdot\hat{\bf{u}})\\
+        &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha_0) \big) \Phi_0 +\\
+        &+\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha_0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}
+    \end{align*}
+    \noindent la primera parte  de la igualdad  puede simplificarse con la definición \ref{eq:media_angular} e integrando sobre $\phi$
+    \begin{align*}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha_0) \big) \Phi_0 =\\
+        &= \Phi_0 (1+ \eta(\alpha_0)) \pi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\\
+        &= \Phi_0 (1+ \eta(\alpha_0)) \overline{1} 
+    \end{align*}
+    \noindent la integral sobre $\phi$ tiene el mismo valor para el Este y Oeste. Para la segunda parte de la expresión del item 8
+    \begin{align}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha_0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}=\\
+        &=\Phi_0 (1+ \eta(\alpha_0))\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\textbf{d}\cdot\hat{\bf{u}} \label{segundo_term}
+    \end{align}
+    \noindent El dipolo está fijo en el cielo pero visto desde las coordenadas locales para poder trabajar con $\theta$ y $\phi$, sus proyecciones en los ejes de interés tienen una dependencia con la ascensión recta  $\alpha_0$ y declinación $\delta_0$ del cenit. %El versor $\hat{\bf{u}}$ expresado en coordenadas ecuatoriales apunta en la dirección $(\alpha_0, \delta_0)$. Consideremos las proyecciones del versor sobre el eje del cenit y sobre el plano horizontal del observador,  
+    %\noindent donde $\hat{x}$ apunta en la dirección Este, $\hat{y}$ en la dirección Norte  y $\hat{z}$ en la dirección de cenit.
+    Consideremos el dipolo proyectado en las dirección de los versores $\hat{x}$  que apunta en la dirección Este, $\hat{y}$ en la dirección Norte  y $\hat{z}$ en la dirección de cenit.
+    \begin{equation*}
+        \textbf{d} =  d_x(\alpha_0)\hat{x} +  d_y(\alpha_0)\hat{y}+ d_z(\alpha_0)\hat{z} ,
+    \end{equation*}
+    \noindent mientras que el versor apunta en la dirección de integración
+    \begin{equation*}
+        \hat{\bf{u}} =\sin\theta \cos\phi \hat{x} + \sin\theta \sin\phi \hat{y} + \cos\theta\hat{z}
+    \end{equation*}
+    Finalmente,
+    \begin{align*}
+        \textbf{d}\cdot\hat{\bf{u}} &= d_x(\alpha_0)\sin\theta \cos\phi
+        + d_y(\alpha_0) \sin\theta \sin\phi  \\
+        & + d_z(\alpha_0)\cos\theta
+    \end{align*}
+    Al integrar el ángulo  $\phi$ entre $[\nicefrac{-\pi}{2}, \nicefrac{\pi}{2}]$ o $[\nicefrac{\pi}{2}, \nicefrac{3\pi}{2}]$, el segundo término  se anula, por lo que la expresión \ref{segundo_term} queda como:
+    \begin{align*}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\textbf{d}\cdot\hat{\bf{u}} =\\
+        &\int_{0}^{\theta_{max}}  d\theta (\pm 2d_x(\alpha_0)\sin\theta 
+        + \pi d_z(\alpha_0)\cos\theta)
+    \end{align*}     
+    \noindent donde $+2$ corresponde al Este y $-2$ al Oeste. Podemos simplificar la expresión usando la definición \ref{eq:media_angular}
+    \begin{align*}
+    &\int_{0}^{\theta_{max}}  d\theta (\pm 2d_x(\alpha_0)\sin\theta 
+    + \pi d_z(\alpha_0)\cos\theta)=\\ 
+    & =\pm 2d_x(\alpha_0)\overline{\sin\theta} 
+    + \pi d_z(\alpha_0)\overline{\cos\theta}\\
+    \end{align*}
+
+
+
+    \item Volviendo a la expresión de $I^{obs}$, teniendo en cuenta que necesitamos  $I^{obs}_E$ y $I^{obs}_O$:
+    \begin{align*}
+        I^{obs}_E&= \Phi_0 (1+ \eta(\alpha_0)) \Big( \pi\overline{1} + 2d_x(\alpha_0)\overline{\sin\theta} + \pi d_z(\alpha_0)\overline{\cos\theta}  \Big) \\
+        I^{obs}_O&= \Phi_0 (1+ \eta(\alpha_0)) \Big( \pi \overline{1} - 2d_x(\alpha_0)\overline{\sin\theta}   + \pi d_z(\alpha_0)\overline{\cos\theta} \Big) 
+    \end{align*}
+
+    \item Como estamos buscando la diferencia entre estos valores, la resta queda como:
+    \begin{equation*}
+        I^{obs}_E -  I^{obs}_O = \Phi_0 (1+ \eta(\alpha_0)) \times 4  d_x(\alpha_0)\overline{\sin\theta}
+    \end{equation*}
+    
+    \item Solo necesitamos las componentes del vector $\bf{d}$, para obtenerlas tenemos que considerar que los componentes que necesitamos están en el plano x-z. Para hacer esto, consideremos que los versores $\hat{\bf{u}}_z$ y $\hat{\bf{u}}_x$ que apuntan al cenit y al Este respectivamente. Considerando la fórmula para proyectar un vector sobre la dirección de un versor:
+    \begin{equation}
+        d_x(\alpha_0) \hat{x} =  (\textbf{d}\cdot\hat{\bf{u}}_x)\hat{\bf{u_x}} \rightarrow d_x(\alpha_0) = \textbf{d}\cdot\hat{\bf{u}}_x
+    \end{equation}
+    podemos obtener las proyecciones con un producto escalar con versores a las direcciones de interés. Estos versores en coordenadas ecuatoriales son los siguientes:
+    \begin{align*}
+        \hat{\bf{u}}_z &= (\alpha_0,\delta_0 )\\
+        \hat{\bf{u}}_x &= (\alpha_0 + \frac{\pi}{2},0), 
+    \end{align*}
+    se suma  $\frac{\pi}{2}$ para apuntar al Este, cuando el versor recorre $\nicefrac{\pi}{2}$ en ascensión recta, llega al plano del ecuador que tiene declinación $0$.
+    \item Finalmente para obtener las componentes:
+    \begin{align*}
+        \textbf{d}\cdot\hat{\bf{u}}_z &= d (\cos\delta_d \cos\delta_0 \cos(\alpha_0 - \alpha_d) + \sin\delta_d  \sin\delta_0)\\
+        \textbf{d}\cdot\hat{\bf{u}}_x &= d (\cos\delta_d \cos(\alpha_0 +\frac{\pi}{2} - \alpha_d) 
+        = -d\cos\delta_d \sin(\alpha_0  - \alpha_d)
+    \end{align*}
+    
+     Entonces,
+    \begin{equation}
+        I^{obs}_E -  I^{obs}_O =-4d \Phi_0 (1+ \eta(\alpha_0)) \cos\delta_d \sin(\alpha_0  - \alpha_d)\overline{\sin\theta}
+        \label{resta}
+    \end{equation}
+    \item Esta diferencia se debe relacionar con la variación del flujo verdadero, es decir el flujo que se observaría si no existieran variaciones temporales (ascensión recta) en la exposición. Esto implica que $\eta(\alpha_0)=0$.  Además el flujo total $I$ es la suma de los flujos de ambas direcciones, por lo tanto se puede afirmar que:
+    \begin{align}
+        I&=I_E +  I_O = 2\pi\Phi_0 (1+ 0) \Big( \overline{1} + d_z(\alpha_0)\overline{\cos\theta}  \Big)\\
+        \dv{I^{obs}}{\alpha_0}  & = 2\pi\Phi_0 \overline{\cos\theta} \dv{\,d_z(\alpha_0) }{\alpha_0}\\ 
+        \dv{I^{obs}}{\alpha_0} &= -2d\pi\Phi_0 \overline{\cos\theta}\cos\delta_d \cos\delta_0 \sin(\alpha_0 - \alpha_d) \label{total_flux}
+    \end{align}
+
+    \item Para llegar a la expresión \ref{resta}, hicimos la expansión hasta el primer orden de $\omega(\theta, alpha_0)$ y de $\Phi(\alpha, \delta)$. Para ser consistentes, desperdiciemos el término de segundo orden de la expresión \ref{resta} que es proporcional de $\eta \cdot d$ y la expresión \ref{resta} queda:
+        \begin{equation}
+            I^{obs}_E -  I^{obs}_O \approx -4d \Phi_0 \cos\delta_d \sin(\alpha_0  - \alpha_d)\overline{\sin\theta}
+        \end{equation}
+    Por lo tanto,
+    \begin{equation}
+        I^{obs}_E -  I^{obs}_O \approx  \frac{2}{\pi \cos \delta_0} \frac{\langle\sin\theta \rangle}{\langle\cos\theta \rangle}\dv{I^{obs}}{\alpha_0}
+        \label{eq:final}
+    \end{equation}
+    donde se usa la expresión:
+    \begin{equation*}
+        \langle f(\theta) \rangle = \frac{\overline{f(\theta)}}{\overline{1}} = \displaystyle\frac{\int_{0}^{\theta_{max}} d \theta \sin\theta \omega(\theta) f(\theta) }{\int_{0}^{\theta_{max}} d \theta \sin\theta \omega(\theta)} 
+    \end{equation*}
+    que es equivalente a hacer la media ponderada con $\sin\theta\omega(\theta)$ de todos los datos de $f(\theta)$.
+\end{enumerate}
+
+    \section*{Implementación}
+
+
+\end{document}

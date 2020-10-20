@@ -1,9 +1,11 @@
 set terminal qt 0 enhanced font 'times,26' size 1200,800 
 
-set key left
+set key right
 
 set ylabel "Amplitud" 
 set xlabel "Frecuencia [ciclos/año]"
+
+set xran [:]
 
 plot filename u 1:5 w l ls 3  lc rgb 'red'  t "Actual"
 replot filename u 1:9 w l notit lc rgb 'red'  lw 0.9

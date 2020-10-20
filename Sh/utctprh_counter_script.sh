@@ -11,7 +11,7 @@ python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "
 python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins_day"  86400
 
 #---------------------------------------------- Delay the density 2 hrs------------------------------------------
-#1		2		3		4		5		6			 7 		 8		/////	9		10		11		12	
+#1		2		3		4		5		6			 7 		 8  /////	9		10		11		12	
 #utc, avgtemp, avgpres, avgrho, avgrho24, shex6T5,	5t5, 	iw, ///// 	ib		hum		hum		hum
 
 file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two hours

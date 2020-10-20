@@ -4,6 +4,7 @@ rango2005=1104537600
 
 rango2015=1451566800
 rangomid2014=1420113404 #Para archivos de old herald / Pc weather
+
 rangomid2013=1372680068
 rango2014=1388577600 #Nuevo piso para AllTriggers
 
@@ -20,13 +21,15 @@ rango2020=1577880000
 energy_threshold="0"
 
 file_cmp="./Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
+#file_cmp="../../Codigo_Taborda/ray_multfrq_8_04-0816_Eraw.dat"
 
+
+file_input="./../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
 #file_input="../../../AllTriggers/S38_analisis/2019/AllTriggers_S38_over_1_2_EeV_2019.dat"
-#file_input="./../Energy_Reconstruction/Files_AllTriggers_S38/AllTriggers_1_2.dat"
-file_input="./../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+#file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
 
-#folder="./Files_AllTriggers_S38/"
-folder="./Files_AllTriggers_Recons/"
+#file_input="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
+folder="./Files_AllTriggers_Wide_Range/"
 
 
 mkdir "$folder"

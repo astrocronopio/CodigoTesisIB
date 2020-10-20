@@ -13,12 +13,12 @@ rango2020=1577880000
 
 
 
-file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
-folder="./Files_AllTriggers/"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_2019_merged.dat"
+folder="./Files_AllTriggers_Wide_Range/"
 fileout="$folder""AllTriggers_1_2.dat"
 mkdir "$folder"
 
-algoritmo="merged_v3_energy_reconst"
+algoritmo="merged_v6_minimal_energy_reconst"
 g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 ""./"""$algoritmo"  "$file_input"  "$fileout"

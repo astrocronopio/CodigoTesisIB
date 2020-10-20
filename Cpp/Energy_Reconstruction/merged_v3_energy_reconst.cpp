@@ -31,86 +31,117 @@ using namespace std;
 
 double p0= 862;
 double rho0=1.06;
-double A = 0.20;//1./5.1172; //0.166 - ish
-double B = 1.03;//1./0.9694;
-double y=3.29;
+double A = 0.1856;//1./5.1172; //0.166 - ish
+double B = 1.0316;//1./0.9694;
+double y= 3.29;
 double Bgamma= B*(y-1.0);//2.36328;
 
+
+double c07 = 0.0, c17 = 0.0 , c27 = 0.  ;
+double c05 = 0.0, c15 = 0.0 , c25 = 0.  ;
+double c06 = 0.0, c16 = 0.0 , c26 = 0.  ;
 
 double energy( double S38)
 {
 	return A*powf(S38, B);
 }
 
-//Reference
-// double c07 = 0.00159376 ;
-// double c17 = -0.0265173 ;
-// double c27 = 0.0263584  ;
-
-//AllTriggers
-double c07  = -0.0025022   ;//
-double c17  = -0.00792055  ;// 
-double c27  =  0.00316981  ;//
-
-
-double ap(double the2)
-{
-	return c07 + c17*the2 + c27*the2*the2;
-}
-
-
-//Reference
-// double c05 = -2.57342  ;
-// double c15 = 1.53895   ;
-// double c25 = 2.00658   ;
-
-
-// //AllTriggers
-double c05  = -2.07455  ;// 
-double c15  = -0.0941469  ;// 
-double c25  = 3.26793;// 
-
-double arho(double the2)
-{
-	return c05 + c15*the2 + c25*the2*the2;
-}
-
-//Reference
-// double c06 = -1.02068   ;
-// double c16 = 1.27225    ;
-// double c26 = -0.0414128 ;
-
-//AllTriggers
-double c06 =-0.724809 ;//      
-double c16 = -0.0723714  ;//    
-double c26 = 1.13565 ;//    
-
-
-double brho(double the2)
-{
-	return c06 + c16*the2 + c26*the2*the2;
-}
-
+double ap  (double the2){	return c07 + c17*the2 + c27*the2*the2; }
+double arho(double the2){	return c05 + c15*the2 + c25*the2*the2; }
+double brho(double the2){	return c06 + c16*the2 + c26*the2*the2; }
 
 
 double energy_reconstruction(double S38, double p, double rho, double rhod, double the) 
-{	double the2= sin(the*M_PI/180.)*(the*M_PI/180.);
+{	double sinthe= sin(the*M_PI/180.);
+	double the2 = sinthe*sinthe;
 	
 	//Bien, se debe dividir porque  a =  Bgamma * alpha, y los parametros son de ap
-	double factor =1 + (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma; 
+	double factor =1 + (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho));///Bgamma; 
 	
-	//cout << factor << endl;
-	double S38w = S38/factor;   // S = S_0 * factor, pero S_0 es para calcular la energia
+	double S38w = S38*factor;   // S = S_0 * factor, pero S_0 es para calcular la energia
+								// S es lo medido, S_0 es lo que se debería ver en condiciones normales
 
 	return energy(S38w);
-
-	// double factor = 1 + (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho))/Bgamma; 
-	// return powf(factor, -B); //energy(S38);
 }
 
 
 int main(int argc, char** argv)
-{
+{	
+	int flag = 2;
+
+	//NAda
+	if (flag==0)
+	{
+		cout<<"Without correction\n";
+	}
+
+	//Reference
+	if (flag==1)
+	{
+	//aP
+	c07 = 0.0021 ;
+	c17 = -0.026 ;
+	c27 = 0.026  ;
+
+	//arho
+
+	c05 = -2.7  ;
+	c15 = 1.5   ;
+	c25 = 2.2   ;
+
+	//brho
+
+	c06 = -1.0   ;
+	c16 = 1.2    ;
+	c26 = -0.0 ;
+
+	}
+
+	//CDAS SD
+	if (flag==2)
+	{
+	//aP
+	c07 = -0.00191081*Bgamma ;
+	c17 = 0.0 ;
+	c27 = 0.0  ;
+
+	//arho
+
+	c05 = -0.639877*Bgamma  ;
+	c15 = 0.0   ;
+	c25 = 0.0   ;
+
+	//brho
+
+	c06 = -0.31413*Bgamma   ;
+	c16 = 0.0    ;
+	c26 = 0.0 ;
+
+	}
+
+	//AllTriggers
+	if (flag==3)
+	{
+	//aP
+	c07  = -0.0025022   ;//
+	c17  = -0.00792055  ;// 
+	c27  =  0.00316981  ;//
+
+	//arho
+
+	c05  = -2.075  ;// 
+	c15  = -0.0941  ;// 
+	c25  = 3.268;// 
+
+	//brho
+
+	c06 =-0.725 ;//      
+	c16 = -0.0724  ;//    
+	c26 = 1.14 ;//    
+
+	}
+
+
 	ifstream eventdata 	(argv[1]);
 	ifstream utctprh 	("../../../Weather/utctprh_delay.dat");
 	ofstream outfile 	(argv[2]);
@@ -139,24 +170,31 @@ int main(int argc, char** argv)
 			stringstream sevent(lineev);			
 			sevent >> utc >> phi >> the >> ra >> S1000 >> S38 >> Energy >> tanks >> S1000_raw ;
 			//sevent >>AugId>>Dec>>ra>>Eraw>>Ecor>>utc>>the>>phi>>t5>>ftr;
-
+			cout<<lineev<<endl;
+			
 			while (!utctprh.eof() ){			
-				if(utc <= iutc && utc > iutc-300 )
-				{	
-					//Importante fijarse si S38 essta corregida  o no
-					// Analisis  S38: no corregida por el Herald
-					//energy_corr = energy_reconstruction(S38 , p,  rho, rhod, the) ;
+				if(utc <= iutc && utc+300 > iutc )
+				{	if  (iutc<1388577500) break;
+					//Importante fijarse si S38 esta corregida  o no
 
-					// Analisis Energia: corregida por el Herald
-					energy_corr = energy_reconstruction(S38 *(S1000_raw/S1000), p,  rho, rhod, the) ;
+					// Analisis  S38: no corregida por el Herald
+					//if (flag==0 || flag==3) 
+						//energy_corr = energy_reconstruction(S38 , p,  rho, rhod, the) ;
+					
+					// Analisis Energia: S38 corregido por el Herald
+					//if (flag==1 || flag==2) 
+						energy_corr =energy_reconstruction(S38*(S1000/S1000_raw), p,  rho, rhod, the) ;
+
+					//energy_corr=Energy;
 
 					if (energy_corr < 1.0) break;
 					if (energy_corr > 2.0) break;
-
-					//outfile<< utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) <<"\n" ;
+					
 					std::cout<<"Delta:  "<<energy_corr-Energy<<std::endl;
 					outtest << utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) <<"\n" ;
-					
+				
+					//outfile<< utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) <<"\n" ;
+
 					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t";
 					outfile << S1000<<"\t" << S38 << "\t" <<energy_corr <<"\t";
 					outfile << tanks << "\t" << S1000_raw << "\n" ;
