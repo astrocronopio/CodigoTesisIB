@@ -30,7 +30,7 @@ double right_ascension(long long utc)
 }
 
 int method_weight_solar(int utc, double fas, int interval){
-	unsigned iutcref = 1104537600;
+	unsigned iutcref = 1072915200;
 	double x1=((long double)(utc-iutcref)/3600. +  2.099806667)*fas; // hora local 
 	int	aux=  int(fmod(x1*interval/24.0, interval));
 				

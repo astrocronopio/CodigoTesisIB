@@ -41,7 +41,7 @@ void rayleigh( double *a , double *b, double *sumaN, double freq,
 			// if(utc  < utci || Theta > 80) continue;
 			// }
 			
-			liness >> utc>>Phi>>Theta>>Ra>>s1000>>s38>>energy>>t5>>s1000_w; 
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
 			if (energy<energy_threshold) continue;
 			if(utc  < utci || Theta > 60) continue;
 

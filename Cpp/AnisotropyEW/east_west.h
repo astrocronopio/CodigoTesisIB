@@ -16,7 +16,7 @@ const int interval= 288;
 double energy_threshold=0;
 
 typedef void (*g)(double * , double *, double *, double , 
-				long long , long long , const char* );
+				 long long , long long , const char* );
 
 
 double right_ascension(long long utc)
@@ -38,8 +38,8 @@ int method_weight_solar(int utc, double fas, int interval){
 }
 
 
-void ray_multifreq( int nf, const char* in_file, const char* out_file, 
-					long long utci , long long utcf, g rayleigh ){
+void ew_multifreq( 	int nf, const char* in_file, const char* out_file, 
+					long long utci , long long utcf, g east_west_method ){
 	
 	double a =0.0  , b=0.0, sumaN=0.0 ;
 	double rtilde,pha,prtilde,r99r;
@@ -57,7 +57,7 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		east_west_method(&a, &b, &sumaN, freq, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
@@ -80,8 +80,8 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 
 
 
-void ray_given_freq( double freq, const char* in_file, const char* out_file, 
-					long long utci , long long utcf, g rayleigh){
+void ew_given_freq( double freq, const char* in_file, const char* out_file, 
+					long long utci , long long utcf, g east_west_method){
 	
 
 	double a =0.0  , b=0.0, sumaN=0.0 ;
@@ -99,7 +99,7 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		east_west_method(&a, &b, &sumaN, freq, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;

@@ -52,7 +52,7 @@ int main(int argc, char** argv)
 			getline(eventdata,lineev);			
 			stringstream sevent(lineev);			
 			
-			sevent >> utc >> phi >> the >> ra >> S1000 >> S38 >> Energy >> tanks >> S1000_raw ;
+			sevent >> utc >> phi >> the >> ra >> dec >> S1000 >> S38 >> Energy >> tanks >> S1000_raw ;
 			
 			//pc DATA
 			//sevent >> AugId>>Dec>>ra>>Eraw>>Ecor>>utc>>the>>phi>>tanks>>ftr;

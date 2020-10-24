@@ -3,11 +3,12 @@
 ####    2- ($4)   Phi                       ####
 ####    3- ($3)   Theta                     ####
 ####    4- ($14)  Ra                        ####
-####    5- ($12)  S1000 sin corregir        ####
-####    6- ($47)  S38_w                     ####
-####    7- ($38)  Energy                    ####
-####    8- ($43)  Tanks                     ####
-####    9- ($37)  S1000 con correccion      ####
+####    5- ($15)  Declinación               ####
+####    6- ($12)  S1000 sin corregir        ####
+####    7- ($47)  S38_w                     ####
+####    8- ($38)  Energy                    ####
+####    9- ($43)  Tanks                     ####
+####    10-($37)  S1000 con correccion      ####
 ################################################
 
 
@@ -33,39 +34,40 @@ auger_file_simple_output_1_2_50="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers
 
 echo "Entre 0.5 EeV y 2.5  EeV"
 
-   awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<2.5 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output"
+   #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<2.5 && $3<60) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output"
 
 
 
 echo "Entre 0.5 EeV y 1 EeV"
-#   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
+   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
 
-#   awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<1 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
+   #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.5 && $38<1 && $3<60) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
 
 echo "Entre 0.25 EeV y 0.5 EeV"
-#   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
+   auger_output="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
 
-#   awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.25 && $38<0.5 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
+   #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=0.25 && $38<0.5 && $3<60) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_output"
 
 
 echo "Para 8 EeV"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=8) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_theta"
+  
+  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=8) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_theta"
 
 echo "Para 1 EeV"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1"
+  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1"
 
 echo "Entre 4 EeV y 8 EeV"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=4 && $38<8) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_4_8"
+  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=4 && $38<8) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_4_8"
 
 echo "Entre 1 EeV y 2 EeV"
-#  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1 && $38<2 && $3<60) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1_2"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1 && $38<2 && $3<50) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1_2_50"
+  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $38>=1 && $38<2 && $3<60) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_1_2"
+  
 
 echo "Entre 2 EeV y 4 EeV"
-  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=2 && $38<4) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_2_4"
+  #awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=2 && $38<4) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_2_4"
 
 echo "Arriba 2 eev"
-#  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=2 && $8<1577880000 && $8>1388577600) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_2"
+#  awk '{if ($2>2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $38>=2 && $8<1577880000 && $8>1388577600) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_simple_input" > "$auger_file_simple_output_2"
 
 
 
@@ -80,19 +82,19 @@ auger_file_5v_output_theta="/home/ponci/Desktop/TesisIB/Coronel/AllTriggers/Orig
 
 
 echo "Para 8 EeV"
-  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $39>=8) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_theta"
+  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $39>=8) print   $8,$4,$3,$14,$15,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_theta"
 
 echo "Para 1 EeV"
-  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=1) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_1"
+  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=1) print   $8,$4,$3,$14,$15,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_1"
 
 echo "Entre 4 EeV y 8 EeV"
-  #awk '{if ($2>2  && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $39>=4 && $39<8) print  $8,$4,$3,$14,$12,$47,$38,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_4_8"
+  #awk '{if ($2>2  && $22>0 && $23>0 && $48>0 && $43>=5 && $44>0 && $39>=4 && $39<8) print  $8,$4,$3,$14,$15,$12,$47,$38,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_4_8"
 
 echo "Entre 1 EeV y 2 EeV"
-  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=1 && $39<2) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_1_2"
+  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=1 && $39<2) print   $8,$4,$3,$14,$15,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_1_2"
 
 echo "Entre 2 EeV y 4 EeV"
-  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=2 ) print   $8,$4,$3,$14,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_2_4"
+  #awk '{if ($2 >2 && $22>0 && $23>0 && $48>0 && $43>5 && $44>0 && $39>=2 ) print   $8,$4,$3,$14,$15,$12,$47,$39,$43, $37}' "$auger_file_5v_input" > "$auger_file_5v_output_2_4"
 
 
 
