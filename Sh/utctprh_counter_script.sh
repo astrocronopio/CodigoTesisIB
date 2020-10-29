@@ -2,13 +2,14 @@
 filepath="/home/ponci/Desktop/TesisIB/Coronel/Weather/"
 
 file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat" 
+#file_utctprh="/home/ponci/Desktop/TesisIB/Coronel/Weather_PC/Weather/Raw/utctprhdrc_010104_090516.dat"
 	   delay="$filepath""utctprh_delay.dat" 		#Weather Data
 file_utctprh_bins="$filepath""utctprh_bins.dat" 	#Weather Data in bins of a hour
 file_utctprh_bins_day="$filepath""utctprh_bins_by_day.dat" 
 
 
-python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins" 	 3600
-python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins_day"  86400
+#python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins" 	 3600
+#python /home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Python/bin_weather.py "$file_utctprh" "$file_utctprh_bins_day"  86400
 
 #---------------------------------------------- Delay the density 2 hrs------------------------------------------
 #1		2		3		4		5		6			 7 		 8  /////	9		10		11		12	
@@ -41,7 +42,7 @@ file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two
 #----------------------------------------------------------------------------------------------------------------
 ################################################################
 # This is for a delay of 12 hours of the mean average of the density
-
+echo "--"
 	awk 'BEGIN{i=1}
 			{	if(i>144) i=1;
 				if(NR>144)

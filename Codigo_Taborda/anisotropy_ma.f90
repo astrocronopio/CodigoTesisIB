@@ -4,7 +4,7 @@
 !
 ! 	compile with:	
 !  gfortran anisotropy_ma.f90 -L /mnt/Datos/oscar/lapack-3.4.2 -llapack -lrefblas
-!  or if asymmetric errors needed with: 
+!  or if asymmetric errors nedipoleEWeded with: 
 !  gfortran -I obj/ anisotropy_ma.f90 -L /mnt/Datos/oscar/lapack-3.4.2 -llapack -lrefblas obj/dipcl.o
 !==============================================================================
 !     variables globales a usar en el programa 
@@ -907,7 +907,7 @@ END PROGRAM anisotropy
        rtilde = sqrt(aew**2 + bew**2)
        rad = atan02pi(aew,bew) + 0.5*pi
        if(rad.gt.2.*pi) rad = rad - 2.*pi
-       dper = 0.5*pi*rtilde/promsint
+       dper = 0.5*pi*rtilde/promsint ! d_{\perp}
        prtilde=exp(-rtilde**2*nval/4.)
        
        !////////////// error estimates
@@ -916,6 +916,7 @@ END PROGRAM anisotropy
        if(sigray.gt.rtilde) sgmrad2=pi
        sgmrad = sigray/rtilde
        sgmdper = sigray*0.5*pi/promsint
+       
        rray = rtilde*pi*promcosd/(2*promsint)
        sigma = sigray*pi*promcosd/(2*promsint)
        r99 = sqrt(4.*log(100.)/nval)*pi*promcosd/(2*promsint)

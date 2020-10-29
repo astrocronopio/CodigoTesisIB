@@ -26,9 +26,10 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	ifstream eventdata 	("../../../AllTriggers/Original_Energy/2019/AllTriggers_2019.dat");//(argv[1]);
+	//ifstream eventdata 	("../../../AllTriggers/Original_Energy/2019/AllTriggers_2019.dat");//(argv[1]);
+	ifstream eventdata 	("/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat");//(argv[1]);
 	ifstream utctprh 	("../../../Weather/utctprh_delay.dat");
-	ofstream outfile 	("../../../AllTriggers/Original_Energy/2019/AllTriggers_2019_merged.dat");//(argv[2]);
+	ofstream outfile 	("pc_events_merged.dat");//(argv[2]);
 
 	string lineev;
 	string lineatm;
@@ -50,7 +51,8 @@ int main(int argc, char** argv)
 		{
 			getline(eventdata,lineev);	
 			stringstream sevent(lineev);			
-			sevent>>utc;
+			//sevent>>utc;
+			sevent>>AugId>>Dec>>ra>>Eraw>>Ecor>>utc;
 			
 			while (!utctprh.eof() ){			
 				if(utc <= iutc && utc> iutc-300 && !lineev.empty() )

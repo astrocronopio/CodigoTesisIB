@@ -9,19 +9,22 @@
 
 
 void east_west_method( 	double *a  , double *b		, double *sumaN , 
+						double *average_sin_theta	, double *average_cos_dec,
 						double freq, long long utci , long long utcf,
 						const char* in_file)
 {
-	//long long utc0 = 1072915200  ; //1/>1/2005 00:00:00;  1104537600
-	long long utc0 = 1104537600;
+	long long utc0 = 1072915200  ; //1/>1/2005 00:00:00;  1104537600
+	//long long utc0 = 1104537600;
 	
 	std::string line;
 
 	long long utc,t5, iw, nh;
-	double Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
+	double Phi,Theta,Ra,s1000, s1000_w, s38;
+	double energy, Dec,energy_raw, energy_cor,ftr;
+ 
 	double AugId,Eraw,Ecor,UTC;
 
-	double fas = freq/365.25, raz, arg, hrs, peso,aux , n_east, n_west;
+	double fas = freq/365.25, raz, arg, arg_1, hrs, peso,aux , n_east, n_west;
 
 	unsigned int east, west; 													
 
@@ -36,7 +39,14 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 		while (!myfile.eof() )
 		{			
 			getline(myfile,line);			
-			std::stringstream liness(line);			
+			std::stringstream liness(line);	
+
+			// {
+			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			// energy=Ecor;
+			// if (energy<8.) continue;
+			// if(utc  < utci || Theta > 80) continue;
+			// }		
 
 			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
 			if (energy<energy_threshold) continue;
@@ -44,23 +54,37 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 
 			if(utcf < utc) break;
 			
-			hrs=((double)(utc-utc0)/3600.)*fas; // hora local
-	
+			//hrs=((double)(utc-utc0)/3600.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
+			
 			*sumaN+=1;
 			raz = right_ascension(utc); //cenit Auger
+			//arg = 2.0*pi*(hrs/24.0);// + (Ra-raz)*d2r;
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
 
-			if (abs(Phi) < 90 )
-				east=1;
-			
-			if (east==1){
-				n_east++;
 
-			}
+			east = abs(Phi) < 90 ? 0 : 1;
+			//std::cout<<east<<std::endl;
+			peso=1.0;
 
+			// if (freq==366.25)
+			// {	
+			// 	*a +=cos(arg + pi*east)*peso; 
+			// 	*b +=sin(arg + pi*east)*peso;				
+			// }
 
-			*a +=cos(arg)*peso; 
-			*b +=sin(arg)*peso;
+			// if (freq==365.25)
+			// {
+			// 	*a +=cos(arg + pi*east )*peso; 
+			// 	*b +=sin(arg + pi*east )*peso;				
+			// }
+			// else {
+				*a +=cos(arg + pi*east ); 
+				*b +=sin(arg + pi*east );	
+			//}
+
+			*average_sin_theta +=   sin(Theta*d2r);
+			*average_cos_dec   +=	cos(Dec*d2r);
 		}
 	}
 
@@ -68,9 +92,9 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 }
 
 
-std::vector<double> average_over_cenit(long long utci, 
-						long long utcf, 
-						const char* in_file)
+std::vector<double> average_over_cenit(long long utci, long long utcf, 
+						const char* in_file, double* average_sin_theta,
+						double* average_cos_dec)
 	{	
 	double avg_cos_dec, avg_sin_dec;
 	double avg_cos_2_dec, avg_sin_2_dec;
@@ -129,7 +153,8 @@ std::vector<double> average_over_cenit(long long utci,
     avg[9] = avg_sin_2_dec/nval;    // Sin(dec)^2
 
 	return avg;
-	}
+}
+
 
 int main(int argc, char const *argv[])
 {	
@@ -141,12 +166,16 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
-	ew_multifreq(20,  in_file, out_file, utci, utcf, east_west_method);
 
-/*	long long utci =  rango2013;
-	long long utcf =  rango2020;
-	ray_given_freq(366.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
-	*/
+	std::cout<<"Output: "<<out_file<<std::endl;
+
+	//ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
+
+	ew_given_freq(365.25, in_file, out_file,
+				  utci, utcf, east_west_method);
+
+	ew_given_freq(366.25, in_file, out_file,
+				  utci, utcf, east_west_method);
 	
 	return 0;
 }
