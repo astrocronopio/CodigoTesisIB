@@ -67,7 +67,9 @@ void ew_given_freq( double freq, const char* in_file, const char* out_file,
      	if (a < 0) pha= pha+pi;
      	if (a>0 && b< 0) pha = pha +2.*pi;
 		
-		pha = pha+ 0.5*pi;
+		pha = fmod(pha+ 0.5*pi, 2*pi);
+		if (pha>pi && pha<2*pi)
+			pha=pha -2*pi;
 
      	rtilde= sqrt(a*a + b*b);
      	prtilde = exp(-sumaN*(rtilde)*(rtilde)/4.0);

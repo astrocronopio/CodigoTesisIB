@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Título%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Resultados del método East-West}
+\title{Resultados del método East-West con All Triggers}
 \author{Evelyn~G.~Coronel}
 
 \affiliation{
@@ -42,8 +42,8 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
     es tal que la variable es igual a la ascensión recta del evento a estudiar y no al cenit como es el caso del EW.
     \item Una vez corridos todos los  eventos se calculan los parámetros:
     \begin{align*}
-        a_{EW} &= \frac{2}{N} \sum^N_{i=1} a\\
-        b_{EW} &= \frac{2}{N} \sum^N_{i=1} b
+        a_{EW} &= \frac{2}{N} \sum^N_{i=1} a \qquad
+        b_{EW} = \frac{2}{N} \sum^N_{i=1} b
     \end{align*}
     que es equivalente a haber calculado
     \begin{align*}
@@ -60,8 +60,8 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
     Estos valores se traducen a los valores de amplitud $r$ y fase $\phi$ del dípolo físico mediante las expresiones:
     \begin{align*}
-        r &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} r_{EW}\\
-        \phi &= \phi_{EW} + \frac{\pi}{2}\\
+        r = \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} &r_{EW} \qquad
+        \phi = \phi_{EW} + \frac{\pi}{2}\\
         d_\perp&= \frac{\pi}{2 \langle\sin\theta \rangle} r_{EW}
     \end{align*}
     Se suma $\frac{\pi}{2}$ por el  artificio de agregar $\pi$ en los coeficientes para obtener la diferencia entre tasas del este y oeste. Los valores $\langle\cos\delta \rangle$ y $\langle\sin\delta \rangle$ son los valores medios de estas variables en los años estudiados. 
@@ -74,7 +74,11 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
 \end{enumerate}
 
-\section*{Tabla para distintos rangos}
+Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020}, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
+
+\section*{Tabla cantidad de eventos para distintos rangos de energía}
+
+Los eventos son clasificados en los distintos rangos con la energía reportada el archivo del Herald de todos los disparos.
 \begin{table}[H]
     \begin{small}
         \begin{center}
@@ -83,11 +87,11 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
                 \multicolumn{1}{c|}{\textbf{Eventos}} 
                 & \bf{Energía Media} \\
                 \hline
-                0.25 - 0.5  & $3\,967\,368$ & 0.349\\
-                0.5  - 1    & $3\,638\,226$ & 0.657\\
-                1    - 2    & $1\,081\,846$ & 1.259 \\
+                0.25 - 0.5  & $3\,967\,368$ & 0.375\\
+                0.5  - 1    & $3\,638\,226$ & 0.687\\
+                1    - 2    & $1\,081\,846$ & 1.315 \\
             \end{tabular}
-            \caption{Tabla de eventos por rango de energía \footnote{Energía según el archivo del Herald}}
+            \caption{Tabla de eventos por rango de energía }
             \label{tab:}
         \end{center}
     \end{small}
@@ -95,17 +99,20 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
 
 \subsection*{Resultados en el rango 0.25 EeV - 0.5 EeV}
+
+La referencia tiene $770\,323$ eventos con una energía media de $0.42$.
+
 \begin{table}[H]
     \begin{small}
         \begin{center}
-            \begin{tabular}[c]{l|c|c|c}
-                Frecuencia:     & 365.25	  & 366.25	   & 366.25 \footnote{Análisis EW de referencia}   \\
-                Amplitud:       & 0.00173	  & 0.00123	   & -      \\
-                $d_\perp$:      & 0.00219	  & 0.00156	   &        \\
-                Probabilidad:   & 0.66        & 0.81	   &        \\
-                Fase:           & 144$\pm$60  & 279$\pm$90 &    	\\
-                $r_{99}$:       & 0.00580	  & 0.00580    &        \\
-                $d_{\perp,99}$  &             &\\
+            \begin{tabular}[c]{l|c||c|c}
+                Frecuencia:     & 365.25	  & 366.25	   & 366.25 \cite{Aab_2020}   \\
+                Amplitud:       & 0.00173	  & 0.00123	   & 0.00479      \\
+                $d_\perp$:      & 0.00219	  & 0.00156	   & 0.00609       \\
+                Probabilidad:   & 0.66        & 0.81	   & 0.45       \\
+                Fase:           & 145$\pm$60  & 279$\pm$90 & 226$\pm$50   	\\
+                $r_{99}$:       & 0.00580	  & 0.00580    & 0.0115       \\
+                $d_{\perp,99}$  & 0.00732     & 0.00732    & 0.0147       \\
             \end{tabular}
         \end{center}
     \end{small}
@@ -114,17 +121,21 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 \end{table}
 
 \subsection*{Resultados en el rango 0.5 EeV - 1 EeV}
-    \begin{table}[H]
+En este rango de energía se observa una diferencia entre las probabilidades de este trabajo y \cite{Aab_2020}  ne la frecuencia sidérea. Este valor dice cuando probable es que las amplitudes sean debido al ruido. Este trabajo obtiene que la amplitud en sidérea es significativa por un  $6\%$.
+
+La referencia tiene $2\,388\,468$ eventos con una energía media de $0.71$.
+
+\begin{table}[H]
         \begin{small}
             \begin{center}
-                \begin{tabular}[c]{l|c|c|c}
-                    Frecuencia:     & 365.25	    & 366.25		& 366.25\footnote{Análisis EW de referencia}\\
-                    Amplitud:       & 0.00428       & 0.00442	    & \\
-                    $d_\perp$:      & 0.00543       & 0.00561       & \\
-                    Probabilidad:   & 0.066         & 0.055	        & \\
-                    Fase:           & 128$\pm$20	& 260$\pm$20	& \\
-                    r99:            & 0.00556	    & 0.00556       & \\
-                    $d_{\perp,99}$  &             &\\
+                \begin{tabular}[c]{l|c||c|c}
+                    Frecuencia:     & 365.25	    & 366.25		& 366.25\cite{Aab_2020}\\
+                    Amplitud:       & 0.00428       & 0.00442	    & 0.00377\\
+                    $d_\perp$:      & 0.00543       & 0.00561       & 0.00481\\
+                    Probabilidad:   & 0.07          & 0.06	        & 0.20\\
+                    Fase:           & 128$\pm$20	& 260$\pm$20	& 261$\pm$30\\
+                    r99:            & 0.00556	    & 0.00556       & 0.00634\\
+                    $d_{\perp,99}$  & 0.00706       & 0.00706       &0.00809\\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -133,19 +144,19 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
     \end{table}
 
 
-
 \subsection*{Resultados en el rango 1 EeV - 2 EeV}
     \begin{table}[H]
         \begin{small}
             \begin{center}
                 \begin{tabular}[c]{l|c|c}
-                                    & Rayleigh      & EW                \\\hline
-                    Frecuencia:     & 365.25	    & 365.25            \\
-                    Amplitud:       & 0.00385       & 0.00282           \\
-                    $d_\perp$:      & -	            & 0.00359	        \\ 
-                    Probabilidad:   & 0.0181        & 0.64              \\
-                    Fase:           & 288$\pm$20    & 200$\pm$60        \\
-                    r99:            & 0.0041263     & 0.00916           \\
+                                    & Rayleigh      & EW            \\\hline
+                    Frecuencia:     & 365.25	    & 365.25        \\
+                    Amplitud:       & 0.00385       & 0.00282       \\
+                    $d_\perp$:      & -	            & 0.00359	    \\ 
+                    Probabilidad:   & 0.02          & 0.64          \\
+                    Fase:           & 288$\pm$20    & 200$\pm$60    \\
+                    r99:            & 0.0041263     & 0.00916       \\
+                    $d_{\perp,99}$  & -             & 0.0117              \\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -156,14 +167,15 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
     \begin{table}[H]
         \begin{small}
             \begin{center}
-                \begin{tabular}[c]{l|c|c|c}
-                                    & Rayleigh     & EW         &       \\\hline
-                    Frecuencia:     & 366.25	   & 366.25     &       \\
-                    Amplitud:       & 0.00399	   &0.00495     &       \\
-                    $d_\perp$:      & -	           & 0.00631    &       \\ 
-                    Probabilidad:   & 0.0136	   &0.26        &       \\
-                    Fase:           & 336$\pm$20   &320$\pm$30  &       \\
-                    r99:            & 0.00413	   &0.00916     &       \\
+                \begin{tabular}[c]{l|c||c|c}
+                                    & Rayleigh     & EW         & EW\cite{Aab_2020}      \\\hline
+                    Frecuencia:     & 366.25	   & 366.25     & 366.25      \\
+                    Amplitud:       & 0.00399	   & 0.00495    & 0.00143      \\
+                    $d_\perp$:      & -	           & 0.00631    & 0.00182      \\ 
+                    Probabilidad:   & 0.0136	   & 0.26       & 0.87      \\
+                    Fase:           & 336$\pm$20   & 320$\pm$30 & 291$\pm$100      \\
+                    r99:            & 0.00413	   & 0.00916    & 0.00837      \\
+                    $d_{\perp,99}$  & -            & 0.0117     & 0.0107       \\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -171,4 +183,8 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
         \label{tab:solar}
     \end{table}
 
+    La referencia tiene $1\,243\,098$ eventos con una energía media de $1.34$.
+    \bibliographystyle{apsrev4-1}
+    \bibliography{mibib.bib}
+    
     \end{document}
