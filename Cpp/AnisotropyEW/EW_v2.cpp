@@ -8,7 +8,7 @@
 #include "east_west.h"
 
 
-void east_west_method( 	double *a  , double *b		, double *sumaN , 
+void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 						double *average_sin_theta	, double *average_cos_dec,
 						double freq, long long utci , long long utcf,
 						const char* in_file)
@@ -45,24 +45,33 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
 
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			if (energy<energy_threshold) continue;
-			if(utc  < utci || Theta > 60) continue;
+			// {
+			// liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
+			// //if (energy>1. || energy<= 0.5) continue;
+			// if(utc  < utci || Theta > 60) continue;
+			// }	
 
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			//if (energy<energy_threshold) continue;
+			if(utc  < utci) continue;
+			if(Theta > 60) continue;
 			if(utcf < utc) break;
 			
-			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600. + 21.); // hora local
 			
-			*sumaN+=1;
+			
 			raz = right_ascension(utc); //cenit Auger
-			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
-
-
+			arg = 2.0*pi*(hrs/24.0 + 21);
+			
+			arg_1 = freq==366.25 ? raz*d2r : arg;
+			
 			east = abs(Phi) < 90 ? 0 : 1;
 
-			*a +=cos(arg + pi*east ); 
-			*b +=sin(arg + pi*east );	
-
+			
+			*a += cos(arg_1 + pi*east ); 
+			*b += sin(arg_1 + pi*east );	
+			*sumaN=*sumaN+1;
+			*mean_energy +=energy;
 			*average_sin_theta +=   sin(Theta*d2r);
 			*average_cos_dec   +=	cos(Dec*d2r);
 		}
@@ -82,16 +91,16 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); 
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
-
+	std::cout<<"Input: "<<in_file<<std::endl;
 	std::cout<<"Output: "<<out_file<<std::endl;
 
-	ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
+	//ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
 
 	ew_given_freq(365.25, in_file, out_file,
 				  utci, utcf, east_west_method);
 
-	ew_given_freq(366.25, in_file, out_file,
-				  utci, utcf, east_west_method);
+	// ew_given_freq(366.25, in_file, out_file,
+	// 			  utci, utcf, east_west_method);
 	
 	return 0;
 }

@@ -1,0 +1,11 @@
+E, 0.750000000 
+rray, 0.00379 
+real(rp),0.0024 
+real(rm),0.00143  
+rad/d2r,sgmrad/d2r, 261.307007     31.7393780 
+r99,0.00637
+nval,2388467
+prtilde,0.20 
+dper,=0.0048
+real(rp/promcosd),real(rm/promcosd), 0.00305,  0.00182 
+sigma   0.00210

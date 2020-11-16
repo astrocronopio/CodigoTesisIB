@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Título%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Pesos de los hexágonos}
+\title{Resultados del método East-West}
 \author{Evelyn~G.~Coronel}
 
 \affiliation{
@@ -19,6 +19,60 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
 
+\section*{Como se hace el cálculo}
+
+\begin{enumerate}
+    \item Definimos el rango de tiempo a estudiar, para estos resultados se utilizaron los límites: 1 de Enero del 2014 hasta el 1 de Enero del 2020.
+    \item Se recorre cada evento que cumpla con las siguientes características:
+     \begin{itemize}
+        \item Pertenezca el rango de energía a estudiar
+        \item Sea un evento 6T5 con ángulo cenital menor a $60^o$
+        \item Se haya registrado en el rango de tiempo seleccionado
+    \end{itemize}
+    En cada evento se calcula los siguientes valores:
+    \begin{align}
+        a' = \cos(X - \beta)\\
+        b' = \sin(X - \beta)
+    \end{align}
+    el valor de $X$ depende la frecuencia a estudiar, la misma es igual a la ascensión recta del cenit $\alpha^0_i$ al momento del evento  si se estudia la frecuencia sidérea, en cambio para la frecuencia solar es igual al equivalente en grados de la hora local de Malargüe. El valor de $\beta$ es depende si el evento provino del Este donde $\beta=180^o$ o $\beta=0$ caso contrario.
+    Se intentó hacer un barrido de frecuencias análogo al análisis de Rayleigh pero la variable utilizada para generalizar el análisis a frecuencias arbitrarias:
+    \begin{equation}
+        \tilde{\alpha} = 2\pi f_x t_i + \alpha_i - \alpha_i^0(t_i) \label{ra_mod}
+      \end{equation}
+    es tal que la variable es igual a la ascensión recta del evento a estudiar y no al cenit como es el caso del EW.
+    \item Una vez corridos todos los  eventos se calculan los parámetros:
+    \begin{align*}
+        a_{EW} &= \frac{2}{N} \sum^N_{i=1} a\\
+        b_{EW} &= \frac{2}{N} \sum^N_{i=1} b
+    \end{align*}
+    que es equivalente a haber calculado
+    \begin{align*}
+        a_{EW} &= \frac{2}{N} \sum^N_{i=1} \cos(\alpha^0_i - \beta_i)\\
+        b_{EW} &= \frac{2}{N} \sum^N_{i=1} \sin(\alpha^0_i - \beta_i)
+    \end{align*}
+    donde N indica la cantidad eventos considerados. La cantidad de eventos por rango de energía se muestran en la tabla \ref{tab:}.
+
+    Con esto puedo calcular la amplitud asociada al análisis $r_{EW}$ y la fase $\phi_{EW}$:
+    \begin{align*}
+        r_{EW} = \sqrt{a_{EW}^2 + b_{EW}^2}\\
+        \phi_{EW} = \tan^{-1}(\nicefrac{b_{EW}}{a_{EW}})
+    \end{align*}
+
+    Estos valores se traducen a los valores de amplitud $r$ y fase $\phi$ del dípolo físico mediante las expresiones:
+    \begin{align*}
+        r &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} r_{EW}\\
+        \phi &= \phi_{EW} + \frac{\pi}{2}\\
+        d_\perp&= \frac{\pi}{2 \langle\sin\theta \rangle} r_{EW}
+    \end{align*}
+    Se suma $\frac{\pi}{2}$ por el  artificio de agregar $\pi$ en los coeficientes para obtener la diferencia entre tasas del este y oeste. Los valores $\langle\cos\delta \rangle$ y $\langle\sin\delta \rangle$ son los valores medios de estas variables en los años estudiados. 
+
+    \item Se calcula la amplitud límite $r_{99}$ y la probabilidad de que las amplitudes calculadas sea ruido  $P(r_{EW})$ mediante:
+    \begin{align*}
+        P(\geq r_{EW}) = \exp{-\frac{N}{4}r^2_{EW}}\\
+        r_{99} = \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle}\sqrt{\frac{4}{N}\ln(100)}
+    \end{align*}
+
+\end{enumerate}
 
 \section*{Tabla para distintos rangos}
 \begin{table}[H]
@@ -29,9 +83,9 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
                 \multicolumn{1}{c|}{\textbf{Eventos}} 
                 & \bf{Energía Media} \\
                 \hline
-                0.25 - 0.5 & $4\,334\,500$ & 0.374\\
-                0.5 - 1 &   $3\,846\,087$ & 0.687\\
-                1   - 2 & $1\,141\,168$ & 1.315 \\
+                0.25 - 0.5  & $3\,967\,368$ & 0.349\\
+                0.5  - 1    & $3\,638\,226$ & 0.657\\
+                1    - 2    & $1\,081\,846$ & 1.259 \\
             \end{tabular}
             \caption{Tabla de eventos por rango de energía \footnote{Energía según el archivo del Herald}}
             \label{tab:}
@@ -44,137 +98,77 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 \begin{table}[H]
     \begin{small}
         \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh      & EW            \\\hline
-                Frecuencia:     & 365.25	    & 365.25         \\
-                Amplitud:       & 0.00385       & 0.000874    \\
-                Probabilidad:   & 0.0181        & 0.846     \\
-                Fase:           & 288+/-20      & 77+/-100           \\
-                r99:            & 0.0041263     & 0.00458  \\
+            \begin{tabular}[c]{l|c|c|c}
+                Frecuencia:     & 365.25	  & 366.25	   & 366.25 \footnote{Análisis EW de referencia}   \\
+                Amplitud:       & 0.00173	  & 0.00123	   & -      \\
+                $d_\perp$:      & 0.00219	  & 0.00156	   &        \\
+                Probabilidad:   & 0.66        & 0.81	   &        \\
+                Fase:           & 144$\pm$60  & 279$\pm$90 &    	\\
+                $r_{99}$:       & 0.00580	  & 0.00580    &        \\
+                $d_{\perp,99}$  &             &\\
             \end{tabular}
         \end{center}
     \end{small}
-    \caption{Características para la frecuencia solar con los métodos de Rayleigh  e East-West en el primer armónico.}
+    \caption{Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV}
     \label{tab:solar}
 \end{table}
-
-\begin{table}[H]
-    \begin{small}
-        \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh     & EW         \\\hline
-                Frecuencia:     & 366.25	   & 366.25        \\
-                Amplitud:       & 0.00399	   & 0.00130459     \\
-                Probabilidad:   & 0.0136	   & 0.688584     \\
-                Fase:           & 336+/-20	   & 6+/-66          \\
-                r99:            & 0.00413	   & 0.00458    \\
-            \end{tabular}
-        \end{center}
-    \end{small}
-    \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
-    \label{tab:solar}
-\end{table}
-
-\begin{figure}[H]
-    \begin{small}
-        \begin{center}
-            \includegraphics[width=0.5\textwidth]{/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Cpp/AnisotropyEW/Files_AllTriggers_0-25_0-5_EeV/plot.pdf}
-        \end{center}
-        \caption{Primer armónico en EW para el rango 0.25 EeV - 0.5 EeV}
-        \label{fig:}
-    \end{small}
-\end{figure}
-
 
 \subsection*{Resultados en el rango 0.5 EeV - 1 EeV}
-\begin{table}[H]
-    \begin{small}
-        \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh      & EW            \\\hline
-                Frecuencia:     & 365.25	    & 365.25         \\
-                Amplitud:       & 0.00385       & 0.000874    \\
-                Probabilidad:   & 0.0181        & 0.846     \\
-                Fase:           & 288+/-20      & 77+/-100           \\
-                r99:            & 0.0041263     & 0.00458  \\
-            \end{tabular}
-        \end{center}
-    \end{small}
-    \caption{Características para la frecuencia solar con los métodos de Rayleigh  e East-West en el primer armónico.}
-    \label{tab:solar}
-\end{table}
+    \begin{table}[H]
+        \begin{small}
+            \begin{center}
+                \begin{tabular}[c]{l|c|c|c}
+                    Frecuencia:     & 365.25	    & 366.25		& 366.25\footnote{Análisis EW de referencia}\\
+                    Amplitud:       & 0.00428       & 0.00442	    & \\
+                    $d_\perp$:      & 0.00543       & 0.00561       & \\
+                    Probabilidad:   & 0.066         & 0.055	        & \\
+                    Fase:           & 128$\pm$20	& 260$\pm$20	& \\
+                    r99:            & 0.00556	    & 0.00556       & \\
+                    $d_{\perp,99}$  &             &\\
+                \end{tabular}
+            \end{center}
+        \end{small}
+        \caption{Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.5 EeV - 1 EeV}
+        \label{tab:solar}
+    \end{table}
 
-\begin{table}[H]
-    \begin{small}
-        \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh     & EW         \\\hline
-                Frecuencia:     & 366.25	   & 366.25        \\
-                Amplitud:       & 0.00399	   & 0.00130459     \\
-                Probabilidad:   & 0.0136	   & 0.688584     \\
-                Fase:           & 336+/-20	   & 6+/-66          \\
-                r99:            & 0.00413	   & 0.00458    \\
-            \end{tabular}
-        \end{center}
-    \end{small}
-    \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
-    \label{tab:solar}
-\end{table}
-
-\begin{figure}[H]
-    \begin{small}
-        \begin{center}
-            \includegraphics[width=0.5\textwidth]{/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Cpp/AnisotropyEW/Files_AllTriggers_0-5_1_EeV/plot.pdf}
-        \end{center}
-        \caption{Primer armónico en EW para el rango 0.5 EeV - 1 EeV}
-        \label{fig:}
-    \end{small}
-\end{figure}
 
 
 \subsection*{Resultados en el rango 1 EeV - 2 EeV}
-\begin{table}[H]
-    \begin{small}
-        \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh      & EW            \\\hline
-                Frecuencia:     & 365.25	 & 365.25         \\
-                Amplitud:       & 0.00385   & 0.000874    \\
-                Probabilidad:   & 0.0181   & 0.846     \\
-                Fase:           & 288+/-20   & 77+/-100           \\
-                r99:            & 0.0041263   & 0.00458  \\
-            \end{tabular}
-        \end{center}
-    \end{small}
-    \caption{Características para la frecuencia solar con los métodos de Rayleigh  e East-West en el primer armónico.}
-    \label{tab:solar}
-\end{table}
+    \begin{table}[H]
+        \begin{small}
+            \begin{center}
+                \begin{tabular}[c]{l|c|c}
+                                    & Rayleigh      & EW                \\\hline
+                    Frecuencia:     & 365.25	    & 365.25            \\
+                    Amplitud:       & 0.00385       & 0.00282           \\
+                    $d_\perp$:      & -	            & 0.00359	        \\ 
+                    Probabilidad:   & 0.0181        & 0.64              \\
+                    Fase:           & 288$\pm$20    & 200$\pm$60        \\
+                    r99:            & 0.0041263     & 0.00916           \\
+                \end{tabular}
+            \end{center}
+        \end{small}
+        \caption{Características para la frecuencia solar con los métodos de Rayleigh  e East-West en el primer armónico.}
+        \label{tab:solar}
+    \end{table}
 
-\begin{table}[H]
-    \begin{small}
-        \begin{center}
-            \begin{tabular}[c]{l|c|c}
-                                & Rayleigh     & EW         \\\hline
-                Frecuencia:     & 366.25	   & 366.25        \\
-                Amplitud:       & 0.00399	   &0.00130459     \\
-                Probabilidad:   & 0.0136	   &0.688584     \\
-                Fase:           & 336+/-20	   &6+/-66          \\
-                r99:            & 0.00413	   &0.00458  \\
-            \end{tabular}
-        \end{center}
-    \end{small}
-    \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
-    \label{tab:solar}
-\end{table}
+    \begin{table}[H]
+        \begin{small}
+            \begin{center}
+                \begin{tabular}[c]{l|c|c|c}
+                                    & Rayleigh     & EW         &       \\\hline
+                    Frecuencia:     & 366.25	   & 366.25     &       \\
+                    Amplitud:       & 0.00399	   &0.00495     &       \\
+                    $d_\perp$:      & -	           & 0.00631    &       \\ 
+                    Probabilidad:   & 0.0136	   &0.26        &       \\
+                    Fase:           & 336$\pm$20   &320$\pm$30  &       \\
+                    r99:            & 0.00413	   &0.00916     &       \\
+                \end{tabular}
+            \end{center}
+        \end{small}
+        \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
+        \label{tab:solar}
+    \end{table}
 
-\begin{figure}[H]
-    \begin{small}
-        \begin{center}
-            \includegraphics[width=0.5\textwidth]{/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Cpp/AnisotropyEW/Files_AllTriggers_1_2_EeV/plot.pdf}
-        \end{center}
-        \caption{Primer armónico en EW para el rango 1 EeV - 2 EeV}
-        \label{fig:}
-    \end{small}
-\end{figure}
-
-\end{document}
+    \end{document}

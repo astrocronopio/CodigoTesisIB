@@ -16,5 +16,6 @@ replot filename u 1:9 w l notit lc rgb 'red'  lw 0.9
 
 replot filecmp u 1:5 w l t "Referencia" ls 3  lc rgb 'blue' lw 1.5 
 replot filecmp u 1:9 w l notit lc rgb 'blue'
+replot "./Files_AllTriggers_Reference/asi_seria_sin_corr.dat" u 1:5 w l t "Referencia" ls 3  lc rgb 'orange' lw 1.5 
 
 pause(-1)

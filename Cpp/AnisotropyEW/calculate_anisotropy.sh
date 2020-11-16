@@ -13,7 +13,7 @@ rango2017=1472688000 #
 rangoPC2017=1496275200 
 #importante, este es el final de PC,
 #que lo uso de referencia
-
+rangoLSA2018=1538352000
 rango2019=1546344000
 rango2020=1577880000
 
@@ -27,25 +27,56 @@ energy_threshold="0"
 #file_input="../../../AllTriggers/S38_analisis/2019/AllTriggers_S38_over_1_2_EeV_2019.dat"
 #file_input="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
 
-
-
+#####################################################################################3
 folder="./Files_AllTriggers_0-25_0-5_EeV/"
 file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
 
-# folder="./Files_AllTriggers_0-5_1_EeV/"
-# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
-
-# folder="./Files_AllTriggers_1_2_EeV/"
-# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
-
-
 mkdir "$folder"
-
 EW="EW_v2"
+EW_2="EW_v2_seg_arm"
 algoritmo="$EW"
 file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
-#g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+
+#### Exec ####
+
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+
+#####################################################################################3
+
+folder="./Files_AllTriggers_0-5_1_EeV/"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
+
+
+mkdir "$folder"
+EW="EW_v2"
+EW_2="EW_v2_seg_arm"
+algoritmo="$EW"
+file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
+
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+
+#### Exec ####
+
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+
+
+
+#####################################################################################3
+folder="./Files_AllTriggers_1_2_EeV/"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+
+# file_input="../../../../Herald060noBP6t5a025_010104-310818.dat"
+# folder="2020_paper/"
+
+mkdir "$folder"
+EW="EW_v2"
+EW_2="EW_v2_seg_arm"
+algoritmo="$EW"
+file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
+
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 #### Exec ####
 
@@ -53,5 +84,6 @@ file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
 #"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2004))" "$(($rangoPC2017))" "$energy_threshold"
 
+#"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2004))" "$(($rangoLSA2018))" "$energy_threshold"
 
 #gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp

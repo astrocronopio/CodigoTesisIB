@@ -13,7 +13,7 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 						double freq, long long utci , long long utcf,
 						const char* in_file)
 {
-	long long utc0 = 1072915200  ; 
+	long long utc0 = 1104537600  ; 
 	
 	std::string line;
 
@@ -45,9 +45,11 @@ void east_west_method( 	double *a  , double *b		, double *sumaN ,
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
 
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			if (energy<energy_threshold) continue;
-			if(utc  < utci || Theta > 60) continue;
+
+
+			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			// if (energy<energy_threshold) continue;
+			// if(utc  < utci || Theta > 60) continue;
 
 			if(utcf < utc) break;
 			

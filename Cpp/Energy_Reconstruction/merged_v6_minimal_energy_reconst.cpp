@@ -26,44 +26,13 @@ lee la informacion del archivo de clima
 #include <sstream>
 #include <math.h>
 
+#include "recons.h"
 using namespace std;
-
-
-double p0	= 862.0;
-double rho0	= 1.06;
-double A 	= 0.1856;//1./5.1172; //0.166 - ish
-double B 	= 1.0315;//1./0.9694;
-double y	= 3.29;
-double Bgamma= B*(y-1.0);//2.36328;
-
-
-double c07 = 0.0, c17 = 0.0 , c27 = 0.  ;
-double c05 = 0.0, c15 = 0.0 , c25 = 0.  ;
-double c06 = 0.0, c16 = 0.0 , c26 = 0.  ;
-
-double energy( double S38){	return A*powf(S38, B);}
-
-double ap  (double the2){	return c07 + c17*the2 + c27*the2*the2; }
-double arho(double the2){	return c05 + c15*the2 + c25*the2*the2; }
-double brho(double the2){	return c06 + c16*the2 + c26*the2*the2; }
-
-
-double energy_reconstruction(double S38, double p, double rho, double rhod, double the, double* factor) 
-{	
-	double the2 = sin(the*M_PI/180.)*sin(the*M_PI/180.);
-
-	*factor =1 + (ap(the2)*(p-p0) + arho(the2)*(rho -  rho0) + brho(the2)*(rhod - rho)); 
-	
-	double S38w = S38/(*factor);   // S = S_0 * factor, pero S_0 es para calcular la energia
-								// S es lo medido, S_0 es lo que se debería ver en condiciones normales
-
-	return energy(S38w);
-}
 
 
 int main(int argc, char** argv)
 {	
-	int flag = 1;
+	int flag = 0;
 //Bien, se debe dividir porque  a =  Bgamma * alpha, y los parametros son de ap
 	
 	//NAda
@@ -166,11 +135,11 @@ int main(int argc, char** argv)
 			if  (utc<1388577500 ) continue;
 
 			//if (flag==0) 
-			energy_corr =energy_reconstruction(S38, p,  rho, rhod, the, &factor) ;
+			energy_corr =energy_reconstruction(S38, p,  rho, rhod, the, phi, &factor) ;
 			//else 
 			//energy_corr =energy_reconstruction(S38*(S1000_raw/S1000), p,  rho, rhod, the, &factor) ;
 
-			energy_corr=Energy;
+			//energy_corr=Energy;
 
 			if (energy_corr < 1.0) continue;
 			if (energy_corr > 2.0) continue;

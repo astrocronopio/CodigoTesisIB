@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: report_EW_results.aux
 The style file: apsrev4-1.bst
@@ -22,45 +22,45 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 3 entries,
+You've used 5 entries,
             5847 wiz_defined-function locations,
-            1604 strings with 14734 characters,
-and the built_in function-call counts, 1219 in all, are:
-= -- 44
+            1609 strings with 14780 characters,
+and the built_in function-call counts, 1747 in all, are:
+= -- 108
 > -- 13
 < -- 33
-+ -- 9
++ -- 13
 - -- 19
-* -- 164
-:= -- 101
-add.period$ -- 1
-call.type$ -- 3
-change.case$ -- 5
-chr.to.int$ -- 11
-cite$ -- 3
-duplicate$ -- 148
-empty$ -- 31
+* -- 230
+:= -- 167
+add.period$ -- 3
+call.type$ -- 5
+change.case$ -- 15
+chr.to.int$ -- 13
+cite$ -- 5
+duplicate$ -- 184
+empty$ -- 63
 format.name$ -- 0
-if$ -- 169
+if$ -- 267
 int.to.chr$ -- 1
-int.to.str$ -- 10
-missing$ -- 29
-newline$ -- 55
+int.to.str$ -- 12
+missing$ -- 31
+newline$ -- 61
 num.names$ -- 0
-pop$ -- 78
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 12
 quote$ -- 0
-skip$ -- 43
+skip$ -- 65
 stack$ -- 0
-substring$ -- 24
-swap$ -- 121
+substring$ -- 52
+swap$ -- 147
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 23
+type$ -- 45
 warning$ -- 1
 while$ -- 9
 width$ -- 0
-write$ -- 56
+write$ -- 64
 (There was 1 warning)

@@ -82,16 +82,16 @@ void rayleigh( 	double *a 		, double *b,
 			getline(myfile,line);			
 			std::stringstream liness(line);			
 		 
-			{
-			liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
-			energy=Eraw;
-			if (energy<8.) continue;
-			if(utc  < utci || Theta > 80) continue;
-			}
+			// {
+			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			// energy=Eraw;
+			// if (energy<8.) continue;
+			// if(utc  < utci || Theta > 80) continue;
+			// }
 			
-			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w;
-			// if (energy<energy_threshold) continue;
-			// if(utc  < utci || Theta > 60) continue;
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w;
+			if (energy<energy_threshold) continue;
+			if(utc  < utci || Theta > 60) continue;
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
@@ -235,7 +235,7 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 
-	ray_multifreq(50,  in_file, out_file, utci, utcf, rayleigh);
+	ray_multifreq(40,  in_file, out_file, utci, utcf, rayleigh);
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
