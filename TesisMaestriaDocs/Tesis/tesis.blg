@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tesis.aux
+The style file: ibtesis.bst
+Database file #1: mibib.bib
+Warning--empty author in como_funciona_auger
+Warning--empty journal in collaboration2013pierre
+Warning--empty journal in data
+Warning--empty author in kit_oracle
+Warning--empty journal in kit_oracle
+Warning--empty year in kit_oracle
+Warning--empty year in tobepublished
+Warning--empty author in isabel
+Warning--empty journal in isabel
+Warning--empty year in isabel
+Warning--empty journal in collaboration2009atmospheric
+You've used 29 entries,
+            2634 wiz_defined-function locations,
+            1196 strings with 22446 characters,
+and the built_in function-call counts, 10165 in all, are:
+= -- 634
+> -- 359
+< -- 0
++ -- 181
+- -- 89
+* -- 594
+:= -- 1151
+add.period$ -- 85
+call.type$ -- 29
+change.case$ -- 27
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 1044
+empty$ -- 995
+format.name$ -- 103
+if$ -- 2157
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 302
+newline$ -- 148
+num.names$ -- 26
+pop$ -- 430
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 246
+stack$ -- 0
+substring$ -- 394
+swap$ -- 696
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 11
+while$ -- 56
+width$ -- 31
+write$ -- 307
+(There were 11 warnings)

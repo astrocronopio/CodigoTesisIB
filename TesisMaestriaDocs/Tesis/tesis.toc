@@ -1,9 +1,8 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {ii}}{section*.1}%
-\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {v}}{section*.3}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vi}}{section*.5}%
+\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {i}}{section*.1}%
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {ii}}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.5}%
 \contentsline {chapter}{Resumen}{\es@scroman {viii}}{section*.7}%
-\contentsline {chapter}{\~{N}emombyky}{\es@scroman {xi}}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Rayos cósmicos}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Espectro de energías}{2}{section.2.1}%
@@ -11,51 +10,57 @@
 \contentsline {chapter}{\numberline {3}El Observatorio Pierre Auger}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducción}{5}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Detección de Rayos Cósmicos}{5}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1} El detector de superficie y el detector de Fluorescencia}{5}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1} El detector de superficie y el detector de Fluorescencia}{6}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Diseño híbrido}{7}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Reconstrucción de eventos de los detectores de superficie}{7}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Selección de eventos}{7}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Reconstrucción de las lluvias}{7}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Calibración de la energía}{8}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Monitoreo del clima}{9}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}La física detrás de la modulación del clima}{10}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Trabajos anteriores}{10}{subsection.4.1.1}%
-\contentsline {subsubsection}{Efectos de la atmósfera sobre los rayos cósmicos}{11}{section*.18}%
-\contentsline {subsubsection}{Modelo teórico}{13}{section*.20}%
-\contentsline {subsubsection}{Estimador del ajuste}{14}{section*.21}%
-\contentsline {subsection}{\numberline {4.1.2}Condiciones climáticas y área activa del observatorio Pierre Auger}{15}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Resultados para el arreglo de detectores de superficie de 1500\tmspace +\thinmuskip {.1667em}m de distancia}{15}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Datos presentados en la ICRC 2015}{17}{subsection.4.2.1}%
-\contentsline {subsubsection}{Ajuste de los parámetros del clima}{19}{section*.28}%
-\contentsline {subsection}{\numberline {4.2.2}Datos presentados en la ICRC 2019}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima}{22}{subsection.4.2.3}%
-\contentsline {subsubsection}{Ajuste de los parámetros del clima}{23}{section*.37}%
-\contentsline {subsection}{\numberline {4.2.4}Datos presentados en la ICRC 2019 usando la energía reconstruida en este trabajo}{25}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Trabajos futuros}{26}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Anisotropías en las direcciones de arribo de los rayos cósmicos}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introducción}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Métodos}{27}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Exposición del detector}{27}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Análisis en ascensión recta}{28}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Características de los datos}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Anisotropías en ascensión recta en los archivos del ICRC 2017 y ICRC 2019}{29}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Eventos por encima de 8 EeV }{29}{subsection.5.4.1}%
-\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{29}{section*.42}%
-\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{30}{section*.44}%
-\contentsline {section}{\numberline {5.5}Anisotropías en ascensión recta en los archivos con todos los disparos}{30}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Características de los archivos de datos analizados}{30}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Eventos por encima de 1 EeV }{31}{subsection.5.5.2}%
-\contentsline {subsubsection}{Características de los datos analizados}{31}{section*.49}%
-\contentsline {subsubsection}{Resultados del archivo de 2017}{32}{section*.51}%
-\contentsline {subsubsection}{Modulación del clima para todos los triggers}{32}{section*.53}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{37}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Este capítulo es una ayuda-memoria}{38}{appendix.Alph1}%
-\contentsline {subsubsection}{Cortes a los datos}{38}{section*.62}%
-\contentsline {section}{\numberline {A.1}Análisis de los parametros del clima}{38}{section.Alph1.1}%
-\contentsline {subsection}{\numberline {A.1.1}Preparando los datos}{38}{subsection.Alph1.1.1}%
-\contentsline {subsubsection}{Que hice de esto hasta ahora}{39}{section*.63}%
-\contentsline {subsection}{\numberline {A.1.2}Agregar a cada evento el clima}{39}{subsection.Alph1.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Haciendo el ajuste}{39}{subsection.Alph1.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Problemas que tuve con el ajuste}{39}{subsection.Alph1.1.4}%
-\contentsline {subsubsection}{Tasa de eventos rara para AllTriggers ICRC 2019}{39}{section*.64}%
+\contentsline {section}{\numberline {3.3}Reconstrucción de eventos de los detectores de superficie}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Selección de eventos}{8}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Reconstrucción de las lluvias}{8}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Calibración de la energía}{9}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Monitoreo del clima}{10}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {4}Introducción}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Acerca de todos los disparos del SD}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Acerca de los eventos}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Acerca del registro de hexágonos}{15}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Acerca de la tesis de licenciatura}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}La física detrás de la modulación del clima}{17}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Trabajos anteriores}{18}{subsection.5.1.1}%
+\contentsline {subsubsection}{Efectos de la atmósfera sobre los rayos cósmicos}{19}{section*.18}%
+\contentsline {subsubsection}{Modelo teórico}{20}{section*.20}%
+\contentsline {subsubsection}{Estimador del ajuste}{22}{section*.21}%
+\contentsline {subsection}{\numberline {5.1.2}Condiciones climáticas y área activa del observatorio Pierre Auger}{23}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Resultados para el arreglo de detectores de superficie de 1500\tmspace +\thinmuskip {.1667em}m de distancia}{23}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Datos presentados en la ICRC 2015}{25}{subsection.5.2.1}%
+\contentsline {subsubsection}{Ajuste de los parámetros del clima}{26}{section*.28}%
+\contentsline {subsection}{\numberline {5.2.2}Datos presentados en la ICRC 2019}{28}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima}{30}{subsection.5.2.3}%
+\contentsline {subsubsection}{Ajuste de los parámetros del clima}{31}{section*.37}%
+\contentsline {subsection}{\numberline {5.2.4}Datos presentados en la ICRC 2019 usando la energía reconstruida en este trabajo}{33}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Trabajos futuros}{34}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Anisotropías en las direcciones de arribo de los rayos cósmicos}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introducción}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Métodos}{35}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Exposición del detector}{35}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Análisis en ascensión recta}{37}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Características de los datos}{37}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Anisotropías en ascensión recta en los archivos del ICRC 2017 y ICRC 2019}{37}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Eventos por encima de 8 EeV }{37}{subsection.6.4.1}%
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{37}{section*.42}%
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{38}{section*.44}%
+\contentsline {section}{\numberline {6.5}Anisotropías en ascensión recta en los archivos con todos los disparos}{39}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Características de los archivos de datos analizados}{39}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Eventos por encima de 1 EeV }{40}{subsection.6.5.2}%
+\contentsline {subsubsection}{Características de los datos analizados}{40}{section*.49}%
+\contentsline {subsubsection}{Resultados del archivo de 2017}{41}{section*.51}%
+\contentsline {subsubsection}{Modulación del clima para todos los triggers}{41}{section*.53}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{47}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Métodos}{48}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}{48}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Variaciones relativas de los hexágonos}{49}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{51}{subsection.8.1.2}%
+\contentsline {chapter}{\numberline {9}Dipolo en el rango 1 EeV - 2 EeV}{55}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Características del conjunto de datos}{55}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Pesos de los eventos para frecuencias de referencia}{56}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Análisis de anisotropías en ascensión recta para el primer armónico}{57}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Trabajo a futuro}{60}{subsection.9.2.1}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{61}{section*.73}%

@@ -1,48 +1,47 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.11)  18 SEP 2020 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  17 NOV 2020 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs/Tesis/tesis
 (/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs/Tesis/tesis.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (./ibtesis.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-07-17> (./ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/02/14 3.40 The Babel package
- (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/02/14 3.40 Babel switching mechanism
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+Package: babel 2020/07/13 3.47 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/02/14 3.40 Babel common definitions
-\babel@savecnt=\count176
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count177
 \U@D=\dimen135
+\l@babelnohyphens=\language10
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count177
 )
+\bbl@dirlevel=\count178
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@british = using hyphenrules for english
 (babel)             (\language0) on input line 82.
 Package babel Info: \l@UKenglish = using hyphenrules for english
@@ -55,8 +54,8 @@ Package babel Info: \l@newzealand = using hyphenrules for english
 (babel)             (\language0) on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-\es@quottoks=\toks14
-\es@quotdepth=\count178
+\es@quottoks=\toks15
+\es@quotdepth=\count179
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -65,13 +64,13 @@ Package babel Info: Making ' an active character on input line 725.
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks16
 )
 \captionmargin=\dimen136
 \captionmargin@=\dimen137
@@ -82,8 +81,8 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \caption@hangindent=\dimen142
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count179
-\c@continuedfloat=\count180
+\c@caption@flags=\count180
+\c@continuedfloat=\count181
 ) (/usr/share/texlive/texmf-dist/tex/latex/yafoot/fnpos.sty
 Package: fnpos 2018/09/03 v1.1 
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -95,7 +94,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \ex@=\dimen143
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -103,13 +102,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count181
+\inf@bad=\count182
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count182
-\leftroot@=\count183
+\uproot@=\count183
+\leftroot@=\count184
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count184
-\DOTSCASE@=\count185
+\classnum@=\count185
+\DOTSCASE@=\count186
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -118,26 +117,26 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count186
-\c@MaxMatrixCols=\count187
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
 \dotsspace@=\muskip16
-\c@parentequation=\count188
-\dspbrk@lvl=\count189
-\tag@help=\toks17
-\row@=\count190
-\column@=\count191
-\maxfields@=\count192
-\andhelp@=\toks18
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks18
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks19
 \eqnshift@=\dimen146
 \alignsep@=\dimen147
 \tagshift@=\dimen148
 \tagwidth@=\dimen149
 \totwidth@=\dimen150
 \lineht@=\dimen151
-\@envbody=\toks19
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
@@ -181,28 +180,28 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@orf=\skip60
 ) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count193
-\cp@tempcnt=\count194
+\c@cp@cntr=\count194
+\cp@tempcnt=\count195
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count195
-\calc@Bcount=\count196
+\calc@Acount=\count196
+\calc@Bcount=\count197
 \calc@Adimen=\dimen154
 \calc@Bdimen=\dimen155
 \calc@Askip=\skip61
 \calc@Bskip=\skip62
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count197
+\calc@Ccount=\count198
 \calc@Cskip=\skip63
 ) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count198
-\Gm@cntv=\count199
-\c@Gm@tempcnt=\count266
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen156
 \Gm@wd@mp=\dimen157
 \Gm@odd@mp=\dimen158
@@ -211,15 +210,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen161
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
-\Gm@dimlist=\toks21
+\Gm@dimlist=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
@@ -242,10 +241,10 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen164
-\Hy@linkcounter=\count267
-\Hy@pagecounter=\count268
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -253,21 +252,20 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count269
-\pdfmajorversion=\count270
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+\Hy@SavedSpaceFactor=\count270
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
+Package hyperref Info: Bookmarks ON on input line 4717.
 \c@Hy@tempcnt=\count271
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
+LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen165
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -277,15 +275,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 \Fld@menulength=\count272
 \Field@Width=\dimen166
 \Fld@charsize=\dimen167
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
  (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
@@ -295,7 +293,7 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
  (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -313,6 +311,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 72.
 LaTeX Info: Redefining \es@scroman on input line 95.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 225.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 226.
+
 \imsizeL=\skip65
 \imsize=\skip66
 \imsizeS=\skip67
@@ -432,8 +437,8 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count293
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 \c@subfigure=\count294
@@ -441,9 +446,9 @@ Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count296
-\float@exts=\toks24
+\float@exts=\toks25
 \float@box=\box93
-\@float@everytoks=\toks25
+\@float@everytoks=\toks26
 \@floatcapt=\box94
 ) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
@@ -453,14 +458,14 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
  (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count297
 \l_MT_multwidth_dim=\dimen191
 \origjot=\skip77
@@ -470,14 +475,36 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen195
 \l_MT_above_shortintertext_sep=\dimen196
 \l_MT_below_shortintertext_sep=\dimen197
+\xmathstrut@box=\box95
+\xmathstrut@dim=\dimen198
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count298
-\l__pdf_internal_box=\box95
+\l__pdf_internal_box=\box96
 )
-No file tesis.aux.
+
+LaTeX Warning: Unused global option(s):
+    [12pt,oneside].
+
+(./tesis.aux
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+
+
+LaTeX Warning: Label `fig:deltaE' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:deltaE' multiply defined.
+
+
+LaTeX Warning: Label `fig:histograma' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:histograma' multiply defined.
+
+)
 \openout1 = `tesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -499,22 +526,25 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen199
+\caption@adjustwidth@linewidth=\dimen256
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count299
-\scratchdimen=\dimen198
-\scratchbox=\box96
+\scratchdimen=\dimen257
+\scratchbox=\box97
 \nofMPsegments=\count300
 \nofMParguments=\count301
-\everyMPshowfont=\toks26
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count302
-\MPscratchDim=\dimen199
+\MPscratchDim=\dimen258
 \MPnumerator=\count303
 \makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks27
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -528,34 +558,34 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includefoot twoside 
+* modes: includefoot 
 * h-part:(L,W,R)=(85.35826pt, 441.01772pt, 71.1319pt)
 * v-part:(T,H,B)=(85.35826pt, 728.39055pt, 31.29803pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=441.01772pt
-* \textheight=703.09561pt
+* \textheight=698.39055pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=-1.13809pt
-* \topmargin=-16.97922pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.78552pt
 * \headheight=15.6pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box97
+\AtBeginShipoutBox=\box98
 Package hyperref Info: Link coloring OFF on input line 48.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -569,6 +599,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
+ (./tesis.out) (./tesis.out)
 \@outlinefile=\write3
 \openout3 = `tesis.out'.
 
@@ -587,523 +618,216 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
-Overfull \hbox (26.54292pt too wide) in paragraph at lines 56--80
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (102.7188pt too wide) in paragraph at lines 56--80
 [][] 
  []
 
-[3
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 \end{abreviaturas}
+                        [1
 
-] [4
+
+] (./tesis.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [2
+
+
 
 ]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.6pt): 
+Make it at least 15.68335pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[3])
 \tf@toc=\write4
 \openout4 = `tesis.toc'.
 
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [4] (./tesis.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [5
 
 
-] [6
-
 ]
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ [6])
 \tf@lof=\write5
 \openout5 = `tesis.lof'.
 
- (../Resumen/resumen.tex [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
+ (../Resumen/resumen.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [7] [8
 
 
-]) [12
-
-] (../IntroduccionBachelor/intro.tex
+]) (../IntroduccionBachelor/intro.tex
 Cap\'{\i }tulo 1.
-
-Package natbib Warning: Citation `collaboration2013pierre' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `data' on page 1 undefined on input line 7.
-
 [1
 
 
 
 ]
 Cap\'{\i }tulo 2.
-
-Package natbib Warning: Citation `hess1912' on page 2 undefined on input line 13.
-
-
-Package natbib Warning: Citation `collaboration2013pierre' on page 2 undefined on input line 13.
-
-
-Package natbib Warning: Citation `data' on page 2 undefined on input line 13.
-
-
-Package natbib Warning: Citation `greisen1966end' on page 2 undefined on input line 17.
-
-
-Package natbib Warning: Citation `zatsepin1966upper' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Reference `fig:spectra' on page 2 undefined on input line 19.
-
-
-Package natbib Warning: Citation `PGD' on page 2 undefined on input line 19.
-
-
-Package natbib Warning: Citation `PGD' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Reference `fig:spectra' on page 2 undefined on input line 21.
-
-
-Package natbib Warning: Citation `bird1994cosmic' on page 2 undefined on input line 21.
-
-
-Package natbib Warning: Citation `berezinsky2006astrophysical' on page 2 undefined on input line 21.
-
 [2
 
 ]
-
-LaTeX Warning: Reference `fig:spectra' on page 3 undefined on input line 33.
-
-
-LaTeX Warning: File `../intro/auger_spectrum.png' not found on input line 43.
-
-
-../IntroduccionBachelor/intro.tex:43: Package pdftex.def Error: File `../intro/auger_spectrum.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 ...65\textwidth]{../intro/auger_spectrum.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `PGD' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `PGD' on page 3 undefined on input line 44.
-
-) (../IntroduccionAuger/auger.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
  [3]
+<../IntroduccionBachelor/auger_spectrum.png, id=509, 1171.37625pt x 882.29625pt>
+File: ../IntroduccionBachelor/auger_spectrum.png Graphic file (type png)
+<use ../IntroduccionBachelor/auger_spectrum.png>
+Package pdftex.def Info: ../IntroduccionBachelor/auger_spectrum.png  used on input line 43.
+(pdftex.def)             Requested size: 286.65881pt x 215.9154pt.
+) (../IntroduccionAuger/auger.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [4]
+ [4 <../IntroduccionBachelor/auger_spectrum.png>]
 Cap\'{\i }tulo 3.
-
-LaTeX Warning: Reference `fig:auger_sd' on page 5 undefined on input line 9.
-
-
-LaTeX Warning: Reference `fig:auger_sd' on page 5 undefined on input line 9.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 5 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:FD' on page 5 undefined on input line 18.
-
 [5
 
 ]
-
-LaTeX Warning: File `../auger/auger_sd.png' not found on input line 23.
-
-
-../IntroduccionAuger/auger.tex:23: Package pdftex.def Error: File `../auger/auger_sd.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ...dth=0.45\textwidth]{../auger/auger_sd.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 6 undefined on input line 24.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 6 undefined on input line 24.
-
-
-LaTeX Warning: File `../auger/tanque.png' not found on input line 30.
-
-
-../IntroduccionAuger/auger.tex:30: Package pdftex.def Error: File `../auger/tanque.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...ics[width=\textwidth]{../auger/tanque.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../auger/fd.png' not found on input line 35.
-
-
-../IntroduccionAuger/auger.tex:35: Package pdftex.def Error: File `../auger/fd.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...raphics[width=\textwidth]{../auger/fd.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `kit_oracle' on page 6 undefined on input line 36.
-
-
-Package natbib Warning: Citation `kit_oracle' on page 6 undefined on input line 36.
-
-
-LaTeX Warning: Reference `fig:auger_sd' on page 6 undefined on input line 42.
-
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-[6]
-
-Package natbib Warning: Citation `data' on page 7 undefined on input line 48.
-
-
-Package natbib Warning: Citation `exposure' on page 7 undefined on input line 54.
-
-
-LaTeX Warning: Reference `fig:evento_sd' on page 7 undefined on input line 60.
-
-
-LaTeX Warning: Reference `fig:evento_S1000' on page 7 undefined on input line 60.
-
-
-Package natbib Warning: Citation `data' on page 7 undefined on input line 60.
-
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
-[7]
-
-LaTeX Warning: File `../auger/evento_sd.png' not found on input line 71.
-
-
-../IntroduccionAuger/auger.tex:71: Package pdftex.def Error: File `../auger/evento_sd.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 ...[width=\textwidth]{../auger/evento_sd.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 8 undefined on input line 72.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 8 undefined on input line 72.
-
-
-LaTeX Warning: File `../auger/evento_s1000.png' not found on input line 76.
-
-
-../IntroduccionAuger/auger.tex:76: Package pdftex.def Error: File `../auger/evento_s1000.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 ...dth=\textwidth]{../auger/evento_s1000.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 8 undefined on input line 77.
-
-
-Package natbib Warning: Citation `como_funciona_auger' on page 8 undefined on input line 77.
-
-
-LaTeX Warning: Reference `fig:s1000_theta' on page 8 undefined on input line 85.
-
-
-Package natbib Warning: Citation `CIC' on page 8 undefined on input line 85.
-
-
-Package natbib Warning: Citation `collaboration2013pierre' on page 8 undefined on input line 85.
-
-
-Package natbib Warning: Citation `data' on page 8 undefined on input line 85.
-
-
-LaTeX Warning: Reference `eq:s38_energy' on page 8 undefined on input line 87.
-
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
-[8]
-
-Package natbib Warning: Citation `tobepublished' on page 9 undefined on input line 92.
-
-
-LaTeX Warning: Reference `fig:efd_s38' on page 9 undefined on input line 92.
-
-
-LaTeX Warning: File `../auger/s1000_theta.png' not found on input line 97.
-
-
-../IntroduccionAuger/auger.tex:97: Package pdftex.def Error: File `../auger/s1000_theta.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ...idth=\textwidth]{../auger/s1000_theta.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../auger/efd_s38.png' not found on input line 102.
-
-
-../IntroduccionAuger/auger.tex:102: Package pdftex.def Error: File `../auger/efd_s38.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102 ...s[width=\textwidth]{../auger/efd_s38.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../IntroduccionAuger/auger_sd.png, id=530, 837.1275pt x 874.26625pt>
+File: ../IntroduccionAuger/auger_sd.png Graphic file (type png)
+<use ../IntroduccionAuger/auger_sd.png>
+Package pdftex.def Info: ../IntroduccionAuger/auger_sd.png  used on input line 23.
+(pdftex.def)             Requested size: 198.45662pt x 207.25352pt.
+<../IntroduccionAuger/tanque.png, id=534, 402.50375pt x 417.56pt>
+File: ../IntroduccionAuger/tanque.png Graphic file (type png)
+<use ../IntroduccionAuger/tanque.png>
+Package pdftex.def Info: ../IntroduccionAuger/tanque.png  used on input line 30.
+(pdftex.def)             Requested size: 198.45662pt x 205.88046pt.
+<../IntroduccionAuger/fd.png, id=535, 164.7756pt x 136.15668pt>
+File: ../IntroduccionAuger/fd.png Graphic file (type png)
+<use ../IntroduccionAuger/fd.png>
+Package pdftex.def Info: ../IntroduccionAuger/fd.png  used on input line 35.
+(pdftex.def)             Requested size: 220.50885pt x 182.22044pt.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [6 <../IntroduccionAuger/auger_sd.png>]
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+ [7 <../IntroduccionAuger/tanque.png> <../IntroduccionAuger/fd.png>]
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+ [8]
+<../IntroduccionAuger/evento_sd.png, id=562, 691.58376pt x 484.81125pt>
+File: ../IntroduccionAuger/evento_sd.png Graphic file (type png)
+<use ../IntroduccionAuger/evento_sd.png>
+Package pdftex.def Info: ../IntroduccionAuger/evento_sd.png  used on input line 71.
+(pdftex.def)             Requested size: 224.91661pt x 157.66534pt.
+<../IntroduccionAuger/evento_s1000.png, id=565, 914.41624pt x 649.42625pt>
+File: ../IntroduccionAuger/evento_s1000.png Graphic file (type png)
+<use ../IntroduccionAuger/evento_s1000.png>
+Package pdftex.def Info: ../IntroduccionAuger/evento_s1000.png  used on input line 76.
+(pdftex.def)             Requested size: 198.45662pt x 140.94188pt.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+ [9 <../IntroduccionAuger/evento_sd.png> <../IntroduccionAuger/evento_s1000.png>]
+<../IntroduccionAuger/s1000_theta.png, id=582, 653.44125pt x 523.9575pt>
+File: ../IntroduccionAuger/s1000_theta.png Graphic file (type png)
+<use ../IntroduccionAuger/s1000_theta.png>
+Package pdftex.def Info: ../IntroduccionAuger/s1000_theta.png  used on input line 97.
+(pdftex.def)             Requested size: 224.91661pt x 180.3418pt.
+<../IntroduccionAuger/efd_s38.png, id=583, 633.36626pt x 572.1375pt>
+File: ../IntroduccionAuger/efd_s38.png Graphic file (type png)
+<use ../IntroduccionAuger/efd_s38.png>
+Package pdftex.def Info: ../IntroduccionAuger/efd_s38.png  used on input line 102.
+(pdftex.def)             Requested size: 198.45662pt x 179.27267pt.
 )
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [9]
-Cap\'{\i }tulo 4.
-(../Clima/clima_1_intro.tex
-
-Package natbib Warning: Citation `aab2017impact' on page 10 undefined on input line 2.
-
-
-Package natbib Warning: Citation `isabel' on page 10 undefined on input line 2.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 10 undefined on input line 2.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 10 undefined on input line 10.
-
-
-Package natbib Warning: Citation `collaboration2009atmospheric' on page 10 undefined on input line 10.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 10 undefined on input line 10.
-
-
-LaTeX Warning: Reference `fig:delay' on page 10 undefined on input line 10.
-
-[10
-
-]
-
-LaTeX Warning: Reference `fig:delay' on page 11 undefined on input line 13.
-
-
-LaTeX Warning: Reference `tabla:delay' on page 11 undefined on input line 13.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 11 undefined on input line 15.
-
-
-LaTeX Warning: File `../clima/delay.png' not found on input line 19.
-
-
-../Clima/clima_1_intro.tex:19: Package pdftex.def Error: File `../clima/delay.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 ...[width=0.65\textwidth]{../clima/delay.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `collaboration2009atmospheric' on page 11 undefined on input line 38.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 11 undefined on input line 38.
-
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-[11]
-
-Package natbib Warning: Citation `matthews2005heitler' on page 12 undefined on input line 41.
-
-
-Package natbib Warning: Citation `gora2006universal' on page 12 undefined on input line 49.
-
-
-LaTeX Warning: Reference `fig:eas' on page 12 undefined on input line 52.
-
-
-LaTeX Warning: File `../clima/eas.png' not found on input line 56.
-
-
-../Clima/clima_1_intro.tex:56: Package pdftex.def Error: File `../clima/eas.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 ...ics[width=0.5\textwidth]{../clima/eas.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \vbox (badness 2359) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
- [12]
-
-Package natbib Warning: Citation `aab2017impact' on page 13 undefined on input line 65.
-
-
-Package natbib Warning: Citation `collaboration2009atmospheric' on page 13 undefined on input line 65.
-
-
-LaTeX Warning: Reference `eq:signal' on page 13 undefined on input line 65.
-
-
-LaTeX Warning: Reference `eq:s38_energy' on page 13 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq:expresion1' on page 13 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq:rate_angular' on page 13 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq:signal' on page 13 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq:expresion1' on page 13 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq:s38_energy' on page 13 undefined on input line 76.
-
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [10 <../IntroduccionAuger/s1000_theta.png> <../IntroduccionAuger/efd_s38.png>]
 LaTeX Info: Redefining \. on input line 97.
 LaTeX Info: Redefining \% on input line 97.
-[13]
+ [11]
+Cap\'{\i }tulo 4.
+(../0_Introduccion/introduccion_v8.tex [12
 
-LaTeX Warning: Reference `eq:rate_sin2' on page 14 undefined on input line 121.
+]
+<../0_Introduccion/histograma_evolucion_eventos.png, id=606, 939.51pt x 556.479pt>
+File: ../0_Introduccion/histograma_evolucion_eventos.png Graphic file (type png)
+<use ../0_Introduccion/histograma_evolucion_eventos.png>
+Package pdftex.def Info: ../0_Introduccion/histograma_evolucion_eventos.png  used on input line 21.
+(pdftex.def)             Requested size: 352.8155pt x 208.9763pt.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+ [13 <../0_Introduccion/histograma_evolucion_eventos.png>]
+<../0_Introduccion/comparacion_triggers.png, id=617, 636.3775pt x 360.34625pt>
+File: ../0_Introduccion/comparacion_triggers.png Graphic file (type png)
+<use ../0_Introduccion/comparacion_triggers.png>
+Package pdftex.def Info: ../0_Introduccion/comparacion_triggers.png  used on input line 36.
+(pdftex.def)             Requested size: 330.76328pt x 187.29315pt.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+ [14 <../0_Introduccion/comparacion_triggers.png>]
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+ [15])
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [16]
+Cap\'{\i }tulo 5.
+(../Clima/clima_1_intro.tex [17
 
-
-LaTeX Warning: Reference `eq:rate_sin2' on page 14 undefined on input line 123.
-
-
-LaTeX Warning: Reference `fig:auger_sd' on page 14 undefined on input line 140.
-
-
-LaTeX Warning: Reference `fig:clima_p_rho' on page 14 undefined on input line 140.
-
-
-LaTeX Warning: Reference `fig:densidad_hora' on page 14 undefined on input line 140.
-
-
-LaTeX Warning: Reference `fig:area_auger' on page 14 undefined on input line 140.
-
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
-[14]
-
-LaTeX Warning: File `../clima/Graphs/clima/presion.png' not found on input line 145.
-
-
-../Clima/clima_1_intro.tex:145: Package pdftex.def Error: File `../clima/Graphs/clima/presion.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 ...width]{../clima/Graphs/clima/presion.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/clima/densidad_diaria.png' not found on input line 152.
-
-
-../Clima/clima_1_intro.tex:152: Package pdftex.def Error: File `../clima/Graphs/clima/densidad_diaria.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.152 ..../clima/Graphs/clima/densidad_diaria.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/clima/densidad_media_diaria.png' not found on input line 159.
-
-
-../Clima/clima_1_intro.tex:159: Package pdftex.def Error: File `../clima/Graphs/clima/densidad_media_diaria.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.159 ...a/Graphs/clima/densidad_media_diaria.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/clima/densidad_hod.png' not found on input line 166.
-
-
-../Clima/clima_1_intro.tex:166: Package pdftex.def Error: File `../clima/Graphs/clima/densidad_hod.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 ...]{../clima/Graphs/clima/densidad_hod.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+]
+<../Clima/delay.png, id=662, 903.375pt x 489.32813pt>
+File: ../Clima/delay.png Graphic file (type png)
+<use ../Clima/delay.png>
+Package pdftex.def Info: ../Clima/delay.png  used on input line 19.
+(pdftex.def)             Requested size: 286.65881pt x 155.27408pt.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [18 <../Clima/delay.png (PNG copy)>]
+<../Clima/eas.png, id=674, 987.69pt x 990.70125pt>
+File: ../Clima/eas.png Graphic file (type png)
+<use ../Clima/eas.png>
+Package pdftex.def Info: ../Clima/eas.png  used on input line 56.
+(pdftex.def)             Requested size: 220.50885pt x 221.17484pt.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [19]
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+ [20 <../Clima/eas.png>]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [21]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [22]
+<../Clima/Graphs/clima/presion.png, id=725, 1204.5pt x 644.4075pt>
+File: ../Clima/Graphs/clima/presion.png Graphic file (type png)
+<use ../Clima/Graphs/clima/presion.png>
+Package pdftex.def Info: ../Clima/Graphs/clima/presion.png  used on input line 145.
+(pdftex.def)             Requested size: 216.10109pt x 115.61469pt.
+<../Clima/Graphs/clima/densidad_diaria.png, id=726, 1204.5pt x 659.46375pt>
+File: ../Clima/Graphs/clima/densidad_diaria.png Graphic file (type png)
+<use ../Clima/Graphs/clima/densidad_diaria.png>
+Package pdftex.def Info: ../Clima/Graphs/clima/densidad_diaria.png  used on input line 152.
+(pdftex.def)             Requested size: 216.10109pt x 118.31596pt.
+<../Clima/Graphs/clima/densidad_media_diaria.png, id=727, 1204.5pt x 651.43375pt>
+File: ../Clima/Graphs/clima/densidad_media_diaria.png Graphic file (type png)
+<use ../Clima/Graphs/clima/densidad_media_diaria.png>
+Package pdftex.def Info: ../Clima/Graphs/clima/densidad_media_diaria.png  used on input line 159.
+(pdftex.def)             Requested size: 216.10109pt x 116.87529pt.
+<../Clima/Graphs/clima/densidad_hod.png, id=728, 903.375pt x 564.60938pt>
+File: ../Clima/Graphs/clima/densidad_hod.png Graphic file (type png)
+<use ../Clima/Graphs/clima/densidad_hod.png>
+Package pdftex.def Info: ../Clima/Graphs/clima/densidad_hod.png  used on input line 166.
+(pdftex.def)             Requested size: 216.10109pt x 135.06102pt.
 ) (../Clima/clima_2_fit_main.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1111,374 +835,110 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 1.66702pt
+(hyperref)                \kern 1.95872pt
 (hyperref)                removed on input line 2.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 15 undefined on input line 4.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 15 undefined on input line 4.
 
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
-[15]
-
-LaTeX Warning: Reference `fig:area' on page 16 undefined on input line 8.
-
-
-LaTeX Warning: File `../clima/Graphs/clima/area.png' not found on input line 12.
-
-
-../Clima/clima_2_fit_main.tex:12: Package pdftex.def Error: File `../clima/Graphs/clima/area.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...textwidth]{../clima/Graphs/clima/area.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `seccion:clima' on page 16 undefined on input line 17.
-
-
-LaTeX Warning: Reference `tabla:caracteristicas_ICRC_2015' on page 16 undefined on input line 21.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+[23 <../Clima/Graphs/clima/presion.png> <../Clima/Graphs/clima/densidad_diaria.png> <../Clima/Graphs/clima/densidad_media_diaria.png> <../Clima/Graphs/clima/densidad_hod.png>]
+<../Clima/Graphs/clima/area.png, id=741, 1204.5pt x 671.50874pt>
+File: ../Clima/Graphs/clima/area.png Graphic file (type png)
+<use ../Clima/Graphs/clima/area.png>
+Package pdftex.def Info: ../Clima/Graphs/clima/area.png  used on input line 12.
+(pdftex.def)             Requested size: 220.50885pt x 122.92587pt.
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
- [16]
+ [24 <../Clima/Graphs/clima/area.png>]
+<../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png, id=757, 903.375pt x 526.96875pt>
+File: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png Graphic file (type png)
+<use ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png  used on input line 57.
+(pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
+<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png, id=758, 903.375pt x 564.60938pt>
+File: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png Graphic file (type png)
+<use ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png  used on input line 62.
+(pdftex.def)             Requested size: 220.50885pt x 137.81789pt.
 
-Package natbib Warning: Citation `aab2017impact' on page 17 undefined on input line 38.
-
-
-LaTeX Warning: Reference `tabla:parametros_ICRC_2015' on page 17 undefined on input line 38.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 17 undefined on input line 43.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 17 undefined on input line 49.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 17 undefined on input line 49.
-
-
-LaTeX Warning: Reference `fig:rate_2015_05-15' on page 17 undefined on input line 53.
-
-
-LaTeX Warning: Reference `fig:rate_dayly_ICRC_2015' on page 17 undefined on input line 53.
-
-
-LaTeX Warning: Reference `fig:rate_hod_ICRC_2015' on page 17 undefined on input line 53.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_dayly/1EeV_ICRC_2015.png' not found on input line 57.
-
-
-../Clima/clima_2_fit_main.tex:57: Package pdftex.def Error: File `../clima/Graphs/rate_dayly/1EeV_ICRC_2015.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 ...lima/Graphs/rate_dayly/1EeV_ICRC_2015.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png' not found on input line 62.
-
-
-../Clima/clima_2_fit_main.tex:62: Package pdftex.def Error: File `../clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 ..._of_the_day/1EeV_ICRC_2015_old_herald.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 56--65
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 56--65
 [][]  [] 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
- [17]
+[25]
+<../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png, id=765, 903.375pt x 526.96875pt>
+File: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png Graphic file (type png)
+<use ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png  used on input line 72.
+(pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
+<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png, id=766, 903.375pt x 564.60938pt>
+File: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png Graphic file (type png)
+<use ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png  used on input line 77.
+(pdftex.def)             Requested size: 220.50885pt x 137.81789pt.
 
-LaTeX Warning: File `../clima/Graphs/rate_dayly/2EeV_ICRC_2015.png' not found on input line 72.
-
-
-../Clima/clima_2_fit_main.tex:72: Package pdftex.def Error: File `../clima/Graphs/rate_dayly/2EeV_ICRC_2015.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 ...lima/Graphs/rate_dayly/2EeV_ICRC_2015.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png' not found on input line 77.
-
-
-../Clima/clima_2_fit_main.tex:77: Package pdftex.def Error: File `../clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 ..._of_the_day/2EeV_ICRC_2015_old_herald.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 71--80
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 71--80
 [][]  [] 
  []
 
+<../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png, id=775, 1003.75pt x 620.3175pt>
+File: ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png  used on input line 90.
+(pdftex.def)             Requested size: 220.50885pt x 136.2715pt.
+<../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png, id=776, 1003.75pt x 610.28pt>
+File: ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png  used on input line 96.
+(pdftex.def)             Requested size: 220.50885pt x 134.06645pt.
+<../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png, id=777, 1003.75pt x 611.28375pt>
+File: ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png  used on input line 103.
+(pdftex.def)             Requested size: 220.50885pt x 134.28696pt.
 
-LaTeX Warning: Reference `seccion:sd_eff' on page 18 undefined on input line 83.
-
-
-LaTeX Warning: Reference `fig:rate_2015_05-15_2EeV' on page 18 undefined on input line 83.
-
-
-LaTeX Warning: Reference `tabla:parametros_ICRC_2015' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:ap_2015' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:arho_2015' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:brho_2015' on page 18 undefined on input line 86.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 18 undefined on input line 86.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: File `../clima/Graphs/params/ap_ICRC_2015_above_1EeV.png' not found on input line 90.
-
-
-../Clima/clima_2_fit_main.tex:90: Package pdftex.def Error: File `../clima/Graphs/params/ap_ICRC_2015_above_1EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 ...Graphs/params/ap_ICRC_2015_above_1EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/params/arho_ICRC_2015_above_1EeV.png' not found on input line 96.
-
-
-../Clima/clima_2_fit_main.tex:96: Package pdftex.def Error: File `../clima/Graphs/params/arho_ICRC_2015_above_1EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 ...aphs/params/arho_ICRC_2015_above_1EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/params/brho_ICRC_2015_above_1EeV.png' not found on input line 103.
-
-
-../Clima/clima_2_fit_main.tex:103: Package pdftex.def Error: File `../clima/Graphs/params/brho_ICRC_2015_above_1EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 ...phs/params/brho_ICRC_2015_above_1EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 89--107
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 89--107
 [][]  []
  []
 
-
-Package natbib Warning: Citation `aab2017impact' on page 18 undefined on input line 107.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 18 undefined on input line 107.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
- [18]
-
-LaTeX Warning: Reference `fig:parameters_old' on page 19 undefined on input line 110.
-
-
-LaTeX Warning: Reference `eq:cuadratica' on page 19 undefined on input line 110.
-
-
-Underfull \vbox (badness 3240) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [19]
-
-LaTeX Warning: Reference `tabla:cuadratica_ICRC_2015' on page 20 undefined on input line 115.
-
-
-LaTeX Warning: Reference `eq:cuadratica' on page 20 undefined on input line 115.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 20 undefined on input line 115.
-
-
-LaTeX Warning: Reference `fig:ap_2015' on page 20 undefined on input line 117.
-
-
-LaTeX Warning: Reference `seccion:fisica_clima' on page 20 undefined on input line 117.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 20 undefined on input line 121.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 20 undefined on input line 135.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 20 undefined on input line 135.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 20 undefined on input line 145.
-
-
-Package natbib Warning: Citation `isabel' on page 20 undefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:efd_s38' on page 20 undefined on input line 145.
-
-
-Package natbib Warning: Citation `tobepublished' on page 20 undefined on input line 145.
-
-
-LaTeX Warning: Reference `tabla:caracteristicas_ICRC_2019' on page 20 undefined on input line 145.
-
+[26 <../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png> <../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png> <../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png> <../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png>]
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [27 <../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png> <../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png> <../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png>]
 LaTeX Info: Redefining \. on input line 160.
 LaTeX Info: Redefining \% on input line 160.
-[20]
+ [28]
+<../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png, id=824, 903.375pt x 489.32813pt>
+File: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png Graphic file (type png)
+<use ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png  used on input line 169.
+(pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
+<../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png, id=825, 903.375pt x 489.32813pt>
+File: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png Graphic file (type png)
+<use ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png  used on input line 175.
+(pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
 
-LaTeX Warning: Reference `fig:rate_new_18' on page 21 undefined on input line 161.
-
-
-Package natbib Warning: Citation `data' on page 21 undefined on input line 161.
-
-
-LaTeX Warning: Reference `fig:rate_new_18_2EeV' on page 21 undefined on input line 161.
-
-
-LaTeX Warning: Reference `fig:rate_day_ICRC_19_05_18' on page 21 undefined on input line 164.
-
-
-LaTeX Warning: Reference `fig:rate_day_ICRC_19_05_18_2EeV' on page 21 undefined on input line 164.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png' not found on input line 169.
-
-
-../Clima/clima_2_fit_main.tex:169: Package pdftex.def Error: File `../clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.169 ...aphs/rate_dayly/1EeV_ICRC_2019_05_18.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png' not found on input line 175.
-
-
-../Clima/clima_2_fit_main.tex:175: Package pdftex.def Error: File `../clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 ...aphs/rate_dayly/2EeV_ICRC_2019_05_19.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 168--179
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 168--179
 [][]  [] 
  []
 
-
-LaTeX Warning: File `../clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png' not found on input line 183.
-
-
-../Clima/clima_2_fit_main.tex:183: Package pdftex.def Error: File `../clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.183 ...hour_of_the_day/1EeV_ICRC_2019_05_19.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png' not found on input line 190.
-
-
-../Clima/clima_2_fit_main.tex:190: Package pdftex.def Error: File `../clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.190 ...hour_of_the_day/2EeV_ICRC_2019_05_18.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png, id=826, 903.375pt x 489.32813pt>
+File: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png Graphic file (type png)
+<use ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png  used on input line 183.
+(pdftex.def)             Requested size: 218.3016pt x 118.24753pt.
+<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png, id=827, 903.375pt x 489.32813pt>
+File: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png Graphic file (type png)
+<use ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png  used on input line 190.
+(pdftex.def)             Requested size: 218.3016pt x 118.24753pt.
 LaTeX Info: Redefining \. on input line 196.
 LaTeX Info: Redefining \% on input line 196.
- [21]
+[29 <../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png> <../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 200.
@@ -1491,468 +951,367 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 200.
 
-
-Package natbib Warning: Citation `aab2017impact' on page 22 undefined on input line 202.
-
-
-LaTeX Warning: Reference `tabla:caracteristicas_ICRC_2019_S38' on page 22 undefined on input line 208.
-
-
-LaTeX Warning: Reference `tabla:parametros_ICRC_2019_S38' on page 22 undefined on input line 227.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 22 undefined on input line 227.
-
-
-LaTeX Warning: Reference `tabla:parametros_ICRC_2015' on page 22 undefined on input line 227.
-
 LaTeX Info: Redefining \. on input line 228.
 LaTeX Info: Redefining \% on input line 228.
-[22]
+[30 <../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png> <../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png>]
+<../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png, id=850, 903.375pt x 526.96875pt>
+File: ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png Graphic file (type png)
+<use ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png  used on input line 246.
+(pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
+<../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png, id=851, 903.375pt x 564.60938pt>
+File: ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png Graphic file (type png)
+<use ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png>
+Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png  used on input line 252.
+(pdftex.def)             Requested size: 220.50885pt x 137.81789pt.
 
-LaTeX Warning: Reference `tabla:parametros_ICRC_2019_S38' on page 23 undefined on input line 242.
-
-
-LaTeX Warning: Reference `fig:rate_new_18_S38' on page 23 undefined on input line 242.
-
-
-LaTeX Warning: Reference `icrc2015' on page 23 undefined on input line 242.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png' not found on input line 246.
-
-
-../Clima/clima_2_fit_main.tex:246: Package pdftex.def Error: File `../clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.246 .../rate_dayly/0EeV_ICRC_2019_S38_05_18.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png' not found on input line 252.
-
-
-../Clima/clima_2_fit_main.tex:252: Package pdftex.def Error: File `../clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.252 ..._of_the_day/0EeV_ICRC_2019_S38_05_18.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 245--256
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 245--256
 [][]  [] 
  []
 
+<../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png, id=856, 1003.75pt x 620.3175pt>
+File: ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png  used on input line 265.
+(pdftex.def)             Requested size: 220.50885pt x 136.2715pt.
+<../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png, id=857, 1003.75pt x 616.3025pt>
+File: ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png  used on input line 271.
+(pdftex.def)             Requested size: 220.50885pt x 135.38948pt.
+<../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png, id=858, 1003.75pt x 606.265pt>
+File: ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
+<use ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png>
+Package pdftex.def Info: ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png  used on input line 278.
+(pdftex.def)             Requested size: 220.50885pt x 133.18443pt.
 
-LaTeX Warning: Reference `tabla:cuadratica_ICRC_2019_S38' on page 23 undefined on input line 261.
-
-
-LaTeX Warning: Reference `fig:parameters_new_S38' on page 23 undefined on input line 261.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 23 undefined on input line 261.
-
-
-LaTeX Warning: Reference `fig:parameters_old' on page 23 undefined on input line 261.
-
-
-LaTeX Warning: File `../clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png' not found on input line 265.
-
-
-../Clima/clima_2_fit_main.tex:265: Package pdftex.def Error: File `../clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.265 ...s/params/ap_ICRC_2019_S38_above_0EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png' not found on input line 271.
-
-
-../Clima/clima_2_fit_main.tex:271: Package pdftex.def Error: File `../clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271 ...params/arho_ICRC_2019_S38_above_0EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png' not found on input line 278.
-
-
-../Clima/clima_2_fit_main.tex:278: Package pdftex.def Error: File `../clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 ...params/brho_ICRC_2019_S38_above_0EeV.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 264--282
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 264--282
 [][]  []
  []
 
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
+[31 <../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png> <../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png>]
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
+ [32 <../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png> <../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png> <../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png>]
+<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png, id=881, 752.8125pt x 564.60938pt>
+File: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png Graphic file (type png)
+<use ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png>
+Package pdftex.def Info: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png  used on input line 320.
+(pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
+<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png, id=882, 752.8125pt x 564.60938pt>
+File: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png Graphic file (type png)
+<use ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png>
+Package pdftex.def Info: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png  used on input line 325.
+(pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
 
-Package natbib Warning: Citation `aab2017impact' on page 23 undefined on input line 288.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 303.
-LaTeX Info: Redefining \% on input line 303.
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
- [24]
-
-LaTeX Warning: Reference `tabla:cuadratica_ICRC_2019_S38' on page 25 undefined on input line 315.
-
-
-LaTeX Warning: Reference `eq:s38_energy' on page 25 undefined on input line 315.
-
-
-LaTeX Warning: Reference `final' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: Reference `conjuntoB' on page 25 undefined on input line 317.
-
-
-LaTeX Warning: File `../clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png' not found on input line 320.
-
-
-../Clima/clima_2_fit_main.tex:320: Package pdftex.def Error: File `../clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 ...hs/2EeV_ICRC_2019_S38_S1000_expected.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png' not found on input line 325.
-
-
-../Clima/clima_2_fit_main.tex:325: Package pdftex.def Error: File `../clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325 ...V_ICRC_2019_S38_S1000_expected_05_18.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 319--328
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 319--328
 [][]  [] 
  []
 
-
-LaTeX Warning: Reference `eq:s38_energy' on page 25 undefined on input line 330.
-
-LaTeX Info: Redefining \. on input line 331.
-LaTeX Info: Redefining \% on input line 331.
-[25]
-
-Package natbib Warning: Citation `aab2017impact' on page 26 undefined on input line 335.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 26 undefined on input line 341.
-
-)
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [26]
-Cap\'{\i }tulo 5.
-(../Anisotropia/anisotropia_weather.tex [27
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
+[33 <../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png (PNG copy)> <../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [34]
+Cap\'{\i }tulo 6.
+(../Anisotropia/anisotropia_weather.tex [35
 
 ]
-<../Anisotropia/pesos_solar_siderea.png, id=286, 1129.21875pt x 564.60938pt>
+<../Anisotropia/pesos_solar_siderea.png, id=904, 1129.21875pt x 564.60938pt>
 File: ../Anisotropia/pesos_solar_siderea.png Graphic file (type png)
 <use ../Anisotropia/pesos_solar_siderea.png>
 Package pdftex.def Info: ../Anisotropia/pesos_solar_siderea.png  used on input line 46.
 (pdftex.def)             Requested size: 418.96547pt x 209.47942pt.
-
-
-LaTeX Warning: Reference `fig:pesos_ejem' on page 28 undefined on input line 51.
-
-
-Package natbib Warning: Citation `linsley1975fluctuation' on page 28 undefined on input line 64.
-
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-[28 <../Anisotropia/pesos_solar_siderea.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:8EeV_sin_peso_ICRC2017_raw' on page 29 undefined on input line 95.
-
-
-LaTeX Warning: Reference `fig:8EeV_sin_peso_ICRC2017_cor' on page 29 undefined on input line 95.
-
-<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png, id=295, 867.24pt x 433.62pt>
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [36 <../Anisotropia/pesos_solar_siderea.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [37]
+<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png, id=926, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png  used on input line 101.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png, id=297, 867.24pt x 433.62pt>
+<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png, id=927, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png  used on input line 107.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
-[29 <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png> <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png>]
-<../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png, id=311, 867.24pt x 433.62pt>
+<../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png, id=928, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png  used on input line 122.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-
-
-LaTeX Warning: Reference `fig:deltaE' on page 30 undefined on input line 152.
-
-
-LaTeX Warning: Reference `fig:histograma' on page 30 undefined on input line 152.
-
-<../Anisotropia/comparacion_deltaE.png, id=312, 752.8125pt x 564.60938pt>
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
+ [38 <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png> <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png>]
+<../Anisotropia/comparacion_deltaE.png, id=938, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/comparacion_deltaE.png Graphic file (type png)
 <use ../Anisotropia/comparacion_deltaE.png>
 Package pdftex.def Info: ../Anisotropia/comparacion_deltaE.png  used on input line 157.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/histograma_deltaE.png, id=313, 752.8125pt x 602.25pt>
+<../Anisotropia/histograma_deltaE.png, id=939, 752.8125pt x 602.25pt>
 File: ../Anisotropia/histograma_deltaE.png Graphic file (type png)
 <use ../Anisotropia/histograma_deltaE.png>
 Package pdftex.def Info: ../Anisotropia/histograma_deltaE.png  used on input line 162.
 (pdftex.def)             Requested size: 176.40775pt x 141.12442pt.
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
-[30 <../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png>]
-
-LaTeX Warning: Reference `fig:calibracionE' on page 31 undefined on input line 169.
-
-<../Anisotropia/comparacion_reconstruccion.png, id=324, 903.375pt x 602.25pt>
+ [39 <../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png>]
+<../Anisotropia/comparacion_reconstruccion.png, id=947, 903.375pt x 602.25pt>
 File: ../Anisotropia/comparacion_reconstruccion.png Graphic file (type png)
 <use ../Anisotropia/comparacion_reconstruccion.png>
 Package pdftex.def Info: ../Anisotropia/comparacion_reconstruccion.png  used on input line 173.
 (pdftex.def)             Requested size: 286.65881pt x 191.10657pt.
-<../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png, id=325, 867.24pt x 433.62pt>
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
+ [40 <../Anisotropia/comparacion_deltaE.png (PNG copy)> <../Anisotropia/histograma_deltaE.png (PNG copy)> <../Anisotropia/comparacion_reconstruccion.png (PNG copy)>]
+<../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png, id=954, 867.24pt x 433.62pt>
 File: ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png Graphic file (type png)
 <use ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png>
 Package pdftex.def Info: ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png  used on input line 201.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
-[31 <../Anisotropia/comparacion_deltaE.png (PNG copy)> <../Anisotropia/histograma_deltaE.png (PNG copy)> <../Anisotropia/comparacion_reconstruccion.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:rate_daily_2017_1EeV' on page 32 undefined on input line 224.
-
-
-LaTeX Warning: Reference `fig:rate_daily_2020_1EeV' on page 32 undefined on input line 224.
-
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png, id=336, 903.375pt x 489.32813pt>
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png, id=957, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png  used on input line 230.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png, id=337, 903.375pt x 489.32813pt>
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png, id=958, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png  used on input line 236.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-
-LaTeX Warning: Reference `fig:parameters_2017_1EeV' on page 32 undefined on input line 242.
-
-LaTeX Info: Redefining \. on input line 255.
-LaTeX Info: Redefining \% on input line 255.
-[32 <../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png (PNG copy)> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png (PNG copy)>]
-<../Anisotropia/params/ap_2017_above_1EeV.png, id=348, 752.8125pt x 564.60938pt>
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
+ [41 <../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png (PNG copy)> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png (PNG copy)>]
+<../Anisotropia/params/ap_2017_above_1EeV.png, id=970, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2017_above_1EeV.png  used on input line 259.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2017_above_1EeV.png, id=349, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2017_above_1EeV.png, id=971, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2017_above_1EeV.png  used on input line 265.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2017_above_1EeV.png, id=350, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2017_above_1EeV.png, id=972, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2017_above_1EeV.png  used on input line 272.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 258--276
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 258--276
 [][]  []
  []
 
-
-Package natbib Warning: Citation `aab2017impact' on page 33 undefined on input line 276.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 33 undefined on input line 276.
-
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png, id=351, 903.375pt x 489.32813pt>
+LaTeX Info: Redefining \. on input line 280.
+LaTeX Info: Redefining \% on input line 280.
+[42 <../Anisotropia/params/ap_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_above_1EeV.png (PNG copy)>]
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png, id=979, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png  used on input line 287.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-LaTeX Info: Redefining \. on input line 294.
-LaTeX Info: Redefining \% on input line 294.
-[33 <../Anisotropia/params/ap_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_above_1EeV.png (PNG copy)> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png (PNG copy)>]
-<../Anisotropia/params/ap_2020_above_1EeV.png, id=358, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/ap_2020_above_1EeV.png, id=980, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2020_above_1EeV.png  used on input line 300.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2020_above_1EeV.png, id=359, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2020_above_1EeV.png, id=981, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2020_above_1EeV.png  used on input line 306.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2020_above_1EeV.png, id=360, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2020_above_1EeV.png, id=982, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2020_above_1EeV.png  used on input line 313.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 299--317
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 299--317
 [][]  []
  []
 
-
-Package natbib Warning: Citation `aab2017impact' on page 34 undefined on input line 317.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 34 undefined on input line 317.
-
-<../Anisotropia/params/ap_2017_2020_above_1EeV.png, id=361, 752.8125pt x 564.60938pt>
+LaTeX Info: Redefining \. on input line 319.
+LaTeX Info: Redefining \% on input line 319.
+[43 <../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png (PNG copy)>]
+<../Anisotropia/params/ap_2017_2020_above_1EeV.png, id=990, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2017_2020_above_1EeV.png  used on input line 327.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2017_2020_above_1EeV.png, id=362, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2017_2020_above_1EeV.png, id=991, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2017_2020_above_1EeV.png  used on input line 332.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2017_2020_above_1EeV.png, id=363, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2017_2020_above_1EeV.png, id=992, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2017_2020_above_1EeV.png  used on input line 338.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 326--341
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 326--341
 [][]  []
  []
 
-
-Package natbib Warning: Citation `aab2017impact' on page 34 undefined on input line 341.
-
-
-Package natbib Warning: Citation `aab2017impact' on page 34 undefined on input line 341.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 343.
 LaTeX Info: Redefining \% on input line 343.
- [34 <../Anisotropia/params/ap_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2020_above_1EeV.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
- [35 <../Anisotropia/params/ap_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_2020_above_1EeV.png (PNG copy)>]) (../Conclusiones/conclusiones.tex
+[44 <../Anisotropia/params/ap_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2020_above_1EeV.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 359.
+LaTeX Info: Redefining \% on input line 359.
+ [45 <../Anisotropia/params/ap_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_2020_above_1EeV.png (PNG copy)>]) (../Conclusiones/conclusiones.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [36]
-Cap\'{\i }tulo 6.
-) (../Apendice/apend1.tex [37
+ [46]
+Cap\'{\i }tulo 7.
+) [47
 
 ]
-Ap\'{e}ndice A.
-[38
+Cap\'{\i }tulo 8.
+(../1_Metodo/metodo_v5.tex [48
 
 ]
-<../Apendice/draft_s38_1EeV_weather_for_reconstruction.png, id=406, 1204.5pt x 652.4375pt>
-File: ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png Graphic file (type png)
-<use ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png>
-Package pdftex.def Info: ../Apendice/draft_s38_1EeV_weather_for_reconstruction.png  used on input line 79.
-(pdftex.def)             Requested size: 441.01772pt x 238.88933pt.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [49]
+<../1_Metodo/pesos_referencia.png, id=1044, 645.41125pt x 563.10374pt>
+File: ../1_Metodo/pesos_referencia.png Graphic file (type png)
+<use ../1_Metodo/pesos_referencia.png>
+Package pdftex.def Info: ../1_Metodo/pesos_referencia.png  used on input line 56.
+(pdftex.def)             Requested size: 220.50885pt x 192.3807pt.
+<../1_Metodo/weigths_2020.png, id=1047, 867.24pt x 578.16pt>
+File: ../1_Metodo/weigths_2020.png Graphic file (type png)
+<use ../1_Metodo/weigths_2020.png>
+Package pdftex.def Info: ../1_Metodo/weigths_2020.png  used on input line 63.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+ [50 <../1_Metodo/pesos_referencia.png>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [51 <../1_Metodo/weigths_2020.png>]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [52]
+<../1_Metodo/sin_pesos_referencia_8_EeV.png, id=1087, 867.24pt x 578.16pt>
+File: ../1_Metodo/sin_pesos_referencia_8_EeV.png Graphic file (type png)
+<use ../1_Metodo/sin_pesos_referencia_8_EeV.png>
+Package pdftex.def Info: ../1_Metodo/sin_pesos_referencia_8_EeV.png  used on input line 130.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 )
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [39]
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [40 <../Apendice/draft_s38_1EeV_weather_for_reconstruction.png>]
-No file tesis.bbl.
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [53]
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+ [54 <../1_Metodo/sin_pesos_referencia_8_EeV.png>]
+Cap\'{\i }tulo 9.
+(../6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8.tex
+<../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png, id=1110, 903.375pt x 489.32813pt>
+File: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png  used on input line 7.
+(pdftex.def)             Requested size: 330.76328pt x 179.16699pt.
+ [55
 
-Package natbib Warning: There were undefined citations.
+ <../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png (PNG copy)>]
+<../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png, id=1119, 903.375pt x 602.25pt>
+File: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png  used on input line 33.
+(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
+<../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png, id=1120, 903.375pt x 602.25pt>
+File: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png  used on input line 38.
+(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
+<../6_Dipole_1-2_EeV/weights_2013_2020.png, id=1123, 867.24pt x 578.16pt>
+File: ../6_Dipole_1-2_EeV/weights_2013_2020.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/weights_2013_2020.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/weights_2013_2020.png  used on input line 50.
+(pdftex.def)             Requested size: 264.61331pt x 176.40471pt.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+ [56 <../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png (PNG copy)> <../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png (PNG copy)>]
+<../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png, id=1131, 939.51pt x 578.16pt>
+File: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png  used on input line 62.
+(pdftex.def)             Requested size: 374.86774pt x 230.68646pt.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+ [57 <../6_Dipole_1-2_EeV/weights_2013_2020.png>]
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png, id=1142, 903.375pt x 602.25pt>
+File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png  used on input line 89.
+(pdftex.def)             Requested size: 286.65881pt x 191.10657pt.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+ [58 <../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>]
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=1150, 903.375pt x 602.25pt>
+File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png  used on input line 98.
+(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=1151, 903.375pt x 602.25pt>
+File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png Graphic file (type png)
+<use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png>
+Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png  used on input line 103.
+(pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [59 <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [60] (./tesis.bbl [61
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
-(./tesis.aux
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+
+]
+Overfull \hbox (99.46956pt too wide) in paragraph at lines 86--89
+[]\OT1/cmr/m/n/12 Imagen ex-tra^^S^^Pda de \OT1/cmr/m/it/12 https://web.ikp.kit.edu/augeroracle/lib/exe/fetch.php?media=auger:telescope.jpeg\OT1/cmr/m/n/12 .
+ []
+
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+[62])
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [63]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+ (./tesis.aux
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+Package rerunfilecheck Info: File `tesis.out' has not changed.
+(rerunfilecheck)             Checksum: BE929FE8D4DC1451618680BEF8300806;4654.
 
 
-Package rerunfilecheck Warning: File `tesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `tesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  3925591BE73B52068221D4D8C9672582;3932.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 11801 strings out of 483048
- 197192 string characters out of 5962772
- 449084 words of memory out of 5000000
- 26241 multiletter control sequences out of 15000+600000
- 549421 words of font info for 89 fonts, out of 8000000 for 9000
+ 11947 strings out of 482719
+ 192335 string characters out of 5953361
+ 481539 words of memory out of 5000000
+ 26646 multiletter control sequences out of 15000+600000
+ 553506 words of font info for 100 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 49i,13n,49p,1759b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ponci/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on tesis.pdf (52 pages, 2172492 bytes).
+ 51i,13n,51p,1740b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on tesis.pdf (72 pages, 4857044 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 203 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1323 PDF objects out of 1440 (max. 8388607)
+ 1094 compressed objects within 11 object streams
+ 282 named destinations out of 1000 (max. 500000)
+ 771 words of extra memory for PDF output out of 10000 (max. 10000000)
 
