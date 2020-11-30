@@ -15,8 +15,9 @@ const int interval= 288;
 
 double energy_threshold=0;
 
-typedef void (*g)(double * , double *, double *, double , 
-				long long , long long , const char* );
+typedef void (*g)(double * , double *  , double *, double *, 
+				   double* , double *  , double	 ,
+				 long long , long long , const char* );
 
 
 double right_ascension(long long utc)
@@ -29,7 +30,8 @@ double right_ascension(long long utc)
 	return raz;
 }
 
-int method_weight_solar(int utc, double fas, int interval){
+int method_weight_solar(int utc, double fas, int interval)
+{
 	unsigned iutcref = 1072915200;
 	double x1=((long double)(utc-iutcref)/3600. +  2.099806667)*fas; // hora local 
 	int	aux=  int(fmod(x1*interval/24.0, interval));
@@ -41,9 +43,12 @@ int method_weight_solar(int utc, double fas, int interval){
 void ray_multifreq( int nf, const char* in_file, const char* out_file, 
 					long long utci , long long utcf, g rayleigh ){
 	
-	double a =0.0  , b=0.0, sumaN=0.0 ;
+	double a =0.0  , b=0.0, sumaN=0.0,  mean_energy=0.0 ;
 	double rtilde,pha,prtilde,r99r;
 	double sigma=0.0, sgmra=0.0;
+
+	double d_perp, factor;
+	double average_sin_theta, average_cos_dec;
 
 	std::ofstream myfile (out_file);
 
@@ -57,10 +62,15 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		rayleigh(&a, &b, &sumaN, &mean_energy,  
+						 &average_sin_theta, 
+						 &average_cos_dec, 
+						 freq, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
+		average_cos_dec/=sumaN;
+		average_sin_theta/=sumaN; 
      	pha= atan(b/a);
 
      	if (a < 0) pha= pha+pi;
@@ -84,11 +94,14 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 					long long utci , long long utcf, g rayleigh){
 	
 
-	double a =0.0  , b=0.0, sumaN=0.0 ;
-	double rtilde,pha,prtilde,r99r;
+	double a =0.0  , b=0.0, sumaN=0.0,  mean_energy=0.0 ;
+	double rtilde,pha,prtilde,r99r, d99;
 	double sigma=0.0, sgmra=0.0;
 
-	std::ofstream myfile (out_file);
+	double d_perp, factor;
+	double average_sin_theta, average_cos_dec;
+
+	std::ofstream myfile ("throw");
 
 	int Iterations=1;
 
@@ -99,27 +112,39 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 		
 		a=0.0; b=0.0; sumaN=0.0;
 
-		rayleigh(&a, &b, &sumaN, freq, utci, utcf, in_file);
+		rayleigh(&a, &b, &sumaN, &mean_energy,  
+						 &average_sin_theta, 
+						 &average_cos_dec, 
+						 freq, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
+
+		average_cos_dec/=sumaN;
+		average_sin_theta/=sumaN;
+
      	pha= atan(b/a);
 
      	if (a < 0) pha= pha+pi;
-     	if (a>0 && b< 0) pha = pha +2.*pi;
+     	if (a>0 && b< 0) pha = pha +2.*pi;	
 
      	rtilde= sqrt(a*a + b*b);
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
      	sgmra = sigma/rtilde;
+		d_perp = (rtilde)/average_cos_dec;
+		 
      	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
      										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
-		std::cout<<rtilde<<std::endl;
-     	std::cout <<  "Frecuencia: "<< freq1 		<< "\t Amplitud: " << rtilde << "\t";
-     	std::cout <<  "Probabilidad: "<<prtilde 	<< "\t Fase: " << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< std::endl;
+		d99 = r99r/average_cos_dec;
+		std::cout.precision(8);
+		std::cout << "Eventos: "<< sumaN <<"\nEnergía media: "<< mean_energy <<std::endl;
+     	std::cout << "\nFrecuencia: "<< freq << "\nAmplitud: " << rtilde<<std::endl;
+		std::cout << "d_perp: "	<< d_perp<<"\n";
+     	std::cout << "Probabilidad: "	<< prtilde 	;
+		std::cout << "\nFase: "     	<< pha/d2r << "+/-"<< sgmra/d2r ;
+		std::cout << "\nr99:"<< r99r << "\nd99: "<< d99 << std::endl;
 	}
+
 }
-
-
-
 #endif // RAY

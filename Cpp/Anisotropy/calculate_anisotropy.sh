@@ -26,7 +26,9 @@ file_cmp="./Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
 
 #file_input="./../Energy_Reconstruction/Files_PC_weather/AllTriggers_1_2.dat"
 #file_input="../../../AllTriggers/S38_analisis/2019/AllTriggers_S38_over_1_2_EeV_2019.dat"
-file_input="../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
+#file_input="../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
+
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
 
 #file_input="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
 #folder="./Files_Checking_Code(Ref._PC)/"

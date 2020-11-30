@@ -74,7 +74,21 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
 \end{enumerate}
 
-Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
+
+Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. 
+
+% Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
+
+
+\section*{Verificación del código}
+Se verificó el código escrito en este trabajo de la siguiente manera:
+
+\begin{enumerate}
+    \item El conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018 fue analizado en el trabajo \cite{Aab_2020}.
+    \item Utilizando el código y los datos de los eventos del paper \cite{Aab_2020}, obtenidos de la página del \emph{Publications Committee} de la colaboración Auger, se replicaron los datos del paper. 
+    \item Luego utilizando el código escrito para este trabajo, se realiza que análisis de EW con los datos del trabajo \cite{Aab_2020}. 
+    \item Finalmente se verifica que los valores obtenidos en los item 2 y 3, con  ambos códigos, sean el mismo.
+\end{enumerate}
 
 \section*{Tabla cantidad de eventos para distintos rangos de energía}
 
@@ -108,11 +122,11 @@ La referencia tiene $770\,323$ eventos con una energía media de $0.42$.
             \begin{tabular}[c]{l|c||c|c}
                 Frecuencia:     & 365.25	  & 366.25	   & 366.25 \cite{Aab_2020}   \\
                 Amplitud:       & 0.00173	  & 0.00123	   & 0.00479      \\
-                $d_\perp$:      & 0.00219	  & 0.00156	   & 0.00609       \\
+                $d_\perp$:      & -	  & 0.00156	   & 0.00609       \\
                 Probabilidad:   & 0.66        & 0.81	   & 0.45       \\
                 Fase:           & 145$\pm$60  & 279$\pm$90 & 226$\pm$50   	\\
                 $r_{99}$:       & 0.00580	  & 0.00580    & 0.0115       \\
-                $d_{\perp,99}$  & 0.00732     & 0.00732    & 0.0147       \\
+                $d_{\perp,99}$  & -     & 0.00732    & 0.0147       \\
             \end{tabular}
         \end{center}
     \end{small}
@@ -131,11 +145,9 @@ La referencia tiene $2\,388\,468$ eventos con una energía media de $0.71$.
                 \begin{tabular}[c]{l|c||c|c}
                     Frecuencia:     & 365.25	    & 366.25		& 366.25\cite{Aab_2020}\\
                     Amplitud:       & 0.00428       & 0.00442	    & 0.00377\\
-                    $d_\perp$:      & 0.00543       & 0.00561       & 0.00481\\
                     Probabilidad:   & 0.07          & 0.06	        & 0.20\\
                     Fase:           & 128$\pm$20	& 260$\pm$20	& 261$\pm$30\\
                     r99:            & 0.00556	    & 0.00556       & 0.00634\\
-                    $d_{\perp,99}$  & 0.00706       & 0.00706       &0.00809\\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -152,11 +164,9 @@ La referencia tiene $2\,388\,468$ eventos con una energía media de $0.71$.
                                     & Rayleigh      & EW            \\\hline
                     Frecuencia:     & 365.25	    & 365.25        \\
                     Amplitud:       & 0.00385       & 0.00282       \\
-                    $d_\perp$:      & -	            & 0.00359	    \\ 
                     Probabilidad:   & 0.02          & 0.64          \\
                     Fase:           & 288$\pm$20    & 200$\pm$60    \\
                     r99:            & 0.0041263     & 0.00916       \\
-                    $d_{\perp,99}$  & -             & 0.0117              \\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -170,12 +180,12 @@ La referencia tiene $2\,388\,468$ eventos con una energía media de $0.71$.
                 \begin{tabular}[c]{l|c||c|c}
                                     & Rayleigh     & EW         & EW\cite{Aab_2020}      \\\hline
                     Frecuencia:     & 366.25	   & 366.25     & 366.25      \\
-                    Amplitud:       & 0.00399	   & 0.00495    & 0.00143      \\
-                    $d_\perp$:      & -	           & 0.00631    & 0.00182      \\ 
+                    Amplitud:       & 0.00391	   & 0.00495    & 0.00143      \\
+                    $d_\perp$:      & 0.00499      & 0.00631    & 0.00182      \\ 
                     Probabilidad:   & 0.0136	   & 0.26       & 0.87      \\
                     Fase:           & 336$\pm$20   & 320$\pm$30 & 291$\pm$100      \\
                     r99:            & 0.00413	   & 0.00916    & 0.00837      \\
-                    $d_{\perp,99}$  & -            & 0.0117     & 0.0107       \\
+                    $d_{\perp,99}$  & 0.00526      & 0.0117     & 0.0107       \\
                 \end{tabular}
             \end{center}
         \end{small}

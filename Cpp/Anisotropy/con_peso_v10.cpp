@@ -56,10 +56,10 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 	for (int i = 0; i < interval; ++i) vect[i] = rnhexhr[i]/integral;
 }
 
-void rayleigh( 	double *a 		, double *b, 
-				double *sumaN	, double freq, 
-				long long utci	, long long utcf, 
-				const char* in_file )
+void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
+						double *average_sin_theta	, double *average_cos_dec,
+						double freq, long long utci , long long utcf,
+						const char* in_file)
 {
 	long long utc0 = 1072915200  ; //1/1/2005 00:00:00;
 	std::string line;
@@ -104,8 +104,14 @@ void rayleigh( 	double *a 		, double *b,
 			
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
 
+			arg = freq==366.25 ? raz*d2r : arg;
+
 			*a +=cos(arg)*peso; 
 			*b +=sin(arg)*peso;
+
+			*mean_energy +=energy*peso;
+			*average_sin_theta +=   peso*sin(Theta*d2r);
+			*average_cos_dec   +=	peso*cos(Dec*d2r);
 		}
 	}
 
@@ -235,12 +241,12 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 
-	ray_multifreq(40,  in_file, out_file, utci, utcf, rayleigh);
+	// ray_multifreq(40,  in_file, out_file, utci, utcf, rayleigh);
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;
-	ray_given_freq(365.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
-*/	
 	
+*/	
+	ray_given_freq(366.25,  in_file, out_file, utci, utcf, rayleigh);
 	return 0;
 }
