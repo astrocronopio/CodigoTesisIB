@@ -63,9 +63,8 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 		a=0.0; b=0.0; sumaN=0.0;
 
 		rayleigh(&a, &b, &sumaN, &mean_energy,  
-						 &average_sin_theta, 
-						 &average_cos_dec, 
-						 freq, utci, utcf, in_file);
+				 &average_sin_theta, &average_cos_dec, 
+				 freq, utci, utcf, in_file);
 
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;

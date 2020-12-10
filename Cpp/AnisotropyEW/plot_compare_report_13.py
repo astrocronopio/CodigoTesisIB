@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 import matplotlib as mpl
 mpl.rcParams.update({
-	'font.size': 20,
+	'font.size': 22,
 	'figure.figsize': [12, 8],
 	'figure.autolayout': True,
 	'font.family': 'serif',
@@ -31,11 +31,6 @@ ref_prob=  np.array([0.45	 , 0.20	   , 0.87 	])
 ref_r99_EW=np.array([0.0147 , 0.00809 , 0.0107 ])
 
 
-plt.scatter(vec_mid, vec_EW,      c='blue', alpha=0.6, label="$d_\perp$")
-plt.scatter(vec_mid, vec_r99_EW,  c='red',alpha=0.6, label="$d_{\perp,99}$")
-
-plt.scatter(vec_mid, ref_EW      , marker='s', s=50, c='green', alpha=0.6, label="$d_\perp$ Ref.")
-plt.scatter(vec_mid, ref_r99_EW, marker='s', s=50,  c='orange',alpha=0.6, label="$d_{\perp,99}$ Ref.")
 
 for i in range(len(vec)):
     plt.axvline(x=vec[i], ls=':')
@@ -52,17 +47,24 @@ for i in  range(len(vec_EW)):
 			xytext=(0.95*vec_mid[i], ref_EW[i]), ha="right", va="center", arrowprops=arrow_args)
 			#, bbox=bbox_args)
  
-	plt.annotate("$_{"+str(vec_r99_EW[i])+"}$", 
-              (1.1*vec_mid[i], vec_r99_EW[i]), ha="left", va="center"
-              , bbox=dict(boxstyle="square", pad=0.01,fc="1.0"))
+	# plt.annotate("$_{"+str(vec_r99_EW[i])+"}$", 
+    #           (1.1*vec_mid[i], vec_r99_EW[i]), ha="left", va="center"
+    #           , bbox=dict(boxstyle="square", pad=0.01,fc="1.0"))
 	
-	plt.annotate("$_{"+str(ref_r99_EW[i])+"}$", 
-              (0.9*vec_mid[i], ref_r99_EW[i]), ha="right", va="center"
-              , bbox=dict(boxstyle="square", pad=0.01, fc="1.0"))
+	# plt.annotate("$_{"+str(ref_r99_EW[i])+"}$", 
+    #           (0.9*vec_mid[i], ref_r99_EW[i]), ha="right", va="center"
+    #           , bbox=dict(boxstyle="square", pad=0.01, fc="1.0"))
 
 
 	plt.plot([vec[i], vec[i+1]], [vec_r99_EW[i],vec_r99_EW[i]], c='red',alpha=0.6)
 	plt.plot([vec[i], vec[i+1]], [ref_r99_EW[i],ref_r99_EW[i]], c='orange',alpha=0.6)
+
+plt.scatter(vec_mid, vec_EW,     marker='o', s=150,  c='blue', alpha=0.6, label="$d_\perp$")
+plt.scatter(vec_mid, vec_r99_EW, marker='o', s=150,  c='red',alpha=0.6, label="$d_{\perp,99}$")
+
+plt.scatter(vec_mid, ref_EW      , marker='s', s=150, c='green', alpha=0.6, label="$d_\perp$ Ref.")
+plt.scatter(vec_mid, ref_r99_EW, marker='s', s=150,  c='orange',alpha=0.6, label="$d_{\perp,99}$ Ref.")
+
 
 plt.xscale('log', base=2)
 plt.legend(loc=0, ncol=2)
@@ -76,9 +78,6 @@ plt.legend(loc=0, ncol=2)
 plt.figure(2)
 plt.ylabel("$d_\perp / d_{\perp,99}$")
 plt.xlabel("Energía [EeV]")
-plt.scatter(vec_mid, vec_EW/vec_r99_EW,      c='blue', alpha=0.6, label="$d_\perp$")
-plt.scatter(vec_mid, vec_r99_EW/vec_r99_EW,  c='red',alpha=0.6)
-plt.scatter(vec_mid, ref_EW/ref_r99_EW      , marker='s', s=50, c='green', alpha=0.6, label="$d_\perp$ Ref.")
 
 for i in range(len(vec)):
     plt.axvline(x=vec[i], ls=':')
@@ -97,6 +96,11 @@ for i in  range(len(vec_EW)):
 		xytext=(0.95*vec_mid[i], ref_EW[i]/ref_r99_EW[i]), ha="right", va="center", arrowprops=arrow_args)
 
 	plt.plot([vec[i], vec[i+1]], [vec_r99_EW[i],vec_r99_EW[i]]/vec_r99_EW[i], c='red',alpha=0.6)
+
+plt.scatter(vec_mid, vec_EW/vec_r99_EW,      marker='o', s=150,c='blue', alpha=0.6, label="$d_\perp$")
+plt.scatter(vec_mid, vec_r99_EW/vec_r99_EW,  marker='o', s=150,c='red',alpha=0.6)
+plt.scatter(vec_mid, ref_EW/ref_r99_EW      , marker='s', s=150, c='green', alpha=0.6, label="$d_\perp$ Ref.")
+
     
 plt.xscale('log', base=2)
 plt.legend(loc=0)

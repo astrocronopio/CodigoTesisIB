@@ -19,7 +19,8 @@ rango2020=1577880000
 
 energy_threshold="0"
 
-#file_cmp="./Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
+file_cmp="../Anisotropy/Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
+
 #file_cmp="../../Codigo_Taborda/ray_multfrq_8_04-0816_Eraw.dat"
 #file_cmp="/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/Cpp/Anisotropy/Files_Checking_Code(Ref._PC)/output_threshold_0sin_peso_v8_checkedEcor.dat"
 
@@ -86,4 +87,4 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 #"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2004))" "$(($rangoLSA2018))" "$energy_threshold"
 
-#gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
+gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp

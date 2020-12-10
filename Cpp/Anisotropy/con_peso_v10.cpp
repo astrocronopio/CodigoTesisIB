@@ -103,8 +103,10 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			*sumaN+=peso;
 			
 			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
+			if (freq==366.25 ) 
+				std::cout<<"Fuck"<<180*fmod((2.0*pi*((hrs)/24. )- raz*d2r ), 2.0*pi)/pi <<"\n"  ;
 
-			arg = freq==366.25 ? raz*d2r : arg;
+			arg = freq==366.25 ? Ra*d2r : arg;
 
 			*a +=cos(arg)*peso; 
 			*b +=sin(arg)*peso;
