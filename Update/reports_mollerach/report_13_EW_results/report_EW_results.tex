@@ -1,5 +1,7 @@
 \input{Preamblev2.sty}
+
 \usepackage{multirow}
+
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Título%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -20,7 +22,7 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
 
-\section*{Como se hace el cálculo}
+\section*{Como se hace el cálculo para la frecuencia sidérea}
 
 \begin{enumerate}
     \item Definimos el rango de tiempo a estudiar, para estos resultados se utilizaron los límites: 1 de Enero del 2014 hasta el 1 de Enero del 2020.
@@ -61,17 +63,34 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 
     Estos valores se traducen a los valores de amplitud $r$ y fase $\phi$ del dípolo físico mediante las expresiones:
     \begin{align*}
-        r = \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} &r_{EW} \qquad
-        \phi = \phi_{EW} + \frac{\pi}{2}\\
-        d_\perp&= \frac{\pi}{2 \langle\sin\theta \rangle} r_{EW}
+        r &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} r_{EW} \\
+        d_\perp&= \frac{\pi}{2 \langle\sin\theta \rangle} r_{EW} = \frac{r}{\langle\cos\delta \rangle}\\
+        \phi &= \phi_{EW} + \frac{\pi}{2}
     \end{align*}
     Se suma $\frac{\pi}{2}$ por el  artificio de agregar $\pi$ en los coeficientes para obtener la diferencia entre tasas del este y oeste. Los valores $\langle\cos\delta \rangle$ y $\langle\sin\delta \rangle$ son los valores medios de estas variables en los años estudiados. 
 
     \item Se calcula la amplitud límite $r_{99}$ y la probabilidad de que las amplitudes calculadas sea ruido  $P(r_{EW})$ mediante:
     \begin{align*}
-        P(\geq r_{EW}) = \exp{-\frac{N}{4}r^2_{EW}}\\
-        r_{99} = \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle}\sqrt{\frac{4}{N}\ln(100)}
+        P(\geq r_{EW}) &= \exp{\Big(-\frac{N}{4}r^2_{EW}\Big)}\\
+        r_{99} &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle}\sqrt{\frac{4}{N}\ln(100)}\\
+        d_{\perp,99} &= \frac{r_{99}}{\langle\cos\delta \rangle}    
     \end{align*}
+
+    \item Una vez obtenidos los valores a considerar, se calculan los errores asociados a cada variable, con las expresión a continuación:
+    
+    \begin{itemize}
+        \item Error asociado a la amplitud $r$ y $d_\perp$
+        \begin{align*}
+          \text{r} &\rightarrow  \sigma   = \frac{\pi \langle\cos\delta \rangle}{2\langle\sin\theta \rangle} \sqrt{\frac{2}{\mathcal{N}}}\\
+          d_\perp &\rightarrow   \sigma_{x,y} = \frac{\sigma}{\langle\cos\delta \rangle}
+        \end{align*}
+        \item Error asociado a la fase $\phi$ de la amplitud:
+        \begin{align*}
+            \sigma_{\phi} = \frac{1}{r_{EW}}\sqrt{\frac{2}{\mathcal{N}}}
+        \end{align*}
+        
+
+    \end{itemize}
 
 \end{enumerate}
 
@@ -82,16 +101,53 @@ Por último, estos resultados se comparan con los valores obtenidos con el méto
 % Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
 
 
+
+
+
+\section*{Cómo se hace el cálculo para frecuencias  arbitrarias}
+
+Cambiamos las variable de la ascensión recta del cenit $\alpha_0$ por
+\begin{equation}
+    \tilde{\alpha} = 2\pi f_x t_i  \label{ra_arb}
+  \end{equation}
+donde $f_x$ es la frecuencia arbitraria a estudiar y $t_i$ es el momento donde ocurre el evento a estudiar. Luego se realizan el mismo procedimiento que lo anterior para calcular el valor de la amplitud $r$.
+
+En la siguiente sección se verifica que se obtiene los mismo resultados con esta variable general que con el valor de $\alpha_0$ para la frecuencia sidérea.
+
 \section*{Verificación del código}
+
+\subsection*{Comparación con el trabajo \cite{Aab_2020} de la colaboración}
 Se verificó el código escrito en este trabajo de la siguiente manera:
 
 \begin{enumerate}[noitemsep]
     \item El conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018 fue analizado en el trabajo \cite{Aab_2020}.
     \item Utilizando el código y los datos de los eventos del paper \cite{Aab_2020}, obtenidos de la página del \emph{Publications Committee} de la colaboración Auger, se replicaron los datos del paper. 
-    \item Luego utilizando el código escrito para este trabajo, se realiza que análisis de EW con los datos del trabajo \cite{Aab_2020}. 
+    \item Luego utilizando el código escrito para este trabajo, se realizó el análisis de EW con los datos del trabajo \cite{Aab_2020}. 
     \item Finalmente se verificó que los valores obtenidos en los item 2 y 3, con  ambos códigos, sean el mismo.
 \end{enumerate}
 
+\subsection*{Tabla comparando con Right ascension}
+
+Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango $0.25-0.5$ EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son comparables entre sí.
+\begin{table}[H]
+    \begin{small}
+        \begin{center}
+            \begin{tabular}[c]{l|l|l|l}
+                                & \cite{Aab_2020} & $\alpha_0$   & $\alpha=2\pi f_xt_i$   \\ 
+                Frecuencia:     & 366.25          &  366.25      &  366.25            \\
+                $d_\perp$[\%]:  & 0.60            &  0.60        &  0.60              \\
+                $\sigma_{x,y}$[\%]&0.48           &  0.48        &  0.48              \\ 
+                Probabilidad:   & 0.45            &  0.45        &  0.45              \\
+                Fase:           & 225$\pm$64\footnote{Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código de \cite{Aab_2020}} 
+                                &  225$\pm$45   &  227$\pm$45          \\
+                r99[\%]:            & 1.5           &  1.5       &  1.5             \\
+                d99[\%]:            & 1.8           &  1.8       &  1.8             \\
+            \end{tabular}
+        \end{center}
+        \caption{Verificando la  variable $\alpha=2\pi ft$}
+        \label{tab:comp_vars}
+    \end{small}
+\end{table}
 
 \section*{Tabla cantidad de eventos para distintos rangos de energía}
 
@@ -114,7 +170,7 @@ Los eventos son clasificados en los distintos rangos con la energía reportada e
 \end{table}
 \subsection*{Resultados en el rango 0.25 EeV - 0.5 EeV}
 
-En la Fig. \ref{fig:primer} se comparan las direcciones en las que apuntan la fase en frecuencia siderea obtenida en este trabajo con la obtenida en \cite{Aab_2020}. 
+En la Fig. \ref{fig:primer} se comparan las direcciones en las que apuntan la fase en frecuencia sidérea obtenida en este trabajo con la obtenida en \cite{Aab_2020}. 
 Las fases tiene un margen donde se solapan en la incertidumbre pero no son comparables, la línea punteada marca la dirección del centro galáctico.
 
 \begin{table}[H]
@@ -122,25 +178,19 @@ Las fases tiene un margen donde se solapan en la incertidumbre pero no son compa
         \begin{center}
             \begin{tabular}[c]{l|c||c|c}
                 Frecuencia:         & 365.25	  & 366.25	   & 366.25 \cite{Aab_2020}   \\
-                Amplitud [\%]:      & 0.173	      & 0.123	   & 0.50      \\
-                $d_\perp$[\%]:      & -	          & 0.156	   & $0.6^{+0.6}_{-0.3}$       \\
-                Probabilidad [\%] : & 66\%        & 81\%	   & 45\%       \\
-                Fase[$^o$]:               & 145$\pm$60         & 279$\pm$90 & 226$\pm$50   	\\
-                $r_{99}$ [\%]:      & 0.58	      & 0.58       & 1.2       \\
-                $d_{\perp,99}$[\%]: & -           & 0.73       & 1.5      \\
+                Amplitud [\%]:      & 0.17	      & 0.12	   & 0.50\footnote[2]{\label{note1}Obtenido del código usando en el paper \cite{Aab_2020}}      \\
+                $d_\perp$[\%]:      & -	          & 0.16	   & $0.6^{+0.6}_{-0.3}$       \\
+                $\sigma_{x,y}$[\%]: & -	          & 0.24	   & 0.48       \\
+                Probabilidad [\%] : & 0.66        & 0.81\%	   & 0.45       \\
+                Fase[$^o$]:         & 221$\pm$63  & 280$\pm$88 & 225$\pm$64\footnote[3]{Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código de \cite{Aab_2020}}  	\\
+                $r_{99}$ [\%]:      & 0.73	      & 0.58       & 1.5\footnotemark[2]                \\
+                $d_{\perp,99}$[\%]: & -           & 0.73       & 1.8      \\
             \end{tabular}
         \end{center}
     \end{small}
     \caption{Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV}
     \label{tab:solar}
 \end{table}
-
-
-\subsection*{Resultados en el rango 0.5 EeV - 1 EeV}
-En este rango de energía se observa una diferencia entre las probabilidades de este trabajo y \cite{Aab_2020}  ne la frecuencia sidérea. Este valor dice cuando probable es que las amplitudes sean debido al ruido. Este trabajo obtiene que la amplitud en sidérea es significativa por un  $6\%$.  
-
-En la Fig. \ref{fig:segundo} se comparan las direcciones en las que apuntan la fase en frecuencia sidérea obtenida en este trabajo con la obtenida en \cite{Aab_2020}. En esta figura se observa que las fases son comparables entre sí y apuntan a una dirección cercana al centro galáctico (línea punteada).
-
 
 \begin{figure}[H]
     \begin{small}
@@ -151,6 +201,27 @@ En la Fig. \ref{fig:segundo} se comparan las direcciones en las que apuntan la f
         \label{fig:primer}
     \end{small}
 \end{figure}
+
+Realizando el barrido de frecuencias con la variable de la Ec.\ref{ra_arb}, se obtiene que en este rango de energía las amplitudes se  distribuyen en frecuencia como se muestra en la Fig.\ref{fig:primer_barrido}. La línea horizontal indica el valor de $r_{99}$ para cada frecuencia, además se observa que ninguna frecuencia supera dicho umbral.
+
+\begin{figure}[H]
+    \begin{small}
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{plot_bin_1_barrido.pdf}
+        \end{center}
+        \caption{Barrido de frecuencias en el  rango 0.25 EeV - 0.50 EeV .}
+        \label{fig:primer_barrido}
+    \end{small}
+\end{figure}
+
+
+
+\subsection*{Resultados en el rango 0.5 EeV - 1 EeV}
+En este rango de energía se observa una diferencia entre las probabilidades de este trabajo y \cite{Aab_2020}  ne la frecuencia sidérea. Este valor dice cuando probable es que las amplitudes sean debido al ruido. Este trabajo obtiene que la amplitud en sidérea es significativa por un  $6\%$.  
+
+En la Fig. \ref{fig:segundo} se comparan las direcciones en las que apuntan la fase en frecuencia sidérea obtenida en este trabajo con la obtenida en \cite{Aab_2020}. En esta figura se observa que las fases son comparables entre sí y apuntan a una dirección cercana al centro galáctico (línea punteada).
+
+
 
 \begin{figure}[H]
     \begin{small}
@@ -166,13 +237,14 @@ En la Fig. \ref{fig:segundo} se comparan las direcciones en las que apuntan la f
         \begin{small}
             \begin{center}
                 \begin{tabular}[c]{l|c||c|c}
-                    Frecuencia:     & 365.25	    & 366.25		& 366.25\cite{Aab_2020}\\
-                    Amplitud [\%]:  & 0.40          & 0.40	        & 0.40\\
-                    $d_\perp$[\%]:  & -             & 0.60          & $0.50^{+0.3}_{-0.2}$\\
-                    Probabilidad:   & 7\%           & 6\%	        & 20\%\\
-                    Fase[$^o$]:     & 128$\pm$20	& 260$\pm$20	& 260$\pm$30\\
-                    r99[\%]:        & 0.60	        & 0.60          & 0.6\\
-                    $d_{\perp,99}[\%]$  & -         & 0.71          & 0.81\\
+                    Frecuencia:         & 365.25	    & 366.25		& 366.25\cite{Aab_2020}\\
+                    Amplitud [\%]:      & 0.42          & 0.44	        & 0.40\footnotemark[2] \\
+                    $d_\perp$[\%]:      & -             & 0.56          & $0.50^{+0.3}_{-0.2}$\\
+                    $\sigma_{x,y}$[\%]: & -	            & 0.23	        & 0.27       \\
+                    Probabilidad:       & 0.06          & 6\%	        & 20\%\\
+                    Fase[$^o$]:         & 205$\pm$25	& 258$\pm$23	& 261$\pm$43\footnotemark[3]  \\
+                    r99[\%]:            & 0.70	        & 0.71          & 0.8\footnotemark[2] \\
+                    $d_{\perp,99}[\%]$  & -             & 0.89          & 1.1\\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -180,7 +252,17 @@ En la Fig. \ref{fig:segundo} se comparan las direcciones en las que apuntan la f
         \label{tab:solar}
     \end{table}
 
-    
+    El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango de energía se observa en la Fig.\ref{fig:segundo_barrido}. La línea horizontal indica el valor de $r_{99}$ para cada frecuencia, además se observa que ninguna frecuencia supera dicho umbral. Otro aspecto es que la zona de la frecuencia anti-sidérea no tiene picos pronunciados, como en la frecuencia solar o sidérea.
+
+    \begin{figure}[H]
+        \begin{small}
+            \begin{center}
+                \includegraphics[width=0.5\textwidth]{plot_bin_2_barrido.pdf}
+            \end{center}
+            \caption{Barrido de frecuencias en el  rango 0.5 EeV - 1.0 EeV .}
+            \label{fig:segundo_barrido}
+        \end{small}
+    \end{figure}    
 
 
 \subsection*{Resultados en el rango 1 EeV - 2 EeV}
@@ -194,10 +276,10 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
                 \begin{tabular}[c]{l|c|c}
                                     & Rayleigh      & EW            \\\hline
                     Frecuencia:     & 365.25	    & 365.25        \\
-                    Amplitud:       & 0.00385       & 0.00282       \\
+                    Amplitud [\%]:  & 0.39          & 0.28       \\
                     Probabilidad:   & 0.02          & 0.64          \\
-                    Fase:           & 288$\pm$20    & 200$\pm$60    \\
-                    r99:            & 0.0041263     & 0.00916       \\
+                    Fase:           & 288$\pm$20    & 279$\pm$61    \\
+                    r99 [\%]:       & 0.41263       & 1.2       \\
                 \end{tabular}
             \end{center}
         \end{small}
@@ -210,22 +292,20 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
             \begin{center}
                 \begin{tabular}[c]{l|c||c|c}
                                     & Rayleigh     & EW         & EW\cite{Aab_2020}      \\\hline
-                    Frecuencia:     & 366.25	   & 366.25     & 366.25      \\
-                    Amplitud:       & 0.0040	   & 0.00495    & 0.00143      \\
-                    $d_\perp$:      & 0.0051       & 0.00631    & 0.00182      \\ 
+                    Frecuencia:     & 366.25	   & 366.25     & 366.25        \\
+                    Amplitud[\%]:   & 0.40	       & 0.50       & 0.14\footnotemark[2]      \\
+                    $d_\perp$[\%]:  & 0.51         & 0.63      & $0.18 ^{+0.47}_{-0.02}$       \\ 
+                    $\sigma_{x,y}$[\%]: & -	       & 000	    & 0.35          \\
                     Probabilidad:   & 0.012	       & 0.26       & 0.87          \\
-                    Fase:           & 330$\pm$20   & 320$\pm$30 & 290$\pm$100      \\
-                    r99:            & 0.0041	   & 0.00916    & 0.00837      \\
-                    $d_{\perp,99}$  & 0.0053       & 0.0117     & 0.0107       \\
+                    Fase:           & 330$\pm$20   & 320$\pm$30 & 291$\pm$100 \footnotemark[3]     \\
+                    r99[\%]:           & 0.41	   & 0.92    & 0.84\footnotemark[2]       \\
+                    $d_{\perp,99}[\%]$ & 0.53      & 1.2     & 1.1        \\
                 \end{tabular}
             \end{center}
         \end{small}
         \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
         \label{tab:siderea_3}
     \end{table}
-
-    La referencia tiene $1\,243\,098$ eventos con una energía media de $1.34$.
-
    
     \begin{figure}[H]
         \begin{small}
@@ -238,9 +318,22 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \end{figure}
 
 
+    El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango de energía se observa en la Fig.\ref{fig:tercer_barrido}. La línea horizontal indica el valor de $r_{99}$ para cada frecuencia y se observa que ninguna frecuencia supera dicho umbral. En la frecuencia solar no se observa ningún pico, esto se debe a que el método EW es robusto con respecto a las modulación del clima. Se observa un pico en sidérea pero el mismo no es significativo con respecto al $r_{99}$.
+
     \section*{Gráficos}
 
     Para poder comparar los resultados de $d_\perp$ entre sí, podríamos graficar los valores de la proyección y de la límite del $99\%$ como se muestra en la Fig.\ref{fig:no_normalizado}. El inconveniente es la cantidad de datos en cada rango de energía entre los conjuntos de datos, todos los disparos y disparo estándar, son distintos.
+
+    \begin{figure}[H]
+        \begin{small}
+            \begin{center}
+                \includegraphics[width=0.5\textwidth]{plot_bin_3_barrido.pdf}
+            \end{center}
+            \caption{Barrido de frecuencias en el  rango 1 EeV - 2 EeV .}
+            \label{fig:tercer_barrido}
+        \end{small}
+    \end{figure}    
+
 
     \begin{figure}[H]
         \begin{small}
@@ -254,21 +347,21 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     
     Para compararlos mejor con respecto a $d_{\perp,99}$, usamos el valor de cada rango y de cada conjunto de datos, para normalizar la amplitud de $d_{\perp,99}$. Como se muestra en la Fig.\ref{fig:normalizado}, ahora $d_{\perp,99}=1$ y los otros valores se pueden comparar. 
 
-    \begin{figure}[H]
-        \begin{small}
-            \begin{center}
-                \includegraphics[width=0.5\textwidth]{d_perp_normalizado.pdf}
-            \end{center}
-            \caption{Valores normalizados con $d_{\perp,99}$}
-            \label{fig:normalizado}
-        \end{small}
-    \end{figure}
-    
 
 Por lo que ahora podemos decir que en los rangos entre 0.5 EeV - 1.0 EeV y 1.0 EeV - 2.0 EeV, la amplitud obtenida en este trabajo está por encima que la referencia. 
 
 Para comparar los resultados en el  rango 0.25 EeV - 0.5 EeV, tenemos que tener en cuenta que el disparo estándar tiene una sensibilidad menor que el todos los disparos. Esto se ve claramente en la Tabla \ref{tab:}, donde el primer tiene 7 veces menos eventos para analizar. Por lo tanto, la discrepancia entre la referencia y los trabajos puede deberse a la  diferencia de eventos a estudiar causada por la sensibilidad del disparo.
 
+
+\begin{figure}[H]
+    \begin{small}
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{d_perp_normalizado.pdf}
+        \end{center}
+        \caption{Valores normalizados con $d_{\perp,99}$}
+        \label{fig:normalizado}
+    \end{small}
+\end{figure}
 
     \bibliographystyle{apsrev4-1}
     \bibliography{mibib.bib}

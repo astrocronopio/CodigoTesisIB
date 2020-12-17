@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  15 DEC 2020 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  17 DEC 2020 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,7 +365,15 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box69
 \enit@count@id=\count293
 \enitdp@description=\count294
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2020/07/22 v3.31 KOMA-Script package (extend other classes with features of KOMA-Script classes)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
+)))) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
@@ -465,14 +473,14 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip73
 \bigstrutjot=\dimen177
 )
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 4.
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 6.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 4.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 4.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 4.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 6.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 6.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 6.
 (./report_EW_results.aux
 
 LaTeX Warning: Label `tab:solar' multiply defined.
@@ -480,22 +488,22 @@ LaTeX Warning: Label `tab:solar' multiply defined.
 )
 \openout1 = `report_EW_results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
@@ -520,16 +528,16 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-LaTeX Info: Redefining \microtypecontext on input line 4.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \microtypecontext on input line 6.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 4.
+LaTeX Info: Redefining \showhyphens on input line 6.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -537,7 +545,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 4.
+Package hyperref Info: Link coloring OFF on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -547,116 +555,177 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
  (./report_EW_results.out) (./report_EW_results.out)
 \@outlinefile=\write5
 \openout5 = `report_EW_results.out'.
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 4.
-Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 4.
-Class revtex4-1 Info: Line numbering not turned on yet on input line 4.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 6.
+Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 6.
+Class revtex4-1 Info: Line numbering not turned on yet on input line 6.
 \openout3 = `report_EW_resultsNotes.bib'.
 
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<phase_primer_bin.pdf, id=79, 867.24pt x 578.16pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\NAT@ctype' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 119.
+
+<phase_primer_bin.pdf, id=94, 867.24pt x 578.16pt>
 File: phase_primer_bin.pdf Graphic file (type pdf)
 <use phase_primer_bin.pdf>
-Package pdftex.def Info: phase_primer_bin.pdf  used on input line 148.
+Package pdftex.def Info: phase_primer_bin.pdf  used on input line 198.
 (pdftex.def)             Requested size: 255.0pt x 169.99992pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 148--149
+Overfull \hbox (9.0pt too wide) in paragraph at lines 198--199
  [] 
  []
 
-<phase_segundo_bin.pdf, id=80, 867.24pt x 578.16pt>
+[2]
+<plot_bin_1_barrido.pdf, id=119, 1204.5pt x 681.54625pt>
+File: plot_bin_1_barrido.pdf Graphic file (type pdf)
+<use plot_bin_1_barrido.pdf>
+Package pdftex.def Info: plot_bin_1_barrido.pdf  used on input line 210.
+(pdftex.def)             Requested size: 255.0pt x 144.28328pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 210--211
+ [] 
+ []
+
+<phase_segundo_bin.pdf, id=123, 867.24pt x 578.16pt>
 File: phase_segundo_bin.pdf Graphic file (type pdf)
 <use phase_segundo_bin.pdf>
-Package pdftex.def Info: phase_segundo_bin.pdf  used on input line 158.
+Package pdftex.def Info: phase_segundo_bin.pdf  used on input line 229.
 (pdftex.def)             Requested size: 255.0pt x 169.99992pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 158--159
+Overfull \hbox (9.0pt too wide) in paragraph at lines 229--230
  [] 
  []
 
-[2 <./phase_primer_bin.pdf> <./phase_segundo_bin.pdf
-
-pdfTeX warning: pdflatex (file ./phase_segundo_bin.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<phase_tercer_bin.pdf, id=167, 867.24pt x 578.16pt>
-File: phase_tercer_bin.pdf Graphic file (type pdf)
-<use phase_tercer_bin.pdf>
-Package pdftex.def Info: phase_tercer_bin.pdf  used on input line 233.
-(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 233--234
- [] 
- []
-
-<d_perp_no_normalizado_v2.pdf, id=169, 867.24pt x 578.16pt>
-File: d_perp_no_normalizado_v2.pdf Graphic file (type pdf)
-<use d_perp_no_normalizado_v2.pdf>
-Package pdftex.def Info: d_perp_no_normalizado_v2.pdf  used on input line 248.
-(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 248--249
- [] 
- []
-
-<d_perp_normalizado.pdf, id=171, 867.24pt x 578.16pt>
-File: d_perp_normalizado.pdf Graphic file (type pdf)
-<use d_perp_normalizado.pdf>
-Package pdftex.def Info: d_perp_normalizado.pdf  used on input line 260.
-(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+<plot_bin_2_barrido.pdf, id=130, 1204.5pt x 681.54625pt>
+File: plot_bin_2_barrido.pdf Graphic file (type pdf)
+<use plot_bin_2_barrido.pdf>
+Package pdftex.def Info: plot_bin_2_barrido.pdf  used on input line 260.
+(pdftex.def)             Requested size: 255.0pt x 144.28328pt.
 
 Overfull \hbox (9.0pt too wide) in paragraph at lines 260--261
  [] 
  []
 
-[3 <./phase_tercer_bin.pdf> <./d_perp_no_normalizado_v2.pdf
+[3 <./phase_primer_bin.pdf> <./plot_bin_1_barrido.pdf> <./phase_segundo_bin.pdf
 
-pdfTeX warning: pdflatex (file ./d_perp_no_normalizado_v2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./d_perp_normalizado.pdf
+pdfTeX warning: pdflatex (file ./phase_segundo_bin.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<phase_tercer_bin.pdf, id=223, 867.24pt x 578.16pt>
+File: phase_tercer_bin.pdf Graphic file (type pdf)
+<use phase_tercer_bin.pdf>
+Package pdftex.def Info: phase_tercer_bin.pdf  used on input line 313.
+(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 313--314
+ [] 
+ []
+
+<plot_bin_3_barrido.pdf, id=227, 1204.5pt x 705.63625pt>
+File: plot_bin_3_barrido.pdf Graphic file (type pdf)
+<use plot_bin_3_barrido.pdf>
+Package pdftex.def Info: plot_bin_3_barrido.pdf  used on input line 330.
+(pdftex.def)             Requested size: 255.0pt x 149.38313pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 330--331
+ [] 
+ []
+
+<d_perp_no_normalizado_v2.pdf, id=228, 867.24pt x 578.16pt>
+File: d_perp_no_normalizado_v2.pdf Graphic file (type pdf)
+<use d_perp_no_normalizado_v2.pdf>
+Package pdftex.def Info: d_perp_no_normalizado_v2.pdf  used on input line 341.
+(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 341--342
+ [] 
+ []
+
+[4 <./plot_bin_2_barrido.pdf> <./phase_tercer_bin.pdf> <./plot_bin_3_barrido.pdf>]
+<d_perp_normalizado.pdf, id=297, 867.24pt x 578.16pt>
+File: d_perp_normalizado.pdf Graphic file (type pdf)
+<use d_perp_normalizado.pdf>
+Package pdftex.def Info: d_perp_normalizado.pdf  used on input line 359.
+(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 359--360
+ [] 
+ []
+
+(./report_EW_results.bbl) [5 <./d_perp_no_normalizado_v2.pdf> <./d_perp_normalizado.pdf
 
 pdfTeX warning: pdflatex (file ./d_perp_normalizado.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./report_EW_results.bbl) [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
+>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./report_EW_results.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `report_EW_results.out' has not changed.
-(rerunfilecheck)             Checksum: B01C85BEBA60D4641C709F402666EC68;711.
+(rerunfilecheck)             Checksum: 4B103EADA02273366AA1A0998C1C9AED;1037.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14220 strings out of 482719
- 224841 string characters out of 5953361
- 654977 words of memory out of 5000000
- 29218 multiletter control sequences out of 15000+600000
- 547650 words of font info for 99 fonts, out of 8000000 for 9000
+ 15084 strings out of 482719
+ 239933 string characters out of 5953361
+ 697240 words of memory out of 5000000
+ 30043 multiletter control sequences out of 15000+600000
+ 547905 words of font info for 104 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 50i,15n,51p,571b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,58p,638b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report_EW_results.pdf (4 pages, 260545 bytes).
+Output written on report_EW_results.pdf (5 pages, 296013 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 35 named destinations out of 1000 (max. 500000)
- 14946 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 14985 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -13,20 +13,28 @@ import numpy as np
 #plot fases
 # sns.set('whitegrid')
 
+########################
+#Select bin: 0,1,2
+bin_sel=2
+
+########################
+
 plt.figure(3)
 # Compute pie slices
-theta 	= 2*np.pi*(1./360.)*np.array([279,260,320])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-width 	= 2*np.pi*(1./360.)*np.array([90,20,30])#np.pi / 4 * np.random.rand(N)
+theta 	= 2*np.pi*(1./360.)*np.array([280,258,320])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
+width 	= 2*np.pi*(1./360.)*np.array([88,23,30])#np.pi / 4 * np.random.rand(N)
 
-ref_theta 	= 2*np.pi*(1./360.)*np.array([226,261,290])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-ref_width 	= 2*np.pi*(1./360.)*np.array([50,30,100])#np.pi / 4 * np.random.rand(N)
+ref_theta 	= 2*np.pi*(1./360.)*np.array([225,261,291])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
+ref_width 	= 2*np.pi*(1./360.)*np.array([64,43,100])#np.pi / 4 * np.random.rand(N)
 
+ray_theta = 2*np.pi*(1./360.)*np.array([330])
+ray_width = 2*np.pi*(1./360.)*np.array([20])
 
 N = len(theta)
 radii 	= 0.9*np.ones(len(theta))#np.linspace(0.85, 1, num=3) 
 #colors 	= plt.cm.viridis( np.random.rand(N+5))
-colors=['red', 'blue', 'black']
-ref_colors=['brown', 'gray', 'orange']
+colors=['red', 'blue', 'blue', 'red']
+ref_colors=['black', 'black', 'black']
 
 legend=["[0.25 - 0.5]", "[0.5 - 1]", "[1 - 2]"]
 ref_legend=["Ref.:[0.25 - 0.5]", " Ref.:[0.5 - 1]", "Ref.:[1 - 2]"]
@@ -34,7 +42,7 @@ ref_legend=["Ref.:[0.25 - 0.5]", " Ref.:[0.5 - 1]", "Ref.:[1 - 2]"]
 
 ax = plt.subplot(111, projection='polar')
 
-for i in [1]:
+for i in [bin_sel]:
 	ax.bar(theta[i], radii[i], width=width[i], bottom=0., color=colors[i], edgecolor=colors[i], alpha=0.15)
 	ax.bar(theta[i], 0.005*radii[i], width=width[i], bottom=0.995*radii[i],  color=colors[i], edgecolor=colors[i], alpha=0.8)
 
@@ -49,6 +57,16 @@ for i in [1]:
 	
 	plt.arrow(ref_theta[i],0, 0,0.9*radii[i], alpha = 0.8, width = 0.022,
 	             edgecolor = 'black', facecolor = ref_colors[i], lw = 0.1, zorder = 1)#, color=colors[i], arrowprops=dict(arrowstyle="->"))
+	
+	if bin_sel==2:
+		ax.bar(ray_theta[0], 0.98*radii[i], width=ray_width[0], bottom=0., color=colors[i+1], edgecolor=colors[i+1], alpha=0.15)
+		ax.bar(ray_theta[0], 0.005*0.98*radii[i], width=ray_width[0], bottom=0.995*0.98*radii[i],  color=colors[i+1], edgecolor=colors[i+1], alpha=0.8)
+
+		ax.plot([ray_theta[0]], [0.98*radii[i]], color=colors[i+1], label="Rayleigh")
+		
+		plt.arrow(ray_theta[0],0, 0,0.9*0.98*radii[i], alpha = 0.8, width = 0.022,
+					edgecolor = 'black', facecolor = colors[i+1], lw = 0.1, zorder = 1)#, color=colors[i], arrowprops=dict(arrowstyle="->"))
+		
 		
  
 	#ax.annotate("",xy=(0,theta[i]), xytext=(0,radii[i]), color=colors[i], arrowprops=dict(arrowstyle="->"))

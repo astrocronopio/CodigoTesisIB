@@ -42,8 +42,10 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 #### Exec ####
 
-"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-# exit
+# "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+#gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
+
+
 #####################################################################################3
 
 folder="./Files_AllTriggers_0-5_1_EeV/"
@@ -60,7 +62,8 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 #### Exec ####
 
-"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+# "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+# gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
 
 #####################################################################################3
 folder="./Files_AllTriggers_1_2_EeV/"

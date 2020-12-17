@@ -22,13 +22,13 @@ plt.xlabel("Energía [EeV]")
 bbox_args = dict(boxstyle="round", fc="1.0")
 arrow_args = dict(arrowstyle="]-")
 
-vec_EW=    np.array([0.00156 , 0.00561 , 0.00631])
-vec_prob=  np.array([0.81	 , 0.06	   , 0.26 	])
-vec_r99_EW=np.array([0.00732 , 0.00706 , 0.0117 ])
+vec_EW=    np.array([0.0016 , 0.0056 , 0.0063])
+vec_prob=  np.array([0.81	, 0.06	   , 0.26 	])
+vec_r99_EW=np.array([0.0073 , 0.0089 , 0.012 ])
 
-ref_EW=    np.array([0.00609 , 0.00481 , 0.00182])
+ref_EW=    np.array([0.0060 , 0.0050 , 0.0018])
 ref_prob=  np.array([0.45	 , 0.20	   , 0.87 	])
-ref_r99_EW=np.array([0.0147 , 0.00809 , 0.0107 ])
+ref_r99_EW=np.array([0.018 , 0.011 , 0.011 ])
 
 
 
@@ -59,11 +59,11 @@ for i in  range(len(vec_EW)):
 	plt.plot([vec[i], vec[i+1]], [vec_r99_EW[i],vec_r99_EW[i]], c='red',alpha=0.6)
 	plt.plot([vec[i], vec[i+1]], [ref_r99_EW[i],ref_r99_EW[i]], c='orange',alpha=0.6)
 
-plt.scatter(vec_mid, vec_EW,     marker='o', s=150,  c='blue', alpha=0.6, label="$d_\perp$")
-plt.scatter(vec_mid, vec_r99_EW, marker='o', s=150,  c='red',alpha=0.6, label="$d_{\perp,99}$")
+plt.scatter(vec_mid, vec_EW,     marker='o', s=220,  c='blue', alpha=0.6, label="$d_\perp$")
+plt.scatter(vec_mid, vec_r99_EW, marker='o', s=220,  c='red',alpha=0.6, label="$d_{\perp,99}$")
 
-plt.scatter(vec_mid, ref_EW      , marker='s', s=150, c='green', alpha=0.6, label="$d_\perp$ Ref.")
-plt.scatter(vec_mid, ref_r99_EW, marker='s', s=150,  c='orange',alpha=0.6, label="$d_{\perp,99}$ Ref.")
+plt.scatter(vec_mid, ref_EW      , marker='s', s=220, c='green', alpha=0.6, label="$d_\perp$ Ref.")
+plt.scatter(vec_mid, ref_r99_EW, marker='s', s=220,  c='orange',alpha=0.6, label="$d_{\perp,99}$ Ref.")
 
 
 plt.xscale('log', base=2)
@@ -97,9 +97,9 @@ for i in  range(len(vec_EW)):
 
 	plt.plot([vec[i], vec[i+1]], [vec_r99_EW[i],vec_r99_EW[i]]/vec_r99_EW[i], c='red',alpha=0.6)
 
-plt.scatter(vec_mid, vec_EW/vec_r99_EW,      marker='o', s=150,c='blue', alpha=0.6, label="$d_\perp$")
-plt.scatter(vec_mid, vec_r99_EW/vec_r99_EW,  marker='o', s=150,c='red',alpha=0.6)
-plt.scatter(vec_mid, ref_EW/ref_r99_EW      , marker='s', s=150, c='green', alpha=0.6, label="$d_\perp$ Ref.")
+plt.scatter(vec_mid, vec_EW/vec_r99_EW,      marker='o', s=220,c='blue', alpha=0.6, label="$d_\perp$")
+plt.scatter(vec_mid, vec_r99_EW/vec_r99_EW,  marker='o', s=220,c='red',alpha=0.6)
+plt.scatter(vec_mid, ref_EW/ref_r99_EW      , marker='s', s=220, c='green', alpha=0.6, label="$d_\perp$ Ref.")
 
     
 plt.xscale('log', base=2)
