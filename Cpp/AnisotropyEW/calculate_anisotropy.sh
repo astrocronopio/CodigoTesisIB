@@ -43,7 +43,7 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 #### Exec ####
 
 "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-
+# exit
 #####################################################################################3
 
 folder="./Files_AllTriggers_0-5_1_EeV/"
@@ -61,8 +61,6 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 #### Exec ####
 
 "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-
-
 
 #####################################################################################3
 folder="./Files_AllTriggers_1_2_EeV/"

@@ -5,7 +5,7 @@ set key right
 set ylabel "Amplitud" 
 set xlabel "Frecuencia [ciclos/año]"
 
-set xran [:]
+# set xran [:]
 
 plot filename u 1:5 w l ls 3  lc rgb 'red'  t "Actual"
 replot filename u 1:9 w l notit lc rgb 'black'  lw 0.9

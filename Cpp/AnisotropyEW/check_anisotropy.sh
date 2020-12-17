@@ -13,7 +13,7 @@ rango2017=1472688000 #
 rangoPC2017=1496275200 
 #importante, este es el final de PC,
 #que lo uso de referencia
-rangoLSA2018=1538352000
+rangoLSA2018=1538332000
 rango2019=1546344000
 rango2020=1577880000
 

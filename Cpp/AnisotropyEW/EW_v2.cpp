@@ -45,26 +45,26 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
 
-			// {
-			// liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
-			// if (energy>1 || energy<= 0.5) continue;
-			// if(utc  < utci || Theta > 60) continue;
-			// }	
+			{
+				liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
+				if (energy< 0.25|| energy >= 0.5) continue;
+				if(utc  < utci || Theta > 60) continue;
+			}	
 
-			{			
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			//if (energy<energy_threshold) continue;
-			if(utc  < utci) continue;
-			if(Theta > 60) continue;
-			}
+			// {			
+			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			// //if (energy<energy_threshold) continue;
+			// if(utc  < utci) continue;
+			// if(Theta > 60) continue;
+			// }
 			
 			if(utcf < utc) break;
 			
-			hrs=((double)(utc-utc0)/3600. + 21.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600.)*fas; // hora local
 			
 			
 			raz = right_ascension(utc); //cenit Auger
-			arg = 2.0*pi*(hrs/24.0 + 21);
+			arg = 2.0*pi*(hrs + 21.0)/24.0;
 			
 			arg = freq==366.25 ? raz*d2r : arg;
 			
@@ -97,10 +97,10 @@ int main(int argc, char const *argv[])
 	std::cout<<"Input: "<<in_file<<std::endl;
 	std::cout<<"Output: "<<out_file<<std::endl;
 
-	ew_multifreq(100, in_file, out_file, utci, utcf, east_west_method);
+	// ew_multifreq(100, in_file, out_file, utci, utcf, east_west_method);
 
-	// ew_given_freq(365.25, in_file, out_file,
-	// 			  utci, utcf, east_west_method);
+	ew_given_freq(365.25, in_file, out_file,
+				  utci, utcf, east_west_method);
 
 	ew_given_freq(366.25, in_file, out_file,
 				  utci, utcf, east_west_method);
