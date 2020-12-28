@@ -15,12 +15,12 @@ double Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
 const int interval= 288;
 
 double energy_threshold=0;
-
+/* typedef for rayleigh / EW function*/
 typedef void (*g)(double * , double *  , double *, double *, 
 				   double* , double *  , double	 ,
 				 long long , long long , const char* );
 
-
+/*Calculates Right Ascension of the Auger's cenit*/
 double right_ascension(long long utc)
 {	
 	long long iutcref = 1104537600;
@@ -31,7 +31,7 @@ double right_ascension(long long utc)
 	return raz;
 }
 
-
+/*Calculates the parameters given a frequency*/
 void ew_given_freq( double freq, const char* in_file, const char* out_file, 
 					long long utci , long long utcf, g east_west_method){
 	
@@ -75,9 +75,10 @@ void ew_given_freq( double freq, const char* in_file, const char* out_file,
 		/*Amplitude  */ rtilde  = rtilde*factor;
 		/*Ampl. d_perp*/d_perp = (rtilde)/average_cos_dec;
 
-		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN)*0.5*pi/average_sin_theta; 	
+		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN)*factor; 	
 		
-		/*Ampl. d99*/   d99 = r99r/(average_cos_dec);
+		// /*Ampl. d99*/   d99 = sqrt(4.*log(100.)/sumaN)*0.5*pi/(average_cos_dec*average_sin_theta);
+		/*Ampl. d99*/   d99 = sqrt(4.*log(100.)/sumaN)*0.5*pi/(average_sin_theta);
 
 		mean_energy=mean_energy/sumaN;
 
@@ -96,7 +97,7 @@ void ew_given_freq( double freq, const char* in_file, const char* out_file,
 		std::cout <<"<sin(theta)>:\t"	<< average_sin_theta<< std::endl;
 	}
 }
-
+/*Calculates the parameters given a range of frequency*/
 void ew_multifreq( int nf, const char* in_file, const char* out_file, 
 					long long utci , long long utcf, g east_west_method){
 	
@@ -147,9 +148,10 @@ void ew_multifreq( int nf, const char* in_file, const char* out_file,
 		/*Amplitude  */ rtilde  = rtilde*factor;
 		/*Ampl. d_perp*/d_perp = (rtilde)/average_cos_dec;
 
-		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN)*0.5*pi/average_sin_theta; 	
+		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN)*factor; 	
 		
-		/*Ampl. d99*/   d99 = r99r/(average_cos_dec);
+		/*Ampl. d99*/   d99 = sqrt(4.*log(100.)/sumaN)*0.5*pi/(average_cos_dec*average_sin_theta);
+
 
 		mean_energy=mean_energy/sumaN;
 

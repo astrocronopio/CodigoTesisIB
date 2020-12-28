@@ -97,13 +97,13 @@ int main(int argc, char const *argv[])
 	std::cout<<"Input: "<<in_file<<std::endl;
 	std::cout<<"Output: "<<out_file<<std::endl;
 
-	ew_multifreq(100, in_file, out_file, utci, utcf, east_west_method);
+	ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
 
 	// ew_given_freq(365.25, in_file, out_file,
 	// 			  utci, utcf, east_west_method);
 
-	// ew_given_freq(366.25, in_file, out_file,
-	// 			  utci, utcf, east_west_method);
+	ew_given_freq(366.25, in_file, out_file,
+				  utci, utcf, east_west_method);
 	
 	return 0;
 }

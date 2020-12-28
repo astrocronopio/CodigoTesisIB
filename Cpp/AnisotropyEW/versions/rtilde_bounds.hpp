@@ -17,16 +17,17 @@
 
 double Probability_Function_Amplitude(double x, double rtilde, double sigma)
 {
-	double y=0.0;
+	double y=0.0, z=0.0;
 	double u = rtilde/sigma;
 	double v = x/sigma;
 
-	y = exp(-0.5*(u*u+v*v))*x*boost::math::cyl_bessel_k(0, u*v);
+	z = -0.5*(u*u+v*v) + u*v;
+	y = exp(z)*boost::math::cyl_bessel_k(0, u*v)*u*sqrt(u*v)/sigma;
 
 	return y;
 }
 
-double f (double x, void * params) 
+double f(double x, void * params) 
 {
 	double * params_ = (double *) params;
   	double rtilde = (double) params_[0];
@@ -61,8 +62,7 @@ void error_rtilde(double rtilde, double sigma, double* rtilde_plus, double* rtil
 	double upper_rtilde=0.0, lower_rtilde=0.0;
 	double integral=0.0;
 
-	double probability_rtilde = Probability_Function_Amplitude(rtilde,rt
-	,sigma);
+	double probability_rtilde = Probability_Function_Amplitude(rtilde,rt,sigma);
 	
 	upper_bound = (1+0.0008*0)*probability_rtilde;
 	lower_bound = (1-0.0008*0)*probability_rtilde;

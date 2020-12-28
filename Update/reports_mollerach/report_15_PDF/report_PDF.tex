@@ -20,13 +20,50 @@ Tesis de Maestría en Ciencias Físicas\\ Instituto Balseiro\\}
 % Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
 
 
-\section*{Como  es la PDF de la amplitud}
+\section{Como  es la PDF de la amplitud}
 
-La función de la distribución tiene la siguiente forma:
+La función de densidad de probabilidad tiene la siguiente forma:
 
-\begin{equation}
-    P(s) = \int_{s}^{0} dr \frac{r}{\sigma}
-\end{equation}
+\begin{align}
+    p(s) =\frac{r}{\sigma^2}\exp{\Big( -\frac{(r^2+s^2)}{2\sigma^2} + \frac{rs}{\sigma^2}\Big)}K_0(\frac{rs}{\sigma^2})    \label{ec:pdf}
+\end{align}    
 
+Para alcanzar un  nivel del confianza  del  CL[\%] \footnote{ Donde CL=.99 para un 99\% o CL=0.68 para un 68\%,},  se toma el valor de amplitud $r^{UL}$ y la integral de la función \ref{ec:pdf} desde 0 hasta $r^{UL}$, donde el resultado debe ser el nivel de confianza CL.
+\begin{align}
+    CL = \int_{0}^{r^{UL}} dr \frac{r}{\sigma^2}\exp{\Big( -\frac{(r^2+s^2)}{2\sigma^2} + \frac{rs}{\sigma^2}\Big)}K_0(\frac{rs}{\sigma^2})
+    \label{ec:integral}
+\end{align}
+
+El gráfico de la función se muestra a continuación:
+
+\begin{figure}[H]
+    \begin{small}
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{bessel.png}
+        \end{center}
+        \caption{}
+    \end{small}
+\end{figure}
+
+
+\section{Haciendo la cuenta}
+
+Los pasos que sigo son los siguientes: 
+
+\begin{enumerate}
+    % \item Calculo la probabilidad asociada a $r_{maz}=r +  10\sigma$. Dado que está tan alejada del valor de amplitud obtenida, el CL$\simeq 1$, por lo que uso este valor para normalizar  la Ec. \ref{ec:pdf} en el código.
+    % \item Una vez que tengo la función normalizada, finalmente hago la integral de la ecuación \ref{ec:integral} hasta un valor inicial de $r_1=r$
+    % \item Si $CL(r_1)<0.683$, aumento un 1\% el valor de $r_1$, es decir $r_2 \leftarrow r_1 + 0.001 r_1$
+    % \item Repito lo anterior hasta obtener  $CL\simeq 0.683$ en la iteración N con $r^{UL}=r_N$
+    % \item Ahora tengo el error superior de $r$ con $\sigma^{+}=r^{UL}-r$. La figura siguiente es una idea de como se calcula el límite superior:
+    % \begin{figure}[H]
+    %     \begin{small}
+    %         \begin{center}
+    %             \includegraphics[width=0.5\textwidth]{bessel2.png}
+    %         \end{center}
+    %         \caption{}
+    %     \end{small}
+    % \end{figure}
+\end{enumerate}
 
 \end{document}
