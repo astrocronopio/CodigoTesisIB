@@ -8,6 +8,8 @@
 #include <math.h>
 #include <vector>
 
+#include "../AnisotropyEW/rtilde_bounds_v5.hpp"
+
 double pi 	= M_PI;
 double d2r 	= pi/180.0;
 double Bb	= 1.03, P0 	= 862.0, rho0	= 1.06;
@@ -44,8 +46,8 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 					long long utci , long long utcf, g rayleigh ){
 	
 	double a =0.0  , b=0.0, sumaN=0.0,  mean_energy=0.0 ;
-	double rtilde,pha,prtilde,r99r;
-	double sigma=0.0, sgmra=0.0;
+	double rtilde,phase,prtilde,r99r;
+	double sigma=0.0, sigma_phase=0.0;
 
 	double d_perp, factor;
 	double average_sin_theta, average_cos_dec;
@@ -70,20 +72,20 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
      	b = 2.*b/sumaN;
 		average_cos_dec/=sumaN;
 		average_sin_theta/=sumaN; 
-     	pha= atan(b/a);
+     	phase= atan(b/a);
 
-     	if (a < 0) pha= pha+pi;
-     	if (a>0 && b< 0) pha = pha +2.*pi;
+     	if (a < 0) phase= phase+pi;
+     	if (a>0 && b< 0) phase = phase +2.*pi;
 
      	rtilde= sqrt(a*a + b*b);
      	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
      	sigma = sqrt(2./sumaN);
-     	sgmra = sigma/rtilde;
+     	sigma_phase = sigma/rtilde;
      	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
      										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
 		std::cout<<rtilde<<std::endl;
      	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
-     	myfile << prtilde 	<< "\t" << pha/d2r << "\t"<< sgmra/d2r << "\t"<< r99r << "\t"<< std::endl;
+     	myfile << prtilde 	<< "\t" << phase/d2r << "\t"<< sigma_phase/d2r << "\t"<< r99r << "\t"<< std::endl;
 	}
 }
 
@@ -94,8 +96,8 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 	
 
 	double a =0.0  , b=0.0, sumaN=0.0,  mean_energy=0.0 ;
-	double rtilde,pha,prtilde,r99r, d99;
-	double sigma=0.0, sgmra=0.0;
+	double rtilde,phase,prtilde,r99r,  rUL, d99, dUL;
+	double sigma=0.0, sigma_phase=0.0, sigma_dperp=0.0;
 
 	double d_perp, factor;
 	double average_sin_theta, average_cos_dec;
@@ -115,34 +117,59 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 						 &average_sin_theta, 
 						 &average_cos_dec, 
 						 freq, utci, utcf, in_file);
-
+		/*Normalize given events*/
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
 
 		average_cos_dec/=sumaN;
 		average_sin_theta/=sumaN;
+		mean_energy/=sumaN;
 
-     	pha= atan(b/a);
+		/*Rayleigh Parameters*/
+     	phase= atan(b/a);
 
-     	if (a < 0) pha= pha+pi;
-     	if (a>0 && b< 0) pha = pha +2.*pi;	
+     	if (a < 0) phase= phase+pi;
+     	if (a>0 && b< 0) phase = phase +2.*pi;	
 
-     	rtilde= sqrt(a*a + b*b);
-     	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
-     	sigma = sqrt(2./sumaN);
-     	sgmra = sigma/rtilde;
-		d_perp = (rtilde)/average_cos_dec;
+		/*Amplitude*/	rtilde 	= sqrt(a*a + b*b);
+     	/*Probability*/	prtilde = exp(-sumaN*(rtilde)*(rtilde)/4.0);
+
+     	/*Error*/		sigma = sqrt(2./sumaN);
+		/*Error phase*/ sigma_dperp = sigma/average_cos_dec;
+     	/*Error dperp*/ sigma_phase = sigma/rtilde;
+		/*Ampl.d_perp*/ d_perp = (rtilde)/average_cos_dec;
 		 
-     	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
-     										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
-		d99 = r99r/average_cos_dec;
-		std::cout.precision(8);
-		std::cout << "Eventos: "<< sumaN <<"\nEnergía media: "<< mean_energy <<std::endl;
-     	std::cout << "\nFrecuencia: "<< freq << "\nAmplitud: " << rtilde<<std::endl;
-		std::cout << "d_perp: "	<< d_perp<<"\n";
-     	std::cout << "Probabilidad: "	<< prtilde 	;
-		std::cout << "\nFase: "     	<< pha/d2r << "+/-"<< sgmra/d2r ;
-		std::cout << "\nr99:"<< r99r << "\nd99: "<< d99 << std::endl;
+     	/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
+     														// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
+		
+		double error_plus, error_minus;
+    	error_rtilde(rtilde,sigma,&error_plus,&error_minus, &rUL);	
+
+		/*Ampl. d99*/   d99 = r99r/(average_cos_dec);
+		/*Ampl. dUL*/   dUL = rUL/(average_cos_dec);
+		
+		std::cout.precision(6);
+
+		std::cout <<"\n\n_______Frecuencia:\t"<< freq<< " ___________"<< std::endl;
+		
+		std::cout <<"\nEvents:\t"		<< sumaN			<< std::endl;
+		std::cout <<"Energía media:\t"	<< mean_energy 		<< std::endl;
+     	std::cout <<"\nAmplitud:\t"		<< rtilde			<< "+/-" << sigma<<std::endl;
+		std::cout <<"upper_r:\t"		<< error_plus  	<< std::endl;
+		std::cout <<"lower_r:\t"  		<< error_minus	<< std::endl;
+
+		std::cout <<"\nd_perp:\t\t"		<< d_perp			<< "+/-" << sigma_dperp<<"\n";
+		std::cout <<"upper_d:\t"		<< error_plus/average_cos_dec  	<< std::endl;
+		std::cout <<"lower_d:\t"  		<< error_minus/average_cos_dec	<< std::endl;
+
+     	std::cout <<"\nProbabilidad:\t"	<< prtilde 			<< std::endl;
+		std::cout <<"Fase:\t\t"			<< phase/d2r 		<< "+/-" << sigma_phase/d2r<<"\n" ;
+		std::cout <<"r99:\t\t"			<< r99r 			<< std::endl;
+		std::cout <<"d99:\t\t"			<< d99				<< std::endl;
+		std::cout <<"dUL:\t\t"			<< dUL/average_cos_dec				<< std::endl;
+		
+		std::cout <<"\n\n<cos(dec)>:\t"	<< average_cos_dec  << std::endl;
+		std::cout <<"<sin(theta)>:\t"	<< average_sin_theta<< std::endl;
 	}
 
 }

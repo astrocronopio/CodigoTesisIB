@@ -37,7 +37,7 @@ folder="./Files_AllTriggers_Wide_Range/"
 mkdir "$folder"
 
 sin_peso="sin_peso_v9"
-con_peso="con_peso_v10"
+con_peso="con_peso_v11"
 
 algoritmo="$con_peso"
 file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"

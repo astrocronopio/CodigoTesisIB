@@ -57,9 +57,9 @@ void exposure_weight(std::vector<long double> & vect, unsigned long utci, unsign
 }
 
 void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
-						double *average_sin_theta	, double *average_cos_dec,
-						double freq, long long utci , long long utcf,
-						const char* in_file)
+				double *average_sin_theta	, double *average_cos_dec,
+				double freq, long long utci , long long utcf,
+				const char* in_file)
 {
 	long long utc0 = 1072915200  ; //1/1/2005 00:00:00;
 	std::string line;
@@ -68,7 +68,7 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 	double Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 	double AugId,Eraw,Ecor,UTC;
 
-	double fas = freq/365.25, raz, arg, hrs, peso,aux; 													
+	double fas = freq/365.25, raz, arg, hrs, weight_hexagon,aux; 													
 
 	std::ifstream myfile (in_file);
 
@@ -81,39 +81,46 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 		{			
 			getline(myfile,line);			
 			std::stringstream liness(line);			
-		 
+
+			/**/
 			// {
 			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
-			// energy=Eraw;
+			// energy=Ecor;
 			// if (energy<8.) continue;
 			// if(utc  < utci || Theta > 80) continue;
-			// }
-			
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w;
-			if (energy<energy_threshold) continue;
-			if(utc  < utci || Theta > 60) continue;
+			// }		
+
+			// {
+			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
+			// 	if (energy< 0.5|| energy >= 1.0) continue;
+			// 	if(utc  < utci || Theta > 60) continue;
+			// }	
+
+			{			
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			//if (energy<energy_threshold) continue;
+			if(utc  < utci) continue;
+			if(Theta > 60) continue;
+			}
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
-			hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
-			//peso =1.0;	
+			// hrs=((double)(utc-utc0)/3600. + 31.4971*24./360.)*fas; // hora local
+			hrs=((double)(utc-utc0)/3600.)*fas; // GMT time in solar frequency
+			//weight_hexagon =1.0;	
 			
 			nh 	= int(fmod(hrs*interval/24.0, interval));
-			peso= 1.0/dnhex[nh];			
-			*sumaN+=peso;
+			weight_hexagon= 1.0/dnhex[nh];			
+			*sumaN+=weight_hexagon;
 			
-			arg = 2.0*pi*(hrs/24.0) + (Ra-raz)*d2r;
-			if (freq==366.25 ) 
-				std::cout<<"Fuck"<<180*fmod((2.0*pi*((hrs)/24. )- raz*d2r ), 2.0*pi)/pi <<"\n"  ;
+			arg = 2.0*pi*(hrs/24.0 +2.099/24.0) + (Ra-raz)*d2r;
+			
+			*a +=cos(arg)*weight_hexagon; 
+			*b +=sin(arg)*weight_hexagon;
 
-			arg = freq==366.25 ? Ra*d2r : arg;
-
-			*a +=cos(arg)*peso; 
-			*b +=sin(arg)*peso;
-
-			*mean_energy +=energy*peso;
-			*average_sin_theta +=   peso*sin(Theta*d2r);
-			*average_cos_dec   +=	peso*cos(Dec*d2r);
+			*mean_energy 	   += 	energy*weight_hexagon;
+			*average_sin_theta +=   weight_hexagon*sin(Theta*d2r);
+			*average_cos_dec   +=	weight_hexagon*cos(Dec*d2r);
 		}
 	}
 
@@ -133,7 +140,7 @@ void DipoloRA( 	double *a 		, double *b,
 	double Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 	double AugId,Eraw,Ecor,UTC;
 
-	double fas = freq/365.25, raz, arg, hrs, peso,aux; 													
+	double fas = freq/365.25, raz, arg, hrs, weight_hexagon,aux; 													
 
 	std::ifstream myfile (in_file);
 
@@ -161,13 +168,13 @@ void DipoloRA( 	double *a 		, double *b,
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
 			nh 	= int(fmod(raz*interval/360.0, interval));
-			peso= 1.0/dnhex[nh];			
-			*sumaN+=peso;
+			weight_hexagon= 1.0/dnhex[nh];			
+			*sumaN+=weight_hexagon;
 			
 			arg = Ra*d2r;
 
-			*a +=cos(arg)*peso; 
-			*b +=sin(arg)*peso;
+			*a +=cos(arg)*weight_hexagon; 
+			*b +=sin(arg)*weight_hexagon;
 		}
 	}
 
@@ -187,7 +194,7 @@ void DipoloSolar(double *a 		, double *b,
 	double Phi,Theta,Ra,s1000, s1000_w, s38, energy, Dec,energy_raw, energy_cor,ftr;
 	double AugId,Eraw,Ecor,UTC;
 
-	double fas = freq/365.25, raz, arg, hrs, peso,aux; 													
+	double fas = freq/365.25, raz, arg, hrs, weight_hexagon,aux; 													
 
 	std::ifstream myfile (in_file);
 
@@ -215,17 +222,17 @@ void DipoloSolar(double *a 		, double *b,
 			if(utcf < utc) break;
 			
 			hrs=((double)(utc-utc0)/3600. + 21)*fas; // hora local
-			//peso =1.0;	
+			//weight_hexagon =1.0;	
 			
 			nh 	= int(fmod(hrs*interval/24.0, interval));
-			peso= 1.0/dnhex[nh];			
-			*sumaN+=peso;
+			weight_hexagon= 1.0/dnhex[nh];			
+			*sumaN+=weight_hexagon;
 
 			raz = right_ascension(utc);
 			arg = 2.0*pi*(hrs/24.0);
 
-			*a +=cos(arg)*peso; 
-			*b +=sin(arg)*peso;
+			*a +=cos(arg)*weight_hexagon; 
+			*b +=sin(arg)*weight_hexagon;
 		}
 	}
 

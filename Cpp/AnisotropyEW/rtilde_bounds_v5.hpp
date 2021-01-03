@@ -67,7 +67,7 @@ double integration_over_r(double upper_rtilde, double rtilde, double sigma, doub
 {	_rtilde_=rtilde, _sigma_=sigma, _normal_=normal;
     double result;
 
-    boost::math::quadrature::gauss<double, 30> integrator;
+    boost::math::quadrature::gauss<double, 10000> integrator;
     
     if (0.0<upper_rtilde)  result = integrator.integrate(Probability_Function_Amplitude, (double) 0.0, upper_rtilde);
     else if (0.0>upper_rtilde)
@@ -85,16 +85,17 @@ double min_between(double rmin, double rmax)
     {
        f_xdx=Probability_Function_Amplitude(x+dx);
 
-       if(f_x*f_xdx<0.0) return x+dx/2.;
+       if(f_x*f_xdx<0.0) return x+dx/2.; //Found a zero
 
        x+=dx;
        f_x=f_xdx;
     }
-    return x+dx/2. ;
+    return x+dx/2. ; //limit ~rmax as a minimum
 }
 
-void error_rtilde(double rtilde, double sigma, double* e_rtilde_plus, double* e_rtilde_minus, double* r99)
-{   _rtilde_=rtilde, _sigma_=sigma;
+void error_rtilde(double rtilde, double sigma, double* e_rtilde_plus, double* e_rtilde_minus, double* rUL)
+{   
+    _rtilde_=rtilde, _sigma_=sigma;
 
     double zi,rmin,rmax,rsup=rtilde;
     double current_prob;
@@ -111,21 +112,6 @@ void error_rtilde(double rtilde, double sigma, double* e_rtilde_plus, double* e_
     current_prob = integration_over_r(rmax, rtilde, sigma, _normal_);
     
     std::cout<<"\n_____Al inicio____\nNorm:"<<_normal_<<" Current: "<<current_prob<< " fj: "<<fj ;
-    
-    if (current_prob>limit_prob)
-        {   flag=2;
-            for (size_t i = 0; i < 100000; i++)
-            {
-                rsup = rsup*1.01; //Step size 1%
-                std::cout<<i<<std::endl;
-                current_prob = integration_over_r(rsup,rtilde,sigma, _normal_);
-                if(current_prob>limit_prob) break;
-            }
-        *e_rtilde_minus= rsup;
-        *e_rtilde_plus = rsup-rtilde; 
-        return;
-
-        }
 
     do
     {
@@ -149,26 +135,13 @@ void error_rtilde(double rtilde, double sigma, double* e_rtilde_plus, double* e_
         for (size_t i = 0; i < 100000; i++)
         {
             rsup = rsup*1.01; //Step size 1%
-            // std::cout<<rsup<<std::endl;
             current_prob = integration_over_r(rsup,rtilde,sigma, _normal_);
             if(current_prob>limit_prob) break;
         }
     }
     
-    *r99=rsup;
+    *rUL=rsup;
 
-    // double delta_r = rtilde*0.01;
-    // double pdf, integral_pdf;
-    // const char* out_file = "barrido_pdf.txt";
-    // std::ofstream myfile (out_file);
-
-    // for (size_t i = 1; i < 500; i++)
-    // {   
-    //     pdf = Probability_Function_Amplitude(i*delta_r);
-    //     integral_pdf = integration_over_r(i*delta_r,rtilde,sigma,_normal_);
-    //     myfile<<i<<"\t"<<i*delta_r<<"\t"<<pdf<<"\t"<<integral_pdf<<std::endl;
-    // }
-    
 }
 
 

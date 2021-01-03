@@ -21,9 +21,9 @@ ref_theta 	= 2*np.pi*(1./360.)*np.array([225,261,291])#np.linspace(0.0, 2 * np.p
 ref_width 	= 2*np.pi*(1./360.)*np.array([64,43,100])#np.pi / 4 * np.random.rand(N)
 
 vec_EW=    np.array([0.0016 , 0.0056 , 0.0063])
-vec_sigma= np.array([0.0024 , 0.0023  ,0.0038])
-vec_prob=  np.array([0.81	, 0.06	   , 0.26 	])
-vec_d99_EW=np.array([0.0073 , 0.0089 , 0.015 ])
+vec_sigma= np.array([0.0024 , 0.0023 ,0.0038])
+vec_prob=  np.array([0.81	, 0.06	 , 0.26 	])
+vec_d99_EW=np.array([0.008 , 0.011 , 0.016 ])
 
 ref_EW=    np.array([0.0060 , 0.0050 , 0.0018])
 ref_sigma= np.array([0.0048 , 0.0027, 0.0035])

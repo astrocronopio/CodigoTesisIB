@@ -31,7 +31,7 @@ file_input="../../../../Herald060noBP6t5a025_010104-310818.dat"
 folder="2020_paper/"
 
 mkdir "$folder"
-EW="EW_v2"
+EW="EW_v3"
 EW_2="EW_v2_seg_arm"
 algoritmo="$EW"
 file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"

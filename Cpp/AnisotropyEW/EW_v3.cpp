@@ -5,8 +5,7 @@
 #include <math.h>
 #include <vector>
 
-#include "east_west.h"
-
+#include "east_west_v2.h"
 
 void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 						double *average_sin_theta	, double *average_cos_dec,
@@ -27,9 +26,7 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 
 	unsigned int east, west; 													
 
-
 	std::ifstream myfile (in_file);
-
 
 	if (myfile.is_open())
 	{
@@ -47,7 +44,7 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 
 			// {
 			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
-			// 	if (energy< 0.25|| energy >= 0.5) continue;
+			// 	if (energy< 0.5|| energy >= 1.0) continue;
 			// 	if(utc  < utci || Theta > 60) continue;
 			// }	
 
@@ -69,12 +66,12 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 			arg = freq==366.25 ? raz*d2r : arg;
 			
 			east = abs(Phi) < 90 ? 0 : 1;
-
 			
 			*a += cos(arg + pi*east ); 
 			*b += sin(arg + pi*east );	
+
 			*sumaN=*sumaN+1;
-			*mean_energy +=energy;
+			*mean_energy       +=	energy;
 			*average_sin_theta +=   sin(Theta*d2r);
 			*average_cos_dec   +=	cos(Dec*d2r);
 		}
