@@ -89,19 +89,27 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			// if (energy<8.) continue;
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
+			
+			// //	Less energy 4 EeV
+			// {
+			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
+			// 	if (energy < 2 || energy >= 4) continue;
+			// 	if(utc  < utci || Theta > 60) continue;
+			// }	
 
-			{
-				liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
-				if (energy < 2 || energy >= 4) continue;
-				if(utc  < utci || Theta > 60) continue;
-			}	
+			// //	Over energy 4 EeV
+			// {
+			// 	liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
+			// 	if (energy < 16 || energy >= 32) continue;
+			// 	if(utc  < utci || Theta > 80) continue;
+			// }	
 
-			// {			
-			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			// //if (energy<energy_threshold) continue;
-			// if(utc  < utci) continue;
-			// if(Theta > 60) continue;
-			// }
+			{			
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			//if (energy<energy_threshold) continue;
+			if(utc  < utci) continue;
+			if(Theta > 60) continue;
+			}
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
@@ -110,12 +118,12 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			//weight_hexagon =1.0;	
 			
 			nh 	= int(fmod(hrs*interval/24.0, interval));
-			weight_hexagon= 1.0;///dnhex[nh];			
+			weight_hexagon= 1.0/dnhex[nh]; //1.0/(dnhex[nh]*(1.+0.003*tan(Theta*d2r)*cos(Phi*d2r-30.*d2r)));		
 			*sumaN+=weight_hexagon;
 			
-			//arg = 2.0*pi*(hrs/24.0 +2.099/24.0) + (Ra-raz)*d2r;
+			arg = 2.0*pi*(hrs/24.0 +2.099/24.0) + (Ra-raz)*d2r;
 			
-			arg = freq==366.25? Ra*d2r : arg;
+			// arg = freq==366.25? Ra*d2r : arg;
 			*a +=cos(arg)*weight_hexagon; 
 			*b +=sin(arg)*weight_hexagon;
 
@@ -139,7 +147,7 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 
-	// ray_multifreq(40,  in_file, out_file, utci, utcf, rayleigh);
+	// ray_multifreq(200,  in_file, out_file, utci, utcf, rayleigh);
 
 /*	unsigned long utci =  rango2013;
 	unsigned long utcf =  rango2020;

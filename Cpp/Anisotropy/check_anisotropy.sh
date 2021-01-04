@@ -20,8 +20,12 @@ rango2020=1577880000
 
 energy_threshold="0"
 
+#Under 4 EeV
 file_input="../../../../Herald060noBP6t5a025_010104-310818.dat"
-folder="2020_paper/"
+
+# #Over 4 EeV
+# file_input="../../../../Herald080noBP5n6t5a4_010104-310818.dat"
+# folder="2020_paper/"
 
 mkdir "$folder"
 

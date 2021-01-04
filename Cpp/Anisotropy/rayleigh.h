@@ -45,9 +45,10 @@ int method_weight_solar(int utc, double fas, int interval)
 void ray_multifreq( int nf, const char* in_file, const char* out_file, 
 					long long utci , long long utcf, g rayleigh ){
 	
+
 	double a =0.0  , b=0.0, sumaN=0.0,  mean_energy=0.0 ;
-	double rtilde,phase,prtilde,r99r;
-	double sigma=0.0, sigma_phase=0.0;
+	double rtilde,phase,prtilde,r99r,  rUL, d99, dUL;
+	double sigma=0.0, sigma_phase=0.0, sigma_dperp=0.0;
 
 	double d_perp, factor;
 	double average_sin_theta, average_cos_dec;
@@ -65,24 +66,40 @@ void ray_multifreq( int nf, const char* in_file, const char* out_file,
 		a=0.0; b=0.0; sumaN=0.0;
 
 		rayleigh(&a, &b, &sumaN, &mean_energy,  
-				 &average_sin_theta, &average_cos_dec, 
-				 freq, utci, utcf, in_file);
-
+						 &average_sin_theta, 
+						 &average_cos_dec, 
+						 freq, utci, utcf, in_file);
+		/*Normalize given events*/
 		a = 2.*a/sumaN;
      	b = 2.*b/sumaN;
+
 		average_cos_dec/=sumaN;
-		average_sin_theta/=sumaN; 
+		average_sin_theta/=sumaN;
+		mean_energy/=sumaN;
+
+		/*Rayleigh Parameters*/
      	phase= atan(b/a);
 
      	if (a < 0) phase= phase+pi;
-     	if (a>0 && b< 0) phase = phase +2.*pi;
+     	if (a>0 && b< 0) phase = phase +2.*pi;	
 
-     	rtilde= sqrt(a*a + b*b);
-     	prtilde = exp(-sumaN*rtilde*rtilde/4.0);
-     	sigma = sqrt(2./sumaN);
-     	sigma_phase = sigma/rtilde;
-     	r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
-     										// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
+		/*Amplitude*/	rtilde 	= sqrt(a*a + b*b);
+     	/*Probability*/	prtilde = exp(-sumaN*(rtilde)*(rtilde)/4.0);
+
+     	/*Error*/		sigma = sqrt(2./sumaN);
+		/*Error phase*/ sigma_dperp = sigma/average_cos_dec;
+     	/*Error dperp*/ sigma_phase = sigma/rtilde;
+		/*Ampl.d_perp*/ d_perp = (rtilde)/average_cos_dec;
+		 
+     	/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN); 	// ESE 100 ES PORQUE HABÍA UN SIGNO ADELANTE, 
+     														// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
+		
+		double error_plus, error_minus;
+    	error_rtilde(rtilde,sigma,&error_plus,&error_minus, &rUL);	
+
+		/*Ampl. d99*/   d99 = r99r/(average_cos_dec);
+		/*Ampl. dUL*/   dUL = rUL/(average_cos_dec);
+									// QUE LO INTERCAMBIE POR LA INVERSA DE 0.01 QUE ES 100
 		std::cout<<rtilde<<std::endl;
      	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde << "\t";
      	myfile << prtilde 	<< "\t" << phase/d2r << "\t"<< sigma_phase/d2r << "\t"<< r99r << "\t"<< std::endl;
