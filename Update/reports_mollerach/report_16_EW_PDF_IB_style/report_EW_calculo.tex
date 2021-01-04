@@ -1,0 +1,401 @@
+
+\chapter{Método East-West}
+
+El método de Rayleigh se basa en calcular la tasa de eventos en función de la ascensión recta y ajustando los resultados a una función armónica. El mismo permite calcular la amplitud para distintos armónicos, la fase y la probabilidad de detectar la misma señal debido a fluctuaciones de una distribución isótropa. 
+
+La dificultad de utilizar el método Rayleigh se debe a la procesamiento de los datos: efectos del clima, las variaciones de la área del Observatorio y sensibilidad de los instrumentos deben ser tenidos en cuenta.  Los efectos mencionados deben ser corregidos de la tasa de eventos medida, ya que los mismo inducen amplitudes espúreas en el flujo de RCs.
+
+El método East-West evita introducir
+
+
+Este método se basa en el análisis de la diferencia entre las tasas de eventos provenientes del Este y del Oeste.
+
+La exposición del observatorio en un momento dado es la misma para el Este como para el Oeste, si se considera que la misma depende del ángulo cenital $\theta$ solamente, y no del ángulo azimutal $\phi$. \footnote{Tengo que agregar un apéndice explicando las coordenadas locales.}
+
+Si se consideran las modulaciones espurias producidas por los efectos atmosféricos y sistemáticos son las mismas en ambas direcciones \footnote{¿Cuán factible es afirmar esto? No discuto que funciona, sino porqué :)}, la diferencia de tasas remueve sin realizar correcciones teniendo una ventaja en el caso de no poder corregir efectos sistemáticos. La desventaja es que la sensibilidad de este método es menor  que el análisis de Rayleigh \footnote{Agregar referencia}.
+
+
+
+\begin{enumerate}
+
+
+    \item Un forma de obtener flujo de eventos $I(\alpha)$  para un $\alpha$ dado es la siguiente:
+        \begin{equation}
+            I(\alpha) = \int_{\delta_{min}}^{\delta_{max}} d\delta \cos \delta \dv{N(\alpha,\delta)}{\Omega}
+            \label{eq:i_alpha_phi}
+        \end{equation}
+    \noindent donde $\Omega$ es el ángulo sólido en la esfera celeste expresada en las coordenadas ecuatoriales.
+
+    \item Considerando que la distribución de direcciones observada es un convolución entre e flujo de RCs $\Phi$ y la exposición direccional $\omega$:
+    
+        \begin{equation}
+            \tilde{N} = \int d\Omega \Phi(\alpha, \delta) \omega(\alpha, \delta),
+            \label{eq:conv}
+        \end{equation}
+    \noindent y junto a la Ec.\ref{eq:i_alpha_phi}  se obtiene lo siguiente:
+    \begin{equation}
+        I(\alpha) =  \int_{\delta_{min}}^{\delta_{max}} d\delta \cos\delta \,\, \Phi(\alpha, \delta) \omega(\alpha, \delta)
+        \label{eq:i_coor_ecua}
+    \end{equation}
+
+
+    \item El flujo de eventos observado $I^{obs}$ para la ascensión recta del cenit $\alpha^0$, entre los ángulos azimutales $\phi_1$ y $\phi_2$ puede calcularse mediante el flujo total de RCs $\Phi$ (expresado en coordenadas locales) como
+    \begin{equation}
+        I^{obs}(\alpha^0) = \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \tilde{\omega}(\theta, \alpha^0) \Phi(\theta, \phi, \alpha^0),
+        \label{eq:rate_general}
+    \end{equation}
+    \noindent  donde  el término $\tilde{\omega}$ representa la exposición del observatorio, este término incluye los efectos sistemáticos y atmosféricos, como la variación de los hexágonos del arreglo y las correcciones de la modulación del clima, mediante  la dependencia con $\alpha^0$.
+
+    \item Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos:
+    \begin{itemize}
+        \item Para el Este: entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$.
+        \item Para el Oeste: entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
+    \end{itemize}
+
+    \item Se considera que las amplitudes de las variaciones asociadas a $\tilde{\omega}$ son pequeñas con respecto al valor medio de $\tilde{\omega}$, y que pueden  desacoplarse de la dependencia de $\theta$. Por lo tanto, por lo que podemos expresar $\tilde{\omega}$ de la siguiente manera:
+    \begin{equation}
+        \tilde{\omega}(\theta, \alpha^0) = \omega(\theta)\big(1 + \eta(\alpha^0) \big)
+        \label{eq:omega_expandido}
+    \end{equation}
+
+    \item Una anisotropía dipolar se puede describir de la siguiente manera:
+    \begin{equation}
+        \Phi(\hat{\bf{u}}) = \Phi_0(1+\bf{d}\cdot\hat{\bf{u}})
+        \label{eq:dipolo_general}
+    \end{equation}
+    \noindent donde $\Phi_0$ es el flujo medio, $\hat{\bf{u}}$ es un versor que apunta a alguna dirección a estudiar y $\bf{d}$ es el vector con módulo $d$ igual a la amplitud del dipolo y  con dirección  con eje del dipolo, Tomando coordenadas ecuatoriales \footnote{Agregar también un apéndice de ecuatoriales}, la dirección de $\bf{d}$ es $(\alpha_d, \delta_d$)\footnote{Agregar fórmulas de cambio de sistema de referencia ecuatorial-local} y  de $\hat{\bf{u}}$ es $(\alpha, \delta)$, por lo tanto  el producto se puede escribir de la siguiente manera \footnote{Faltaría mencionar el producto de versor de esta representación para decir sale de acá, en el apéndice capaz. No sé, al final el cálculo me  sale fácil poniendo  todo en cartesianas.)}:
+    \begin{equation*}
+        \textbf{d}\cdot\hat{\bf{u}}= d (\cos\delta_d \cos\delta \cos(\alpha - \alpha_d) + \sin\delta_d  \sin\delta)
+        \label{eq:product_ud}
+    \end{equation*}
+    Otro aspecto importante de la representación del dipolo en coordenadas ecuatoriales es que la proyección de la amplitud del dipolo sobre el plano ecuatorial se puede aproximar de la siguiente manera:
+    \begin{equation}
+        r_1 \simeq d_\perp \langle \cos\delta \rangle
+        \label{eq:fourier_perp}
+    \end{equation}
+    donde $r_1$ es la amplitud de la aproximación a primer orden en Fourier.
+
+    % \item Considerando las siguientes igualdades del  informe del semestre anterior:
+    
+    % \begin{itemize}
+    %     \item Consideremos que es posible escribir el flujo de eventos para un $\alpha$ dado con un expansión en Fourier: 
+    
+    %     \begin{align}
+    %         I(\alpha) &= I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) \\ 
+    %         &= I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) 
+    %       \end{align}
+    %       donde $a_k=r_k\cos k\phi_k$ y $b_k=r_k\sin k \phi_k$, y $I_0$ es el flujo medio.
+      
+    %     \item Un forma naïve de obtener el flujo medio es la siguiente:
+    %     \begin{align}
+    %          I_0 &= \frac{1}{2\pi} \int_{0}^{2\pi} I(\alpha) \\
+    %             &= \frac{1}{2\pi} \sum_i^{\scaleto{Eventos}{2.5pt}} w_i
+    %             &=\frac{\tilde{N}}{2\pi}
+    %     \end{align}
+    %     \noindent la última ecuación es válida si la exposición direccional \footnote{La que tiene que ver con  los hexágonos} no depende de $\alpha$
+
+    %     \item  Entonces, las amplitudes $r_k$  y fases $\phi_k$ van estar dadas por:
+    %     \begin{align}
+    %     a_k &= \frac{1}{\pi I_0} \int_{0}^{2\pi} I(\alpha)\cos(k\alpha) \label{ak}\\
+    %     b_k &= \frac{1}{\pi I_0} \int_{0}^{2\pi}  I(\alpha)\sin(k\alpha) \label{bk}\\ 
+    %     r_k &= \sqrt{a^2_k + b^2_k}\\ 
+    %     \phi_k &= \arctan\big(\frac{b_k}{a_k}\big)
+    %     \end{align}
+    % \end{itemize}
+
+    \item Por una cuestión de notación, definimos la siguiente expresión:
+    \begin{equation}
+        \overline{f(\theta)} = \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta) f(\theta)
+        \label{eq:media_angular}
+    \end{equation}
+    \noindent donde $\bar{f(\theta)}$ es la media de la función $f(\theta)$ sobre el ángulo cenital pesado por la exposición del observatorio, hasta  un ángulo máximo. En este trabajo se centra en el rango de energía 1 EeV - 2 EeV, por lo que $\theta_{max}=60^o$ para los datos del observatorio. 
+
+    \item Teniendo en cuenta la Ec.\ref{eq:omega_expandido} y \ref{eq:dipolo_general}, se tiene la siguiente expresión:
+    \begin{align*}
+        I^{obs}(\alpha^0) &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta  \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 ( 1 +  \textbf{d}\cdot\hat{\bf{u}})\\
+        &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 +\\
+        &+\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}
+    \end{align*}
+    \noindent la primera parte  de la igualdad  puede simplificarse con la definición \ref{eq:media_angular} e integrando sobre $\phi$
+    \begin{align*}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 =\\
+        &= \Phi_0 (1+ \eta(\alpha^0)) \pi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\\
+        &= \Phi_0 (1+ \eta(\alpha^0)) \overline{1} 
+    \end{align*}
+    \noindent la integral sobre $\phi$ tiene el mismo valor para el Este y Oeste. Para la segunda parte de la expresión del item 8
+    \begin{align}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}=\\
+        &=\Phi_0 (1+ \eta(\alpha^0))\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\textbf{d}\cdot\hat{\bf{u}} \label{segundo_term}
+    \end{align}
+    \noindent El dipolo está fijo en el cielo pero visto desde las coordenadas locales para poder trabajar con $\theta$ y $\phi$, sus proyecciones en los ejes de interés tienen una dependencia con la ascensión recta  $\alpha^0$ y declinación $\delta_0$ del cenit. %El versor $\hat{\bf{u}}$ expresado en coordenadas ecuatoriales apunta en la dirección $(\alpha^0, \delta_0)$. Consideremos las proyecciones del versor sobre el eje del cenit y sobre el plano horizontal del observador,  
+    %\noindent donde $\hat{x}$ apunta en la dirección Este, $\hat{y}$ en la dirección Norte  y $\hat{z}$ en la dirección de cenit.
+    Consideremos el dipolo proyectado en las dirección de los versores $\hat{x}$  que apunta en la dirección Este, $\hat{y}$ en la dirección Norte  y $\hat{z}$ en la dirección de cenit.
+    \begin{equation*}
+        \textbf{d} =  d_x(\alpha^0)\hat{x} +  d_y(\alpha^0)\hat{y}+ d_z(\alpha^0)\hat{z} ,
+    \end{equation*}
+    \noindent mientras que el versor apunta en la dirección de integración
+    \begin{equation*}
+        \hat{\bf{u}} =\sin\theta \cos\phi \hat{x} + \sin\theta \sin\phi \hat{y} + \cos\theta\hat{z}
+    \end{equation*}
+    Finalmente,
+    \begin{align*}
+        \textbf{d}\cdot\hat{\bf{u}} &= d_x(\alpha^0)\sin\theta \cos\phi
+        + d_y(\alpha^0) \sin\theta \sin\phi  \\
+        & + d_z(\alpha^0)\cos\theta
+    \end{align*}
+    Al integrar el ángulo  $\phi$ entre $[\nicefrac{-\pi}{2}, \nicefrac{\pi}{2}]$ o $[\nicefrac{\pi}{2}, \nicefrac{3\pi}{2}]$, el segundo término  se anula, por lo que la expresión \ref{segundo_term} queda como:
+    \begin{align*}
+        &\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}}  d\theta \sin\theta \omega(\theta)\textbf{d}\cdot\hat{\bf{u}} =\\
+        &\int_{0}^{\theta_{max}}  d\theta (\pm 2d_x(\alpha^0)\sin\theta 
+        + \pi d_z(\alpha^0)\cos\theta)
+    \end{align*}     
+    \noindent donde $+2$ corresponde al Este y $-2$ al Oeste. Podemos simplificar la expresión usando la definición \ref{eq:media_angular}
+    \begin{align*}
+    &\int_{0}^{\theta_{max}}  d\theta (\pm 2d_x(\alpha^0)\sin\theta 
+    + \pi d_z(\alpha^0)\cos\theta)=\\ 
+    & =\pm 2d_x(\alpha^0)\overline{\sin\theta} 
+    + \pi d_z(\alpha^0)\overline{\cos\theta}\\
+    \end{align*}
+
+
+
+    \item Volviendo a la expresión de $I^{obs}$, teniendo en cuenta que necesitamos  $I^{obs}_E$ y $I^{obs}_O$:
+    \begin{align*}
+        I^{obs}_E&= \Phi_0 (1+ \eta(\alpha^0)) \Big( \pi\overline{1} + 2d_x(\alpha^0)\overline{\sin\theta} + \pi d_z(\alpha^0)\overline{\cos\theta}  \Big) \\
+        I^{obs}_O&= \Phi_0 (1+ \eta(\alpha^0)) \Big( \pi \overline{1} - 2d_x(\alpha^0)\overline{\sin\theta}   + \pi d_z(\alpha^0)\overline{\cos\theta} \Big) 
+    \end{align*}
+
+    \item Como estamos buscando la diferencia entre estos valores, la resta queda como:
+    \begin{equation*}
+        I^{obs}_E -  I^{obs}_O = \Phi_0 (1+ \eta(\alpha^0)) \times 4  d_x(\alpha^0)\overline{\sin\theta}
+    \end{equation*}
+    
+    \item Solo necesitamos las componentes del vector $\bf{d}$, para obtenerlas tenemos que considerar que los componentes que necesitamos están en el plano x-z. Para hacer esto, consideremos que los versores $\hat{\bf{u}}_z$ y $\hat{\bf{u}}_x$ que apuntan al cenit y al Este respectivamente. Considerando la fórmula para proyectar un vector sobre la dirección de un versor:
+    \begin{equation}
+        d_x(\alpha^0) \hat{x} =  (\textbf{d}\cdot\hat{\bf{u}}_x)\hat{\bf{u_x}} \rightarrow d_x(\alpha^0) = \textbf{d}\cdot\hat{\bf{u}}_x
+    \end{equation}
+    podemos obtener las proyecciones con un producto escalar con versores a las direcciones de interés. Estos versores en coordenadas ecuatoriales son los siguientes:
+    \begin{align*}
+        \hat{\bf{u}}_z &= (\alpha^0,\delta_0 )\\
+        \hat{\bf{u}}_x &= (\alpha^0 + \frac{\pi}{2},0), 
+    \end{align*}
+    se suma  $\frac{\pi}{2}$ para apuntar al Este, cuando el versor recorre $\nicefrac{\pi}{2}$ en ascensión recta, llega al plano del ecuador que tiene declinación $0$.
+    \item Finalmente para obtener las componentes:
+    \begin{align*}
+        \textbf{d}\cdot\hat{\bf{u}}_z &= d (\cos\delta_d \cos\delta_0 \cos(\alpha^0 - \alpha_d) + \sin\delta_d  \sin\delta_0)\\
+        \textbf{d}\cdot\hat{\bf{u}}_x &= d (\cos\delta_d \cos(\alpha^0 +\frac{\pi}{2} - \alpha_d) 
+        = -d\cos\delta_d \sin(\alpha^0  - \alpha_d)
+    \end{align*}
+    
+     Entonces,
+    \begin{equation}
+        I^{obs}_E -  I^{obs}_O =-4d \Phi_0 (1+ \eta(\alpha^0)) \cos\delta_d \sin(\alpha^0  - \alpha_d)\overline{\sin\theta}
+        \label{resta}
+    \end{equation}
+    \item Esta diferencia se debe relacionar con la variación del flujo verdadero, es decir el flujo que se observaría si no existieran variaciones temporales (ascensión recta) en la exposición. Esto implica que $\eta(\alpha^0)=0$.  Además el flujo total $I$ es la suma de los flujos de ambas direcciones, por lo tanto se puede afirmar que:
+    \begin{align}
+        I&=I_E +  I_O = 2\pi\Phi_0 (1+ 0) \Big( \overline{1} + d_z(\alpha^0)\overline{\cos\theta}  \Big)\\
+        \dv{I^{obs}}{\alpha^0}  & = 2\pi\Phi_0 \overline{\cos\theta} \dv{\,d_z(\alpha^0) }{\alpha^0}\\ 
+        \dv{I^{obs}}{\alpha^0} &= -2d\pi\Phi_0 \overline{\cos\theta}\cos\delta_d \cos\delta_0 \sin(\alpha^0 - \alpha_d) \label{total_flux}
+    \end{align}
+
+    \item Para llegar a la expresión \ref{resta}, hicimos la expansión hasta el primer orden de $\omega(\theta, alpha_0)$ y de $\Phi(\alpha, \delta)$. Para ser consistentes, desperdiciemos el término de segundo orden de la expresión \ref{resta} que es proporcional de $\eta \cdot d$ y la expresión \ref{resta} queda:
+        \begin{equation}
+            I^{obs}_E -  I^{obs}_O \approx -4d \Phi_0 \cos\delta_d \sin(\alpha^0  - \alpha_d)\overline{\sin\theta}
+            \label{resta_final}
+        \end{equation}
+    Por lo tanto,
+    \begin{equation}
+        I^{obs}_E -  I^{obs}_O \approx  \frac{2}{\pi \cos \delta_0} \frac{\langle\sin\theta \rangle}{\langle\cos\theta \rangle}\dv{I^{obs}}{\alpha^0}
+        \label{eq:final}
+    \end{equation}
+    donde se usa la expresión:
+    \begin{equation*}
+        \langle f(\theta) \rangle = \frac{\overline{f(\theta)}}{\overline{1}} = \displaystyle\frac{\int_{0}^{\theta_{max}} d \theta \sin\theta \omega(\theta) f(\theta) }{\int_{0}^{\theta_{max}} d \theta \sin\theta \omega(\theta)} 
+    \end{equation*}
+    que es equivalente a hacer la media ponderada con $\sin\theta\omega(\theta)$ de todos los datos de $f(\theta)$. %Como consideramos una expansión de $\omega(\theta)$ 
+\end{enumerate}
+
+    \section*{Implementación}
+
+Ya con la Ec.\ref{eq:final} podemos estimar la modulación dipolar de $I(\alpha^0)$ a partir de la amplitud $r$ y la fase $\phi_0$:
+\begin{equation}
+    \dv{I(\alpha^0)}{\alpha^0} = r \cos(\alpha^0 - \phi),
+    \label{eq:dipolo_tasa}
+\end{equation}
+podemos estimar estos parámetros con un análisis similar a  Rayleigh, salvo modificaciones menores para tener en cuenta la dirección de los eventos, así podemos restar los coeficientes de los sectores Este y Oeste. Los coeficientes de Fourier en este caso se determinan con las siguientes expresiones:
+
+\begin{align*}
+    a_{EW} &= \frac{2}{N} \sum^N_{i=1} \cos(\alpha^0_i - \beta_i)\\
+    b_{EW} &= \frac{2}{N} \sum^N_{i=1} \sin(\alpha^0_i - \beta_i)
+\end{align*}
+donde $N$ es la cantidad de eventos en el rango de tiempo estudiado y $\beta_i=0$ si el evento proviene del Este, caso contrario $\beta_i=1$. La amplitud  $r_{EW} = \sqrt{a_{EW}^2 + b_{EW}^2}$ y la fase $\phi_{EW} = \tan^{-1}(\nicefrac{b_{EW}}{a_{EW}})$ mediante este análisis en frecuencia es posible estimar los valores $r$ y $\phi$ de la Ec.\ref{eq:dipolo_tasa}:
+\begin{align*}
+    r &= \frac{\pi \cos\delta_0}{2} \frac{\langle\cos\theta \rangle}{\langle\sin\theta \rangle} r_{EW} \\ 
+    &\text{integración} \rightarrow r_I =\frac{N}{2\pi}r \\
+    \phi &= \phi_{EW} \\
+    &\text{integración} \rightarrow \phi_I = \phi_{EW} + \frac{\pi}{2}
+\end{align*}
+
+
+La amplitud obtenida por el Método E-W no es la amplitud del dípolo físico aunque está relacionada con la misma. La Ec.\ref{eq:final} puede expresarse con la proyección del dípolo físico sobre el ecuador $d_{\perp}= d\cos\delta_0$, teniendo en cuenta la ecuación  \ref{resta_final}:
+\begin{align}
+    I^{obs}_E -  I^{obs}_O \approx -4 d_\perp \Phi_0 \sin(\alpha^0  - \alpha_d)\overline{\sin\theta},
+\end{align}
+si multiplicamos la expresión por una identidad y consideramos $N \sim 4\pi^2 \Phi_0 \overline{1} $ \footnote{Porque es la integral con respecto a los dos ángulos, $\theta$ y $\phi$}:
+\begin{align}
+    I^{obs}_E -  I^{obs}_O \approx -4 d_\perp \frac{N}{ 4\pi^2\overline{1}} \sin(\alpha^0  - \alpha_d)\overline{\sin\theta} \frac{\overline{1}}{\overline{1}}\\
+    I^{obs}_E -  I^{obs}_O \approx -4 d_\perp \frac{N}{ 4\pi^2} \sin(\alpha^0  - \alpha_d)\langle\sin\theta \rangle\\
+    I^{obs}_E -  I^{obs}_O \approx -\frac{N}{2\pi} d_\perp \frac{2\langle\sin\theta \rangle }{\pi}\sin(\alpha^0  - \alpha_d)
+\end{align}
+
+% Si consideramos que $\overline{1}$ es aproximadamente igual a la media de $\sin\theta$ de los valores posibles de $\theta$:
+% \begin{align*}
+%     \overline{1} &= \int_0^{\theta_{max}} d\theta \sin\theta \omega(\theta)
+%                  \approx \int_0^{\frac{2\pi}{3}} \frac{\sin\theta}{\nicefrac{2\pi}{3} - 0} =  \frac{3}{4\pi}
+% \end{align*}
+
+% Entonces,
+% \begin{align}
+%     I^{obs}_E -  I^{obs}_O \approx -4 d_\perp \Phi_0 \sin(\alpha^0  - \alpha_d)\langle\sin\theta \rangle \frac{3}{4\pi}\\
+%     I^{obs}_E -  I^{obs}_O \approx -4 d_\perp \Phi_0 \langle\sin\theta \rangle \frac{3}{4\pi} \sin(\alpha^0  - \alpha_d)
+% \end{align}
+Como esto es equivalente a $-r_I\sin(\alpha^0  - \alpha_d)$ por la ecuación \ref{eq:dipolo_tasa}, además de considerar la ecuación \ref{eq:fourier_perp}:
+\begin{align}
+    r  &= r_1 \frac{2\langle\sin\theta \rangle }{\pi}\\
+    r &= \frac{\pi \cos\delta_0}{2} \frac{\langle\cos\theta \rangle}{\langle\sin\theta \rangle} r_{EW} \\
+    &\Rightarrow  r_1 = \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} r_{EW}
+\end{align}
+donde la última ecuación es la relación entre la amplitud del dipolo y la amplitud obtenida obtenida con el método East-West. Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplitud mayor o igual a que $r_EW$ a partir de una distribución isótropa una distribución acumulada de Rayleigh:
+
+\begin{equation}
+    P(\geq r_{EW}) = \exp{-\frac{N}{4}r^2_{EW}} = \exp{-\frac{N}{4} \Big ( \frac{2 \langle\sin\theta \rangle }{\pi \langle\cos\delta \rangle} \Big)^2 r^2_{1} }
+\end{equation}
+
+
+\section{Cálculo de la amplitud del dipolo para la frecuencia sidérea con el método East-West}
+
+\begin{enumerate}
+    \item Definimos el rango de tiempo a estudiar, para estos resultados se utilizaron los límites: 1 de Enero del 2014 hasta el 1 de Enero del 2020.
+    \item Se recorre cada evento que cumpla con las siguientes características:
+     \begin{itemize}
+        \item Pertenezca el rango de energía a estudiar
+        \item Sea un evento 6T5 con ángulo cenital menor a $60^o$
+        \item Se haya registrado en el rango de tiempo seleccionado
+    \end{itemize}
+    En cada evento se calcula los siguientes valores:
+    \begin{align}
+        a' = \cos(X - \beta)\\
+        b' = \sin(X - \beta)
+    \end{align}
+    el valor de $X$ depende la frecuencia a estudiar, la misma es igual a la ascensión recta del cenit $\alpha^0_i$ al momento del evento  si se estudia la frecuencia sidérea, en cambio para la frecuencia solar es igual al equivalente en grados de la hora local de Malargüe. El valor de $\beta$ es depende si el evento provino del Este donde $\beta=180^o$ o $\beta=0$ caso contrario.
+    Se intentó hacer un barrido de frecuencias análogo al análisis de Rayleigh pero la variable utilizada para generalizar el análisis a frecuencias arbitrarias:
+    \begin{equation}
+        \tilde{\alpha} = 2\pi f_x t_i + \alpha_i - \alpha_i^0(t_i) \label{ra_mod}
+      \end{equation}
+    es tal que la variable es igual a la ascensión recta del evento a estudiar y no al cenit como es el caso del EW. 
+    \item Una vez corridos todos los  eventos se calculan los parámetros:
+    \begin{align*}
+        a_{EW} &= \frac{2}{N} \sum^N_{i=1} a \qquad
+        b_{EW} = \frac{2}{N} \sum^N_{i=1} b
+    \end{align*}
+    que es equivalente a haber calculado
+    \begin{align*}
+        a_{EW} &= \frac{2}{N} \sum^N_{i=1} \cos(\alpha^0_i - \beta_i)\\
+        b_{EW} &= \frac{2}{N} \sum^N_{i=1} \sin(\alpha^0_i - \beta_i)
+    \end{align*}
+    donde N indica la cantidad eventos considerados. La cantidad de eventos por rango de energía se muestran en la tabla \ref{tab:}.
+
+    Con esto puedo calcular la amplitud asociada al análisis $r_{EW}$ y la fase $\phi_{EW}$:
+    \begin{align*}
+        r_{EW} = \sqrt{a_{EW}^2 + b_{EW}^2}\\
+        \phi_{EW} = \tan^{-1}(\nicefrac{b_{EW}}{a_{EW}})
+    \end{align*}
+
+    Estos valores se traducen a los valores de amplitud $r$ y fase $\phi$ del dipolo físico mediante las expresiones:
+    \begin{align*}
+        r &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle} r_{EW} \\
+        d_\perp&= \frac{\pi}{2 \langle\sin\theta \rangle} r_{EW} = \frac{r}{\langle\cos\delta \rangle}\\
+        \phi &= \phi_{EW} + \frac{\pi}{2}
+    \end{align*}
+    Se suma $\frac{\pi}{2}$ por el  artificio de agregar $\pi$ en los coeficientes para obtener la diferencia entre tasas del este y oeste. Los valores $\langle\cos\delta \rangle$ y $\langle\sin\delta \rangle$ son los valores medios de estas variables en los años estudiados. 
+
+    \item Se calcula la amplitud límite $r_{99}$ y la probabilidad de que las amplitudes calculadas sea ruido  $P(r_{EW})$ mediante:
+    \begin{align*}
+        P(\geq r_{EW}) &= \exp{\Big(-\frac{N}{4}r^2_{EW}\Big)}\\
+        r_{99} &= \frac{\pi}{2} \frac{\langle\cos\delta \rangle}{\langle\sin\theta \rangle}\sqrt{\frac{4}{N}\ln(100)}\\
+        d_{\perp,99} &= \frac{r_{99}}{\langle\cos\delta \rangle}    
+    \end{align*}
+
+    \item Una vez obtenidos los valores a considerar, se calculan los errores asociados a cada variable, con las expresión a continuación:
+    
+    \begin{itemize}
+        \item Error asociado a la amplitud $r$ y $d_\perp$
+        \begin{align*}
+          \text{r} &\rightarrow  \sigma   = \frac{\pi \langle\cos\delta \rangle}{2\langle\sin\theta \rangle} \sqrt{\frac{2}{\mathcal{N}}}\\
+          d_\perp &\rightarrow   \sigma_{x,y} = \frac{\sigma}{\langle\cos\delta \rangle}
+        \end{align*}
+        \item Error asociado a la fase $\phi$ de la amplitud:
+        \begin{align*}
+            \sigma_{\phi} = \frac{1}{r_{EW}}\sqrt{\frac{2}{\mathcal{N}}}
+        \end{align*}
+        
+
+    \end{itemize}
+
+\end{enumerate}
+
+% Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
+
+
+Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. 
+% Para esto se ejecutó el programa implementado en el trabajo mencionado sobre los datos utilizados en el mismo, estos se obtuvieron de \emph{Publications Committee} de la colaboración Auger.
+
+
+
+\section{Cómo se hace el cálculo para frecuencias  arbitrarias}
+
+Cambiamos las variable de la ascensión recta del cenit $\alpha_0$ por
+\begin{equation}
+    \tilde{\alpha} = 2\pi f_x t_i  \label{ra_arb}
+  \end{equation}
+donde $f_x$ es la frecuencia arbitraria a estudiar y $t_i$ es el momento donde ocurre el evento a estudiar. Luego se realizan el mismo procedimiento que lo anterior para calcular el valor de la amplitud $r$.
+
+En la siguiente sección se verifica que se obtiene los mismo resultados con esta variable general que con el valor de $\alpha_0$ para la frecuencia sidérea.
+
+\section{Verificación del código}
+
+\subsection{Comparación con el trabajo \cite{Aab_2020} de la colaboración}
+Se verificó el código escrito en este trabajo de la siguiente manera:
+
+\begin{enumerate}
+    \item El conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018 fue analizado en el trabajo \cite{Aab_2020}.
+    \item Utilizando el código y los datos de los eventos del paper \cite{Aab_2020}, obtenidos de la página del \emph{Publications Committee} de la colaboración Auger, se replicaron los datos del paper. 
+    \item Luego utilizando el código escrito para este trabajo, se realizó el análisis de EW con los datos del trabajo \cite{Aab_2020}. 
+    \item Finalmente se verificó que los valores obtenidos en los item 2 y 3, con  ambos códigos, sean el mismo.
+\end{enumerate}
+
+\subsection{Tabla comparando con Right ascension}
+
+Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango $0.25-0.5$ EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son comparables entre sí.
+
+
+\begin{table}[H]
+    \begin{small}
+        \begin{center}
+            \begin{tabular}[c]{l|l|l|l}
+                                    & \cite{Aab_2020} & $\alpha_0$   & $\alpha=2\pi f_xt_i$   \\ 
+                Frecuencia:         & 366.25          &  366.25      &  366.25            \\
+                $d_\perp$[\%]:      & 0.60            &  0.60        &  0.60              \\
+                $\sigma_{x,y}$[\%]  & 0.48            &  0.48        &  0.48              \\ 
+                Probabilidad:       & 0.45            &  0.45        &  0.45              \\
+                Fase[$^o$]:         & 225$\pm$64\cite{discrepancia} & 225$\pm$45   &  227$\pm$45          \\
+                $r_{99}$[\%]:       & 1.5             &  1.5       &  1.5             \\
+                $d_{\perp,99}$[\%]: & 1.8             &  1.8       &  1.8             \\
+            \end{tabular}
+        \end{center}
+        \caption{Verificando la  variable $\alpha=2\pi ft$}
+        \label{tab:comp_vars}
+    \end{small}
+\end{table}
+

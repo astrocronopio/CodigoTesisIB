@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  4 JAN 2021 00:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  4 JAN 2021 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -10,8 +10,8 @@ L3 programming layer <2020-07-17> (./ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count168
 \c@chapter=\count169
@@ -488,7 +488,18 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count298
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
+\thesrwidth=\skip78
+\thesrheight=\skip79
+\srblobheight=\skip80
+\srblobdepth=\skip81
+\mnxsrwidth=\skip82
+\LMex=\skip83
+\LMpt=\skip84
+) (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2020-07-17 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
@@ -501,9 +512,9 @@ Package: xparse 2020-05-15 L3 Experimental document command parser
 \g__xparse_grabber_int=\count301
 \l__xparse_m_args_int=\count302
 \l__xparse_v_nesting_int=\count303
-)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip78
+\labelindent=\skip85
 \enit@outerparindent=\dimen199
 \enit@toks=\toks27
 \enit@inbox=\box97
@@ -512,7 +523,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 
 LaTeX Warning: Unused global option(s):
-    [11pt,oneside].
+    [12pt,oneside].
 
 (./report_EW_results.aux
 LaTeX Info: Redefining \. on input line 27.
@@ -524,24 +535,24 @@ LaTeX Warning: Label `tab:solar' multiply defined.
 )
 \openout1 = `report_EW_results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen256
@@ -581,18 +592,18 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=441.01772pt
-* \textheight=700.9276pt
+* \textheight=698.39055pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
 * \topmargin=-18.78552pt
 * \headheight=15.6pt
 * \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=62.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -603,7 +614,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box99
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 73.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -613,224 +624,277 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
  (./report_EW_results.out) (./report_EW_results.out)
 \@outlinefile=\write3
 \openout3 = `report_EW_results.out'.
 
-
-Overfull \hbox (6.6717pt too wide) in paragraph at lines 72--72
-[]\OT1/cmr/bx/n/14.4 C^^Salcu-lo de la am-pli-tud del di-po-lo pa-ra la fre-cuen-cia sid^^Serea
- []
-
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 79.
+ (./report_EW_calculo.tex
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 164.
+) [1
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 164.
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7]
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+ [8]
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
+ [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 164.
+(hyperref)                removing `\begingroup' on input line 368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 164.
+(hyperref)                removing `\<let>-command' on input line 368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 164.
+(hyperref)                removing `\NAT@ctype' on input line 368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 164.
+(hyperref)                removing `\z@' on input line 368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 164.
+(hyperref)                removing `\let' on input line 368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 164.
+(hyperref)                removing `\let' on input line 368.
 
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
-[2]
-<bessel_prob.pdf, id=112, 867.24pt x 578.16pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 368.
+
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
+[10]) (./report_EW_PDF.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [11]
+Cap\'{\i }tulo 2.
+<bessel_prob.pdf, id=249, 867.24pt x 578.16pt>
 File: bessel_prob.pdf Graphic file (type pdf)
 <use bessel_prob.pdf>
-Package pdftex.def Info: bessel_prob.pdf  used on input line 219.
+Package pdftex.def Info: bessel_prob.pdf  used on input line 22.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
- [3]
-<bessel_prob_value_s.pdf, id=135, 867.24pt x 578.16pt>
+[12
+
+]
+<bessel_prob_value_s.pdf, id=259, 867.24pt x 578.16pt>
 File: bessel_prob_value_s.pdf Graphic file (type pdf)
 <use bessel_prob_value_s.pdf>
-Package pdftex.def Info: bessel_prob_value_s.pdf  used on input line 236.
+Package pdftex.def Info: bessel_prob_value_s.pdf  used on input line 39.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 244.
-LaTeX Info: Redefining \% on input line 244.
- [4 <./bessel_prob.pdf> <./bessel_prob_value_s.pdf
-
-pdfTeX warning: pdflatex (file ./bessel_prob_value_s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<bessel_prob_iterations.pdf, id=242, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [13 <./bessel_prob.pdf>]
+<bessel_prob_iterations.pdf, id=318, 867.24pt x 578.16pt>
 File: bessel_prob_iterations.pdf Graphic file (type pdf)
 <use bessel_prob_iterations.pdf>
-Package pdftex.def Info: bessel_prob_iterations.pdf  used on input line 250.
+Package pdftex.def Info: bessel_prob_iterations.pdf  used on input line 53.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<bessel_prob_ej_0-25_0-5.pdf, id=244, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+ [14 <./bessel_prob_value_s.pdf> <./bessel_prob_iterations.pdf
+
+pdfTeX warning: pdflatex (file ./bessel_prob_iterations.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<bessel_prob_ej_0-25_0-5.pdf, id=442, 867.24pt x 578.16pt>
 File: bessel_prob_ej_0-25_0-5.pdf Graphic file (type pdf)
 <use bessel_prob_ej_0-25_0-5.pdf>
-Package pdftex.def Info: bessel_prob_ej_0-25_0-5.pdf  used on input line 269.
+Package pdftex.def Info: bessel_prob_ej_0-25_0-5.pdf  used on input line 72.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
- [5 <./bessel_prob_iterations.pdf>]
-Overfull \hbox (2.0084pt too wide) in paragraph at lines 276--276
-[]\OT1/cmr/bx/n/14.4 Tabla can-ti-dad de even-tos pa-ra dis-tin-tos ran-gos de energ^^S^^Pa 
- []
+) (./report_EW_results_Ray.tex
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [15 <./bessel_prob_ej_0-25_0-5.pdf>]
+Cap\'{\i }tulo 3.
+[16
 
-LaTeX Info: Redefining \. on input line 326.
-LaTeX Info: Redefining \% on input line 326.
-[6 <./bessel_prob_ej_0-25_0-5.pdf>]
-<phase_primer_bin.pdf, id=391, 867.24pt x 578.16pt>
+]
+<phase_primer_bin.pdf, id=520, 867.24pt x 578.16pt>
 File: phase_primer_bin.pdf Graphic file (type pdf)
 <use phase_primer_bin.pdf>
-Package pdftex.def Info: phase_primer_bin.pdf  used on input line 333.
+Package pdftex.def Info: phase_primer_bin.pdf  used on input line 63.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<plot_bin_1_barrido_v2.pdf, id=392, 867.24pt x 578.16pt>
-File: plot_bin_1_barrido_v2.pdf Graphic file (type pdf)
-<use plot_bin_1_barrido_v2.pdf>
-Package pdftex.def Info: plot_bin_1_barrido_v2.pdf  used on input line 343.
+<plot_bin_1_barrido_v3_EW.pdf, id=521, 867.24pt x 578.16pt>
+File: plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_1_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_1_barrido_v3_EW.pdf  used on input line 73.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 349.
-LaTeX Info: Redefining \% on input line 349.
- [7 <./phase_primer_bin.pdf>]
-<phase_segundo_bin.pdf, id=439, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [17 <./phase_primer_bin.pdf>]
+<phase_segundo_bin.pdf, id=568, 867.24pt x 578.16pt>
 File: phase_segundo_bin.pdf Graphic file (type pdf)
 <use phase_segundo_bin.pdf>
-Package pdftex.def Info: phase_segundo_bin.pdf  used on input line 360.
+Package pdftex.def Info: phase_segundo_bin.pdf  used on input line 90.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 366.
-LaTeX Info: Redefining \% on input line 366.
- [8 <./plot_bin_1_barrido_v2.pdf>]
-<plot_bin_2_barrido_v2.pdf, id=498, 867.24pt x 578.16pt>
-File: plot_bin_2_barrido_v2.pdf Graphic file (type pdf)
-<use plot_bin_2_barrido_v2.pdf>
-Package pdftex.def Info: plot_bin_2_barrido_v2.pdf  used on input line 395.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [18 <./plot_bin_1_barrido_v3_EW.pdf>]
+<plot_bin_2_barrido_v3_EW.pdf, id=633, 867.24pt x 578.16pt>
+File: plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_2_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_2_barrido_v3_EW.pdf  used on input line 125.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 401.
-LaTeX Info: Redefining \% on input line 401.
- [9 <./phase_segundo_bin.pdf>]
-<phase_tercer_bin.pdf, id=545, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
+ [19 <./phase_segundo_bin.pdf>]
+LaTeX Info: Redefining \. on input line 174.
+LaTeX Info: Redefining \% on input line 174.
+ [20 <./plot_bin_2_barrido_v3_EW.pdf>]
+<phase_tercer_bin.pdf, id=741, 867.24pt x 578.16pt>
 File: phase_tercer_bin.pdf Graphic file (type pdf)
 <use phase_tercer_bin.pdf>
-Package pdftex.def Info: phase_tercer_bin.pdf  used on input line 448.
+Package pdftex.def Info: phase_tercer_bin.pdf  used on input line 178.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 454.
-LaTeX Info: Redefining \% on input line 454.
- [10 <./plot_bin_2_barrido_v2.pdf>]
-<plot_bin_3_barrido_v2.pdf, id=601, 867.24pt x 578.16pt>
-File: plot_bin_3_barrido_v2.pdf Graphic file (type pdf)
-<use plot_bin_3_barrido_v2.pdf>
-Package pdftex.def Info: plot_bin_3_barrido_v2.pdf  used on input line 462.
+<plot_bin_3_barrido_v3_EW.pdf, id=744, 867.24pt x 578.16pt>
+File: plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_3_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_3_barrido_v3_EW.pdf  used on input line 192.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<d_perp_no_normalizado_v2.pdf, id=603, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+ [21 <./phase_tercer_bin.pdf>]
+<d_perp_no_normalizado_v2.pdf, id=788, 867.24pt x 578.16pt>
 File: d_perp_no_normalizado_v2.pdf Graphic file (type pdf)
 <use d_perp_no_normalizado_v2.pdf>
-Package pdftex.def Info: d_perp_no_normalizado_v2.pdf  used on input line 478.
+Package pdftex.def Info: d_perp_no_normalizado_v2.pdf  used on input line 208.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
- [11 <./phase_tercer_bin.pdf> <./plot_bin_3_barrido_v2.pdf
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+ [22 <./plot_bin_3_barrido_v3_EW.pdf> <./d_perp_no_normalizado_v2.pdf
 
-pdfTeX warning: pdflatex (file ./plot_bin_3_barrido_v2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./d_perp_no_normalizado_v2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<d_perp_normalizado.pdf, id=695, 867.24pt x 578.16pt>
+<d_perp_normalizado.pdf, id=908, 867.24pt x 578.16pt>
 File: d_perp_normalizado.pdf Graphic file (type pdf)
 <use d_perp_normalizado.pdf>
-Package pdftex.def Info: d_perp_normalizado.pdf  used on input line 490.
+Package pdftex.def Info: d_perp_normalizado.pdf  used on input line 220.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<d_perp_normalizado_sigmas_v4.pdf, id=697, 867.24pt x 578.16pt>
+<d_perp_normalizado_sigmas_v4.pdf, id=910, 867.24pt x 578.16pt>
 File: d_perp_normalizado_sigmas_v4.pdf Graphic file (type pdf)
 <use d_perp_normalizado_sigmas_v4.pdf>
-Package pdftex.def Info: d_perp_normalizado_sigmas_v4.pdf  used on input line 502.
+Package pdftex.def Info: d_perp_normalizado_sigmas_v4.pdf  used on input line 232.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 508.
-LaTeX Info: Redefining \% on input line 508.
- [12 <./d_perp_no_normalizado_v2.pdf> <./d_perp_normalizado.pdf
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+ [23 <./d_perp_normalizado.pdf> <./d_perp_normalizado_sigmas_v4.pdf
 
-pdfTeX warning: pdflatex (file ./d_perp_normalizado.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./d_perp_normalizado_sigmas_v4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<comparando_sigmas_v2.pdf, id=830, 816.65097pt x 623.69008pt>
+<comparando_sigmas_v2.pdf, id=1047, 816.65097pt x 623.69008pt>
 File: comparando_sigmas_v2.pdf Graphic file (type pdf)
 <use comparando_sigmas_v2.pdf>
-Package pdftex.def Info: comparando_sigmas_v2.pdf  used on input line 519.
+Package pdftex.def Info: comparando_sigmas_v2.pdf  used on input line 249.
 (pdftex.def)             Requested size: 330.76328pt x 252.61212pt.
-LaTeX Info: Redefining \. on input line 525.
-LaTeX Info: Redefining \% on input line 525.
- [13 <./d_perp_normalizado_sigmas_v4.pdf>]
-LaTeX Info: Redefining \. on input line 572.
-LaTeX Info: Redefining \% on input line 572.
- [14 <./comparando_sigmas_v2.pdf>]
-LaTeX Info: Redefining \. on input line 574.
-LaTeX Info: Redefining \% on input line 574.
- [15] (./report_EW_results.bbl) [16
+
+Overfull \hbox (4.00606pt too wide) in paragraph at lines 257--257
+[]\OT1/cmr/bx/n/17.28 Comparando re-sul-ta-dos en-tre m^^Seto-dos pa-ra ba-
+ []
+
+
+Overfull \hbox (21.23805pt too wide) in paragraph at lines 259--259
+[]\OT1/cmr/bx/n/17.28 Verificaci^^Son del c^^Sodi-go es-cri-to du-ran-te la maestr^^S^^Pa 
+ []
+
+LaTeX Info: Redefining \. on input line 265.
+LaTeX Info: Redefining \% on input line 265.
+[24 <./comparando_sigmas_v2.pdf>]
+File: plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_1_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_1_barrido_v3_EW.pdf  used on input line 316.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+<plot_bin_1_barrido_v1_Ray.pdf, id=1107, 867.24pt x 578.16pt>
+File: plot_bin_1_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use plot_bin_1_barrido_v1_Ray.pdf>
+Package pdftex.def Info: plot_bin_1_barrido_v1_Ray.pdf  used on input line 317.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+LaTeX Info: Redefining \. on input line 323.
+LaTeX Info: Redefining \% on input line 323.
+ [25]
+File: plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_2_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_2_barrido_v3_EW.pdf  used on input line 327.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+<plot_bin_2_barrido_v1_Ray.pdf, id=1118, 867.24pt x 578.16pt>
+File: plot_bin_2_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use plot_bin_2_barrido_v1_Ray.pdf>
+Package pdftex.def Info: plot_bin_2_barrido_v1_Ray.pdf  used on input line 328.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+File: plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
+<use plot_bin_3_barrido_v3_EW.pdf>
+Package pdftex.def Info: plot_bin_3_barrido_v3_EW.pdf  used on input line 338.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+<plot_bin_3_barrido_v1_Ray.pdf, id=1119, 867.24pt x 578.16pt>
+File: plot_bin_3_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use plot_bin_3_barrido_v1_Ray.pdf>
+Package pdftex.def Info: plot_bin_3_barrido_v1_Ray.pdf  used on input line 339.
+(pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
+)
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [26 <./plot_bin_1_barrido_v1_Ray.pdf> <./plot_bin_2_barrido_v1_Ray.pdf
+
+pdfTeX warning: pdflatex (file ./plot_bin_2_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./plot_bin_3_barrido_v1_Ray.pdf
+
+pdfTeX warning: pdflatex (file ./plot_bin_3_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (./report_EW_results.bbl) [27
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./report_EW_results.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `report_EW_results.out' has not changed.
-(rerunfilecheck)             Checksum: BE0688026854A29511C8461AB1198A40;1465.
+(rerunfilecheck)             Checksum: 2F35BD1820C70136E6C989D3971D8673;1828.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 578.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 12233 strings out of 482719
- 190824 string characters out of 5953361
- 495424 words of memory out of 5000000
- 27211 multiletter control sequences out of 15000+600000
- 552805 words of font info for 98 fonts, out of 8000000 for 9000
+ 12959 strings out of 482719
+ 198706 string characters out of 5953361
+ 508251 words of memory out of 5000000
+ 27859 multiletter control sequences out of 15000+600000
+ 552809 words of font info for 98 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 51i,17n,49p,997b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report_EW_results.pdf (16 pages, 449313 bytes).
+ 51i,17n,53p,997b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report_EW_results.pdf (27 pages, 532557 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 495 compressed objects within 5 object streams
- 82 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1394 PDF objects out of 1440 (max. 8388607)
+ 677 compressed objects within 7 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,20 +15,21 @@ filebesell="./barrido_pdf.txt"
 i, r, pdf, prob = np.loadtxt(filebesell, unpack=True)
 #################################################################
 
-# fig,ax = plt.subplots()
-# ax.set_ylabel("Densidad de probabilidad p($d_{\perp}$)")
-# ax.set_xlabel("Amplitud $d_{\perp}$")
-# ax.plot(r, pdf, label="PDF", color='red', alpha=1)
-# ax.legend(loc=(0.5,0.6))
+def plot_pdf_prob():
+    fig,ax = plt.subplots()
+    ax.set_ylabel("Densidad de probabilidad p($d_{\perp}$)")
+    ax.set_xlabel("Amplitud $d_{\perp}$")
+    ax.plot(r, pdf, label="PDF", color='red', alpha=1)
+    ax.legend(loc=(0.5,0.6))
 
-# ax2=ax.twinx()
-# ax2.plot(r, prob, ls='--', label="Integral",color='blue', alpha=0.7)
-# ax2.set_ylabel("Probabilidad")
-# ax2.legend(loc=(0.5,0.7))
-    
-# # plt.legend()
-# plt.show()
-# exit()
+    ax2=ax.twinx()
+    ax2.plot(r, prob, ls='--', label="Integral",color='blue', alpha=0.7)
+    ax2.set_ylabel("Probabilidad")
+    ax2.legend(loc=(0.5,0.7))
+        
+    # plt.legend()
+    plt.show()
+    exit()
 #####################################################################    
 
 # plt.figure(2)
