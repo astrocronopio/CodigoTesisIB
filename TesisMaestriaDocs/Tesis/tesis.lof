@@ -34,14 +34,34 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{44}{figure.caption.57}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{45}{figure.caption.58}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.\relax }}{49}{figure.caption.60}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos, con el código de \cite {taborda} y con el código escrito para este trabajo.\relax }}{52}{figure.caption.61}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{50}{figure.caption.62}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.\relax }}{51}{figure.caption.63}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos, con el código de \cite {taborda} y con el código escrito para este trabajo.\relax }}{54}{figure.caption.64}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Tasa de eventos del conjunto más reciente de eventos con todos los disparos. Se observa un tasa baja en la segunda mitad del 2013.\relax }}{53}{figure.caption.62}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diferencia entre las energías de entre la reconstrucción del 2017 y del 2019\relax }}{54}{figure.caption.63}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Variaciones de los hexágonos en función de la ascensión recta del observatorio para frecuencias características en rango mencionado. \relax }}{55}{figure.caption.64}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Anisotropía en función de la frecuencia para el rango de energía 1 EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{56}{figure.caption.65}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden, en el rango de energía $1$ EeV - $2$ EeV.\relax }}{57}{figure.caption.67}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden en el rango de energía $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.\relax }}{57}{figure.caption.68}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Tasa de eventos del conjunto más reciente de eventos con todos los disparos. Se observa un tasa baja en la segunda mitad del 2013.\relax }}{55}{figure.caption.65}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Diferencia entre las energías de entre la reconstrucción del 2017 y del 2019\relax }}{56}{figure.caption.66}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Variaciones de los hexágonos en función de la ascensión recta del observatorio para frecuencias características en rango mencionado. \relax }}{57}{figure.caption.67}%
-\contentsline {figure}{\numberline {9.4}{\ignorespaces Anisotropía en función de la frecuencia para el rango de energía 1 EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{58}{figure.caption.68}%
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden, en el rango de energía $1$ EeV - $2$ EeV.\relax }}{59}{figure.caption.70}%
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden en el rango de energía $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.\relax }}{59}{figure.caption.71}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces \relax }}{71}{figure.caption.71}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces \relax }}{72}{figure.caption.72}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces \relax }}{72}{figure.caption.73}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces \relax }}{73}{figure.caption.74}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.25 EeV - 0.5 EeV .\relax }}{75}{figure.caption.77}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.50 EeV .\relax }}{76}{figure.caption.78}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.5 EeV - 1.0 EeV .\relax }}{77}{figure.caption.79}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1.0 EeV .\relax }}{78}{figure.caption.81}%
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el rango 1.0 EeV - 2.0 EeV .\relax }}{79}{figure.caption.84}%
+\contentsline {figure}{\numberline {11.6}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{80}{figure.caption.85}%
+\contentsline {figure}{\numberline {11.7}{\ignorespaces Sin normalizar\relax }}{80}{figure.caption.86}%
+\contentsline {figure}{\numberline {11.8}{\ignorespaces Valores normalizados con $d_{\perp ,UL}$\relax }}{81}{figure.caption.87}%
+\contentsline {figure}{\numberline {11.9}{\ignorespaces Valores normalizados con $d_{\perp ,UL}$\relax }}{81}{figure.caption.88}%
+\contentsline {figure}{\numberline {11.10}{\ignorespaces Amplitudes con incertidumbre, apuntando en la dirección de la fase. Los círculos punteados los valores de referencia del trabajo \cite {Aab_2020} con sus respectivas incertidumbres y la línea punteada en negro marca la dirección del centro galáctico.\relax }}{82}{figure.caption.89}%
+\contentsline {figure}{\numberline {11.11}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.5 EeV .\relax }}{84}{figure.caption.92}%
+\contentsline {figure}{\numberline {11.12}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1 EeV .\relax }}{84}{figure.caption.93}%
+\contentsline {figure}{\numberline {11.13}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{84}{figure.caption.94}%
+\addvspace {10\p@ }

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report_EW_results.aux
+The style file: ibtesis.bst
+Database file #1: mibib_16.bib
+Warning--I didn't find a database entry for "codigo"
+Warning--empty author in discrepancia
+Warning--empty journal in discrepancia
+Warning--empty year in discrepancia
+You've used 2 entries,
+            2634 wiz_defined-function locations,
+            1039 strings with 9604 characters,
+and the built_in function-call counts, 496 in all, are:
+= -- 25
+> -- 5
+< -- 0
++ -- 3
+- -- 1
+* -- 31
+:= -- 56
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 59
+empty$ -- 57
+format.name$ -- 1
+if$ -- 100
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 15
+newline$ -- 14
+num.names$ -- 1
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 11
+stack$ -- 0
+substring$ -- 9
+swap$ -- 34
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 2
+width$ -- 3
+write$ -- 22
+(There were 4 warnings)

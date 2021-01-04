@@ -18,9 +18,34 @@
 \usepackage{mathtools}
 \usepackage{textcomp}
 
+\usepackage{multirow}
 \usepackage{amsfonts}
 
-\newcommand{\done}{\item[\checkmark]}
+\usepackage{hyperref}
+\usepackage{tablefootnote}
+
+\usepackage{scalerel}
+\usepackage{physics}
+
+
+\usepackage{xparse}
+\let\realItem\item % save a copy of the original item
+\makeatletter
+\NewDocumentCommand\myItem{ o }{%
+   \IfNoValueTF{#1}%
+      {\realItem}% add an item
+      {\realItem[#1]\def\@currentlabel{#1}}% add an item and update label
+}
+\makeatother
+
+\usepackage{enumitem}    
+\setlist[enumerate]{
+    before=\let\item\myItem%,       % use \myItem in enumerate
+    %label=\textnormal{(\arabic*)}, % format the label
+    %widest=(2')                    % set the widest label
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Análisis de las direcciones de arribo de rayos cósmicos de ultra-alta energía en el Observatorio Pierre Auger}
@@ -111,8 +136,6 @@ ICRC: 		& Conferencia Internacional de Rayos Cósmicos (\emph{International Cosm
 	\input{../Anisotropia/anisotropia_weather.tex}
 	
 
-	\input{../Conclusiones/conclusiones.tex}
-
 \chapter{Métodos}
 	\graphicspath{{../1_Metodo/}}
 	\input{../1_Metodo/metodo_v5}
@@ -121,14 +144,24 @@ ICRC: 		& Conferencia Internacional de Rayos Cósmicos (\emph{International Cosm
 \chapter{Dipolo en el rango 1 EeV - 2 EeV}
 	\graphicspath{{../6_Dipole_1-2_EeV/}}
 	\input{../6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8}
-	
+
+
+	\graphicspath{{../report_16_EW_PDF_IB_style/}}
+
+	\input{../report_16_EW_PDF_IB_style/report_EW_calculo}
+
+	\input{../report_16_EW_PDF_IB_style/report_EW_PDF.tex}
+
+	\input{../report_16_EW_PDF_IB_style/report_EW_results_Ray}
+
+	\input{../Conclusiones/conclusiones.tex}
 
 
 % \appendix
 % \input{../Apendice/apend1.tex}
 
 \begin{biblio}
-	\bibliography{mibib}
+	\bibliography{../report_16_EW_PDF_IB_style/mibib_16.bib,mibib}
 \end{biblio}
 
 

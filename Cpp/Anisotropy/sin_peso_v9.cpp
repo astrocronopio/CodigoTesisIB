@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
-	ray_multifreq(200,  in_file, out_file, utci, utcf, rayleigh);
+	ray_multifreq(100,  in_file, out_file, utci, utcf, rayleigh);
 
 	// ray_given_freq(366.25, in_file, out_file, utci, utcf, rayleigh);
 	

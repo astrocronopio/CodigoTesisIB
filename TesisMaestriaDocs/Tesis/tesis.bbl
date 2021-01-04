@@ -2,6 +2,13 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{Aab_2020}
+{Aab A. et al.}
+\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
+  Auger Observatory}}.
+\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
+
 \bibitem{PGD}
 Olive, K.
 \newblock Review of particle physics.
@@ -178,5 +185,9 @@ Linsley, J.
 \newblock Fluctuation effects on directional data.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
+
+\bibitem{discrepancia}
+Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código implementado
+  para los resultados del trabajo \cite{Aab_2020}.
 
 \end{thebibliography}

@@ -2,7 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesis.aux
 The style file: ibtesis.bst
-Database file #1: mibib.bib
+Database file #1: ../report_16_EW_PDF_IB_style/mibib_16.bib
+Database file #2: mibib.bib
+Warning--I didn't find a database entry for "codigo"
 Warning--empty author in como_funciona_auger
 Warning--empty journal in collaboration2013pierre
 Warning--empty journal in data
@@ -14,45 +16,48 @@ Warning--empty author in isabel
 Warning--empty journal in isabel
 Warning--empty year in isabel
 Warning--empty journal in collaboration2009atmospheric
-You've used 29 entries,
+Warning--empty author in discrepancia
+Warning--empty journal in discrepancia
+Warning--empty year in discrepancia
+You've used 31 entries,
             2634 wiz_defined-function locations,
-            1196 strings with 22446 characters,
-and the built_in function-call counts, 10165 in all, are:
-= -- 634
-> -- 359
+            1208 strings with 22802 characters,
+and the built_in function-call counts, 10637 in all, are:
+= -- 659
+> -- 364
 < -- 0
-+ -- 181
-- -- 89
-* -- 594
-:= -- 1151
-add.period$ -- 85
-call.type$ -- 29
-change.case$ -- 27
++ -- 184
+- -- 90
+* -- 623
+:= -- 1198
+add.period$ -- 90
+call.type$ -- 31
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 1044
-empty$ -- 995
-format.name$ -- 103
-if$ -- 2157
+cite$ -- 45
+duplicate$ -- 1103
+empty$ -- 1051
+format.name$ -- 104
+if$ -- 2256
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 302
-newline$ -- 148
-num.names$ -- 26
-pop$ -- 430
+int.to.str$ -- 31
+missing$ -- 317
+newline$ -- 157
+num.names$ -- 27
+pop$ -- 457
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 246
+skip$ -- 257
 stack$ -- 0
-substring$ -- 394
-swap$ -- 696
+substring$ -- 403
+swap$ -- 730
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 56
-width$ -- 31
-write$ -- 307
-(There were 11 warnings)
+warning$ -- 14
+while$ -- 58
+width$ -- 33
+write$ -- 325
+(There were 15 warnings)

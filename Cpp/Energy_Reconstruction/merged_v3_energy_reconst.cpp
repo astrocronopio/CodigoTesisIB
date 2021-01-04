@@ -76,7 +76,7 @@ int main(int argc, char** argv)
 					
 					// Analisis Energia: S38 corregido por el Herald
 					//if (flag==1 || flag==2) 
-						energy_corr =energy_reconstruction(S38*(S1000_raw/S1000), p,  rho, rhod, the, phi, &factor) ;
+						energy_corr = energy(S38*(S1000_raw/S1000));//energy_reconstruction(S38*(S1000_raw/S1000), p,  rho24, rhod, the, phi, &factor) ;
 						
 					//energy_corr=Energy;
 

@@ -42,14 +42,35 @@
 \BOOKMARK [1][-]{section.6.5}{Anisotrop\355as en ascensi\363n recta en los archivos con todos los disparos}{chapter.6}% 42
 \BOOKMARK [2][-]{subsection.6.5.1}{Caracter\355sticas de los archivos de datos analizados}{section.6.5}% 43
 \BOOKMARK [2][-]{subsection.6.5.2}{Eventos por encima de 1 EeV }{section.6.5}% 44
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 45
-\BOOKMARK [0][-]{chapter.8}{M\351todos}{}% 46
-\BOOKMARK [1][-]{section.8.1}{C\341lculo de los coeficientes de Fourier para el an\341lisis de anisotrop\355a en ascensi\363n recta}{chapter.8}% 47
-\BOOKMARK [2][-]{subsection.8.1.1}{Variaciones relativas de los hex\341gonos}{section.8.1}% 48
-\BOOKMARK [2][-]{subsection.8.1.2}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.8.1}% 49
-\BOOKMARK [0][-]{chapter.9}{Dipolo en el rango 1 EeV - 2 EeV}{}% 50
-\BOOKMARK [1][-]{section.9.1}{Caracter\355sticas del conjunto de datos}{chapter.9}% 51
-\BOOKMARK [2][-]{subsection.9.1.1}{Pesos de los eventos para frecuencias de referencia}{section.9.1}% 52
-\BOOKMARK [1][-]{section.9.2}{An\341lisis de anisotrop\355as en ascensi\363n recta para el primer arm\363nico}{chapter.9}% 53
-\BOOKMARK [2][-]{subsection.9.2.1}{Trabajo a futuro}{section.9.2}% 54
-\BOOKMARK [0][-]{section*.73}{Bibliograf\355a}{}% 55
+\BOOKMARK [0][-]{chapter.7}{M\351todos}{}% 45
+\BOOKMARK [1][-]{section.7.1}{C\341lculo de los coeficientes de Fourier para el an\341lisis de anisotrop\355a en ascensi\363n recta}{chapter.7}% 46
+\BOOKMARK [2][-]{subsection.7.1.1}{Variaciones relativas de los hex\341gonos}{section.7.1}% 47
+\BOOKMARK [2][-]{subsection.7.1.2}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.7.1}% 48
+\BOOKMARK [0][-]{chapter.8}{Dipolo en el rango 1 EeV - 2 EeV}{}% 49
+\BOOKMARK [1][-]{section.8.1}{Caracter\355sticas del conjunto de datos}{chapter.8}% 50
+\BOOKMARK [2][-]{subsection.8.1.1}{Pesos de los eventos para frecuencias de referencia}{section.8.1}% 51
+\BOOKMARK [1][-]{section.8.2}{An\341lisis de anisotrop\355as en ascensi\363n recta para el primer arm\363nico}{chapter.8}% 52
+\BOOKMARK [2][-]{subsection.8.2.1}{Trabajo a futuro}{section.8.2}% 53
+\BOOKMARK [0][-]{chapter.9}{M\351todo East-West}{}% 54
+\BOOKMARK [1][-]{section.9.1}{Descripci\363n del m\351todo East-West}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.2}{Estimaci\363n de la componente ecuatorial del dipolo mediante el an\341lisis del primer arm\363nico}{chapter.9}% 56
+\BOOKMARK [1][-]{section.9.3}{C\341lculo de la amplitud del dipolo para la frecuencia sid\351rea con el m\351todo East-West}{chapter.9}% 57
+\BOOKMARK [1][-]{section.9.4}{C\363mo se hace el c\341lculo para frecuencias arbitrarias}{chapter.9}% 58
+\BOOKMARK [1][-]{section.9.5}{Verificaci\363n del c\363digo}{chapter.9}% 59
+\BOOKMARK [2][-]{subsection.9.5.1}{Comparaci\363n con el trabajo Aab2020 de la colaboraci\363n}{section.9.5}% 60
+\BOOKMARK [2][-]{subsection.9.5.2}{Tabla comparando con Right ascension}{section.9.5}% 61
+\BOOKMARK [0][-]{chapter.10}{Distribuci\363n de probabilidad de la amplitud del dipolo}{}% 62
+\BOOKMARK [1][-]{section.10.1}{Distribuci\363n de probabilidad}{chapter.10}% 63
+\BOOKMARK [2][-]{subsection.10.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.10.1}% 64
+\BOOKMARK [0][-]{chapter.11}{Resultados del m\351todo EW}{}% 65
+\BOOKMARK [1][-]{section.11.1}{Tabla cantidad de eventos para distintos rangos de energ\355a}{chapter.11}% 66
+\BOOKMARK [1][-]{section.11.2}{Resultados en distintos rangos de energ\355a}{chapter.11}% 67
+\BOOKMARK [2][-]{subsection.11.2.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.11.2}% 68
+\BOOKMARK [2][-]{subsection.11.2.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.11.2}% 69
+\BOOKMARK [2][-]{subsection.11.2.3}{Resultados en el rango 1 EeV - 2 EeV}{section.11.2}% 70
+\BOOKMARK [1][-]{section.11.3}{Gr\341ficos}{chapter.11}% 71
+\BOOKMARK [1][-]{section.11.4}{Comparando resultados entre m\351todos para barridos de frecuencias}{chapter.11}% 72
+\BOOKMARK [1][-]{section.11.5}{Verificaci\363n del c\363digo escrito durante la maestr\355a}{chapter.11}% 73
+\BOOKMARK [1][-]{section.11.6}{Comparando amplitud en funci\363n de la frecuencia}{chapter.11}% 74
+\BOOKMARK [0][-]{chapter.12}{Conclusiones}{}% 75
+\BOOKMARK [0][-]{section*.95}{Bibliograf\355a}{}% 76
