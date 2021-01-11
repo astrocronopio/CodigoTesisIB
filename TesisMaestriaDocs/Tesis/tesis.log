@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  4 JAN 2021 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  10 JAN 2021 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,14 +662,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (102.7188pt too wide) in paragraph at lines 83--107
+Overfull \hbox (102.7188pt too wide) in paragraph at lines 83--108
 [][] 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 \end{abreviaturas}
+l.108 \end{abreviaturas}
                          [1
 
 
@@ -694,8 +694,8 @@ This may cause the page layout to be inconsistent, however.
 \tf@toc=\write4
 \openout4 = `tesis.toc'.
 
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
  [4] (./tesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -708,27 +708,7 @@ LaTeX Info: Redefining \% on input line 38.
  [6]
 LaTeX Info: Redefining \. on input line 62.
 LaTeX Info: Redefining \% on input line 62.
- [7]
-Overfull \hbox (3.00272pt too wide) detected at line 63
-\OT1/cmr/m/n/12 11.10. 
- []
-
-
-Overfull \hbox (3.00272pt too wide) detected at line 64
-\OT1/cmr/m/n/12 11.11. 
- []
-
-
-Overfull \hbox (3.00272pt too wide) detected at line 65
-\OT1/cmr/m/n/12 11.12. 
- []
-
-
-Overfull \hbox (3.00272pt too wide) detected at line 66
-\OT1/cmr/m/n/12 11.13. 
- []
-
-)
+ [7])
 \tf@lof=\write5
 \openout5 = `tesis.lof'.
 
@@ -752,7 +732,7 @@ Cap\'{\i }tulo 2.
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
  [3]
-<../IntroduccionBachelor/auger_spectrum.png, id=668, 1171.37625pt x 882.29625pt>
+<../IntroduccionBachelor/auger_spectrum.png, id=676, 1171.37625pt x 882.29625pt>
 File: ../IntroduccionBachelor/auger_spectrum.png Graphic file (type png)
 <use ../IntroduccionBachelor/auger_spectrum.png>
 Package pdftex.def Info: ../IntroduccionBachelor/auger_spectrum.png  used on input line 43.
@@ -765,17 +745,17 @@ Cap\'{\i }tulo 3.
 [5
 
 ]
-<../IntroduccionAuger/auger_sd.png, id=688, 837.1275pt x 874.26625pt>
+<../IntroduccionAuger/auger_sd.png, id=696, 837.1275pt x 874.26625pt>
 File: ../IntroduccionAuger/auger_sd.png Graphic file (type png)
 <use ../IntroduccionAuger/auger_sd.png>
 Package pdftex.def Info: ../IntroduccionAuger/auger_sd.png  used on input line 23.
 (pdftex.def)             Requested size: 198.45662pt x 207.25352pt.
-<../IntroduccionAuger/tanque.png, id=692, 402.50375pt x 417.56pt>
+<../IntroduccionAuger/tanque.png, id=700, 402.50375pt x 417.56pt>
 File: ../IntroduccionAuger/tanque.png Graphic file (type png)
 <use ../IntroduccionAuger/tanque.png>
 Package pdftex.def Info: ../IntroduccionAuger/tanque.png  used on input line 30.
 (pdftex.def)             Requested size: 198.45662pt x 205.88046pt.
-<../IntroduccionAuger/fd.png, id=693, 164.7756pt x 136.15668pt>
+<../IntroduccionAuger/fd.png, id=701, 164.7756pt x 136.15668pt>
 File: ../IntroduccionAuger/fd.png Graphic file (type png)
 <use ../IntroduccionAuger/fd.png>
 Package pdftex.def Info: ../IntroduccionAuger/fd.png  used on input line 35.
@@ -789,12 +769,12 @@ LaTeX Info: Redefining \% on input line 48.
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
  [8]
-<../IntroduccionAuger/evento_sd.png, id=720, 691.58376pt x 484.81125pt>
+<../IntroduccionAuger/evento_sd.png, id=728, 691.58376pt x 484.81125pt>
 File: ../IntroduccionAuger/evento_sd.png Graphic file (type png)
 <use ../IntroduccionAuger/evento_sd.png>
 Package pdftex.def Info: ../IntroduccionAuger/evento_sd.png  used on input line 71.
 (pdftex.def)             Requested size: 224.91661pt x 157.66534pt.
-<../IntroduccionAuger/evento_s1000.png, id=723, 914.41624pt x 649.42625pt>
+<../IntroduccionAuger/evento_s1000.png, id=731, 914.41624pt x 649.42625pt>
 File: ../IntroduccionAuger/evento_s1000.png Graphic file (type png)
 <use ../IntroduccionAuger/evento_s1000.png>
 Package pdftex.def Info: ../IntroduccionAuger/evento_s1000.png  used on input line 76.
@@ -802,28 +782,28 @@ Package pdftex.def Info: ../IntroduccionAuger/evento_s1000.png  used on input li
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
  [9 <../IntroduccionAuger/evento_sd.png> <../IntroduccionAuger/evento_s1000.png>]
-<../IntroduccionAuger/s1000_theta.png, id=741, 653.44125pt x 523.9575pt>
+<../IntroduccionAuger/s1000_theta.png, id=749, 653.44125pt x 523.9575pt>
 File: ../IntroduccionAuger/s1000_theta.png Graphic file (type png)
 <use ../IntroduccionAuger/s1000_theta.png>
 Package pdftex.def Info: ../IntroduccionAuger/s1000_theta.png  used on input line 97.
 (pdftex.def)             Requested size: 224.91661pt x 180.3418pt.
-<../IntroduccionAuger/efd_s38.png, id=742, 633.36626pt x 572.1375pt>
+<../IntroduccionAuger/efd_s38.png, id=750, 633.36626pt x 572.1375pt>
 File: ../IntroduccionAuger/efd_s38.png Graphic file (type png)
 <use ../IntroduccionAuger/efd_s38.png>
 Package pdftex.def Info: ../IntroduccionAuger/efd_s38.png  used on input line 102.
 (pdftex.def)             Requested size: 198.45662pt x 179.27267pt.
 )
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [10 <../IntroduccionAuger/s1000_theta.png> <../IntroduccionAuger/efd_s38.png>]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
+ [10 <../IntroduccionAuger/s1000_theta.png> <../IntroduccionAuger/efd_s38.png>]
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
  [11]
 Cap\'{\i }tulo 4.
 (../0_Introduccion/introduccion_v8.tex [12
 
 ]
-<../0_Introduccion/histograma_evolucion_eventos.png, id=764, 939.51pt x 556.479pt>
+<../0_Introduccion/histograma_evolucion_eventos.png, id=772, 939.51pt x 556.479pt>
 File: ../0_Introduccion/histograma_evolucion_eventos.png Graphic file (type png)
 <use ../0_Introduccion/histograma_evolucion_eventos.png>
 Package pdftex.def Info: ../0_Introduccion/histograma_evolucion_eventos.png  used on input line 21.
@@ -831,7 +811,7 @@ Package pdftex.def Info: ../0_Introduccion/histograma_evolucion_eventos.png  use
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
  [13 <../0_Introduccion/histograma_evolucion_eventos.png>]
-<../0_Introduccion/comparacion_triggers.png, id=774, 636.3775pt x 360.34625pt>
+<../0_Introduccion/comparacion_triggers.png, id=783, 636.3775pt x 360.34625pt>
 File: ../0_Introduccion/comparacion_triggers.png Graphic file (type png)
 <use ../0_Introduccion/comparacion_triggers.png>
 Package pdftex.def Info: ../0_Introduccion/comparacion_triggers.png  used on input line 36.
@@ -842,14 +822,14 @@ LaTeX Info: Redefining \% on input line 45.
 LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
  [15])
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
  [16]
 Cap\'{\i }tulo 5.
 (../Clima/clima_1_intro.tex [17
 
 ]
-<../Clima/delay.png, id=820, 903.375pt x 489.32813pt>
+<../Clima/delay.png, id=828, 903.375pt x 489.32813pt>
 File: ../Clima/delay.png Graphic file (type png)
 <use ../Clima/delay.png>
 Package pdftex.def Info: ../Clima/delay.png  used on input line 19.
@@ -857,7 +837,7 @@ Package pdftex.def Info: ../Clima/delay.png  used on input line 19.
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
  [18 <../Clima/delay.png (PNG copy)>]
-<../Clima/eas.png, id=832, 987.69pt x 990.70125pt>
+<../Clima/eas.png, id=840, 987.69pt x 990.70125pt>
 File: ../Clima/eas.png Graphic file (type png)
 <use ../Clima/eas.png>
 Package pdftex.def Info: ../Clima/eas.png  used on input line 56.
@@ -874,22 +854,22 @@ LaTeX Info: Redefining \% on input line 107.
 LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
  [22]
-<../Clima/Graphs/clima/presion.png, id=883, 1204.5pt x 644.4075pt>
+<../Clima/Graphs/clima/presion.png, id=891, 1204.5pt x 644.4075pt>
 File: ../Clima/Graphs/clima/presion.png Graphic file (type png)
 <use ../Clima/Graphs/clima/presion.png>
 Package pdftex.def Info: ../Clima/Graphs/clima/presion.png  used on input line 145.
 (pdftex.def)             Requested size: 216.10109pt x 115.61469pt.
-<../Clima/Graphs/clima/densidad_diaria.png, id=884, 1204.5pt x 659.46375pt>
+<../Clima/Graphs/clima/densidad_diaria.png, id=892, 1204.5pt x 659.46375pt>
 File: ../Clima/Graphs/clima/densidad_diaria.png Graphic file (type png)
 <use ../Clima/Graphs/clima/densidad_diaria.png>
 Package pdftex.def Info: ../Clima/Graphs/clima/densidad_diaria.png  used on input line 152.
 (pdftex.def)             Requested size: 216.10109pt x 118.31596pt.
-<../Clima/Graphs/clima/densidad_media_diaria.png, id=885, 1204.5pt x 651.43375pt>
+<../Clima/Graphs/clima/densidad_media_diaria.png, id=893, 1204.5pt x 651.43375pt>
 File: ../Clima/Graphs/clima/densidad_media_diaria.png Graphic file (type png)
 <use ../Clima/Graphs/clima/densidad_media_diaria.png>
 Package pdftex.def Info: ../Clima/Graphs/clima/densidad_media_diaria.png  used on input line 159.
 (pdftex.def)             Requested size: 216.10109pt x 116.87529pt.
-<../Clima/Graphs/clima/densidad_hod.png, id=886, 903.375pt x 564.60938pt>
+<../Clima/Graphs/clima/densidad_hod.png, id=894, 903.375pt x 564.60938pt>
 File: ../Clima/Graphs/clima/densidad_hod.png Graphic file (type png)
 <use ../Clima/Graphs/clima/densidad_hod.png>
 Package pdftex.def Info: ../Clima/Graphs/clima/densidad_hod.png  used on input line 166.
@@ -907,7 +887,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
 [23 <../Clima/Graphs/clima/presion.png> <../Clima/Graphs/clima/densidad_diaria.png> <../Clima/Graphs/clima/densidad_media_diaria.png> <../Clima/Graphs/clima/densidad_hod.png>]
-<../Clima/Graphs/clima/area.png, id=898, 1204.5pt x 671.50874pt>
+<../Clima/Graphs/clima/area.png, id=907, 1204.5pt x 671.50874pt>
 File: ../Clima/Graphs/clima/area.png Graphic file (type png)
 <use ../Clima/Graphs/clima/area.png>
 Package pdftex.def Info: ../Clima/Graphs/clima/area.png  used on input line 12.
@@ -915,12 +895,12 @@ Package pdftex.def Info: ../Clima/Graphs/clima/area.png  used on input line 12.
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
  [24 <../Clima/Graphs/clima/area.png>]
-<../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png, id=915, 903.375pt x 526.96875pt>
+<../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png, id=923, 903.375pt x 526.96875pt>
 File: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png Graphic file (type png)
 <use ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2015.png  used on input line 57.
 (pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
-<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png, id=916, 903.375pt x 564.60938pt>
+<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png, id=924, 903.375pt x 564.60938pt>
 File: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png Graphic file (type png)
 <use ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.png  used on input line 62.
@@ -933,12 +913,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 56--65
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
 [25]
-<../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png, id=923, 903.375pt x 526.96875pt>
+<../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png, id=931, 903.375pt x 526.96875pt>
 File: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png Graphic file (type png)
 <use ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2015.png  used on input line 72.
 (pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
-<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png, id=924, 903.375pt x 564.60938pt>
+<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png, id=932, 903.375pt x 564.60938pt>
 File: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png Graphic file (type png)
 <use ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2015_old_herald.png  used on input line 77.
@@ -948,17 +928,17 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 71--80
 [][]  [] 
  []
 
-<../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png, id=933, 1003.75pt x 620.3175pt>
+<../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png, id=941, 1003.75pt x 620.3175pt>
 File: ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/ap_ICRC_2015_above_1EeV.png  used on input line 90.
 (pdftex.def)             Requested size: 220.50885pt x 136.2715pt.
-<../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png, id=934, 1003.75pt x 610.28pt>
+<../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png, id=942, 1003.75pt x 610.28pt>
 File: ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/arho_ICRC_2015_above_1EeV.png  used on input line 96.
 (pdftex.def)             Requested size: 220.50885pt x 134.06645pt.
-<../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png, id=935, 1003.75pt x 611.28375pt>
+<../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png, id=943, 1003.75pt x 611.28375pt>
 File: ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/brho_ICRC_2015_above_1EeV.png  used on input line 103.
@@ -977,12 +957,12 @@ LaTeX Info: Redefining \% on input line 136.
 LaTeX Info: Redefining \. on input line 160.
 LaTeX Info: Redefining \% on input line 160.
  [28]
-<../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png, id=982, 903.375pt x 489.32813pt>
+<../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png, id=990, 903.375pt x 489.32813pt>
 File: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png Graphic file (type png)
 <use ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_dayly/1EeV_ICRC_2019_05_18.png  used on input line 169.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-<../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png, id=983, 903.375pt x 489.32813pt>
+<../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png, id=991, 903.375pt x 489.32813pt>
 File: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png Graphic file (type png)
 <use ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_dayly/2EeV_ICRC_2019_05_19.png  used on input line 175.
@@ -992,12 +972,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 168--179
 [][]  [] 
  []
 
-<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png, id=984, 903.375pt x 489.32813pt>
+<../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png, id=992, 903.375pt x 489.32813pt>
 File: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png Graphic file (type png)
 <use ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png  used on input line 183.
 (pdftex.def)             Requested size: 218.3016pt x 118.24753pt.
-<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png, id=985, 903.375pt x 489.32813pt>
+<../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png, id=993, 903.375pt x 489.32813pt>
 File: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png Graphic file (type png)
 <use ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png  used on input line 190.
@@ -1020,12 +1000,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Info: Redefining \. on input line 228.
 LaTeX Info: Redefining \% on input line 228.
 [30 <../Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2019_05_19.png> <../Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_05_18.png>]
-<../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png, id=1008, 903.375pt x 526.96875pt>
+<../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png, id=1016, 903.375pt x 526.96875pt>
 File: ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png Graphic file (type png)
 <use ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.png  used on input line 246.
 (pdftex.def)             Requested size: 220.50885pt x 128.63004pt.
-<../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png, id=1009, 903.375pt x 564.60938pt>
+<../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png, id=1017, 903.375pt x 564.60938pt>
 File: ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png Graphic file (type png)
 <use ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png>
 Package pdftex.def Info: ../Clima/Graphs/rate_hour_of_the_day/0EeV_ICRC_2019_S38_05_18.png  used on input line 252.
@@ -1035,17 +1015,17 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 245--256
 [][]  [] 
  []
 
-<../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png, id=1014, 1003.75pt x 620.3175pt>
+<../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png, id=1022, 1003.75pt x 620.3175pt>
 File: ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png  used on input line 265.
 (pdftex.def)             Requested size: 220.50885pt x 136.2715pt.
-<../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png, id=1015, 1003.75pt x 616.3025pt>
+<../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png, id=1023, 1003.75pt x 616.3025pt>
 File: ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png  used on input line 271.
 (pdftex.def)             Requested size: 220.50885pt x 135.38948pt.
-<../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png, id=1016, 1003.75pt x 606.265pt>
+<../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png, id=1024, 1003.75pt x 606.265pt>
 File: ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png Graphic file (type png)
 <use ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png>
 Package pdftex.def Info: ../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png  used on input line 278.
@@ -1061,12 +1041,12 @@ LaTeX Info: Redefining \% on input line 283.
 LaTeX Info: Redefining \. on input line 316.
 LaTeX Info: Redefining \% on input line 316.
  [32 <../Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.png> <../Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.png> <../Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.png>]
-<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png, id=1038, 752.8125pt x 564.60938pt>
+<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png, id=1047, 752.8125pt x 564.60938pt>
 File: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png Graphic file (type png)
 <use ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png>
 Package pdftex.def Info: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png  used on input line 320.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png, id=1039, 752.8125pt x 564.60938pt>
+<../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png, id=1048, 752.8125pt x 564.60938pt>
 File: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png Graphic file (type png)
 <use ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png>
 Package pdftex.def Info: ../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png  used on input line 325.
@@ -1079,14 +1059,14 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 319--328
 LaTeX Info: Redefining \. on input line 337.
 LaTeX Info: Redefining \% on input line 337.
 [33 <../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected.png (PNG copy)> <../Clima/Graphs/2EeV_ICRC_2019_S38_S1000_expected_05_18.png (PNG copy)>])
-LaTeX Info: Redefining \. on input line 134.
-LaTeX Info: Redefining \% on input line 134.
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
  [34]
 Cap\'{\i }tulo 6.
 (../Anisotropia/anisotropia_weather.tex [35
 
 ]
-<../Anisotropia/pesos_solar_siderea.png, id=1062, 1129.21875pt x 564.60938pt>
+<../Anisotropia/pesos_solar_siderea.png, id=1070, 1129.21875pt x 564.60938pt>
 File: ../Anisotropia/pesos_solar_siderea.png Graphic file (type png)
 <use ../Anisotropia/pesos_solar_siderea.png>
 Package pdftex.def Info: ../Anisotropia/pesos_solar_siderea.png  used on input line 46.
@@ -1097,17 +1077,17 @@ LaTeX Info: Redefining \% on input line 58.
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
  [37]
-<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png, id=1084, 867.24pt x 433.62pt>
+<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png, id=1092, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png  used on input line 101.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png, id=1085, 867.24pt x 433.62pt>
+<../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png, id=1093, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png  used on input line 107.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-<../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png, id=1086, 867.24pt x 433.62pt>
+<../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png, id=1094, 867.24pt x 433.62pt>
 File: ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png Graphic file (type png)
 <use ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png>
 Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png  used on input line 122.
@@ -1115,12 +1095,12 @@ Package pdftex.def Info: ../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png  used on
 LaTeX Info: Redefining \. on input line 125.
 LaTeX Info: Redefining \% on input line 125.
  [38 <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw.png> <../Anisotropia/ICRC/ICRC2017_Ecor_Eraw_hex.png>]
-<../Anisotropia/comparacion_deltaE.png, id=1096, 752.8125pt x 564.60938pt>
+<../Anisotropia/comparacion_deltaE.png, id=1104, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/comparacion_deltaE.png Graphic file (type png)
 <use ../Anisotropia/comparacion_deltaE.png>
 Package pdftex.def Info: ../Anisotropia/comparacion_deltaE.png  used on input line 157.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/histograma_deltaE.png, id=1097, 752.8125pt x 602.25pt>
+<../Anisotropia/histograma_deltaE.png, id=1105, 752.8125pt x 602.25pt>
 File: ../Anisotropia/histograma_deltaE.png Graphic file (type png)
 <use ../Anisotropia/histograma_deltaE.png>
 Package pdftex.def Info: ../Anisotropia/histograma_deltaE.png  used on input line 162.
@@ -1128,7 +1108,7 @@ Package pdftex.def Info: ../Anisotropia/histograma_deltaE.png  used on input lin
 LaTeX Info: Redefining \. on input line 167.
 LaTeX Info: Redefining \% on input line 167.
  [39 <../Anisotropia/ICRC/ICRC2019_Eraw_Eraw_hex.png>]
-<../Anisotropia/comparacion_reconstruccion.png, id=1106, 903.375pt x 602.25pt>
+<../Anisotropia/comparacion_reconstruccion.png, id=1114, 903.375pt x 602.25pt>
 File: ../Anisotropia/comparacion_reconstruccion.png Graphic file (type png)
 <use ../Anisotropia/comparacion_reconstruccion.png>
 Package pdftex.def Info: ../Anisotropia/comparacion_reconstruccion.png  used on input line 173.
@@ -1136,17 +1116,17 @@ Package pdftex.def Info: ../Anisotropia/comparacion_reconstruccion.png  used on 
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
  [40 <../Anisotropia/comparacion_deltaE.png (PNG copy)> <../Anisotropia/histograma_deltaE.png (PNG copy)> <../Anisotropia/comparacion_reconstruccion.png (PNG copy)>]
-<../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png, id=1112, 867.24pt x 433.62pt>
+<../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png, id=1120, 867.24pt x 433.62pt>
 File: ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png Graphic file (type png)
 <use ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png>
 Package pdftex.def Info: ../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png  used on input line 201.
 (pdftex.def)             Requested size: 264.61331pt x 132.30353pt.
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png, id=1115, 903.375pt x 489.32813pt>
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png, id=1123, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png  used on input line 230.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png, id=1116, 903.375pt x 489.32813pt>
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png, id=1124, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png  used on input line 236.
@@ -1154,17 +1134,17 @@ Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1
 LaTeX Info: Redefining \. on input line 245.
 LaTeX Info: Redefining \% on input line 245.
  [41 <../Anisotropia/AllTriggers/AllTriggers_2017_Short_range_Above_1_EeV.png> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2017_1EeV.png (PNG copy)> <../Anisotropia/daily_rate/daily_rate_AllTriggers_2019_1EeV.png (PNG copy)>]
-<../Anisotropia/params/ap_2017_above_1EeV.png, id=1128, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/ap_2017_above_1EeV.png, id=1136, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2017_above_1EeV.png  used on input line 259.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2017_above_1EeV.png, id=1129, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2017_above_1EeV.png, id=1137, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2017_above_1EeV.png  used on input line 265.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2017_above_1EeV.png, id=1130, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2017_above_1EeV.png, id=1138, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2017_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2017_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2017_above_1EeV.png  used on input line 272.
@@ -1177,22 +1157,22 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 258--276
 LaTeX Info: Redefining \. on input line 280.
 LaTeX Info: Redefining \% on input line 280.
 [42 <../Anisotropia/params/ap_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_above_1EeV.png (PNG copy)>]
-<../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png, id=1137, 903.375pt x 489.32813pt>
+<../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png, id=1145, 903.375pt x 489.32813pt>
 File: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png Graphic file (type png)
 <use ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png  used on input line 287.
 (pdftex.def)             Requested size: 220.50885pt x 119.44217pt.
-<../Anisotropia/params/ap_2020_above_1EeV.png, id=1138, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/ap_2020_above_1EeV.png, id=1146, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2020_above_1EeV.png  used on input line 300.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2020_above_1EeV.png, id=1139, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2020_above_1EeV.png, id=1147, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2020_above_1EeV.png  used on input line 306.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2020_above_1EeV.png, id=1140, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2020_above_1EeV.png, id=1148, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2020_above_1EeV.png  used on input line 313.
@@ -1205,17 +1185,17 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 299--317
 LaTeX Info: Redefining \. on input line 319.
 LaTeX Info: Redefining \% on input line 319.
 [43 <../Anisotropia/daily_rate/daily_rate_AllTriggers_2020_1EeV.png (PNG copy)>]
-<../Anisotropia/params/ap_2017_2020_above_1EeV.png, id=1148, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/ap_2017_2020_above_1EeV.png, id=1156, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/ap_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/ap_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/ap_2017_2020_above_1EeV.png  used on input line 327.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/arho_2017_2020_above_1EeV.png, id=1149, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/arho_2017_2020_above_1EeV.png, id=1157, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/arho_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/arho_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/arho_2017_2020_above_1EeV.png  used on input line 332.
 (pdftex.def)             Requested size: 220.50885pt x 165.37802pt.
-<../Anisotropia/params/brho_2017_2020_above_1EeV.png, id=1150, 752.8125pt x 564.60938pt>
+<../Anisotropia/params/brho_2017_2020_above_1EeV.png, id=1158, 752.8125pt x 564.60938pt>
 File: ../Anisotropia/params/brho_2017_2020_above_1EeV.png Graphic file (type png)
 <use ../Anisotropia/params/brho_2017_2020_above_1EeV.png>
 Package pdftex.def Info: ../Anisotropia/params/brho_2017_2020_above_1EeV.png  used on input line 338.
@@ -1228,8 +1208,8 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 326--341
 LaTeX Info: Redefining \. on input line 343.
 LaTeX Info: Redefining \% on input line 343.
 [44 <../Anisotropia/params/ap_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2020_above_1EeV.png (PNG copy)>])
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
  [45 <../Anisotropia/params/ap_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/arho_2017_2020_above_1EeV.png (PNG copy)> <../Anisotropia/params/brho_2017_2020_above_1EeV.png (PNG copy)>]
 Cap\'{\i }tulo 7.
 (../1_Metodo/metodo_v5.tex [46
@@ -1238,12 +1218,12 @@ Cap\'{\i }tulo 7.
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
  [47]
-<../1_Metodo/pesos_referencia.png, id=1190, 645.41125pt x 563.10374pt>
+<../1_Metodo/pesos_referencia.png, id=1198, 645.41125pt x 563.10374pt>
 File: ../1_Metodo/pesos_referencia.png Graphic file (type png)
 <use ../1_Metodo/pesos_referencia.png>
 Package pdftex.def Info: ../1_Metodo/pesos_referencia.png  used on input line 56.
 (pdftex.def)             Requested size: 220.50885pt x 192.3807pt.
-<../1_Metodo/weigths_2020.png, id=1193, 867.24pt x 578.16pt>
+<../1_Metodo/weigths_2020.png, id=1201, 867.24pt x 578.16pt>
 File: ../1_Metodo/weigths_2020.png Graphic file (type png)
 <use ../1_Metodo/weigths_2020.png>
 Package pdftex.def Info: ../1_Metodo/weigths_2020.png  used on input line 63.
@@ -1257,21 +1237,21 @@ LaTeX Info: Redefining \% on input line 81.
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
  [50]
-<../1_Metodo/sin_pesos_referencia_8_EeV.png, id=1233, 867.24pt x 578.16pt>
+<../1_Metodo/sin_pesos_referencia_8_EeV.png, id=1241, 867.24pt x 578.16pt>
 File: ../1_Metodo/sin_pesos_referencia_8_EeV.png Graphic file (type png)
 <use ../1_Metodo/sin_pesos_referencia_8_EeV.png>
 Package pdftex.def Info: ../1_Metodo/sin_pesos_referencia_8_EeV.png  used on input line 130.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 )
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
  [51]
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
  [52 <../1_Metodo/sin_pesos_referencia_8_EeV.png>]
 Cap\'{\i }tulo 8.
 (../6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8.tex
-<../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png, id=1257, 903.375pt x 489.32813pt>
+<../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png, id=1265, 903.375pt x 489.32813pt>
 File: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png  used on input line 7.
@@ -1279,17 +1259,17 @@ Package pdftex.def Info: ../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png  use
  [53
 
  <../6_Dipole_1-2_EeV/rate_over_1-2_EeV-theta-60.png (PNG copy)>]
-<../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png, id=1265, 903.375pt x 602.25pt>
+<../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png, id=1273, 903.375pt x 602.25pt>
 File: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png  used on input line 33.
 (pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-<../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png, id=1266, 903.375pt x 602.25pt>
+<../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png, id=1274, 903.375pt x 602.25pt>
 File: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png  used on input line 38.
 (pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-<../6_Dipole_1-2_EeV/weights_2013_2020.png, id=1269, 867.24pt x 578.16pt>
+<../6_Dipole_1-2_EeV/weights_2013_2020.png, id=1277, 867.24pt x 578.16pt>
 File: ../6_Dipole_1-2_EeV/weights_2013_2020.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/weights_2013_2020.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/weights_2013_2020.png  used on input line 50.
@@ -1297,7 +1277,7 @@ Package pdftex.def Info: ../6_Dipole_1-2_EeV/weights_2013_2020.png  used on inpu
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
  [54 <../6_Dipole_1-2_EeV/deltaE_tiempo_v2_rango_1_2.png (PNG copy)> <../6_Dipole_1-2_EeV/histograma_deltaE_v3_rango_1_2.png (PNG copy)>]
-<../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png, id=1278, 939.51pt x 578.16pt>
+<../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png, id=1286, 939.51pt x 578.16pt>
 File: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png  used on input line 62.
@@ -1305,7 +1285,7 @@ Package pdftex.def Info: ../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png  used on 
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
  [55 <../6_Dipole_1-2_EeV/weights_2013_2020.png>]
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png, id=1289, 903.375pt x 602.25pt>
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png, id=1297, 903.375pt x 602.25pt>
 File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png  used on input line 89.
@@ -1313,12 +1293,12 @@ Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png 
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
  [56 <../6_Dipole_1-2_EeV/pesos_sin_con_1_2_EeV.png>]
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=1296, 903.375pt x 602.25pt>
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=1304, 903.375pt x 602.25pt>
 File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png  used on input line 98.
 (pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
-<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=1297, 903.375pt x 602.25pt>
+<../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=1305, 903.375pt x 602.25pt>
 File: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png Graphic file (type png)
 <use ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png>
 Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png  used on input line 103.
@@ -1333,20 +1313,20 @@ Cap\'{\i }tulo 9.
 [59
 
 ]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
  [60]
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
  [61]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
  [62]
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
  [63]
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
 
 
 Package Fancyhdr Warning: \headheight is too small (15.68335pt): 
@@ -1355,82 +1335,80 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [64]
-LaTeX Info: Redefining \. on input line 234.
-LaTeX Info: Redefining \% on input line 234.
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
  [65]
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
  [66]
-LaTeX Info: Redefining \. on input line 294.
-LaTeX Info: Redefining \% on input line 294.
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
  [67]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 334.
+(hyperref)                removing `\begingroup' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 334.
+(hyperref)                removing `\<let>-command' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 334.
+(hyperref)                removing `\NAT@ctype' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 334.
+(hyperref)                removing `\z@' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 334.
+(hyperref)                removing `\let' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 334.
+(hyperref)                removing `\let' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 334.
+(hyperref)                removing `\new@ifnextchar' on input line 339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 334.
+(hyperref)                removing `subscript' on input line 339.
 
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
-[68]) (../report_16_EW_PDF_IB_style/report_EW_PDF.tex
+) (../report_16_EW_PDF_IB_style/report_EW_PDF.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [69]
+ [68]
 Cap\'{\i }tulo 10.
-<../report_16_EW_PDF_IB_style/bessel_prob.pdf, id=1452, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/bessel_prob.pdf, id=1441, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/bessel_prob.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/bessel_prob.pdf>
 Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob.pdf  used on input line 22.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-[70
+[69
 
 ]
-<../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf, id=1462, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf, id=1452, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf>
 Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf  used on input line 39.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
- [71 <../report_16_EW_PDF_IB_style/bessel_prob.pdf>]
-<../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf, id=1518, 867.24pt x 578.16pt>
+ [70 <../report_16_EW_PDF_IB_style/bessel_prob.pdf>]
+<../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf, id=1508, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf>
 Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf  used on input line 53.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 63.
 LaTeX Info: Redefining \% on input line 63.
- [72 <../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf> <../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf
+ [71 <../report_16_EW_PDF_IB_style/bessel_prob_value_s.pdf> <../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf
 
 pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/bessel_prob_iterations.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf, id=1641, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf, id=1631, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf>
 Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf  used on input line 72.
@@ -1438,152 +1416,121 @@ Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pd
 ) (../report_16_EW_PDF_IB_style/report_EW_results_Ray.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [73 <../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf>]
+ [72 <../report_16_EW_PDF_IB_style/bessel_prob_ej_0-25_0-5.pdf>]
 Cap\'{\i }tulo 11.
-
-Package natbib Warning: Citation `codigo' on page 74 undefined on input line 39.
-
-
-Package natbib Warning: Citation `codigo' on page 74 undefined on input line 40.
-
-
-Package natbib Warning: Citation `codigo' on page 74 undefined on input line 41.
-
-[74
+[73
 
 ]
-<../report_16_EW_PDF_IB_style/phase_primer_bin.pdf, id=1714, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/phase_primer_bin.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_primer_bin.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_primer_bin.pdf  used on input line 63.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf, id=1715, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf, id=1711, 722.7pt x 505.89pt>
+File: ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf  used on input line 69.
+(pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
+<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf, id=1712, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 73.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 79.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
- [75 <../report_16_EW_PDF_IB_style/phase_primer_bin.pdf>]
-<../report_16_EW_PDF_IB_style/phase_segundo_bin.pdf, id=1760, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/phase_segundo_bin.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_segundo_bin.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_segundo_bin.pdf  used on input line 90.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
- [76 <../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>]
-
-Package natbib Warning: Citation `codigo' on page 77 undefined on input line 103.
-
-
-Package natbib Warning: Citation `codigo' on page 77 undefined on input line 104.
-
-
-Package natbib Warning: Citation `codigo' on page 77 undefined on input line 108.
-
-<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf, id=1821, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [74 <../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf>]
+<../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf, id=1756, 722.7pt x 505.89pt>
+File: ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf  used on input line 96.
+(pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [75 <../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>]
+<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf, id=1824, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 125.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 132.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
-[77 <../report_16_EW_PDF_IB_style/phase_segundo_bin.pdf>]
-
-Package natbib Warning: Citation `codigo' on page 78 undefined on input line 161.
-
-
-Package natbib Warning: Citation `codigo' on page 78 undefined on input line 166.
-
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
-[78 <../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>]
-<../report_16_EW_PDF_IB_style/phase_tercer_bin.pdf, id=1925, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/phase_tercer_bin.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_tercer_bin.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_tercer_bin.pdf  used on input line 178.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf, id=1928, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
+ [76 <../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf>]
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
+ [77 <../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>]
+<../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf, id=1931, 722.7pt x 505.89pt>
+File: ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf  used on input line 194.
+(pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+ [78 <../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf>]
+<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf, id=1971, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 192.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 208.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
- [79 <../report_16_EW_PDF_IB_style/phase_tercer_bin.pdf>]
-<../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf, id=1971, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf  used on input line 208.
+<../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf, id=1973, 867.24pt x 578.16pt>
+File: ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf  used on input line 224.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
- [80 <../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf> <../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
+ [79 <../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf> <../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/d_perp_no_normalizado_v4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../report_16_EW_PDF_IB_style/d_perp_normalizado.pdf, id=2089, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/d_perp_normalizado.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/d_perp_normalizado.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_normalizado.pdf  used on input line 220.
+<../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf, id=2093, 867.24pt x 578.16pt>
+File: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf  used on input line 248.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf, id=2091, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf  used on input line 232.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
- [81 <../report_16_EW_PDF_IB_style/d_perp_normalizado.pdf> <../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf
+<../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf, id=2096, 954.68669pt x 625.13548pt>
+File: ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf Graphic file (type pdf)
+<use ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf>
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf  used on input line 265.
+(pdftex.def)             Requested size: 396.91324pt x 259.90332pt.
+LaTeX Info: Redefining \. on input line 271.
+LaTeX Info: Redefining \% on input line 271.
+ [80 <../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf>]
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+ [81 <../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf>]
+Cap\'{\i }tulo 12.
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../report_16_EW_PDF_IB_style/comparando_sigmas_v2.pdf, id=2227, 816.65097pt x 623.69008pt>
-File: ../report_16_EW_PDF_IB_style/comparando_sigmas_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/comparando_sigmas_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/comparando_sigmas_v2.pdf  used on input line 249.
-(pdftex.def)             Requested size: 330.76328pt x 252.61212pt.
-
-Overfull \hbox (30.95804pt too wide) in paragraph at lines 259--259
+Overfull \hbox (30.95804pt too wide) in paragraph at lines 276--276
 []\OT1/cmr/bx/n/17.28 Verificaci^^Son del c^^Sodi-go es-cri-to du-ran-te la maestr^^S^^Pa 
  []
 
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
-[82 <../report_16_EW_PDF_IB_style/comparando_sigmas_v2.pdf>]
+[82
 
-Package natbib Warning: Citation `codigo' on page 83 undefined on input line 271.
-
+]
 File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 316.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 333.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf, id=2285, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf, id=2223, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf  used on input line 317.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf  used on input line 334.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-LaTeX Info: Redefining \. on input line 323.
-LaTeX Info: Redefining \% on input line 323.
-[83]
+LaTeX Info: Redefining \. on input line 340.
+LaTeX Info: Redefining \% on input line 340.
+ [83]
 File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 327.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 344.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf, id=2292, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf, id=2230, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf  used on input line 328.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf  used on input line 345.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
 File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 338.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 355.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf, id=2293, 867.24pt x 578.16pt>
+<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf, id=2231, 867.24pt x 578.16pt>
 File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf Graphic file (type pdf)
 <use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf  used on input line 339.
+Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf  used on input line 356.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
 ) (../Conclusiones/conclusiones.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -1595,7 +1542,7 @@ pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v
 
 pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Cap\'{\i }tulo 12.
+Cap\'{\i }tulo 13.
 ) [85
 
 ] (./tesis.bbl [86
@@ -1609,41 +1556,38 @@ Overfull \hbox (99.46956pt too wide) in paragraph at lines 93--96
 LaTeX Info: Redefining \. on input line 145.
 LaTeX Info: Redefining \% on input line 145.
 [87])
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
  [88]
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
-(./tesis.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+ (./tesis.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2556F3C2C65E397B936C6D23391A979E;6694.
+(rerunfilecheck)             Checksum: 44F3D78850E95DC8E79BB259677F748B;6853.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 14029 strings out of 482719
- 229533 string characters out of 5953361
- 531699 words of memory out of 5000000
- 28524 multiletter control sequences out of 15000+600000
+ 14014 strings out of 482719
+ 229204 string characters out of 5953361
+ 533542 words of memory out of 5000000
+ 28520 multiletter control sequences out of 15000+600000
  555473 words of font info for 108 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  51i,17n,53p,1740b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis.pdf (98 pages, 5191718 bytes).
+Output written on tesis.pdf (98 pages, 5172241 bytes).
 PDF statistics:
- 2664 PDF objects out of 2984 (max. 8388607)
- 1740 compressed objects within 18 object streams
- 422 named destinations out of 1000 (max. 500000)
- 1024 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2601 PDF objects out of 2984 (max. 8388607)
+ 1734 compressed objects within 18 object streams
+ 412 named destinations out of 1000 (max. 500000)
+ 1035 words of extra memory for PDF output out of 10000 (max. 10000000)
 

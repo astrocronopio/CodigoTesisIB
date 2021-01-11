@@ -22,9 +22,11 @@ output_file_Ray_3="../Anisotropy/Files_AllTriggers_1_2_EeV/output_threshold_0con
 
 
 
-file_plot_EW =output_file_EW_3
-file_plot_Ray=output_file_Ray_3
-
+file_plot_EW =output_file_EW_1
+file_plot_Ray=output_file_Ray_1
+average_cos_dec = 0.786207199 
+average_sin_theta = 0.523010254      
+factor 	= 0.5*np.pi*average_cos_dec/average_sin_theta
 
 f_EW,r_EW,r99_EW= np.loadtxt(file_plot_EW, usecols=(0,4,8), unpack=True)
 f_Ray,r_Ray,r99_Ray= np.loadtxt(file_plot_Ray, usecols=(0,4,8), unpack=True)
@@ -79,6 +81,7 @@ def  plot_same_fig():
 
 def plot_dif_figs():
 	plt.figure(1)
+	
 	plt.ylabel("Amplitud r [%] (EW)")
 	plt.xlabel("Frecuencia [ciclos/año]")
 	plt.plot(f_EW, r_EW,label="EW", color='red', alpha=1)
@@ -103,7 +106,6 @@ def plot_dif_figs():
 	plt.axvline(x=366.25, ls=":", color="blue", alpha=0.5)
  
 	plt.show()
- 
  
 	
 plot_dif_figs()

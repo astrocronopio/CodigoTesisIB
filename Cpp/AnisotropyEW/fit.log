@@ -1,0 +1,481 @@
+
+
+*******************************************************************************
+Sun Jan 10 06:03:06 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=a/(sigma*sqrt(2.*pi))*exp(-(x-mu)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 9.8477275585e-01   0.00e+00  2.65e-01    4.800000e-01
+   5 1.5981160490e-01  -2.26e-10  2.65e+04    5.685243e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.2578e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568524         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:38:40 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=a/(sigma*sqrt(2.*pi))*exp(-(x-mu)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:47:15 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:48:08 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:49:42 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:50:15 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:50:25 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:50:59 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        x range restricted to [-0.498459 : 0.649461]
+        #datapoints = 91
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 4.4691915957e-01   0.00e+00  5.13e-01    5.000000e-01
+   4 4.5401251172e-02  -2.35e-02  5.13e-05    5.738877e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0454013
+rel. change during last iteration : -2.35491e-07
+
+degrees of freedom    (FIT_NDF)                        : 90
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0224602
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000504458
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.573888         +/- 0.002838     (0.4946%)
+
+
+*******************************************************************************
+Sun Jan 10 06:52:33 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:53:18 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 06:54:04 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 6.2524043391e-01   0.00e+00  2.60e-01    5.000000e-01
+   5 1.5981162294e-01  -2.95e-10  2.60e+04    5.685351e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.159812
+rel. change during last iteration : -2.95251e-15
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0179319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000321553
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.568535         +/- 0.001875     (0.3298%)
+
+
+*******************************************************************************
+Sun Jan 10 07:07:59 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 9.5861906936e-01   0.00e+00  2.60e-01    5.000000e-01
+   4 5.1763391299e-01  -2.72e-01  2.60e-05    5.665134e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.517634
+rel. change during last iteration : -2.72372e-06
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0322725
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00104152
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.566513         +/- 0.003356     (0.5924%)
+
+
+*******************************************************************************
+Sun Jan 10 07:10:26 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 9.6050002174e-01   0.00e+00  2.60e-01    5.000000e-01
+   4 5.1951430083e-01  -2.71e-01  2.60e-05    5.665135e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.519514
+rel. change during last iteration : -2.71435e-06
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0323311
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0010453
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.566514         +/- 0.003362     (0.5935%)
+
+
+*******************************************************************************
+Sun Jan 10 07:11:13 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 5.9965168335e-01   0.00e+00  2.60e-01    5.000000e-01
+   4 1.5866547939e-01  -8.89e-01  2.60e-05    5.665135e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.158665
+rel. change during last iteration : -8.88677e-06
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0178675
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000319246
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.566514         +/- 0.001858     (0.328%)
+
+
+*******************************************************************************
+Sun Jan 10 07:11:56 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 5.9965168335e-01   0.00e+00  2.60e-01    5.000000e-01
+   4 1.5866547939e-01  -8.89e-01  2.60e-05    5.665135e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.158665
+rel. change during last iteration : -8.88677e-06
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0178675
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000319246
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.566514         +/- 0.001858     (0.328%)
+
+
+*******************************************************************************
+Sun Jan 10 07:16:59 2021
+
+
+FIT:    data read from "barrido_pdf+phase.txt" u 2:3
+        format = x:z
+        #datapoints = 498
+        residuals are weighted equally (unit weight)
+
+function used for fitting: gauss(x)
+	gauss(x)=1/(sigma*sqrt(2.*pi))*exp(-(x)**2./(2.*sigma**2))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   sigma        
+   0 5.9965168335e-01   0.00e+00  2.60e-01    5.000000e-01
+   4 1.5866547939e-01  -8.89e-01  2.60e-05    5.665135e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.158665
+rel. change during last iteration : -8.88677e-06
+
+degrees of freedom    (FIT_NDF)                        : 497
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0178675
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000319246
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+sigma           = 0.566514         +/- 0.001858     (0.328%)

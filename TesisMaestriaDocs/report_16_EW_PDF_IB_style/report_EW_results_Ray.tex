@@ -1,28 +1,33 @@
 
-\chapter{Resultados del método EW}
+\chapter{Resultados del método East - West}
 
+En este capítulo se presentan los resultados obtenidos mediante el método East-West con los eventos de Todos los Disparos en distintos rangos de energía. Estos resultados se comparan con los valores obtenidos en \cite{Aab_2020} sobre los eventos  del Disparo Estándar. 
+% \section{Tabla cantidad de eventos para distintos rangos de energía}
 
-\section{Tabla cantidad de eventos para distintos rangos de energía}
-
-Los eventos son clasificados en los distintos rangos con la energía reportada el archivo del Herald de todos los disparos  entre el 2014 y 2019 y para el disparo estándar entre el 2004 y 2018.
-
+Los eventos son clasificados en los distintos rangos con la energía reportada el conjunto de eventos registrados mediante de todos los disparos  entre el 2014 y 2019 y para el disparo estándar entre el 2004 y 2018.
 
 \begin{table}[H]
     \begin{small}
         \begin{center}
-            \begin{tabular}{|l|l|l|l|l|}
-                \hline
-                \multicolumn{2}{|l|}{Rango}                                                          & 0.25 EeV- 0.5 EeV & 0.5 EeV - 1 EeV & 1 EeV - 2 EeV \\ \hline
-                \multirow{2}{*}{Eventos}                                                  & Todos    & $3\,967\,368$     & $3\,638\,226$   & $1\,081\,846$ \\ \cline{2-5} 
-                                                                                          & Estandar & $770\,323$        & $2\,388\,468$   & $1\,243\,098$ \\ \hline
-                \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Energía \\ Media\end{tabular}} & Todos    & $0.375$           & $0.687$         & $1.315$       \\ \cline{2-5} 
-                                                                                          & Estandar & $0.42$            & $0.71$          & $1.34$.       \\ \hline
-                \end{tabular}
+            \begin{tabular}{lc|l|l|l|}
+\hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Rango \\ Tiempo\end{tabular}}}    & Todos       & Inicio &\multicolumn{2}{l|}{1 de Enero, 2014 } \\ \cline{3-5} 
+\multicolumn{1}{|l|}{}                                                                            & 6 años      & Fin    &\multicolumn{2}{l|}{1 de Enero, 2020} \\ \cline{2-5} 
+\multicolumn{1}{|l|}{}                                                                            & Estándar    & Inicio &\multicolumn{2}{l|}{1 de Enero, 2004} \\ \cline{3-5}
+\multicolumn{1}{|l|}{}                                                                            & 14.8 años   & Fin    &\multicolumn{2}{l|}{1 de Octubre, 2018} \\ \hline  \\
+
+\hline                                                                          \multicolumn{2}{|c|}{Rango [EeV]}                                                    & \multicolumn{1}{c|}{0.25 - 0.5}  & \multicolumn{1}{c|}{ 0.5  - 1 } &\multicolumn{1}{c|}{ 1 - 2 } \\ \hline
+\multicolumn{1}{|l|}{\multirow{2}{*}{Eventos}}                            & Todos    & $3\,967\,368$     & $3\,638\,226$   & $1\,081\,846$ \\ \cline{2-5} 
+\multicolumn{1}{|l|}{}                                                    & Estándar & $770\,323$        & $2\,388\,468$   & $1\,243\,098$ \\ \hline
+\multicolumn{1}{|l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Energía \\ Media\end{tabular}}} & Todos    & $0.38$           & $0.69$         & $1.32$       \\ \cline{2-5} 
+\multicolumn{1}{|l|}{}                                                                             & Estándar & $0.42$            & $0.71$          & $1.34$       \\ \hline
+\end{tabular}
             \caption{Tabla de eventos por rango de energía }
             \label{tab:}
         \end{center}
     \end{small}
 \end{table}
+
 
 
 \section{Resultados en distintos rangos de energía}
@@ -33,24 +38,25 @@ Las fases tiene un margen donde se solapan en la incertidumbre pero no son compa
 \begin{table}[H]
     \begin{small}
         \begin{center}
-            \begin{tabular}[c]{l|c||c|c}
-                Frecuencia:                 & 365.25	  & 366.25	                    & 366.25 \cite{Aab_2020}   \\ 
-                \hline
-                Amplitud r [\%]:            & 0.17	      & $0.12^{+0.24}_{-0.03}$ 	    & $0.5^{+0.4}_{-0.2}$ \cite{codigo}      \\
-                $r_{99}$ [\%]:              & 0.73	      & 0.6                         & 1.5\cite{codigo}                 \\
-                $r^{UL}$ [\%]:              & - 	      & -                           & -\cite{codigo}                 \\
-                \hline
-                Amplitud $d_\perp$[\%]:     & -	          & $0.16^{+0.31}_{-0.04}$ 	    & $0.6^{+0.6}_{-0.3}$       \\
-                $d_{99}$ [\%]:              & - 	      & -                           & -                 \\
-                $d_{\perp,UL}$[\%]:         & -           & 0.8       & 1.8      \\
-                \hline
-                $\sigma_{x,y}$[\%]:         & -	          & 0.24	   & 0.48       \\
-                Probabilidad      :         & 0.66        & 0.81	   & 0.45       \\
-                Fase[$^o$]:                 & 221$\pm$63  & 280$\pm$88 & 225$\pm$64\cite{discrepancia} \\
+            \begin{tabular}[c]{l|c|c||c|}
+\cline{2-4}                                       & \multicolumn{2}{c||}{Todos los disparos}    & \multicolumn{1}{c|}{Disparo Estándar}   \\ \hline
+\multicolumn{1}{|l|}{Frecuencia:                } & Solar	                & Sidérea	                & Sidérea \cite{Aab_2020}   \\ \hline
+\multicolumn{1}{|l|}{Amplitud r [\%]:           } & $0.17^{+0.22}_{-0.07}$	& $0.12^{+0.24}_{-0.03}$ 	& $0.5^{+0.4}_{-0.2}$ \cite{codigo}      \\
+\multicolumn{1}{|l|}{$r_{99}$ [\%]:             } & \multicolumn{2}{c||}{0.58}                          & 1.1\cite{codigo}                 \\
+\multicolumn{1}{|l|}{$r^{UL}$ [\%]:             } & 0.67 	                & 0.64                      & 1.4\cite{codigo}                 \\ 
+\multicolumn{1}{|l|}{$\sigma$[\%]:              } & \multicolumn{2}{c||}{0.19}                          & 0.38\cite{codigo}       \\\hline
+\multicolumn{1}{|l|}{Amplitud $d_\perp$[\%]:    } & -	                    & $0.16^{+0.31}_{-0.04}$ 	& $0.6^{+0.5}_{-0.3}$       \\
+\multicolumn{1}{|l|}{$d_{99}$ [\%]:             } & - 	                    & 0.73                      & 1.5  \cite{codigo}                \\
+\multicolumn{1}{|l|}{$d_{\perp}^{UL}[\%]$       } & -                       & 0.80                      & 1.8                         \\
+\multicolumn{1}{|l|}{$\sigma_{x,y}$[\%]:        } & -	                    & 0.24	                    & 0.48       \\\hline
+\multicolumn{1}{|l|}{Probabilidad      :        } & 0.66                    & 0.81	                    & 0.45       \\
+\multicolumn{1}{|l|}{Fase[$^o$]:                } & 221$\pm$93              & 280$\pm$124                & 225$\pm$64\\ \hline
+\multicolumn{1}{|l|}{$\langle\cos\delta \rangle$} & \multicolumn{2}{c||}{0.79}        	                & 0.79 \cite{codigo}        \\        
+\multicolumn{1}{|l|}{$\langle\sin\theta \rangle$} & \multicolumn{2}{c||}{0.46}        	                & 0.52 \cite{codigo}        \\ \hline       
             \end{tabular}
         \end{center}
     \end{small}
-    \caption{Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV}
+    \caption{Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV.}
     \label{tab:solar}
 \end{table}
 
@@ -60,7 +66,7 @@ Realizando el barrido de frecuencias con la variable de la Ec.\ref{ra_arb}, se o
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{phase_primer_bin.pdf}
+            \includegraphics[width=0.75\textwidth]{phase_primer_bin_v2.pdf}
         \end{center}
         \caption{Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el  rango 0.25 EeV - 0.5 EeV .}
         \label{fig:primer}
@@ -87,7 +93,7 @@ El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango 
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{phase_segundo_bin.pdf}
+            \includegraphics[width=0.75\textwidth]{phase_segundo_bin_v2.pdf}
         \end{center}
         \caption{Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el  rango 0.5 EeV - 1.0 EeV .}
         \label{fig:segundo}
@@ -97,20 +103,21 @@ El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango 
 \begin{table}[H]
         \begin{small}
             \begin{center}
-                \begin{tabular}[c]{l|c||c|c}
-                    Frecuencia:             & 365.25	    & 366.25		& 366.25\cite{Aab_2020}\\
-                    \hline
-                    Amplitud r [\%]:        & 0.42          & $0.4^{+0.2}_{-0.1}$ 	        & $0.40^{+0.2}_{-0.1}$\cite{codigo}  \\
-                    $r_{99}$[\%]:           & 0.70	        & 0.6          & 0.8\cite{codigo}  \\
-                    $d_{\perp,UL}[\%]$      & -             & 1.1          & 1.1\\                    
-                    \hline
-                    Amplitud $d_\perp$[\%]: & -             & $0.6^{+0.3}_{-0.2}$           & $0.50^{+0.3}_{-0.2}$\\
-                    $r_{99}$[\%]:           & 0.70	        & 0.6          & 0.8\cite{codigo}  \\
-                    $d_{\perp,UL}[\%]$      & -             & 1.1          & 1.1\\
-
-                    $\sigma_{x,y}$[\%]:     & -	            & 0.23	        & 0.27       \\
-                    Probabilidad:           & 0.06          & 0.06	        & 0.20\\
-                    Fase[$^o$]:             & 205$\pm$25	& 258$\pm$24	& 261$\pm$43\cite{discrepancia}   \\
+                \begin{tabular}[c]{l|c|c||c|}
+\cline{2-4}                                       & \multicolumn{2}{c||}{Todos los disparos}    & \multicolumn{1}{c|}{Disparo Estándar}   \\ \hline
+\multicolumn{1}{|l|}{Frecuencia:                } & Solar	                & Sidérea	                & Sidérea \cite{Aab_2020}   \\ \hline
+\multicolumn{1}{|l|}{Amplitud r [\%]:           } & $0.43^{+0.21}_{-0.14}$	& $0.44^{+0.21}_{-0.14}$ 	& $0.38^{+0.20}_{-0.14}$ \cite{codigo}      \\
+\multicolumn{1}{|l|}{$r_{99}$ [\%]:             } & \multicolumn{2}{c||}{0.56}                         & 0.64\cite{codigo}                 \\
+\multicolumn{1}{|l|}{$r^{UL}$ [\%]:             } & 0.89 	                & 0.90                      & 0.90 \cite{codigo}                 \\ 
+\multicolumn{1}{|l|}{$\sigma$[\%]:              } & \multicolumn{2}{c||}{0.18}                         & 0.21 \cite{codigo}      \\\hline
+\multicolumn{1}{|l|}{Amplitud $d_\perp$[\%]:    } & -	                    & $0.56^{+0.27}_{-0.18}$ 	& $0.5^{+0.3}_{-0.2}$       \\
+\multicolumn{1}{|l|}{$d_{99}$ [\%]:             } & - 	                    & 0.71                      & 0.8   \cite{codigo}                \\
+\multicolumn{1}{|l|}{$d_{\perp}^{UL}[\%]$       } & -                       & 1.1                       & 1.1                         \\
+\multicolumn{1}{|l|}{$\sigma_{x,y}$[\%]:        } & -	                    & 0.23	                    & 0.21       \\\hline
+\multicolumn{1}{|l|}{Probabilidad      :        } & 0.065                   & 0.055	                    & 0.20       \\
+\multicolumn{1}{|l|}{Fase[$^o$]:                } & 205$\pm$35              & 258$\pm$34                & 261$\pm$43\\ \hline
+\multicolumn{1}{|l|}{$\langle\cos\delta \rangle$} & \multicolumn{2}{c||}{0.79}        	                & 0.79 \cite{codigo}        \\        
+\multicolumn{1}{|l|}{$\langle\sin\theta \rangle$} & \multicolumn{2}{c||}{0.50}        	                & 0.54\cite{codigo}        \\ \hline       
                 \end{tabular}
             \end{center}
         \end{small}
@@ -138,13 +145,16 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \begin{table}[H]
         \begin{small}
             \begin{center}
-                \begin{tabular}[c]{l|c|c}
-                                    & Rayleigh      & EW            \\\hline
-                    Frecuencia:     & 365.25	    & 365.25        \\
-                    Amplitud $r$  [\%]:  & 0.39     & 0.28     \\
-                    Probabilidad:   & 0.02          & 0.64          \\
-                    Fase:           & 288$\pm$20    & 279$\pm$61    \\
-                    $r_{99}$ [\%]:  & 0.41263       & 1.2       \\
+                \begin{tabular}[c]{l|c|c|}
+                    \cline{2-3}         & \multicolumn{2}{c|}{Todos los disparos} \\ \cline{2-3}
+                                        & Rayleigh                      & East - West            \\\hline
+\multicolumn{1}{|l|}{Frecuencia:}             &\multicolumn{2}{c|}{Solar}        \\
+\multicolumn{1}{|l|}{Amplitud $r$[\%]:} & $0.24^{+0.16}_{-0.09}$        & $0.28^{+0.35}_{-0.11}$ \\
+\multicolumn{1}{|l|}{$r_{99}$ [\%]:   } & 0.41                          & 0.91       \\
+\multicolumn{1}{|l|}{$r_{UL}$ [\%]:   } & 0.58                          & 1.1       \\
+\multicolumn{1}{|l|}{$\sigma$:        } & 0.14                          & 0.30          \\\hline
+\multicolumn{1}{|l|}{Probabilidad:    } & 0.22                          & 0.65          \\
+\multicolumn{1}{|l|}{Fase:            } & 260$\pm$48                    & 279$\pm$90    \\\hline
                 \end{tabular}
             \end{center}
         \end{small}
@@ -155,17 +165,23 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \begin{table}[H]
         \begin{small}
             \begin{center}
-                \begin{tabular}[c]{l|c||c|c}
-                                            & Rayleigh    & EW                          & EW\cite{Aab_2020}      \\\hline
-                    Frecuencia:             & 366.25	  & 366.25                      & 366.25        \\
-                    Amplitud $r$ [\%]:      & 0.40	      & $0.5^{+0.3}_{-0.2}$         & $0.14^{+0.37}_{-0.02}$\cite{codigo}       \\
-                    Amplitud $d_\perp$ [\%]:& 0.51        & $0.6^{+0.4}_{-0.3}$         & $0.18^{+0.47}_{-0.02}$       \\ 
-                    $\sigma_{x,y}$[\%]:     & -	          & 0.38	                    & 0.35          \\
-                    Probabilidad:           & 0.012	      & 0.26                        & 0.87          \\
-                    Fase[$^o$]:             & 330$\pm$20  & 320$\pm$30                  & 291$\pm$100 \cite{discrepancia}      \\
-                    $r_{99}$[\%]:           & 0.41	      & 0.9                         & 0.84\cite{codigo}        \\
-                    $d_{\perp,UL}[\%]$      & 0.53        & 1.6                         & 1.1        \\
-                \end{tabular}
+                \begin{tabular}[c]{l|c|c||c|}
+                    \cline{2-4}               &  \multicolumn{2}{c||}{Todos los Disparos}                  & Disparo Estándar      \\
+                    \cline{2-4}               & Rayleigh                      & East - West                 & East - West\cite{Aab_2020}      \\\hline
+\multicolumn{1}{|l|}{Frecuencia:             }& \multicolumn{2}{c||}{Sidérea}                               & Sidérea        \\ \hline
+\multicolumn{1}{|l|}{Amplitud $r$ [\%]:      }& $0.32^{+0.16}_{-0.10}$ 	      & $0.5^{+0.3}_{-0.2}$         & $0.14^{+0.37}_{-0.02}$\cite{codigo}       \\
+\multicolumn{1}{|l|}{$r_{99}$[\%]:           }& 0.41	                      & 0.91                        & 0.84\cite{codigo}        \\
+\multicolumn{1}{|l|}{$r^{UL}[\%]$      }      & 0.66                          & 1.3                         & 0.89 \cite{codigo}        \\
+\multicolumn{1}{|l|}{$\sigma$[\%]:     }      & 0.14                          & 0.30	                    & 0.28 \cite{codigo}          \\ \hline
+\multicolumn{1}{|l|}{Amplitud $d_\perp$ [\%]:}& $0.41^{+0.20}_{-0.13}$        & $0.6^{+0.4}_{-0.3}$         & $0.18^{+0.47}_{-0.02}$       \\ 
+\multicolumn{1}{|l|}{$d_{99}$[\%]:           }& 0.53	                      & 1.1                         & 1.1\cite{codigo}        \\
+\multicolumn{1}{|l|}{$d_{\perp}^{UL}[\%]$    }& 0.84                          & 1.6                         & 1.1        \\
+\multicolumn{1}{|l|}{$\sigma_{x,y}$[\%]:     }& 0.17                          & 0.38	                    & 0.35          \\ \hline
+\multicolumn{1}{|l|}{Probabilidad:           }& 0.063	                      & 0.26                        & 0.87          \\
+\multicolumn{1}{|l|}{Fase[$^o$]:             }& 357$\pm$35                    & 320$\pm$50                 & 291$\pm$100      \\\hline
+\multicolumn{1}{|l|}{$\langle\cos\delta\rangle$} & \multicolumn{2}{c||}{0.78}                              & 0.78       \\        
+\multicolumn{1}{|l|}{$\langle\sin\theta\rangle$} & \multicolumn{2}{c||}{0.55}                              & 0.57       \\ \hline       
+\end{tabular}
             \end{center}
         \end{small}
         \caption{Características para la frecuencia sidérea con los métodos de Rayleigh  e East-West en el primer armónico.}
@@ -175,7 +191,7 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \begin{figure}[H]
         \begin{small}
             \begin{center}
-                \includegraphics[width=0.75\textwidth]{phase_tercer_bin.pdf}
+                \includegraphics[width=0.75\textwidth]{phase_tercer_bin_v2.pdf}
             \end{center}
         \caption{Valores de las fases obtenidos en este trabajo y en la referencia con sus respectivas incertidumbres para la frecuencia sidérea en el  rango 1.0 EeV - 2.0 EeV .}
         \label{fig:tercer}
@@ -183,7 +199,7 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \end{figure}
 
 
-    El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango de energía se observa en la Fig.\ref{fig:tercer_barrido}. La línea horizontal indica el valor de $r_{99}$ para cada frecuencia y se observa que ninguna frecuencia supera dicho umbral. En la frecuencia solar no se observa ningún pico, esto se debe a que el método EW es robusto con respecto a las modulación del clima. Se observa un pico en sidérea pero el mismo no es significativo con respecto al $r_{99}$.
+    El barrido de frecuencias con la variable de la Ec.\ref{ra_arb} para este rango de energía se observa en la Fig.\ref{fig:tercer_barrido}. La línea horizontal indica el valor de $r_{99}$ para cada frecuencia y se observa que ninguna frecuencia supera dicho umbral. En la frecuencia solar no se observa ningún pico, esto se debe a que el método East - West es robusto con respecto a las modulación del clima. Se observa un pico en sidérea pero el mismo no es significativo con respecto al $r_{99}$.
 
 
     \begin{figure}[H]
@@ -205,31 +221,31 @@ En las Tablas \ref{tab:solar_3} y \ref{tab:siderea_3} se comparan los resultados
     \begin{figure}[H]
         \begin{small}
             \begin{center}
-                \includegraphics[width=0.75\textwidth]{d_perp_no_normalizado_v2.pdf}
+                \includegraphics[width=0.75\textwidth]{d_perp_no_normalizado_v4.pdf}
             \end{center}
             \caption{Sin normalizar}
             \label{fig:no_normalizado}
         \end{small}
     \end{figure}
     
-    Para compararlos mejor con respecto a $d_{\perp,UL}$, usamos el valor de cada rango y de cada conjunto de datos, para normalizar la amplitud de $d_{\perp,UL}$. Como se muestra en la Fig.\ref{fig:normalizado}, ahora $d_{\perp,UL}=1$ y los otros valores se pueden comparar. 
+    % Para compararlos mejor con respecto a $d_{\perp,UL}$, usamos el valor de cada rango y de cada conjunto de datos, para normalizar la amplitud de $d_{\perp,UL}$. Como se muestra en la Fig.\ref{fig:normalizado}, ahora $d_{\perp,UL}=1$ y los otros valores se pueden comparar. 
 
-    \begin{figure}[H]
-        \begin{small}
-            \begin{center}
-                \includegraphics[width=0.75\textwidth]{d_perp_normalizado.pdf}
-            \end{center}
-            \caption{Valores normalizados con $d_{\perp,UL}$}
-            \label{fig:normalizado}
-        \end{small}
-    \end{figure}
+    % \begin{figure}[H]
+    %     \begin{small}
+    %         \begin{center}
+    %             \includegraphics[width=0.75\textwidth]{d_perp_normalizado.pdf}
+    %         \end{center}
+    %         \caption{Valores normalizados con $d_{\perp,UL}$}
+    %         \label{fig:normalizado}
+    %     \end{small}
+    % \end{figure}
 
     También podemos comparar cuan apartados están con respecto al valor $\sigma_{x,y}$ y normalizar los valores en cada rango de energía, así se obtiene la Fig.\ref{fig:normalizado_sigma}.
 
     \begin{figure}[H]
         \begin{small}
             \begin{center}
-                \includegraphics[width=0.75\textwidth]{d_perp_normalizado_sigmas_v4.pdf}
+                \includegraphics[width=0.75\textwidth]{d_perp_normalizado_sigmas_v5.pdf}
             \end{center}
             \caption{Valores normalizados con $d_{\perp,UL}$}
             \label{fig:normalizado_sigma}
@@ -246,7 +262,7 @@ Considerando los valores de $\sigma$ y $d_\perp$ para cada rango de energía, pu
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{comparando_sigmas_v2.pdf}
+            \includegraphics[width=0.9\textwidth]{comparando_sigmas_v3.pdf}
         \end{center}
         \caption{Amplitudes con incertidumbre, apuntando en la dirección  de la fase. Los círculos punteados los valores de referencia del trabajo \cite{Aab_2020} con sus respectivas incertidumbres y la línea punteada en negro marca la dirección del centro galáctico.}
         \label{fig:incertidumbre}
@@ -254,6 +270,7 @@ Considerando los valores de $\sigma$ y $d_\perp$ para cada rango de energía, pu
 \end{figure}
 
 
+\chapter{extra}
 \section{Comparando resultados entre métodos para barridos de frecuencias}
 
 \section{Verificación del código escrito durante la maestría}
@@ -268,7 +285,7 @@ En el bin 2 EeV - 4 EeV, verifiqué sin cambiaba los números considerando los e
         \begin{center}
             \begin{tabular}[c]{l|c|c|c|c|}
                                             & \multicolumn{4}{|c|}{2 EeV - 4 EeV}                                                               \\ \hline
-                Frecuencia:                 & 366.25              & 366.25 (Sin pesos)  & 366.25 \cite{codigo}    & 366.25 \cite{Aab_2020}   \\ \hline
+                Frecuencia:                 & Sidérea              & Sidérea (Sin pesos)  & Sidérea \cite{codigo}    & Sidérea \cite{Aab_2020}   \\ \hline
                 Amplitud r [\%]:            & $0.5^{+0.3}_{-0.2}$ & $0.4^{+0.3}_{-0.2}$ & $0.5^{+0.3}_{-0.2}$     & -                          \\
                 $r_{99}$ [\%]:              & 0.8                 & 0.8                 & 0.8                     & -                          \\\hline
                 Amplitud $d_\perp$[\%]:     & $0.7^{+0.4}_{-0.2}$ & $0.5^{+0.4}_{-0.2}$ & $0.7^{+0.4}_{-0.2}$ 	  & $0.5^{+0.4}_{-0.2}$                    \\
@@ -276,7 +293,7 @@ En el bin 2 EeV - 4 EeV, verifiqué sin cambiaba los números considerando los e
                 $d_{\perp,UL}$[\%]:         & 1.9                 & 1.7                 & -                       & 1.4                               \\\hline
                 $\sigma_{x,y}$[\%]:         & 0.34	              & 0.34	            & 0.34	                  & 0.34                           \\
                 Probabilidad      :         & 0.14                & 0.33                & 0.15               	  & 0.34                       \\
-                Fase[$^o$]:                 & 355$\pm$29          & 351$\pm$38          & 346$\pm$29              & 349$\pm$55                    \\
+                Fase[$^o$]:                 & 355$\pm$29          & 351$\pm$38          & 346$\pm$29              & 349$\pm$55                    \\\hline
             \end{tabular}
         \end{center}
     \end{small}
@@ -288,8 +305,8 @@ En el bin 2 EeV - 4 EeV, verifiqué sin cambiaba los números considerando los e
     \begin{small}
         \begin{center}
             \begin{tabular}[c]{l|c|c||c|c|}
-                                            & \multicolumn{2}{|c||}{8 EeV - 16 EeV}              & \multicolumn{2}{|c|}{16 EeV - 32 EeV}                   \\ \hline
-                Frecuencia:                 & 366.25                    & 366.25 \cite{Aab_2020} & 366.25                   & 366.25 \cite{Aab_2020}   \\ \hline
+                                            & \multicolumn{2}{c||}{8 EeV - 16 EeV}              & \multicolumn{2}{c|}{16 EeV - 32 EeV}                   \\ \hline
+                Frecuencia:                 & Sidérea                    & Sidérea \cite{Aab_2020} & Sidérea                   & Sidérea \cite{Aab_2020}   \\ \hline
                 Amplitud r [\%]:            & $4.4^{+1.0}_{-0.8}$ 	    & -                      & $5.8^{+1.8}_{-1.3}$ 	    & -                         \\
                 $r_{99}$ [\%]:              & 2.6                       & -                      & 4.9                      & -                          \\\hline
                 Amplitud $d_\perp$[\%]:     & $5.6^{+1.2}_{-1.0}$ 	    & $5.6^{+1.2}_{-1.0}$    & $7.5^{+2.3}_{-1.8}$ 	    & $7.5^{+2.3}_{-1.8}$                   \\
@@ -297,7 +314,7 @@ En el bin 2 EeV - 4 EeV, verifiqué sin cambiaba los números considerando los e
                 $d_{\perp,UL}$[\%]:         & 10                        & -                      & 16                       & -                                 \\\hline
                 $\sigma_{x,y}$[\%]:         & 1.1	                    & 1.1                    & 2.1	                    & 2.1                           \\
                 Probabilidad      :         & $2.3\times10^{-6}$	    & $2.3\times10^{-6}$     & $1.5\times10^{-3}$	    & $1.5\times10^{-3}$              \\
-                Fase[$^o$]:                 & 96$\pm$11                 & 97$\pm$12              & 80$\pm$16                & 80$\pm$17                     \\
+                Fase[$^o$]:                 & 96$\pm$11                 & 97$\pm$12              & 80$\pm$16                & 80$\pm$17                     \\\hline
             \end{tabular}
         \end{center}
     \end{small}
@@ -307,7 +324,7 @@ En el bin 2 EeV - 4 EeV, verifiqué sin cambiaba los números considerando los e
 
 \section{Comparando amplitud en función de la frecuencia}
 
-En las Figs.\ref{fig:primer_barrido_EW_Ray}, \ref{fig:segundo_barrido_EW_Ray} y \ref{fig:tercer_barrido_EW_Ray} se comparan el barrido en frecuencia con el método EW y el barrido con Rayleigh considerando los pesos de los hexágonos en distintos rangos de energía.
+En las Figs.\ref{fig:primer_barrido_EW_Ray}, \ref{fig:segundo_barrido_EW_Ray} y \ref{fig:tercer_barrido_EW_Ray} se comparan el barrido en frecuencia con el método East - West y el barrido con Rayleigh considerando los pesos de los hexágonos en distintos rangos de energía.
 
 
 \begin{figure}[H]

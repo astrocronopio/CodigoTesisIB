@@ -5,7 +5,7 @@
 % \documentclass[11pt,papel,oneside,singlespace]{ibtesis}
 \documentclass[12pt,papel,oneside]{ibtesis}
 % \documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
-
+\decimalpoint
 %%%%%%%%%%%%%%%%%%%%% Paquetes extra %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Por conveniencia: aqu\'{\i} puede cargar todos los paquetes y definir los comandos 
 % que necesite
@@ -72,14 +72,14 @@
 \setcounter{secnumdepth}{6}
 \begin{document}
 
-\input{report_EW_calculo.tex}
+\input{report_EW_calculo_v2.tex}
 
 \input{report_EW_PDF.tex}
 
 \input{report_EW_results_Ray.tex}
 
 \begin{biblio}
-	\bibliography{mibib_16.bib}
+	\bibliography{mibib_16.bib, ../Tesis/mibib.bib}
 \end{biblio}
     
     \end{document}

@@ -190,4 +190,8 @@ Linsley, J.
 Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código implementado
   para los resultados del trabajo \cite{Aab_2020}.
 
+\bibitem{codigo}
+Este valor fue obtenido con el código implementado en el trabajo
+  \cite{Aab_2020}.
+
 \end{thebibliography}

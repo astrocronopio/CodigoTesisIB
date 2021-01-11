@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 mpl.rcParams.update({
 	'font.size': 20,
-	'figure.figsize': [10, 10],
-	'figure.autolayout': True,
+	'figure.figsize': [12, 10],
+	# 'figure.autolayout': True,
 	'font.family': 'serif',
 	'font.sans-serif': ['Palatino']})
 
@@ -12,23 +12,31 @@ import numpy as np
 ##########################################################
 # import matplotlib.pyplot as plt
 
-plt.grid(alpha=0.15)
+plt.grid(alpha=0.2)
 
-theta 	= 2*np.pi*(1./360.)*np.array([280,258,320])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-width 	= 2*np.pi*(1./360.)*np.array([88,23,30])#np.pi / 4 * np.random.rand(N)
 
-ref_theta 	= 2*np.pi*(1./360.)*np.array([225,261,291])#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
-ref_width 	= 2*np.pi*(1./360.)*np.array([64,43,100])#np.pi / 4 * np.random.rand(N)
+theta 	= np.array([280,258,320])
+width 	= np.array([124,34,50])
 
-vec_EW=    np.array([0.0016 , 0.0056 , 0.0063])
+ref_theta 	= np.array([225,261,291])
+ref_width 	= np.array([64,43,100])
+
+theta 	= 2*np.pi*(1./360.)*theta 	#np.linspace(0.0, 2 * np.pi, N, endpoint=False)
+width 	= 2*np.pi*(1./360.)*width 	#np.pi / 4 * np.random.rand(N)
+
+ref_theta 	= 2*np.pi*(1./360.)*ref_theta 	
+ref_width 	= 2*np.pi*(1./360.)*ref_width 	
+
+
+vec_EW=    np.array([0.0016 , 0.0056 , 0.006])
 vec_sigma= np.array([0.0024 , 0.0023 ,0.0038])
-vec_prob=  np.array([0.81	, 0.06	 , 0.26 	])
-vec_d99_EW=np.array([0.008 , 0.011 , 0.016 ])
+vec_prob=  np.array([0.80	, 0.055	 , 0.26 	])
+vec_d99_EW=np.array([0.008  , 0.011 , 0.016 ])
 
 ref_EW=    np.array([0.0060 , 0.0050 , 0.0018])
-ref_sigma= np.array([0.0048 , 0.0027, 0.0035])
-ref_prob=  np.array([0.45	 , 0.20	   , 0.87 	])
-ref_d99_EW=np.array([0.018 , 0.011 , 0.011 ])
+ref_sigma= np.array([0.0048 , 0.0021, 0.0035])
+ref_prob=  np.array([0.45	, 0.20	   , 0.87 	])
+ref_d99_EW=np.array([0.018  , 0.011 , 0.011 ])
 
 
 
@@ -39,7 +47,7 @@ legend=["[0.25 - 0.5]", "[0.5 - 1]", "[1 - 2]"]
 ref_legend=["Ref.:[0.25 - 0.5]", "Ref.:[0.5 - 1]", "Ref.:[1 - 2]"]
 ref_lines =[":", "-.", "--"]
 
-ticks=np.arange(-10, 10, 0.3)
+ticks=np.arange(-1.6, 1.6, 0.2)
 plt.xticks(ticks)
 plt.yticks(ticks)
 
@@ -72,18 +80,18 @@ if __name__== '__main__':
     
     for  i in range(len(ref_d99_EW)):
         
-        c= create_circle(x=100*vec_d99_EW[i]*np.cos(theta[i]),
-                         y=100*vec_d99_EW[i]*np.sin(theta[i]),
+        c= create_circle(x=100*vec_EW[i]*np.cos(theta[i]),
+                         y=100*vec_EW[i]*np.sin(theta[i]),
                          r=100*vec_sigma[i],
                          c=colors[i],
                          label=legend[i])
         
         
         plt.arrow(0,0, 
-                    100*vec_d99_EW[i]*np.cos(theta[i]),
-                    100*vec_d99_EW[i]*np.sin(theta[i]),
+                    100*vec_EW[i]*np.cos(theta[i]),
+                    100*vec_EW[i]*np.sin(theta[i]),
                     length_includes_head=True,
-                    alpha = 1, width = 0.022,
+                    alpha = 1, width = 0.02,
 	                edgecolor = 'black', facecolor = colors[i], lw = 0.1, zorder = 1)#, color=colors[i], arrowprops=dict(arrowstyle="->"))
 	
         show_shape(c)
@@ -95,8 +103,8 @@ if __name__== '__main__':
 
 
     for  i in range(len(ref_d99_EW)):
-        c_ref= create_circle_ref(x=100*ref_d99_EW[i]*np.cos(ref_theta[i]),
-                         y=100*ref_d99_EW[i]*np.sin(ref_theta[i]),
+        c_ref= create_circle_ref(x=100*ref_EW[i]*np.cos(ref_theta[i]),
+                         y=100*ref_EW[i]*np.sin(ref_theta[i]),
                          r=100*ref_sigma[i],
                          c=colors[i],
                          label=ref_legend[i],
@@ -104,8 +112,9 @@ if __name__== '__main__':
         
         show_shape(c_ref)
     
-    plt.xlim(left=-1.1)
-    plt.ylim(bottom=-1.9)
+    plt.xlim(left=-1.2,right=1.3)
+    plt.ylim(bottom=-1.2, top=0.4)
+    plt.scatter([0],[0], marker="o", color="black", s=330)
     # plt.text( 0.45,-0.1, "Ref: Aab A. et al. 2020",bbox=dict(facecolor='white', alpha=0.5))
     plt.legend(loc='lower right', ncol=2, title="Ref: Aab A. et al. 2020")
     plt.show()

@@ -4,7 +4,6 @@ The top-level auxiliary file: tesis.aux
 The style file: ibtesis.bst
 Database file #1: ../report_16_EW_PDF_IB_style/mibib_16.bib
 Database file #2: mibib.bib
-Warning--I didn't find a database entry for "codigo"
 Warning--empty author in como_funciona_auger
 Warning--empty journal in collaboration2013pierre
 Warning--empty journal in data
@@ -19,45 +18,48 @@ Warning--empty journal in collaboration2009atmospheric
 Warning--empty author in discrepancia
 Warning--empty journal in discrepancia
 Warning--empty year in discrepancia
-You've used 31 entries,
+Warning--empty author in codigo
+Warning--empty journal in codigo
+Warning--empty year in codigo
+You've used 32 entries,
             2634 wiz_defined-function locations,
-            1208 strings with 22802 characters,
-and the built_in function-call counts, 10637 in all, are:
-= -- 659
-> -- 364
+            1209 strings with 22883 characters,
+and the built_in function-call counts, 10805 in all, are:
+= -- 665
+> -- 365
 < -- 0
-+ -- 184
++ -- 185
 - -- 90
-* -- 623
-:= -- 1198
-add.period$ -- 90
-call.type$ -- 31
-change.case$ -- 29
+* -- 634
+:= -- 1210
+add.period$ -- 91
+call.type$ -- 32
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 1103
-empty$ -- 1051
+cite$ -- 49
+duplicate$ -- 1126
+empty$ -- 1072
 format.name$ -- 104
-if$ -- 2256
+if$ -- 2290
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 317
-newline$ -- 157
+int.to.str$ -- 32
+missing$ -- 323
+newline$ -- 160
 num.names$ -- 27
-pop$ -- 457
+pop$ -- 475
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 257
+skip$ -- 265
 stack$ -- 0
 substring$ -- 403
-swap$ -- 730
+swap$ -- 737
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
+warning$ -- 17
 while$ -- 58
-width$ -- 33
-write$ -- 325
-(There were 15 warnings)
+width$ -- 34
+write$ -- 330
+(There were 17 warnings)

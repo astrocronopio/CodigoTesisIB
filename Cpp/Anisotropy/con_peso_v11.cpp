@@ -90,17 +90,17 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
 			
-			// //	Less energy 4 EeV
+			//	Less energy 4 EeV
 			// {
 			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
 			// 	if (energy < 2 || energy >= 4) continue;
 			// 	if(utc  < utci || Theta > 60) continue;
 			// }	
-
+			
 			// //	Over energy 4 EeV
 			// {
 			// 	liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
-			// 	if (energy < 16 || energy >= 32) continue;
+			// 	if (energy < 12.0 || energy >= 24) continue;
 			// 	if(utc  < utci || Theta > 80) continue;
 			// }	
 
@@ -120,10 +120,10 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			nh 	= int(fmod(hrs*interval/24.0, interval));
 			weight_hexagon= 1.0/dnhex[nh]; //1.0/(dnhex[nh]*(1.+0.003*tan(Theta*d2r)*cos(Phi*d2r-30.*d2r)));		
 			*sumaN+=weight_hexagon;
-			
+
 			arg = 2.0*pi*(hrs/24.0 +2.099/24.0) + (Ra-raz)*d2r;
 			
-			// arg = freq==366.25? Ra*d2r : arg;
+			arg = freq==366.25? Ra*d2r : arg;
 			*a +=cos(arg)*weight_hexagon; 
 			*b +=sin(arg)*weight_hexagon;
 

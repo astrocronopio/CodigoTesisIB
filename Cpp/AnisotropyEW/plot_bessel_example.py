@@ -10,41 +10,44 @@ mpl.rcParams.update({
 
 import numpy as np
 
-filebesell="./barrido_pdf.txt"
+filebesell="./barrido_pdf+r.txt"
 
 i, r, pdf, prob = np.loadtxt(filebesell, unpack=True)
 #################################################################
 
 def plot_pdf_prob():
     fig,ax = plt.subplots()
-    ax.set_ylabel("Densidad de probabilidad p($d_{\perp}$)")
-    ax.set_xlabel("Amplitud $d_{\perp}$")
+    ax.set_ylabel("Densidad de probabilidad p($r$)")
+    ax.set_xlabel("Amplitud $r$")
     ax.plot(r, pdf, label="PDF", color='red', alpha=1)
     ax.legend(loc=(0.5,0.6))
 
-    ax2=ax.twinx()
-    ax2.plot(r, prob, ls='--', label="Integral",color='blue', alpha=0.7)
-    ax2.set_ylabel("Probabilidad")
-    ax2.legend(loc=(0.5,0.7))
+    # ax2=ax.twinx()
+    # ax2.plot(r, prob, ls='--', label="Integral",color='blue', alpha=0.7)
+    # ax2.set_ylabel("Probabilidad")
+    # ax2.legend(loc=(0.5,0.7))
         
     # plt.legend()
     plt.show()
     exit()
 #####################################################################    
 
-# plt.figure(2)
+def plot_pdf_s():
+    plt.figure(2)
+    r_s = 0.00477
+    pdf_s=93.3451
+    
+    plt.plot(r,pdf, color='red', alpha=0.7, label="PDF")
+    plt.plot([r_s,r_s],[0,93.3451], color='red', ls='-.')
 
-# plt.plot(r,pdf, color='red', alpha=0.7, label="PDF")
-# plt.plot([r_s,r_s],[0,93.3451], color='red', ls='-.')
+    #Dperp value#
+    plt.xlabel("Amplitud ${r}$")
+    plt.ylabel("Densidad de probabilidad p(${r}$)")
+    plt.scatter([r_s],[93.3451], color='black',marker='x', s=350, lw=3, label="Valor $s$")
 
-# #Dperp value#
-# plt.xlabel("Amplitud $d_{\perp}$")
-# plt.ylabel("Densidad de probabilidad p($d_{\perp}$)")
-# plt.scatter([r_s],[93.3451], color='black',marker='x', s=350, lw=3, label="Valor $s$")
-
-# plt.legend()
-# plt.show()
-# exit()
+    plt.legend()
+    plt.show()
+    exit()
 #######################################    
 #####################################################################    
 
@@ -57,9 +60,9 @@ def plot_iterations():
     # plt.plot([r_s,r_s],[0,93.3451], color='red', ls='-.')
 
     #Dperp value#
-    plt.xlabel("Amplitud $d_{\perp}$")
-    plt.ylabel("Densidad de probabilidad p($d_{\perp}$)")
-    plt.scatter([r_s],[93.3451], color='black',marker='o', s=35, lw=3, label="Valor $s$")
+    plt.xlabel("Amplitud ${r}$")
+    plt.ylabel("Densidad de probabilidad p(${r}$)")
+    plt.scatter([r_s],[pdf_s], color='black',marker='o', s=35, lw=3, label="Valor $s$")
 
     #Dperp lower limit#
     r_min=0.00342	
@@ -118,8 +121,8 @@ def plot_all_points():
     plt.plot([r_s,r_s],[0,93.3451], color='red', ls='-.')
 
     #Dperp value#
-    plt.xlabel("Amplitud $d_{\perp}$")
-    plt.ylabel("Densidad de probabilidad p($d_{\perp}$)")
+    plt.xlabel("Amplitud ${r}$")
+    plt.ylabel("Densidad de probabilidad p(${r}$)")
     plt.scatter([r_s],[93.3451], color='black',marker='x', s=350, lw=3, label="Valor $s$")
 
     #Dperp lower limit#
@@ -162,6 +165,7 @@ def plot_all_points():
 #######################################
 
 if __name__ == "__main__":
+    plot_pdf_prob()
     # plot_all_points()
-    plot_iterations()
+    # plot_iterations()
     pass

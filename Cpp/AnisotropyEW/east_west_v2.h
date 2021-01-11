@@ -8,6 +8,7 @@
 #include <vector>
 #include <math.h>
 #include "rtilde_bounds_v5.hpp"
+#include "phase_bounds_v2.hpp"
 
 double pi 	= M_PI;
 double d2r 	= pi/180.0;
@@ -56,7 +57,7 @@ void ew_given_freq( double freq		, const char* in_file, const char* out_file,
      	b = 2.*b/sumaN;
 		average_cos_dec/=sumaN;
 		average_sin_theta/=sumaN;
-		mean_energy/=sumaN;
+		// mean_energy/=sumaN;
 		
 		/*EW Parameters*/
      	phase= atan(b/a);
@@ -72,7 +73,7 @@ void ew_given_freq( double freq		, const char* in_file, const char* out_file,
      	
 		/*Error*/		sigma 		= sqrt(2./sumaN)*factor;
 		/*Error phase*/ sigma_phase = sqrt(2./sumaN)/(rtilde);
-		/*Error dperp*/ sigma_dperp = sqrt(2./sumaN)*0.5*pi/average_sin_theta;
+		/*Error dperp*/ sigma_dperp = sigma/average_cos_dec;
      	
 		/*Amplitude  */ rtilde  = rtilde*factor;
 		/*Ampl. d_perp*/d_perp = (rtilde)/average_cos_dec;
@@ -86,7 +87,7 @@ void ew_given_freq( double freq		, const char* in_file, const char* out_file,
 		/*Ampl. dUL*/   dUL = rUL/(average_cos_dec);
 		
 
-		mean_energy=mean_energy/sumaN;
+		// mean_energy=mean_energy/sumaN;
 
 
 
@@ -95,22 +96,28 @@ void ew_given_freq( double freq		, const char* in_file, const char* out_file,
 		std::cout <<"\n\n_______Frecuencia:\t"<< freq<< " ___________"<< std::endl;
 		
 		std::cout <<"\nEvents:\t"		<< sumaN			<< std::endl;
-		std::cout <<"Energía media:\t"	<< mean_energy 		<< std::endl;
-     	std::cout <<"\nAmplitud:\t"		<< rtilde			<< "+/-" << sigma<<std::endl;
+		std::cout <<"Energía media:\t"	<< mean_energy<<"---"<<mean_energy/sumaN<< std::endl;
+     	
+		 std::cout <<"\nAmplitud r:\t"	<< rtilde			<< "+/-" << sigma<<std::endl;
 		std::cout <<"upper_r:\t"		<< error_plus  	<< std::endl;
 		std::cout <<"lower_r:\t"  		<< error_minus	<< std::endl;
+		std::cout <<"r99:\t\t"			<< r99r 			<< std::endl;
+		std::cout <<"rUL:\t\t"			<< rUL 			<< std::endl;
 
+		if (freq==366.25)
+		{
 		std::cout <<"\nd_perp:\t\t"		<< d_perp			<< "+/-" << sigma_dperp<<"\n";
 		std::cout <<"upper_d:\t"		<< error_plus/average_cos_dec  	<< std::endl;
 		std::cout <<"lower_d:\t"  		<< error_minus/average_cos_dec	<< std::endl;
-
-     	std::cout <<"\nProbabilidad:\t"	<< prtilde 			<< std::endl;
-		std::cout <<"Fase:\t\t"			<< phase/d2r 		<< "+/-" << sigma_phase/d2r<<"\n" ;
-		std::cout <<"r99:\t\t"			<< r99r 			<< std::endl;
-		std::cout <<"rUL:\t\t"			<< r99r 			<< std::endl;
 		std::cout <<"d99:\t\t"			<< d99				<< std::endl;
 		std::cout <<"dUL:\t\t"			<< dUL				<< std::endl;
+		}
 		
+     	std::cout <<"\nProbabilidad:\t"	<< prtilde 			<< std::endl;
+		std::cout <<"Fase:\t\t"			<< phase/d2r 		<< "+/-" << sigma_phase/d2r<<"\n" ;
+		std::cout <<"Fase sigma \t"     << 2.0*error_phase(rtilde,sigma,phase) << std::endl;
+		std::cout <<"Fase sqrt \t"     << sigma_phase*sqrt(2)/d2r << std::endl;
+
 
 		std::cout <<"\n\n<cos(dec)>:\t"	<< average_cos_dec  << std::endl;
 		std::cout <<"<sin(theta)>:\t"	<< average_sin_theta<< std::endl;
@@ -170,22 +177,16 @@ void ew_multifreq( int nf, const char* in_file, const char* out_file,
 		/*Amplitude  */ rtilde_factor  = rtilde*factor;
 		/*Ampl. d_perp*/d_perp = (rtilde_factor)/average_cos_dec;
 
-		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN)*factor; 	
+		/*Amplitud r99*/r99r  = sqrt(4.*log(100.)/sumaN); 
+						r99r_factor = r99r*factor;	
 		
-		double error_plus, error_minus;
-    	error_rtilde(rtilde_factor,sigma,&error_plus,&error_minus, &dUL);	
-
-
-		// /*Ampl. d99*/   d99 = sqrt(4.*log(100.)/sumaN)*0.5*pi/(average_cos_dec*average_sin_theta);
-		/*Ampl. d99*/   d99 = d99/(average_cos_dec);
-
 		mean_energy=mean_energy/sumaN;
 
 		std::cout<<rtilde<<std::endl;
-     	myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde_factor << "\t";
-     	myfile << prtilde 	<< "\t" << phase/d2r << "\t"<< sigma_phase/d2r << "\t"<< r99r << "\t";
-		myfile << error_plus<< "\t" <<error_minus<<"\t" ;
-		myfile <<  error_plus/average_cos_dec<< "\t" <<error_minus/average_cos_dec<<"\t" << std::endl;
+     	// myfile << freq 		<< "\t" << a << "\t" << b << "\t" << sigma << "\t" << rtilde_factor << "\t";
+     	// myfile << prtilde 	<< "\t" << phase/d2r << "\t"<< sigma_phase/d2r << "\t"<< r99r << "\n";
+		
+		myfile << freq << "\t" << rtilde << "\t" << r99r <<"\t" << rtilde_factor << "\t" << r99r_factor << "\t";
 	}
 }
 

@@ -9,6 +9,7 @@
 #include <vector>
 
 #include "../AnisotropyEW/rtilde_bounds_v5.hpp"
+#include "../AnisotropyEW/phase_bounds_v2.hpp"
 
 double pi 	= M_PI;
 double d2r 	= pi/180.0;
@@ -140,7 +141,7 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 
 		average_cos_dec/=sumaN;
 		average_sin_theta/=sumaN;
-		mean_energy/=sumaN;
+		// mean_energy/=sumaN;
 
 		/*Rayleigh Parameters*/
      	phase= atan(b/a);
@@ -170,21 +171,29 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 		std::cout <<"\n\n_______Frecuencia:\t"<< freq<< " ___________"<< std::endl;
 		
 		std::cout <<"\nEvents:\t"		<< sumaN			<< std::endl;
-		std::cout <<"Energía media:\t"	<< mean_energy 		<< std::endl;
-     	std::cout <<"\nAmplitud:\t"		<< rtilde			<< "+/-" << sigma<<std::endl;
+		std::cout <<"Energía media:\t"	<< mean_energy<<"---"<<mean_energy/sumaN<< std::endl;
+     	
+		 std::cout <<"\nAmplitud r:\t"	<< rtilde			<< "+/-" << sigma<<std::endl;
 		std::cout <<"upper_r:\t"		<< error_plus  	<< std::endl;
 		std::cout <<"lower_r:\t"  		<< error_minus	<< std::endl;
+		std::cout <<"r99:\t\t"			<< r99r 			<< std::endl;
+		std::cout <<"rUL:\t\t"			<< rUL 			<< std::endl;
 
+		if (freq==366.25)
+		{
 		std::cout <<"\nd_perp:\t\t"		<< d_perp			<< "+/-" << sigma_dperp<<"\n";
 		std::cout <<"upper_d:\t"		<< error_plus/average_cos_dec  	<< std::endl;
 		std::cout <<"lower_d:\t"  		<< error_minus/average_cos_dec	<< std::endl;
-
+		std::cout <<"d99:\t\t"			<< d99				<< std::endl;
+		std::cout <<"dUL:\t\t"			<< dUL				<< std::endl;
+		}
+		
      	std::cout <<"\nProbabilidad:\t"	<< prtilde 			<< std::endl;
 		std::cout <<"Fase:\t\t"			<< phase/d2r 		<< "+/-" << sigma_phase/d2r<<"\n" ;
-		std::cout <<"r99:\t\t"			<< r99r 			<< std::endl;
-		std::cout <<"d99:\t\t"			<< d99				<< std::endl;
-		std::cout <<"dUL:\t\t"			<< dUL/average_cos_dec				<< std::endl;
-		
+		std::cout <<"Fase sigma \t"     << 2.0*error_phase(rtilde,sigma,phase) << std::endl;
+		std::cout <<"Fase sqrt \t"     << sigma_phase*sqrt(2)/d2r << std::endl;
+
+
 		std::cout <<"\n\n<cos(dec)>:\t"	<< average_cos_dec  << std::endl;
 		std::cout <<"<sin(theta)>:\t"	<< average_sin_theta<< std::endl;
 	}

@@ -1,58 +1,54 @@
 
 \chapter{Método East-West}
 
-El método de Rayleigh se basa en calcular la tasa de eventos en función de la ascensión recta y ajustando los resultados a una función armónica. El mismo permite calcular la amplitud para distintos armónicos, la fase y la probabilidad de detectar la misma señal debido a fluctuaciones de una distribución isótropa. 
+El método de Rayleigh se basa ajustar la tasa de eventos en función de la ascensión recta mediante una función armónica. El mismo permite calcular la amplitud de la anisotropía para distintos armónicos, su fase y la probabilidad de detectar la misma señal debido a fluctuaciones de una distribución isótropa de RCs. 
 
-La dificultad de utilizar el método Rayleigh se debe al procesamiento de los datos: efectos del clima, las variaciones de la área del Observatorio y sensibilidad de los instrumentos deben tenerse en cuenta.  Los efectos mencionados deben ser corregidos de la tasa de eventos medida, ya que los mismos inducen modulaciones espurias en el flujo de RCs.
+La dificultad en utilizar el método Rayleigh recae en procesamiento de los datos: efectos del clima,  variaciones de la área del Observatorio y al sensibilidad de los instrumentos deben tenerse en cuenta.  Los efectos mencionados deben ser corregidos de la tasa de eventos medida, ya que los mismos inducen modulaciones espurias en la tasa de eventos.
 
-El método East-West evita introducir estos efectos mediante la diferencia entre las tasas de eventos provenientes del Este y del Oeste.
+En el método East - West consiste en el ajuste de una función armónica a la diferencia entre las tasas de eventos provenientes del Este y del Oeste. Si se consideran que las modulaciones espurias producidas por los efectos atmosféricos y sistemáticos son las mismas en ambas direcciones, la diferencia de tasas remueve estos efectos sin realizar correcciones adicionales. Una desventaja de este método es que su sensibilidad es menor que el método de Rayleigh \cite{taborda}.
 
-(?????????)La exposición del observatorio en un momento dado es la misma para el Este como para el Oeste, si se considera que la misma depende del ángulo cenital $\theta$ solamente, y no del ángulo azimutal $\phi$. \footnote{Tengo que agregar un apéndice explicando las coordenadas locales.}
 
-Si se consideran las modulaciones espurias producidas por los efectos atmosféricos y sistemáticos son las mismas en ambas direcciones, la diferencia de tasas remueve estos efectos sin realizar correcciones adicionales. Una desventaja de este método es que su sensibilidad es menor que usando el método de Rayleigh \footnote{Agregar referencia}.
+% (?????????)La exposición del observatorio en un momento dado es la misma para el Este como para el Oeste, si se considera que la misma depende del ángulo cenital $\theta$ solamente, y no del ángulo azimutal $\phi$. \footnote{Tengo que agregar un apéndice explicando las coordenadas locales.}
 
-\section{Descripción del método East-West}
-\begin{enumerate}
-    \item Un forma de obtener flujo de eventos $I(\alpha)$  para un $\alpha$ dado es la siguiente:
-        \begin{equation}
-            I(\alpha) = \int_{\delta_{min}}^{\delta_{max}} d\delta \cos \delta \dv{N(\alpha,\delta)}{\Omega}
-            \label{eq:i_alpha_phi}
-        \end{equation}
-    \noindent donde $\Omega$ es el ángulo sólido en la esfera celeste expresada en las coordenadas ecuatoriales.
+\section{Descripción de una anisotropía dipolar}
 
-    \item Considerando que la distribución de direcciones observada es un convolución entre e flujo de RCs $\Phi$ y la exposición direccional $\omega$:
+
+\section{Descripción formal del método East-West}
+
+    % \item Un forma de obtener flujo de eventos $I(\alpha)$  para un $\alpha$ dado es la siguiente:
+    %     \begin{equation}
+    %         I(\alpha) = \int_{\delta_{min}}^{\delta_{max}} d\delta \cos \delta \dv{N(\alpha,\delta)}{\Omega}
+    %         \label{eq:i_alpha_phi}
+    %     \end{equation}
+    % \noindent donde $\Omega$ es el ángulo sólido en la esfera celeste expresada en las coordenadas ecuatoriales.
+
+    % \item Considerando que la distribución de direcciones observada es un convolución entre e flujo de RCs $\Phi$ y la exposición direccional $\omega$:
     
-        \begin{equation}
-            \tilde{N} = \int d\Omega \Phi(\alpha, \delta) \omega(\alpha, \delta),
-            \label{eq:conv}
-        \end{equation}
-    \noindent y junto a la Ec.\ref{eq:i_alpha_phi}  se obtiene lo siguiente:
-    \begin{equation}
-        I(\alpha) =  \int_{\delta_{min}}^{\delta_{max}} d\delta \cos\delta \,\, \Phi(\alpha, \delta) \omega(\alpha, \delta)
-        \label{eq:i_coor_ecua}
-    \end{equation}
+    %     \begin{equation}
+    %         \tilde{N} = \int d\Omega \Phi(\alpha, \delta) \omega(\alpha, \delta),
+    %         \label{eq:conv}
+    %     \end{equation}
+    % \noindent y junto a la Ec.\ref{eq:i_alpha_phi}  se obtiene lo siguiente:
+    % \begin{equation}
+    %     I(\alpha) =  \int_{\delta_{min}}^{\delta_{max}} d\delta \cos\delta \,\, \Phi(\alpha, \delta) \omega(\alpha, \delta)
+    %     \label{eq:i_coor_ecua}
+    % \end{equation}
 
 
-    \item El flujo de eventos observado $I^{obs}$ para la ascensión recta del cenit $\alpha^0$, entre los ángulos azimutales $\phi_1$ y $\phi_2$ puede calcularse mediante el flujo total de RCs $\Phi$ (expresado en coordenadas locales) como
+    El flujo de eventos observado $I^{obs}(\alpha_0)$ para la ascensión recta del cenit $\alpha^0$, entre los ángulos azimutales $\phi_1$ y $\phi_2$ puede calcularse mediante el flujo total de RCs $\Phi$ (expresado en coordenadas locales) como
     \begin{equation}
         I^{obs}(\alpha^0) = \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \tilde{\omega}(\theta, \alpha^0) \Phi(\theta, \phi, \alpha^0),
         \label{eq:rate_general}
     \end{equation}
-    \noindent  donde  el término $\tilde{\omega}$ representa la exposición del observatorio, este término incluye los efectos sistemáticos y atmosféricos, como la variación de los hexágonos del arreglo y las correcciones de la modulación del clima, mediante  la dependencia con $\alpha^0$.
+    \noindent  donde  el término $\tilde{\omega}$ representa la exposición del observatorio. Este término también incluye los efectos sistemáticos y atmosféricos, como la variación de los hexágonos del arreglo y las correcciones de la modulación del clima, mediante  su dependencia con $\alpha^0$.
 
-    \item Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos:
-    \begin{itemize}
-        \item Para el Este: entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$.
-        \item Para el Oeste: entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
-    \end{itemize}
-
-    \item Se considera que las amplitudes de las variaciones asociadas a $\tilde{\omega}$ son pequeñas con respecto al valor medio de $\tilde{\omega}$, y que pueden  desacoplarse de la dependencia de $\theta$. Por lo tanto, por lo que podemos expresar $\tilde{\omega}$ de la siguiente manera:
+    Se considera que las amplitudes de las variaciones asociadas a $\tilde{\omega}$ son pequeñas con respecto al valor medio de $\tilde{\omega}$, y que pueden  desacoplarse de la dependencia de $\theta$. Por lo tanto, por lo que podemos expresar $\tilde{\omega}$ de la siguiente manera:
     \begin{equation}
         \tilde{\omega}(\theta, \alpha^0) = \omega(\theta)\big(1 + \eta(\alpha^0) \big)
         \label{eq:omega_expandido}
     \end{equation}
 
-    \item Una anisotropía dipolar se puede describir de la siguiente manera:
+     Una anisotropía dipolar se puede describir de la siguiente manera:
     \begin{equation}
         \Phi(\hat{\bf{u}}) = \Phi_0(1+\bf{d}\cdot\hat{\bf{u}})
         \label{eq:dipolo_general}
@@ -69,18 +65,19 @@ Si se consideran las modulaciones espurias producidas por los efectos atmosféri
     \end{equation}
     donde $r_1$ es la amplitud de la aproximación a primer orden en Fourier.
 
-    \item Por una cuestión de notación, definimos la siguiente expresión:
+     Por una cuestión de notación, definimos la siguiente expresión:
     \begin{equation}
         \overline{f(\theta)} = \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta) f(\theta)
         \label{eq:media_angular}
     \end{equation}
-    \noindent donde $\bar{f(\theta)}$ es la media de la función $f(\theta)$ sobre el ángulo cenital pesado por la exposición del observatorio, hasta  un ángulo máximo. En este trabajo se centra en el rango de energía 1 EeV - 2 EeV, por lo que $\theta_{max}=60^o$ para los datos del observatorio. 
-
+    \noindent donde $\overline{f(\theta)}$ es la media de la función $f(\theta)$ sobre el ángulo cenital pesado por la exposición del observatorio, hasta  un ángulo máximo. En este trabajo se centra en eventos hasta 2 EeV, por lo que $\theta_{max}=60^o$ para los datos del observatorio. 
+    \begin{enumerate}
     \item Teniendo en cuenta la Ec.\ref{eq:omega_expandido} y \ref{eq:dipolo_general}, se tiene la siguiente expresión:
     \begin{align*}
-        I^{obs}(\alpha^0) &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta  \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 ( 1 +  \textbf{d}\cdot\hat{\bf{u}})\\
-        &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 +\\
-        &+\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}
+        I^{obs}(\alpha^0) &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta  \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 ( 1 +  \textbf{d}\cdot\hat{\bf{u}})
+        % \\
+        % &= \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 +\\
+        % &+\int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \omega(\theta)\big(1 + \eta(\alpha^0) \big) \Phi_0 \textbf{d}\cdot\hat{\bf{u}}
     \end{align*}
     \noindent la primera parte  de la igualdad  puede simplificarse con la definición \ref{eq:media_angular} e integrando sobre $\phi$
     \begin{align*}
@@ -125,7 +122,15 @@ Si se consideran las modulaciones espurias producidas por los efectos atmosféri
 
 
 
-    \item Volviendo a la expresión de $I^{obs}$, teniendo en cuenta que necesitamos  $I^{obs}_E$ y $I^{obs}_O$:
+    \item 
+    Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos:
+    \begin{itemize}
+        \item Para el Este: entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$.
+        \item Para el Oeste: entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
+    \end{itemize}
+
+
+    Volviendo a la expresión de $I^{obs}$, teniendo en cuenta que necesitamos  $I^{obs}_E$ y $I^{obs}_O$:
     \begin{align*}
         I^{obs}_E&= \Phi_0 (1+ \eta(\alpha^0)) \Big( \pi\overline{1} + 2d_x(\alpha^0)\overline{\sin\theta} + \pi d_z(\alpha^0)\overline{\cos\theta}  \Big) \\
         I^{obs}_O&= \Phi_0 (1+ \eta(\alpha^0)) \Big( \pi \overline{1} - 2d_x(\alpha^0)\overline{\sin\theta}   + \pi d_z(\alpha^0)\overline{\cos\theta} \Big) 

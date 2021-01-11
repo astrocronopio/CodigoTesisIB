@@ -44,7 +44,7 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 
 			// {
 			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
-			// 	if (energy< 0.5|| energy >= 1.0) continue;
+			// 	if (energy< 1|| energy >= 2.0) continue;
 			// 	if(utc  < utci || Theta > 60) continue;
 			// }	
 
@@ -92,15 +92,15 @@ int main(int argc, char const *argv[])
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
 	std::cout<<"Input: "<<in_file<<std::endl;
-	std::cout<<"Output: "<<out_file<<std::endl;
+	std::cout<<"Output:"<<out_file<<std::endl;
 
-	ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
+	// ew_multifreq(200, in_file, out_file, utci, utcf, east_west_method);
 
-	// ew_given_freq(365.25, in_file, out_file,
-	// 			  utci, utcf, east_west_method);
-
-	ew_given_freq(366.25, in_file, out_file,
+	ew_given_freq(365.25, in_file, out_file,
 				  utci, utcf, east_west_method);
+
+	// ew_given_freq(366.25, in_file, out_file,
+	// 			  utci, utcf, east_west_method);
 	
 	return 0;
 }
