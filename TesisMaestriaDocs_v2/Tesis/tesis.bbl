@@ -1,0 +1,197 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{Aab_2020}
+{Aab A. et al.}
+\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
+  Auger Observatory}}.
+\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
+
+\bibitem{PGD}
+Olive, K.
+\newblock Review of particle physics.
+\newblock \emph{Chinese Physics C}, \textbf{40}~(10), 100001, oct 2016.
+\newblock
+  \urlprefix\url{https://doi.org/10.1088%2F1674-1137%2F40%2F10%2F100001}.
+
+\bibitem{como_funciona_auger}
+{The Pierre Auger Cosmic Ray Observatory}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{798}, 172 -- 213, 2015.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168900215008086}.
+
+\bibitem{triggers_ref}
+Justin M.~Albury, B. R.~D., Jose A.~Bellido.
+\newblock Exploring the energy threshold for full trigger efficiency of the
+  surface detector with hybrid events {GAP 2018-038}.
+\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
+
+\bibitem{aab2017impact}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock {Impact of atmospheric effects on the energy reconstruction of air
+  showers observed by the surface detectors of the Pierre Auger Observatory}.
+\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
+
+\bibitem{referencia_pesos}
+Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
+  I.~A.
+\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
+  {Pierre Auger Observatory}.
+\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
+
+\bibitem{taborda}
+Taborda, O.
+\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
+  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
+\newblock Tesis Doctoral, Instituto Balseiro, 2018.
+
+\bibitem{collaboration2013pierre}
+{The Pierre Auger Collaboration}.
+\newblock {The Pierre Auger Observatory: Contributions to the 33rd
+  International Cosmic Ray Conference (ICRC 2013)}, 2013.
+
+\bibitem{data}
+{The Pierre Auger Collaboration}.
+\newblock {The Pierre Auger Observatory: Contributions to the 36th
+  International Cosmic Ray Conference (ICRC 2019)}, 2019.
+
+\bibitem{hess1912}
+Hess, V.~F.
+\newblock {\"U}ber beobachtungen der durchdringenden strahlung bei sieben
+  freiballonfahrten.
+\newblock \emph{Phys. Z.}, \textbf{13}, 1084--1091, 1912.
+
+\bibitem{greisen1966end}
+Greisen, K.
+\newblock End to the cosmic-ray spectrum?
+\newblock \emph{Physical Review Letters}, \textbf{16}~(17), 748, 1966.
+
+\bibitem{zatsepin1966upper}
+Zatsepin, G.~T., Kuzmin, V.~A.
+\newblock Upper limit of the spectrum of cosmic rays.
+\newblock \emph{Journal of Experimental and Theoretical Physics Letters (JETP
+  Letters)}, \textbf{4}~(3), 78--80, 1966.
+
+\bibitem{bird1994cosmic}
+Bird, D., Corbato, S., Dai, H., Dawson, B., Elbert, J., Emerson, B.,
+  \emph{et~al.}
+\newblock The cosmic-ray energy spectrum observed by the fly's eye.
+\newblock \emph{The Astrophysical Journal}, \textbf{424}, 491--502, 1994.
+
+\bibitem{berezinsky2006astrophysical}
+Berezinsky, V., Gazizov, A., Grigorieva, S.
+\newblock On astrophysical solution to ultrahigh energy cosmic rays.
+\newblock \emph{Physical Review D}, \textbf{74}~(4), 043005, 2006.
+
+\bibitem{kit_oracle}
+Imagen extraída de
+  \emph{https://web.ikp.kit.edu/augeroracle/lib/exe/fetch.php?media=auger:telescope.jpeg}.
+  visitada el 28/11/2019.
+
+\bibitem{exposure}
+Abraham, J., Abreu, P., Aglietta, M., Ahn, E., Allard, D., Allekotte, I.,
+  \emph{et~al.}
+\newblock {Trigger and aperture of the surface detector array of the Pierre
+  Auger Observatory}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{613}~(1), 29 -- 39, 2010.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168900209021688}.
+
+\bibitem{CIC}
+Hersil, J., Escobar, I., Scott, D., Clark, G., Olbert, S.
+\newblock Observations of extensive air showers near the maximum of their
+  longitudinal development.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{6}, 22--23, Jan 1961.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.6.22}.
+
+\bibitem{tobepublished}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock {A measurement of the cosmic ray energy spectrum above
+  $2.5\times10^{18}\,$eV using the Pierre Auger Observatory}.
+\newblock \emph{En proceso de preparación}.
+
+\bibitem{linsley1961extremely}
+Linsley, J., Scarsi, L., Rossi, B.
+\newblock Extremely energetic cosmic-ray event.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{6}~(9), 485, 1961.
+
+\bibitem{pierre2013plans}
+{Pierre Auger Collaboration}.
+\newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
+\newblock Pierre Auger Collaboration, 2013.
+
+\bibitem{abraham2009atmospheric}
+Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
+  \emph{et~al.}
+\newblock Atmospheric effects on extensive air showers observed with the
+  surface detector of the {Pierre Auger Observatory}.
+\newblock \emph{Astroparticle Physics}, \textbf{32}~(2), 89--99, 2009.
+
+\bibitem{abreu2012description}
+Abreu, P., Aglietta, M., Ahlers, M., Ahn, E., Albuquerque, I. F. d.~M., Allard,
+  D., \emph{et~al.}
+\newblock Description of atmospheric conditions at the {Pierre Auger
+  Observatory} using the global data assimilation system {(GDAS)}.
+\newblock \emph{Astroparticle Physics}, \textbf{35}~(9), 591--607, 2012.
+
+\bibitem{isabel}
+Comunicación personal con {Isabelle Lhenry-Yvon}.
+
+\bibitem{collaboration2009atmospheric}
+{The Pierre Auger Collaboration}.
+\newblock {Atmospheric effects on extensive air showers observed with the
+  Surface Detector of the Pierre Auger Observatory}, 2009.
+
+\bibitem{matthews2005heitler}
+Matthews, J.
+\newblock A heitler model of extensive air showers.
+\newblock \emph{Astroparticle Physics}, \textbf{22}~(5-6), 387--397, 2005.
+
+\bibitem{gora2006universal}
+Gora, D., Engel, R., Heck, D., Homola, P., Klages, H., Pe, J., \emph{et~al.}
+\newblock Universal lateral distribution of energy deposit in air showers and
+  its application to shower reconstruction.
+\newblock \emph{Astroparticle Physics}, \textbf{24}~(6), 484--494, 2006.
+
+\bibitem{linsley1975fluctuation}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Physical Review Letters}, \textbf{34}~(24), 1530, 1975.
+
+\bibitem{referencia_anis}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock Observation of a large-scale anisotropy in the arrival directions of
+  cosmic rays above 8$\times 10^18$ ev.
+\newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
+
+\bibitem{farley1954sidereal}
+Farley, F., Storey, J.
+\newblock The sidereal correlation of extensive air showers.
+\newblock \emph{Proceedings of the Physical Society. Section A},
+  \textbf{67}~(11), 996, 1954.
+
+\bibitem{analisis_fourier}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
+
+\bibitem{discrepancia}
+Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código implementado
+  para los resultados del trabajo \cite{Aab_2020}.
+
+\bibitem{codigo}
+Este valor fue obtenido con el código implementado en el trabajo
+  \cite{Aab_2020}.
+
+\end{thebibliography}
