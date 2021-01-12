@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  12 JAN 2021 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  12 JAN 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs/Tesis/tesis
-(/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs/Tesis/tesis.tex
+**/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/Tesis/tesis
+(/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/Tesis/tesis.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-07-17> (./ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
@@ -1299,7 +1299,7 @@ Package pdftex.def Info: ../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orde
 (pdftex.def)             Requested size: 220.50885pt x 147.00575pt.
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
- [57 <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>]) (../report_16_EW_PDF_IB_style/report_EW_calculo_v2.tex
+ [57 <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v4.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../6_Dipole_1-2_EeV/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>]) (../EW/report_EW_calculo_v2.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
  [58]
@@ -1377,7 +1377,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Info: Redefining \. on input line 351.
 LaTeX Info: Redefining \% on input line 351.
-[66]) (../report_16_EW_PDF_IB_style/report_EW_PDF.tex
+[66]) (../EW/report_EW_PDF.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [67]
@@ -1385,116 +1385,116 @@ Cap\'{\i }tulo 10.
 [68
 
 ]
-<../report_16_EW_PDF_IB_style/bessel_prob_value_s_v2.pdf, id=1476, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/bessel_prob_value_s_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/bessel_prob_value_s_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_value_s_v2.pdf  used on input line 37.
+<../EW/bessel_prob_value_s_v2.pdf, id=1476, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_value_s_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_value_s_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_value_s_v2.pdf  used on input line 37.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
- [69 <../report_16_EW_PDF_IB_style/bessel_prob_value_s_v2.pdf>]
-<../report_16_EW_PDF_IB_style/bessel_prob_iterations_v2.pdf, id=1532, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/bessel_prob_iterations_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/bessel_prob_iterations_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_iterations_v2.pdf  used on input line 67.
+ [69 <../EW/bessel_prob_value_s_v2.pdf>]
+<../EW/bessel_prob_iterations_v2.pdf, id=1532, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_iterations_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_iterations_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_iterations_v2.pdf  used on input line 67.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
- [70 <../report_16_EW_PDF_IB_style/bessel_prob_iterations_v2.pdf>]
-<../report_16_EW_PDF_IB_style/bessel_prob_ej_v2.pdf, id=1602, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/bessel_prob_ej_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/bessel_prob_ej_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/bessel_prob_ej_v2.pdf  used on input line 90.
+ [70 <../EW/bessel_prob_iterations_v2.pdf>]
+<../EW/bessel_prob_ej_v2.pdf, id=1602, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_ej_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_ej_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_ej_v2.pdf  used on input line 90.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 111.
 LaTeX Info: Redefining \% on input line 111.
- [71 <../report_16_EW_PDF_IB_style/bessel_prob_ej_v2.pdf>]
-<../report_16_EW_PDF_IB_style/phase_prob_ej.pdf, id=1664, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/phase_prob_ej.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_prob_ej.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_prob_ej.pdf  used on input line 129.
+ [71 <../EW/bessel_prob_ej_v2.pdf>]
+<../EW/phase_prob_ej.pdf, id=1664, 867.24pt x 578.16pt>
+File: ../EW/phase_prob_ej.pdf Graphic file (type pdf)
+<use ../EW/phase_prob_ej.pdf>
+Package pdftex.def Info: ../EW/phase_prob_ej.pdf  used on input line 129.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-) (../report_16_EW_PDF_IB_style/report_EW_results_Ray.tex
+) (../EW/report_EW_results_Ray.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [72 <../report_16_EW_PDF_IB_style/phase_prob_ej.pdf>]
+ [72 <../EW/phase_prob_ej.pdf>]
 Cap\'{\i }tulo 11.
 [73
 
 ]
-<../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf, id=1744, 722.7pt x 505.89pt>
-File: ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf  used on input line 73.
+<../EW/phase_primer_bin_v2.pdf, id=1744, 722.7pt x 505.89pt>
+File: ../EW/phase_primer_bin_v2.pdf Graphic file (type pdf)
+<use ../EW/phase_primer_bin_v2.pdf>
+Package pdftex.def Info: ../EW/phase_primer_bin_v2.pdf  used on input line 73.
 (pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
  [74]
-<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf, id=1754, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 83.
+<../EW/plot_bin_1_barrido_v3_EW.pdf, id=1754, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_1_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_1_barrido_v3_EW.pdf  used on input line 83.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
- [75 <../report_16_EW_PDF_IB_style/phase_primer_bin_v2.pdf> <../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf
+ [75 <../EW/phase_primer_bin_v2.pdf> <../EW/plot_bin_1_barrido_v3_EW.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../EW/plot_bin_1_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf, id=1858, 722.7pt x 505.89pt>
-File: ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf  used on input line 127.
+<../EW/phase_segundo_bin_v2.pdf, id=1858, 722.7pt x 505.89pt>
+File: ../EW/phase_segundo_bin_v2.pdf Graphic file (type pdf)
+<use ../EW/phase_segundo_bin_v2.pdf>
+Package pdftex.def Info: ../EW/phase_segundo_bin_v2.pdf  used on input line 127.
 (pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
  [76]
-<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf, id=1866, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 138.
+<../EW/plot_bin_2_barrido_v3_EW.pdf, id=1866, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_2_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_2_barrido_v3_EW.pdf  used on input line 138.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 170.
 LaTeX Info: Redefining \% on input line 170.
- [77 <../report_16_EW_PDF_IB_style/phase_segundo_bin_v2.pdf> <../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf
+ [77 <../EW/phase_segundo_bin_v2.pdf> <../EW/plot_bin_2_barrido_v3_EW.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../EW/plot_bin_2_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf, id=1967, 722.7pt x 505.89pt>
-File: ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf  used on input line 206.
+<../EW/phase_tercer_bin_v2.pdf, id=1967, 722.7pt x 505.89pt>
+File: ../EW/phase_tercer_bin_v2.pdf Graphic file (type pdf)
+<use ../EW/phase_tercer_bin_v2.pdf>
+Package pdftex.def Info: ../EW/phase_tercer_bin_v2.pdf  used on input line 206.
 (pdftex.def)             Requested size: 330.76328pt x 231.53117pt.
 LaTeX Info: Redefining \. on input line 212.
 LaTeX Info: Redefining \% on input line 212.
  [78]
-<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf, id=1977, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 220.
+<../EW/plot_bin_3_barrido_v3_EW.pdf, id=1977, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_3_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_3_barrido_v3_EW.pdf  used on input line 220.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 LaTeX Info: Redefining \. on input line 255.
 LaTeX Info: Redefining \% on input line 255.
- [79 <../report_16_EW_PDF_IB_style/phase_tercer_bin_v2.pdf> <../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf
+ [79 <../EW/phase_tercer_bin_v2.pdf> <../EW/plot_bin_3_barrido_v3_EW.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../EW/plot_bin_3_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf, id=2070, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf  used on input line 259.
+<../EW/d_perp_normalizado_sigmas_v5.pdf, id=2070, 867.24pt x 578.16pt>
+File: ../EW/d_perp_normalizado_sigmas_v5.pdf Graphic file (type pdf)
+<use ../EW/d_perp_normalizado_sigmas_v5.pdf>
+Package pdftex.def Info: ../EW/d_perp_normalizado_sigmas_v5.pdf  used on input line 259.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf, id=2076, 954.68669pt x 625.13548pt>
-File: ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf  used on input line 276.
+<../EW/comparando_sigmas_v3.pdf, id=2076, 954.68669pt x 625.13548pt>
+File: ../EW/comparando_sigmas_v3.pdf Graphic file (type pdf)
+<use ../EW/comparando_sigmas_v3.pdf>
+Package pdftex.def Info: ../EW/comparando_sigmas_v3.pdf  used on input line 276.
 (pdftex.def)             Requested size: 396.91324pt x 259.90332pt.
 LaTeX Info: Redefining \. on input line 282.
 LaTeX Info: Redefining \% on input line 282.
- [80 <../report_16_EW_PDF_IB_style/d_perp_normalizado_sigmas_v5.pdf>]
+ [80 <../EW/d_perp_normalizado_sigmas_v5.pdf>]
 LaTeX Info: Redefining \. on input line 284.
 LaTeX Info: Redefining \% on input line 284.
- [81 <../report_16_EW_PDF_IB_style/comparando_sigmas_v3.pdf>]
+ [81 <../EW/comparando_sigmas_v3.pdf>]
 Cap\'{\i }tulo 12.
 
 Overfull \hbox (30.95804pt too wide) in paragraph at lines 287--287
@@ -1504,45 +1504,45 @@ Overfull \hbox (30.95804pt too wide) in paragraph at lines 287--287
 [82
 
 ]
-File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v3_EW.pdf  used on input line 344.
+File: ../EW/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_1_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_1_barrido_v3_EW.pdf  used on input line 344.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf, id=2205, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf  used on input line 345.
+<../EW/plot_bin_1_barrido_v1_Ray.pdf, id=2205, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_1_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_1_barrido_v1_Ray.pdf>
+Package pdftex.def Info: ../EW/plot_bin_1_barrido_v1_Ray.pdf  used on input line 345.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
 LaTeX Info: Redefining \. on input line 351.
 LaTeX Info: Redefining \% on input line 351.
  [83]
-File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v3_EW.pdf  used on input line 355.
+File: ../EW/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_2_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_2_barrido_v3_EW.pdf  used on input line 355.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf, id=2212, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf  used on input line 356.
+<../EW/plot_bin_2_barrido_v1_Ray.pdf, id=2212, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_2_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_2_barrido_v1_Ray.pdf>
+Package pdftex.def Info: ../EW/plot_bin_2_barrido_v1_Ray.pdf  used on input line 356.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v3_EW.pdf  used on input line 366.
+File: ../EW/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_3_barrido_v3_EW.pdf>
+Package pdftex.def Info: ../EW/plot_bin_3_barrido_v3_EW.pdf  used on input line 366.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
-<../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf, id=2213, 867.24pt x 578.16pt>
-File: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf Graphic file (type pdf)
-<use ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf>
-Package pdftex.def Info: ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf  used on input line 367.
+<../EW/plot_bin_3_barrido_v1_Ray.pdf, id=2213, 867.24pt x 578.16pt>
+File: ../EW/plot_bin_3_barrido_v1_Ray.pdf Graphic file (type pdf)
+<use ../EW/plot_bin_3_barrido_v1_Ray.pdf>
+Package pdftex.def Info: ../EW/plot_bin_3_barrido_v1_Ray.pdf  used on input line 367.
 (pdftex.def)             Requested size: 218.52368pt x 145.67767pt.
 ) (../Conclusiones/conclusiones.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [84 <../report_16_EW_PDF_IB_style/plot_bin_1_barrido_v1_Ray.pdf> <../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf
+ [84 <../EW/plot_bin_1_barrido_v1_Ray.pdf> <../EW/plot_bin_2_barrido_v1_Ray.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_2_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf
+pdfTeX warning: pdflatex (file ../EW/plot_bin_2_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../EW/plot_bin_3_barrido_v1_Ray.pdf
 
-pdfTeX warning: pdflatex (file ../report_16_EW_PDF_IB_style/plot_bin_3_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../EW/plot_bin_3_barrido_v1_Ray.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Cap\'{\i }tulo 13.
 ) [85
@@ -1582,14 +1582,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
  14039 strings out of 482719
- 229385 string characters out of 5953361
+ 227784 string characters out of 5953361
  534134 words of memory out of 5000000
  28537 multiletter control sequences out of 15000+600000
  555473 words of font info for 108 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 51i,18n,53p,1740b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,18n,53p,1743b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis.pdf (98 pages, 5167023 bytes).
+Output written on tesis.pdf (98 pages, 5166692 bytes).
 PDF statistics:
  2586 PDF objects out of 2984 (max. 8388607)
  1763 compressed objects within 18 object streams
