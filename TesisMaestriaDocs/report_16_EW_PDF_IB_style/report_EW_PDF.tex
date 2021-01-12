@@ -12,7 +12,7 @@ La distribución de probabilidad de la amplitud y la fase está dada por la Ec.\
 Integrando la Ec.\ref{eq:full_pdf} con respecto a $\psi$, se obtiene la función de densidad de probabilidad $p(r)$ y el nivel de confianza $CL(s)$.
 \begin{align}
     p(r) &=\frac{r}{\sigma^2}\exp{ -\frac{(r^2+s^2)}{2\sigma^2} }K_0(\frac{rs}{\sigma^2})    \label{ec:pdf}\\
-    CL(r_0,r_1s) &= \int_{r_0}^{r_1} dr \, p(r)
+    CL_r(r_0,r_1s) &= \int_{r_0}^{r_1} dr \, p(r)
     \label{ec:integral}
 \end{align}  
 Estas ecuaciones nos permiten determinar el nivel de confianza $CL$ con el cual se puede afirmar que el módulo del dipolo se encuentra entre los valores $r_0$ y $r_1$.
@@ -20,7 +20,7 @@ Estas ecuaciones nos permiten determinar el nivel de confianza $CL$ con el cual 
 Se define el valor $r^{UL}$ como el límite superior donde se  puede afirmar que el módulo de dipolo se encuentra entre 0 y $r^{UL}$ con un $99\%$ de certeza.
 
 \begin{align}
-    0.99 &= \int_{0}^{r^{UL}} dr \, p(r)
+    CL_r(0,r^{UL},s) = 0.99 = \int_{0}^{r^{UL}} dr \, p(r)
     \label{ec:r_upper_limit}
 \end{align} 
 % Para alcanzar un  nivel del confianza  del  CL[\%] \footnote{ Donde CL=.99 para un 99\% o CL=0.68 para un 68\%,},  se toma el valor de amplitud $r^{UL}$ y la integral de la función \ref{ec:pdf} desde 0 hasta $r^{UL}$, donde el resultado debe ser el nivel de confianza CL.
@@ -28,14 +28,14 @@ Se define el valor $r^{UL}$ como el límite superior donde se  puede afirmar que
 %     CL = \int_{0}^{r^{UL}} dr \frac{r}{\sigma^2}\exp{\Big( -\frac{(r^2+s^2)}{2\sigma^2} + \frac{rs}{\sigma^2}\Big)}K_0(\frac{rs}{\sigma^2})
 %     \label{ec:integral}
 % \end{align}
-Suponiendo que mediante el análisis de un conjunto de eventos, se obtiene que $s=0.006$ y $\sigma=0.048$. El gráfico de la función $p(r)$ y el límite de confianza en función de $r$ se muestra a continuación:
+Suponiendo que mediante el análisis de un conjunto de eventos, se obtiene que $s=0.005$ y $\sigma=0.038$. El gráfico de la función $p(r)$ y el límite de confianza en función de $r$ se muestra a continuación:
 
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{bessel_prob.pdf}
+            \includegraphics[width=0.75\textwidth]{bessel_prob_v2.pdf}
         \end{center}
-        \caption{El gráfico de la función $p(r)$ y el límite de confianza para $s=0.006$ y $\sigma=0.048$ }
+        \caption{El gráfico de la función $p(r)$ y el límite de confianza para $s=0.005$ y $\sigma=0.038$ }
     \end{small}
 \end{figure}
 
@@ -57,7 +57,7 @@ Los pasos que sigo son los siguientes:
     \begin{figure}[H]
         \begin{small}
             \begin{center}
-                \includegraphics[width=0.75\textwidth]{bessel_prob_value_s.pdf}
+                \includegraphics[width=0.75\textwidth]{bessel_prob_value_s_v2.pdf}
             \end{center}
             \caption{}
         \end{small}
@@ -66,12 +66,12 @@ Los pasos que sigo son los siguientes:
     \begin{enumerate}
         \item Teniendo en cuenta el valor inicial de $p_1$, se actualiza el valor  $p_2 \leftarrow p_1 - 0.01 p_1$ \label{itm:1}.
         \item Se calcula la integral entre los dos puntos con valores igual a $p(r)_2$. 
-        \item \label{itm:3} Si la integral es menor a $0.683$, se repite el proceso desde el paso \ref{itm:1}. Caso contrario, si esta integral es mayor o igual a $0.683$, se calculan los valores límites de $r$ mediante el valor $p_2$ en el siguiente paso. 
+        \item \label{itm:3} Si la integral es menor a $0.6827$, se repite el proceso desde el paso \ref{itm:1}. Caso contrario, si esta integral es mayor o igual a $0.6827$, se calculan los valores límites de $r$ mediante el valor $p_2$ en el siguiente paso. 
 
         \begin{figure}[H]
             \begin{small}
                 \begin{center}
-                    \includegraphics[width=0.75\textwidth]{bessel_prob_iterations.pdf}
+                    \includegraphics[width=0.75\textwidth]{bessel_prob_iterations_v2.pdf}
                 \end{center}
                 \caption{}
             \end{small}
@@ -91,10 +91,48 @@ Los pasos que sigo son los siguientes:
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{bessel_prob_ej_0-25_0-5.pdf}
+            \includegraphics[width=0.75\textwidth]{bessel_prob_ej_v2.pdf}
         \end{center}
         \caption{}
     \end{small}
 \end{figure}
 
 \section{Distribución de probabilidad de la  fase del dipolo}
+
+Si ahora se integra la ecuación \ref{eq:full_pdf} se obtiene la distribución de probabilidad de la fase $\psi$ de la Ec.\ref{eq:phase_pdf}.  
+
+\begin{align}
+    p(\psi) &=d\psi\,\frac{1}{2\pi}e^{-k} \Bigg[ 1 + (\pi k)^{\nicefrac{1}{2}} \cos\psi e^{(k\cos^2\psi)} \Big( 1 + L \erf(L k^{\nicefrac{1}{2}} \cos\psi \Big) \Bigg ] \\ \label{eq:phase_pdf}
+    CL_{\psi}(\phi_1, \phi_2, s) &= \int_{\phi_1}^{\phi_2} d\psi \, p(\psi)
+\end{align}  
+donde $k =\nicefrac{s^2}{\sigma^2}$ y $\erf (x)$ es la función error, y
+\begin{align*}
+    L =
+    \begin{cases} 
+        +1 & \text{ Si } -\frac{\pi}{2} \geq x\leq \frac{\pi}{2} \\
+        -1 & \text{ Caso contrario }  \\
+     \end{cases}
+\end{align*}
+
+La distribución de probabilidad tiene la característica  de ser simétrica respecto a 0, por eso los límites de integración son $[-\pi, \pi]$.
+
+Se definió que el nivel de confianza para la fase reportada en este trabajo sea del $95.45\%$d, ya que $k>>1$ la distribución de la fase se acerca a una distribución normal y este nivel de confianza es equivalente a $2\sigma$. Para calcular  $CL_\psi$ dada la simétrica  con respecto al 0, se siguen los siguientes  pasos:
+
+\begin{enumerate}
+    \item Se toma un valor inicial de $\sigma{\psi,0}=0.01*|\psi|$, donde  $\psi$ es valor de fase obtenida ya sea por el método Rayleigh o East-West. Se eligió este valor inicial por conveniencia.
+    \item Se integra la Ec.\ref{eq:phase_pdf} en el rango $[-\sigma_{\psi,0}, \sigma_{\psi,0}]$ y se verifica si $CL_{\psi}(-\sigma_{\psi,0}, \sigma_{\psi,0},s) = 0.9545$. \label{paso1}
+    \item Si ese es el caso, se reporta la fase como $\psi \pm \sigma_{\psi,0}$, caso contrario se vuelve al paso anterior con $\sigma_{\psi,1} \leftarrow \sigma_{\psi,0} + 0.01\sigma_{\psi,0}$. \label{paso2}
+    \item Se entre los pasos \ref{paso1} y \ref{paso2}  hasta obtener el valor de $\sigma_{\psi,N}$ que cumpla $CL_{\psi}(-\sigma_{\psi,N}, \sigma_{\psi,N},s) = 0.9545$
+\end{enumerate}
+
+En la Fig.\ref{fig:phase_prob_ej} se muestra la distribución de probabilidad de la fase para $s=0.005$ y $\sigma = 0.0038$, también se incluye los límites de confianza obtenidos.
+
+\begin{figure}[H]
+    \begin{small}
+        \begin{center}
+            \includegraphics[width=0.75\textwidth]{phase_prob_ej.pdf}
+        \end{center}
+        \caption{La distribución de probabilidad de la fase para $s=0.005$ y $\sigma = 0.0038$ con los límites de confianza del $95.45\%$.}
+        \label{fig:phase_prob_ej}
+    \end{small}
+\end{figure}
