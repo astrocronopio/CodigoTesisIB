@@ -87,7 +87,8 @@ FD: 		& Detector de Fluorescencia (\emph{Fluorescence Detector}) \\
 SD: 		& Detector de Superficie (\emph{Surface Detector})  \\
 WCD: 		& Detector de radiación Cherenkov de agua\\
 EAS: 		& Lluvia Atmosférica Extendida  (\emph{Extensive Air Shower})    \\
-VAOD: 		& Profundidad atmosférica óptica vertical (\emph{Vertical Atmosferic Optical Depth})\\
+VAOD: 		& Profundidad atmosférica óptica vertical (\emph{Vertical} \\
+			& \emph{Atmosferic Optical Depth})\\
 CLF:		& \emph{Central Laser Facility}\\
 XLF:		& \emph{eXtreme Laser Facility}\\
 X$_{max}$: 	& Profundidad atmosférica del máximo de la lluvia \\
@@ -95,13 +96,15 @@ LDF: 		& Función de Distribución Lateral (\emph{Lateral Distribution Function}
 S(1000): 	& Señal a 1000\,m del núcleo de la lluvia y al nivel del suelo \\
 S(1000)$_w$:& Señal de S(1000) corregida por la modulación del clima. \\
 CIC: 		& Corte de Intensidad Constante (\emph{Constant Intensity Cut}) \\
-S$_{38}$: 	& Señal a 1000\,m del núcleo y al nivel del suelo si el ángulo cenital del evento fuera de $38^o$\\
+S$_{38}$: 	& Señal a 1000\,m del núcleo y al nivel del suelo si el ángulo\\
+			& cenital del evento fuera de $38^o$\\
 S$_{38,w}$: & Señal S$_{38}$ corregida por la modulación del clima \\
 eV: 		& electrón Voltio, $1\,$eV$= 1.602\times 10^{-19}\,$J \\
 EeV: 		& $1\,$EeV$=10^{18}\,$eV\\
 PMT: 		& Tubo fotomultiplicador (\emph{Photo-Multiplier Tube})\\
 VEM: 		& Muón vertical equivalente (\emph{Vertical Equivalent Muon})\\
-ICRC: 		& Conferencia Internacional de Rayos Cósmicos (\emph{International Cosmic Ray Conference})\\
+ICRC: 		& Conferencia Internacional de Rayos Cósmicos \\
+			& (\emph{International Cosmic Ray Conference})\\
 EW:			& Método East - West
 \end{tabular}
                      %Abreviaturas
@@ -116,16 +119,22 @@ EW:			& Método East - West
 \end{preliminary}
 
 %Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
+ \chapter{Introducción}
 	\graphicspath{{../IntroduccionBachelor/}}
 	\input{../IntroduccionBachelor/intro.tex}
-	
+  
+ \chapter{El Observatorio Pierre Auger}
 	\graphicspath{{../IntroduccionAuger/}}
 	\input{../IntroduccionAuger/auger.tex}
 
-	\chapter{Introducción}
-	\graphicspath{{../0_Introduccion/}}
-	\input{../0_Introduccion/introduccion_v8}
-	
+ \chapter{Registro de eventos}
+	\graphicspath{{../IntroduccionReport/}}
+	\input{../IntroduccionReport/introduccion_v8}
+
+ \chapter{Modulación del clima para el archivo de todos los disparos en el rango 2014-2020 }	
+	\graphicspath{{../Weather_ModulationReport/}}
+	\input{../Weather_ModulationReport/weather_modulation_v3.tex}
+
 
  \chapter{Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}
 	\graphicspath{{../Clima/}}
@@ -137,29 +146,33 @@ EW:			& Método East - West
 	\input{../Anisotropia/anisotropia_weather.tex}
 	
 
-\chapter{Métodos}
-	\graphicspath{{../1_Metodo/}}
-	\input{../1_Metodo/metodo_v5}
+\chapter{Método Rayleigh}
+	\graphicspath{{../MetodoReport/}}
+	\input{../MetodoReport/metodo_v5}
 	
 	
-\chapter{Dipolo en el rango 1 EeV - 2 EeV}
-	\graphicspath{{../6_Dipole_1-2_EeV/}}
-	\input{../6_Dipole_1-2_EeV/dipolo_1-2_EeV_v8}
+\chapter{Resultados del método Rayleigh en el rango 1 EeV - 2 EeV}
+	\graphicspath{{../Dipole_1-2_EeVReport/}}
+	\input{../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v8}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	\graphicspath{{../EW/}}
+\chapter{Método East-West}
+	\input{../EW/report_EW_calculo_v3.tex}
 
-	\input{../EW/report_EW_calculo_v2.tex}
-
+\chapter{Distribución de probabilidad de la amplitud y fase del dipolo} \label{PDFs}
 	\input{../EW/report_EW_PDF.tex}
 
+\chapter{Resultados del método East - West}
 	\input{../EW/report_EW_results_Ray}
 
+\chapter{Conclusiones}
 	\input{../Conclusiones/conclusiones.tex}
 
 
-% \appendix
-% \input{../Apendice/apend1.tex}
+\appendix
+\input{../Apendice/apend_v2.tex}
 
 \begin{biblio}
 	\bibliography{../EW/mibib_16.bib,mibib}

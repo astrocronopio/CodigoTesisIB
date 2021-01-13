@@ -19,12 +19,12 @@ file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two
 
 #----------------------------------------------------------------------------------------------------------------
 
-	awk '{i=1}
-			{	if(i>2)i=1;
-				if(NR>2) print $1,t[i],$3,rho[i],$5,$6;
-				t[i]= $2;
-				rho[i]=$4;
-				i++}' "$file_utctprh_bins"  > "$file_delay" 
+	# awk '{i=1}
+	# 		{	if(i>2)i=1;
+	# 			if(NR>2) print $1,t[i],$3,rho[i],$5,$6;
+	# 			t[i]= $2;
+	# 			rho[i]=$4;
+	# 			i++}' "$file_utctprh_bins"  > "$file_delay" 
 #----------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------
 
@@ -34,8 +34,9 @@ file_delay="$filepath""utctprh_binsdelayrho.dat" 			#Weather Data delayed by two
 	awk 'BEGIN{i=1}
 			{	if(i>24)i=1;
 				if(NR>24) 
-					print $1,$2,$3,$4,$5,$6,$7,$8,$9,rho[i]; 
-					rho[i]=$4; 
+					print $1,$2,$3,$4,$5,$6,$7,$8,$9,rhodelay2[i]; 
+					utc[i]=$2;
+					rhodelay2[i]=$4; 
 					i++}'  "$file_utctprh"  > test.dat 
 #----------------------------------------------------------------------------------------------------------------
 
@@ -46,17 +47,17 @@ echo "--"
 	awk 'BEGIN{i=1}
 			{	if(i>144) i=1;
 				if(NR>144)
-					print utc[i], temp[i], pre[i], rho[i], rho24[i], hex6[i], hex5[i], rhod[i], iw[i], rhodelay[i], $5/1.0;
+					print utc[i], temp[i], pre[i], rho[i], rho24[i], hex6[i], hex5[i], rhod[i], iw[i], rhodelay2[i], $5/1.0;
 					utc[i]=$1/1.0;
 					temp[i]=$2/1.0;
 					pre[i]=$3/1.0;
 					rho[i]=$4/1.0;
 					rho24[i]=$5/1.0;
-					hex6[i]=$6;
-					hex5[i]=$7;
+					hex6[i]=$6/1.0;
+					hex5[i]=$7/1.0;
 					rhod[i]=$8/1.0;
 					iw[i]=$9/1.0;
-					rhodelay[i]=$10/1.0;
+					rhodelay2[i]=$10/1.0;
 					i++}' test.dat > "$delay"
 #----------------------------------------------------------------------------------------------------------------
 

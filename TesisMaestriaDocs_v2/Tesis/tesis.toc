@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {i}}{section*.1}%
 \contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {ii}}{section*.3}%
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{section*.5}%
-\contentsline {chapter}{Resumen}{\es@scroman {ix}}{section*.7}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vi}}{section*.5}%
+\contentsline {chapter}{Resumen}{\es@scroman {x}}{section*.7}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Rayos cósmicos}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Espectro de energías}{2}{section.2.1}%
@@ -17,77 +17,86 @@
 \contentsline {subsection}{\numberline {3.3.2}Reconstrucción de las lluvias}{8}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Calibración de la energía}{9}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Monitoreo del clima}{10}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Introducción}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Registro de eventos}{12}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Acerca de todos los disparos del SD}{13}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Acerca de los eventos}{15}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Acerca del registro de hexágonos}{15}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Acerca de la tesis de licenciatura}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}La física detrás de la modulación del clima}{17}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Trabajos anteriores}{18}{subsection.5.1.1}%
-\contentsline {subsubsection}{Efectos de la atmósfera sobre los rayos cósmicos}{19}{section*.18}%
-\contentsline {subsubsection}{Modelo teórico}{20}{section*.20}%
-\contentsline {subsubsection}{Estimador del ajuste}{22}{section*.21}%
-\contentsline {subsection}{\numberline {5.1.2}Condiciones climáticas y área activa del observatorio Pierre Auger}{23}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Resultados para el arreglo de detectores de superficie de 1500\tmspace +\thinmuskip {.1667em}m de distancia}{23}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Datos presentados en la ICRC 2015}{25}{subsection.5.2.1}%
-\contentsline {subsubsection}{Ajuste de los parámetros del clima}{26}{section*.28}%
-\contentsline {subsection}{\numberline {5.2.2}Datos presentados en la ICRC 2019}{28}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima}{30}{subsection.5.2.3}%
-\contentsline {subsubsection}{Ajuste de los parámetros del clima}{31}{section*.37}%
-\contentsline {subsection}{\numberline {5.2.4}Datos presentados en la ICRC 2019 usando la energía reconstruida en este trabajo}{33}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{34}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Anisotropías en las direcciones de arribo de los rayos cósmicos}{35}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introducción}{35}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Métodos}{35}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Exposición del detector}{35}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Análisis en ascensión recta}{37}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Características de los datos}{37}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Anisotropías en ascensión recta en los archivos del ICRC 2017 y ICRC 2019}{37}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Eventos por encima de 8 EeV }{37}{subsection.6.4.1}%
-\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{37}{section*.42}%
-\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{38}{section*.44}%
-\contentsline {section}{\numberline {6.5}Anisotropías en ascensión recta en los archivos con todos los disparos}{39}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Características de los archivos de datos analizados}{39}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Eventos por encima de 1 EeV }{40}{subsection.6.5.2}%
-\contentsline {subsubsection}{Características de los datos analizados}{40}{section*.49}%
-\contentsline {subsubsection}{Resultados del archivo de 2017}{41}{section*.51}%
-\contentsline {subsubsection}{Modulación del clima para todos los triggers}{41}{section*.53}%
-\contentsline {chapter}{\numberline {7}Métodos}{46}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}{46}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Variaciones relativas de los hexágonos}{47}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{49}{subsection.7.1.2}%
-\contentsline {chapter}{\numberline {8}Dipolo en el rango 1 EeV - 2 EeV}{53}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Características del conjunto de datos}{53}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Pesos de los eventos para frecuencias de referencia}{54}{subsection.8.1.1}%
-\contentsline {section}{\numberline {8.2}Análisis de anisotropías en ascensión recta para el primer armónico}{55}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Trabajo a futuro}{58}{subsection.8.2.1}%
-\contentsline {chapter}{\numberline {9}Método East-West}{59}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Descripción de una anisotropía dipolar}{59}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Representación en coordenadas locales de la anisotropía dipolar}{60}{subsection.9.1.1}%
-\contentsline {section}{\numberline {9.2}Descripción formal del método East-West}{60}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Flujo de eventos del Este y Oeste}{60}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Aproximaciones del método}{61}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Cálculo de la diferencia de flujos}{61}{subsection.9.2.3}%
-\contentsline {section}{\numberline {9.3}Estimación de la componente ecuatorial del dipolo mediante el análisis del primer armónico}{63}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Cálculo de la amplitud del dipolo para los eventos de Todos los Disparos}{64}{subsection.9.3.1}%
-\contentsline {subsubsection}{Cálculo para frecuencias arbitrarias}{66}{section*.70}%
-\contentsline {section}{\numberline {9.4}Verificación del código}{66}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Comparación con el trabajo \cite {Aab_2020} de la colaboración}{66}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Tabla comparando con la variable $\tilde {\alpha }$ con la ascensión recta del cenit }{66}{subsection.9.4.2}%
-\contentsline {chapter}{\numberline {10}Distribución de probabilidad de la amplitud y fase del dipolo}{68}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Distribución de probabilidad de la amplitud}{68}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}Haciendo la cuenta de los márgenes de confianza de la amplitud}{69}{subsection.10.1.1}%
-\contentsline {section}{\numberline {10.2}Distribución de probabilidad de la fase del dipolo}{71}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Resultados del método East - West}{73}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Resultados en distintos rangos de energía}{74}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Resultados en el rango 0.25 EeV - 0.5 EeV}{74}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Resultados en el rango 0.5 EeV - 1 EeV}{75}{subsection.11.1.2}%
-\contentsline {subsection}{\numberline {11.1.3}Resultados en el rango 1 EeV - 2 EeV}{77}{subsection.11.1.3}%
-\contentsline {section}{\numberline {11.2}Gráficos}{80}{section.11.2}%
-\contentsline {chapter}{\numberline {12}Esto va a ir en otro capítulo que todavía no armé. Y los resultados no estan actualizados}{82}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Comparando resultados entre métodos para barridos de frecuencias}{82}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Verificación del código escrito durante la maestría}{82}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Comparando amplitud en función de la frecuencia}{83}{section.12.3}%
-\contentsline {chapter}{\numberline {13}Conclusiones}{85}{chapter.13}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{86}{section*.94}%
+\contentsline {chapter}{\numberline {5}Modulación del clima para el archivo de todos los disparos en el rango 2014-2020 }{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Pesos de los hexágonos}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Anisotropía}{18}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Lista detallada de los filtros aplicados de datos del herald}{18}{subsection.5.2.1}%
+\contentsline {subsubsection}{Datos para el análisis de anisotropía}{18}{section*.18}%
+\contentsline {subsubsection}{Datos para el cálculo de las correcciones del clima}{19}{section*.19}%
+\contentsline {subsection}{\numberline {5.2.2}Análisis en frecuencia}{20}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Corrección del clima}{20}{section.5.3}%
+\contentsline {subsubsection}{Modulación del clima para todos los triggers}{21}{section*.24}%
+\contentsline {chapter}{\numberline {6}Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}La física detrás de la modulación del clima}{26}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Trabajos anteriores}{27}{subsection.6.1.1}%
+\contentsline {subsubsection}{Efectos de la atmósfera sobre los rayos cósmicos}{28}{section*.32}%
+\contentsline {subsubsection}{Modelo teórico}{29}{section*.34}%
+\contentsline {subsubsection}{Estimador del ajuste}{31}{section*.35}%
+\contentsline {subsection}{\numberline {6.1.2}Condiciones climáticas y área activa del observatorio Pierre Auger}{32}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Resultados para el arreglo de detectores de superficie de 1500\tmspace +\thinmuskip {.1667em}m de distancia}{32}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Datos presentados en la ICRC 2015}{34}{subsection.6.2.1}%
+\contentsline {subsubsection}{Ajuste de los parámetros del clima}{35}{section*.42}%
+\contentsline {subsection}{\numberline {6.2.2}Datos presentados en la ICRC 2019}{37}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima}{39}{subsection.6.2.3}%
+\contentsline {subsubsection}{Ajuste de los parámetros del clima}{40}{section*.51}%
+\contentsline {subsection}{\numberline {6.2.4}Datos presentados en la ICRC 2019 usando la energía reconstruida en este trabajo}{42}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Trabajos futuros}{43}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Anisotropías en las direcciones de arribo de los rayos cósmicos}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introducción}{44}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Métodos}{44}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Exposición del detector}{44}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Análisis en ascensión recta}{46}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Características de los datos}{46}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Anisotropías en ascensión recta en los archivos del ICRC 2017 y ICRC 2019}{46}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Eventos por encima de 8 EeV }{46}{subsection.7.4.1}%
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2017}{46}{section*.56}%
+\contentsline {subsubsection}{Resultados para los datos del ICRC 2019}{47}{section*.58}%
+\contentsline {section}{\numberline {7.5}Anisotropías en ascensión recta en los archivos con todos los disparos}{48}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Características de los archivos de datos analizados}{48}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Eventos por encima de 1 EeV }{49}{subsection.7.5.2}%
+\contentsline {subsubsection}{Características de los datos analizados}{49}{section*.63}%
+\contentsline {subsubsection}{Resultados del archivo de 2017}{50}{section*.65}%
+\contentsline {subsubsection}{Modulación del clima para todos los triggers}{50}{section*.67}%
+\contentsline {chapter}{\numberline {8}Método Rayleigh}{55}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Cálculo de los coeficientes de Fourier para el análisis de anisotropía en ascensión recta}{55}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Variaciones relativas de los hexágonos}{56}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{58}{subsection.8.1.2}%
+\contentsline {chapter}{\numberline {9}Resultados del método Rayleigh en el rango 1 EeV - 2 EeV}{62}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Características del conjunto de datos}{62}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Pesos de los eventos para frecuencias de referencia}{64}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Análisis de anisotropías en ascensión recta para el primer armónico}{64}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Trabajo a futuro}{67}{subsection.9.2.1}%
+\contentsline {chapter}{\numberline {10}Método East-West}{68}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Descripción de una anisotropía dipolar}{68}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Representación en coordenadas locales de la anisotropía dipolar}{69}{subsection.10.1.1}%
+\contentsline {section}{\numberline {10.2}Descripción formal del método East-West}{69}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Flujo de eventos del Este y Oeste}{69}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Aproximaciones del método}{70}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Cálculo de la diferencia de flujos}{70}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}Estimación de la componente ecuatorial del dipolo mediante el análisis del primer armónico}{73}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Cálculo de la amplitud del dipolo para los eventos de Todos los Disparos}{74}{subsection.10.3.1}%
+\contentsline {subsubsection}{Cálculo para frecuencias arbitrarias}{75}{section*.84}%
+\contentsline {section}{\numberline {10.4}Verificación del código}{75}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Comparación con el trabajo \cite {Aab_2020} de la colaboración}{75}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Tabla comparando con la variable $\tilde {\alpha }$ con la ascensión recta del cenit }{76}{subsection.10.4.2}%
+\contentsline {chapter}{\numberline {11}Distribución de probabilidad de la amplitud y fase del dipolo}{77}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Distribución de probabilidad de la amplitud}{77}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Haciendo la cuenta de los márgenes de confianza de la amplitud}{78}{subsection.11.1.1}%
+\contentsline {section}{\numberline {11.2}Distribución de probabilidad de la fase del dipolo}{80}{section.11.2}%
+\contentsline {chapter}{\numberline {12}Resultados del método East - West}{82}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Resultados en distintos rangos de energía}{83}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Resultados en el rango 0.25 EeV - 0.5 EeV}{83}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Resultados en el rango 0.5 EeV - 1 EeV}{84}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}Resultados en el rango 1 EeV - 2 EeV}{86}{subsection.12.1.3}%
+\contentsline {section}{\numberline {12.2}Gráficos}{89}{section.12.2}%
+\contentsline {chapter}{\numberline {13}Esto va a ir en otro capítulo que todavía no armé. Y los resultados no estan actualizados}{91}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Comparando resultados entre métodos para barridos de frecuencias}{91}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Verificación del código escrito durante la maestría}{91}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Comparando amplitud en función de la frecuencia}{92}{section.13.3}%
+\contentsline {chapter}{\numberline {14}Conclusiones}{94}{chapter.14}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{95}{section*.108}%

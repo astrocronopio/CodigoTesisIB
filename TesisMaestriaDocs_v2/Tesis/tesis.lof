@@ -11,56 +11,66 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Histograma de eventos por rango de tiempo medido por el Observatorio Pierre Auger\relax }}{13}{figure.caption.14}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces La eficiencia del disparo en función de la energía para eventos con ángulo cenital $\theta $ menor a $60^o$. Este figura fue extraída del trabajo \cite {triggers_ref}\relax }}{14}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Mediciones de la temperatura a distintas alturas sobre el nivel del mar en función de la hora del día en Malargüe. (Hora Local: UTC-3).\relax }}{18}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagramas simplificado de un lluvia de la misma energía para distintas condiciones atmosféricas\relax }}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Variaciones de las variables del clima en función del tiempo\relax }}{23}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Evolución temporal del área efectiva del Observatorio Pierre Auger. La línea horizontal señala el área mínima considerada para el análisis.\relax }}{24}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Tasa de eventos por días comparadas con el ajuste entre los años 2005 hasta 2015. Los datos analizados fueron los presentados en la ICRC 2015 para energías mayores a $1\tmspace +\thinmuskip {.1667em}$EeV donde se observa la modulación anual y diaria del clima. \relax }}{26}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Tasa de eventos por días comparadas con el ajuste entre los años 2005 hasta 2015. Los datos analizados son los presentados en la ICRC 2015 para energías mayores a $2\tmspace +\thinmuskip {.1667em}$EeV. donde se observa la modulación anual y diaria del clima \relax }}{26}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Parámetros de la modulación del clima considerando los datos de la ICRC 2015. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact} y con los ajustes obtenidos sin considerar la dependencia con $sin^2(\theta )$. \relax }}{27}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Tasa de eventos promedio por cada día entre los años 2005 hasta 2015 del conjunto de datos presentado en la ICRC 2019. Se muestran las tasas para dos cortes en energía, mayor a $1\tmspace +\thinmuskip {.1667em}$EeV y mayor a $2\tmspace +\thinmuskip {.1667em}$EeV\relax }}{29}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Tasa eventos por hora del día por unidad de área entre los años 2005 hasta 2015 del conjunto de datos presentado en la ICRC 2019. Se muestran las tasas para dos cortes en energía, mayor a $1\tmspace +\thinmuskip {.1667em}$EeV y mayor a $2\tmspace +\thinmuskip {.1667em}$EeV\relax }}{30}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Tasa de eventos entre los años 2005 hasta 2018 del conjunto de datos presentado en la ICRC 2019.\relax }}{31}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Parámetros de la modulación del clima considerando los datos sin corregir con el clima y la reconstrucción anterior.\relax }}{32}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Tasa de eventos por día para eventos de energía mayor a 2\tmspace +\thinmuskip {.1667em}EeV para los datos de ICRC 2019 y la tasa de eventos obtenida con la reconstrucción de energía en este trabajo comparados en los periodos estudiados\relax }}{33}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Pesos de los hexágonos\relax }}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar\relax }}{18}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Tasa de eventos en el rango de tiempo a trabajar para el ajuste de los parámetros del clima.\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Análisis en frecuencia en ascensión recta en rango 1 EeV - 2 EeV\relax }}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Parámetros de clima calculados para la corrección del archivo de todos los disparos\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tasa de eventos diaria por encima de 1 EeV para los datos de todos los disparos.\relax }}{21}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2017. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{25}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Pesos para dos frecuencias en particular, la frecuencia sidera y solar, de periodo $365.256$ y $365.25$ respectivamente\relax }}{36}{figure.caption.41}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Primer armónico en ascensión recta de los datos del ICRC 2017\relax }}{38}{figure.caption.43}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Primer armónico en ascensión recta de los datos del ICRC 2019.\relax }}{39}{figure.caption.45}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diferencia entre las energías del archivo de 2017 y el archivo del 2019\relax }}{40}{figure.caption.47}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Calibración de las energías del archivo de 2017 y el archivo del 2019\relax }}{40}{figure.caption.48}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Tasa de eventos diaria por encima de 1 EeV para los datos de todos los disparos.\relax }}{41}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2017. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{42}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{44}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{45}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mediciones de la temperatura a distintas alturas sobre el nivel del mar en función de la hora del día en Malargüe. (Hora Local: UTC-3).\relax }}{27}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagramas simplificado de un lluvia de la misma energía para distintas condiciones atmosféricas\relax }}{29}{figure.caption.33}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Variaciones de las variables del clima en función del tiempo\relax }}{32}{figure.caption.36}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Evolución temporal del área efectiva del Observatorio Pierre Auger. La línea horizontal señala el área mínima considerada para el análisis.\relax }}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Tasa de eventos por días comparadas con el ajuste entre los años 2005 hasta 2015. Los datos analizados fueron los presentados en la ICRC 2015 para energías mayores a $1\tmspace +\thinmuskip {.1667em}$EeV donde se observa la modulación anual y diaria del clima. \relax }}{35}{figure.caption.40}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Tasa de eventos por días comparadas con el ajuste entre los años 2005 hasta 2015. Los datos analizados son los presentados en la ICRC 2015 para energías mayores a $2\tmspace +\thinmuskip {.1667em}$EeV. donde se observa la modulación anual y diaria del clima \relax }}{35}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Parámetros de la modulación del clima considerando los datos de la ICRC 2015. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact} y con los ajustes obtenidos sin considerar la dependencia con $sin^2(\theta )$. \relax }}{36}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Tasa de eventos promedio por cada día entre los años 2005 hasta 2015 del conjunto de datos presentado en la ICRC 2019. Se muestran las tasas para dos cortes en energía, mayor a $1\tmspace +\thinmuskip {.1667em}$EeV y mayor a $2\tmspace +\thinmuskip {.1667em}$EeV\relax }}{38}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Tasa eventos por hora del día por unidad de área entre los años 2005 hasta 2015 del conjunto de datos presentado en la ICRC 2019. Se muestran las tasas para dos cortes en energía, mayor a $1\tmspace +\thinmuskip {.1667em}$EeV y mayor a $2\tmspace +\thinmuskip {.1667em}$EeV\relax }}{39}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Tasa de eventos entre los años 2005 hasta 2018 del conjunto de datos presentado en la ICRC 2019.\relax }}{40}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Parámetros de la modulación del clima considerando los datos sin corregir con el clima y la reconstrucción anterior.\relax }}{41}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Tasa de eventos por día para eventos de energía mayor a 2\tmspace +\thinmuskip {.1667em}EeV para los datos de ICRC 2019 y la tasa de eventos obtenida con la reconstrucción de energía en este trabajo comparados en los periodos estudiados\relax }}{42}{figure.caption.54}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{48}{figure.caption.59}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.\relax }}{49}{figure.caption.60}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos, con el código de \cite {taborda} y con el código escrito para este trabajo.\relax }}{52}{figure.caption.61}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Pesos para dos frecuencias en particular, la frecuencia sidera y solar, de periodo $365.256$ y $365.25$ respectivamente\relax }}{45}{figure.caption.55}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Primer armónico en ascensión recta de los datos del ICRC 2017\relax }}{47}{figure.caption.57}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Primer armónico en ascensión recta de los datos del ICRC 2019.\relax }}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Diferencia entre las energías del archivo de 2017 y el archivo del 2019\relax }}{49}{figure.caption.61}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Calibración de las energías del archivo de 2017 y el archivo del 2019\relax }}{49}{figure.caption.62}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Tasa de eventos diaria por encima de 1 EeV para los datos de todos los disparos.\relax }}{50}{figure.caption.68}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2017. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{51}{figure.caption.69}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos de 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{53}{figure.caption.71}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Parámetros de la modulación del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los ajustes obtenidos en \cite {aab2017impact}.\relax }}{54}{figure.caption.72}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Tasa de eventos del conjunto más reciente de eventos con todos los disparos. Se observa un tasa baja en la segunda mitad del 2013.\relax }}{53}{figure.caption.62}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Diferencia entre las energías de entre la reconstrucción del 2017 y del 2019\relax }}{54}{figure.caption.63}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Variaciones de los hexágonos en función de la ascensión recta del observatorio para frecuencias características en rango mencionado. \relax }}{55}{figure.caption.64}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Anisotropía en función de la frecuencia para el rango de energía 1 EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{56}{figure.caption.65}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden, en el rango de energía $1$ EeV - $2$ EeV.\relax }}{57}{figure.caption.67}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden en el rango de energía $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.\relax }}{57}{figure.caption.68}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite {referencia_pesos}.\relax }}{57}{figure.caption.73}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.\relax }}{58}{figure.caption.74}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos, con el código de \cite {taborda} y con el código escrito para este trabajo.\relax }}{61}{figure.caption.75}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Tasa de eventos del conjunto más reciente de eventos con todos los disparos. Se observa un tasa baja en la segunda mitad del 2013.\relax }}{62}{figure.caption.76}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Diferencia entre las energías de entre la reconstrucción del 2017 y del 2019\relax }}{63}{figure.caption.77}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Variaciones de los hexágonos en función de la ascensión recta del observatorio para frecuencias características en rango mencionado. \relax }}{64}{figure.caption.78}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Anisotropía en función de la frecuencia para el rango de energía 1 EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{65}{figure.caption.79}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden, en el rango de energía $1$ EeV - $2$ EeV.\relax }}{66}{figure.caption.81}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden en el rango de energía $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.\relax }}{66}{figure.caption.82}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces El gráfico de la función $p(r)$ y el límite de confianza para $s=0.0047$ y $\sigma =0.0038$ \relax }}{69}{figure.caption.72}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces \relax }}{70}{figure.caption.73}%
-\contentsline {figure}{\numberline {10.3}{\ignorespaces \relax }}{71}{figure.caption.74}%
-\contentsline {figure}{\numberline {10.4}{\ignorespaces La distribución de probabilidad de la fase para $s=0.0047$ y $\sigma = 0.0038$ con los límites de confianza del $95.45\%$.\relax }}{72}{figure.caption.75}%
+\contentsline {figure}{\numberline {11.1}{\ignorespaces El gráfico de la función $p(r)$ y el límite de confianza para $s=0.0047$ y $\sigma =0.0038$ \relax }}{78}{figure.caption.86}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces \relax }}{79}{figure.caption.87}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces \relax }}{80}{figure.caption.88}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces La distribución de probabilidad de la fase para $s=0.0047$ y $\sigma = 0.0038$ con los límites de confianza del $95.45\%$.\relax }}{81}{figure.caption.89}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.25 EeV - 0.5 EeV .\relax }}{75}{figure.caption.78}%
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.50 EeV .\relax }}{75}{figure.caption.79}%
-\contentsline {figure}{\numberline {11.3}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.5 EeV - 1.0 EeV .\relax }}{77}{figure.caption.81}%
-\contentsline {figure}{\numberline {11.4}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1.0 EeV .\relax }}{77}{figure.caption.82}%
-\contentsline {figure}{\numberline {11.5}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 1.0 EeV - 2.0 EeV .\relax }}{79}{figure.caption.85}%
-\contentsline {figure}{\numberline {11.6}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{79}{figure.caption.86}%
-\contentsline {figure}{\numberline {11.7}{\ignorespaces Valores normalizados con $d_{\perp ,UL}$\relax }}{80}{figure.caption.87}%
-\contentsline {figure}{\numberline {11.8}{\ignorespaces Amplitudes con incertidumbre, apuntando en la dirección de la fase. Los círculos punteados los valores del trabajo \cite {Aab_2020}del trabajo \cite {Aab_2020} con sus respectivas incertidumbres y la línea punteada en negro marca la dirección del centro galáctico.\relax }}{81}{figure.caption.88}%
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.25 EeV - 0.5 EeV .\relax }}{84}{figure.caption.92}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.50 EeV .\relax }}{84}{figure.caption.93}%
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 0.5 EeV - 1.0 EeV .\relax }}{86}{figure.caption.95}%
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1.0 EeV .\relax }}{86}{figure.caption.96}%
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Valores de las fases obtenidos en este trabajo y en el trabajo \cite {Aab_2020} con sus respectivas incertidumbres para la frecuencia sidérea en el rango 1.0 EeV - 2.0 EeV .\relax }}{88}{figure.caption.99}%
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{88}{figure.caption.100}%
+\contentsline {figure}{\numberline {12.7}{\ignorespaces Valores normalizados con $d_{\perp ,UL}$\relax }}{89}{figure.caption.101}%
+\contentsline {figure}{\numberline {12.8}{\ignorespaces Amplitudes con incertidumbre, apuntando en la dirección de la fase. Los círculos punteados los valores del trabajo \cite {Aab_2020}del trabajo \cite {Aab_2020} con sus respectivas incertidumbres y la línea punteada en negro marca la dirección del centro galáctico.\relax }}{90}{figure.caption.102}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.5 EeV .\relax }}{84}{figure.caption.91}%
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1 EeV .\relax }}{84}{figure.caption.92}%
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{84}{figure.caption.93}%
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Barrido de frecuencias en el rango 0.25 EeV - 0.5 EeV .\relax }}{93}{figure.caption.105}%
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Barrido de frecuencias en el rango 0.5 EeV - 1 EeV .\relax }}{93}{figure.caption.106}%
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Barrido de frecuencias en el rango 1 EeV - 2 EeV .\relax }}{93}{figure.caption.107}%
 \addvspace {10\p@ }
