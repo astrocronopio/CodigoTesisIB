@@ -97,19 +97,19 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			// 	if(utc  < utci || Theta > 60) continue;
 			// }	
 			
-			// //	Over energy 4 EeV
-			// {
-			// 	liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
-			// 	if (energy < 12.0 || energy >= 24) continue;
-			// 	if(utc  < utci || Theta > 80) continue;
-			// }	
+			//	Over energy 4 EeV
+			{
+				liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
+				if (energy < 8 || energy >= 16) continue;
+				if(utc  < utci || Theta > 80) continue;
+			}	
 
-			{			
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			//if (energy<energy_threshold) continue;
-			if(utc  < utci) continue;
-			if(Theta > 60) continue;
-			}
+			// {			
+			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			// //if (energy<energy_threshold) continue;
+			// if(utc  < utci) continue;
+			// if(Theta > 60) continue;
+			// }
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);

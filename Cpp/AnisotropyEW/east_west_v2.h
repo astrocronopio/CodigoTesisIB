@@ -115,8 +115,8 @@ void ew_given_freq( double freq		, const char* in_file, const char* out_file,
 		
      	std::cout <<"\nProbabilidad:\t"	<< prtilde 			<< std::endl;
 		std::cout <<"Fase:\t\t"			<< phase/d2r 		<< "+/-" << sigma_phase/d2r<<"\n" ;
-		std::cout <<"Fase sigma \t"     << 2.0*error_phase(rtilde,sigma,phase) << std::endl;
-		std::cout <<"Fase sqrt \t"     << sigma_phase*sqrt(2)/d2r << std::endl;
+		std::cout <<"Fase sigma \t"     << error_phase(rtilde,sigma,phase) << std::endl;
+		std::cout <<"Fase sqrt \t"      << sigma_phase*sqrt(2)/d2r << std::endl;
 
 
 		std::cout <<"\n\n<cos(dec)>:\t"	<< average_cos_dec  << std::endl;

@@ -44,7 +44,6 @@ double Bessel0(double x)
         V=1./T;
         return C7+C8*V+C9*pow(V,2)+C10*pow(V,3)+C11*pow(V,4)+C12*pow(V,5)+C13*pow(V,6)+C14*pow(V,7)+C15*pow(V,8);
     }
-    // return boost::math::cyl_bessel_k(0, x);
 }
 
 
