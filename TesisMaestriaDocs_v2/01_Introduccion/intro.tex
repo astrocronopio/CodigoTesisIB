@@ -38,9 +38,47 @@ El desarrollo de la lluvia puede describirse mediante la profundidad atmosféric
 \end{equation}
 donde $\rho$ es la densidad del aire en función de la posición.
 
+
+\section{Descripción de una anisotropía dipolar}
+Las anisotropías en las direcciones de llegada de los RCs indican que ciertas zonas del cielo tienen una variación significativa con respecto a la media de flujo de RCs. Estas anisotropías pueden describirse mediante una superposición de funciones armónicas. El primer orden corresponde a una anisotropía dipolar.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{auger_spectrum_v2.png}
+	\includegraphics[width=0.7\textwidth]{auger_spectrum_v2.png}
 	\caption{Espectro de rayos cósmicos medidos mediante lluvias atmosféricas en función de la energía $E$. Figura extraída de \cite{PGD}}
 	\label{fig:spectra}
 \end{figure}
+
+
+Una anisotropía dipolar se puede describir de la siguiente forma:
+\begin{equation}
+    \Phi(\hat{\bf{u}}) = \Phi_0(1+\bf{d}\cdot\hat{\bf{u}})
+    \label{eq:dipolo_general}
+\end{equation}
+\noindent donde $\Phi_0$ es el flujo medio de eventos, $\hat{\bf{u}}$ es un versor que apunta a la dirección a estudiar, y $\bf{d}$ es un vector con módulo igual a la amplitud del dipolo y cuya dirección está apuntando al máximo del flujo. Tomando coordenadas ecuatoriales \footnote{El sistema de coordenadas ecuatoriales se desarrolla en el apéndice \ref{apendice:ecuatorial}}, la dirección de $\bf{d}$ es $(\alpha_d, \delta_d$) y de $\hat{\bf{u}}$ es $(\alpha, \delta)$, entonces  el producto escalar  entre estos vectores se puede escribir de la siguiente manera:
+\begin{equation}
+    \textbf{d}\cdot\hat{\bf{u}}= d (\cos\delta_d \cos\delta \cos(\alpha - \alpha_d) + \sin\delta_d  \sin\delta)
+    \label{eq:product_ud}
+\end{equation}
+El desarrollo para obtener esta expresión se encuentra en el apéndice \ref{cambio_coord}.
+
+Otro aspecto importante de la representación del dipolo en coordenadas ecuatoriales, es que la proyección de la amplitud del dipolo sobre el plano ecuatorial $d_\perp$ se puede aproximar de la siguiente manera \cite{taborda} :
+\begin{equation}
+    d_\perp \simeq \frac{r_1}{ \langle \cos\delta \rangle}
+    \label{eq:fourier_perp}
+\end{equation}
+donde $r_1$ es la amplitud del primer armónico en ascensión recta, y $\langle \cos\delta \rangle$ es el valor medio de $\cos\delta $ de los eventos.
+
+\subsection{Representación en coordenadas locales de la anisotropía dipolar}
+
+Podemos reescribir el producto escalar entre el dipolo $\textbf{d}$ y el versor $\hat{u}$ que apunta en una dirección cualquiera mediante las coordenadas locales $\theta$ y $\phi$\footnote{El sistema de coordenadas locales se desarrolla en el apéndice \ref{apendice:local}.} como se muestra en la siguiente expresión: 
+\begin{align}
+    \textbf{d} &=  d_{x'}(\alpha^0, \delta^0)\hat{x}' +  d_{y'}(\alpha^0, \delta^0)\hat{y}'+ d_{z'}(\alpha^0, \delta^0)\hat{z}' \\
+    \hat{\bf{u}} &=\sin\theta \cos\phi \hat{x}' + \sin\theta \sin\phi \hat{y}' + \cos\theta\hat{z}'\\
+    \textbf{d}\cdot\hat{\bf{u}} &= d_{x'}(\alpha^0, \delta^0)\sin\theta \cos\phi
+    + d_{y'}(\alpha^0, \delta^0) \sin\theta \sin\phi  
+     + d_{z'}(\alpha^0, \delta^0)\cos\theta \label{eq:dot-prod-local}
+\end{align}
+donde los versores $\hat{x}'$, $\hat{y}'$ y $\hat{z}'$ apuntan a la dirección Este, Norte y del cenit respectivamente. 
+
+El dipolo $\textbf{d}$ está fijo en el cielo pero visto desde las coordenadas locales, para poder trabajar con $\theta$ y $\phi$, sus proyecciones  $d_{x'}$, $d_{y'}$ y $d_{z'}$ tienen una dependencia con la ascensión recta  $\alpha^0$ y declinación $\delta^0$ del cenit. 

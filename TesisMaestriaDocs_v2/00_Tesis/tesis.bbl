@@ -2,6 +2,13 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{Aab_2020}
+{Aab A. et al.}
+\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
+  Auger Observatory}}.
+\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
+
 \bibitem{PGD}
 Olive, K.
 \newblock Review of particle physics.
@@ -22,6 +29,20 @@ Justin M.~Albury, B. R.~D., Jose A.~Bellido.
 \newblock Exploring the energy threshold for full trigger efficiency of the
   surface detector with hybrid events {GAP 2018-038}.
 \newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
+
+\bibitem{referencia_pesos}
+Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
+  I.~A.
+\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
+  {Pierre Auger Observatory}.
+\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
+
+\bibitem{taborda}
+Taborda, O.
+\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
+  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
+\newblock Tesis Doctoral, Instituto Balseiro, 2018.
 
 \bibitem{collaboration2013pierre}
 {The Pierre Auger Collaboration}.
@@ -62,9 +83,9 @@ Berezinsky, V., Gazizov, A., Grigorieva, S.
 \newblock \emph{Physical Review D}, \textbf{74}~(4), 043005, 2006.
 
 \bibitem{kit_oracle}
-Imagen extraída de
-  \emph{https://web.ikp.kit.edu/augeroracle/lib/exe/fetch.php?media=auger:telescope.jpeg}.
-  visitada el 28/11/2019.
+Imagen extraída de {Auger Oracle del KIT}. {Visitada el 28/11/2019}.
+\newblock
+  \urlprefix\url{https://web.ikp.kit.edu/augeroracle/lib/exe/fetch.php?media=auger:telescope.jpeg}.
 
 \bibitem{exposure}
 Abraham, J., Abreu, P., Aglietta, M., Ahn, E., Allard, D., Allekotte, I.,
@@ -96,12 +117,6 @@ Linsley, J., Scarsi, L., Rossi, B.
 \newblock Extremely energetic cosmic-ray event.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{6}~(9), 485, 1961.
 
-\bibitem{taborda}
-Taborda, O.
-\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
-  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
-\newblock Tesis Doctoral, Instituto Balseiro, 2018.
-
 \bibitem{pierre2013plans}
 {Pierre Auger Collaboration}.
 \newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
@@ -127,5 +142,37 @@ Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
 \newblock {Impact of atmospheric effects on the energy reconstruction of air
   showers observed by the surface detectors of the Pierre Auger Observatory}.
 \newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
+
+\bibitem{referencia_anis}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock Observation of a large-scale anisotropy in the arrival directions of
+  cosmic rays above 8$\times 10^18$ ev.
+\newblock \emph{Science}, \textbf{357}~(6357), 1266--1270, 2017.
+
+\bibitem{farley1954sidereal}
+Farley, F., Storey, J.
+\newblock The sidereal correlation of extensive air showers.
+\newblock \emph{Proceedings of the Physical Society. Section A},
+  \textbf{67}~(11), 996, 1954.
+
+\bibitem{analisis_fourier}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
+
+\bibitem{discrepancia}
+Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código implementado
+  para los resultados del trabajo \cite{Aab_2020}.
+
+\bibitem{linsley1975fluctuation}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Physical Review Letters}, \textbf{34}~(24), 1530, 1975.
+
+\bibitem{codigo}
+Este valor fue obtenido con el código implementado en el trabajo
+  \cite{Aab_2020}.
 
 \end{thebibliography}

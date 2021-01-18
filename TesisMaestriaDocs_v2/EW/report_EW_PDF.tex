@@ -35,7 +35,7 @@ Suponiendo que mediante el análisis de un conjunto de eventos, se obtiene que $
         \begin{center}
             \includegraphics[width=0.75\textwidth]{bessel_prob_value_s_v2.pdf}
         \end{center}
-        \caption{El gráfico de la función $p(r)$ y el límite de confianza para $s=0.0047$ y $\sigma=0.0038$ }
+        \caption{El gráfico de la densidad de probabilidad $p(r)$ de la amplitud $r$ para $s=0.0047$ y $\sigma=0.0038$ }
     \end{small}
 \end{figure}
 
@@ -53,7 +53,7 @@ Los pasos para el cálculo sigo son los siguientes:
 
     \item Una vez que se tiene la función normalizada, se calcula la integral de la ecuación \ref{ec:integral} $CL_r(0,s,s)$ en el intervalo  $[0,s]$ y se obtiene el valor de la función $p(s)=p_1$.
 
-    \item Si $CL_r(0,s,s)< 0.683$:
+    \item Si $CL_r(0,s,s)< 0.6827$:
     \begin{enumerate}
         \item Teniendo en cuenta el valor inicial de $p_1$, se actualiza el valor  $p_2 \leftarrow p_1 - 0.01 p_1$ \label{itm:1}.
         \item Se calcula la integral entre los dos puntos con valores igual a $p(r)_2$. 
@@ -65,15 +65,15 @@ Los pasos para el cálculo sigo son los siguientes:
                 \begin{center}
                     \includegraphics[width=0.75\textwidth]{bessel_prob_iterations_v2.pdf}
                 \end{center}
-                \caption{}
+                \caption{Iteraciones para encontrar los márgenes de confianza del $68.27\%$ de la distribución de probabilidad de la amplitud. En la N-ésima iteración se obtiene los límite de confianza buscados.}
                 \label{fig:itera}
             \end{small}
             
         \end{figure}
     \end{enumerate}
-    \item Si $CL_r(0,s,s)> 0.683$:
+    \item Si $CL_r(0,s,s)> 0.6827$:
     \begin{enumerate}
-        \item Se toma como límite inferior $r^-$el valor $s$ y se busca el límite superior $r^+$ de tal forma que $CL(s,s+\sigma^+,s) \simeq 0.683$.
+        \item Se toma como límite inferior $r^-$el valor $s$ y se busca el límite superior $r^+$ de tal forma que $CL(s,s+\sigma^+,s) \simeq 0.6827$.
     \end{enumerate}
     \item \label{pasofinal} Los límites de confianza superior $r^+$  y inferior $r^-$, teniendo en cuenta el valor final $p_N$ del paso \ref{itm:3}, son tales que se cumple $p(r^+)=p(r^-)=p_N$. Finalmente los márgenes de confianza se calculan como:
     \begin{align*}
@@ -88,19 +88,19 @@ En la Fig.\ref{margenes} se muestran los márgenes de confianza obtenidos para e
         \begin{center}
             \includegraphics[width=0.75\textwidth]{bessel_prob_ej_v2.pdf}
         \end{center}
-        \caption{}
+        \caption{Densidad de probabilidad de la amplitud $r$ para $s=0.0047$ y $\sigma=0.0038$. Se muestran los márgenes de confianza del $68.27\%$ }
         \label{margenes}
     \end{small}
 \end{figure}
 
 \section{Distribución de probabilidad de la fase del dipolo}
 
-Integrando la ecuación \ref{eq:full_pdf} se obtiene la distribución de probabilidad de la fase $\psi$ de la Ec.\ref{eq:phase_pdf}. Este apartado considera que las fases de la mediciones varían alrededor del cero. De esta forma, la distribución de probabilidad tiene la característica  de ser simétrica respecto a 0, por eso los límites de integración para obtener un nivel de confianza igual a 1 son $[-\pi, \pi]$.
+Integrando la ecuación \ref{eq:full_pdf} con respecto a $r$ en el rango $[0,\infty]$, se obtiene la distribución de probabilidad de la fase $\psi$ de la Ec.\ref{eq:phase_pdf}. Este apartado considera que las fases de la mediciones varían alrededor del cero. De esta forma, la distribución de probabilidad tiene la característica  de ser simétrica respecto a 0, por eso los límites de integración para obtener un nivel de confianza igual a 1 son $[-\pi, \pi]$.
 \begin{align}
     p(\psi) &=d\psi\,\frac{1}{2\pi}e^{-k} \Bigg[ 1 + (\pi k)^{\nicefrac{1}{2}} \cos\psi e^{(k\cos^2\psi)} \Big( 1 + L \erf(L k^{\nicefrac{1}{2}} \cos\psi \Big) \Bigg ] \\ \label{eq:phase_pdf}
     CL_{\psi}(\phi_1, \phi_2, s) &= \int_{\phi_1}^{\phi_2} d\psi \, p(\psi)
 \end{align}  
-donde $k =\nicefrac{s^2}{\sigma^2}$ y $\erf (x)$ es la función error, y
+donde $k =\nicefrac{s^2}{2\sigma^2}$ y $\erf (x)$ es la función error, y
 \begin{align*}
     L =
     \begin{cases} 
@@ -111,13 +111,13 @@ donde $k =\nicefrac{s^2}{\sigma^2}$ y $\erf (x)$ es la función error, y
 
 % La distribución de probabilidad tiene la característica  de ser simétrica respecto a 0, por eso los límites de integración son $[-\pi, \pi]$.
 
-Se definió que el nivel de confianza para la fase reportada en este trabajo sea del $95.45\%$, ya que $k>>1$ la distribución de la fase se acerca a una distribución normal y este nivel de confianza es equivalente a $2\sigma_\phi$. 
+Se definió que el nivel de confianza para la fase reportada en este trabajo sea del $68.27\%$, ya que $k>>1$ la distribución de la fase se acerca a una distribución normal y este nivel de confianza es equivalente a $\sigma_\phi$. 
 
-Para calcular el margen de confianza $2\sigma_\psi$  dada la simétrica  con respecto al 0, se siguen los siguientes  pasos:
+Para calcular el margen de confianza $\sigma_\psi$,  dada la simetría de la función \ref{eq:phase_pdf}  con respecto al 0, se siguen los siguientes  pasos:
 
 \begin{enumerate}
     \item Se toma un valor inicial de $\sigma_{\psi,0}=0.01|\phi|$, donde  $\phi$ es valor de fase obtenida ya sea por el método Rayleigh o East-West. Se eligió este valor inicial por conveniencia.
-    \item Se integra la Ec.\ref{eq:phase_pdf} en el rango $[-\sigma_{\psi,0}, \sigma_{\psi,0}]$ y se verifica si $CL_{\psi}(-\sigma_{\psi,0}, \sigma_{\psi,0},s) = 0.9545$.  Si ese es el caso, se reporta la fase como $\psi \pm \sigma_{\psi,0}$, caso contrario se vuelve al paso anterior con $\sigma_{\psi,1} \leftarrow \sigma_{\psi,0} + 0.01\sigma_{\psi,0}$. \label{paso2} y se itera hasta obtener el valor de $\sigma_{\psi,N}$ que cumpla $CL_{\psi}(-\sigma_{\psi,N}, \sigma_{\psi,N},s) = 0.9545$
+    \item Se integra la Ec.\ref{eq:phase_pdf} en el rango $[-\sigma_{\psi,0}, \sigma_{\psi,0}]$ y se verifica si $CL_{\psi}(-\sigma_{\psi,0}, \sigma_{\psi,0},s) = 0.9545$.  Si ese es el caso, se reporta la fase como $\psi \pm \sigma_{\psi,0}$, caso contrario se vuelve al paso anterior con $\sigma_{\psi,1} \leftarrow \sigma_{\psi,0} + 0.01\sigma_{\psi,0}$. \label{paso2} y se itera hasta obtener el valor de $\sigma_{\psi,N}$ que cumpla $CL_{\psi}(-\sigma_{\psi,N}, \sigma_{\psi,N},s) = 0.6827$
 \end{enumerate}
 
 En la Fig.\ref{fig:phase_prob_ej} se muestra la distribución de probabilidad de la fase para $s=0.0047$ y $\sigma = 0.0038$, también se incluye los límites de confianza obtenidos.
@@ -125,9 +125,9 @@ En la Fig.\ref{fig:phase_prob_ej} se muestra la distribución de probabilidad de
 \begin{figure}[H]
     \begin{small}
         \begin{center}
-            \includegraphics[width=0.75\textwidth]{phase_prob_ej.pdf}
+            \includegraphics[width=0.75\textwidth]{phase_prob_ej_v2.pdf}
         \end{center}
-        \caption{La distribución de probabilidad de la fase para $s=0.0047$ y $\sigma = 0.0038$ con los límites de confianza del $95.45\%$.}
+        \caption{La distribución de probabilidad de la fase $\psi$ para $s=0.0047$ y $\sigma = 0.0038$ con los márgenes de confianza del $68.27\%$.}
         \label{fig:phase_prob_ej}
     \end{small}
 \end{figure}

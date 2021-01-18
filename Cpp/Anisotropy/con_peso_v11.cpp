@@ -100,8 +100,8 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			//	Over energy 4 EeV
 			{
 				liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
-				if (energy < 8 || energy >= 16) continue;
-				if(utc  < utci || Theta > 80) continue;
+				if (energy < 16 || energy >= 32) continue;
+				if (utc  < utci || Theta > 80) continue;
 			}	
 
 			// {			

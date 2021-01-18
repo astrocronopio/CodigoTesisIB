@@ -27,7 +27,7 @@ double L(double x)
 double Probability_Function_Phase(const double&  x)
 {
 	double  y=0.0, z=0.0;
-    double k = _rtilde_phase_*_rtilde_phase_/(_sigma_phase_*_sigma_phase_);
+    double k = _rtilde_phase_*_rtilde_phase_/(2.*_sigma_phase_*_sigma_phase_);
 
     z = sqrt(M_PI*k)*cos(x)*exp(k*cos(x)*cos(x));
     y = 1. + L(x)*erf(L(x)*sqrt(k)*cos(x));
@@ -39,7 +39,7 @@ double integration_over_phase(double rtilde, double sigma, double phase)
 {	_rtilde_phase_=rtilde, _sigma_phase_=sigma;
     double result;
 
-    boost::math::quadrature::gauss<double, 5000> integrator;
+    boost::math::quadrature::gauss<double, 10000> integrator;
     
     // if (phase < 0)
         result = integrator.integrate(Probability_Function_Phase, -phase, phase);
@@ -54,11 +54,11 @@ double integration_over_phase(double rtilde, double sigma, double phase)
 double error_phase(double rtilde, double sigma, double phase)
 {   
     _rtilde_phase_=rtilde, _sigma_phase_=sigma;
-    double current_prob =0.0, limit_prob=.683;
+    double current_prob =0.0, limit_prob=.7;
     double init_error = 0.01*abs(phase);
     // // std::cout<<init_error<<std::endl;
     _normal_phase_ = integration_over_phase(rtilde,sigma, M_PI);
-    std::cout<<"\n norma: "<< _normal_phase_ <<std::endl;
+    // std::cout<<"\n norma: "<< _normal_phase_ <<std::endl;
     
     do
     {

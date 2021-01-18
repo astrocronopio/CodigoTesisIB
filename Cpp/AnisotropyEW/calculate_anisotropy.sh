@@ -29,42 +29,42 @@ file_cmp="../Anisotropy/Files_AllTriggers_Reference/output_threshold_0con_peso_v
 #file_input="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
 
 #####################################################################################3
-# folder="./Files_AllTriggers_0-25_0-5_EeV/"
-# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
+folder="./Files_AllTriggers_0-25_0-5_EeV/"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-25_0-5_EeV_2019.dat"
 
-# mkdir "$folder"
-# EW="EW_v3"
-# EW_2="EW_v2_seg_arm"
-# algoritmo="$EW"
-# file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
+mkdir "$folder"
+EW="EW_v3"
+EW_2="EW_v2_seg_arm"
+algoritmo="$EW"
+file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
-# g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
-# #### Exec ####
+#### Exec ####
 
-# "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-# # gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+# gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
 
-# exit
+exit
 #####################################################################################3
 
-# folder="./Files_AllTriggers_0-5_1_EeV/"
-# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
+folder="./Files_AllTriggers_0-5_1_EeV/"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_0-5_1_EeV_2019.dat"
 
 
-# mkdir "$folder"
-# EW="EW_v3"
-# EW_2="EW_v2_seg_arm"
-# algoritmo="$EW"
-# file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
+mkdir "$folder"
+EW="EW_v3"
+EW_2="EW_v2_seg_arm"
+algoritmo="$EW"
+file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
-# g++-9 -g "$algoritmo".cpp -o "$algoritmo"
+g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
-# #### Exec ####
+#### Exec ####
 
-# "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-# # gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
-# exit
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
+# gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
+exit
 #####################################################################################3
 folder="./Files_AllTriggers_1_2_EeV/"
 file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"

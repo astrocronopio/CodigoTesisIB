@@ -186,23 +186,23 @@ def plot_phase_points():
     plt.ylabel("Densidad de probabilidad p(${\psi}$)")
     plt.plot(psi[1:], pdf_phase[1:], alpha=0.6, label="PDF")
     
-    phase_min=-1.134464014		
-    pdf_min=0.0973632
-    pos_min=160
+    phase_min=-1.134464014/2.		
+    pdf_min=0.387817
+    pos_min=204	
 
     plt.scatter([phase_min],[pdf_min], color='blue', s=50)
     plt.plot([phase_min,phase_min],[0,pdf_min], color='blue', ls=':')
-    plt.text(0.9*phase_min,pdf_min, "$-2\sigma_\psi\quad$  ", ha='right')
+    plt.text(0.9*phase_min,pdf_min, "$-\sigma_\psi\quad$  ", ha='right')
 
     #R upper limit#
-    phase_max=1.134464014	
-    pdf_max=0.0973632	
-    pos_max=340
+    phase_max=1.134464014/2.	
+    pdf_max=0.387817	
+    pos_max=295
     
 
     plt.scatter([phase_max],[pdf_max], color='blue', s=50, label="Límites")
     plt.plot([phase_max,phase_max],[0,pdf_max], color='blue', ls=':')
-    plt.text(1.1*phase_max,pdf_max, "$+2\sigma_\psi$", ha='left')
+    plt.text(1.1*phase_max,pdf_max, "$+\sigma_\psi$", ha='left')
 
     plt.fill_between(psi[pos_min:pos_max],pdf_phase[pos_min:pos_max], color='blue', alpha=0.1)
 

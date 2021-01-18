@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 mpl.rcParams.update({
 	'font.size': 20,
-	'figure.figsize': [10, 7],
+	'figure.figsize': [9, 9],
 	# 'figure.autolayout': True,
 	'font.family': 'serif',
 	'font.sans-serif': ['Palatino']})
@@ -15,16 +15,16 @@ import numpy as np
 
 ########################
 #Select bin: 0,1,2
-bin_sel=0
+bin_sel=2
 # Compute pie slices
 theta 	= np.array([280,258,320])
-width 	= np.array([124,34,50])
+width 	= 2*np.array([90,34,48])
 
 ref_theta 	= np.array([225,261,291])
-ref_width 	= np.array([64,43,100])
+ref_width 	= 2*np.array([64,43,100])
 
 ray_theta = np.array([359])
-ray_width = np.array([35])
+ray_width = 2*np.array([35])
 
 
 ########################
@@ -53,16 +53,16 @@ ref_legend=["EW Ref.", "EW Ref.", "EW Ref."]
 
 ax = plt.subplot(111, projection='polar')
 
-if bin_sel==2:
-    ax.set_thetamin(180)
-    ax.set_thetamax(380)
-    ax.set_xticks(np.pi/180. * np.linspace(180,  380, 5, endpoint=True))
-    ax.set_xticklabels(["180°","230°","280°","330°", "20°"])
-else:
-    ax.set_thetamin(180)
-    ax.set_thetamax(360)    
-    ax.set_xticks(np.pi/180. * np.linspace(180,  360, 5, endpoint=True))
-    ax.set_xticklabels(["180°","225°","270°","315°", "0°"])
+# if bin_sel==2:
+#     ax.set_thetamin(180)
+#     ax.set_thetamax(380)
+#     ax.set_xticks(np.pi/180. * np.linspace(180,  380, 5, endpoint=True))
+#     ax.set_xticklabels(["180°","230°","280°","330°", "20°"])
+# else:
+#     ax.set_thetamin(180)
+#     ax.set_thetamax(400)    
+#     ax.set_xticks(np.pi/180. * np.linspace(180,  360, 5, endpoint=True))
+#     ax.set_xticklabels(["180°","225°","270°","315°", "0°"])
 
 ax.tick_params(direction='out', pad= 20)
 
@@ -103,13 +103,16 @@ ax.set_ylim(top=1.2)
 
 #  266.4167
 galactic= 266.4167
-ax.axvline(np.pi*galactic/180., ls=':', color='black', linewidth=2.5 )
+ax.axvline(np.pi*galactic/180., ls='-.', color='black', linewidth=2.5, label="Centro Galáctico" )
 #ax.errorbar(theta, radii, xerr=width,  fmt=".")
 ax.yaxis.set_major_locator(plt.NullLocator())
 # pos : [left, bottom, width, height] or Bbox
-ax.set_position( [0.0, -0.05, 1, 1])
+# ax.set_position( [0.0, 0.05, 1, 1])
 
 # plt.text( -50,0.9, "Ref: Aab A. et al. 2020", bbox=dict(facecolor='white', alpha=0.5))
-plt.legend(loc='upper left', bbox_to_anchor=(0, 1.01), title="  Rango "+legend_[bin_sel]+"\nRef: Aab A. et al. 2020")
+plt.legend(loc='upper left', 
+           framealpha =1, 
+           bbox_to_anchor=(0.2, 1.02), 
+           title="  Rango "+legend_[bin_sel]+"\n  Ref: Aab A. et al. 2020")
 ax.grid(linewidth=1.5, linestyle=':', alpha=0.51)
 plt.show()
