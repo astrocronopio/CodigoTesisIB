@@ -66,19 +66,19 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         I^{obs}_E -  I^{obs}_O = 4 \Phi_0 (1+ \eta(\alpha^0)) \,  d_{x'}(\alpha^0)\overline{\sin\theta}
     \end{equation*}
 
-    Para obtener las componentes del vector $\bf{d}$, tenemos que considerar que las mismas están en el plano x-z. Para hacer esto, consideremos a los versores $\hat{\bf{u}}_x$ y $\hat{\bf{u}}_z$ que apuntan al cenit y al Este respectivamente. Podemos obtener las proyecciones con un producto escalar con los versores en las direcciones de interés:
+    Para obtener las componentes del vector $\bf{d}$, \textcolor{red}{tenemos que considerar que las proyecciones que están en el plano x'-z' ya que no hay dependencia con la proyección $d_{y'}$}. Para hacer esto, consideremos a los versores $\hat{\bf{u}}_{x'}$ y $\hat{\bf{u}}_{z'}$ que apuntan al cenit y al Este respectivamente. Podemos obtener las proyecciones con un producto escalar con los versores en las direcciones de interés:
     \begin{equation}
-        d_{x'}(\alpha^0) \hat{x}' =  (\textbf{d}\cdot\hat{\bf{u}}_x)\hat{\bf{u}}_x \rightarrow d_{x'}(\alpha^0) = \textbf{d}\cdot\hat{\bf{u}}_x,
+        d_{x'}(\alpha^0) \hat{x}' =  (\textbf{d}\cdot\hat{\bf{u}}_{x'})\hat{\bf{u}}_{x'} \rightarrow d_{x'}(\alpha^0) = \textbf{d}\cdot\hat{\bf{u}}_{x'},
     \end{equation}
     donde estos versores en coordenadas ecuatoriales se escriben como:
-    $\hat{\bf{u}}_z = (\alpha^0,\delta^0 )$ y $ \hat{\bf{u}}_x = (\alpha^0 + \frac{\pi}{2},0)$ \footnote{Se suma  $\frac{\pi}{2}$ para apuntar al Este, cuando el versor recorre $\nicefrac{\pi}{2}$ en ascensión recta, llega al plano del ecuador que tiene declinación $0$.}.
+    $\hat{\bf{u}}_{z'}= (\alpha^0,\delta^0 )$ y $ \hat{\bf{u}}_{x'} = (\alpha^0 + \frac{\pi}{2},0)$ \footnote{Se suma  $\frac{\pi}{2}$ para apuntar al Este, cuando el versor recorre $\nicefrac{\pi}{2}$ en ascensión recta, llega al plano del ecuador que tiene declinación $0$.}.
 
     Usando la expresión \ref{eq:product_ud} para el producto escalar en coordenadas ecuatoriales, se obtienen las componentes:
-    \begin{align*}
-        d_{z'}=\textbf{d}\cdot\hat{\bf{u}}_z &= d (\cos\delta_d \cos\delta^0 \cos(\alpha^0 - \alpha_d) + \sin\delta_d  \sin\delta^0)\\
-        d_{x'}=\textbf{d}\cdot\hat{\bf{u}}_x &= d (\cos\delta_d \cos(\alpha^0 +\frac{\pi}{2} - \alpha_d) 
-        = -d\cos\delta_d \sin(\alpha^0  - \alpha_d)
-    \end{align*}
+    \begin{align}
+        d_{z'}=\textbf{d}\cdot\hat{\bf{u}}_{z'} &= d (\cos\delta_d \cos\delta^0 \cos(\alpha^0 - \alpha_d) + \sin\delta_d  \sin\delta^0)\\
+        d_{x'}=\textbf{d}\cdot\hat{\bf{u}}_{x'} &= d \cos\delta_d \cos(\alpha^0 +\frac{\pi}{2} - \alpha_d) 
+        = -d\cos\delta_d \sin(\alpha^0  - \alpha_d) \label{eq:total_flux_eta}
+    \end{align}
     
      Entonces la diferencia entre flujos queda como:
     \begin{equation}
@@ -86,9 +86,9 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         \label{resta}
     \end{equation}
 
-    Esta diferencia se debe relacionar con la variación del flujo verdadero $I(\alpha^0)$, es decir el flujo que se observaría si no existieran variaciones temporales en ascensión recta en la exposición, que implicaría $\eta(\alpha^0)=0$. 
+    Esta diferencia se debe relacionar con la variación del flujo total verdadero $I(\alpha^0)$, es decir el flujo que se observaría si no existieran variaciones temporales en ascensión recta en la exposición, que implicaría $\eta(\alpha^0)=0$. \textcolor{red}{Las ecuaciones relacionadas con el flujo total medido $I^{obs}_{Total}$ son válidas para el caso de $\eta(\alpha^0)=0$.}
 
-    La variación del flujo verdadero en ascensión recta provee información sobre la componente $d_{z'}$ del dipolo. 
+  \textcolor{red}{  Considerando la Ec.\ref{eq:total_flux_eta} para el caso de $I(\alpha^0)$ con $\eta(\alpha^0)=0$, la variación del flujo verdadero en ascensión recta provee información sobre la componente $d_{z'}$ del dipolo.} 
     \begin{align}
         \dv{I(\alpha^0)}{\alpha^0}  & = 2\pi\Phi_0 \overline{\cos\theta} \dv{\,d_{z'}(\alpha^0) }{\alpha^0}\\ 
         \dv{I(\alpha^0)}{\alpha^0} &= -2d\pi\Phi_0 \overline{\cos\theta}\cos\delta_d \cos\delta^0 \sin(\alpha^0 - \alpha_d) \label{total_flux}
@@ -115,11 +115,11 @@ El método East - West consiste en el ajuste de una función armónica a la dife
 \section{Estimación de la componente ecuatorial del dipolo mediante el análisis del  primer armónico}
 
 
-El objetivo del método  East - West es estimar la modulación dipolar de  $I(\alpha^0)$ a partir de la diferencia $I^{obs}_E -  I^{obs}_O$ mediante un análisis similar al método de  Rayleigh, salvo modificaciones para tener en cuenta la dirección de los eventos. 
+El objetivo del método  East - West es estimar la modulación dipolar de  $I(\alpha^0)$ a partir de la diferencia $I^{obs}_E -  I^{obs}_O$ mediante un análisis similar al método de  Rayleigh que se muestra en la Ec.\ref{eq:general-1-ray}, salvo modificaciones para tener en cuenta la dirección de los eventos. 
 \begin{equation}
     I^{obs}_E -  I^{obs}_O = \frac{N}{2\pi} r_{EW} \cos(\alpha^0 -  \phi_{EW}) \label{eq:ray_ew_like}
 \end{equation}
-La amplitud $r_{EW}$ y fase $\phi_{EW}$ obtenidas por el Método  East - West no es la amplitud del dípolo físico aunque está relacionada con la misma. 
+\textcolor{red}{donde a diferencia de la expresión original, la amplitud $r_{EW}$ y fase $\phi_{EW}$ no son la amplitud y fase del dípolo físico. Las mismas están asociadas a la modulación en la diferencia de flujos, a continuación se explica como se relacionan con $r_1$ y $\phi$  a partir del   método East - West.}
 
 
 Esta relación puede obtenerse reescribiendo la expresión \ref{eq:final}, teniendo en cuenta la proyección del dípolo físico sobre el ecuador $d_{\perp}= d\cos\delta^0$, la expresión  \ref{resta_final} y que $N \simeq 4\pi^2 \Phi_0 \overline{1} $ \footnote{Porque es la integral con respecto a los dos ángulos, $\theta$ y $\phi$}:
@@ -171,7 +171,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
         a_{EW} &= \frac{2}{N} \sum^N_{i=1}a_i' =\frac{2}{N} \sum^N_{i=1} \cos(X_i - \beta_i)\\
         b_{EW} &= \frac{2}{N} \sum^N_{i=1}b_i' =\frac{2}{N} \sum^N_{i=1} \sin(X_i - \beta_i)
     \end{align*}
-    donde N indica la cantidad eventos considerados. La cantidad de eventos por rango de energía se muestran en la tabla \ref{tab:}.
+    donde N indica la cantidad eventos considerados. La cantidad de eventos por rango de energía se muestran en la tabla \ref{tab:datasets}.
 
     Con esto puedo calcular la amplitud asociada al análisis $r_{EW}$ y la fase $\phi_{EW}$:
     \begin{align*}
@@ -179,7 +179,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
         \phi_{EW} = \tan^{-1}(\nicefrac{b_{EW}}{a_{EW}})
     \end{align*}
 
-    Estos valores se traducen a los valores de amplitud $r$, $d_\perp$ y fase $\phi$ del dipolo físico mediante las expresiones \ref{dperp}, \ref{r_fisico} y \ref{phase_fisico}.   Los valores $\langle\cos\delta \rangle$ y $\langle\sin\delta \rangle$ son los valores medios de estas variables en los años estudiados. 
+    Estos valores se traducen a los valores de amplitud $r_1$, $d_\perp$ y fase $\phi$ del dipolo físico mediante las expresiones \ref{dperp}, \ref{r_fisico} y \ref{phase_fisico}.   Los valores $\langle\cos\delta \rangle$ y $\langle\sin\theta \rangle$ son los valores medios de estas variables en los eventos estudiados. \textcolor{red}{En el caso de $\phi$ se espera que el mismo sea un estimador del valor de $\alpha_d$.}
 
     \item Se calcula la amplitud límite $r_{99}$ y la probabilidad  $P(r_{EW})$ utilizando la expresión \ref{p99}:
     \begin{align*}
@@ -196,7 +196,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
 Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. 
 
 
-\subsubsection{Cálculo para frecuencias  arbitrarias}
+\subsection{Cálculo para frecuencias  arbitrarias}
 
 Cambiamos las variable de la ascensión recta del cenit $\alpha^0$ por
 \begin{equation}
@@ -220,9 +220,8 @@ Se verificó el código escrito en este trabajo de la siguiente manera:
 
 \subsection{Comparando con la variable $\tilde{\alpha}$ con la ascensión recta del cenit }
 
-Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango $0.25-0.5$ EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son comparables entre sí.
+Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango 0.25 - 0.5 EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son comparables entre sí.
 
-(FALTA ACTUALIZAR LA TABLA)
 \begin{table}[H]
     \begin{small}
         \begin{center}
@@ -232,12 +231,12 @@ Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otra
                 $d_\perp$[\%]:      & 0.60            &  0.60        &  0.60              \\
                 $\sigma_{x,y}$[\%]  & 0.48            &  0.48        &  0.48              \\ 
                 Probabilidad:       & 0.45            &  0.45        &  0.45              \\
-                Fase[$^o$]:         & 225$\pm$64\cite{discrepancia} & 225$\pm$45   &  227$\pm$45          \\
-                $r_{99}$[\%]:       & 1.5             &  1.5       &  1.5             \\
-                $d_{\perp,99}$[\%]: & 1.8             &  1.8       &  1.8             \\
+                Fase[$^o$]:         & 225$\pm$64      &  225$\pm$64  &  225$\pm$64          \\
+                $r_{99}$[\%]:       & 1.5             &  1.5         &  1.5             \\
+                $d_{\perp,99}$[\%]: & 1.8             &  1.8         &  1.8             \\
             \end{tabular}
         \end{center}
-        \caption{Verificando la  variable $\alpha=2\pi ft$}
+        \caption{Verificando la  variable $\tilde{\alpha}=2\pi ft$ para el análisis de frecuencias arbitrarias en el método East-West.}
         \label{tab:comp_vars}
     \end{small}
 \end{table}
