@@ -42,18 +42,18 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 			// if(utc  < utci || Theta > 80) continue;
 			// }		
 
-			// {
-			// 	liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
-			// 	if (energy< 1|| energy >= 2) continue;
-			// 	if(utc  < utci || Theta > 60) continue;
-			// }	
+			{
+				liness>>AugId>>utc>>Phi>>Theta>>Dec>>Ra>>energy;
+				if (energy< 0.25|| energy >= 0.5) continue;
+				if(utc  < utci || Theta > 60) continue;
+			}	
 
-			{			
-			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			//if (energy<energy_threshold) continue;
-			if(utc  < utci) continue;
-			if(Theta > 60) continue;
-			}
+			// {			
+			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			// //if (energy<energy_threshold) continue;
+			// if(utc  < utci) continue;
+			// if(Theta > 60) continue;
+			// }
 			
 			if(utcf < utc) break;
 			
@@ -61,9 +61,9 @@ void east_west_method( 	double *a  , double *b		, double *sumaN , double *mean_e
 			
 			
 			raz = right_ascension(utc); //cenit Auger
-			arg = 2.0*pi*(hrs +2.099)/24.0; /*2.099 Sid Hour ar utc0*/
+			arg = 2.0*pi*(hrs +2.0)/24.0; /*2.0 Sid Hour at utc0*/
 			
-			arg = freq==366.25 ? raz*d2r : arg;
+			// arg = freq==366.25 ? raz*d2r : arg;
 			
 			east = abs(Phi) < 90 ? 0 : 1;
 			
@@ -98,7 +98,7 @@ int main(int argc, char const *argv[])
 
 	// ew_given_freq(366.25, in_file, out_file, utci, utcf, east_west_method);
 
-	ew_given_freq(365.25, in_file, out_file, utci, utcf, east_west_method);
+	ew_given_freq(366.25, in_file, out_file, utci, utcf, east_west_method);
 	
 	return 0;
 }
