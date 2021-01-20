@@ -26,7 +26,7 @@
 
 \usepackage{scalerel}
 \usepackage{physics}
-
+\usepackage{xcolor}
 
 \usepackage{xparse}
 \let\realItem\item % save a copy of the original item
@@ -49,13 +49,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Análisis de las direcciones de arribo de rayos cósmicos de ultra-alta energía en el Observatorio Pierre Auger}
-\author{Evelyn~G.~Coronel}
+\author{Evelyn~Gabriela~Coronel}
 \director{Dra.~Silvia Mollerach}
 %\codirector{Dr.~J.~Otro m\'{a}s}b
 \carrera{Tesis de Maestría en Ciencias F\'{\i}sicas}
 \grado{Maestrando}
 \laboratorio{Partículas y Campos -- Centro At\'{o}mico Bariloche}
-\jurado{Dr.~Diego~Harari (Instituto Balseiro)}
+\jurado{ 
+	{
+		Dr.~Diego~Harari 
+
+		Dra.~Geraldina~Golup  
+		
+		Dr.~Xavier~Bertou 
+		}
+ }
 
 \palabrasclave{Rayos Cósmicos, Análisis de datos, Instituto Balseiro}
 %\keywords{Cosmic Rays, Data Analysis, Balseiro Institute}
@@ -114,65 +122,61 @@ EW:			& Método East - West
 	\listoffigures                  %Figuras
 	%\listoftables                   %Tablas
 
-	\input{../Resumen/resumen.tex}
+	% \input{../Resumen/resumen.tex}
 
 \end{preliminary}
 
 %Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
  \chapter{Introducción}
 	\graphicspath{{../01_Introduccion/}}
-	\input{../01_Introduccion/intro.tex}
+	\input{../01_Introduccion/intro_v2.tex}
   
  \chapter{El Observatorio Pierre Auger}
 	\graphicspath{{../02_IntroduccionAuger/}}
 	\input{../02_IntroduccionAuger/auger.tex}
 
- \chapter{Registro de eventos}
+ 	\section{Registro de eventos}
 	\graphicspath{{../03_IntroduccionReport/}}
 	\input{../03_IntroduccionReport/introduccion_v8}
 
-%  \chapter{Modulación del clima para el archivo de todos los disparos en el rango 2014-2020 }	
-% 	\graphicspath{{../Weather_ModulationReport/}}
-% 	\input{../Weather_ModulationReport/weather_modulation_v3.tex}
-
-
 %  \chapter{Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}
-% 	\graphicspath{{../Clima/}}
-% 	\input{../Clima/clima_1_intro.tex}
-% 	\input{../Clima/clima_2_fit_main.tex}
+\chapter{Modulación del clima para el archivo del disparo estándar en el rango 2004-2018}	
+% 	\graphicspath{{../04_Clima/}}
+% 	\input{../04_Clima/clima_1_intro.tex}
+% 	\input{../04_Clima/clima_2_fit_main.tex}
+
+\chapter{Modulación del clima para el archivo de todos los disparos en el rango 2014-2020 }	
+% 	\graphicspath{{../05_Weather_Modulation/}}
+% 	\input{../05_Weather_Modulation/weather_modulation_v3.tex}
 
 % \chapter{Anisotropías en las direcciones de arribo de los rayos cósmicos}
-% 	\graphicspath{{../Anisotropia/}}
-% 	\input{../Anisotropia/anisotropia_weather.tex}
+	% \graphicspath{{../Anisotropia/}}
+	% \input{../Anisotropia/anisotropia_weather.tex}
 	
-
 \chapter{Método Rayleigh}
-	\graphicspath{{../MetodoReport/}}
-	\input{../MetodoReport/metodo_v5}
-	
-	
-% \chapter{Resultados del método Rayleigh en el rango 1 EeV - 2 EeV}
-% 	\graphicspath{{../Dipole_1-2_EeVReport/}}
-% 	\input{../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v8}
+	\graphicspath{{../06_MetodoRayleigh/}}
+	\input{../06_MetodoRayleigh/metodo_v5}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	
 \chapter{Método East-West}
 	\graphicspath{{../EW/}}
 	\input{../EW/report_EW_calculo_v3.tex}
-
+	
 \chapter{Distribución de probabilidad de la amplitud y fase del dipolo} \label{PDFs}
 	\graphicspath{{../EW/}}
 	\input{../EW/report_EW_PDF.tex}
+
+\chapter{Resultados del método Rayleigh}
+	% \graphicspath{{../Dipole_1-2_EeVReport/}}
+	% \input{../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v8}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Resultados del método East - West}
 	\graphicspath{{../EW/}}	
 	\input{../EW/report_EW_results_Ray}
 
-% \chapter{Conclusiones}
+\chapter{Conclusiones}
 % 	\input{../Conclusiones/conclusiones.tex}
-
 
 \appendix
 	\chapter{Coordenadas celestes}

@@ -24,11 +24,14 @@ Olive, K.
 \newblock
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168900215008086}.
 
-\bibitem{triggers_ref}
-Justin M.~Albury, B. R.~D., Jose A.~Bellido.
-\newblock Exploring the energy threshold for full trigger efficiency of the
-  surface detector with hybrid events {GAP 2018-038}.
-\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
+\bibitem{tobepublished}
+Aab, A., Abreu, P., Aglietta, M., Albury, J.~M., Allekotte, I., Almela, A.,
+  \emph{et~al.}
+\newblock Measurement of the cosmic-ray energy spectrum above
+  $2.5\ifmmode\times\else\texttimes\fi{}{10}^{18}\text{ }\text{ }\mathrm{eV}$
+  using the pierre auger observatory.
+\newblock \emph{Phys. Rev. D}, \textbf{102}, 062005, Sep 2020.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.102.062005}.
 
 \bibitem{referencia_pesos}
 Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
@@ -105,44 +108,6 @@ Hersil, J., Escobar, I., Scott, D., Clark, G., Olbert, S.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{6}, 22--23, Jan 1961.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.6.22}.
 
-\bibitem{tobepublished}
-Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
-  I., \emph{et~al.}
-\newblock {A measurement of the cosmic ray energy spectrum above
-  $2.5\times10^{18}\,$eV using the Pierre Auger Observatory}.
-\newblock \emph{En proceso de preparación}.
-
-\bibitem{linsley1961extremely}
-Linsley, J., Scarsi, L., Rossi, B.
-\newblock Extremely energetic cosmic-ray event.
-\newblock \emph{Phys. Rev. Lett.}, \textbf{6}~(9), 485, 1961.
-
-\bibitem{pierre2013plans}
-{Pierre Auger Collaboration}.
-\newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
-\newblock Pierre Auger Collaboration, 2013.
-
-\bibitem{abraham2009atmospheric}
-Abraham, J., Abreu, P., Aglietta, M., Aguirre, C., Ahn, E., Allard, D.,
-  \emph{et~al.}
-\newblock Atmospheric effects on extensive air showers observed with the
-  surface detector of the {Pierre Auger Observatory}.
-\newblock \emph{Astroparticle Physics}, \textbf{32}~(2), 89--99, 2009.
-
-\bibitem{abreu2012description}
-Abreu, P., Aglietta, M., Ahlers, M., Ahn, E., Albuquerque, I. F. d.~M., Allard,
-  D., \emph{et~al.}
-\newblock Description of atmospheric conditions at the {Pierre Auger
-  Observatory} using the global data assimilation system {(GDAS)}.
-\newblock \emph{Astroparticle Physics}, \textbf{35}~(9), 591--607, 2012.
-
-\bibitem{aab2017impact}
-Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
-  I., \emph{et~al.}
-\newblock {Impact of atmospheric effects on the energy reconstruction of air
-  showers observed by the surface detectors of the Pierre Auger Observatory}.
-\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
-
 \bibitem{referencia_anis}
 Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
   I., \emph{et~al.}
@@ -162,10 +127,6 @@ Linsley, J.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
 
-\bibitem{discrepancia}
-Discrepancia de $\sqrt{2}$ entre lo reportado y entre el código implementado
-  para los resultados del trabajo \cite{Aab_2020}.
-
 \bibitem{linsley1975fluctuation}
 Linsley, J.
 \newblock Fluctuation effects on directional data.
@@ -174,5 +135,14 @@ Linsley, J.
 \bibitem{codigo}
 Este valor fue obtenido con el código implementado en el trabajo
   \cite{Aab_2020}.
+
+\bibitem{resolucion_barrido}
+Abreu, P., Aglietta, M., Ahn, E., Albuquerque, I., Allard, D., Allekotte, I.,
+  \emph{et~al.}
+\newblock Search for first harmonic modulation in the right ascension
+  distribution of cosmic rays detected at the pierre auger observatory.
+\newblock \emph{Astroparticle Physics}, \textbf{34}~(8), 627 -- 639, 2011.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0927650510002422}.
 
 \end{thebibliography}

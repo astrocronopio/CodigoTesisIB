@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  18 JAN 2021 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  20 JAN 2021 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,7 +512,23 @@ Package: xparse 2020-05-15 L3 Experimental document command parser
 \g__xparse_grabber_int=\count301
 \l__xparse_m_args_int=\count302
 \l__xparse_v_nesting_int=\count303
-))) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip85
 \enit@outerparindent=\dimen199
@@ -531,24 +547,24 @@ LaTeX Info: Redefining \% on input line 27.
 )
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen256
@@ -610,7 +626,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box99
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 83.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -620,22 +636,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
  (./tesis.out) (./tesis.out)
 \@outlinefile=\write3
 \openout3 = `tesis.out'.
 
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 77.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -645,7 +661,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \end{abreviaturas}
+l.119 \end{abreviaturas}
                          [1
 
 
@@ -656,12 +672,9 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-])
-\tf@toc=\write4
-\openout4 = `tesis.toc'.
-
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+]
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
 
 
 Package Fancyhdr Warning: \headheight is too small (15.6pt): 
@@ -669,187 +682,178 @@ Make it at least 15.68335pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[3] (./tesis.lof
+[3])
+\tf@toc=\write4
+\openout4 = `tesis.toc'.
+
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [4] (./tesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [4
+ [5
 
 
 ])
 \tf@lof=\write5
 \openout5 = `tesis.lof'.
 
- (../Resumen/resumen.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [5] [6
-
-
-])
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [6]
 Cap\'{\i }tulo 1.
 (../01_Introduccion/intro.tex [1
 
 
-
 ]
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [2]
-<../01_Introduccion/auger_spectrum_v2.png, id=455, 1171.37625pt x 882.29625pt>
+<../01_Introduccion/auger_spectrum_v2.png, id=468, 1171.37625pt x 882.29625pt>
 File: ../01_Introduccion/auger_spectrum_v2.png Graphic file (type png)
 <use ../01_Introduccion/auger_spectrum_v2.png>
-Package pdftex.def Info: ../01_Introduccion/auger_spectrum_v2.png  used on input line 47.
+Package pdftex.def Info: ../01_Introduccion/auger_spectrum_v2.png  used on input line 44.
 (pdftex.def)             Requested size: 308.71104pt x 232.52843pt.
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
- [3]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
- [4 <../01_Introduccion/auger_spectrum_v2.png>])
-LaTeX Info: Redefining \. on input line 126.
-LaTeX Info: Redefining \% on input line 126.
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+ [3 <../01_Introduccion/auger_spectrum_v2.png>]
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [4])
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
  [5]
 Cap\'{\i }tulo 2.
 (../02_IntroduccionAuger/auger.tex [6
 
 ]
-<../02_IntroduccionAuger/auger_sd.png, id=506, 837.1275pt x 874.26625pt>
+<../02_IntroduccionAuger/auger_sd.png, id=527, 837.1275pt x 874.26625pt>
 File: ../02_IntroduccionAuger/auger_sd.png Graphic file (type png)
 <use ../02_IntroduccionAuger/auger_sd.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/auger_sd.png  used on input line 23.
-(pdftex.def)             Requested size: 330.76328pt x 345.43143pt.
-<../02_IntroduccionAuger/tanque.png, id=509, 376.40625pt x 417.56pt>
+Package pdftex.def Info: ../02_IntroduccionAuger/auger_sd.png  used on input line 31.
+(pdftex.def)             Requested size: 308.71104pt x 322.40623pt.
+<../02_IntroduccionAuger/tanque.png, id=530, 376.40625pt x 417.56pt>
 File: ../02_IntroduccionAuger/tanque.png Graphic file (type png)
 <use ../02_IntroduccionAuger/tanque.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/tanque.png  used on input line 30.
+Package pdftex.def Info: ../02_IntroduccionAuger/tanque.png  used on input line 38.
 (pdftex.def)             Requested size: 198.45662pt x 220.15887pt.
-<../02_IntroduccionAuger/fd.png, id=510, 164.7756pt x 136.15668pt>
+<../02_IntroduccionAuger/fd.png, id=531, 164.7756pt x 136.15668pt>
 File: ../02_IntroduccionAuger/fd.png Graphic file (type png)
 <use ../02_IntroduccionAuger/fd.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/fd.png  used on input line 35.
+Package pdftex.def Info: ../02_IntroduccionAuger/fd.png  used on input line 43.
 (pdftex.def)             Requested size: 220.50885pt x 182.22044pt.
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
  [7 <../02_IntroduccionAuger/auger_sd.png>]
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
  [8 <../02_IntroduccionAuger/tanque.png> <../02_IntroduccionAuger/fd.png>]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
  [9]
-<../02_IntroduccionAuger/evento_sd.png, id=537, 678.535pt x 484.81125pt>
+<../02_IntroduccionAuger/evento_sd.png, id=558, 678.535pt x 484.81125pt>
 File: ../02_IntroduccionAuger/evento_sd.png Graphic file (type png)
 <use ../02_IntroduccionAuger/evento_sd.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/evento_sd.png  used on input line 73.
+Package pdftex.def Info: ../02_IntroduccionAuger/evento_sd.png  used on input line 87.
 (pdftex.def)             Requested size: 286.65881pt x 204.81035pt.
-<../02_IntroduccionAuger/evento_s1000.png, id=540, 914.41624pt x 649.42625pt>
+<../02_IntroduccionAuger/evento_s1000.png, id=561, 914.41624pt x 649.42625pt>
 File: ../02_IntroduccionAuger/evento_s1000.png Graphic file (type png)
 <use ../02_IntroduccionAuger/evento_s1000.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/evento_s1000.png  used on input line 83.
+Package pdftex.def Info: ../02_IntroduccionAuger/evento_s1000.png  used on input line 97.
 (pdftex.def)             Requested size: 286.65881pt x 203.5794pt.
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
- [10 <../02_IntroduccionAuger/evento_sd.png>]
-<../02_IntroduccionAuger/s1000_theta.png, id=556, 618.31pt x 504.88625pt>
-File: ../02_IntroduccionAuger/s1000_theta.png Graphic file (type png)
-<use ../02_IntroduccionAuger/s1000_theta.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/s1000_theta.png  used on input line 104.
-(pdftex.def)             Requested size: 224.91661pt x 183.65407pt.
-<../02_IntroduccionAuger/efd_s38.png, id=557, 601.24625pt x 548.0475pt>
-File: ../02_IntroduccionAuger/efd_s38.png Graphic file (type png)
-<use ../02_IntroduccionAuger/efd_s38.png>
-Package pdftex.def Info: ../02_IntroduccionAuger/efd_s38.png  used on input line 109.
-(pdftex.def)             Requested size: 198.45662pt x 180.89804pt.
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [11 <../02_IntroduccionAuger/evento_s1000.png>])
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
- [12 <../02_IntroduccionAuger/s1000_theta.png> <../02_IntroduccionAuger/efd_s38.png>]
-Cap\'{\i }tulo 3.
-(../03_IntroduccionReport/introduccion_v8.tex [13
-
-]
-<../03_IntroduccionReport/histograma_evolucion_eventos.png, id=580, 939.51pt x 556.479pt>
-File: ../03_IntroduccionReport/histograma_evolucion_eventos.png Graphic file (type png)
-<use ../03_IntroduccionReport/histograma_evolucion_eventos.png>
-Package pdftex.def Info: ../03_IntroduccionReport/histograma_evolucion_eventos.png  used on input line 21.
-(pdftex.def)             Requested size: 352.8155pt x 208.9763pt.
-<../03_IntroduccionReport/figura_harari.png, id=581, 867.24pt x 578.16pt>
-File: ../03_IntroduccionReport/figura_harari.png Graphic file (type png)
-<use ../03_IntroduccionReport/figura_harari.png>
-Package pdftex.def Info: ../03_IntroduccionReport/figura_harari.png  used on input line 28.
-(pdftex.def)             Requested size: 352.8155pt x 235.21216pt.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
- [14 <../03_IntroduccionReport/histograma_evolucion_eventos.png>]
-<../03_IntroduccionReport/comparacion_triggers.png, id=591, 636.3775pt x 360.34625pt>
-File: ../03_IntroduccionReport/comparacion_triggers.png Graphic file (type png)
-<use ../03_IntroduccionReport/comparacion_triggers.png>
-Package pdftex.def Info: ../03_IntroduccionReport/comparacion_triggers.png  used on input line 43.
-(pdftex.def)             Requested size: 330.76328pt x 187.29315pt.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
- [15 <../03_IntroduccionReport/figura_harari.png>]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
- [16 <../03_IntroduccionReport/comparacion_triggers.png>])
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
- [17]
-Cap\'{\i }tulo 4.
-(../MetodoReport/metodo_v5.tex [18
-
-]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [19]
-<../MetodoReport/pesos_referencia.png, id=652, 645.41125pt x 563.10374pt>
-File: ../MetodoReport/pesos_referencia.png Graphic file (type png)
-<use ../MetodoReport/pesos_referencia.png>
-Package pdftex.def Info: ../MetodoReport/pesos_referencia.png  used on input line 56.
-(pdftex.def)             Requested size: 220.50885pt x 192.3807pt.
-<../MetodoReport/weigths_2020.png, id=655, 867.24pt x 578.16pt>
-File: ../MetodoReport/weigths_2020.png Graphic file (type png)
-<use ../MetodoReport/weigths_2020.png>
-Package pdftex.def Info: ../MetodoReport/weigths_2020.png  used on input line 63.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
- [20 <../MetodoReport/pesos_referencia.png>]
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [21 <../MetodoReport/weigths_2020.png>]
-
-LaTeX Warning: Reference `specs' on page 22 undefined on input line 86.
-
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
-[22]
-<../MetodoReport/sin_pesos_referencia_8_EeV.png, id=693, 867.24pt x 578.16pt>
-File: ../MetodoReport/sin_pesos_referencia_8_EeV.png Graphic file (type png)
-<use ../MetodoReport/sin_pesos_referencia_8_EeV.png>
-Package pdftex.def Info: ../MetodoReport/sin_pesos_referencia_8_EeV.png  used on input line 130.
+ [10 <../02_IntroduccionAuger/evento_sd.png>]
+<../02_IntroduccionAuger/s1000_theta.png, id=577, 618.31pt x 504.88625pt>
+File: ../02_IntroduccionAuger/s1000_theta.png Graphic file (type png)
+<use ../02_IntroduccionAuger/s1000_theta.png>
+Package pdftex.def Info: ../02_IntroduccionAuger/s1000_theta.png  used on input line 131.
+(pdftex.def)             Requested size: 264.61331pt x 216.07993pt.
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [11 <../02_IntroduccionAuger/evento_s1000.png>]
+<../02_IntroduccionAuger/efd_s38_v2.jpg, id=587, 895.345pt x 656.4525pt>
+File: ../02_IntroduccionAuger/efd_s38_v2.jpg Graphic file (type jpg)
+<use ../02_IntroduccionAuger/efd_s38_v2.jpg>
+Package pdftex.def Info: ../02_IntroduccionAuger/efd_s38_v2.jpg  used on input line 137.
+(pdftex.def)             Requested size: 295.48105pt x 216.64001pt.
+)
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [12 <../02_IntroduccionAuger/s1000_theta.png> <../02_IntroduccionAuger/efd_s38_v2.jpg>]
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
+ [13]
+Cap\'{\i }tulo 3.
+[14
+
+]
+Cap\'{\i }tulo 4.
+[15
+
+]
+Cap\'{\i }tulo 5.
+(../06_MetodoRayleigh/metodo_v5.tex [16
+
+]
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [17]
+<../06_MetodoRayleigh/pesos_referencia.png, id=638, 645.41125pt x 563.10374pt>
+File: ../06_MetodoRayleigh/pesos_referencia.png Graphic file (type png)
+<use ../06_MetodoRayleigh/pesos_referencia.png>
+Package pdftex.def Info: ../06_MetodoRayleigh/pesos_referencia.png  used on input line 57.
+(pdftex.def)             Requested size: 220.50885pt x 192.3807pt.
+<../06_MetodoRayleigh/weigths_2020.png, id=641, 867.24pt x 578.16pt>
+File: ../06_MetodoRayleigh/weigths_2020.png Graphic file (type png)
+<use ../06_MetodoRayleigh/weigths_2020.png>
+Package pdftex.def Info: ../06_MetodoRayleigh/weigths_2020.png  used on input line 64.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+ [18 <../06_MetodoRayleigh/pesos_referencia.png>]
+
+LaTeX Warning: Reference `hexagonos_rate' on page 19 undefined on input line 69.
+
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+[19 <../06_MetodoRayleigh/weigths_2020.png>]
+
+LaTeX Warning: Reference `specs' on page 20 undefined on input line 99.
+
+
+LaTeX Warning: Reference `filtro' on page 20 undefined on input line 106.
+
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+[20]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [21]
+
+LaTeX Warning: Reference `filtro' on page 22 undefined on input line 139.
+
+<../06_MetodoRayleigh/sin_pesos_referencia_8_EeV.png, id=693, 867.24pt x 578.16pt>
+File: ../06_MetodoRayleigh/sin_pesos_referencia_8_EeV.png Graphic file (type png)
+<use ../06_MetodoRayleigh/sin_pesos_referencia_8_EeV.png>
+Package pdftex.def Info: ../06_MetodoRayleigh/sin_pesos_referencia_8_EeV.png  used on input line 143.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 )
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
- [23]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
- [24 <../MetodoReport/sin_pesos_referencia_8_EeV.png>]
-Cap\'{\i }tulo 5.
-(../EW/report_EW_calculo_v3.tex [25
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+ [22 <../06_MetodoRayleigh/sin_pesos_referencia_8_EeV.png>]
+Cap\'{\i }tulo 6.
+(../EW/report_EW_calculo_v3.tex [23
 
 ]
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
- [26]
+ [24]
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
- [27]
-LaTeX Info: Redefining \. on input line 126.
-LaTeX Info: Redefining \% on input line 126.
+ [25]
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 
 
 Package Fancyhdr Warning: \headheight is too small (15.68335pt): 
@@ -857,16 +861,13 @@ Make it at least 27.18335pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[28]
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
- [29]
-
-LaTeX Warning: Reference `tab:' on page 30 undefined on input line 174.
-
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
-[30]
+[26]
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
+ [27]
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+ [28]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 211.
@@ -907,126 +908,131 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 221.
 
-LaTeX Info: Redefining \. on input line 244.
-LaTeX Info: Redefining \% on input line 244.
-[31])
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
- [32]
-Cap\'{\i }tulo 6.
-(../EW/report_EW_PDF.tex [33
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
+[29])
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+ [30]
+Cap\'{\i }tulo 7.
+(../EW/report_EW_PDF.tex [31
 
 ]
-<../EW/bessel_prob_value_s_v2.pdf, id=841, 867.24pt x 578.16pt>
+<../EW/bessel_prob_value_s_v2.pdf, id=831, 867.24pt x 578.16pt>
 File: ../EW/bessel_prob_value_s_v2.pdf Graphic file (type pdf)
 <use ../EW/bessel_prob_value_s_v2.pdf>
 Package pdftex.def Info: ../EW/bessel_prob_value_s_v2.pdf  used on input line 36.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
- [34 <../EW/bessel_prob_value_s_v2.pdf>]
-<../EW/bessel_prob_iterations_v2.pdf, id=895, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [32 <../EW/bessel_prob_value_s_v2.pdf>]
+<../EW/bessel_prob_iterations_v2.pdf, id=885, 867.24pt x 578.16pt>
 File: ../EW/bessel_prob_iterations_v2.pdf Graphic file (type pdf)
 <use ../EW/bessel_prob_iterations_v2.pdf>
 Package pdftex.def Info: ../EW/bessel_prob_iterations_v2.pdf  used on input line 66.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [35 <../EW/bessel_prob_iterations_v2.pdf>]
-<../EW/bessel_prob_ej_v2.pdf, id=965, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [33 <../EW/bessel_prob_iterations_v2.pdf>]
+<../EW/bessel_prob_ej_v2.pdf, id=955, 867.24pt x 578.16pt>
 File: ../EW/bessel_prob_ej_v2.pdf Graphic file (type pdf)
 <use ../EW/bessel_prob_ej_v2.pdf>
 Package pdftex.def Info: ../EW/bessel_prob_ej_v2.pdf  used on input line 89.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
- [36 <../EW/bessel_prob_ej_v2.pdf>]
-<../EW/phase_prob_ej_v2.pdf, id=1029, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [34 <../EW/bessel_prob_ej_v2.pdf>]
+<../EW/phase_prob_ej_v2.pdf, id=1017, 867.24pt x 578.16pt>
 File: ../EW/phase_prob_ej_v2.pdf Graphic file (type pdf)
 <use ../EW/phase_prob_ej_v2.pdf>
 Package pdftex.def Info: ../EW/phase_prob_ej_v2.pdf  used on input line 128.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
 )
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
- [37 <../EW/phase_prob_ej_v2.pdf>]
-Cap\'{\i }tulo 7.
+LaTeX Info: Redefining \. on input line 167.
+LaTeX Info: Redefining \% on input line 167.
+ [35]
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+ [36 <../EW/phase_prob_ej_v2.pdf>]
+Cap\'{\i }tulo 8.
+[37
+
+]
+Cap\'{\i }tulo 9.
 (../EW/report_EW_results_Ray.tex [38
 
 ]
-<../EW/phase_primer_bin_v3.pdf, id=1109, 650.43pt x 650.43pt>
+<../EW/phase_primer_bin_v3.pdf, id=1106, 650.43pt x 650.43pt>
 File: ../EW/phase_primer_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_primer_bin_v3.pdf>
 Package pdftex.def Info: ../EW/phase_primer_bin_v3.pdf  used on input line 72.
 (pdftex.def)             Requested size: 264.61331pt x 264.61368pt.
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
  [39]
-<../EW/plot_bin_1_barrido_v3_EW.pdf, id=1118, 867.24pt x 578.16pt>
+<../EW/plot_bin_1_barrido_v3_EW.pdf, id=1115, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../EW/plot_bin_1_barrido_v3_EW.pdf  used on input line 82.
+Package pdftex.def Info: ../EW/plot_bin_1_barrido_v3_EW.pdf  used on input line 83.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
  [40 <../EW/phase_primer_bin_v3.pdf> <../EW/plot_bin_1_barrido_v3_EW.pdf
 
 pdfTeX warning: pdflatex (file ../EW/plot_bin_1_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../EW/phase_segundo_bin_v3.pdf, id=1227, 650.43pt x 650.43pt>
+<../EW/phase_segundo_bin_v3.pdf, id=1224, 650.43pt x 650.43pt>
 File: ../EW/phase_segundo_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_segundo_bin_v3.pdf>
 Package pdftex.def Info: ../EW/phase_segundo_bin_v3.pdf  used on input line 126.
 (pdftex.def)             Requested size: 264.61331pt x 264.61368pt.
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [41]
-<../EW/plot_bin_2_barrido_v3_EW.pdf, id=1237, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
+ [41 <../EW/phase_segundo_bin_v3.pdf>]
+<../EW/plot_bin_2_barrido_v3_EW.pdf, id=1275, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../EW/plot_bin_2_barrido_v3_EW.pdf  used on input line 138.
+Package pdftex.def Info: ../EW/plot_bin_2_barrido_v3_EW.pdf  used on input line 139.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
- [42 <../EW/phase_segundo_bin_v3.pdf> <../EW/plot_bin_2_barrido_v3_EW.pdf
-
-pdfTeX warning: pdflatex (file ../EW/plot_bin_2_barrido_v3_EW.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-LaTeX Info: Redefining \. on input line 200.
-LaTeX Info: Redefining \% on input line 200.
- [43]
-<../EW/phase_tercer_bin_v3.pdf, id=1353, 650.43pt x 650.43pt>
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [42 <../EW/plot_bin_2_barrido_v3_EW.pdf>]
+<../EW/phase_tercer_bin_v3.pdf, id=1347, 650.43pt x 650.43pt>
 File: ../EW/phase_tercer_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_tercer_bin_v3.pdf>
-Package pdftex.def Info: ../EW/phase_tercer_bin_v3.pdf  used on input line 206.
+Package pdftex.def Info: ../EW/phase_tercer_bin_v3.pdf  used on input line 207.
 (pdftex.def)             Requested size: 264.61331pt x 264.61368pt.
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
- [44 <../EW/phase_tercer_bin_v3.pdf>]
-<../EW/plot_bin_3_barrido_v3_EW.pdf, id=1404, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+ [43 <../EW/phase_tercer_bin_v3.pdf>]
+<../EW/plot_bin_3_barrido_v3_EW.pdf, id=1398, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: ../EW/plot_bin_3_barrido_v3_EW.pdf  used on input line 220.
+Package pdftex.def Info: ../EW/plot_bin_3_barrido_v3_EW.pdf  used on input line 222.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../EW/d_perp_normalizado_sigmas_v5.pdf, id=1406, 867.24pt x 578.16pt>
+<../EW/d_perp_normalizado_sigmas_v5.pdf, id=1404, 867.24pt x 578.16pt>
 File: ../EW/d_perp_normalizado_sigmas_v5.pdf Graphic file (type pdf)
 <use ../EW/d_perp_normalizado_sigmas_v5.pdf>
-Package pdftex.def Info: ../EW/d_perp_normalizado_sigmas_v5.pdf  used on input line 259.
+Package pdftex.def Info: ../EW/d_perp_normalizado_sigmas_v5.pdf  used on input line 262.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
- [45 <../EW/plot_bin_3_barrido_v3_EW.pdf>]
-<../EW/comparando_sigmas_v3.pdf, id=1470, 954.68669pt x 625.13548pt>
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
+ [44 <../EW/plot_bin_3_barrido_v3_EW.pdf>]
+<../EW/comparando_sigmas_v3.pdf, id=1469, 954.68669pt x 625.13548pt>
 File: ../EW/comparando_sigmas_v3.pdf Graphic file (type pdf)
 <use ../EW/comparando_sigmas_v3.pdf>
-Package pdftex.def Info: ../EW/comparando_sigmas_v3.pdf  used on input line 276.
+Package pdftex.def Info: ../EW/comparando_sigmas_v3.pdf  used on input line 279.
 (pdftex.def)             Requested size: 396.91324pt x 259.90332pt.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
- [46 <../EW/d_perp_normalizado_sigmas_v5.pdf>])
+LaTeX Info: Redefining \. on input line 285.
+LaTeX Info: Redefining \% on input line 285.
+ [45 <../EW/d_perp_normalizado_sigmas_v5.pdf>])
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
- [47 <../EW/comparando_sigmas_v3.pdf>]
+ [46 <../EW/comparando_sigmas_v3.pdf>]
+Cap\'{\i }tulo 10.
+[47
+
+]
 Ap\'{e}ndice A.
 (../Apendice/apend_v2.tex) [48
 
@@ -1034,45 +1040,45 @@ Ap\'{e}ndice A.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 []$\OT1/cmtt/m/n/12 https : / / web . ikp . kit . edu / augeroracle / lib / exe / fetch . php ? media = auger :
  []
 
-LaTeX Info: Redefining \. on input line 138.
-LaTeX Info: Redefining \% on input line 138.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 [50])
-LaTeX Info: Redefining \. on input line 183.
-LaTeX Info: Redefining \% on input line 183.
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
  [51]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (./tesis.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8E4352D59119A6AD4FE28E41D4314885;4596.
+(rerunfilecheck)             Checksum: 4EC52DD3EF11143E073C03BBA5E99B02;4987.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
- 13368 strings out of 482719
- 206486 string characters out of 5953361
- 519908 words of memory out of 5000000
- 28105 multiletter control sequences out of 15000+600000
+ 13731 strings out of 482719
+ 209762 string characters out of 5953361
+ 527719 words of memory out of 5000000
+ 28478 multiletter control sequences out of 15000+600000
  555121 words of font info for 107 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 51i,17n,53p,1746b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,17n,53p,1204b,874s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis.pdf (58 pages, 1838382 bytes).
+Output written on tesis.pdf (58 pages, 1740050 bytes).
 PDF statistics:
- 1749 PDF objects out of 2073 (max. 8388607)
- 1163 compressed objects within 12 object streams
- 270 named destinations out of 1000 (max. 500000)
- 563 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1754 PDF objects out of 2073 (max. 8388607)
+ 1173 compressed objects within 12 object streams
+ 263 named destinations out of 1000 (max. 500000)
+ 580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

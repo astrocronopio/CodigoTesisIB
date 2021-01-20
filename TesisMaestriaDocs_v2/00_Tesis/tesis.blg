@@ -10,52 +10,48 @@ Warning--empty journal in data
 Warning--empty author in kit_oracle
 Warning--empty journal in kit_oracle
 Warning--empty year in kit_oracle
-Warning--empty year in tobepublished
-Warning--empty author in discrepancia
-Warning--empty journal in discrepancia
-Warning--empty year in discrepancia
 Warning--empty author in codigo
 Warning--empty journal in codigo
 Warning--empty year in codigo
-You've used 28 entries,
+You've used 22 entries,
             2634 wiz_defined-function locations,
-            1195 strings with 22313 characters,
-and the built_in function-call counts, 9598 in all, are:
-= -- 592
-> -- 328
+            1172 strings with 21458 characters,
+and the built_in function-call counts, 7790 in all, are:
+= -- 495
+> -- 251
 < -- 0
-+ -- 166
-- -- 81
-* -- 564
-:= -- 1078
-add.period$ -- 83
-call.type$ -- 28
-change.case$ -- 26
++ -- 127
+- -- 62
+* -- 473
+:= -- 880
+add.period$ -- 69
+call.type$ -- 22
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 999
-empty$ -- 951
-format.name$ -- 94
-if$ -- 2038
+cite$ -- 31
+duplicate$ -- 804
+empty$ -- 772
+format.name$ -- 72
+if$ -- 1655
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 286
-newline$ -- 144
-num.names$ -- 24
-pop$ -- 411
+int.to.str$ -- 22
+missing$ -- 227
+newline$ -- 118
+num.names$ -- 19
+pop$ -- 312
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 230
+skip$ -- 167
 stack$ -- 0
-substring$ -- 353
-swap$ -- 661
+substring$ -- 327
+swap$ -- 542
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 13
-while$ -- 51
-width$ -- 30
-write$ -- 297
-(There were 13 warnings)
+warning$ -- 9
+while$ -- 42
+width$ -- 24
+write$ -- 246
+(There were 9 warnings)
