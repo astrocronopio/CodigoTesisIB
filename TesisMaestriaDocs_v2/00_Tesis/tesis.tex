@@ -113,12 +113,13 @@ PMT: 		& Tubo fotomultiplicador (\emph{Photo-Multiplier Tube})\\
 VEM: 		& Muón vertical equivalente (\emph{Vertical Equivalent Muon})\\
 ICRC: 		& Conferencia Internacional de Rayos Cósmicos \\
 			& (\emph{International Cosmic Ray Conference})\\
-EW:			& Método East - West
+EW:			& Método East - West\\
+Ray:		& Método de Rayleigh
 \end{tabular}
                      %Abreviaturas
 \end{abreviaturas}
 
-	\tableofcontents                %\'{I}ndice
+	\tableofcontents                %Indice
 	\listoffigures                  %Figuras
 	%\listoftables                   %Tablas
 
@@ -135,19 +136,21 @@ EW:			& Método East - West
 	\graphicspath{{../02_IntroduccionAuger/}}
 	\input{../02_IntroduccionAuger/auger.tex}
 
- 	\section{Registro de eventos}
+ 	% \section{Algoritmos de disparo del detector de superficie} \label{triggers_caracteristicas}
 	\graphicspath{{../03_IntroduccionReport/}}
-	\input{../03_IntroduccionReport/introduccion_v8}
+	\input{../03_IntroduccionReport/introduccion_v9}
 
 %  \chapter{Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}
-\chapter{Modulación del clima para el archivo del disparo estándar en el rango 2004-2018}	
-% 	\graphicspath{{../04_Clima/}}
-% 	\input{../04_Clima/clima_1_intro.tex}
-% 	\input{../04_Clima/clima_2_fit_main.tex}
+\chapter{Modulación del clima para eventos registrados por el Observatorio Pierre Auger}
 
-\chapter{Modulación del clima para el archivo de todos los disparos en el rango 2014-2020 }	
-% 	\graphicspath{{../05_Weather_Modulation/}}
-% 	\input{../05_Weather_Modulation/weather_modulation_v3.tex}
+	\section{Eventos asociados al Disparo Estándar en el rango 2004-2018}\label{Stan_modulacion}	
+	\graphicspath{{../04_Clima/}}
+	\input{../04_Clima/clima_1_intro_v2.tex}
+	\input{../04_Clima/clima_2_fit_main_v2.tex}
+
+	\section{Eventos asociados a Todos los Disparos en el rango 2014-2020 }	\label{ALL_modulacion}
+	\graphicspath{{../05_Weather_Modulation/}}
+	\input{../05_Weather_Modulation/weather_modulation_v3.tex}
 
 % \chapter{Anisotropías en las direcciones de arribo de los rayos cósmicos}
 	% \graphicspath{{../Anisotropia/}}

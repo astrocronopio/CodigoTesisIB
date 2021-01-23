@@ -2,14 +2,21 @@
 
 \section{Introducción}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-El Observatorio Pierre Auger se diseñó  para estudiar los CRs hasta altas energías con mucha estadística. Las propiedades medidas de los lluvias extendidas determinan la energía y la dirección de arribo de cada CR, además de proveer información sobre  la composición del mismo. El Observatorio está ubicado en la Provincia de Mendoza, Argentina, y ha registrado eventos desde el año 2004 \textcolor{red}{hasta su terminación en el 2008 donde se culminó la instalación de los detectores.}
+
+\textcolor{red}{El observatorio Pierre Auger está ubicado en la ciudad de Malargüe, provincia de Mendoza. El mismo fue construido para detectar las partículas secundarias de las EASs producidas por RCs.  Las propiedades medidas de las lluvias extendidas determinan la energía y la dirección de arribo de cada CR, además de proveer información sobre  la composición de la  misma. El observatorio posee un sistema híbrido de detección, ya que combina un arreglo de detectores de partículas sobre la superficie y un conjunto de telescopios que detectan los fotones de fluorescencia. Cuando el observatorio  registra una EAS que llega a la superficie y reconstruye la dirección de llegada del RC, se dice que se ha detectado un \textit{evento}. La adquisición de datos empezó en el año 2004 y sigue hasta la actualidad.}
+
+% El Observatorio Pierre Auger se diseñó  para estudiar los CRs hasta altas energías con mucha estadística. Las propiedades medidas de las lluvias extendidas determinan la energía y la dirección de arribo de cada CR, además de proveer información sobre  la composición de la  misma. El Observatorio está ubicado en la Provincia de Mendoza, Argentina, y ha registrado eventos desde el año 2004 \textcolor{red}{hasta su terminación en el 2008 donde se culminó la instalación de los detectores.}
 
 \section{Detección de Rayos Cósmicos}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Una característica esencial del Observatorio es la capacidad de registrar lluvias atmosféricas extendidas (EAS) simultáneamente mediante dos técnicas distintas, combinando los detectores de superficie (SD) y los detectores de fluorescencia (FD). 
+Una característica esencial del Observatorio es la capacidad de registrar lluvias atmosféricas extendidas (EAS) simultáneamente mediante dos técnicas distintas, combinando los detectores de superficie y los detectores de fluorescencia (FD). 
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-El arreglo principal de SDs o \emph{SD 1500\,m}, que se muestra en la Fig.\,\ref{fig:auger_sd}, es un conjunto de 1660 detectores Cherenkov colocados en forma triangular a una distancia de $1.5\,$km entre sí, cubriendo $\sim3000\,$km$^2$. \textcolor{red}{Cada SD tiene 6 detectores vecinos, salvo los SDs del borde, si los vecinos están activos el detector del medio cubre un área de forma hexagonal} Además, el Observatorio tiene otro arreglo de SDs separados por $750\,$m llamado \emph{Infill}. 
+% El arreglo principal de SDs o \emph{SD 1500\,m}, que se muestra en la Fig.\,\ref{fig:auger_sd}, es un conjunto de 1660 detectores Cherenkov colocados en forma triangular a una distancia de $1.5\,$km entre sí, cubriendo $\sim3000\,$km$^2$. \textcolor{red}{Cada SD tiene 6 detectores vecinos, salvo los SDs del borde, si los vecinos están activos el detector del medio cubre un área de forma hexagonal}. Además, el Observatorio tiene otro arreglo de SDs separados por $750\,$m llamado \emph{Infill}.
+
+Los análisis presentados en este trabajo fueron realizados con los eventos obtenidos por $ 1660$ detectores Cherenkov, dispuestos sobre de $\sim 3000\,\text{km}^2$ a  $1500\,$m entre sí en forma triangular. Un conjunto de 7 detectores adyacentes, es decir una en el medio y 6 en los lados, forman una celda hexagonal o hexágono. Esta disposición de tanques se menciona como \textit{arreglo principal} y se muestra en la Fig.\,\ref{fig:auger_sd}. El conjunto del tanque y la electrónica de detección  se menciona durante este trabajo como \textit{Surface Detector} o \textit{SD}. Además, el Observatorio tiene otro arreglo de SDs separados por $750\,$m llamado \emph{Infill}.
+
+
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Los FDs están colocados en cuatro edificios alrededor del arreglo principal: Coihueco, Loma Amarilla, Los Morados y Los Leones indicados en el mapa en la Fig.\,\ref{fig:auger_sd}. Cada edificio contiene 6 FDs, donde cada uno tiene un campo de visión de $30^o\times30^o$, cubriendo así cada uno $180^o$ en la horizontal.
@@ -20,7 +27,7 @@ El área del observatorio es generalmente plana, la altitud de los detectores va
 
 \subsection{El Detector de Superficie y el Detector de Fluorescencia}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Un detector de superficie (SD), que se muestra en la Fig.\ref{fig:tanque}, consiste en un tanque de polietileno de $3.6\,$m de diámetro y $1.2\,$m de altura que contiene $12\,000$ litros de agua hiper-pura.  En la parte superior se encuentran tres foto-multiplicadores (PMT) distribuidos simétricamente a $1.2\,$m respecto al centro del tanque. Los mismos colectan la radiación Cherenkov producida por una partícula cargada relativista que pasa por el agua del detector. \textcolor{red}{El interior está recubierto por una lámina de alta reflectividad para minimizar la pérdida de energía de los fotones energía por el rebote con las paredes}. La altura del tanque lo hace sensible a detectar fotones de altas energías, que pueden convertirse en pares electrón-positrón en el volumen de agua \cite{como_funciona_auger}.
+Un detector de superficie (SD), que se muestra en la Fig.\ref{fig:tanque}, consiste en un tanque cilíndrico de polietileno de $3.6\,$m de diámetro y $1.2\,$m de altura con 12 toneladas de agua ultra-pura.  En la parte superior del tanque se encuentran tres foto-multiplicadores (PMT) distribuidos simétricamente a $1.2\,$m respecto al centro del tanque. Los mismos colectan la radiación Cherenkov producida por una partícula cargada relativista que pasa por el agua del detector. \textcolor{red}{El interior está recubierto por una lámina de alta reflectividad para minimizar la pérdida de energía de los fotones energía por el rebote con las paredes}. La altura del tanque lo hace sensible a detectar fotones de altas energías, que pueden convertirse en pares electrón-positrón en el volumen de agua \cite{como_funciona_auger}. Cada detector está midiendo constantemente los fotones en el agua, muchos de estos fotones son producidos por ruido y otros por partículas secundarias de una EAS. Los SDs cuentan con algoritmos o reglas para discernir ruido de un evento causado por un rayo cósmico, estos son los algoritmos de disparo que se mencionan en el apartado \ref{triggers_caracteristicas} .
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 El detector de fluorescencia (FD) consiste en 24 telescopios de fluorescencia, esquematizados en la Fig\,\ref{fig:FD}, distribuidos en 4 edificios en los límites del observatorio. Cada telescopio tiene un espejo esférico segmentado de 13$\,m^2$ y una cámara que consiste en 440 PMTs ordenados en una grilla de 22x20. Cada telescopio tiene un campo de visión de $30^o\times30^o$.
@@ -135,8 +142,7 @@ donde los parámetros obtenidos son $A=(1.86\pm0.03)\times 10^{17}\,$eV y $B=(1.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.67\textwidth]{efd_s38_v2.jpg}
-	\caption{Correlación entre el valor S$_{38}$ y la energía $E_{FD}$ medida por el FD.  Figura obtenida del trabajo \cite{tobepublished}.} 	\label{fig:efd_s38}
-
+	\caption{Correlación entre el valor S$_{38}$ y la energía $E_{FD}$ medida por el FD. Con estos datos se ajustan los parámetros A y B que relacionan la señal y la energía.  Figura obtenida del trabajo \cite{tobepublished}.} 	\label{fig:efd_s38}
 \end{figure}
 
 

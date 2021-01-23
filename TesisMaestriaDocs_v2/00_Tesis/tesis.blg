@@ -10,48 +10,52 @@ Warning--empty journal in data
 Warning--empty author in kit_oracle
 Warning--empty journal in kit_oracle
 Warning--empty year in kit_oracle
+Warning--empty journal in collaboration2009atmospheric
+Warning--empty author in isabel
+Warning--empty journal in isabel
+Warning--empty year in isabel
 Warning--empty author in codigo
 Warning--empty journal in codigo
 Warning--empty year in codigo
-You've used 22 entries,
+You've used 29 entries,
             2634 wiz_defined-function locations,
-            1172 strings with 21458 characters,
-and the built_in function-call counts, 7790 in all, are:
-= -- 495
-> -- 251
+            1204 strings with 22769 characters,
+and the built_in function-call counts, 9940 in all, are:
+= -- 622
+> -- 324
 < -- 0
-+ -- 127
-- -- 62
-* -- 473
-:= -- 880
-add.period$ -- 69
-call.type$ -- 22
-change.case$ -- 21
++ -- 164
+- -- 80
+* -- 587
+:= -- 1121
+add.period$ -- 87
+call.type$ -- 29
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 804
-empty$ -- 772
-format.name$ -- 72
-if$ -- 1655
+cite$ -- 42
+duplicate$ -- 1029
+empty$ -- 994
+format.name$ -- 92
+if$ -- 2115
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 227
-newline$ -- 118
-num.names$ -- 19
-pop$ -- 312
+int.to.str$ -- 29
+missing$ -- 293
+newline$ -- 150
+num.names$ -- 25
+pop$ -- 417
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 167
+skip$ -- 229
 stack$ -- 0
-substring$ -- 327
-swap$ -- 542
+substring$ -- 395
+swap$ -- 680
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 42
-width$ -- 24
-write$ -- 246
-(There were 9 warnings)
+warning$ -- 13
+while$ -- 53
+width$ -- 31
+write$ -- 311
+(There were 13 warnings)

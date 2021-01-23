@@ -2,13 +2,6 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem{Aab_2020}
-{Aab A. et al.}
-\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
-  Auger Observatory}}.
-\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
-\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
-
 \bibitem{PGD}
 Olive, K.
 \newblock Review of particle physics.
@@ -33,6 +26,19 @@ Aab, A., Abreu, P., Aglietta, M., Albury, J.~M., Allekotte, I., Almela, A.,
 \newblock \emph{Phys. Rev. D}, \textbf{102}, 062005, Sep 2020.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.102.062005}.
 
+\bibitem{triggers_ref}
+Justin M.~Albury, B. R.~D., Jose A.~Bellido.
+\newblock Exploring the energy threshold for full trigger efficiency of the
+  surface detector with hybrid events {GAP 2018-038}.
+\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
+
+\bibitem{aab2017impact}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock {Impact of atmospheric effects on the energy reconstruction of air
+  showers observed by the surface detectors of the Pierre Auger Observatory}.
+\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
+
 \bibitem{referencia_pesos}
 Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
   I.~A.
@@ -46,6 +52,13 @@ Taborda, O.
 \newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
   cósmicos de alta energía detectados por el observatorio Pierre Auger}.
 \newblock Tesis Doctoral, Instituto Balseiro, 2018.
+
+\bibitem{Aab_2020}
+{Aab A. et al.}
+\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
+  Auger Observatory}}.
+\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
+\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
 
 \bibitem{collaboration2013pierre}
 {The Pierre Auger Collaboration}.
@@ -107,6 +120,30 @@ Hersil, J., Escobar, I., Scott, D., Clark, G., Olbert, S.
   longitudinal development.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{6}, 22--23, Jan 1961.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.6.22}.
+
+\bibitem{pierre2013plans}
+{Pierre Auger Collaboration}.
+\newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
+\newblock Pierre Auger Collaboration, 2013.
+
+\bibitem{collaboration2009atmospheric}
+{The Pierre Auger Collaboration}.
+\newblock {Atmospheric effects on extensive air showers observed with the
+  Surface Detector of the Pierre Auger Observatory}, 2009.
+
+\bibitem{matthews2005heitler}
+Matthews, J.
+\newblock A heitler model of extensive air showers.
+\newblock \emph{Astroparticle Physics}, \textbf{22}~(5-6), 387--397, 2005.
+
+\bibitem{gora2006universal}
+Gora, D., Engel, R., Heck, D., Homola, P., Klages, H., Pe, J., \emph{et~al.}
+\newblock Universal lateral distribution of energy deposit in air showers and
+  its application to shower reconstruction.
+\newblock \emph{Astroparticle Physics}, \textbf{24}~(6), 484--494, 2006.
+
+\bibitem{isabel}
+Comunicación personal con {Isabelle Lhenry-Yvon}.
 
 \bibitem{referencia_anis}
 Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
