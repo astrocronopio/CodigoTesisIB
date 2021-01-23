@@ -97,19 +97,19 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			// 	if(utc  < utci || Theta > 60) continue;
 			// }	
 			
-			//	Over energy 4 EeV
-			{
-				liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
-				if (energy < 16 || energy >= 32) continue;
-				if (utc  < utci || Theta > 80) continue;
-			}	
+			// //	Over energy 4 EeV
+			// {
+			// 	liness>>AugId>>Dec>>Ra>>energy>>utc>>Theta>>Phi>>t5>>ftr;
+			// 	if (energy < 16 || energy >= 32) continue;
+			// 	if (utc  < utci || Theta > 80) continue;
+			// }	
 
-			// {			
-			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			// //if (energy<energy_threshold) continue;
-			// if(utc  < utci) continue;
-			// if(Theta > 60) continue;
-			// }
+			{			
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			//if (energy<energy_threshold) continue;
+			if(utc  < utci) continue;
+			if(Theta > 60) continue;
+			}
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
@@ -153,6 +153,6 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  rango2020;
 	
 */	
-	ray_given_freq(366.25,  in_file, out_file, utci, utcf, rayleigh);
+	ray_given_freq(365.25,  in_file, out_file, utci, utcf, rayleigh);
 	return 0;
 }

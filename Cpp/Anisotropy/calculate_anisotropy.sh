@@ -22,12 +22,12 @@ rango2020=1577880000
 energy_threshold="0"
 
 # file_cmp="../Anisotropy/Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
-# file_input="./../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
-file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+file_input="./../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
+# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
 
 #####################################################################################3
-folder="./Files_AllTriggers_0-5_1_EeV/"
-
+# folder="./Files_AllTriggers_0-5_1_EeV/"
+folder="./Files_AllTriggers_Wide_Range/"
 mkdir "$folder"
 
 sin_peso="sin_peso_v9"
