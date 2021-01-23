@@ -55,7 +55,7 @@ double error_phase(double rtilde, double sigma, double phase)
 {   
     _rtilde_phase_=rtilde, _sigma_phase_=sigma;
     double current_prob =0.0, limit_prob=.7;
-    double init_error = 0.01*abs(phase);
+    double init_error = 0.01;
     // // std::cout<<init_error<<std::endl;
     _normal_phase_ = integration_over_phase(rtilde,sigma, M_PI);
     // std::cout<<"\n norma: "<< _normal_phase_ <<std::endl;

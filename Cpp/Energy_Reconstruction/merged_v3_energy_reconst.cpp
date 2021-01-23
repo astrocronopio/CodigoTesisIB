@@ -67,16 +67,16 @@ int main(int argc, char** argv)
 			
 			while (!utctprh.eof() ){			
 				if(utc <= iutc && utc > iutc-300 )
-				{	if  (iutc<1388577500) break;
+				{	if  (iutc<1388577500 || tanks<6) break;
 					//Importante fijarse si S38 esta corregida  o no
 
 					// Analisis  S38: no corregida por el Herald
 					//if (flag==0 || flag==3) 
-						//energy_corr = energy_reconstruction(S38 , p,  rho, rhod, the, phi, &factor) ;
+						energy_corr = energy_reconstruction(S38 , p,  rho2, rho24, the, phi, &factor) ;
 					
 					// Analisis Energia: S38 corregido por el Herald
 					//if (flag==1 || flag==2) 
-						energy_corr = energy(S38*(S1000_raw/S1000));//energy_reconstruction(S38*(S1000_raw/S1000), p,  rho24, rhod, the, phi, &factor) ;
+						// energy_corr = energy(S38*(S1000_raw/S1000));//energy_reconstruction(S38*(S1000_raw/S1000), p,  rho24, rhod, the, phi, &factor) ;
 						
 					//energy_corr=Energy;
 
@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 					
 					std::cout<<"Delta:  "<<energy_corr-Energy<<std::endl;
 					outtest << utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) << "\t";
-					outtest << energy(S38*(S1000_raw/S1000))<< "\t" << S1000/S1000_raw << "\t" <<factor<<"\n" ;
+					outtest << energy(S38*(S1000/S1000_raw))<< "\t" << S1000/S1000_raw << "\t" <<factor<<"\n" ;
 					//outfile<< utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) <<"\n" ;
 
 					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t";
