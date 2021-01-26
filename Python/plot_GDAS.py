@@ -7,7 +7,7 @@ mpl.rcParams.update({
 	'figure.figsize': [12, 6],
 	'figure.autolayout': True,
 	'font.family': 'serif',
-	'font.sans-serif': ['Palatino']})
+	'font.serif': ['STIXGeneral']})
 
 import numpy as np
 cmap = plt.get_cmap('viridis_r',5)

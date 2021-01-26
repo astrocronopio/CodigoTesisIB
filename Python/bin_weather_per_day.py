@@ -16,7 +16,7 @@ def bin_total_weather(file_utctpth, file_utctpth_bins, width):
 
 	with open(file_utctpth) as f:
 		for line in f:
-			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp= line.split()
+			utc,temp,pres,rho,rho24,hex6T5,d5T5,iw,bp, x1, x2, x3= line.split()
 
 			bin= int(hour_utc(int(utc), width))
 		
@@ -31,14 +31,14 @@ def bin_total_weather(file_utctpth, file_utctpth_bins, width):
 			
 			counter +=1
 	
-	for x in range(0,width-1):
+	for x in range(0,width):
 		avgtemp[x] = width*avgtemp[x]/counter
 		avgpres[x] = width*avgpres[x]/counter
 		avgrho[x] =  width*avgrho[x]/counter
 		avgrho24[x]= width*avgrho24[x]/counter
 		shex6T5[x] = width*shex6T5[x]/mean if mean!=0 else 0
 
-		output_bins.write("%i \t %.7f \t %.7f \t %.7f \t %f \t %.7f \n"%(x, avgtemp[x], avgpres[x], avgrho[x], avgrho24[x], shex6T5[x]))
+		output_bins.write("%i \t %.7f \t %.7f \t %.7f \t %f \t %.7f \t %.7f \n"%(x, avgtemp[x], avgpres[x], avgrho[x], avgrho24[x], shex6T5[x], counter))
 		output_bins.flush()
 
 
@@ -55,10 +55,10 @@ def hour_utc(utc, width):
 
 def main():
 
-	file_utctpth 			= "/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh.dat"#sys.argv[1]
+	file_utctpth 			= "/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_12052020.dat"
 	file_utctpth_bins 		= "/home/ponci/Desktop/TesisIB/Coronel/Weather/utctprh_24_total.dat"#sys.argv[2]
 
-  	bin_total_weather(file_utctpth, file_utctpth_bins, 24)
+	bin_total_weather(file_utctpth, file_utctpth_bins, 24)
 
 if __name__== "__main__":
 	main()
