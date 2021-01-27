@@ -14,6 +14,7 @@
 
 \RequirePackage{ifpdf}
 \RequirePackage[english,spanish, activeacute]{babel}
+\decimalpoint
 \RequirePackage{makeidx}
 \RequirePackage{caption}
 \RequirePackage{fnpos}
@@ -108,7 +109,6 @@
 \def\codirector#1{\gdef\@codirector{#1}}
 \def\laboratorio#1{\gdef\@laboratorio{#1}}
 \def\palabrasclave#1{\gdef\@keywordsEspanol{#1}}
-\def\neembaeguasu#1{\gdef\@keywordsGuarani{#1}}
 \def\keywords#1{\gdef\@keywordsIngles{#1}}
 
 \newcommand\SetPdfInfo{\ifpdf\hypersetup{pdfauthor={\@author},
@@ -232,10 +232,10 @@
 % Solo funciona para el draft
 \def\cleardoublepage{\clearpage\ifDraft\else\if@twoside \ifodd\c@page\else
   \hbox{}
-  %\vspace*{\fill}
-  %\vspace{\fill}
+  \vspace*{\fill}
+  \vspace{\fill}
   \thispagestyle{empty}
-  %\newpage
+  \newpage
   \if@twocolumn\hbox{}\newpage\fi\fi\fi\fi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -374,7 +374,6 @@
 \cleardoublepage
 }
 
-%-------------------------------------------------------------------
 \newenvironment{resumen}{\cleardoublepage%
 \phantomsection%
 \markboth{\abstractname}{}
@@ -384,7 +383,6 @@
 {\vfill%
 {\noindent {\bfseries Palabras clave:} \MakeUppercase \@keywordsEspanol}% \vfill%
 \cleardoublepage}
-%-------------------------------------------------------------------
 
 \newenvironment{abstract}{\cleardoublepage%
 \phantomsection%
@@ -397,19 +395,6 @@
 {\noindent {\bfseries Keywords:} \MakeUppercase \@keywordsIngles}% \vfill%
 \selectlanguage{spanish}%
 \cleardoublepage}
-%-------------------------------------------------------------------
-
-\newenvironment{nemombyky}{\cleardoublepage%
-\phantomsection%
-\markboth{\abstractnamegua}{}
-\addcontentsline {toc}{chapter}{\abstractnamegua}%
-\chapter*{\abstractnamegua}%
-\noindent}%
-{\vfill%
-{\noindent {\bfseries \~{N}e'\~{e} mba'eguasuva:} \MakeUppercase \@keywordsGuarani}% \vfill%
-\cleardoublepage}
-%-------------------------------------------------------------------
-
 
 \newenvironment{abreviaturas}{\cleardoublepage%
 \phantomsection%
@@ -457,8 +442,8 @@
 \def\tablename{Tabla}
 \def\abstractname{Resumen}
 \def\abstractnameeng{Abstract}
-\def\abstractnamegua{\~{N}emombyky}
 \def\bibname{Bibliograf{\'{\i}}a}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \endinput
 

@@ -1,0 +1,22 @@
+%vCosmic ray showers with zenith angle < 60 ◦ are defined as vertical show-ers, while those with 60 ◦ < zenith angle < 80 ◦ are defined as horizontal showers. The energy spectrum is measured with unprecedented precision using four datasets:  hybrid (events measured simultaneously by the SD and FD), SD 750 m array, SD baseline vertical, and SD baseline horizontal [11, 12].
+.
+The SD operates 24 hours per day and thus provides uniform coverage in right ascension with a huge 3000 km 2 collecting area. 
+
+DONE===
+
+%Several weather stations are in operation at the Auger Observatory to monitor the atmospheric conditions, four at the different sites of the fluorescence telescope buildings and one near the laser facility close to the centre of the 1500 m array [3]. For the present analysis, we use a database
+
+%\subsubsection{que pasa en la atmosfera con los rayos cosmicos}
+%consisting of the temperature and pressure measured at the Central Laser Facility (CLF) weather station, available every 5 minutes for most of the time. When gaps in the data between 10 minutes up to three hours are present, the data are just interpolated from the values at the endpoints of those empty intervals. For the longer periods when this station is not operational, we adopt data from the other stations,2 if available, or otherwise discard the period for the present analysis.
+
+
+DONE====
+%The surface detector array views a slice of an air shower at ground level, with robust
+%and sensitive water Cherenkov stations which respond to both the electromagnetic and
+%muonic components of the shower. Well-established methods exist for determining
+%arrival directions and for estimating primary energy (see Section 11). 
+
+%The instantaneous aperture of the array is easily calculable, especially for energies above 3 10 18 eV, where a shower falling on any part of the array is detected with 100\% efficiency independently of the mass of the primary particle that initiated the shower. The aperture is found simply by counting the number of hexagons of active surface stations at any time, and multiplying by the aperture, A, of a hexagonal cell, 4.59 km 2 sr (for shower zenith angles <60 ) [36]. The SD has the important property that the quality of the measurements improves with the shower energy.
+
+The fluorescence detector is used to image the longitudinal development of the shower cascade in the atmosphere. The luorescence light is emitted isotropically in the ultraviolet part of the spectrum and is produced predominantly by the electromagnetic component of the shower. Observation periods are limited to dark nights of good weather. This disadvantage is balanced by the considerable gain of being able to view the development of the shower profile. Firstly, since fluorescence light production is proportional to the collisional energy deposit in the atmosphere, the technique provides a near-calorimetric method for determining the primary cosmic ray energy. Secondly, the depth at which a shower reaches maximum size, X max , is observable: this is the most direct of all accessible
+mass composition indicators.

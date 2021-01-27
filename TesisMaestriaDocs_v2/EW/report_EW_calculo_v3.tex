@@ -16,7 +16,7 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         I_{\phi_1, \phi_2}^{obs}(\alpha^0) = \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \tilde{\omega}(\theta, \alpha^0) \Phi(\theta, \phi, \alpha^0),
         \label{eq:rate_general}
     \end{equation}
-    \noindent  donde  el término $\tilde{\omega}(\theta, \alpha^0)$ representa la exposición del Observatorio y $\Phi(\theta, \phi, \alpha^0)$ es el flujo total de RCs expresado en coordenadas locales. El primer término mencionado también incluye los efectos sistemáticos y atmosféricos, como la variación de los hexágonos del arreglo y las correcciones de la modulación del clima, mediante  su dependencia con $\alpha^0$.
+    \noindent  donde  el término $\tilde{\omega}(\theta, \alpha^0)$ representa la exposición del Observatorio y $\Phi(\theta, \phi, \alpha^0)$ es el flujo total de RCs expresado en coordenadas locales. El término $\tilde{\omega}(\theta, \alpha^0)$  también incluye los efectos sistemáticos, como la variación de los hexágonos del arreglo mediante  su dependencia con $\alpha^0$.
 
     Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos: para el Este entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$ y para el Oeste entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
 
@@ -66,7 +66,7 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         I^{obs}_E -  I^{obs}_O = 4 \Phi_0 (1+ \eta(\alpha^0)) \,  d_{x'}(\alpha^0)\overline{\sin\theta}
     \end{equation*}
 
-    Para obtener las componentes del vector $\bf{d}$, \textcolor{red}{tenemos que considerar que las proyecciones que están en el plano x'-z' ya que no hay dependencia con la proyección $d_{y'}$}. Para hacer esto, consideremos a los versores $\hat{\bf{u}}_{x'}$ y $\hat{\bf{u}}_{z'}$ que apuntan al cenit y al Este respectivamente. Podemos obtener las proyecciones con un producto escalar con los versores en las direcciones de interés:
+    Para obtener las componentes del vector $\bf{d}$, tenemos que considerar que las proyecciones que están en el plano x'-z'\,  ya que no hay dependencia con la proyección $d_{y'}$. Para hacer esto, consideremos a los versores $\hat{\bf{u}}_{x'}$ y $\hat{\bf{u}}_{z'}$ que apuntan al cenit y al Este respectivamente. Podemos obtener las proyecciones con un producto escalar con los versores en las direcciones de interés:
     \begin{equation}
         d_{x'}(\alpha^0) \hat{x}' =  (\textbf{d}\cdot\hat{\bf{u}}_{x'})\hat{\bf{u}}_{x'} \rightarrow d_{x'}(\alpha^0) = \textbf{d}\cdot\hat{\bf{u}}_{x'},
     \end{equation}
@@ -86,15 +86,15 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         \label{resta}
     \end{equation}
 
-    Esta diferencia se debe relacionar con la variación del flujo total verdadero $I(\alpha^0)$, es decir el flujo que se observaría si no existieran variaciones temporales en ascensión recta en la exposición, que implicaría $\eta(\alpha^0)=0$. \textcolor{red}{Las ecuaciones relacionadas con el flujo total medido $I^{obs}_{Total}$ son válidas para el caso de $\eta(\alpha^0)=0$.}
+    Esta diferencia se debe relacionar con la variación del flujo total verdadero $I(\alpha^0)$, es decir el flujo que se observaría si no existieran variaciones temporales en ascensión recta en la exposición, que implicaría $\eta(\alpha^0)=0$. {Las ecuaciones relacionadas con el flujo total medido $I^{obs}_{Total}$ son válidas para el caso de $\eta(\alpha^0)=0$.}
 
-  \textcolor{red}{  Considerando la Ec.\ref{eq:total_flux_eta} para el caso de $I(\alpha^0)$ con $\eta(\alpha^0)=0$, la variación del flujo verdadero en ascensión recta provee información sobre la componente $d_{z'}$ del dipolo.} 
+  {  Considerando la Ec.\ref{eq:total_flux_eta} para el caso de $I(\alpha^0)$ con $\eta(\alpha^0)=0$, la variación del flujo verdadero en ascensión recta provee información sobre la componente $d_{z'}$ del dipolo.} 
     \begin{align}
         \dv{I(\alpha^0)}{\alpha^0}  & = 2\pi\Phi_0 \overline{\cos\theta} \dv{\,d_{z'}(\alpha^0) }{\alpha^0}\\ 
         \dv{I(\alpha^0)}{\alpha^0} &= -2d\pi\Phi_0 \overline{\cos\theta}\cos\delta_d \cos\delta^0 \sin(\alpha^0 - \alpha_d) \label{total_flux}
     \end{align}
 
-    Para llegar a la expresión \ref{resta}, hicimos la expansión hasta el primer orden de $\tilde{\omega}(\theta, \alpha^0)$ y de $\bf\Phi(\alpha, \delta)$, por lo tanto, para ser consistentes en el orden de aproximación, se desprecia el término de segundo orden de la expresión \ref{resta} que es proporcional de $\eta \cdot d$ y la expresión \ref{resta} queda:
+    Para llegar a la expresión \ref{resta}, hicimos la expansión hasta el primer orden de $\tilde{\omega}(\theta, \alpha^0)$ y de $\bf\Phi(\alpha, \delta)$, por lo tanto, para ser consistentes en el orden de aproximación, se desprecia el término de segundo orden de la expresión \ref{resta} que es proporcional a $\eta \cdot d$ y la expresión \ref{resta} queda:
         \begin{equation}
             I^{obs}_E -  I^{obs}_O \approx -4d \Phi_0 \cos\delta_d \sin(\alpha^0  - \alpha_d)\overline{\sin\theta}
             \label{resta_final}
@@ -119,7 +119,7 @@ El objetivo del método  East - West es estimar la modulación dipolar de  $I(\a
 \begin{equation}
     I^{obs}_E -  I^{obs}_O = \frac{N}{2\pi} r_{EW} \cos(\alpha^0 -  \phi_{EW}) \label{eq:ray_ew_like}
 \end{equation}
-\textcolor{red}{donde a diferencia de la expresión original, la amplitud $r_{EW}$ y fase $\phi_{EW}$ no son la amplitud y fase del dípolo físico. Las mismas están asociadas a la modulación en la diferencia de flujos, a continuación se explica como se relacionan con $r_1$ y $\phi$  a partir del   método East - West.}
+donde a diferencia de la expresión original, la amplitud $r_{EW}$ y fase $\phi_{EW}$ no son la amplitud y fase de la modulación en ascensión recta. Las mismas están asociadas a la modulación en la diferencia de flujos, a continuación se explica como se relacionan con $r_1$ y $\phi$  a partir del   método East - West.
 
 
 Esta relación puede obtenerse reescribiendo la expresión \ref{eq:final}, teniendo en cuenta la proyección del dípolo físico sobre el ecuador $d_{\perp}= d\cos\delta^0$, la expresión  \ref{resta_final} y que $N \simeq 4\pi^2 \Phi_0 \overline{1} $ \footnote{Porque es la integral con respecto a los dos ángulos, $\theta$ y $\phi$}:
@@ -164,7 +164,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
         a_i' = \cos(X_i - \beta) \qquad
         b_i' = \sin(X_i - \beta)
     \end{align}
-    el valor de $X_i$ depende la frecuencia a estudiar, la misma es igual a la ascensión recta del cenit $\alpha^0_i$ al momento del evento  si se estudia la frecuencia sidérea, en cambio para la frecuencia solar es igual al equivalente en grados de la hora local de Malargüe. El valor de $\beta$ es depende si el evento provino del Este donde $\beta=180^o$ o $\beta=0$ caso contrario.
+    el valor de $X_i$ depende la frecuencia a estudiar, la misma es igual a la ascensión recta del cenit $\alpha^0_i$ al momento del evento  si se estudia la frecuencia sidérea, en cambio para la frecuencia solar es igual al equivalente en grados de la hora local de Malargüe. El valor de $\beta$ depende si el evento provino del Este donde $\beta=180^o$ o $\beta=0$ caso contrario.
     
     \item Una vez corridos todos los  eventos se calculan los parámetros:
     \begin{align*}
@@ -179,7 +179,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
         \phi_{EW} = \tan^{-1}(\nicefrac{b_{EW}}{a_{EW}})
     \end{align*}
 
-    Estos valores se traducen a los valores de amplitud $r_1$, $d_\perp$ y fase $\phi$ del dipolo físico mediante las expresiones \ref{dperp}, \ref{r_fisico} y \ref{phase_fisico}.   Los valores $\langle\cos\delta \rangle$ y $\langle\sin\theta \rangle$ son los valores medios de estas variables en los eventos estudiados. \textcolor{red}{En el caso de $\phi$ se espera que el mismo sea un estimador del valor de $\alpha_d$.}
+    Estos valores se traducen a los valores de amplitud $r_1$, $d_\perp$ y fase $\phi$ del dipolo físico mediante las expresiones \ref{dperp}, \ref{r_fisico} y \ref{phase_fisico}.   Los valores $\langle\cos\delta \rangle$ y $\langle\sin\theta \rangle$ son los valores medios de estas variables en los eventos estudiados. En el caso de $\phi$ se espera que el mismo sea un estimador del valor de $\alpha_d$.
 
     \item Se calcula la amplitud límite $r_{99}$ y la probabilidad  $P(r_{EW})$ utilizando la expresión \ref{p99}:
     \begin{align*}
@@ -208,7 +208,7 @@ En la siguiente sección se verifica que se obtiene los mismo resultados con est
 
 \section{Verificación del código}
 
-\subsection{Comparación con el trabajo de la Colaboración Auger}
+\subsection{Comparación con el trabajo de la Colaboración Pierre Auger}
 Se verificó el código escrito en este trabajo de la siguiente manera:
 
 \begin{enumerate}
@@ -220,13 +220,13 @@ Se verificó el código escrito en este trabajo de la siguiente manera:
 
 \subsection{Comparando con la variable $\tilde{\alpha}$ con la ascensión recta del cenit }
 
-Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango 0.25 - 0.5 EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son comparables entre sí.
+Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otras frecuencias, en la Tabla~\ref{tab:comp_vars} se comparan los resultados de la referencia para el rango 0.25 - 0.5 EeV, los obtenidos usando la ascensión recta del cenit y los valores obtenidos con la Ec.\ref{ra_arb} en el mismo rango de energía. Se observan que los valores son consistentes.
 
 \begin{table}[H]
     \begin{small}
         \begin{center}
             \begin{tabular}[c]{l|l|l|l}
-                                    & \cite{Aab_2020} & $\alpha^0$   & $\alpha=2\pi f_xt_i$   \\ 
+                                    & \cite{Aab_2020} & $\alpha^0$   & $\alpha=2\pi f_xt_i$   \\ \hline
                 Frecuencia:         & 366.25          &  366.25      &  366.25            \\
                 $d_\perp$[\%]:      & 0.60            &  0.60        &  0.60              \\
                 $\sigma_{x,y}$[\%]  & 0.48            &  0.48        &  0.48              \\ 

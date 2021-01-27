@@ -5,13 +5,13 @@ El análisis de anisotropías a grandes escalas angulares suele ser hecho sobre 
 
 \section{Frecuencias de referencia}
 
-Las anisotropías son variaciones pequeñas por lo que eliminar todo factor espurio en el análisis es importante. Para obtener la amplitud de la misma en ascensión recta, se estudia la frecuencia sidérea ($f_{sid}=366.25\,$ ciclos/año) \cite{taborda}. Los errores sistemáticos debido a la modulación de eventos por el clima u otros errores propios de la adquisición de datos, aparecen en la frecuencia solar  ($f_{sid}=365.25\,$ ciclos/año), por lo que se debe tener en consideración el análisis de esta frecuencia. La frecuencia anti-sidérea ($f_a=364.25\,$ ciclos/año) es una frecuencia que puede indicar efectos sistemáticos en la amplitud de la anisotropía en la frecuencia sidérea \cite{farley1954sidereal}. La mezcla entre modulaciones diarias y anuales induce bandas laterales ubicadas a $\pm1\,$ciclo/año con respecto a la solar \cite{taborda}. Por estos motivos se toman estas frecuencias  como referencia.
+Las anisotropías son variaciones pequeñas del flujo medido por lo que eliminar todo factor espurio en el análisis es importante. Para obtener la amplitud de la misma en ascensión recta, se estudian modulaciones en la frecuencia sidérea ($f_{sid}=366.25\,$ ciclos/año) \cite{taborda}. Los errores sistemáticos debido a la modulación de eventos por el clima u otros errores propios de la adquisición de datos, aparecen principalmente en la frecuencia solar  ($f_{sid}=365.25\,$ ciclos/año), por lo que se debe tener en consideración el análisis de esta frecuencia. La frecuencia anti-sidérea ($f_a=364.25\,$ ciclos/año) es una frecuencia que suele utilizarse para chequear la presencia de efectos sistemáticos en la amplitud de la anisotropía en la frecuencia sidérea \cite{farley1954sidereal}. La mezcla entre modulaciones diarias y anuales induce bandas laterales ubicadas a $\pm1\,$ciclo/año con respecto a la solar \cite{taborda}. Por estos motivos se toman estas frecuencias  como referencia.
 
 \section{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
 
 Para corregir las variaciones de la exposición del observatorio, podemos definir un peso  $w_i$ por cada evento $i$, que corrige la variación  $\Delta N_{cell}(\alpha^0)$ en función de la ascensión recta del cenit del observatorio $\alpha^0$ durante el rango de tiempo estudiado. Estas variaciones pueden deberse al crecimiento del arreglo a través de los años,  por caídas en la comunicación del observatorio con los SDs u otros motivos. 
 
-El factor $\Delta N _{cell}(\alpha^0)$ tiene en cuenta que la exposición  direccional  el observatorio no es uniforme en tiempo sidéreo.  Se obtiene sumando el número de celdas durante el periodo de medición, en cada segmento de $\alpha^0$ y luego se normaliza con el valor medio de los segmentos.
+El factor $\Delta N _{cell}(\alpha^0)$ tiene en cuenta que la exposición  direccional  del observatorio no es uniforme en tiempo sidéreo.  Se obtiene sumando el número de celdas durante el periodo de medición, en cada segmento de $\alpha^0$ y luego se normaliza con el valor medio de los segmentos.
 
 \subsection{Cálculo de las variaciones relativas de los héxagonos}
 Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuación:
@@ -55,7 +55,7 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
       \begin{figure}[H]
           \centering
               \includegraphics[width=0.6\linewidth]{pesos_referencia.png}  
-              \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo \cite{referencia_pesos}.}
+              \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo A. Aab et al. (2018).}
               \label{fig:pesos_referencia}
         \end{figure}
 
@@ -132,7 +132,7 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
             \tilde{r}_k &= \sqrt{a_k^2 +b_k^2}                       \qquad &&   \phi_k&&= \frac{1}{k}\arctan\frac{a_k}{b_k}\\
           P(\tilde{r}_k)&= \exp(-\mathcal{N}\frac{\tilde{r}_k^2}{4})\qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
         \end{alignat}
-        Cabe resaltar que el $r_{99}$ depende solamente de los pesos de los eventos que se está estudiando. La interpretación  de este valor es cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica sea del $1$\%
+        Cabe resaltar que el $r_{99}$ depende solamente de los pesos de los eventos que se está estudiando. Este es el valor de amplitud para el cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica sea del $1$\%
         %., y el valor de amplitud $r_{99}$ para que dicha probabilidad sea del $1$\%.
       \end{enumerate}
 
@@ -140,7 +140,7 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
 
       \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\linewidth]{sin_pesos_referencia_8_EeV.png}
-        \caption{Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos, con el código de \cite{taborda} y con el código escrito para este trabajo.}
+        \includegraphics[width=0.75\linewidth]{sin_pesos_referencia_8_EeV.pdf}
+        \caption{Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos. Se comparan los resultados de este trabajo con los resultados de Taborda (2018).}
         \label{fig:sin_pesos_referencia}
       \end{figure}

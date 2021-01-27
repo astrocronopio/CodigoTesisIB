@@ -2,64 +2,6 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem{PGD}
-Olive, K.
-\newblock Review of particle physics.
-\newblock \emph{Chinese Physics C}, \textbf{40}~(10), 100001, oct 2016.
-\newblock
-  \urlprefix\url{https://doi.org/10.1088%2F1674-1137%2F40%2F10%2F100001}.
-
-\bibitem{como_funciona_auger}
-{The Pierre Auger Cosmic Ray Observatory}.
-\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment},
-  \textbf{798}, 172 -- 213, 2015.
-\newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168900215008086}.
-
-\bibitem{tobepublished}
-Aab, A., Abreu, P., Aglietta, M., Albury, J.~M., Allekotte, I., Almela, A.,
-  \emph{et~al.}
-\newblock Measurement of the cosmic-ray energy spectrum above
-  $2.5\ifmmode\times\else\texttimes\fi{}{10}^{18}\text{ }\text{ }\mathrm{eV}$
-  using the pierre auger observatory.
-\newblock \emph{Phys. Rev. D}, \textbf{102}, 062005, Sep 2020.
-\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.102.062005}.
-
-\bibitem{triggers_ref}
-Justin M.~Albury, B. R.~D., Jose A.~Bellido.
-\newblock Exploring the energy threshold for full trigger efficiency of the
-  surface detector with hybrid events {GAP 2018-038}.
-\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2018.
-
-\bibitem{aab2017impact}
-Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
-  I., \emph{et~al.}
-\newblock {Impact of atmospheric effects on the energy reconstruction of air
-  showers observed by the surface detectors of the Pierre Auger Observatory}.
-\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
-
-\bibitem{referencia_pesos}
-Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
-  I.~A.
-\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
-  {Pierre Auger Observatory}.
-\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
-\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Faae689}.
-
-\bibitem{taborda}
-Taborda, O.
-\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
-  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
-\newblock Tesis Doctoral, Instituto Balseiro, 2018.
-
-\bibitem{Aab_2020}
-{Aab A. et al.}
-\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
-  Auger Observatory}}.
-\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
-\newblock \urlprefix\url{https://doi.org/10.3847%2F1538-4357%2Fab7236}.
-
 \bibitem{collaboration2013pierre}
 {The Pierre Auger Collaboration}.
 \newblock {The Pierre Auger Observatory: Contributions to the 33rd
@@ -87,6 +29,17 @@ Zatsepin, G.~T., Kuzmin, V.~A.
 \newblock \emph{Journal of Experimental and Theoretical Physics Letters (JETP
   Letters)}, \textbf{4}~(3), 78--80, 1966.
 
+\bibitem{PGD}
+Zyla, P.~A., \emph{et~al.}
+\newblock {Review of Particle Physics}.
+\newblock \emph{PTEP}, \textbf{2020}~(8), 083C01, 2020.
+
+\bibitem{taborda}
+Taborda, O.
+\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
+  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
+\newblock Tesis Doctoral, Instituto Balseiro, 2018.
+
 \bibitem{bird1994cosmic}
 Bird, D., Corbato, S., Dai, H., Dawson, B., Elbert, J., Emerson, B.,
   \emph{et~al.}
@@ -97,6 +50,14 @@ Bird, D., Corbato, S., Dai, H., Dawson, B., Elbert, J., Emerson, B.,
 Berezinsky, V., Gazizov, A., Grigorieva, S.
 \newblock On astrophysical solution to ultrahigh energy cosmic rays.
 \newblock \emph{Physical Review D}, \textbf{74}~(4), 043005, 2006.
+
+\bibitem{como_funciona_auger}
+{The Pierre Auger Cosmic Ray Observatory}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{798}, 172 -- 213, 2015.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168900215008086}.
 
 \bibitem{kit_oracle}
 Imagen extraída de {Auger Oracle del KIT}. {Visitada el 28/11/2019}.
@@ -121,10 +82,26 @@ Hersil, J., Escobar, I., Scott, D., Clark, G., Olbert, S.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{6}, 22--23, Jan 1961.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.6.22}.
 
+\bibitem{tobepublished}
+Aab, A., Abreu, P., Aglietta, M., Albury, J.~M., Allekotte, I., Almela, A.,
+  \emph{et~al.}
+\newblock Measurement of the cosmic-ray energy spectrum above
+  $2.5\ifmmode\times\else\texttimes\fi{}{10}^{18}\text{ }\text{ }\mathrm{eV}$
+  using the pierre auger observatory.
+\newblock \emph{Phys. Rev. D}, \textbf{102}, 062005, Sep 2020.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.102.062005}.
+
 \bibitem{pierre2013plans}
 {Pierre Auger Collaboration}.
 \newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
 \newblock Pierre Auger Collaboration, 2013.
+
+\bibitem{aab2017impact}
+Aab, A., Abreu, P., Aglietta, M., Al~Samarai, I., Albuquerque, I., Allekotte,
+  I., \emph{et~al.}
+\newblock {Impact of atmospheric effects on the energy reconstruction of air
+  showers observed by the surface detectors of the Pierre Auger Observatory}.
+\newblock \emph{Journal of Instrumentation}, \textbf{12}~(02), P02006, 2017.
 
 \bibitem{collaboration2009atmospheric}
 {The Pierre Auger Collaboration}.
@@ -158,11 +135,26 @@ Farley, F., Storey, J.
 \newblock \emph{Proceedings of the Physical Society. Section A},
   \textbf{67}~(11), 996, 1954.
 
+\bibitem{referencia_pesos}
+Aab, A., Abreu, P., Aglietta, M., Albuquerque, I. F.~M., Albury, J.~M., et~al.,
+  I.~A.
+\newblock Large-scale cosmic-ray anisotropies above 4 {EeV} measured by the
+  {Pierre Auger Observatory}.
+\newblock \emph{The Astrophysical Journal}, \textbf{868}~(1), 4, nov 2018.
+\newblock \urlprefix\url{https://doi.org/10.3847/1538-4357/aae689}.
+
 \bibitem{analisis_fourier}
 Linsley, J.
 \newblock Fluctuation effects on directional data.
 \newblock \emph{Phys. Rev. Lett.}, \textbf{34}, 1530--1533, Jun 1975.
 \newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.34.1530}.
+
+\bibitem{Aab_2020}
+{Aab A. et al.}
+\newblock {Cosmic-Ray Anisotropies in Right Ascension Measured by the {Pierre
+  Auger Observatory}}.
+\newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
+\newblock \urlprefix\url{https://doi.org/10.3847/1538-4357/ab7236}.
 
 \bibitem{linsley1975fluctuation}
 Linsley, J.

@@ -2,7 +2,8 @@
 %\documentclass[12pt,papel,twoside]{ibtesis}
 % \documentclass[12pt]{ibtesis}
 
-\documentclass[12pt,papel,oneside]{ibtesis}
+% \documentclass[12pt,papel,oneside]{ibtesis}
+\documentclass[12pt,papel,twoside,pagebackref]{ibtesis}
 % \documentclass[11pt,papel,oneside, singlespace]{ibtesis}
 
 % \documentclass[12pt,papel,preprint,singlespace,oneside]{ibtesis}
@@ -47,14 +48,14 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Información sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Análisis de las direcciones de arribo de rayos cósmicos de ultra-alta energía en el Observatorio Pierre Auger}
 \author{Evelyn~Gabriela~Coronel}
 \director{Dra.~Silvia Mollerach}
 %\codirector{Dr.~J.~Otro m\'{a}s}b
-\carrera{Tesis de Maestría en Ciencias F\'{\i}sicas}
+\carrera{Tesis de Maestría en Ciencias Físicas}
 \grado{Maestrando}
-\laboratorio{Partículas y Campos -- Centro At\'{o}mico Bariloche}
+\laboratorio{Partículas y Campos -- Centro Atómico Bariloche}
 \jurado{ 
 	{
 		Dr.~Diego~Harari 
@@ -84,7 +85,7 @@
 
 \begin{preliminary}
 
-%%% \'{I}ndices %%%%
+%%% Índices %%%%
 
 \begin{abreviaturas}
 
@@ -92,6 +93,7 @@
 CR: 		& Rayos cósmicos  (\emph{Cosmic Rays}) \\
 CMB: 		& Radiación Cósmica de Fondo (\emph{Cosmic Microwave Background})\\
 FD: 		& Detector de Fluorescencia (\emph{Fluorescence Detector}) \\
+HEAT:		& Telescopios de Auger de Alta Elevación (\emph{High Elevation Auger Telescopes})\\
 SD: 		& Detector de Superficie (\emph{Surface Detector})  \\
 WCD: 		& Detector de radiación Cherenkov de agua\\
 EAS: 		& Lluvia Atmosférica Extendida  (\emph{Extensive Air Shower})    \\
@@ -130,27 +132,28 @@ Ray:		& Método de Rayleigh
 %Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
  \chapter{Introducción}
 	\graphicspath{{../01_Introduccion/}}
-	\input{../01_Introduccion/intro_v2.tex}
+	\input{../01_Introduccion/intro_v3.tex}
   
  \chapter{El Observatorio Pierre Auger}
 	\graphicspath{{../02_IntroduccionAuger/}}
-	\input{../02_IntroduccionAuger/auger.tex}
+	\input{../02_IntroduccionAuger/auger_v2.tex}
 
  	% \section{Algoritmos de disparo del detector de superficie} \label{triggers_caracteristicas}
 	\graphicspath{{../03_IntroduccionReport/}}
-	\input{../03_IntroduccionReport/introduccion_v9}
+	\input{../03_IntroduccionReport/introduccion_v10}
 
 %  \chapter{Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}
-\chapter{Modulación del clima para eventos registrados por el Observatorio Pierre Auger}
+\chapter{Modulación del clima sobre los datos del Observatorio Pierre Auger}
 
-	\section{Eventos asociados al Disparo Estándar en el rango 2004-2018}\label{Stan_modulacion}	
+	% \section{Eventos asociados al Disparo Estándar en el rango 2004-2018}\label{Stan_modulacion}	
 	\graphicspath{{../04_Clima/}}
-	\input{../04_Clima/clima_1_intro_v2.tex}
-	\input{../04_Clima/clima_2_fit_main_v2.tex}
+	\input{../04_Clima/clima_intro.tex}
+	\input{../04_Clima/clima_v2.tex}
+
 
 	\section{Eventos asociados a Todos los Disparos en el rango 2014-2020 }	\label{ALL_modulacion}
 	\graphicspath{{../05_Weather_Modulation/}}
-	\input{../05_Weather_Modulation/weather_modulation_v3.tex}
+	\input{../05_Weather_Modulation/weather_modulation_v4.tex}
 
 % \chapter{Anisotropías en las direcciones de arribo de los rayos cósmicos}
 	% \graphicspath{{../Anisotropia/}}
@@ -169,8 +172,8 @@ Ray:		& Método de Rayleigh
 	\input{../EW/report_EW_PDF.tex}
 
 \chapter{Resultados del método Rayleigh}
-	% \graphicspath{{../Dipole_1-2_EeVReport/}}
-	% \input{../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v8}
+	\graphicspath{{../Dipole_1-2_EeVReport/}}
+	\input{../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v8}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
