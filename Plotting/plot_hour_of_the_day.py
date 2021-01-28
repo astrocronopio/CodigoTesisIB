@@ -10,12 +10,16 @@ mpl.rcParams.update({
 
 import numpy as np
 
-file_hod = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_hour_of_the_day.dat"
+# file_hod = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_hour_of_the_day.dat"
+file_hod =  "../WeatherCode/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_hour_of_the_day.dat"
 
 ## This factor is for hexagons area, and the bins were made with
 ## 24 hours span 
 
-factor = 24*(2.566)
+# factor = 24*(2.566)
+
+#Para como yo trabajé a all triggers
+factor = 24/1.949 # (Area/5) == 2.566
 
 hours = np.arange(0,24,1)
 offset= np.arange(+3,len(hours)+3,1)%24

@@ -8,7 +8,7 @@ import seaborn as sns
 import matplotlib as mpl
 mpl.rcParams.update({
 	'font.size': 20,
-	'figure.figsize': [12, 8],
+	'figure.figsize': [12, 7],
 	'figure.autolayout': True,
 	'font.family': 'serif',
 	'font.sans-serif': ['Palatino']})
@@ -30,10 +30,13 @@ plt.xlabel( u"Ascensión Recta [$^o$]")
 # replot "../../Hexagons/hexagons_2018/dnhex_solar_288.dat"  		u ($0*360/288):1 w lp lc rgb "black" tit "Solar"
 
 
-pesos_sid = np.loadtxt("../Cpp/Exposure/sidereal_2004-2017_sol.txt" , unpack=True, usecols=(0))	#	u ($0*360/288):1 w lp lc rgb "red" tit "Sid"
-pesos_ant = np.loadtxt("../Cpp/Exposure/antisiderea_2004-2017_sol.txt", unpack=True, usecols=(0)) #u ($0*360/288):1 w lp lc rgb "blue" tit "Anti"
-pesos_sol = np.loadtxt("../Cpp/Exposure/solar_2004-2017_sol.txt" , unpack=True, usecols=(0)) #		u ($0*360/288):1 w lp lc rgb "black" tit "Solar"
+# pesos_sid = np.loadtxt("../Cpp/Exposure/sidereal_2004-2017_sol.txt" , unpack=True, usecols=(0))	#	u ($0*360/288):1 w lp lc rgb "red" tit "Sid"
+# pesos_ant = np.loadtxt("../Cpp/Exposure/antisiderea_2004-2017_sol.txt", unpack=True, usecols=(0)) #u ($0*360/288):1 w lp lc rgb "blue" tit "Anti"
+# pesos_sol = np.loadtxt("../Cpp/Exposure/solar_2004-2017_sol.txt" , unpack=True, usecols=(0)) #		u ($0*360/288):1 w lp lc rgb "black" tit "Solar"
 
+pesos_sid = np.loadtxt("../Cpp/Exposure/sidereal_2013-2020_sol.txt" , unpack=True, usecols=(0))	#	u ($0*360/288):1 w lp lc rgb "red" tit "Sid"
+pesos_ant = np.loadtxt("../Cpp/Exposure/antisiderea_2013-2020_sol.txt", unpack=True, usecols=(0)) #u ($0*360/288):1 w lp lc rgb "blue" tit "Anti"
+pesos_sol = np.loadtxt("../Cpp/Exposure/solar_2013-2020_sol.txt" , unpack=True, usecols=(0)) #		u ($0*360/288):1 w lp lc rgb "black" tit "Solar"
 
 angle = 360*np.arange(len(pesos_sol))/288 
 plt.xticks(np.arange(0, 361, 30))

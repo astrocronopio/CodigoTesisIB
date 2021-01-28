@@ -24,7 +24,9 @@ energy_threshold="0"
 # file_input="../../../../Herald060noBP6t5a025_010104-310818.dat"
 
 # #Over 4 EeV
-file_input="../../../../Herald080noBP5n6t5a4_010104-310818.dat"
+# file_input="../../../../Herald080noBP5n6t5a4_010104-310818.dat"
+
+file_input="../../Codigo_Taborda/Herald080noBP5n6t5a4_pnop_04-310816_UncorCorE.dat"
 
 folder="2020_paper/"
 
@@ -33,12 +35,12 @@ mkdir "$folder"
 sin_peso="sin_peso_v9"
 con_peso="con_peso_v11"
 
-algoritmo="$con_peso"
+algoritmo="$sin_peso"
 file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
 g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 
 #### Exec ####
 
-"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2004))" "$(($rangoLSA2018))" "$energy_threshold"
+"./""$algoritmo"  "$file_input" "$file_output" "$(($rango2004))" "$(($rangoPC2017))" "$energy_threshold"
 
