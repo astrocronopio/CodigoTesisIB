@@ -35,46 +35,43 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Datos presentados en la ICRC 2019 usando S38 sin corregir por el clima}{section.3.2}% 35
 \BOOKMARK [2][-]{subsection.3.2.4}{Datos presentados en la ICRC 2019 usando la energ\355a reconstruida en este trabajo}{section.3.2}% 36
 \BOOKMARK [1][-]{section.3.3}{Eventos asociados a Todos los Disparos en el rango 2014-2020 }{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.1}{Pesos de los hex\341gonos}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.2}{Anisotrop\355a}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.3}{Correcci\363n del clima}{section.3.3}% 40
-\BOOKMARK [0][-]{chapter.4}{M\351todo Rayleigh}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Frecuencias de referencia}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Variaciones relativas de los hex\341gonos}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.2.1}{C\341lculo de las variaciones relativas de los h\351xagonos}{section.4.2}% 44
-\BOOKMARK [1][-]{section.4.3}{Descripci\363n del m\351todo Rayleigh}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.3.1}{Caso dipolar}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.2}{An\341lisis para frecuencias arbitrarias}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.3}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.4.3}% 48
-\BOOKMARK [0][-]{chapter.5}{M\351todo East-West}{}% 49
-\BOOKMARK [1][-]{section.5.1}{Descripci\363n formal del m\351todo East-West}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.1.1}{Flujo de eventos del Este y Oeste}{section.5.1}% 51
-\BOOKMARK [2][-]{subsection.5.1.2}{Aproximaciones del m\351todo}{section.5.1}% 52
-\BOOKMARK [2][-]{subsection.5.1.3}{C\341lculo de la diferencia de flujos}{section.5.1}% 53
-\BOOKMARK [1][-]{section.5.2}{Estimaci\363n de la componente ecuatorial del dipolo mediante el an\341lisis del primer arm\363nico}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.2.1}{C\341lculo de la amplitud del dipolo para los eventos de Todos los Disparos}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.2}{C\341lculo para frecuencias arbitrarias}{section.5.2}% 56
-\BOOKMARK [1][-]{section.5.3}{Verificaci\363n del c\363digo}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.3.1}{Comparaci\363n con el trabajo de la Colaboraci\363n Pierre Auger}{section.5.3}% 58
-\BOOKMARK [2][-]{subsection.5.3.2}{Comparando con la variable \040con la ascensi\363n recta del cenit }{section.5.3}% 59
-\BOOKMARK [0][-]{chapter.6}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 60
-\BOOKMARK [1][-]{section.6.1}{Distribuci\363n de probabilidad de la amplitud}{chapter.6}% 61
-\BOOKMARK [2][-]{subsection.6.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.6.1}% 62
-\BOOKMARK [1][-]{section.6.2}{Distribuci\363n de probabilidad de la fase del dipolo}{chapter.6}% 63
-\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo Rayleigh}{}% 64
-\BOOKMARK [1][-]{section.7.1}{Caracter\355sticas del conjunto de datos}{chapter.7}% 65
-\BOOKMARK [2][-]{subsection.7.1.1}{Pesos de los eventos para frecuencias de referencia}{section.7.1}% 66
-\BOOKMARK [1][-]{section.7.2}{An\341lisis de anisotrop\355as en ascensi\363n recta para el primer arm\363nico}{chapter.7}% 67
-\BOOKMARK [2][-]{subsection.7.2.1}{Trabajo a futuro}{section.7.2}% 68
-\BOOKMARK [0][-]{chapter.8}{Resultados del m\351todo East - West}{}% 69
-\BOOKMARK [1][-]{section.8.1}{Resultados en distintos rangos de energ\355a}{chapter.8}% 70
-\BOOKMARK [2][-]{subsection.8.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.8.1}% 71
-\BOOKMARK [2][-]{subsection.8.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.8.1}% 72
-\BOOKMARK [2][-]{subsection.8.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.8.1}% 73
-\BOOKMARK [1][-]{section.8.2}{An\341lisis de los resultados}{chapter.8}% 74
-\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 75
-\BOOKMARK [0][-]{appendix.Alph1}{Coordenadas celestes}{}% 76
-\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 77
-\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 78
-\BOOKMARK [2][-]{subsection.Alph1.2.1}{Relaci\363n entre las coordenadas locales y ecuatoriales}{section.Alph1.2}% 79
-\BOOKMARK [0][-]{section*.86}{Bibliograf\355a}{}% 80
+\BOOKMARK [0][-]{chapter.4}{M\351todo Rayleigh}{}% 38
+\BOOKMARK [1][-]{section.4.1}{Frecuencias de referencia}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.2}{Variaciones relativas de los hex\341gonos}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.2.1}{C\341lculo de las variaciones relativas de los h\351xagonos}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Descripci\363n del m\351todo Rayleigh}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Caso dipolar}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{An\341lisis para frecuencias arbitrarias}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.4.3}% 45
+\BOOKMARK [0][-]{chapter.5}{M\351todo East-West}{}% 46
+\BOOKMARK [1][-]{section.5.1}{Descripci\363n formal del m\351todo East-West}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.1.1}{Flujo de eventos del Este y Oeste}{section.5.1}% 48
+\BOOKMARK [2][-]{subsection.5.1.2}{Aproximaciones del m\351todo}{section.5.1}% 49
+\BOOKMARK [2][-]{subsection.5.1.3}{C\341lculo de la diferencia de flujos}{section.5.1}% 50
+\BOOKMARK [1][-]{section.5.2}{Estimaci\363n de la componente ecuatorial del dipolo mediante el an\341lisis del primer arm\363nico}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.2.1}{C\341lculo de la amplitud del dipolo para los eventos de Todos los Disparos}{section.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.2.2}{C\341lculo para frecuencias arbitrarias}{section.5.2}% 53
+\BOOKMARK [1][-]{section.5.3}{Verificaci\363n del c\363digo}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.3.1}{Comparaci\363n con el trabajo de la Colaboraci\363n Pierre Auger}{section.5.3}% 55
+\BOOKMARK [2][-]{subsection.5.3.2}{Comparando con la variable \040con la ascensi\363n recta del cenit }{section.5.3}% 56
+\BOOKMARK [0][-]{chapter.6}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 57
+\BOOKMARK [1][-]{section.6.1}{Distribuci\363n de probabilidad de la amplitud}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.6.1}% 59
+\BOOKMARK [1][-]{section.6.2}{Distribuci\363n de probabilidad de la fase del dipolo}{chapter.6}% 60
+\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo Rayleigh}{}% 61
+\BOOKMARK [1][-]{section.7.1}{Caracter\355sticas del conjunto de datos}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.1.1}{Pesos de los eventos para frecuencias de referencia}{section.7.1}% 63
+\BOOKMARK [1][-]{section.7.2}{An\341lisis de anisotrop\355as en ascensi\363n recta para el primer arm\363nico}{chapter.7}% 64
+\BOOKMARK [2][-]{subsection.7.2.1}{Trabajo a futuro}{section.7.2}% 65
+\BOOKMARK [0][-]{chapter.8}{Resultados del m\351todo East - West}{}% 66
+\BOOKMARK [1][-]{section.8.1}{Resultados en distintos rangos de energ\355a}{chapter.8}% 67
+\BOOKMARK [2][-]{subsection.8.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.8.1}% 68
+\BOOKMARK [2][-]{subsection.8.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.8.1}% 69
+\BOOKMARK [2][-]{subsection.8.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.8.1}% 70
+\BOOKMARK [1][-]{section.8.2}{An\341lisis de los resultados}{chapter.8}% 71
+\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 72
+\BOOKMARK [0][-]{appendix.Alph1}{Coordenadas celestes}{}% 73
+\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 74
+\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 75
+\BOOKMARK [2][-]{subsection.Alph1.2.1}{Relaci\363n entre las coordenadas locales y ecuatoriales}{section.Alph1.2}% 76
+\BOOKMARK [0][-]{section*.72}{Bibliograf\355a}{}% 77

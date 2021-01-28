@@ -35,11 +35,11 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
         \begin{table}[H]
             \centering
             \begin{tabular}{c|c|c}
-            {Parámetro}                 & {2005-2015}                   & \cite{aab2017impact}              \\ \hline
+            {Parámetro}                 & {2005-2015}                   & {2005-2015}    \cite{aab2017impact}              \\ \hline
             $a_P$ [hPa$^{-1}$]          & $(-3.2 \pm 0.2)\times 10^{-3}$& $(-3.2 \pm 0.3)\times 10^{-3}$    \\ \hline
             $a_\rho$ [kg$^{-1}$m$^3$]   & $-1.71 \pm 0.04 $             & $-1.72 \pm 0.04$                  \\ \hline
             $b_\rho$ [kg$^{-1}$m$^3$]   & $-0.51 \pm 0.05$              & $-0.53 \pm 0.04$                  \\ \hline
-            $\chi^2_\nu$                & $1.013$                       & $1.013$                           \\ \hline
+            $\chi^2_\nu$                & $1.013$                       & $1.013$                           \\ 
             \end{tabular} 
             \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV, comparados con los parámetros utilizados por la Colaboración.} \label{tabla:parametros_ICRC_2015}
         \end{table}
@@ -123,7 +123,7 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
                                                                     &  $c_2$			& $( 25.7 \pm 0.2)\times 10^{-3}$	& $( 26.0 \pm 0.7 )\times 10^{-3}$	\\ \hline % 
                     
                      \multirow{3}{*}{$a_\rho$ [kg$^{-1}$m$^3$]}  	&  $c_0$			& $-2.73   \pm 0.05$	& $ -2.7  \pm 0.1  $\\ \cline{2-4} 
-                                                                     &  $c_1$			& $ 1.5    \pm 0.4 $	& $ 1.5   \pm 0.8  $\\ \cline{2-4} 
+                                                                    &  $c_1$			& $ 1.5    \pm 0.4 $	& $ 1.5   \pm 0.8  $\\ \cline{2-4} 
                                                                     &  $c_2$			& $ 2.1    \pm 0.7 $	& $ 2.2   \pm 1.0  $\\ \hline %
                     
                     \multirow{3}{*}{$b_\rho$ [kg$^{-1}$m$^3$]} 		&  $c_0$			& $-1.0    \pm 0.1$		& $-1.0   \pm 0.1 $	\\ \cline{2-4} 
@@ -134,10 +134,10 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
                     \caption{Tabla de los coeficientes obtenidos para el conjunto de datos de la ICRC 2015, comparados con los parámetros de la reconstrucción de los eventos del Observatorio.} \label{tabla:cuadratica_ICRC_2015}
                 \end{table}
 
-%==================================================================================================================
-%==================================================================================================================
-%==================================================================================================================
-%==================================================================================================================
+%==================================================================================
+%==================================================================================
+%==================================================================================
+%==================================================================================
 
 %====|==> ICRC 2019
  \subsection{Datos presentados en la ICRC 2019}\label{conjuntoB}
@@ -213,17 +213,14 @@ donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por 
         \begin{table}[H]
             \centering
             \begin{tabular}{c|c|c}
-            \textbf{Tiempo }    & \textbf{01/01/2005-31/12/2015}  & \textbf{01/01/2005-31/12/2018 }\\ \hline 
-            %Exposición          &          				 &          			\\ \hline
-            Número de eventos       &   $1\,267\,265$     		 &  $1\,618\,717$     		\\ \hline 
-            Energía media           &  1.89        		 	 &  1.90        		\\ \hline 
-            Corte en S$_{38}$ 	    &  5.37\,VEM   		 	 &  5.37\,VEM       	\\ \hline 
-            Corte en ángulo cenital 		&  $<60^o$ 			 	 & $<60^o$\\ 
+            {Tiempo}                & {01/01/2005-31/12/2015}   & {01/01/2005-31/12/2018 }\\ \hline 
+            Número de eventos       &   $1\,267\,265$     	    &  $1\,618\,717$     		\\ \hline 
+            Energía media           &  1.89        		 	    &  1.90        		\\ \hline 
+            Corte en S$_{38}$ 	    &  5.37\,VEM   		 	    &  5.37\,VEM       	\\ \hline 
+            Corte en ángulo cenital &  $<60^o$ 			 	 & $<60^o$\\ 
             \end{tabular}
             \caption{Características de los datos de la ICRC 2019 utilizados para los ajustes de esta sección.} \label{tabla:caracteristicas_ICRC_2019_S38}
         \end{table}
-
-        %Cabe destacar que la cantidad de eventos considerados para el periodo 2005-2015 para este caso es mayor que para la ICRC 2015 en el mismo periodo. Esto se debe que tras la corrección del clima para la ICRC 2019, las energías cambiaron ligeramente, por lo que se tiene en cuenta eventos con energía reconstruida, menor a  1 EeV. Esto se aprecia en la disminución de la energía media.
         
 %====|====| Tabla del fit
         Con estos eventos, se realizó un  ajuste de los parámetros del clima para todos los ángulos cenitales de la tasa del eventos por hora. Así se obtienen los coeficientes promediados por ángulo cenital. Estos parámetros son presentados en la Tabla\,\ref{tabla:parametros_ICRC_2019_S38}. Se observa que para ambos periodos estudiados los parámetros obtenidos son compatibles entre sí, además de ser compatibles con los resultados obtenidos para el periodo 2005-2015 de los datos de la ICRC 2015 y los parámetros de \cite{aab2017impact}, presentados en la Tabla\,\ref{tabla:parametros_ICRC_2015}.
@@ -232,8 +229,8 @@ donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por 
             \centering
             \begin{tabular}{|c|c|c|}
             \hline
-            \textbf{Parámetro}          & \textbf{2005-2015}    		& \textbf{2005-2018}    \\ \hline
-            $a_P$ [hPa$^{-1}$]          & $ -0.0033\pm 0.0003$      	& $ -0.0032\pm 0.0002$  \\ \hline
+            {Parámetro}                 & {2005-2015}    		        & {2005-2018}    \\ \hline
+            $a_P$ [hPa$^{-1}$]          & $ (-3.3\pm 0.3)\times 10^{-3}$& $(-3.2\pm 0.2)\times 10^{-3}$  \\ \hline
             $a_\rho$ [kg$^{-1}$m$^3$]   & $ -1.75\pm 0.04$            	& $ -1.71\pm 0.03$       \\ \hline
             $b_\rho$ [kg$^{-1}$m$^3$]   & $ -0.51\pm 0.04$             	& $ -0.52\pm 0.03$       \\ \hline
             $\chi^2_\nu$                & $1.00616$                     & $1.01819$              \\   \hline
@@ -260,7 +257,9 @@ donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por 
 
 %====|====|	Weather params
     \subsubsection{Ajuste de los parámetros del clima}
-    Se clasificó los eventos de esta sección mediante el valor de $sin^2\theta$ y se realizó el ajuste para obtener los parámetros del clima. Este ajuste se realizó en el periodo 2005-2018. Los valores obtenidos se resumen en la Tabla\,\ref{tabla:cuadratica_ICRC_2019_S38} y se  observan en la Fig.\,\ref{fig:parameters_new_S38}. Comparando estos resultados con los resultados de \cite{aab2017impact}, los eventos mediante el valor S$_{38}$  conservan la tendencia con $sin^2\theta$ que se observa en los datos de la ICRC 2015 en la Fig.\,\ref{fig:parameters_old}. Además los parámetros obtenidos mediante el corte por S$_{38}$ son comparables con los resultados obtenidos para el conjunto de datos de la ICRC 2015. Por lo que puede decirse que la modulación del clima es apreciable  hasta el día de hoy con una amplitud comparable al año 2015.
+
+    En esta sección se clasificó los eventos mediante el valor de $sin^2\theta$ y se realizó el ajuste para obtener los parámetros del clima. Este ajuste se realizó en el periodo 2005-2018. Los valores obtenidos se resumen en la Tabla\,\ref{tabla:cuadratica_ICRC_2019_S38} y se  observan en la Fig.\,\ref{fig:parameters_new_S38}. Comparando estos resultados con los resultados de \cite{aab2017impact}, los eventos mediante el valor S$_{38}$  conservan la tendencia con $sin^2\theta$ que se observa en los datos de la ICRC 2015 en la Fig.\,\ref{fig:parameters_old}. Además los parámetros obtenidos mediante el corte por S$_{38}$ son comparables con los resultados obtenidos para el conjunto de datos de la ICRC 2015. Por lo que puede decirse que la modulación del clima es apreciable  hasta el día de hoy con una amplitud comparable al año 2015.
+
 %====|====|====| ap, arho, brho 2005-2015  2005-2019 vs JINST over 1 EeV
             \begin{figure}[H]
                 \begin{subfigure}[b]{0.5\textwidth}
@@ -304,11 +303,10 @@ donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por 
                     \caption{Tabla de los coeficientes obtenidos con el S$_{38}$ sin corregir por el clima, comparados con el trabajo anterior} \label{tabla:cuadratica_ICRC_2019_S38}
                 \end{table}
 
-%==================================================================================================================
-%==================================================================================================================
-%==================================================================================================================
-%==================================================================================================================
-
+%=================================================================================
+%=================================================================================
+%=================================================================================
+%=================================================================================
 
 
 %====|==>ICRC 2019 Reconstrucción con este trabajo
@@ -331,3 +329,77 @@ En la Fig.\,\ref{final} se comparan los tasas de eventos por hora del día para 
                 \caption{Tasa de eventos por día para eventos de energía mayor a 2\,EeV para los datos de ICRC 2019 y la tasa de eventos obtenida con la reconstrucción de energía en este trabajo comparados en los periodos estudiados}\label{final}
         \end{figure}
 Cabe aclarar que para la corrección de la energía para este trabajo, no se consideraron las posibles modulaciones de los valores del CIC o del posible cambio en los coeficientes de la Ec.\ref{eq:s38_energy}. Debido a que estos coeficientes son calibrados con eventos híbridos que son detectados durante la noche, donde las condiciones atmosféricas difieren de las condiciones promedios. Por ejemplo, en el caso de la densidad, durante la noche es aproximadamente $2\%$ mayor que el promedio.
+
+
+\section{Eventos asociados a Todos los Disparos en el rango 2014-2020 }	\label{ALL_modulacion}
+	
+
+En esta sección se trabajó con el conjunto de datos registrados por el arreglo principal con Todos los Disparos. Las características de estos datos se resumen en la Tabla~\ref{tabla:caracteristicas_ALL} La señal de $S(1000)$ de este conjunto fue corregida en la reconstrucción oficial de eventos por la modulación del clima por los parámetros obtenidos en \cite{aab2017impact}.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|}
+  \hline
+  Inicio              & 01  de Enero de 2014\\ \hline
+  Final               & 01  de Enero de 2020       							\\ \hline
+  Número de eventos   & 1\,263\,015							\\ \hline 
+  Energía media       & 1.76\,EeV       				\\ \hline  %  1.005\,EeV
+  Corte en $S_{38}$   & 5.36 VEM        				\\ \hline 
+  Corte en ángulo cenital		  & $\theta < 60^o$ 				\\ \hline
+  \end{tabular}
+\caption{Características del conjunto de datos de Todos los Disparos.} \label{tabla:caracteristicas_ALL}
+\end{table}
+
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.9\textwidth}
+  \includegraphics[width=\textwidth]{Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf}
+  \caption{Tasa eventos por día}\label{fig:rate_dayly_AllTriggers}
+  \end{subfigure}\\
+  \begin{subfigure}[b]{0.9\textwidth}
+  \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf}
+  \caption{Tasa de eventos promediada por hora del día }\label{fig:rate_hod_AllTriggers}
+  \end{subfigure}
+  \caption{Tasa de eventos por días comparadas con el ajuste entre los años 2014 hasta 2020. Estos eventos se registraron con Todos los Disparos  y tienen un valor de $S_{38,w}$ mayor a $5.36\,$VEM. En las tasas se observan la modulación anual y diaria del clima. }\label{fig:rate__AllTriggers}
+\end{figure}
+
+En este trabajo se busca comparar los parámetros obtenidos con los eventos de Todos los Disparos con los parámetros de la reconstrucción oficial. Para esto se realizó un análisis con los datos de nueva reconstrucción de la señal $S_{38}$ sin la corrección del clima, siguiendo un proceso similar a la sección \ref{sin_corregir_s38}.
+
+% \subsection{Pesos de los hexágonos en el rango 2014-2020}
+
+% Para constatar que no exista ninguna anomalía en los pesos de los hexágonos, se realiza el cálculo de los mismos para tres frecuencias de referencia para el análisis de anisotropías.  Los pesos se muestran en la Fig.\,\ref{fig:wei_14_20}. El rango de tiempo en el que se calculan estas curvas es entre 1 de Enero del 2014 y el 1 de Enero del 2020.
+
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{weigth2014-2020_jan.png} 	
+% 	\caption{Pesos de los hexágonos}
+% 	\label{fig:wei_14_20}
+% \end{figure}
+
+
+
+      Considerando el filtro con el S38 en el archivo 2020 y la energía en el 2017, quiero saber si obtengo parámetros  del clima comparables. Ya que el Main Array se corresponden los parámetros del 2015 y 2019, yo esperaría que con todos los triggers pase los mismo. Una diferencia importante entre ambos análisis es que los parámetros del 2020 contienen eventos hasta el 31/12/2019.
+      
+      Los mismos se comparan con los ajustes obtenidos en \cite{aab2017impact}.
+
+        \begin{figure}[H]
+          \centering
+          \begin{subfigure}[b]{0.8\textwidth}
+          \includegraphics[width=\linewidth]{Graphs/params/ap_AllTriggers.pdf}
+          \caption{Parámetro $a_P$ }
+          \end{subfigure}\\
+          \begin{subfigure}[b]{0.8\textwidth}
+          \includegraphics[width=\linewidth]{Graphs/params/arho_AllTriggers.pdf}
+          \caption{Parámetro $a_{\rho}$ }
+          \end{subfigure}\\
+          \begin{subfigure}[b]{\textwidth}
+          \centering
+          \includegraphics[width=0.8\linewidth]{Graphs/params/brho_AllTriggers.pdf}
+          \caption{Parámetro  $b_\rho$   }
+          \end{subfigure}
+          \caption{Parámetros de la modulación del clima considerando los datos para todos los disparos del archivo 2017 y 2020. Los mismos se comparan con los coeficientes utilizados por la Colaboración.}
+        \end{figure}
+
+%       ???????????Se ve que estos parámetros no son comparables. 

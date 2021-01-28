@@ -38,51 +38,43 @@
 \contentsline {subsubsection}{Ajuste de los parámetros del clima}{36}{section*.36}%
 \contentsline {subsection}{\numberline {3.2.4}Datos presentados en la ICRC 2019 usando la energía reconstruida en este trabajo}{37}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Eventos asociados a Todos los Disparos en el rango 2014-2020 }{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Pesos de los hexágonos}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Anisotropía}{40}{subsection.3.3.2}%
-\contentsline {subsubsection}{Lista detallada de los filtros aplicados de datos del herald}{40}{section*.43}%
-\contentsline {subsubsection}{Datos para el análisis de anisotropía}{40}{section*.44}%
-\contentsline {subsubsection}{Datos para el cálculo de las correcciones del clima}{41}{section*.45}%
-\contentsline {subsubsection}{Análisis en frecuencia}{42}{section*.47}%
-\contentsline {subsection}{\numberline {3.3.3}Corrección del clima}{42}{subsection.3.3.3}%
-\contentsline {subsubsection}{Modulación del clima para todos los triggers}{43}{section*.51}%
-\contentsline {chapter}{\numberline {4}Método Rayleigh}{49}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Frecuencias de referencia}{49}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Variaciones relativas de los hexágonos}{50}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Cálculo de las variaciones relativas de los héxagonos}{50}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Descripción del método Rayleigh}{53}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Caso dipolar}{53}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Análisis para frecuencias arbitrarias}{53}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{54}{subsection.4.3.3}%
-\contentsline {chapter}{\numberline {5}Método East-West}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Descripción formal del método East-West}{57}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Flujo de eventos del Este y Oeste}{57}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Aproximaciones del método}{58}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Cálculo de la diferencia de flujos}{58}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Estimación de la componente ecuatorial del dipolo mediante el análisis del primer armónico}{60}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Cálculo de la amplitud del dipolo para los eventos de Todos los Disparos}{61}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Cálculo para frecuencias arbitrarias}{63}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Verificación del código}{63}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Comparación con el trabajo de la Colaboración Pierre Auger}{63}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Comparando con la variable $\tilde {\alpha }$ con la ascensión recta del cenit }{64}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {6}Distribución de probabilidad de la amplitud y fase del dipolo}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Distribución de probabilidad de la amplitud}{65}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Haciendo la cuenta de los márgenes de confianza de la amplitud}{66}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Distribución de probabilidad de la fase del dipolo}{68}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Resultados del método Rayleigh}{71}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Características del conjunto de datos}{71}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Pesos de los eventos para frecuencias de referencia}{72}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}Análisis de anisotropías en ascensión recta para el primer armónico}{73}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Trabajo a futuro}{76}{subsection.7.2.1}%
-\contentsline {chapter}{\numberline {8}Resultados del método East - West}{77}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Resultados en distintos rangos de energía}{77}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Resultados en el rango 0.25 EeV - 0.5 EeV}{77}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Resultados en el rango 0.5 EeV - 1 EeV}{79}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Resultados en el rango 1 EeV - 2 EeV}{81}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Análisis de los resultados}{84}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{87}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Coordenadas celestes}{89}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Coordenadas Ecuatoriales}{89}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Coordenadas Locales}{89}{section.Alph1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Relación entre las coordenadas locales y ecuatoriales}{89}{subsection.Alph1.2.1}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{91}{section*.86}%
+\contentsline {chapter}{\numberline {4}Método Rayleigh}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Frecuencias de referencia}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Variaciones relativas de los hexágonos}{44}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Cálculo de las variaciones relativas de los héxagonos}{44}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Descripción del método Rayleigh}{47}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Caso dipolar}{47}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Análisis para frecuencias arbitrarias}{47}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Cálculo de Rayleigh en ascensión recta para una frecuencia dada}{48}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {5}Método East-West}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Descripción formal del método East-West}{51}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Flujo de eventos del Este y Oeste}{51}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Aproximaciones del método}{52}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Cálculo de la diferencia de flujos}{52}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Estimación de la componente ecuatorial del dipolo mediante el análisis del primer armónico}{54}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Cálculo de la amplitud del dipolo para los eventos de Todos los Disparos}{55}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Cálculo para frecuencias arbitrarias}{57}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Verificación del código}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Comparación con el trabajo de la Colaboración Pierre Auger}{57}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Comparando con la variable $\tilde {\alpha }$ con la ascensión recta del cenit }{58}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Distribución de probabilidad de la amplitud y fase del dipolo}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Distribución de probabilidad de la amplitud}{59}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Haciendo la cuenta de los márgenes de confianza de la amplitud}{60}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Distribución de probabilidad de la fase del dipolo}{62}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Resultados del método Rayleigh}{65}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Características del conjunto de datos}{65}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Pesos de los eventos para frecuencias de referencia}{66}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Análisis de anisotropías en ascensión recta para el primer armónico}{67}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Trabajo a futuro}{70}{subsection.7.2.1}%
+\contentsline {chapter}{\numberline {8}Resultados del método East - West}{71}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Resultados en distintos rangos de energía}{71}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Resultados en el rango 0.25 EeV - 0.5 EeV}{71}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Resultados en el rango 0.5 EeV - 1 EeV}{73}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Resultados en el rango 1 EeV - 2 EeV}{75}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Análisis de los resultados}{78}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{81}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Coordenadas celestes}{83}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Coordenadas Ecuatoriales}{83}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Coordenadas Locales}{83}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {A.2.1}Relación entre las coordenadas locales y ecuatoriales}{83}{subsection.Alph1.2.1}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{85}{section*.72}%
