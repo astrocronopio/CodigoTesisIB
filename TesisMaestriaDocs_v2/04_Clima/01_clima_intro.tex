@@ -21,14 +21,13 @@ Como la relación entre la densidad y la temperatura del aire están relacionada
 \end{figure}
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|}
-	\hline
+\begin{tabular}{c|c|c|c}
 	\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Altura \\ {[}msnm{]}\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}T$_{media}$ \\ {[}$^o$C{]}\end{tabular}} & \multirow{2}{*}{A {[}$^o$C{]}} & \multirow{2}{*}{t$_d$ {[}h{]}} \\
 																				  &                                                                                                      &                                                 &                                \\ \hline
 	1400                                                                          & $12.4\pm0.5$                                                                                         & $5.6\pm0.6$                                     & $12.5\pm0.5$                   \\ \hline
 	2000                                                                          & $9.5\pm0.2$                                                                                          & $2.1\pm0.3$                                     & $10.8\pm0.6$                   \\ \hline
 	2400                                                                          & $7.0\pm0.2$                                                                                          & $1.4\pm0.2$                                     & $10.7\pm0.6$                   \\ \hline
-	2950                                                                          & $3.7\pm0.1$                                                                                          & $0.8\pm0.1$                                     & $10.4\pm0.6$                   \\ \hline
+	2950                                                                          & $3.7\pm0.1$                                                                                          & $0.8\pm0.1$                                     & $10.4\pm0.6$                   \\ 
 	\end{tabular}
 \caption{Características de la modulación de la temperatura en función de la altura sobre el nivel del mar.}\label{tabla:delay}
 \end{table}
@@ -79,22 +78,19 @@ donde $P_{Tr}$ es la probabilidad de que sea detectado un evento para un valor d
 					  	&= S^{-B\gamma}(1+\epsilon)^{B\gamma}    \qquad\qquad \qquad\qquad\qquad \qquad 				  	 = AB\,S^{B-1}\, (1+\epsilon)^{-B}\\
    		    			\frac{dR_{ang}}{d\Omega} &= \int_{S_{min}}^{\infty} P_{Tr}(S,\theta) \frac{d\Phi_{CR}}{dE} \frac{dE}{dS} dS\\
     						 &\propto \int_{S_{min}}^{\infty} P_{Tr}(S,\theta) \bigg( S^{-B\gamma}(1+\epsilon)^{B\gamma}\bigg) \bigg( AB\,S^{B-1}\, (1+\epsilon)^{-B}\bigg)dS\\
-    						 &\propto A\,B (1+\epsilon)^{B\gamma - B}\int_{S_{min}}^{\infty} P_{Tr}(S,\theta) S^{-B\gamma +B -1} dS\\
+    						 &\propto A\,B (1+\epsilon)^{B\gamma - B}\int_{S_{min}}^{\infty} P_{Tr}(S,\theta) S^{-B\gamma +B -1} dS
 \end{align*}
 
 Dado que $\epsilon\,\ll\,1$, uno puede expandir la expresión $(1+\epsilon)^{B\gamma}$ hasta primer orden 
 \begin{equation*}
 	(1+\epsilon)^{B\gamma-B} \approx 1 + B(\gamma-1)\epsilon
 \end{equation*}
-
 Por lo que la expresión final queda de la siguiente forma
-
 \begin{equation*}
 	\frac{dR_{ang}}{d\Omega} \propto AB(1+B(\gamma - 1)\epsilon)\int_{S_{min}}^{\infty} P_{Tr}(S,\theta) S^{-B\gamma +B -1} dS
 \end{equation*}
 
 Considerando que $d\Omega= sin(\theta)d\theta d\phi$ y que el área efectiva  que tiene el observatorio para dado un evento con ángulo cenital $\theta$ es $M_{eff}=M\times cos(\theta)$, donde $M$ es el área activa del observatorio en el momento del evento. Podemos definir la tasa de eventos por área $R$ como
-
 \begin{align*}
 	dR 	&\propto \frac{dR_{ang}}{d\Omega} \frac{M_{eff}}{M} d\Omega \\
 		&\propto \frac{dR_{ang}}{d\Omega}\, cos(\theta)\, sin(\theta)\,d\theta d\phi\\
@@ -173,8 +169,7 @@ Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor 
   \label{fig:clima_p_rho}
 \end{figure}
 
-En este trabajo se utilizan los datos recabados por las estaciones del clima del observatorio. Como se menciona en la sección \ref{seccion:clima}, existen periodos donde los datos del clima son interpolados. Es por ello que se consideran los eventos registrados durante un periodo en donde las condiciones climáticas fueron medidas o interpoladas para un periodo menor a 3 horas. % Esto se realiza para asegurar que las condiciones climáticas para un evento sean las adecuadas para realizar el análisis.
-
+En este trabajo se utilizan los datos recabados por las estaciones del clima del observatorio. Como se menciona en la sección \ref{seccion:clima}, existen periodos donde los datos del clima son interpolados. Es por ello que se consideran los eventos registrados durante un periodo en donde las condiciones climáticas fueron medidas o interpoladas para un periodo menor a 3 horas.
 
 \begin{figure}[H]
     \centering

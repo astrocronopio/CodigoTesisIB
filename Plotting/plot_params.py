@@ -45,9 +45,9 @@ def plot_fit(x,y,y_err,
     plt.errorbar(x,y, yerr=y_err, fmt='none', color='blue',     
                  capsize=5, elinewidth=2,  markeredgewidth=2, alpha=0.7)
     
-    plt.scatter(x,y_, marker='s', s=120,color='red', alpha=0.8, label="Todos los Disparos")
+    plt.scatter(x,y_, marker='s', s=120,color='green', alpha=0.8, label="$S_{38,w}$")
     
-    plt.errorbar(x,y_, yerr=err_, fmt='none', color='red',     
+    plt.errorbar(x,y_, yerr=err_, fmt='none', color='green',     
                  capsize=5, elinewidth=2,  markeredgewidth=2, alpha=0.7)
     
     # plt.axhline(c_, color='black', alpha=0.6, ls='--',label="Todos los eventos con $\\theta<60^o$")
@@ -58,7 +58,7 @@ def plot_fit(x,y,y_err,
 
 
 # file_params = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_all_sin2.dat"
-file_params = "../WeatherCode/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_all_sin2.dat"
+file_params = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_all_sin2.dat"
 
 r1,ap, ap_err, arho, arho_err, brho, brho_err,r = np.loadtxt(file_params,unpack=True)
 ap_hline, arho_hline, brho_hline=-0.0032,-1.71,-0.51
