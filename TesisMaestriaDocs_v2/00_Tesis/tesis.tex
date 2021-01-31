@@ -116,7 +116,8 @@ VEM: 		& Muón vertical equivalente (\emph{Vertical Equivalent Muon})\\
 ICRC: 		& Conferencia Internacional de Rayos Cósmicos \\
 			& (\emph{International Cosmic Ray Conference})\\
 EW:			& Método East - West\\
-Ray:		& Método de Rayleigh
+Ray:		& Método de Rayleigh\\
+msnm:		& Metros Sobre el Nivel del Mar\\
 \end{tabular}
                      %Abreviaturas
 \end{abreviaturas}
@@ -130,22 +131,19 @@ Ray:		& Método de Rayleigh
 \end{preliminary}
 
 %Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
- \chapter{Introducción}
+ \chapter{(Rewrite)Introducción}
 	\graphicspath{{../01_Introduccion/}}
 	\input{../01_Introduccion/intro_v3.tex}
   
- \chapter{El Observatorio Pierre Auger}
+ \chapter{(Rewrite)El Observatorio Pierre Auger}
 	\graphicspath{{../02_IntroduccionAuger/}}
 	\input{../02_IntroduccionAuger/auger_v2.tex}
 
- 	% \section{Algoritmos de disparo del detector de superficie} \label{triggers_caracteristicas}
 	\graphicspath{{../03_IntroduccionReport/}}
 	\input{../03_IntroduccionReport/introduccion_v10}
 
-%  \chapter{Análisis de los efectos del clima sobre los datos del Observatorio Pierre Auger}
 \chapter{Modulación del clima sobre los datos del Observatorio Pierre Auger}
 
-	% \section{Eventos asociados al Disparo Estándar en el rango 2004-2018}\label{Stan_modulacion}	
 	\graphicspath{{../04_Clima/}}
 	\input{../04_Clima/01_clima_intro}
 	\input{../04_Clima/02_clima_v2}
@@ -176,11 +174,11 @@ Ray:		& Método de Rayleigh
 	\graphicspath{{../EW/}}	
 	\input{../EW/report_EW_results_Ray}
 
-\chapter{Conclusiones}
-% 	\input{../Conclusiones/conclusiones.tex}
+\chapter{(To do)Conclusiones}
+	\input{../Conclusiones/conclusiones.tex}
 
 \appendix
-	\chapter{Coordenadas celestes}
+	\chapter{(Write)Coordenadas celestes}
 	\input{../Apendice/apend_v2.tex}
 
 \begin{biblio}

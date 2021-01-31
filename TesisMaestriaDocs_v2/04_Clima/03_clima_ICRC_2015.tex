@@ -2,34 +2,35 @@
 %====|==>ICRC 2015	
 \subsection{Datos presentados en la ICRC 2015}\label{icrc2015}
 
-Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados mencionados en la sección anterior. Además de considerar eventos con energía mayor a $1\,$EeV en un periodo de tiempo entre el 1 de Enero del 2005 y 1 de Enero del 2016, y con ángulo cenital $\theta$ menor que $60^o$.  Tras los cortes mencionados, se analizaron $1\,146\,470$ eventos con una la media de energía de $1.005\,$EeV. Nos referiremos a este subconjunto de datos de la ICRC 2015  como conjunto A. Las características del conjunto A se resumen en la Tabla \ref{tabla:caracteristicas_ICRC_2015}.
+Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados mencionados en la sección anterior. Además de considerar eventos con energía mayor a $1\,$EeV en un periodo de tiempo entre el 1 de Enero del 2005 y 31 de Diciembre del 2015, y con ángulo cenital $\theta$ menor que $60^o$.  Tras los cortes mencionados, se analizaron $1\,146\,470$ eventos con una la media de energía de $2.00\,$EeV. Nos referiremos a este subconjunto de datos del ICRC 2015  como conjunto A. Las características de estos datos se resumen en la Tabla \ref{tabla:caracteristicas_ICRC_2015}.
 %====|====|	Tabla de eventos exposure
         \begin{table}[H]
             \centering
-            \begin{tabular}{r|c}
+            \begin{tabular}{r|c|} \cline{2-2}
+                & ICRC  2015 \\ \cline{2-2}
             Inicio:              & 01/01/2005 \\ 
             Final:               & 01/01/2016  \\ 
             Número de eventos:   & $1\,146\,470$ \\ 
             Energía media:       & 2.00\,EeV    				\\ 
             Corte en energía:    & $> 1$ EeV        				\\ 
-            Corte en ángulo cenital:		& $\theta < 60^o$ 				\\ 
+            Corte en ángulo cenital:		& $\theta < 60^o$ 				\\ \cline{2-2}
             \end{tabular}
         \caption{Características de los datos ICRC 2015 utilizados para el cálculo de los parámetros del clima de esta sección. } \label{tabla:caracteristicas_ICRC_2015}
         \end{table}
 
 % ====|====|Tabla del fit
-        Se realiza un ajuste de la tasa de eventos por hora del conjunto A, que incluye todos los eventos de ángulo cenital $\theta< 60^o$. Los parámetros obtenidos se presentan y se comparan con \cite{aab2017impact} en la Tabla \ref{tabla:parametros_ICRC_2015}. Los errores presentados son los errores obtenidos por el ajuste. El $\chi^2_\nu$ representa el $\chi^2$ reducido, que para este ajuste es de $\chi^2_\nu=1.01328$, por lo que el modelo propuesto representa adecuadamente los datos experimentales. Se observa que los parámetros obtenidos son compatibles con el trabajo anterior.
+        Se realiza un ajuste de la tasa de eventos por hora del conjunto A para obtener los coeficientes promediados por ángulo cenital, que incluye todos los eventos de ángulo cenital $\theta< 60^o$. Los parámetros obtenidos se presentan y se comparan con \cite{aab2017impact} en la Tabla \ref{tabla:parametros_ICRC_2015}. Los errores presentados son los errores obtenidos por el ajuste. El $\chi^2_\nu$ representa el $\chi^2$ reducido, que para este ajuste es de $\chi^2_\nu=1.01328$, por lo que el modelo propuesto representa adecuadamente los datos experimentales. Se observa que los parámetros obtenidos son compatibles con el trabajo anterior.
 
         \begin{table}[H]
             \centering
             \begin{tabular}{c|c|c}
-            {Parámetro}                 & {2005-2015}                   & {2005-2015}    \cite{aab2017impact}              \\ \hline
+            {Parámetro}                 & {2005-2015}                   & {2005-2015}    \cite{aab2017impact}              \\ \hline \hline
             $a_P$ [hPa$^{-1}$]          & $(-3.2 \pm 0.2)\times 10^{-3}$& $(-3.2 \pm 0.3)\times 10^{-3}$    \\ \hline
             $a_\rho$ [kg$^{-1}$m$^3$]   & $-1.71 \pm 0.04 $             & $-1.72 \pm 0.04$                  \\ \hline
             $b_\rho$ [kg$^{-1}$m$^3$]   & $-0.51 \pm 0.05$              & $-0.53 \pm 0.04$                  \\ \hline
             $\chi^2_\nu$                & $1.013$                       & $1.013$                           \\ 
             \end{tabular} 
-            \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV, comparados con los parámetros utilizados por la Colaboración.} \label{tabla:parametros_ICRC_2015}
+            \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV del conjunto del ICRC 2015, comparados con los parámetros utilizados por la Colaboración.} \label{tabla:parametros_ICRC_2015}
         \end{table}
 
 %====|====|	2005-2015	rate hour of the day	1 EeV
@@ -51,7 +52,7 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
         \end{figure}
 
 
-        Como se menciona en la sección \ref{seccion:sd_eff}, el detector alcanza su máxima eficiencia para energías mayores que 3\,EeV. A partir una energía de $2\,$EeV, los eventos tienen una mayor susceptibilidad al disparo de tres tanques, mínimo número necesario para la reconstrucción de un evento. Para el conjunto A, como se muestra en la Fig.\,\ref{fig:rate_2015_05-15_2EeV}, la modulación del clima aún es apreciable para una energía mayor a $2\,$EeV con una menor amplitud que para eventos de energía mayor a $1\,EeV$. 
+        Como se menciona en la sección \ref{seccion:sd_eff}, el detector alcanza su máxima eficiencia para energías mayores que 3\,EeV. A partir una energía de $2\,$EeV, los eventos tienen una mayor susceptibilidad al disparo de tres tanques, mínimo número necesario para la reconstrucción de un evento. Para el conjunto A, como se muestra en la Fig.\,\ref{fig:rate_2015_05-15_2EeV}, la modulación del clima aún es apreciable para una energía mayor a $2\,$EeV con una menor amplitud que para eventos de energía mayor a $1\,$EeV. 
 
         \begin{figure}[H]
             \centering
@@ -73,13 +74,13 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
 %====|====|====|	ap, arho, brho 2005-2015 vs JINST over 1 EeV
                 \begin{figure}[H]
                     \centering
-                    \begin{subfigure}[b]{0.8\textwidth}
+                    \begin{subfigure}[b]{0.75\textwidth}
                     \includegraphics[width=\linewidth]{Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf}
                     \caption{Parámetro $a_P$ }
                     \label{fig:ap_2015}
                     \end{subfigure}\\
                     % \hspace{\fill}
-                    \begin{subfigure}[b]{0.8\textwidth}
+                    \begin{subfigure}[b]{0.75\textwidth}
                     \includegraphics[width=\linewidth]{Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf}
                     \caption{Parámetro $a_{\rho}$ }
                     \label{fig:arho_2015}
@@ -87,7 +88,7 @@ Se utilizaron los datos de la ICRC 2015 utilizando los cortes recomendados menci
                     % \hspace{\fill}
                     \begin{subfigure}[b]{\textwidth}
                     \centering
-                    \includegraphics[width=0.8\linewidth]{Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf}
+                    \includegraphics[width=0.75\linewidth]{Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf}
                     \caption{Parámetro  $b_{\rho}$	 }
                     \label{fig:brho_2015}
                     \end{subfigure}%
