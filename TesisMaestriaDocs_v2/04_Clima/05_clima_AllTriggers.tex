@@ -8,7 +8,7 @@ En este trabajo se busca comparar los parámetros obtenidos con los eventos de T
 
 \subsection{Distribución de los eventos en función de $\sin^2\theta$}
 
-La separación de los eventos en rango de $\sin^2\theta$ para los datos del Disparo Estándar se realizó debido a que distribuye los eventos con energía por encima de $3\,$EeV de forma uniforme en cada rango. En la Fig\,\ref{fig:bin_eventos_sin_2_theta} se muestran las distribuciones que tiene los eventos del Disparo Estándar en distintos rangos de tiempo y los eventos de Todos los Disparos por encima de $3\,$EeV y $1\,$EeV respectivamente. Se toman estos límites porque los disparos alcanzan eficiencia completa a partir de este valor de energía.  Se observa que para el Disparo Estándar los eventos se varian $\sim 2.5\%$ con respecto a la media para los dos rangos de tiempo, en cambio los eventos por encima de $1\,$EeV para Todos los Disparos tienen una variación de $\sim 10\%$ con respecto a media.
+La separación de los eventos en rango de $\sin^2\theta$ para los datos del Disparo Estándar se realizó debido a que distribuye los eventos con energía por encima de $3\,$EeV de forma uniforme en cada rango. En la Fig\,\ref{fig:bin_eventos_sin_2_theta} se muestran las distribuciones que tiene los eventos del Disparo Estándar en distintos rangos de tiempo y los eventos de Todos los Disparos por encima de $3\,$EeV y $1\,$EeV respectivamente. Se toman estos límites porque los disparos alcanzan eficiencia completa a partir de estos valores de energía.  Se observa que para el Disparo Estándar los eventos varian $\sim 2.5\%$ con respecto a la media para los dos rangos de tiempo, en cambio los eventos por encima de $1\,$EeV para Todos los Disparos tienen una variación de $\sim 10\%$ con respecto a media.
 
 \begin{figure}[H]
   \begin{small}
@@ -21,30 +21,31 @@ La separación de los eventos en rango de $\sin^2\theta$ para los datos del Disp
 \end{figure}
 \subsection{Tasa de eventos de Todos los Disparos por encima de 1 EeV}
 
-Los eventos de este conjunto de datos, la modulación espuria del clima está corregida con los parámetros obtenidos sobre el Disparo Estándar. Las tasas de eventos diario mostrados en las Figs.\,\ref{fig:rate_ALL_1} y  \ref{fig:rate_ALL_1}, por encima de 1 EeV y 2 EeV respectivamente, no muestran modulaciones importantes. En el caso de la tasa por encima de 1 EeV, se observa un remanente de modulación anual similar a los datos del ICRC 2019. 
+Los eventos de este conjunto de datos, la modulación espuria del clima está corregida con los parámetros obtenidos sobre el Disparo Estándar. Las tasas de eventos diario mostrados en la Fig.\,\ref{fig:rate_ALL}, por encima de 1 EeV y 2 EeV respectivamente, no muestran modulaciones importantes. En el caso de la tasa por encima de 1 EeV, se observa un remanente de modulación anual similar a los datos del ICRC 2019. 
 
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}[b]{0.9\textwidth}
-  \includegraphics[width=\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_rate_v3.pdf}
-  \caption{Energía mayor a $1\,$EeV}
-  \label{fig:rate_ALL_1}
-  \end{subfigure}\\
-  % \hspace{\fill}
-  \begin{subfigure}[b]{0.9\textwidth}
-  \includegraphics[width=\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_2EeV_rate.pdf}
-  \caption{ Energía mayor a $2\,$EeV}
-  \label{fig:rate_ALL_2}
-  \end{subfigure}%
-  \caption{Tasa de eventos promedio por cada día entre los años 2005 hasta 2020 de Todos los Disparos. Se muestran las tasas para dos cortes en energía, mayor a $1\,$EeV y mayor a $2\,$EeV}\label{fig:rate_ALL}
+  % \begin{subfigure}[b]{0.9\textwidth}
+  % \includegraphics[width=\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_rate_v3.pdf}
+  % \caption{Energía mayor a $1\,$EeV}
+  % \label{fig:rate_ALL_1}
+  % \end{subfigure}\\
+  % % \hspace{\fill}
+  % \begin{subfigure}[b]{0.9\textwidth}
+  % \includegraphics[width=\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_2EeV_rate.pdf}
+  % \caption{ Energía mayor a $2\,$EeV}
+  % \label{fig:rate_ALL_2}
+  % \end{subfigure}%
+  \includegraphics[width=\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf}
+  \caption{Tasa de eventos promedio por cada día desde inicios del 2005 hasta inicios del 2020 de Todos los Disparos. Se muestran las tasas para dos cortes en energía, mayor a $1\,$EeV y mayor a $2\,$EeV}\label{fig:rate_ALL}
 \end{figure}
 
 
 \subsection{Parámetros del clima para Todos los Disparos usando $S_{38}$}
 
 
-En esta sección se trabajó con el conjunto de datos registrados por el arreglo principal con Todos los Disparos. La señal de $S(1000)$ de estos eventos fue corregida en la reconstrucción oficial de eventos por la modulación del clima por los parámetros obtenidos en \cite{aab2017impact}, por este motivo se trabajó con un corte en la señal de $S_{38}$ sin corregir por el clima. Las características de eventos obtenidos con el corte en la señal y otros filtros mencionados se resumen en la Tabla~\ref{tabla:caracteristicas_ALL}. 
+En esta sección, se trabajó con el conjunto de datos registrados por el arreglo principal con Todos los Disparos. La señal de $S(1000)$ de estos eventos fue corregida en la reconstrucción oficial de eventos por la modulación del clima por los parámetros obtenidos en \cite{aab2017impact}, por este motivo se trabajó con un corte en la señal de $S_{38}$ sin corregir por el clima. Las características de eventos obtenidos con el corte en la señal y otros filtros mencionados se resumen en la Tabla~\ref{tabla:caracteristicas_ALL}. 
 
 \begin{table}[H]
   \centering
@@ -70,13 +71,13 @@ Se realiza un ajuste de la tasa de eventos de Todos los Disparos y de esta maner
   $a_P$ [hPa$^{-1}$]          & $(-4.8 \pm 0.2)\times 10^{-3}$& $(-3.2 \pm 0.3)\times 10^{-3}$    \\ \hline
   $a_\rho$ [kg$^{-1}$m$^3$]   & $-1.54 \pm 0.04 $             & $-1.72 \pm 0.04$                  \\ \hline
   $b_\rho$ [kg$^{-1}$m$^3$]   & $-0.55 \pm 0.04$              & $-0.53 \pm 0.04$                  \\ \hline
-  $\chi^2_\nu$                & $1.050$                       & $1.013$                           \\ 
+  $\chi^2_\nu$                & $1.016$                       & $1.013$                           \\ 
   \end{tabular} 
   \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV del conjunto de Todos los disparos, comparados con los parámetros utilizados por la Colaboración.} \label{tabla:parametros_ALL}
 \end{table}
 
 
-La tasa de eventos medida media por día y la tasa predicha según los parámetros del clima obtenidos se observan en la Fig.\ref{fig:rate_dayly_AllTriggers}. En la misma, la modulación anual y diaria del clima sobre los eventos es apreciable, a diferencia de las tasas de la Fig.\,\ref{fig:rate_ALL} donde  la energía de estos eventos están corregidos.  
+La tasa de eventos media por día  medida y la tasa predicha según los parámetros del clima obtenidos se observan en la Fig.\ref{fig:rate_dayly_AllTriggers}. En la misma, la modulación anual y diaria del clima sobre los eventos es apreciable, a diferencia de las tasas de la Fig.\,\ref{fig:rate_ALL} donde  la energía de estos eventos están corregidos.  
 \begin{figure}
 \centering
   \begin{subfigure}[b]{0.9\textwidth}
@@ -87,7 +88,7 @@ La tasa de eventos medida media por día y la tasa predicha según los parámetr
   \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf}
   \caption{Tasa de eventos promediada por hora del día }\label{fig:rate_hod_AllTriggers}
   \end{subfigure}
-  \caption{Tasa de eventos por días comparadas con el ajuste entre los años 2014 hasta 2020. Estos eventos se registraron con Todos los Disparos  y tienen un valor de $S_{38}$ mayor a $5.36\,$VEM. En las tasas se observan la modulación anual y diaria del clima. }\label{fig:rate__AllTriggers}
+  \caption{Tasa de eventos por días comparadas con el ajuste entre los años 2014 hasta 2020. Estos eventos se registraron con Todos los Disparos  y tienen un valor de $S_{38}$ mayor a $5.36\,$VEM. En las tasas se observan la modulación anual y diaria del clima. La predicción es obtenida por los parámetros calculados en este trabajo.}\label{fig:rate__AllTriggers}
 \end{figure}
 
 Para poder verificar que los parámetros del clima en función de $\sin^2\theta$ obtenidos sobre el Disparo Estándar son válidos para Todos los Disparos, se calculó estos parámetros del último y se compararon con los utilizados por la Colaboración en la reconstrucción oficial. Estos resultados se observan en la Fig.\,\ref{fig:ALL-params} y los ajustes de la Ec.\,\ref{eq:cuadratica} se presentan en la Tabla~\ref{tabla:cuadratica_ALL}.   

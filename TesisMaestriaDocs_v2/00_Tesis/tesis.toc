@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {3.1.4}Estimador del ajuste}{24}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Condiciones climáticas y área activa del Observatorio Pierre Auger}{25}{subsection.3.1.5}%
 \contentsline {section}{\numberline {3.2}Eventos asociados al Disparo Estándar en el rango 2004-2018}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Datos presentados en la ICRC 2015}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Datos presentados en la ICRC 2017}{28}{subsection.3.2.1}%
 \contentsline {subsubsection}{Ajuste de los parámetros del clima}{30}{section*.30}%
 \contentsline {subsection}{\numberline {3.2.2}Datos presentados en la ICRC 2019}{32}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima}{34}{subsection.3.2.3}%
@@ -81,6 +81,5 @@
 \contentsline {chapter}{\numberline {9}Conclusiones}{87}{chapter.9}%
 \contentsline {chapter}{\numberline {A}Coordenadas celestes}{89}{appendix.Alph1}%
 \contentsline {section}{\numberline {A.1}Coordenadas Ecuatoriales}{89}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Coordenadas Locales}{90}{section.Alph1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Relación entre las coordenadas locales y ecuatoriales}{91}{subsection.Alph1.2.1}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{93}{section*.81}%
+\contentsline {section}{\numberline {A.2}Coordenadas Locales}{89}{section.Alph1.2}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{91}{section*.81}%

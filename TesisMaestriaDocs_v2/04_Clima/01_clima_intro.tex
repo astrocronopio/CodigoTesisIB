@@ -5,13 +5,13 @@
 La variación de las condiciones atmosféricas afecta las señales de las lluvias atmosféricas extendidas. Estas señales pueden ser detectadas en la superficie por un arreglo de detectores, como los que se encuentran en el Observatorio Pierre Auger. Estos efectos pueden inducir errores sistemáticos en la reconstrucción de energía de los rayos cósmicos. Se han realizado  trabajos anteriores sobre los efectos del clima sobre la señal detectada en el Observatorio Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric} . En este trabajo se estudiaron eventos con energía mayor a $1\,$EeV entre los años 2005-2018, extendiendo los periodos de tiempo estudiados anteriormente, además de estudiar la modulación del clima sobre el conjunto  de Todos los Disparos entre los años 2014-2020.
 
 
-El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, ya sea mediante la componente electromagnética o muónica de las EAS, se usan para determinar la posición del núcleo, la dirección de arribo del CR y la energía del primario. La señal de los eventos son ajustados mediante un función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
+El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, se usan para determinar la posición del núcleo, la dirección de arribo del CR y la energía del primario. La señal de los eventos son ajustados mediante una función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
 %  Existieron cambios en los parámetros de la LDF y, por lo tanto, de valor de $S_{38}$, utilizado para estimar la energía del primario. 
 La conversión de $S(1000)$ a $S_{38}$ se realiza mediante el método de corte de intensidad constante (CIC) explicado anteriormente.% Además en la nueva reconstrucción el CIC es función de la energía.
 
 \subsection{Trabajos anteriores}
 
-Debido a la modulación del clima dependiente de las estaciones del año, es de esperarse encontrar una modulación diaria y anual sobre la cantidad de eventos observados por el arreglo principal. Ya que en días con menor densidad y presión atmosférica, los tanques detectan eventos por debajo del umbral con mayor facilidad. Este fenómeno fue estudiado por trabajos anteriores realizados por la colaboración Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric}. En particular, el trabajo \cite{aab2017impact} consideró el retraso que tienen los cambios de  la temperatura a distintas alturas sobre la superficie, como se muestra en la Fig\,\ref{fig:delay} que son datos del GDAS (Global Data Assimilation System) promediados por hora del día. Posteriormente esta corrección fue implementada en el proceso  de análisis de datos del Observatorio.
+Debido a la modulación del clima dependiente de la hora del día y de las estaciones del año, es de esperarse encontrar una modulación diaria y anual sobre la cantidad de eventos observados por el arreglo principal, si los efectos de las condiciones climáticas no son tenidos en cuenta en la estimación de la energía de los rayos cósmicos. En días con menor densidad y presión atmosférica, una partícula de una dada energía produce una mayor señal en los detectores. Este fenómeno fue estudiado por trabajos anteriores realizados por la colaboración Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric}. En particular, el trabajo \cite{aab2017impact} consideró el retraso que tienen los cambios de  la temperatura a distintas alturas sobre la superficie, como se muestra en la Fig\,\ref{fig:delay} que son datos del GDAS (Global Data Assimilation System) promediados por hora del día. Posteriormente esta corrección fue implementada en el proceso  de análisis de datos del Observatorio.
 
 
 En la Fig.\,\ref{fig:delay} se observa que los ajustes realizados a las variaciones de la temperatura  según la hora del día con una función del tipo $T(t) = T_{media} + A\times \sin((t-t_d)\nicefrac{\pi}{12\,\text{hs}})$.  En la Tabla\,\ref{tabla:delay} se observa que entre 1400\,m (altitud del Observatorio Pierre Auger) y la mayor altitud medida por el GDAS existe un corrimiento de $2.1\pm0.7\,$hs.
@@ -41,7 +41,7 @@ Como la relación entre la densidad y la temperatura del aire están relacionada
 
 %444444444444444444444444444
 
-Para entender los parámetros utilizados para describir a la lluvia, debemos entender que son la longitud de radiación $X_0$, la profundidad de la lluvia $X_{max}$ y el radio de Molière $r_M$. La longitud de radiación definida como $X_0=\nicefrac{d}{2}$,  donde $d$ es un parámetro que indica cuanta cantidad de materia debe atravesar un partícula cargada relativista para perder un factor de $\approx 50\%$ de su  energía. El $X_0$ depende del material que atraviesa la partícula, y tiene unidades de [g\,cm$^{-2}$]. La profundidad de la lluvia $X_{max}$ de una cascada puramente electromagnética, i.e. iniciada por un fotón, tiene la siguiente expresión \cite{matthews2005heitler}
+Para entender los parámetros utilizados para describir a la lluvia, debemos entender que son la longitud de radiación $X_0$, la profundidad de la lluvia $X_{max}$ y el radio de Molière $r_M$. La longitud de radiación  $X_0$ es un parámetro que indica cuanta cantidad de materia debe atravesar una partícula cargada relativista para perder un factor de $\nicefrac{1}{e}\approx 36.78\%$ de su  energía. El $X_0$ depende del material que atraviesa la partícula, por ejemplo en el aire $X_0\approx 37\,$g\,cm$^{-2}$]. La profundidad de la lluvia $X_{max}$ de una cascada puramente electromagnética, i.e. iniciada por un fotón, tiene la siguiente expresión \cite{matthews2005heitler}
 \begin{equation}
  	X_{max} = X_0{ln(\frac{E}{\xi^e_c})}
  \end{equation} 
@@ -49,10 +49,10 @@ donde  $\xi^e_c$ es la energía crítica para la cual la pérdida de energía po
 \begin{equation}
 	r_M= \frac{E_s}{\xi^e_c}\frac{X_0}{\rho}
 \end{equation}
-es la máxima profundidad transversal que alcanza la lluvia. El valor de $E_s\approx21\,$MeV caracteriza las pérdidas por dispersión. Usualmente un cilindro con un radio $r_M$ contiene al 90\% de la energía depositada en la atmósfera por el primario. El radio de Molière local en el aire para una altura $h$ puede definirse como $r_M = \nicefrac{9.6\,\text{gcm}^{-2}}{\rho(h)}$ \cite{gora2006universal}. 
+es la máxima extensión transversal que alcanza la lluvia. El valor de $E_s\approx21\,$MeV caracteriza las pérdidas por dispersión. Usualmente un cilindro con un radio $r_M$ contiene al 90\% de la energía depositada en la atmósfera por el primario. El radio de Molière local en el aire para una altura $h$ puede definirse como $r_M = \nicefrac{9.6\,\text{gcm}^{-2}}{\rho(h)}$ \cite{gora2006universal}. 
 %444444444444444444444444444
 
-Las variables atmosféricas importantes que afectan al desarrollo de la EAS en la atmósfera son la presión y la densidad del aire. Por un lado la presión es una medida de cantidad de materia que atraviesa el CR. Si la presión sobre la superficie aumenta implica que la lluvia va a atravesar más partículas, y por el contrario si la presión disminuye la lluvia tiene menos materia para interactuar. Esto afecta el desarrollo longitudinal de la lluvia cuando llega a la superficie. En la Fig.\,\ref{fig:eas} se muestran un esquema simplificado de las interacciones en la atmósfera de un primario de la misma energía. En la figura de la izquierda representa una lluvia donde la presión y la densidad está por encima de la media, y la figura de la derecha representa un lluvia donde la presión y la densidad de la atmósfera están por debajo de la media.
+Las variables atmosféricas importantes que afectan al desarrollo de la EAS en la atmósfera son la presión y la densidad del aire. Por un lado la presión es una medida de cantidad de materia que atraviesa el CR. Si la presión sobre la superficie aumenta implica que la lluvia va a atravesar más partículas, y por el contrario si la presión disminuye la lluvia tiene menos materia para interactuar. Esto afecta el desarrollo longitudinal de la lluvia cuando llega a la superficie. En la Fig.\,\ref{fig:eas} se muestran un esquema simplificado de las interacciones en la atmósfera de un primario de la misma energía. En la figura de la izquierda representa una lluvia donde la presión y la densidad están por encima de la media, y la figura de la derecha representa un lluvia donde la presión y la densidad de la atmósfera están por debajo de la media.
 
 
 Estos efectos se ven reflejados en la señal sobre el SD del Observatorio Pierre Auger. La extensión de la señal sobre el SD, es decir el $r_M$ puede cambiar según la densidad de la atmósfera por encima del SD. Los valores de $r_M$ relevantes para la señal medida son a nivel del suelo del Observatorio y a 1000 m del mismo. Esto implica que las variaciones de densidad (o de temperatura) a estas alturas están relacionadas con las variaciones al nivel del suelo. La variación a $\sim2400\,$m sobre el nivel del mar está atrasada dos horas con respecto a la variación sobre el Observatorio, que se encuentra a $\sim1400\,$m sobre el nivel del mar. Otro aspecto importante es que la amplitud de está variación disminuye con la altura. Entre las dos altitudes mencionadas existen una relación de aproximadamente $\nicefrac{1}{3}$ entre las amplitudes. 
@@ -61,7 +61,7 @@ Estos efectos se ven reflejados en la señal sobre el SD del Observatorio Pierre
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{eas.png}
-	\caption{Diagramas simplificado de un lluvia de la misma energía para distintas condiciones atmosféricas}
+	\caption{Diagrama simplificado de un lluvia de la misma energía para distintas condiciones atmosféricas. Izquierda: presión y  densidad  por encima de la media. Derecha: presión y densidad de la atmósfera por debajo de la media}
 	\label{fig:eas}
 \end{figure}
 
@@ -114,8 +114,7 @@ Así pudiendo definir la tasa por área por $sin^2(\theta)$, independiente del v
 	\frac{dR}{d(sin^2\theta)} &\propto AB(1+B(\gamma-1)\epsilon)\, 2\pi \,\int_{S_{min}}^{\infty} P_{Tr}(S,\theta) S^{-B\gamma +B -1} dS
 \end{align*}
 
-Los parámetros $\alpha_P$, $\alpha_{\rho}$ y $\beta_{\rho}$ podrían depender del ángulo cenital o de la energía (por ende de S). En este trabajo se considera solamente la dependencia en $\theta$. Si $P_{Tr}$ es independiente de $\theta$, podemos absorber estas constantes y dejar la expresión como
-
+Los parámetros $\alpha_P$, $\alpha_{\rho}$ y $\beta_{\rho}$ podrían depender del ángulo cenital o de la energía (por ende de S). En este trabajo se considera solamente la dependencia en $\theta$. Si $P_{Tr}$ es independiente de $\theta$, podemos considerar que un factor $R_0$ que no depende de $\theta$  y absorbe las constantes y el resultado de la integral, y dejar la expresión como
 \begin{equation}
 	\frac{dR}{d(sin^2\theta)} = R_0\bigg[1+a_P(P-P_0) +a_{\rho}(\rho_{media}-\rho_0) + b_{\rho}(\rho_{2h}-\rho_{media})\bigg] 
 	\label{eq:rate_sin2}
@@ -162,7 +161,7 @@ Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor 
 	\centering
         \begin{subfigure}[b]{0.9\textwidth}	
 			\includegraphics[width=\textwidth]{Graphs/clima/densidad_diaria_v2.png}
-			\caption{Densidad diaria}
+			\caption{Densidad media diaria}
 			\label{fig:densidad_diaria}
         \end{subfigure}\\
         % \hspace{\fill}
