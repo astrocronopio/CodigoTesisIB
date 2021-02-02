@@ -54,14 +54,16 @@ es la máxima profundidad transversal que alcanza la lluvia. El valor de $E_s\ap
 
 Las variables atmosféricas importantes que afectan al desarrollo de la EAS en la atmósfera son la presión y la densidad del aire. Por un lado la presión es una medida de cantidad de materia que atraviesa el CR. Si la presión sobre la superficie aumenta implica que la lluvia va a atravesar más partículas, y por el contrario si la presión disminuye la lluvia tiene menos materia para interactuar. Esto afecta el desarrollo longitudinal de la lluvia cuando llega a la superficie. En la Fig.\,\ref{fig:eas} se muestran un esquema simplificado de las interacciones en la atmósfera de un primario de la misma energía. En la figura de la izquierda representa una lluvia donde la presión y la densidad está por encima de la media, y la figura de la derecha representa un lluvia donde la presión y la densidad de la atmósfera están por debajo de la media.
 
+
+Estos efectos se ven reflejados en la señal sobre el SD del Observatorio Pierre Auger. La extensión de la señal sobre el SD, es decir el $r_M$ puede cambiar según la densidad de la atmósfera por encima del SD. Los valores de $r_M$ relevantes para la señal medida son a nivel del suelo del Observatorio y a 1000 m del mismo. Esto implica que las variaciones de densidad (o de temperatura) a estas alturas están relacionadas con las variaciones al nivel del suelo. La variación a $\sim2400\,$m sobre el nivel del mar está atrasada dos horas con respecto a la variación sobre el Observatorio, que se encuentra a $\sim1400\,$m sobre el nivel del mar. Otro aspecto importante es que la amplitud de está variación disminuye con la altura. Entre las dos altitudes mencionadas existen una relación de aproximadamente $\nicefrac{1}{3}$ entre las amplitudes. 
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{eas.png}
 	\caption{Diagramas simplificado de un lluvia de la misma energía para distintas condiciones atmosféricas}
 	\label{fig:eas}
 \end{figure}
-
-Estos efectos se ven reflejados en la señal sobre el SD del Observatorio Pierre Auger. La extensión de la señal sobre el SD, es decir el $r_M$ puede cambiar según la densidad de la atmósfera por encima del SD. Los valores de $r_M$ relevantes para la señal medida son a nivel del suelo del Observatorio y a 1000 m del mismo. Esto implica que las variaciones de densidad (o de temperatura) a estas alturas están relacionadas con las variaciones al nivel del suelo. La variación a $\sim2400\,$m sobre el nivel del mar está atrasada dos horas con respecto a la variación sobre el Observatorio, que se encuentra a $\sim1400\,$m sobre el nivel del mar. Otro aspecto importante es que la amplitud de está variación disminuye con la altura. Entre las dos altitudes mencionadas existen una relación de aproximadamente $\nicefrac{1}{3}$ entre las amplitudes. 
 
 \subsection{Descripción del modulación en la señal medida}
 
@@ -143,32 +145,34 @@ con $\rho_{2h}$, como fue mencionado anteriormente, es la densidad medida dos ho
 
 Existen tres estaciones meteorológicas dentro del Observatorio, que miden cada 5 minutos las condiciones climáticas en distintos puntos. Las ubicaciones de estas estaciones están indicadas en la Fig.\,\ref{fig:auger_sd}. Las Figs.\,\ref{fig:clima_p} y \ref{fig:clima_p_rho} se muestran las variaciones de los valores de presión y densidad en el periodo del $2005-2018$ con respecto a la media en este mismo periodo. En la Fig.\,\ref{fig:densidad_hora} y \ref{fig:area_auger} se observan la modulación anual de la densidad y la modulación diaria de la densidad. Ambas modulaciones afectan a la detección de las lluvias por parte del arreglo principal. 
 
-Para asegurarse eventos con una buena reconstrucción de  energía, posición del núcleo y dirección de arribo, solo los eventos que están contenidos dentro del arreglo principal son considerados. Este criterio requiere que el detector con mayor señal esté rodeado de 6 tanques activos. Teniendo en cuenta la geometría de arreglo de WCDs, se calcula el área efectiva mediante la suma del área asociada a cada tanque. El mismo contribuye un área de $\sqrt{3} \frac{d^2}{2}$, donde $d$ es la distancia entre WCDs en una grilla triangular. Como la cantidad de hexágonos activos varía con el tiempo también lo hace  el área efectiva del Observatorio. En la Fig.\,\ref{fig:area} se muestra la evolución del área efectiva del arreglo principal hasta el año 2018. La línea horizontal  limita el área mínima considerada para el análisis. Estos periodos de baja exposición no proveen información suficiente para caracterizar la modulación.
-Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor nominal.
-
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=0.8\textwidth]{Graphs/clima/presion_v2.png}
+		\includegraphics[width=0.9\textwidth]{Graphs/clima/presion_v2.png}
 	\caption{Variación de la presión sobre el Observatorio en función del tiempo}
   \label{fig:clima_p}
 \end{figure}
 
+Para asegurarse eventos con una buena reconstrucción de  energía, posición del núcleo y dirección de arribo, solo los eventos que están contenidos dentro del arreglo principal son considerados. Este criterio requiere que el detector con mayor señal esté rodeado de 6 tanques activos. Teniendo en cuenta la geometría de arreglo de WCDs, se calcula el área efectiva mediante la suma del área asociada a cada tanque. El mismo contribuye un área de $\sqrt{3} \frac{d^2}{2}$, donde $d$ es la distancia entre WCDs en una grilla triangular. Como la cantidad de hexágonos activos varía con el tiempo también lo hace  el área efectiva del Observatorio. 
+
+En la Fig.\,\ref{fig:area} se muestra la evolución del área efectiva del arreglo principal hasta el año 2018. La línea horizontal  limita el área mínima considerada para el análisis. Estos periodos de baja exposición no proveen información suficiente para caracterizar la modulación.
+Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor nominal.
+
 
 \begin{figure}[H]
 	\centering
-        \begin{subfigure}[b]{0.8\textwidth}	
+        \begin{subfigure}[b]{0.9\textwidth}	
 			\includegraphics[width=\textwidth]{Graphs/clima/densidad_diaria_v2.png}
 			\caption{Densidad diaria}
 			\label{fig:densidad_diaria}
         \end{subfigure}\\
         % \hspace{\fill}
-        \begin{subfigure}[b]{0.8\textwidth}
+        \begin{subfigure}[b]{0.9\textwidth}
 			\includegraphics[width=\textwidth]{Graphs/clima/densidad_media_diaria_v2.png}
 			\caption{Densidad media por hora}
 			\label{fig:densidad_hora}
 		\end{subfigure}\\
 		% \hspace{\fill}
-        \begin{subfigure}[b]{0.8\textwidth}	
+        \begin{subfigure}[b]{0.9\textwidth}	
 			\includegraphics[width=\textwidth]{Graphs/clima/densidad_hod_v2.png}
 			\caption{Densidad media por hora del día.}
 			\label{fig:area_auger}
@@ -179,9 +183,10 @@ Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor 
 
 En este trabajo se utilizan los datos recabados por las estaciones del clima del Observatorio. Como se menciona en la sección \ref{seccion:clima}, existen periodos donde los datos del clima son interpolados. Es por ello que se consideran los eventos registrados durante un periodo en donde las condiciones climáticas fueron medidas o interpoladas para un periodo menor a 3 horas.
 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Graphs/clima/area_v2.png}
+    \includegraphics[width=0.9\textwidth]{Graphs/clima/area_v2.png}
     \caption{Evolución temporal del área efectiva del Observatorio Pierre Auger. La línea horizontal señala el área mínima considerada para el análisis.}
     \label{fig:area}
 \end{figure}

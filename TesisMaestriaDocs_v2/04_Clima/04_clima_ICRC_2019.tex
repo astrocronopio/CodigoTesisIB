@@ -25,53 +25,36 @@ En el conjunto de datos de la ICRC 2019, se realizó los mismos cortes que para 
    En la Fig.\,\ref{fig:rate_new_18} se muestran las tasas de eventos por día para energía mayores a $1\,$EeV y $2\,$EeV, con la energía corregida por los efectos climáticos según la reconstrucción oficial \cite{data}.  Comparemos las tasas de eventos por hora del día de los eventos, por encima de $1\,$EeV y $2\,$EeV con las tasas para el conjunto  A. Por encima de $1\,$EeV, se aprecia un remanente de la modulación del clima diaria comparado con la tasa para $2\,$EeV. Esto se debe a que el arreglo principal tiene eficiencia para energía mayores a $3\,$EeV, comentado anteriormente. Por encima de 2\,EeV, la modulación en la tasa ya no es apreciable. 
 
 
-   Existe una modulación remanente en la tasa de eventos como se aprecia en las Figs.\,\ref{fig:rate_day_ICRC_19_05_18} y \ref{fig:rate_day_ICRC_19_05_18_2EeV}. Esto se debe que la señal es mayor que la esperada como consecuencia de las condiciones atmosféricas en el momento del evento, por lo tanto la eficiencia del disparo ante este evento también es mayor. De esta forma la eficiencia tiene una dependencia con las condiciones atmosféricas.
-
+   Existe una modulación remanente en la tasa de eventos como se aprecia en la Fig.\,\ref{fig:rate_new_18} y \ref{fig:rate_new_18_2EeV}. Esto se debe que la señal es mayor que la esperada como consecuencia de las condiciones atmosféricas en el momento del evento, por lo tanto la eficiencia del disparo ante este evento también es mayor. De esta forma la eficiencia tiene una dependencia con las condiciones atmosféricas.
 %====|====|	2005-2019	rate day over 1 EeV
 %====|====|	2005-2019	rate hour of the day	1 EeV
    \begin{figure}[H]
        \centering
-       \begin{subfigure}[b]{0.9\textwidth}
-       \includegraphics[width=\textwidth]{Graphs/rate_dayly/herald_above_1EeV_rate_day.pdf}
-       \caption{Energía mayor a $1\,$EeV}
-       \label{fig:rate_day_ICRC_19_05_18}
-       \end{subfigure}\\
-       % \hspace{\fill}
-       \begin{subfigure}[b]{0.9\textwidth}
-       \includegraphics[width=\textwidth]{Graphs/rate_dayly/herald_above_2EeV_rate_day.pdf}
-       \caption{ Energía mayor a $2\,$EeV}
-       \label{fig:rate_2015_ICRC_19_05_18}
-       \end{subfigure}%
+      \includegraphics[width=0.8\textwidth]{Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf}
        \caption{Tasa de eventos promedio por cada día entre los años 2005 hasta 2018 del conjunto de datos presentado en la ICRC 2019. Se muestran las tasas para dos cortes en energía, mayor a $1\,$EeV y mayor a $2\,$EeV}\label{fig:rate_new_18}
    \end{figure}
+
+
+
    \begin{figure}[H]
        \centering
-       \begin{subfigure}[b]{0.9\textwidth}
-       \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/herald_above_1EeV_hour_of_the_day.pdf}
-       \caption{Energía mayor a $1\,$EeV}
-       \label{fig:rate_day_ICRC_19_05_18_2EeV}
-       \end{subfigure}\\
-       % \hspace{\fill}
-       \centering
-       \begin{subfigure}[b]{0.9\textwidth}
-       \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/herald_above_2EeV_hour_of_the_day.pdf}
-       \caption{Energía mayor a $2\,$EeV}
-       \label{fig:rate_2015_ICRC_19_05_18_2EeV}
-       \end{subfigure}%
+      \includegraphics[width=0.8\textwidth]{Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf}
        \caption{Tasas de eventos  por hora del día por unidad de área entre los años 2005 hasta 2015 del conjunto de datos presentado en la ICRC 2019.  Se muestran las tasas para dos cortes en energía, mayor a $1\,$EeV y mayor a $2\,$EeV}\label{fig:rate_new_18_2EeV}
    \end{figure}
 
 
-
 %====|==>ICRC 2019 S$_{38}$-Sin Corrección
 \subsection{Datos presentados en la ICRC 2019 usando $S_{38}$ sin corregir por el clima} \label{sin_corregir_s38}
+
 
 Además de tener más estadística de los eventos registrados, durante el periodo 2016-2018 también se recabaron datos sobre el clima en el observatorio. En la modulación del clima estudiada con el conjunto A, se  realiza un corte de la energía sin corregir. En esta sección se realiza el análisis de la modulación mediante un  corte sobre la señal medida por el arreglo principal. En el conjunto de datos de la ICRC 2019, es posible acceder al valor de S(1000) sin corregir por el trabajo \cite{aab2017impact}, por lo que uno puede obtener el valor de S$_{38}$ sin corregir mediante la expresión
 \begin{equation}
 S_{38} = \frac{S(1000)}{S(1000)_w}S_{38,w}
 \label{eq:s38_w}
 \end{equation}
-donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por clima. Estas variables están listadas en el conjunto de datos presentado en la ICRC 2019. Dado que los trabajos anteriores se basaron en la energía para hacer el corte de los eventos, se realizó el corte con la señal de $S_{38}\ge 5.37\,$VEM correspondiente a 1\,EeV aproximadamente. Las características de este conjunto de datos están resumidos en la Tabla\,\ref{tabla:caracteristicas_ICRC_2019_S38}.
+donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por clima. Estas variables están listadas en el conjunto de datos presentado en la ICRC 2019. 
+
+Dado que los trabajos anteriores se basaron en la energía para hacer el corte de los eventos, se realizó el corte con la señal de $S_{38}\ge 5.37\,$VEM correspondiente a 1\,EeV aproximadamente. Las características de este conjunto de datos están resumidos en la Tabla\,\ref{tabla:caracteristicas_ICRC_2019_S38}.
 %====|====|	Tabla de eventos exposure
    \begin{table}[H]
        \centering
@@ -109,13 +92,13 @@ donde las variables $S(1000)_w$ y $S_{38,w}$ indican los valores corregidos por 
 
    \begin{figure}[H]
     \centering
-       \begin{subfigure}[b]{0.9\textwidth}
+       \begin{subfigure}[b]{0.85\textwidth}
        \includegraphics[width=\textwidth]{Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf}
        \caption{Tasa eventos por cada día por unidad de área}
        \label{fig:rate_day_ICRC_19_S38_05_18}
        \end{subfigure}\\%
     %    \hspace{\fill}
-       \begin{subfigure}[b]{0.9\textwidth}
+       \begin{subfigure}[b]{0.85\textwidth}
        \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf}
        \caption{Tasa de eventos promedio por hora del día}
        \label{fig:rate_2015_ICRC_19_S38_05_18}
@@ -131,13 +114,13 @@ En esta sección se clasificó los eventos mediante el valor de $sin^2\theta$ y 
 %====|====|====| ap, arho, brho 2005-2015  2005-2019 vs JINST over 1 EeV
        \begin{figure}[H]
         \centering
-           \begin{subfigure}[b]{0.75\textwidth}
+           \begin{subfigure}[b]{0.73\textwidth}
            \includegraphics[width=\linewidth]{Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf}
            \caption{Parámetro $a_P$ }
            \label{fig:ap_2019_S38}
            \end{subfigure}\\%
         %    \hspace{\fill}
-           \begin{subfigure}[b]{0.75\textwidth}
+           \begin{subfigure}[b]{0.73\textwidth}
            \includegraphics[width=\linewidth]{Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf}
            \caption{Parámetro $a_{\rho}$ }
            \label{fig:arho_2019_S38}
@@ -145,7 +128,7 @@ En esta sección se clasificó los eventos mediante el valor de $sin^2\theta$ y 
         %    \hspace{\fill}
            \begin{subfigure}[b]{\textwidth}
            \centering
-           \includegraphics[width=0.75\linewidth]{Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf}
+           \includegraphics[width=0.73\linewidth]{Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf}
            \caption{Parámetro  $b_{\rho}$	 }
            \label{fig:brho_2019_S38}
            \end{subfigure}%
@@ -184,6 +167,9 @@ En esta sección se clasificó los eventos mediante el valor de $sin^2\theta$ y 
 Se realizó la corrección del valor de S$_{38}$ con los parámetros del clima presentados en la Tabla.\,\ref{tabla:cuadratica_ICRC_2019_S38} sobre el conjunto de datos de la ICRC 2019. Con este valor corregido se calculó la energía corregida mediante la Ec.\,\ref{eq:s38_energy}. Para una energía mayor de $2\,$EeV, se espera que los efectos del clima sean despreciables tras la corrección, porque se acerca a la eficiencia máxima de los detectores de superficie. %El método de CIC está determinado usando los eventos donde el arreglo principal tiene un eficiencia máxima, evitando la susceptibilidad del disparo de los detectores.
 
 En la Fig.\,\ref{final} se comparan las tasas de eventos por hora del día para el conjunto de datos de la ICRC 2019 y para la corrección de energía realizada en este trabajo. En la figura superior se muestra la tasa de eventos por hora del día del conjunto de datos de la sección \ref{conjuntoB}, comparada con la tasa de eventos para la energía corregida por este trabajo, presentada en la figura inferior. En ambos casos, la tasa tras la corrección queda plana, siendo despreciable el error sistemático de la modulación del clima.
+
+Cabe aclarar que para la corrección de la energía para este trabajo, no se consideraron las posibles modulaciones de los valores del CIC o del posible cambio en los coeficientes de la Ec.\ref{eq:s38_energy}. Debido a que estos coeficientes son calibrados con eventos híbridos que son detectados durante la noche, donde las condiciones atmosféricas difieren de las condiciones promedios. Por ejemplo, en el caso de la densidad, durante la noche es aproximadamente $2\%$ mayor que el promedio.
+
    \begin{figure}[H]
        \centering
            \begin{subfigure}[b]{0.8\textwidth}
@@ -197,4 +183,3 @@ En la Fig.\,\ref{final} se comparan las tasas de eventos por hora del día para 
            \end{subfigure}%
            \caption{Tasa de eventos por día para eventos de energía mayor a 2\,EeV para los datos de ICRC 2019 y la tasa de eventos obtenida con la reconstrucción de energía en este trabajo comparados en los periodos estudiados}\label{final}
    \end{figure}
-Cabe aclarar que para la corrección de la energía para este trabajo, no se consideraron las posibles modulaciones de los valores del CIC o del posible cambio en los coeficientes de la Ec.\ref{eq:s38_energy}. Debido a que estos coeficientes son calibrados con eventos híbridos que son detectados durante la noche, donde las condiciones atmosféricas difieren de las condiciones promedios. Por ejemplo, en el caso de la densidad, durante la noche es aproximadamente $2\%$ mayor que el promedio.

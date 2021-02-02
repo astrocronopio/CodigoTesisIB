@@ -15,6 +15,9 @@ Una característica esencial del Observatorio es la capacidad de registrar lluvi
 Los análisis presentados en este trabajo fueron realizados con los eventos obtenidos por $ 1660$ detectores Cherenkov, dispuestos sobre de $\sim 3000\,\text{km}^2$ a $1500\,$m entre sí en forma triangular. Un conjunto de 7 detectores adyacentes, es decir una en el medio y 6 en los lados, forman una celda hexagonal o hexágono. Esta disposición de tanques se menciona como \textit{arreglo principal} y se muestra en la Fig.\,\ref{fig:auger_sd}. El conjunto del tanque y la electrónica de detección  se menciona durante este trabajo como \textit{Surface Detector} o \textit{SD}. Además, el Observatorio tiene otro arreglo de SDs separados por $750\,$m llamado \emph{Infill}.
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Los FDs están colocados en cuatro edificios alrededor del arreglo principal: Coihueco, Loma Amarilla, Los Morados y Los Leones indicados en el mapa en la Fig.\,\ref{fig:auger_sd}. Cada edificio contiene 6 FDs, donde cada uno tiene un campo de visión de $30^o\times30^o$, cubriendo así cada uno $180^o$ en la horizontal. Cerca del edificio de Coihueco se encuentran los 3 telescopios del HEAT, los mismos tienen un campo de visión de $60^o$ en el cenit para detectar la máxima profundidad atmosférica de RCs de menor energía.
+
+%%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{auger_sd.png}
@@ -23,8 +26,7 @@ Los análisis presentados en este trabajo fueron realizados con los eventos obte
 \end{figure}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Los FDs están colocados en cuatro edificios alrededor del arreglo principal: Coihueco, Loma Amarilla, Los Morados y Los Leones indicados en el mapa en la Fig.\,\ref{fig:auger_sd}. Cada edificio contiene 6 FDs, donde cada uno tiene un campo de visión de $30^o\times30^o$, cubriendo así cada uno $180^o$ en la horizontal. Cerca del edificio de Coihueco se encuentran los 3 telescopios del HEAT, los mismos tienen un campo de visión de $60^o$ en el cenit para detectar la máxima profundidad atmosférica de RCs de menor energía.
+
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 El área del observatorio es generalmente plana, la altitud de los detectores varía entre $1340\,$m y $1610\,$m, con una altitud media de $\sim1400\,$m. Estos detectores están distribuidos entre las latitudes $35.0^o$ S y $35.3^o$ S y entre las longitudes $69.0^o$ W y $69.4^o$ W.
@@ -50,7 +52,7 @@ El detector de fluorescencia (FD) y los telescopios del HEAT consisten en 27 tel
 	\label{fig:FD}
     \end{subfigure}%
     \caption{Detectores empleados por el Observatorio Pierre Auger para la detección de rayos cósmicos.}
-	\end{figure}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 El FD mide los fotones ultravioletas producidos por la componente electromagnética de la EAS. Mientras se produce la lluvia en la atmósfera, algunos átomos de nitrógeno se excitan y se desexcitan emitiendo fotones. El uso del FD para detectar estos fotones es solo posible en noches sin nubes y sin luna. La posible atenuación de los fotones en la atmósfera es tenida en cuenta para la estimación de la energía, ya que se basa en la cantidad de fotones detectados. Otro factor a tener en cuenta es la presencia de aerosoles, como humo o polvo, esto se realiza midiendo la profundidad atmosférica óptica vertical \emph{Vertical Atmosferic Optical Depth (VAOD)}. Estas mediciones son realizadas por los láseres de las instalaciones de Central Laser Facility (CLF) y de eXtreme Laser Facility (XLF), cuyas ubicaciones se muestra en la Fig.\ref{fig:auger_sd}.
 
@@ -98,6 +100,27 @@ Para una energía dada, el valor de S(1000) disminuye para $\theta$ crecientes d
 		\caption{Ejemplo de la señal dejada por un evento de ($104\pm11$)\,EeV de energía con un ángulo cenital de ($25.1\pm0.1 ^o$) sobre el arreglo principal SD 1500 m. La flecha indica la dirección de arribo de la lluvia. Los colores de los círculos representan el tiempo de arribo de la lluvia, los primeros en amarillo y los últimos en rojo. En área de los círculos pintados es proporcional al logaritmo de la señal. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}. } 	\label{fig:evento_sd}
 	\end{small}
 \end{figure}
+\begin{figure}[H]
+	\begin{small}
+		\begin{center}
+			\includegraphics[width=0.65\textwidth]{evento_s1000.png}
+		\end{center}
+		\caption{Dependencia de la señal con la distancia del núcleo de la lluvia de un evento de ($104\pm11$)\,EeV de energía con un ángulo cenital de ($25.1\pm0.1 ^o$). La función ajustada es la función de distribución lateral (LDF). Del ajuste se obtiene el valor de S(1000). Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}. } 	\label{fig:evento_S1000}
+	\end{small}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[t]{0.46\textwidth}
+		\includegraphics[width=\textwidth]{s1000_theta.png}
+		\caption{Curva de atenuación descrita por un polinomio de orden 3. En este ejemplo se deducen los coeficientes de la dependencia del S(1000) a S$_{38}\approx 50\,$VEM que corresponde a un energía de $10.5\,$EeV. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}.} 	\label{fig:s1000_theta}    \end{subfigure}%
+    \hspace{\fill}
+    \begin{subfigure}[t]{0.51\textwidth}
+		\includegraphics[width=\textwidth]{efd_s38_v2.jpg}
+		\caption{Correlación entre el valor S$_{38}$ y la energía $E_{FD}$ medida por el FD. Con estos datos se ajustan los parámetros A y B que relacionan la señal y la energía.  Figura de la Colaboración Pierre Auger \cite{tobepublished}.} 	\label{fig:efd_s38}
+    \end{subfigure}%
+    \caption{Detectores empleados por el Observatorio Pierre Auger para la detección de rayos cósmicos.}
+\end{figure}
 
 
 Los eventos con $\theta<60^o$  que fueron detectados por el SD y por el FD son utilizados para relacionar el tamaño de la lluvia con la energía  E$_{FD}$ medida por calorimetría por el FD.  La correlación entre S$_{38}$ y E$_{FD}$ se calcula mediante el método de máxima verosimilitud, que considera la evolución de las incertezas con la energía. La relación entre S$_{38}$ y $E_{FD}$ se describe mediante un función de potencia como se muestra en la Ec.\,\ref{eq:s38_energy}
@@ -108,28 +131,18 @@ Los eventos con $\theta<60^o$  que fueron detectados por el SD y por el FD son u
 donde los parámetros obtenidos son $A=(1.86\pm0.03)\times 10^{17}\,$eV y $B=(1.031\pm0.004)$  \cite{tobepublished}. En la Fig.\,\ref{fig:efd_s38} se observa el ajuste y la relación entre  S$_{38}$ y E$_{FD}$
 
 
-\begin{figure}[H]
-	\begin{small}
-		\begin{center}
-			\includegraphics[width=0.65\textwidth]{evento_s1000.png}
-		\end{center}
-		\caption{Dependencia de la señal con la distancia del núcleo de la lluvia de un evento de ($104\pm11$)\,EeV de energía con un ángulo cenital de ($25.1\pm0.1 ^o$). La función ajustada es la función de distribución lateral (LDF). Del ajuste se obtiene el valor de S(1000). Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}. } 	\label{fig:evento_S1000}
-	\end{small}
-\end{figure}
 
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{s1000_theta.png}
+% 	\caption{Curva de atenuación descrita por un polinomio de orden 3. En este ejemplo se deducen los coeficientes de la dependencia del S(1000) a S$_{38}\approx 50\,$VEM que corresponde a un energía de $10.5\,$EeV. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}.} 	\label{fig:s1000_theta}
+% \end{figure}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{s1000_theta.png}
-	\caption{Curva de atenuación descrita por un polinomio de orden 3. En este ejemplo se deducen los coeficientes de la dependencia del S(1000) a S$_{38}\approx 50\,$VEM que corresponde a un energía de $10.5\,$EeV. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}.} 	\label{fig:s1000_theta}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.67\textwidth]{efd_s38_v2.jpg}
-	\caption{Correlación entre el valor S$_{38}$ y la energía $E_{FD}$ medida por el FD. Con estos datos se ajustan los parámetros A y B que relacionan la señal y la energía.  Figura de la Colaboración Pierre Auger \cite{tobepublished}.} 	\label{fig:efd_s38}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=0.6\textwidth]{efd_s38_v2.jpg}
+% 	\caption{Correlación entre el valor S$_{38}$ y la energía $E_{FD}$ medida por el FD. Con estos datos se ajustan los parámetros A y B que relacionan la señal y la energía.  Figura de la Colaboración Pierre Auger \cite{tobepublished}.} 	\label{fig:efd_s38}
+% \end{figure}
 
 
 \subsection{Monitoreo del clima}\label{seccion:clima}

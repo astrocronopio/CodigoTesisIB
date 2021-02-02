@@ -96,6 +96,20 @@ Aab, A., Abreu, P., Aglietta, M., Albury, J.~M., Allekotte, I., Almela, A.,
 \newblock Plans for a proposal to upgrade the {Pierre Auger Observatory}.
 \newblock Pierre Auger Collaboration, 2013.
 
+\bibitem{ToTd}
+Billoir, P.
+\newblock Proposition to improve the local trigger of surface detectorfor low
+  energy showers {GAP 2009-179}.
+\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2009.
+
+\bibitem{MoPS}
+Billoir, P.
+\newblock New proposal to improve the local trigger of the surfacedetector {GAP
+  2011-089}.
+\newblock \emph{Artículo interno de la colaboración Pierre Auger}, 2011.
+\newblock
+  \urlprefix\url{https://auger.ikp.kit.edu/admin/GAP_Notes/GAP2011/GAP2011_089.pdf}.
+
 \bibitem{triggers_ref}
 Justin M.~Albury, B. R.~D., Jose A.~Bellido.
 \newblock Exploring the energy threshold for full trigger efficiency of the
