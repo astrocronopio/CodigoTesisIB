@@ -17,45 +17,45 @@ Warning--empty year in isabel
 Warning--empty author in codigo
 Warning--empty journal in codigo
 Warning--empty year in codigo
-You've used 28 entries,
+You've used 29 entries,
             2634 wiz_defined-function locations,
-            1195 strings with 22456 characters,
-and the built_in function-call counts, 9750 in all, are:
-= -- 610
-> -- 324
+            1199 strings with 22684 characters,
+and the built_in function-call counts, 9964 in all, are:
+= -- 623
+> -- 328
 < -- 0
-+ -- 164
-- -- 80
-* -- 584
-:= -- 1095
-add.period$ -- 83
-call.type$ -- 28
-change.case$ -- 26
++ -- 166
+- -- 81
+* -- 589
+:= -- 1123
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 1004
-empty$ -- 970
-format.name$ -- 93
-if$ -- 2074
+cite$ -- 42
+duplicate$ -- 1031
+empty$ -- 994
+format.name$ -- 94
+if$ -- 2120
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 287
-newline$ -- 144
-num.names$ -- 24
-pop$ -- 407
+int.to.str$ -- 29
+missing$ -- 294
+newline$ -- 149
+num.names$ -- 25
+pop$ -- 420
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 227
+skip$ -- 232
 stack$ -- 0
 substring$ -- 395
-swap$ -- 667
+swap$ -- 680
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 52
-width$ -- 30
-write$ -- 299
+while$ -- 53
+width$ -- 31
+write$ -- 309
 (There were 13 warnings)

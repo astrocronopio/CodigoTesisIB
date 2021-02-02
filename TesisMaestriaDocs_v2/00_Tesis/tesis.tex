@@ -39,6 +39,8 @@
 }
 \makeatother
 
+\usepackage{notoccite}
+
 \usepackage{enumitem}    
 \setlist[enumerate]{
     before=\let\item\myItem%,       % use \myItem in enumerate
@@ -118,24 +120,25 @@ ICRC: 		& Conferencia Internacional de Rayos Cósmicos \\
 EW:			& Método East - West\\
 Ray:		& Método de Rayleigh\\
 msnm:		& Metros Sobre el Nivel del Mar\\
+ToTd		& \\
+MoPS		& \\
 \end{tabular}
                      %Abreviaturas
 \end{abreviaturas}
 
 	\tableofcontents                %Indice
 	\listoffigures                  %Figuras
-	%\listoftables                   %Tablas
+	\listoftables                   %Tablas
 
-	% \input{../Resumen/resumen.tex}
+	\input{../Resumen/resumen.tex}
 
 \end{preliminary}
 
-%Podemos usar cualquiera de los dos comandos: \input o \include para incluir el texto
- \chapter{(Rewrite)Introducción}
+\chapter{Introducción}
 	\graphicspath{{../01_Introduccion/}}
 	\input{../01_Introduccion/intro_v3.tex}
   
- \chapter{(Rewrite)El Observatorio Pierre Auger}
+\chapter{El Observatorio Pierre Auger}
 	\graphicspath{{../02_IntroduccionAuger/}}
 	\input{../02_IntroduccionAuger/auger_v2.tex}
 
@@ -174,11 +177,13 @@ msnm:		& Metros Sobre el Nivel del Mar\\
 	\graphicspath{{../EW/}}	
 	\input{../EW/report_EW_results_Ray}
 
-\chapter{(To do)Conclusiones}
+\chapter{Conclusiones}
+\graphicspath{{../Conclusiones/}}	
 	\input{../Conclusiones/conclusiones.tex}
 
 \appendix
-	\chapter{(Write)Coordenadas celestes}
+	\chapter{Coordenadas celestes}
+	\graphicspath{{../Apendice/}}	
 	\input{../Apendice/apend_v2.tex}
 
 \begin{biblio}

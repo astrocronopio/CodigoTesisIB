@@ -6,7 +6,7 @@ mpl.rcParams.update({
 	'figure.figsize': [12, 8],
 	'figure.autolayout': True,
 	'font.family': 'serif',
-	'font.serif': ['STIXGeneral']})
+	'font.sans-serif': ['Palatino']})
 
 import numpy as np
 
@@ -54,12 +54,12 @@ for i in range(len(vec)):
 for i in  range(len(vec_EW)):
 	# plt.scatter(vec_mid[i], vec_EW[i],      c='blue', alpha=0.6, label="$d_\perp$")
 	# plt.scatter(vec_mid[i], vec_d99_EW[i],  c='red',alpha=0.6, label="$d_{\perp,99}$")
-	plt.annotate("$_{"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
+	plt.annotate("$_{d_\perp:"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
               (vec_mid[i], 100*vec_EW[i]), 
 			  xytext=(1.05*vec_mid[i], 100*vec_EW[i]), ha="left", va="center",
      			arrowprops=arrow_args)#, bbox=bbox_args,)
 
-	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{"+str(ref_EW[i])+"}$", (vec_mid[i], 100*ref_EW[i]),  
+	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{d_\perp:"+str(ref_EW[i])+"}$", (vec_mid[i], 100*ref_EW[i]),  
 			xytext=(0.95*vec_mid[i], 100*ref_EW[i]), ha="right", va="center", arrowprops=arrow_args)
 			#, bbox=bbox_args)
  
@@ -99,7 +99,7 @@ for i in range(len(vec)):
     plt.axvline(x=vec[i], ls=':')
     
 for i in  range(len(vec_EW)):
-	plt.annotate("$_{"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
+	plt.annotate("$_{d_\perp:"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
               (vec_mid[i], vec_EW[i]/vec_d99_EW[i]), 
 			  xytext=(1.05*vec_mid[i], vec_EW[i]/vec_d99_EW[i]),  ha="left", va="center",arrowprops=arrow_args
      			)#, bbox=bbox_args,arrowprops=arrow_args)
@@ -108,7 +108,7 @@ for i in  range(len(vec_EW)):
               (vec_mid[i], vec_d99_EW[i]*.99/vec_d99_EW[i]), ha="center",va="top"
               )#, bbox=dict(boxstyle="square", fc="1.0"))
 
-	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{"+str(ref_EW[i])+"}$", (vec_mid[i], ref_EW[i]/ref_d99_EW[i]),  
+	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{d_\perp:"+str(ref_EW[i])+"}$", (vec_mid[i], ref_EW[i]/ref_d99_EW[i]),  
 		xytext=(0.95*vec_mid[i], ref_EW[i]/ref_d99_EW[i]), ha="right", va="center", arrowprops=arrow_args)
 
 	plt.plot([vec[i], vec[i+1]], [vec_d99_EW[i],vec_d99_EW[i]]/vec_d99_EW[i], c='red',alpha=0.6)
@@ -134,12 +134,12 @@ for i in range(len(vec)):
 for i in  range(len(vec_EW)):
 	# plt.scatter(vec_mid[i], vec_EW[i],      c='blue', alpha=0.6, label="$d_\perp$")
 	# plt.scatter(vec_mid[i], vec_d99_EW[i],  c='red',alpha=0.6, label="$d_{\perp,99}$")
-	plt.annotate("$_{"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
+	plt.annotate("$_{d_\perp:"+str(vec_EW[i])+"}$\n$^{P:"+str(vec_prob[i])+"}$", 
               (vec_mid[i], vec_EW[i]/vec_sigma[i]), 
 			  xytext=(1.05*vec_mid[i], vec_EW[i]/vec_sigma[i]), ha="left", va="center",
      			arrowprops=arrow_args)#, bbox=bbox_args,)
 
-	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{"+str(ref_EW[i])+"}$", (vec_mid[i], ref_EW[i]/ref_sigma[i]),  
+	plt.annotate("$_{P:"+str(ref_prob[i])+"}$\n$^{d_\perp:"+str(ref_EW[i])+"}$", (vec_mid[i], ref_EW[i]/ref_sigma[i]),  
 			xytext=(0.95*vec_mid[i], ref_EW[i]/ref_sigma[i]), ha="right", va="center", arrowprops=arrow_args)
 
 
@@ -154,7 +154,7 @@ plt.scatter(vec_mid, ref_d99_EW/ref_sigma, marker='s', s=220,  c='orange',alpha=
 
 
 plt.xscale('log', base=2)
-plt.legend(loc='lower center', ncol=2, columnspacing=0.1, fontsize='small')
+plt.legend(loc='lower center', ncol=2, columnspacing=0.1, fontsize='14')
 
 
 plt.show()

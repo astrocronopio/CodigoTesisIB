@@ -58,7 +58,8 @@ def plot_fit(x,y,y_err,
 
 
 # file_params = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_all_sin2.dat"
-file_params = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_all_sin2.dat"
+# file_params = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_all_sin2.dat"
+file_params="../WeatherCode/wCorrections/Files_AllTriggers_S38/0EeV_all_sin2.dat"
 
 r1,ap, ap_err, arho, arho_err, brho, brho_err,r = np.loadtxt(file_params,unpack=True)
 ap_hline, arho_hline, brho_hline=-0.0032,-1.71,-0.51

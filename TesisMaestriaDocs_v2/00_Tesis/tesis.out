@@ -1,81 +1,83 @@
 \BOOKMARK [0][-]{section*.1}{\315ndice de s\355mbolos}{}% 1
 \BOOKMARK [0][-]{section*.3}{\315ndice de contenidos}{}% 2
 \BOOKMARK [0][-]{section*.5}{\315ndice de figuras}{}% 3
-\BOOKMARK [0][-]{chapter.1}{\(Rewrite\)Introducci\363n}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Rayos c\363smicos}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Espectro de energ\355as}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.3}{Lluvias atmosf\351ricas extendidas}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{Descripci\363n de una anisotrop\355a dipolar}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.4.1}{Representaci\363n en coordenadas locales de una anisotrop\355a dipolar}{section.1.4}% 9
-\BOOKMARK [0][-]{chapter.2}{\(Rewrite\)El Observatorio Pierre Auger}{}% 10
-\BOOKMARK [1][-]{section.2.1}{Introducci\363n}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Detecci\363n de Rayos C\363smicos}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{El Detector de Superficie y el Detector de Fluorescencia}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Dise\361o h\355brido}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Reconstrucci\363n de eventos de los detectores de superficie}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{Selecci\363n de eventos}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Reconstrucci\363n de las lluvias}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.3}{Calibraci\363n de la energ\355a}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.4}{Monitoreo del clima}{section.2.3}% 19
-\BOOKMARK [1][-]{section.2.4}{Algoritmos de disparo del detector de superficie}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.4.1}{Disparo Est\341ndar}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.2}{Todos los Disparos}{section.2.4}% 22
-\BOOKMARK [1][-]{section.2.5}{Acerca de los eventos utilizados en este trabajo}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.5.1}{Acerca del registro de hex\341gonos}{section.2.5}% 24
-\BOOKMARK [0][-]{chapter.3}{Modulaci\363n del clima sobre los datos del Observatorio Pierre Auger}{}% 25
-\BOOKMARK [1][-]{section.3.1}{La f\355sica detr\341s de la modulaci\363n del clima}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Trabajos anteriores}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.2}{Efectos de la atm\363sfera sobre los rayos c\363smicos}{section.3.1}% 28
-\BOOKMARK [2][-]{subsection.3.1.3}{Descripci\363n del modulaci\363n en la se\361al medida}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.4}{Estimador del ajuste}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.5}{Condiciones clim\341ticas y \341rea activa del observatorio Pierre Auger}{section.3.1}% 31
-\BOOKMARK [1][-]{section.3.2}{Eventos asociados al Disparo Est\341ndar en el rango 2004-2018}{chapter.3}% 32
-\BOOKMARK [2][-]{subsection.3.2.1}{Datos presentados en la ICRC 2015}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.2}{Datos presentados en la ICRC 2019}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.3}{Datos presentados en la ICRC 2019 usando S38 sin corregir por el clima}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.4}{Datos presentados en la ICRC 2019 usando la energ\355a reconstruida en este trabajo}{section.3.2}% 36
-\BOOKMARK [1][-]{section.3.3}{Eventos asociados a Todos los Disparos en el rango 2014-2020 }{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.1}{Distribuci\363n de los eventos en funci\363n de 2}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.2}{Tasa de eventos de Todos los Disparos por encima de 1 EeV}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.3}{Par\341metros del clima para Todos los Disparos usando S38}{section.3.3}% 40
-\BOOKMARK [0][-]{chapter.4}{M\351todo Rayleigh}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Frecuencias de referencia}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Variaciones relativas de los hex\341gonos}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.2.1}{C\341lculo de las variaciones relativas de los h\351xagonos}{section.4.2}% 44
-\BOOKMARK [1][-]{section.4.3}{Descripci\363n del m\351todo Rayleigh}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.3.1}{Caso dipolar}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.2}{An\341lisis para frecuencias arbitrarias}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.3}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.4.3}% 48
-\BOOKMARK [0][-]{chapter.5}{M\351todo East-West}{}% 49
-\BOOKMARK [1][-]{section.5.1}{Descripci\363n formal del m\351todo East-West}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.1.1}{Flujo de eventos del Este y Oeste}{section.5.1}% 51
-\BOOKMARK [2][-]{subsection.5.1.2}{Aproximaciones del m\351todo}{section.5.1}% 52
-\BOOKMARK [2][-]{subsection.5.1.3}{C\341lculo de la diferencia de flujos}{section.5.1}% 53
-\BOOKMARK [1][-]{section.5.2}{Estimaci\363n de la componente ecuatorial del dipolo mediante el an\341lisis del primer arm\363nico}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.2.1}{C\341lculo de la amplitud del dipolo para los eventos de Todos los Disparos}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.2}{C\341lculo para frecuencias arbitrarias}{section.5.2}% 56
-\BOOKMARK [1][-]{section.5.3}{Verificaci\363n del c\363digo}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.3.1}{Comparaci\363n con el trabajo de la Colaboraci\363n Pierre Auger}{section.5.3}% 58
-\BOOKMARK [2][-]{subsection.5.3.2}{Comparando con la variable \040con la ascensi\363n recta del cenit }{section.5.3}% 59
-\BOOKMARK [0][-]{chapter.6}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 60
-\BOOKMARK [1][-]{section.6.1}{Distribuci\363n de probabilidad de la amplitud}{chapter.6}% 61
-\BOOKMARK [2][-]{subsection.6.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.6.1}% 62
-\BOOKMARK [1][-]{section.6.2}{Distribuci\363n de probabilidad de la fase del dipolo}{chapter.6}% 63
-\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo Rayleigh}{}% 64
-\BOOKMARK [1][-]{section.7.1}{Caracter\355sticas del conjunto de datos}{chapter.7}% 65
-\BOOKMARK [1][-]{section.7.2}{Pesos de los eventos de Todos los Disparos para frecuencias de referencia}{chapter.7}% 66
-\BOOKMARK [1][-]{section.7.3}{An\341lisis de la modulaci\363n en ascensi\363n recta para el primer arm\363nico}{chapter.7}% 67
-\BOOKMARK [2][-]{subsection.7.3.1}{Tasa de eventos por ascensi\363n recta}{section.7.3}% 68
-\BOOKMARK [2][-]{subsection.7.3.2}{An\341lisis de segundo orden en Fourier}{section.7.3}% 69
-\BOOKMARK [0][-]{chapter.8}{Resultados del m\351todo East - West}{}% 70
-\BOOKMARK [1][-]{section.8.1}{Resultados en distintos rangos de energ\355a}{chapter.8}% 71
-\BOOKMARK [2][-]{subsection.8.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.8.1}% 72
-\BOOKMARK [2][-]{subsection.8.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.8.1}% 73
-\BOOKMARK [2][-]{subsection.8.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.8.1}% 74
-\BOOKMARK [1][-]{section.8.2}{An\341lisis de los resultados}{chapter.8}% 75
-\BOOKMARK [0][-]{chapter.9}{\(To do\)Conclusiones}{}% 76
-\BOOKMARK [0][-]{appendix.Alph1}{\(Write\)Coordenadas celestes}{}% 77
-\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 78
-\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 79
-\BOOKMARK [2][-]{subsection.Alph1.2.1}{Relaci\363n entre las coordenadas locales y ecuatoriales}{section.Alph1.2}% 80
-\BOOKMARK [0][-]{section*.76}{Bibliograf\355a}{}% 81
+\BOOKMARK [0][-]{section*.7}{\315ndice de tablas}{}% 4
+\BOOKMARK [0][-]{section*.9}{Resumen}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Rayos c\363smicos}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Espectro de energ\355as}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Lluvias atmosf\351ricas extendidas}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Descripci\363n de una anisotrop\355a dipolar}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.4.1}{Representaci\363n en coordenadas locales de una anisotrop\355a dipolar}{section.1.4}% 11
+\BOOKMARK [0][-]{chapter.2}{El Observatorio Pierre Auger}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Introducci\363n}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Detecci\363n de Rayos C\363smicos}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{El Detector de Superficie y el Detector de Fluorescencia}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Dise\361o h\355brido}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Reconstrucci\363n de eventos de los detectores de superficie}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Selecci\363n de eventos}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Reconstrucci\363n de las lluvias}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Calibraci\363n de la energ\355a}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.4}{Monitoreo del clima}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Algoritmos de disparo del detector de superficie}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.4.1}{Disparo Est\341ndar}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.2}{Todos los Disparos}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{Acerca de los eventos utilizados en este trabajo}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.5.1}{Acerca del registro de hex\341gonos}{section.2.5}% 26
+\BOOKMARK [0][-]{chapter.3}{Modulaci\363n del clima sobre los datos del Observatorio Pierre Auger}{}% 27
+\BOOKMARK [1][-]{section.3.1}{La f\355sica detr\341s de la modulaci\363n del clima}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Trabajos anteriores}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Efectos de la atm\363sfera sobre los rayos c\363smicos}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.3}{Descripci\363n del modulaci\363n en la se\361al medida}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.4}{Estimador del ajuste}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.5}{Condiciones clim\341ticas y \341rea activa del Observatorio Pierre Auger}{section.3.1}% 33
+\BOOKMARK [1][-]{section.3.2}{Eventos asociados al Disparo Est\341ndar en el rango 2004-2018}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.2.1}{Datos presentados en la ICRC 2015}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.2}{Datos presentados en la ICRC 2019}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.3}{Datos presentados en la ICRC 2019 usando S38 sin corregir por el clima}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.4}{Datos presentados en la ICRC 2019 usando la energ\355a reconstru\355da en este trabajo}{section.3.2}% 38
+\BOOKMARK [1][-]{section.3.3}{Eventos asociados a Todos los Disparos en el rango 2014-2020 }{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{Distribuci\363n de los eventos en funci\363n de 2}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{Tasa de eventos de Todos los Disparos por encima de 1 EeV}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.3}{Par\341metros del clima para Todos los Disparos usando S38}{section.3.3}% 42
+\BOOKMARK [0][-]{chapter.4}{M\351todo Rayleigh}{}% 43
+\BOOKMARK [1][-]{section.4.1}{Frecuencias de referencia}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{Variaciones relativas de los hex\341gonos}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.2.1}{C\341lculo de las variaciones relativas de los h\351xagonos}{section.4.2}% 46
+\BOOKMARK [1][-]{section.4.3}{Descripci\363n del m\351todo Rayleigh}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.3.1}{Caso dipolar}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.2}{An\341lisis para frecuencias arbitrarias}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.3}{C\341lculo de Rayleigh en ascensi\363n recta para una frecuencia dada}{section.4.3}% 50
+\BOOKMARK [0][-]{chapter.5}{M\351todo East-West}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Descripci\363n formal del m\351todo East-West}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Flujo de eventos del Este y Oeste}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Aproximaciones del m\351todo}{section.5.1}% 54
+\BOOKMARK [2][-]{subsection.5.1.3}{C\341lculo de la diferencia de flujos}{section.5.1}% 55
+\BOOKMARK [1][-]{section.5.2}{Estimaci\363n de la componente ecuatorial del dipolo mediante el an\341lisis del primer arm\363nico}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.2.1}{C\341lculo de la amplitud del dipolo para los eventos de Todos los Disparos}{section.5.2}% 57
+\BOOKMARK [2][-]{subsection.5.2.2}{C\341lculo para frecuencias arbitrarias}{section.5.2}% 58
+\BOOKMARK [1][-]{section.5.3}{Verificaci\363n del c\363digo}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.3.1}{Comparaci\363n con el trabajo de la Colaboraci\363n Pierre Auger}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.2}{Comparando con la variable \040con la ascensi\363n recta del cenit }{section.5.3}% 61
+\BOOKMARK [0][-]{chapter.6}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 62
+\BOOKMARK [1][-]{section.6.1}{Distribuci\363n de probabilidad de la amplitud}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.6.1}% 64
+\BOOKMARK [1][-]{section.6.2}{Distribuci\363n de probabilidad de la fase del dipolo}{chapter.6}% 65
+\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo Rayleigh}{}% 66
+\BOOKMARK [1][-]{section.7.1}{Caracter\355sticas del conjunto de datos}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.2}{Pesos de los eventos de Todos los Disparos para frecuencias de referencia}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.3}{An\341lisis de la modulaci\363n en ascensi\363n recta para el primer arm\363nico}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.3.1}{Tasa de eventos por ascensi\363n recta}{section.7.3}% 70
+\BOOKMARK [2][-]{subsection.7.3.2}{An\341lisis de segundo orden en Fourier}{section.7.3}% 71
+\BOOKMARK [0][-]{chapter.8}{Resultados del m\351todo East - West}{}% 72
+\BOOKMARK [1][-]{section.8.1}{Resultados en distintos rangos de energ\355a}{chapter.8}% 73
+\BOOKMARK [2][-]{subsection.8.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.8.1}% 74
+\BOOKMARK [2][-]{subsection.8.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.8.1}% 75
+\BOOKMARK [2][-]{subsection.8.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.8.1}% 76
+\BOOKMARK [1][-]{section.8.2}{An\341lisis de los resultados}{chapter.8}% 77
+\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 78
+\BOOKMARK [0][-]{appendix.Alph1}{Coordenadas celestes}{}% 79
+\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 80
+\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 81
+\BOOKMARK [2][-]{subsection.Alph1.2.1}{Relaci\363n entre las coordenadas locales y ecuatoriales}{section.Alph1.2}% 82
+\BOOKMARK [0][-]{section*.82}{Bibliograf\355a}{}% 83

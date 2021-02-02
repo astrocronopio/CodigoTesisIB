@@ -6,7 +6,7 @@ mpl.rcParams.update({
 	'figure.figsize': [12, 10],
 	'figure.autolayout': True,
 	'font.family': 'serif',
-	'font.serif': ['STIXGeneral']})
+	'font.sans-serif': ['Palatino']})
 
 import numpy as np
 ##########################################################
@@ -16,8 +16,8 @@ cmap = plt.get_cmap('gnuplot',9)
 plt.grid(alpha=0.2)
 
 
-theta 	= np.array([357,0.1*280,280,258,320])
-width 	= np.array([35, 0.1*124,124,34,50])
+theta 	= np.array([357,354,280,258,320])
+width 	= np.array([35, 25,124,34,50])
 
 ref_theta 	= np.array([225,261,291])
 ref_width 	= np.array([64,43,100])
@@ -29,9 +29,9 @@ ref_theta 	= 2*np.pi*(1./360.)*ref_theta
 ref_width 	= 2*np.pi*(1./360.)*ref_width 	
 
 
-vec_EW=    np.array([0.0041 ,2.*0.0016  ,0.0016 , 0.0056 , 0.006])
-vec_sigma= np.array([0.0014 ,.2*0.0024  ,0.0024 , 0.0023 ,0.0038])
-vec_prob=  np.array([0.063	,2.*0.80    ,0.80	, 0.055	 , 0.26 	])
+vec_EW=    np.array([0.0041 ,0.0042  ,0.0016 , 0.0056 , 0.006])
+vec_sigma= np.array([0.0017 ,0.0017  ,0.0024 , 0.0023 ,0.0038])
+vec_prob=  np.array([0.063	,0.0    ,0.80	, 0.055	 , 0.26 	])
 # vec_d99_EW=np.array([0.0053  ,2.*0.008   ,0.008  , 0.011 , 0.016 ])
 
 ref_EW=    np.array([0.0060 , 0.0050 , 0.0018])

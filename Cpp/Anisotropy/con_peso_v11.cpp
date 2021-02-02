@@ -106,7 +106,7 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 
 			{			
 			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			//if (energy<energy_threshold) continue;
+			if (energy < 1|| energy >= 2) continue;
 			if(utc  < utci) continue;
 			if(Theta > 60) continue;
 			}
@@ -153,6 +153,9 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  rango2020;
 	
 */	
+	ray_given_freq(366.25,  in_file, out_file, utci, utcf, rayleigh);
 	ray_given_freq(365.25,  in_file, out_file, utci, utcf, rayleigh);
+	ray_given_freq(364.25,  in_file, out_file, utci, utcf, rayleigh);
+	
 	return 0;
 }

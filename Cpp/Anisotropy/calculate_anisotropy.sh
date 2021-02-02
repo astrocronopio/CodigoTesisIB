@@ -41,6 +41,6 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 #### Exec ####
 
 "./""$algoritmo"  "$file_input" "$file_output" "$(($rango2014))" "$(($rango2020))" "$energy_threshold"
-# gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
+gnuplot -e "filename='$file_output'; filecmp='$file_cmp'"  plotting_anisotropy.gp
 
 # exit

@@ -24,7 +24,7 @@ factor = 1/(2.566/2) # (Area)^[-1] ; (2.566/2)^[-1]
 def plot_medi(filepath):
 	utc, rate_measure, rate_estimate, hexagons = np.loadtxt(filepath, unpack=True)
 	# hexagons*=5
-	months = MonthLocator(range(1, 13), bymonthday=1, interval=24)
+	months = MonthLocator(range(1, 13), bymonthday=1, interval=12)
 	monthsFmt = DateFormatter("%b '%y")
 
 	fig, ax = plt.subplots()
@@ -77,7 +77,7 @@ def plot_medi_prediction(filepath):
 	# fig.autofmt_xdate()
 
 
-AllTriggers_1EeV_rate = "../WeatherCode/AllTriggers/2019/weather_analysis/AllTriggers_1EeV_rate.dat"
+AllTriggers_2EeV_rate = "../WeatherCode/wCorrections/Files_AllTriggers/2EeV_rate_day.dat"
 # Main_Array_1EeV_rate = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_rate_day.dat"
 # Main_Array_2EeV_rate = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_2EeV_rate_day.dat"
 
@@ -97,12 +97,12 @@ ICRC_2019_S38_over_1EeV_rate = "../WeatherCode/Main_Array/upto2019/Data/Herald_S
 # S38_above_0EeV_rate_day="../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_rate_day.dat"
 
 
-# plot_medi(AllTriggers_1EeV_rate)
+plot_medi(AllTriggers_2EeV_rate)
 # plot_medi(ICRC_2019_Array_1EeV_rate)
 # plot_medi(ICRC_2019_Array_2EeV_rate)
 
 
 # plot_medi_prediction(AllTriggers_S38_over_1EeV_rate)
-plot_medi_prediction(ICRC_2019_S38_over_1EeV_rate)
+# plot_medi_prediction(ICRC_2019_S38_over_1EeV_rate)
 
 plt.show()

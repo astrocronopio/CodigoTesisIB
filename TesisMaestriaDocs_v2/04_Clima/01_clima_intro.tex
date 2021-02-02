@@ -5,16 +5,16 @@
 La variación de las condiciones atmosféricas afecta las señales de las lluvias atmosféricas extendidas. Estas señales pueden ser detectadas en la superficie por un arreglo de detectores, como los que se encuentran en el Observatorio Pierre Auger. Estos efectos pueden inducir errores sistemáticos en la reconstrucción de energía de los rayos cósmicos. Se han realizado  trabajos anteriores sobre los efectos del clima sobre la señal detectada en el Observatorio Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric} . En este trabajo se estudiaron eventos con energía mayor a $1\,$EeV entre los años 2005-2018, extendiendo los periodos de tiempo estudiados anteriormente, además de estudiar la modulación del clima sobre el conjunto  de Todos los Disparos entre los años 2014-2020.
 
 
-El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, ya sea mediante la componente electromagnética o muónica de las EAS, se usan para determinan la posición del núcleo, la dirección de arribo del CR y la energía del primario. La señal de los eventos son ajustados mediante un función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
+El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, ya sea mediante la componente electromagnética o muónica de las EAS, se usan para determinar la posición del núcleo, la dirección de arribo del CR y la energía del primario. La señal de los eventos son ajustados mediante un función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
 %  Existieron cambios en los parámetros de la LDF y, por lo tanto, de valor de $S_{38}$, utilizado para estimar la energía del primario. 
 La conversión de $S(1000)$ a $S_{38}$ se realiza mediante el método de corte de intensidad constante (CIC) explicado anteriormente.% Además en la nueva reconstrucción el CIC es función de la energía.
 
 \subsection{Trabajos anteriores}
 
-Debido a la modulación del clima dependiente de las estaciones del año, es de esperarse encontrar una modulación diaria y anual sobre la cantidad de eventos observados por el arreglo principal. Ya que en días con menor densidad y presión atmosférica, los tanques detectan eventos por debajo del umbral con mayor facilidad. Este fenómeno fue estudiado por trabajos anteriores realizados por la colaboración Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric}. En particular, el trabajo \cite{aab2017impact} consideró el retraso que tienen los cambios de  la temperatura a distintas alturas sobre la superficie, como se muestra en la Fig\,\ref{fig:delay} que son datos del GDAS (Global Data Assimilation System) promediados por hora del día. Posteriormente esta corrección fue implementada en el proceso  de análisis de datos del observatorio.
+Debido a la modulación del clima dependiente de las estaciones del año, es de esperarse encontrar una modulación diaria y anual sobre la cantidad de eventos observados por el arreglo principal. Ya que en días con menor densidad y presión atmosférica, los tanques detectan eventos por debajo del umbral con mayor facilidad. Este fenómeno fue estudiado por trabajos anteriores realizados por la colaboración Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric}. En particular, el trabajo \cite{aab2017impact} consideró el retraso que tienen los cambios de  la temperatura a distintas alturas sobre la superficie, como se muestra en la Fig\,\ref{fig:delay} que son datos del GDAS (Global Data Assimilation System) promediados por hora del día. Posteriormente esta corrección fue implementada en el proceso  de análisis de datos del Observatorio.
 
 
-En la Fig.\,\ref{fig:delay} se observa que los ajustes realizados a las variaciones de la temperatura  según la hora del día con una función del tipo $T(t) = T_{media} + A\times \sin((t-t_d)\nicefrac{\pi}{12\,\text{hs}})$.  En la Tabla\,\ref{tabla:delay} se observa que entre 1400\,m (altitud del observatorio Pierre Auger) y la mayor altitud medida por el GDAS existe un corrimiento de $2.1\pm0.7\,$hs.
+En la Fig.\,\ref{fig:delay} se observa que los ajustes realizados a las variaciones de la temperatura  según la hora del día con una función del tipo $T(t) = T_{media} + A\times \sin((t-t_d)\nicefrac{\pi}{12\,\text{hs}})$.  En la Tabla\,\ref{tabla:delay} se observa que entre 1400\,m (altitud del Observatorio Pierre Auger) y la mayor altitud medida por el GDAS existe un corrimiento de $2.1\pm0.7\,$hs.
 
 Como la relación entre la densidad y la temperatura del aire están relacionadas mediante la expresión $\rho \approx \nicefrac{0.3484P}{T +273.16}\,$kgm$^{-3}$, con P en hPa y T en  $^o$C \cite{aab2017impact}, el corrimiento de la temperatura al aumentar la altitud también se ve reflejada en la densidad. Como la misma es una variable importante para el desarrollo de la cascada en al atmósfera, este retraso debe tenerse en cuenta.
 
@@ -45,14 +45,14 @@ Para entender los parámetros utilizados para describir a la lluvia, debemos ent
 \begin{equation}
  	X_{max} = X_0{ln(\frac{E}{\xi^e_c})}
  \end{equation} 
-donde  $\xi^e_c$ es la energía crítica para la cual las pérdida de energía por radiación supera a la pérdida de energía por colisión, en el aire $\xi^e_c=85\,$MeV. Por último, el radio de Molière $r_M$ que puede expresarse como 
+donde  $\xi^e_c$ es la energía crítica para la cual la pérdida de energía por radiación supera a la pérdida de energía por colisión, en el aire $\xi^e_c=85\,$MeV. Por último, el radio de Molière $r_M$ que puede expresarse como 
 \begin{equation}
 	r_M= \frac{E_s}{\xi^e_c}\frac{X_0}{\rho}
 \end{equation}
 es la máxima profundidad transversal que alcanza la lluvia. El valor de $E_s\approx21\,$MeV caracteriza las pérdidas por dispersión. Usualmente un cilindro con un radio $r_M$ contiene al 90\% de la energía depositada en la atmósfera por el primario. El radio de Molière local en el aire para una altura $h$ puede definirse como $r_M = \nicefrac{9.6\,\text{gcm}^{-2}}{\rho(h)}$ \cite{gora2006universal}. 
 %444444444444444444444444444
 
-Las variables atmosféricas importantes que afectan al desarrollo de la EAS en la atmósfera son la presión y la densidad del aire. Por un lado la presión es una medida de cantidad de materia que atraviesa el CR. Si la presión sobre la superficie aumenta implica que la lluvia va a atravesar más partículas, y por el contrario si la presión disminuye la lluvia tiene menos materia para interactuar. Esto afecta el desarrollo longitudinal de la lluvia cuando llega a la superficie. En la Fig.\,\ref{fig:eas} se muestran una esquema simplificado de las interacciones en al atmósfera de un primario de la misma energía. En la figura de la izquierda representa la lluvia donde la presión y la densidad está por encima de la media, y la figura de la derecha representa un lluvia donde la presión y la densidad de la atmósfera están por debajo de la media.
+Las variables atmosféricas importantes que afectan al desarrollo de la EAS en la atmósfera son la presión y la densidad del aire. Por un lado la presión es una medida de cantidad de materia que atraviesa el CR. Si la presión sobre la superficie aumenta implica que la lluvia va a atravesar más partículas, y por el contrario si la presión disminuye la lluvia tiene menos materia para interactuar. Esto afecta el desarrollo longitudinal de la lluvia cuando llega a la superficie. En la Fig.\,\ref{fig:eas} se muestran un esquema simplificado de las interacciones en la atmósfera de un primario de la misma energía. En la figura de la izquierda representa una lluvia donde la presión y la densidad está por encima de la media, y la figura de la derecha representa un lluvia donde la presión y la densidad de la atmósfera están por debajo de la media.
 
 \begin{figure}[H]
 	\centering
@@ -98,7 +98,7 @@ Por lo que la expresión final queda de la siguiente forma
 	\frac{dR_{ang}}{d\Omega} \propto AB(1+B(\gamma - 1)\epsilon)\int_{S_{min}}^{\infty} P_{Tr}(S,\theta) S^{-B\gamma +B -1} dS
 \end{equation*}
 
-Considerando que $d\Omega= sin(\theta)d\theta d\phi$ y que el área efectiva  que tiene el observatorio para dado un evento con ángulo cenital $\theta$ es $M_{eff}=M\times cos(\theta)$, donde $M$ es el área activa del observatorio en el momento del evento. Podemos definir la tasa de eventos por área $R$ como
+Considerando que $d\Omega= sin(\theta)d\theta d\phi$, el área efectiva del Observatorio  en el momento de un evento con ángulo cenital $\theta$ es $M_{eff}=M\times cos(\theta)$, donde $M$ es el área activa del Observatorio en el momento del evento. Podemos definir la tasa de eventos por área $R$ como
 \begin{align*}
 	dR 	&\propto \frac{dR_{ang}}{d\Omega} \frac{M_{eff}}{M} d\Omega \\
 		&\propto \frac{dR_{ang}}{d\Omega}\, cos(\theta)\, sin(\theta)\,d\theta d\phi\\
@@ -139,11 +139,11 @@ donde $R_0$ es la tasa promedio que se observaría si los parámetros atmosféri
 \end{equation}
 con $\rho_{2h}$, como fue mencionado anteriormente, es la densidad medida dos horas antes del evento. Es posible que estos coeficientes dependan de la energía, por ejemplo por la dependencia del logaritmo de la energía de $X_{max}$ o por los cambios de composición a distintas energías. En todo caso, se espera que estas dependencias sean pequeñas.
 
-\subsection{Condiciones climáticas y área activa del observatorio Pierre Auger}
+\subsection{Condiciones climáticas y área activa del Observatorio Pierre Auger}
 
-Existen tres estaciones meteorológicas dentro del observatorio, que miden cada 5 minutos las condiciones climáticas en distintos puntos. Las ubicaciones de estas estaciones están indicadas en la Fig.\,\ref{fig:auger_sd}. Las Figs.\,\ref{fig:clima_p} y \ref{fig:clima_p_rho} se muestran las variaciones de los valores de presión y densidad en el periodo del $2005-2018$ con respecto a la media en este mismo periodo. En la Fig.\,\ref{fig:densidad_hora} se observa las modulación anual de la densidad, y   en la Fig.\,\ref{fig:area_auger} a la modulación diaria de la densidad, ambas modulaciones afectan a la detección de las lluvias por parte del SD. 
+Existen tres estaciones meteorológicas dentro del Observatorio, que miden cada 5 minutos las condiciones climáticas en distintos puntos. Las ubicaciones de estas estaciones están indicadas en la Fig.\,\ref{fig:auger_sd}. Las Figs.\,\ref{fig:clima_p} y \ref{fig:clima_p_rho} se muestran las variaciones de los valores de presión y densidad en el periodo del $2005-2018$ con respecto a la media en este mismo periodo. En la Fig.\,\ref{fig:densidad_hora} y \ref{fig:area_auger} se observan la modulación anual de la densidad y la modulación diaria de la densidad. Ambas modulaciones afectan a la detección de las lluvias por parte del arreglo principal. 
 
-Para asegurarse eventos con una buena reconstrucción de  energía, posición del núcleo y dirección de arribo, solo los eventos que están contenidos dentro del arreglo del SD son considerados. Este criterio requiere que el detector con mayor señal esté rodeado de 6 tanques activos. Teniendo en cuenta la geometría de arreglo de WCDs, se calcula el área efectiva mediante la suma del área asociada a cada tanque. El mismo contribuye un área de $\sqrt{3} \frac{d^2}{2}$, donde $d$ es la distancia entre WCDs en una grilla triangular. Como la cantidad de hexágonos activos varía con el tiempo también lo hace  el área efectiva del observatorio. En la Fig.\,\ref{fig:area} se muestra la evolución del área efectiva del SD 1500 m hasta el año 2018. La línea horizontal  limita el área mínima considerada para el análisis. Estos periodos de baja exposición no proveen información suficiente para caracterizar la modulación.
+Para asegurarse eventos con una buena reconstrucción de  energía, posición del núcleo y dirección de arribo, solo los eventos que están contenidos dentro del arreglo principal son considerados. Este criterio requiere que el detector con mayor señal esté rodeado de 6 tanques activos. Teniendo en cuenta la geometría de arreglo de WCDs, se calcula el área efectiva mediante la suma del área asociada a cada tanque. El mismo contribuye un área de $\sqrt{3} \frac{d^2}{2}$, donde $d$ es la distancia entre WCDs en una grilla triangular. Como la cantidad de hexágonos activos varía con el tiempo también lo hace  el área efectiva del Observatorio. En la Fig.\,\ref{fig:area} se muestra la evolución del área efectiva del arreglo principal hasta el año 2018. La línea horizontal  limita el área mínima considerada para el análisis. Estos periodos de baja exposición no proveen información suficiente para caracterizar la modulación.
 Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor nominal.
 
 \begin{figure}[H]
@@ -177,7 +177,7 @@ Este valor de corte en el área corresponde aproximadamente al $10\%$ del valor 
   \label{fig:clima_p_rho}
 \end{figure}
 
-En este trabajo se utilizan los datos recabados por las estaciones del clima del observatorio. Como se menciona en la sección \ref{seccion:clima}, existen periodos donde los datos del clima son interpolados. Es por ello que se consideran los eventos registrados durante un periodo en donde las condiciones climáticas fueron medidas o interpoladas para un periodo menor a 3 horas.
+En este trabajo se utilizan los datos recabados por las estaciones del clima del Observatorio. Como se menciona en la sección \ref{seccion:clima}, existen periodos donde los datos del clima son interpolados. Es por ello que se consideran los eventos registrados durante un periodo en donde las condiciones climáticas fueron medidas o interpoladas para un periodo menor a 3 horas.
 
 \begin{figure}[H]
     \centering

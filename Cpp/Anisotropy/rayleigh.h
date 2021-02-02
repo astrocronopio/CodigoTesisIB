@@ -166,7 +166,7 @@ void ray_given_freq( double freq, const char* in_file, const char* out_file,
 		/*Ampl. d99*/   d99 = r99r/(average_cos_dec);
 		/*Ampl. dUL*/   dUL = rUL/(average_cos_dec);
 		
-		std::cout.precision(6);
+		std::cout.precision(8);
 
 		std::cout <<"\n\n_______Frecuencia:\t"<< freq<< " ___________"<< std::endl;
 		

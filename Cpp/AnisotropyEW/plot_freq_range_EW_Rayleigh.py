@@ -20,19 +20,23 @@ output_file_Ray_1="../Anisotropy/Files_AllTriggers_0-25_0-5_EeV/output_threshold
 output_file_Ray_2="../Anisotropy/Files_AllTriggers_0-5_1_EeV/output_threshold_0con_peso_v11.dat"
 output_file_Ray_3="../Anisotropy/Files_AllTriggers_1_2_EeV/output_threshold_0con_peso_v11.dat"
 
+out_file_mod="../Anisotropy/Files_AllTriggers_Wide_Range/output_threshold_0con_peso_v11.dat"
 
 
-file_plot_EW =output_file_EW_1
-file_plot_Ray=output_file_Ray_1
+file_plot_EW =output_file_EW_3
+file_plot_Ray=output_file_Ray_3
 average_cos_dec = 0.786207199 
 average_sin_theta = 0.523010254      
 factor 	= 0.5*np.pi*average_cos_dec/average_sin_theta
 
 f_EW,r_EW,r99_EW= np.loadtxt(file_plot_EW, usecols=(0,4,8), unpack=True)
 f_Ray,r_Ray,r99_Ray= np.loadtxt(file_plot_Ray, usecols=(0,4,8), unpack=True)
+f_mod,r_mod,r99_mod= np.loadtxt(out_file_mod, usecols=(0,4,8), unpack=True)
+
 
 r_EW, r99_EW = 100*r_EW, 100*r99_EW
 r_Ray, r99_Ray = 100*r_Ray, 100*r99_Ray
+r_mod, r99_mod = 100*r_mod, 100*r99_mod
 
 def  plot_same_fig():
 	# plt.figure(1)
@@ -50,6 +54,7 @@ def  plot_same_fig():
 	ax2=ax.twinx()
 	ax2.plot(f_Ray, r_Ray,  marker="*",label="Rayleigh",color='blue', alpha=0.5)
 	ax2.plot(f_Ray, r99_Ray, ls='--', label="$r_{99}$ - Rayleigh",color='blue', alpha=0.9)
+ 
 	ax2.set_ylabel("Amplitud r (Rayleigh)")
 	ax2.legend(loc=(0.65,0.759))
 		

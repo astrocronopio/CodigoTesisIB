@@ -32,12 +32,12 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			std::stringstream liness(line);			
 
 			/**/
-			{
-			liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
-			energy=Eraw;
-			if (energy<8.) continue;
-			if(utc  < utci || Theta > 80) continue;
-			}		
+			// {
+			// liness>>AugId>>Dec>>Ra>>Eraw>>Ecor>>utc>>Theta>>Phi>>t5>>ftr;
+			// energy=Eraw;
+			// if (energy<8.) continue;
+			// if(utc  < utci || Theta > 80) continue;
+			// }		
 			
 			// //	Less energy 4 EeV
 			// {
@@ -53,12 +53,12 @@ void rayleigh( 	double *a  , double *b		, double *sumaN , double *mean_energy,
 			// 	if(utc  < utci || Theta > 80) continue;
 			// }	
 
-			// {			
-			// liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
-			// //if (energy<energy_threshold) continue;
-			// if(utc  < utci) continue;
-			// if(Theta > 60) continue;
-			// }
+			{			
+			liness >> utc>>Phi>>Theta>>Ra>>Dec>>s1000>>s38>>energy>>t5>>s1000_w; 
+			//if (energy<energy_threshold) continue;
+			if(utc  < utci) continue;
+			if(Theta > 60) continue;
+			}
 
 			if(utcf < utc) break;
 			raz = right_ascension(utc);
@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
 	unsigned long utcf =  strtoul(argv[4], &pEnd, 0); //1577825634 ; //31 12 2019 00:00:00 //flag ? 1472688000 :  1544933508;
 	if (argc==6) energy_threshold =  strtoul(argv[5], &pEnd, 0);
 	
-	ray_multifreq(400,  in_file, out_file, utci, utcf, rayleigh);
+	// ray_multifreq(400,  in_file, out_file, utci, utcf, rayleigh);
 
 	// ray_given_freq(366.25, in_file, out_file, utci, utcf, rayleigh);
 	
@@ -105,6 +105,9 @@ int main(int argc, char const *argv[])
 	long long utcf =  rango2020;
 	ray_given_freq(366.25, "../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat", "auxiliar_anti.txt", utci, utcf);
 	*/
+	ray_given_freq(366.25,  in_file, out_file, utci, utcf, rayleigh);
+	ray_given_freq(365.25,  in_file, out_file, utci, utcf, rayleigh);
+	ray_given_freq(364.25,  in_file, out_file, utci, utcf, rayleigh);
 	
 	return 0;
 }
