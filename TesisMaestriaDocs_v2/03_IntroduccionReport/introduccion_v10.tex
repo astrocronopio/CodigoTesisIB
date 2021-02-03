@@ -2,7 +2,7 @@
 
 \subsection{Disparo Estándar}
 
-El disparo ToT o \emph{Time over Threshold} está diseñado para adquirir datos de una duración relativamente larga, de esta manera se puede distinguir señales producidas por EASs por encima del ruido, ya que el último consiste en picos más cortos. Las señales producidas por un evento tienen un decaimiento exponencial con una constante de $70\,$ns, que es el tiempo de decaimiento de la luz dentro del tanque. Los PMTs registran señales en intervalos de $25\,$ns, por lo que una señal alta puede ser registrada durante varios periodos de adquisición de datos. Si por algún motivo, ya sea ruido u otro evento dentro de la ventana del disparo, se produce otro pico durante el decaimiento de la señal de evento puede cumplir la condición de disparo con una mayor señal que la que le corresponde.
+El disparo ToT o \emph{Time over Threshold} está diseñado para adquirir datos de una duración relativamente larga, de esta manera se puede distinguir señales producidas por EASs por encima del ruido, ya que el último consiste en picos más cortos. Las señales producidas por un evento tienen un decaimiento exponencial con una constante de $70\,$ns, que es el tiempo de decaimiento de la luz dentro del tanque. Los PMTs registran señales en intervalos de $25\,$ns, por lo que una señal alta puede ser registrada durante varios periodos de adquisición de datos. Si por algún motivo, ya sea ruido u otro evento dentro de la ventana del disparo, se produce otro pico durante el decaimiento de la señal de evento puede cumplir la condición de disparo con una mayor señal que la que le corresponde. También existe el disparo \emph{Threshold} que no tiene la condición de las ventanas temporales del PMT sino que dispara cuando la señal pasa un umbral
 
 {El eventos comúnmente presentados en los trabajos de la Colaboración Auger son registrados con un algoritmo de disparo ToT que se menciona como \emph{Disparo Estándar}.  Estos eventos son medidos utilizando un algoritmo cuya eficiencia varía con la energía del CR. Para el Disparo Estándar, los eventos con energía mayor a $3\,$EeV y ángulo cenital $\theta<60^o$ o  por encima de $4\,$EeV y $\theta<80^o$, son detectados con una eficiencia del 100\%. Por lo tanto, el análisis en el rango de energía entre $1\,$EeV - $2\,$EeV requiere factores relacionados con la eficiencia del disparo en función de la energía. Estos factores son obtenidos de manera fenomenológica \cite{taborda}.}
 
@@ -18,22 +18,21 @@ Para recuperar la sensibilidad para bajas energías, a partir del año 2013  se 
 % suppresses the exponentialtail of an elementary signal and reduces it to one or two slots with high amplitude, followedby a tail of positive or negative values
 % In case of the MoPS the trigger probability reaches a plateau of about 50\% asby design it is not sensitive to narrow peaks but to the spread electromagnetic signals
 
-En la Fig.\ref{fig:TLD} se observa como la cantidad de eventos para energía menores a $2\,$EeV va disminuyendo como el caso del Disparo Estándar pero en una menor proporción con respecto a los eventos registrados con eficiencia completa.
+En la Fig.\ref{fig:TLD} se observa como la cantidad de eventos para energía menores a $3\,$EeV va disminuyendo como el caso del Disparo Estándar pero en una menor proporción con respecto a los eventos registrados con eficiencia completa. También se ve que en cada año activo de Todos los Disparos, hay un proporción más alta de eventos por encima de $3\,$EeV que con el Disparo Estándar.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{histograma_Standard.pdf}
-	\caption{Histograma de eventos  del Disparo Estándar por rango de tiempo medido por el Observatorio Pierre Auger}
+	\caption{Histograma de eventos  del Disparo Estándar por rango de tiempo medido por el Observatorio Pierre Auger. También se reporta la energía media el mismo rango de tiempo.}
 	\label{fig:futuro}
 \end{figure}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{histograma_AllTriggers.pdf}
-  \caption{Histograma de eventos de  Todos Los Disparos por rango de tiempo medido por el +
-  Observatorio Pierre Auger}
+	\includegraphics[width=0.8\textwidth]{histograma_AllTriggers_v2.pdf}
+  \caption{Histograma de eventos de  Todos Los Disparos por cada año medido por el Observatorio Pierre Auger y sus respectiva energía media. }
 	\label{fig:TLD}
 \end{figure}
 

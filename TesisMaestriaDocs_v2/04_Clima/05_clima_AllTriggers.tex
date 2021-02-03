@@ -32,9 +32,10 @@ La separación de los eventos en rango de $\sin^2\theta$ para los datos del Disp
     \label{fig:bin_eventos_sin_2_theta}
   \end{small}
 \end{figure}
+
 \subsection{Tasa de eventos de Todos los Disparos por encima de 1 EeV}
 
-Los eventos de este conjunto de datos, la modulación espuria del clima está corregida con los parámetros obtenidos sobre el Disparo Estándar. Las tasas de eventos diario mostrados en la Fig.\,\ref{fig:rate_ALL}, por encima de 1 EeV y 2 EeV respectivamente, no muestran modulaciones importantes. En el caso de la tasa por encima de 1 EeV, se observa un remanente de modulación anual similar a los datos del ICRC 2019. 
+En  los eventos de este conjunto de datos, la modulación del clima está corregida con los parámetros obtenidos sobre el Disparo Estándar. Las tasas de eventos diario mostrados en la Fig.\,\ref{fig:rate_ALL}, por encima de 1 EeV y 2 EeV respectivamente, no muestran modulaciones importantes. En el caso de la tasa por encima de 1 EeV, se observa un remanente de modulación anual similar a los datos del ICRC 2019. 
 
 
 
@@ -77,7 +78,7 @@ Se realiza un ajuste de la tasa de eventos de Todos los Disparos y de esta maner
   $b_\rho$ [kg$^{-1}$m$^3$]   & $-0.55 \pm 0.04$              & $-0.53 \pm 0.04$                  \\ \hline
   $\chi^2_\nu$                & $1.016$                       & $1.013$                           \\ 
   \end{tabular} 
-  \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV del conjunto de Todos los disparos, comparados con los parámetros utilizados por la Colaboración \cite{aab2017impact}.} \label{tabla:parametros_ALL}
+  \caption{Ajustes obtenidos considerando todos los eventos con $\theta<60^o$ y energía mayor a $1\,$EeV del conjunto de Todos los Disparos, comparados con los parámetros utilizados por la Colaboración \cite{aab2017impact}.} \label{tabla:parametros_ALL}
 \end{table}
 
 
@@ -95,7 +96,7 @@ La tasa de eventos media por día  medida y la tasa predicha según los parámet
   \caption{Tasa de eventos por días comparadas con el ajuste entre los años 2014 hasta 2020. Estos eventos se registraron con Todos los Disparos  y tienen un valor de $S_{38}$ mayor a $5.37\,$VEM. En las tasas se observan la modulación anual y diaria del clima. La predicción es obtenida por los parámetros calculados en este trabajo.}\label{fig:rate__AllTriggers}
 \end{figure}
 
-Para poder verificar que los parámetros del clima en función de $\sin^2\theta$ obtenidos sobre el Disparo Estándar son válidos para Todos los Disparos, se calculó estos parámetros del último y se compararon con los utilizados por la Colaboración en la reconstrucción oficial. Estos resultados se observan en la Fig.\,\ref{fig:ALL-params} y los ajustes de la Ec.\,\ref{eq:cuadratica} se presentan en la Tabla~\ref{tabla:cuadratica_ALL}.   
+Para poder verificar que los parámetros del clima en función de $\sin^2\theta$ obtenidos sobre el Disparo Estándar son válidos para Todos los Disparos, se calculó estos parámetros de este conjunto y se compararon con los utilizados por la Colaboración en la reconstrucción oficial. Estos resultados se observan en la Fig.\,\ref{fig:ALL-params} y los ajustes de la Ec.\,\ref{eq:cuadratica} se presentan en la Tabla~\ref{tabla:cuadratica_ALL}.   
 
 \begin{figure}[H]
   \centering
@@ -135,6 +136,22 @@ Para poder verificar que los parámetros del clima en función de $\sin^2\theta$
   \end{tabular}	
   \caption{Tabla de los coeficientes obtenidos para Todos los Disparos, comparados con los parámetros de la reconstrucción de los eventos del Observatorio.} \label{tabla:cuadratica_ALL}
 \end{table}
+
+
+%====|==>ICRC 2019 Reconstrucción con este trabajo
+\subsection{Usando la energía reconstruida en este trabajo}
+
+Se realizó la corrección del valor de S$_{38}$ con los parámetros del clima presentados en la Tabla.\,\ref{tabla:cuadratica_ALL} sobre los eventos de Todos lo Disparos, similar al análisis presentado en la sección \ref{laaast}. Con este valor corregido se calculó la energía corregida mediante la Ec.\,\ref{eq:s38_energy}. Para una energía mayor de $2\,$EeV, se espera que los efectos del clima sean despreciables tras la corrección, porque se acerca a la eficiencia máxima de los detectores de superficie. 
+
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf}
+  \caption{Tasa de eventos promedio por cada día desde inicios del 2005 hasta inicios del 2020 de Todos los Disparos con la energía obtenida en este trabajo. Se muestran las tasas para dos cortes en energía, mayor a $1\,$EeV y mayor a $2\,$EeV}\label{fig:rate_reconst}
+\end{figure}
+
+En la Fig.\,\ref{fig:rate_reconst} se comparan las tasas de eventos por día para Todos los Disparos. En la figura superior se muestra la tasa de eventos por encima de 1 EeV, donde la modulación anual tiene una amplitud mayor que la observada en la Fig.\ref{fig:rate_ALL}. Por lo que podemos afirmar que la corrección del clima realizada por el Observatorio, es mejor que el corrección con los parámetros obtenidos sobre eventos de Todos los Disparos
 
 
 % \subsection{Pesos de los hexágonos en el rango 2014-2020}

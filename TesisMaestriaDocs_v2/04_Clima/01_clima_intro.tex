@@ -2,10 +2,10 @@
 
 \section{La física detrás de la modulación del clima}\label{seccion:fisica_clima}
 
-La variación de las condiciones atmosféricas afecta las señales de las lluvias atmosféricas extendidas. Estas señales pueden ser detectadas en la superficie por un arreglo de detectores, como los que se encuentran en el Observatorio Pierre Auger. Estos efectos pueden inducir errores sistemáticos en la reconstrucción de energía de los rayos cósmicos. Se han realizado  trabajos anteriores sobre los efectos del clima sobre la señal detectada en el Observatorio Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric} . En este trabajo se estudiaron eventos con energía mayor a $1\,$EeV entre los años 2005-2018, extendiendo los periodos de tiempo estudiados anteriormente, además de estudiar la modulación del clima sobre el conjunto  de Todos los Disparos entre los años 2014-2020.
+La variación de las condiciones atmosféricas afecta las señales de las lluvias atmosféricas extendidas. Estas señales pueden ser detectadas en la superficie por un arreglo de detectores, como los que se encuentran en el Observatorio Pierre Auger. Estos efectos pueden inducir errores sistemáticos en la reconstrucción de la energía de los rayos cósmicos. Se han realizado  trabajos anteriores sobre los efectos del clima sobre la señal detectada en el Observatorio Pierre Auger \cite{aab2017impact} \cite{collaboration2009atmospheric} . En este trabajo se estudiaron eventos con energía mayor a $1\,$EeV entre los años 2005-2018, extendiendo los periodos de tiempo estudiados anteriormente, además de estudiar la modulación del clima sobre el conjunto  de Todos los Disparos entre los años 2014-2020.
 
 
-El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, se usan para determinar la posición del núcleo, la dirección de arribo del CR y la energía del primario. La señal de los eventos son ajustados mediante una función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
+El arreglo principal mide las 24 horas del día las lluvias de partículas que llegan al suelo. Las señales registradas por los WCDs, se usan para determinar la posición del núcleo, la dirección de arribo del CR y la energía del primario. Las señales detectadas por los tanques son ajustadas mediante una función de distribución lateral (LDF) para obtener una señal de referencia $S(1000)$ como se muestra en la Fig.\ref{fig:evento_S1000}.
 %  Existieron cambios en los parámetros de la LDF y, por lo tanto, de valor de $S_{38}$, utilizado para estimar la energía del primario. 
 La conversión de $S(1000)$ a $S_{38}$ se realiza mediante el método de corte de intensidad constante (CIC) explicado anteriormente.% Además en la nueva reconstrucción el CIC es función de la energía.
 
@@ -16,7 +16,7 @@ Debido a la modulación del clima dependiente de la hora del día y de las estac
 
 En la Fig.\,\ref{fig:delay} se observa que los ajustes realizados a las variaciones de la temperatura  según la hora del día con una función del tipo $T(t) = T_{media} + A\times \sin((t-t_d)\nicefrac{\pi}{12\,\text{hs}})$.  En la Tabla\,\ref{tabla:delay} se observa que entre 1400\,m (altitud del Observatorio Pierre Auger) y la mayor altitud medida por el GDAS existe un corrimiento de $2.1\pm0.7\,$hs.
 
-Como la relación entre la densidad y la temperatura del aire están relacionadas mediante la expresión $\rho \approx \nicefrac{0.3484P}{T +273.16}\,$kgm$^{-3}$, con P en hPa y T en  $^o$C \cite{aab2017impact}, el corrimiento de la temperatura al aumentar la altitud también se ve reflejada en la densidad. Como la misma es una variable importante para el desarrollo de la cascada en al atmósfera, este retraso debe tenerse en cuenta.
+Como la relación entre la densidad y la temperatura del aire están relacionadas mediante la expresión $\rho \approx \nicefrac{0.3484P}{T +273.16}\,$kgm$^{-3}$, con P en hPa y T en  $^o$C \cite{aab2017impact}, el corrimiento de la temperatura al aumentar la altitud también se ve reflejada en la densidad. Como la misma es una variable importante para el desarrollo de la cascada en la atmósfera, este retraso debe tenerse en cuenta.
 
 \begin{figure}[H]
 	\centering
@@ -45,7 +45,7 @@ Para entender los parámetros utilizados para describir a la lluvia, debemos ent
 \begin{equation}
  	X_{max} = X_0{ln(\frac{E}{\xi^e_c})}
  \end{equation} 
-donde  $\xi^e_c$ es la energía crítica para la cual la pérdida de energía por radiación supera a la pérdida de energía por colisión, en el aire $\xi^e_c=85\,$MeV. Por último, el radio de Molière $r_M$ que puede expresarse como 
+donde  $\xi^e_c$ es la energía crítica para la cual la pérdida de energía por radiación supera a la pérdida de energía por ionización y excitación de los átomos del medio, por ejemplo en el aire $\xi^e_c=85\,$MeV. Por último, el radio de Molière $r_M$ que puede expresarse como 
 \begin{equation}
 	r_M= \frac{E_s}{\xi^e_c}\frac{X_0}{\rho}
 \end{equation}
@@ -72,7 +72,7 @@ Considerando lo analizado en \cite{aab2017impact} \cite{collaboration2009atmosph
 	S=S_0\big(1+\alpha_P(P-P_0) +\alpha_{\rho}(\rho_{media}-\rho_0) + \beta_{\rho}(\rho_{2h}-\rho_{media})\big)
 	\label{eq:signal}
 \end{equation}
-donde $S_0$ es la señal  del evento en condiciones atmosféricas medias, $P$ es la presión en el momento del evento, $P_0=862\,$hPa es la presión media en el rango de tiempo estudiado, $\rho_{media}$ es la densidad media del aire durante $\pm 12\,$hrs,     $\rho_0=1.06\,$kgm$^{-3}$ es la densidad media durante el periodo estudiado, $\rho_{2h}$ es la densidad que se midió dos horas antes del evento. Los coeficientes $\alpha_P$, $\alpha_\rho$ y $\beta_\rho$ tiene en cuenta la modulación del clima sobre la señal según las variaciones de presión,  densidad media y la densidad a 2400 msnm con un retraso de 2 hrs.  
+donde $S_0$ es la señal  del evento en condiciones atmosféricas medias, $P$ es la presión en el momento del evento, $P_0=862\,$hPa es la presión media en el rango de tiempo estudiado, $\rho_{media}$ es la densidad media del aire durante $\pm 12\,$hrs,     $\rho_0=1.06\,$kgm$^{-3}$ es la densidad media durante el periodo estudiado, $\rho_{2h}$ es la densidad que se midió dos horas antes del evento. Los coeficientes $\alpha_P$, $\alpha_\rho$ y $\beta_\rho$ tienen en cuenta la modulación del clima sobre la señal según las variaciones de presión,  densidad media y la densidad a 2400 msnm con un retraso de 2 hrs.  
 
 Si consideramos la tasa de eventos medidos $R_{ang}$  por ángulo sólido $\Omega$
 

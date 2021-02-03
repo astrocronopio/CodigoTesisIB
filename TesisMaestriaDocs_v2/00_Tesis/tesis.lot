@@ -11,22 +11,22 @@
 \contentsline {table}{\numberline {3.7}{\ignorespaces Parámetros del clima obtenidos para todos los ángulos cenitales para los dos rangos de tiempo estudiados de los datos de la ICRC 2019 con el corte en la señal de S$_{38}$.\relax }}{35}{table.caption.37}%
 \contentsline {table}{\numberline {3.8}{\ignorespaces Tabla de los coeficientes obtenidos con el S$_{38}$ sin corregir por el clima, comparados con el trabajo anterior\relax }}{38}{table.caption.41}%
 \contentsline {table}{\numberline {3.9}{\ignorespaces Características del conjunto de datos de Todos los Disparos.\relax }}{41}{table.caption.45}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Ajustes obtenidos considerando todos los eventos con $\theta <60^o$ y energía mayor a $1\tmspace +\thinmuskip {.1667em}$EeV del conjunto de Todos los disparos, comparados con los parámetros utilizados por la Colaboración \cite {aab2017impact}.\relax }}{41}{table.caption.46}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Ajustes obtenidos considerando todos los eventos con $\theta <60^o$ y energía mayor a $1\tmspace +\thinmuskip {.1667em}$EeV del conjunto de Todos los Disparos, comparados con los parámetros utilizados por la Colaboración \cite {aab2017impact}.\relax }}{41}{table.caption.46}%
 \contentsline {table}{\numberline {3.11}{\ignorespaces Tabla de los coeficientes obtenidos para Todos los Disparos, comparados con los parámetros de la reconstrucción de los eventos del Observatorio.\relax }}{44}{table.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Verificando la variable $\tilde {\alpha }=2\pi ft$ para el análisis de frecuencias arbitrarias en el método East-West.\relax }}{60}{table.caption.53}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Verificando la variable $\tilde {\alpha }=2\pi ft$ para el análisis de frecuencias arbitrarias en el método East-West.\relax }}{62}{table.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Características de los eventos de Todos los Disparos utilizados para el estudio de la modulación en distintas frecuencias de esta sección. \relax }}{67}{table.caption.58}%
-\contentsline {table}{\numberline {7.2}{\ignorespaces Comparación de los parámetros de fase y amplitud para las frecuencias anti-sidérea, sidérea y solar obtenidos de Todos los Disparos. Se analizaron estos parámetros sin pesos y con los pesos de los hexágonos con el análisis de Rayleigh entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{69}{table.caption.61}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Comparación de los parámetros de fase y amplitud para las frecuencias anti-sidérea, sidérea y solar obtenidos de la señal corregida de los Todos los Disparos mediante los parámetros obtenidos en la sección \ref {ALL_modulacion}.\relax }}{70}{table.caption.62}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Parámetros obtenidos del ajuste a segundo orden en ascensión recta con el análisis de Rayleigh.\relax }}{72}{table.caption.65}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Características de los eventos de Todos los Disparos utilizados para el estudio de la modulación en distintas frecuencias de esta sección. \relax }}{69}{table.caption.59}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Comparación de los parámetros de fase y amplitud para las frecuencias anti-sidérea, sidérea y solar obtenidos de Todos los Disparos. Se analizaron estos parámetros sin pesos y con los pesos de los hexágonos con el análisis de Rayleigh entre en 1 de Enero del 2014 y el 1 de Enero del 2020\relax }}{71}{table.caption.62}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Comparación de los parámetros de fase y amplitud para las frecuencias anti-sidérea, sidérea y solar obtenidos de la señal corregida de los Todos los Disparos mediante los parámetros obtenidos en la sección \ref {ALL_modulacion}.\relax }}{72}{table.caption.63}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Parámetros obtenidos del ajuste a segundo orden en ascensión recta con el análisis de Rayleigh.\relax }}{74}{table.caption.66}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Características de los conjuntos de datos para distintos rangos de energía \relax }}{73}{table.caption.66}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV.\relax }}{74}{table.caption.67}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.5 EeV - 1 EeV\relax }}{76}{table.caption.70}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces Características para la frecuencia solar con los métodos de Rayleigh e East-West en el primer armónico en el rango 1 EeV - 2 EeV.\relax }}{77}{table.caption.73}%
-\contentsline {table}{\numberline {8.5}{\ignorespaces Características para la frecuencia sidérea con los métodos de Rayleigh e East-West en el primer armónico en el rango 1 EeV - 2 EeV.\relax }}{78}{table.caption.75}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Características de los conjuntos de datos para distintos rangos de energía \relax }}{75}{table.caption.67}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.25 EeV - 0.5 EeV.\relax }}{76}{table.caption.68}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces Características para las frecuencias solar y sidérea con el método East-West en el primer armónico en rango de energía 0.5 EeV - 1 EeV\relax }}{78}{table.caption.71}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces Características para la frecuencia solar con los métodos de Rayleigh e East-West en el primer armónico en el rango 1 EeV - 2 EeV.\relax }}{79}{table.caption.74}%
+\contentsline {table}{\numberline {8.5}{\ignorespaces Características para la frecuencia sidérea con los métodos de Rayleigh e East-West en el primer armónico en el rango 1 EeV - 2 EeV.\relax }}{80}{table.caption.76}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

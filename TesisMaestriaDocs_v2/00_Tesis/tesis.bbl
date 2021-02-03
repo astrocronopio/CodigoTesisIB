@@ -34,12 +34,6 @@ Zyla, P.~A., \emph{et~al.}
 \newblock {Review of Particle Physics}.
 \newblock \emph{PTEP}, \textbf{2020}~(8), 083C01, 2020.
 
-\bibitem{taborda}
-Taborda, O.
-\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
-  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
-\newblock Tesis Doctoral, Instituto Balseiro, 2018.
-
 \bibitem{bird1994cosmic}
 Bird, D., Corbato, S., Dai, H., Dawson, B., Elbert, J., Emerson, B.,
   \emph{et~al.}
@@ -50,6 +44,12 @@ Bird, D., Corbato, S., Dai, H., Dawson, B., Elbert, J., Emerson, B.,
 Berezinsky, V., Gazizov, A., Grigorieva, S.
 \newblock On astrophysical solution to ultrahigh energy cosmic rays.
 \newblock \emph{Physical Review D}, \textbf{74}~(4), 043005, 2006.
+
+\bibitem{taborda}
+Taborda, O.
+\newblock {Estudios de anisotropías a grandes escalas angulares de los rayos
+  cósmicos de alta energía detectados por el observatorio Pierre Auger}.
+\newblock Tesis Doctoral, Instituto Balseiro, 2018.
 
 \bibitem{como_funciona_auger}
 {The Pierre Auger Cosmic Ray Observatory}.
