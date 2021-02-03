@@ -33,24 +33,21 @@ Para constatar que no exista ninguna anomalía en los pesos de los hexágonos, s
 
 En la Fig.\ref{anisotropia_rayleigh} se muestra el barrido de frecuencias para la amplitud del primer armónico de Fourier. Se marcan con líneas verticales las frecuencias de referencia mencionadas anteriormente. Se observa el barrido sin considerar las correcciones por las variaciones de los hexágonos con una línea discontinua. La  amplitud  en la frecuencia solar sin la corrección de los pesos es importante. Un ejemplo de errores sistemáticos puede ser que en épocas invernales el acceso a los tanques se dificulta y ponerlos en funcionamiento nuevamente tras una tormenta o para un cambio de baterías puede llevar más tiempo que durante verano. 
 
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.75\linewidth]{pesos_sin_con_1_2_EeV.pdf}
-			\caption{Anisotropía en función de la frecuencia para el rango de energía 1  EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
-			\label{anisotropia_rayleigh}
-		\end{figure}
+
 
 Cuando se consideran los pesos, que se muestran con una línea azul en la Fig. \ref{anisotropia_rayleigh}, la amplitud de la frecuencia solar disminuye y pasa a estar por debajo del umbral de $r_{99}$, y aparecen dos amplitudes por encima de este umbral: un pico es la frecuencia sidérea, donde buscamos las anisotropías en ascensión recta, y otro pico es cerca de la frecuencia anti-sidérea, que indica que existen componentes de errores sistemáticos sobre los datos que deben ser considerados. 
 
-Para disminuir las posibles modulaciones debidas a errores sistemáticos, se corrigió la modulación del clima de la  señal de $S_{38}$ de cada evento y se obtuvo la energía corregida con los parámetros de la sección \ref{ALL_modulacion}. El barrido de frecuencias sobre estos eventos se muestra en la Fig.\,\ref{anisotropia_rayleigh} con una línea roja continua. Se observa que disminuye ligeramente la amplitud en frecuencia anti-sidérea, pero aumenta en las frecuencias solar y sidérea.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\linewidth]{pesos_sin_con_1_2_EeV.pdf}
+	\caption{Anisotropía en función de la frecuencia para el rango de energía 1  EeV - 2 EeV. Se comparan los análisis sin los pesos y con los pesos de los hexágonos entre en 1 de Enero del 2014 y el 1 de Enero del 2020}
+	\label{anisotropia_rayleigh}
+\end{figure}
 
 % Por ejemplo, la corrección de clima que se analiza en el trabajo de licenciatura se realiza sobre el disparo estándar, se podría calcular los parámetros del clima utilizando los eventos de todos los disparos y comprobar si esto disminuye la amplitud del primer armónico de la frecuencia cercana a la anti-sidérea.
 
-		
-En la Tabla\,\ref{table:parametros_rayleigh} se resumen las amplitudes y fases obtenidas mediante el análisis a primer orden en Fourier en las frecuencias de referencia  y en la Tabla\,\ref{table:parametros_rayleigh_correccion} se reportan los valores de las mismas variables tras la corrección del clima utilizando los parámetros del capítulo anterior.
-
-
-La presencia de una modulación significativa en la frecuencia anti-sidérea con las estimaciones de energía correspondientes a ambas correcciones de los efectos atmosféricos no permite confiar en que las modulaciones espurias han sido completamente controladas como para confiar en los resultados del análisis de Rayleigh en ninguno de los dos casos. 
 
 		\begin{table}[H]
 		\centering
@@ -78,6 +75,15 @@ La presencia de una modulación significativa en la frecuencia anti-sidérea con
 		\label{table:parametros_rayleigh}
 		\end{table}
 
+		
+		Para disminuir las posibles modulaciones debidas a errores sistemáticos, se corrigió la modulación del clima de la  señal de $S_{38}$ de cada evento y se obtuvo la energía corregida con los parámetros de la sección \ref{ALL_modulacion}. El barrido de frecuencias sobre estos eventos se muestra en la Fig.\,\ref{anisotropia_rayleigh} con una línea roja continua. Se observa que disminuye ligeramente la amplitud en frecuencia anti-sidérea, pero aumenta en las frecuencias solar y sidérea.
+
+
+		En la Tabla\,\ref{table:parametros_rayleigh} se resumen las amplitudes y fases obtenidas mediante el análisis a primer orden en Fourier en las frecuencias de referencia  y en la Tabla\,\ref{table:parametros_rayleigh_correccion} se reportan los valores de las mismas variables tras la corrección del clima utilizando los parámetros del capítulo anterior.
+
+
+		La presencia de una modulación significativa en la frecuencia anti-sidérea con las estimaciones de energía correspondientes a ambas correcciones de los efectos atmosféricos no permite confiar en que las modulaciones espurias han sido completamente controladas como para confiar en los resultados del análisis de Rayleigh en ninguno de los dos casos. 
+		
 		\begin{table}[H]
 			\centering
 			\begin{tabular}{rc|c|c|}
@@ -95,28 +101,34 @@ La presencia de una modulación significativa en la frecuencia anti-sidérea con
 			\label{table:parametros_rayleigh_correccion}
 			\end{table}
 	
-\subsection{Tasa de eventos por ascensión recta}
-
+% \subsection{Tasa de eventos por ascensión recta}
+\subsection{Análisis de segundo orden en Fourier}
 Las Fig.\,\ref{fig:bin_events_first_order} se muestra la tasa de eventos normalizada con pesos y sin pesos para este rango de energía. Las líneas discontinuas representan los parámetros de la Tabla\,\ref{table:parametros_rayleigh} para el primer armónico del análisis de Rayleigh de la frecuencia sidérea. Se observa que la modulación de los eventos con y sin pesos tiene características que la aproximación a primer orden no refleja. 	
+
+
+% \subsection{Análisis de segundo orden en Fourier}
+	En las Fig.\,\ref{fig:bin_events_second_order_con} se muestra la tasa de eventos con pesos y el ajuste hasta el segundo orden en Fourier, en el mismo se muestra que este orden refleja mejor las características de los datos. Los resultados del análisis de Rayleigh  se muestran en la Tabla\,\ref{table:parametros_second_order}
+
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.8\linewidth]{eventos_clasificados_por_RA_v4.png}
+		\includegraphics[width=0.7\linewidth]{eventos_clasificados_por_RA_v4.png}
+		\vspace*{-0.9 cm}
 		\caption{Distribución de la cantidad relativa de eventos en función de la ascensión recta a primer orden, en el rango de energía $1$ EeV - $2$ EeV.}
 		\label{fig:bin_events_first_order}
 	\end{figure}
-
-\subsection{Análisis de segundo orden en Fourier}
-	En las Fig.\,\ref{fig:bin_events_second_order_con} se muestra la tasa de eventos con pesos y el ajuste hasta el segundo orden en Fourier, en el mismo se muestra que este orden refleja mejor las características de los datos. Los resultados del análisis de Rayleigh  se muestran en la Tabla\,\ref{table:parametros_second_order}
+	
         \begin{figure}[H]
           \centering
-            \begin{subfigure}[b]{0.8\textwidth}
+            \begin{subfigure}[b]{0.7\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png}
+		\vspace*{-1.2 cm}
 		\caption{Eventos sin pesos}		\label{fig:bin_events_second_order_sin}
             \end{subfigure}\\
-            \begin{subfigure}[b]{0.8\textwidth}
+            \begin{subfigure}[b]{0.7\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{eventos_clasificados_por_RA_v7_orden_2_con_pesos.png}
+		\vspace*{-1.2 cm}
 		\caption{ Eventos con sus respectivos pesos}		\label{fig:bin_events_second_order_con}
             \end{subfigure}
            \caption{Distribución de la cantidad relativa de eventos en función de la ascensión recta a segundo orden en el rango de energía $1$ EeV - $2$ EeV entre en 1 de Enero del 2014 y el 1 de Enero del 2020.}

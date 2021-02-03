@@ -1,8 +1,6 @@
 
 
-El método de Rayleigh se basa en ajustar el flujo de CRs en función de la ascensión recta $\alpha$ mediante una función armónica. El mismo permite calcular la amplitud y fase de la anisotropía para distintos armónicos, además de la probabilidad de detectar la misma señal debido a fluctuaciones de una distribución isótropa de RCs. 
-
-La dificultad de utilizar el método Rayleigh recae en su sensibilidad a efectos sistemáticos: efectos del clima, variaciones en el área del Observatorio, y la sensibilidad de los instrumentos deben tenerse en cuenta.  Los efectos mencionados deben ser corregidos de la señal medida de los eventos, ya que los mismos inducen modulaciones espurias en el análisis.
+El método de Rayleigh se basa en ajustar el flujo de CRs en función de la ascensión recta $\alpha$ mediante una función armónica. El mismo permite calcular la amplitud y fase de la anisotropía para distintos armónicos, además de la probabilidad de detectar la misma señal debido a fluctuaciones de una distribución isótropa de RCs. La dificultad de utilizar el método Rayleigh recae en su sensibilidad a efectos sistemáticos: efectos del clima, variaciones en el área del Observatorio, y la sensibilidad de los instrumentos deben tenerse en cuenta.  Los efectos mencionados deben ser corregidos de la señal medida de los eventos, ya que los mismos inducen modulaciones espurias en el análisis.
 
 El método East - West consiste en el ajuste de una función armónica a la diferencia entre los flujos de eventos provenientes del Este y del Oeste. Si se consideran que las modulaciones espurias producidas por los efectos atmosféricos y sistemáticos son las mismas en ambas direcciones, la diferencia de flujos remueve estos efectos sin realizar correcciones adicionales. Una desventaja de este método es que su sensibilidad es menor que la del método de Rayleigh \cite{taborda}.
 
@@ -16,9 +14,7 @@ El método East - West consiste en el ajuste de una función armónica a la dife
         I_{\phi_1, \phi_2}^{obs}(\alpha^0) = \int_{\phi_1}^{\phi_2} d\phi \int_{0}^{\theta_{max}} d\theta \sin\theta \tilde{\omega}(\theta, \alpha^0) \Phi(\theta, \phi, \alpha^0),
         \label{eq:rate_general}
     \end{equation}
-    \noindent  donde  el término $\tilde{\omega}(\theta, \alpha^0)$ representa la exposición del Observatorio y $\Phi(\theta, \phi, \alpha^0)$ es el flujo total de RCs expresado en coordenadas locales. El término $\tilde{\omega}(\theta, \alpha^0)$  también incluye los efectos sistemáticos, como la variación de los hexágonos del arreglo mediante  su dependencia con $\alpha^0$.
-
-    Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos: para el Este entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$ y para el Oeste entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
+    \noindent  donde  el término $\tilde{\omega}(\theta, \alpha^0)$ representa la exposición del Observatorio y $\Phi(\theta, \phi, \alpha^0)$ es el flujo total de RCs expresado en coordenadas locales. El término $\tilde{\omega}(\theta, \alpha^0)$  también incluye los efectos sistemáticos, como la variación de los hexágonos del arreglo mediante  su dependencia con $\alpha^0$. Para calcular los flujos de eventos del Este y Oeste, $I^{obs}_E$ y $I_O^{obs}$ respectivamente, se integra la Ec.\ref{eq:rate_general} en los siguientes  rangos: para el Este entre $\phi_1=\nicefrac{-\pi}{2}$ y $\phi_2=\nicefrac{\pi}{2}$ y para el Oeste entre $\phi_1=\nicefrac{\pi}{2}$ y $\phi_2=\nicefrac{3\pi}{2}$.
 
     \subsection{Aproximaciones del método}
     Se considera que la exposición $\tilde{\omega}$ no depende de $\phi$ y que pueden  desacoplarse de las variaciones en $\theta$ y $\alpha^0$. Por lo tanto, podemos expresar $\tilde{\omega}$ de la siguiente manera:
@@ -193,7 +189,7 @@ Como en el caso del análisis de Rayleigh, la probabilidad de obtener una amplit
 \end{enumerate}
 
 
-Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. 
+Por último, estos resultados se comparan con los valores obtenidos con el método EW en el trabajo \cite{Aab_2020} en frecuencia sidérea, aplicado al conjunto de eventos del Disparo Estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018. 
 
 
 \subsection{Cálculo para frecuencias  arbitrarias}
@@ -212,10 +208,10 @@ En la siguiente sección se verifica que se obtiene los mismo resultados con est
 Se verificó el código escrito en este trabajo de la siguiente manera:
 
 \begin{enumerate}
-    \item El conjunto de eventos del disparo estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018 fue analizado en el trabajo \cite{Aab_2020}.
+    \item El conjunto de eventos del Disparo Estándar registrados entre el 1 de Enero del 2004 y el 1 de Agosto del 2018 fue analizado en el trabajo \cite{Aab_2020}.
     \item Utilizando el código y los datos de los eventos del paper \cite{Aab_2020}, obtenidos de la página del \emph{Publications Committee} de la colaboración Auger, se replicaron los datos del paper. 
     \item Luego utilizando el código escrito para este trabajo, se realizó el análisis de EW con los datos del trabajo \cite{Aab_2020}. 
-    \item Finalmente se verificó que los valores obtenidos en los item 2 y 3, con  ambos códigos, sean el mismo.
+    \item Finalmente se verificó que los valores obtenidos en los item 2 y 3 sean el mismo con  ambos códigos.
 \end{enumerate}
 
 \subsection{Comparando con la variable $\tilde{\alpha}$ con la ascensión recta del cenit }
@@ -225,15 +221,15 @@ Para verificar que la variable de la Ec.\ref{ra_arb} es útil para estudiar otra
 \begin{table}[H]
     \begin{small}
         \begin{center}
-            \begin{tabular}[c]{l|l|l|l}
+            \begin{tabular}[c]{l|l|l|l|} \cline{2-4}
                                     & \cite{Aab_2020} & $\alpha^0$   & $\alpha=2\pi f_xt_i$   \\ \hline
-                Frecuencia:         & 366.25          &  366.25      &  366.25            \\
-                $d_\perp$[\%]:      & 0.60            &  0.60        &  0.60              \\
-                $\sigma_{x,y}$[\%]  & 0.48            &  0.48        &  0.48              \\ 
-                Probabilidad:       & 0.45            &  0.45        &  0.45              \\
-                Fase[$^o$]:         & 225$\pm$64      &  225$\pm$64  &  225$\pm$64          \\
-                $r_{99}$[\%]:       & 1.5             &  1.5         &  1.5             \\
-                $d_{\perp,99}$[\%]: & 1.8             &  1.8         &  1.8             \\
+                \multicolumn{1}{|l|}{Frecuencia:         }& 366.25          &  366.25      &  366.25            \\
+                \multicolumn{1}{|l|}{$d_\perp$[\%]:      }& 0.60            &  0.60        &  0.60              \\
+                \multicolumn{1}{|l|}{$\sigma_{x,y}$[\%]  }& 0.48            &  0.48        &  0.48              \\ 
+                \multicolumn{1}{|l|}{Probabilidad:       }& 0.45            &  0.45        &  0.45              \\
+                \multicolumn{1}{|l|}{Fase[$^o$]:         }& 225$\pm$64      &  225$\pm$64  &  225$\pm$64          \\
+                \multicolumn{1}{|l|}{$r_{99}$[\%]:       }& 1.5             &  1.5         &  1.5             \\
+                \multicolumn{1}{|l|}{$d_{\perp,99}$[\%]: }& 1.8             &  1.8         &  1.8             \\\hline
             \end{tabular}
         \end{center}
         \caption{Verificando la  variable $\tilde{\alpha}=2\pi ft$ para el análisis de frecuencias arbitrarias en el método East-West.}

@@ -1,11 +1,9 @@
 % MÉTODOS
-El estudio de la distribución de las direcciones de arribo de los eventos es una herramienta importante para obtener información sobre el origen de los RCs . Las irregularidades sobre el flujo casi isotrópico de los RCs, en un rango de energía, pueden deberse a  zonas del espacio donde se producen más RCs que en otras, estas irregularidades se conocen como anisotropías. 
-
-El análisis de anisotropías a grandes escalas angulares suele ser hecho sobre las irregularidades de la distribución de eventos en ascensión recta $\alpha$, ya que el arreglo principal tiene una exposición direccional en función de esta coordenada casi constante \cite{referencia_anis}.
+El estudio de la distribución de las direcciones de arribo de los eventos es una herramienta importante para obtener información sobre el origen de los RCs. Las irregularidades sobre el flujo casi isótropo de los RCs en un rango de energía, conocidas como anisotropías, pueden deberse a zonas del espacio donde se producen más RCs que en otras. El análisis de anisotropías a grandes escalas angulares se realiza sobre las variaciones de la distribución de eventos en ascensión recta $\alpha$, ya que el arreglo principal tiene una exposición direccional en función de esta coordenada casi constante \cite{referencia_anis}.
 
 \section{Frecuencias de referencia}
 
-Las anisotropías son variaciones pequeñas del flujo medido por lo que eliminar todo factor espurio en el análisis es importante. Para obtener la amplitud de la misma en ascensión recta, se estudian modulaciones en la frecuencia sidérea ($f_{sid}=366.25\,$ ciclos/año) \cite{taborda}. Los errores sistemáticos debido a la modulación de eventos por el clima u otros errores propios de la adquisición de datos, aparecen principalmente en la frecuencia solar  ($f_{sid}=365.25\,$ ciclos/año), por lo que se debe tener en consideración el análisis de esta frecuencia. La frecuencia anti-sidérea ($f_a=364.25\,$ ciclos/año) es una frecuencia que suele utilizarse para chequear la presencia de efectos sistemáticos en la amplitud de la anisotropía en la frecuencia sidérea \cite{farley1954sidereal}. La mezcla entre modulaciones diarias y anuales induce bandas laterales ubicadas a $\pm1\,$ciclo/año con respecto a la solar \cite{taborda}. Por estos motivos se toman estas frecuencias  como referencia.
+Estas anisotropías son variaciones pequeñas del flujo medido por lo que eliminar todo factor espurio en el análisis es importante. Para obtener la amplitud de la misma en ascensión recta, se estudian modulaciones en la frecuencia sidérea ($f_{sid}=366.25\,$ ciclos/año) \cite{taborda}. Los errores sistemáticos debido a la modulación de eventos por el clima u otros errores propios de la adquisición de datos, aparecen principalmente en la frecuencia solar  ($f_{sid}=365.25\,$ ciclos/año), por lo que se debe tener en consideración el análisis de esta frecuencia. La frecuencia anti-sidérea ($f_a=364.25\,$ ciclos/año) es una frecuencia que suele utilizarse para chequear la presencia de efectos sistemáticos en la amplitud de la anisotropía en la frecuencia sidérea \cite{farley1954sidereal}. La mezcla entre modulaciones diarias y anuales induce bandas laterales ubicadas a $\pm1\,$ciclo/año con respecto a la solar \cite{taborda}. Por estos motivos se toman estas frecuencias  como referencia.
 
 \section{Variaciones relativas de los hexágonos} \label{peso_hexagonos}
 
@@ -55,13 +53,13 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
       \begin{figure}[H]
           \centering
               \includegraphics[width=0.6\linewidth]{pesos_referencia.png}  
-              \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo A. Aab et al. (2018).}
+              \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias obtenidas en el trabajo A. Aab et al. (2018) \cite{referencia_pesos}.}
               \label{fig:pesos_referencia}
         \end{figure}
 
        \begin{figure}[H]
           \centering
-              \includegraphics[width=0.8\linewidth]{weigths_2004-2017.pdf}
+              \includegraphics[width=0.85\linewidth]{weigths_2004-2017.pdf}
               \caption{Valores de $\Delta N_{cell, k}$ en el rango 2004-2017 para distintas frecuencias utilizando el código escrito en este trabajo.}
               \label{fig:pesos_ejemplo}
         \end{figure}
@@ -72,10 +70,10 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
   % \subsection{Cálculo de Rayleigh en ascensión recta para una frecuencia dada} \label{rayleigh}
   \section{Descripción del método Rayleigh}
   Un procedimiento para estudiar anisotropías en la direcciones de arribos de los RCs es realizar un análisis de Fourier en ascensión recta $\alpha$. La distribución en ascensión recta $\alpha$ del flujo de RCs $I(\alpha)$ que llega al arreglo principal puede caracterizarse por las amplitudes $r_k$ y fases $\phi_k$ de su expansión en serie de Fourier al $k-$ésimo orden. 
-
-  \begin{equation}
-    I(\alpha) = I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) = I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) \label{eq:general-k-ray}
-  \end{equation}
+  \begin{align}
+    I(\alpha) &= I_0 \bigg ( 1+ \sum^\infty_{k=1} r_k\cos{[k(\alpha - \phi_k)]} \bigg) \\
+              &= I_0 \bigg ( 1+ \sum^\infty_{k=1} a_k\cos{k\alpha} +  b_k\sin{k\alpha} \bigg ) \label{eq:general-k-ray}
+  \end{align}
   donde $a_k=r_k\cos k\phi_k$ y $b_k=r_k\sin k \phi_k$, y $I_0$ es el flujo medio. La distribución $I(\alpha)$ puede obtenerse a partir de la distribución de direcciones de arribo de los eventos observados.  En este trabajo, suponiendo que existieron $N$ eventos en el rango analizado, se considera que los mismos tienen una distribución en ascensión recta del tipo $\nicefrac{dN}{d\alpha}= \sum^N_{i=1} \delta(\alpha - \alpha_i)$ \cite{taborda}. 
 
   \subsection{Caso dipolar} \label{caso_dipolar}
@@ -127,10 +125,10 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
             b_k = \frac{2}{\mathcal{N}} \sum^{Eventos}_i b_{ik}'  
          \end{alignat}
         \end{enumerate}
-        \item Con los coeficientes es posible calcular la amplitud de la frecuencia estudiada $\tilde{r}$ y la fase $\phi$. Otros parámetros calculados para el análisis son la probabilidad $P(\tilde{r})$  y $r_{99}$. 
+        \item Con los coeficientes es posible calcular la amplitud de la frecuencia estudiada ${r}_k$ y la fase $\phi_k$. Otros parámetros calculados para el análisis son la probabilidad $P(\tilde{r})$  y $r_{99}$. 
         \begin{alignat}{3}
-            \tilde{r}_k &= \sqrt{a_k^2 +b_k^2}                       \qquad &&   \phi_k&&= \frac{1}{k}\arctan\frac{a_k}{b_k}\\
-          P(\tilde{r}_k)&= \exp(-\mathcal{N}\frac{\tilde{r}_k^2}{4})\qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
+            {r}_k &= \sqrt{a_k^2 +b_k^2}                       \qquad &&   \phi_k&&= \frac{1}{k}\arctan\frac{a_k}{b_k}\\
+          P({r}_k)&= \exp(-\mathcal{N}\frac{{r}_k^2}{4})\qquad &&   r_{99}&&= \sqrt{\frac{-4\log(0.01)}{\mathcal{N}}}
         \end{alignat}
         Cabe resaltar que el $r_{99}$ depende solamente de los pesos de los eventos que se está estudiando. Este es el valor de amplitud para el cual es la probabilidad de tener una amplitud mayor como una fluctuación de una distribución isotrópica sea del $1$\%
         %., y el valor de amplitud $r_{99}$ para que dicha probabilidad sea del $1$\%.
@@ -140,7 +138,7 @@ Para calcular estos pesos $w_i$, se sigue el algoritmo presentado a continuació
 
       \begin{figure}[H]
         \centering
-        \includegraphics[width=0.75\linewidth]{sin_pesos_referencia_8_EeV.pdf}
-        \caption{Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos. Se comparan los resultados de este trabajo con los resultados de Taborda (2018).}
+        \includegraphics[width=0.9\linewidth]{sin_pesos_referencia_8_EeV.pdf}
+        \caption{Comparación entre los análisis de anisotropía hechos para el mismo conjunto de datos. Se comparan los resultados de este trabajo con los resultados de Taborda (2018) \cite{taborda}.}
         \label{fig:sin_pesos_referencia}
       \end{figure}
