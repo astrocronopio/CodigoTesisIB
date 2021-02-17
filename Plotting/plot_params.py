@@ -30,39 +30,48 @@ def plot_fit(x,y,y_err,
              y_, err_, c_, 
              label_y):
     params= np.polyfit(x,y,2)
-    plt.ylabel(label_y)
-    plt.xlabel("$\sin^2 \\theta$")
     X = np.linspace(0, 0.75, 100)
     Y = params[2] + params[1]*X +params[0]*X*X
     
-    print(params)
+    
+    params_2= np.polyfit(x,y_,2)
+    Y_ = params_2[2] + params_2[1]*X +params_2[0]*X*X
+    
+    plt.ylabel(label_y)
+    plt.xlabel("$\sin^2 \\theta$")    
+    print(params, params_2)
     
     plt.xticks(np.arange(0,1,0.1))
     plt.xlim(0.00, 0.75)
     
+    color_2='red'
     plt.scatter(x,y, marker='x', s=120,color='blue', alpha=0.8, label="Aab A. et al (2017)")
     
     plt.errorbar(x,y, yerr=y_err, fmt='none', color='blue',     
                  capsize=5, elinewidth=2,  markeredgewidth=2, alpha=0.7)
     
-    plt.scatter(x,y_, marker='s', s=120,color='green', alpha=0.8, label="$S_{38,w}$")
+    plt.scatter(x,y_, marker='s', s=120,color=color_2, alpha=0.8, label="Este trabajo")
     
-    plt.errorbar(x,y_, yerr=err_, fmt='none', color='green',     
+    plt.errorbar(x,y_, yerr=err_, fmt='none', color=color_2,     
                  capsize=5, elinewidth=2,  markeredgewidth=2, alpha=0.7)
     
-    # plt.axhline(c_, color='black', alpha=0.6, ls='--',label="Todos los eventos con $\\theta<60^o$")
+    plt.axhline(c_, color=color_2, alpha=0.6, ls='--',label="Todos los eventos con $\\theta<60^o$")
     
     plt.plot(X,Y, color='blue', alpha=0.6)
-    
+    plt.plot(X,Y_, color=color_2, alpha=0.6)
     plt.legend(fontsize=21,handlelength=1)
 
 
 # file_params = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_all_sin2.dat"
-# file_params = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_all_sin2.dat"
-file_params="../WeatherCode/wCorrections/Files_AllTriggers_S38/0EeV_all_sin2.dat"
+# ap_hline, arho_hline, brho_hline=-0.0032,-1.71,-0.51
+
+file_params = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_all_sin2.dat"
+ap_hline, arho_hline, brho_hline=-0.0033,-1.75,-0.51
+
+# file_params="../WeatherCode/wCorrections/Files_AllTriggers_S38/0EeV_all_sin2.dat"
+# ap_hline, arho_hline, brho_hline=-0.0048,-1.54,-0.55
 
 r1,ap, ap_err, arho, arho_err, brho, brho_err,r = np.loadtxt(file_params,unpack=True)
-ap_hline, arho_hline, brho_hline=-0.0032,-1.71,-0.51
 
 plt.figure(1)
 plot_fit(sin_theta, 1000*ap_ref  , 1000*ap_ref_err, 
