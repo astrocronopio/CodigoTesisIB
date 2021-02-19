@@ -11,8 +11,8 @@ mpl.rcParams.update({
 import numpy as np
 
 # file_hod = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_2EeV_hour_of_the_day.dat"
-# file_hod =  "../WeatherCode/AllTriggers/2019/weather_analysis/AllTriggers_S38_over_1EeV_hour_of_the_day.dat"
-file_hod = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_hour_of_the_day.dat"
+# file_hod =  "../WeatherCode/AllTriggers/2019/weather_analysis/AllTriggers_1EeV_hour_of_the_day.dat"
+# file_hod = "../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_hour_of_the_day.dat"
 ## This factor is for hexagons area, and the bins were made with
 ## 24 hours span 
 file_hod = "../WeatherCode/wCorrections/Files_AllTriggers/1EeV_hour_of_the_day.dat"
@@ -20,7 +20,7 @@ file_hod = "../WeatherCode/wCorrections/Files_AllTriggers/1EeV_hour_of_the_day.d
 # factor = 24*(2.566)
 
 #Para como yo trabajé a all triggers
-factor = 24*1.949 # (Area/5) == 2.566
+factor = 24*1.949# (Area/5) == 2.566
 
 hours = np.arange(0,24,1)
 offset= np.arange(+3,len(hours)+3,1)%24
@@ -76,15 +76,15 @@ def plot_two_graphs():
 # plot_two_graphs()
 # exit()
 
-file_hod = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_hour_of_the_day.dat"
-file_hod_ = "../WeatherCode/wCorrections/Files_AllTriggers/1EeV_hour_of_the_day.dat"
+# file_hod = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_hour_of_the_day.dat"
+# file_hod_ = "../WeatherCode/wCorrections/Files_AllTriggers/1EeV_hour_of_the_day.dat"
 
 
 #
 def plot_one_graph():
-        # cddc, expected, measured, hexagons, fff =  np.loadtxt(file_hod_, unpack=True)
+        cddc, expected, measured, hexagons, fff =  np.loadtxt(file_hod, unpack=True)
         # pepe, expected_, measured_,  hexagons_,peap = np.loadtxt(file_hod, unpack=True)
-        # error_meas = np.sqrt(measured)
+        error_meas = np.sqrt(measured)
         # ## Local hour GMT-3
         # expected, measured, error_meas, hexagons =expected[offset], measured[offset], error_meas[offset], hexagons[offset]
         # expected_,  hexagons_ = expected_[offset],  hexagons_[offset]
@@ -92,7 +92,7 @@ def plot_one_graph():
         # # fig, ax = plt.subplots(2, sharex=True)
         
         
-        expected, measured, error_meas, hexagons = np.loadtxt(file_hod, unpack=True)
+        # expected, measured, error_meas, hexagons = np.loadtxt(file_hod, unpack=True)
 
         ## Local hour GMT-3
         expected, measured, error_meas, hexagons =expected[offset], measured[offset], error_meas[offset], hexagons[offset]

@@ -6,7 +6,7 @@ mpl.rcParams.update({
 	'figure.figsize': [9, 9],
 	# 'figure.autolayout': True,
 	'font.family': 'serif',
-	'font.serif': ['STIXGeneral']})
+	'font.sans-serif': ['Palatino']})
 
 import numpy as np
 ##########################################################
@@ -15,7 +15,7 @@ import numpy as np
 
 ########################
 #Select bin: 0,1,2
-bin_sel=2
+bin_sel=1
 # Compute pie slices
 theta 	= np.array([280,258,320])
 width 	= 2*np.array([90,34,48])
@@ -43,7 +43,7 @@ ray_width = 2*np.pi*(1./360.)*ray_width
 N = len(theta)
 radii 	= 0.9*np.ones(len(theta))#np.linspace(0.85, 1, num=3) 
 #colors 	= plt.cm.viridis( np.random.rand(N+5))
-colors=['red', 'blue', 'blue', 'red']
+colors=['red', 'indianred', 'blue', 'red']
 ref_colors=['black', 'black', 'black']
 
 legend_=["0.25 EeV - 0.5 EeV", "0.5 EeV - 1  EeV", "1 EeV - 2 EeV"]

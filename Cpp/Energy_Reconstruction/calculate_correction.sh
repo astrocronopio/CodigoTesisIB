@@ -17,4 +17,4 @@ g++-9 -g "$algoritmo".cpp -o "$algoritmo"
 ""./"""$algoritmo"  "$file_input"  "$fileout"
 
 #!Solo para checkear delta E !
-gnuplot -e "filename='test.data'" plot_pc_energy.gp
+# gnuplot -e "filename='test.data'" plot_pc_energy.gp

@@ -72,23 +72,23 @@ int main(int argc, char** argv)
 
 					// Analisis  S38: no corregida por el Herald
 					//if (flag==0 || flag==3) 
-						energy_corr = energy_reconstruction(S38 , p,  rho2, rho24, the, phi, &factor) ;
+						// energy_corr = energy_reconstruction(S38 , p,  rho2, rho24, the, phi, &factor) ;
 					
 					// Analisis Energia: S38 corregido por el Herald
 					//if (flag==1 || flag==2) 
-						// energy_corr = energy(S38*(S1000_raw/S1000));//energy_reconstruction(S38*(S1000_raw/S1000), p,  rho24, rhod, the, phi, &factor) ;
+						energy_corr = energy_reconstruction(S38, p,  rho2, rho,rho24, the, phi, &factor);//energy_reconstruction(S38*(S1000_raw/S1000), p,  rho24, rhod, the, phi, &factor) ;
 						
 					//energy_corr=Energy;
 
 					if (energy_corr < 1.0) break;
-					if (energy_corr > 2.0) break;
+					// if (energy_corr > 2.0) break;
 					
 					std::cout<<"Delta:  "<<energy_corr-Energy<<std::endl;
 					outtest << utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) << "\t";
 					outtest << energy(S38*(S1000/S1000_raw))<< "\t" << S1000/S1000_raw << "\t" <<factor<<"\n" ;
 					//outfile<< utc <<"\t" << 0 <<"\t" <<Energy <<"\t" <<energy_corr<< "\t" << (Energy - energy_corr) <<"\n" ;
 
-					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t";
+					outfile << utc<<"\t"<< phi <<"\t" << the <<"\t"<< ra <<"\t" << Dec <<"\t";
 					outfile << S1000<<"\t" << S38 << "\t" <<energy_corr <<"\t";
 					outfile << tanks << "\t" << S1000_raw << "\n" ;
 

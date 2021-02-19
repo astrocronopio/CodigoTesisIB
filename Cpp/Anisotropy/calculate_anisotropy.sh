@@ -22,8 +22,8 @@ rango2020=1577880000
 energy_threshold="0"
 
 # file_cmp="../Anisotropy/Files_AllTriggers_Reference/output_threshold_0con_peso_v9.dat"
-file_input="./../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
-# file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
+# file_input="./../Energy_Reconstruction/Files_AllTriggers_Wide_Range/AllTriggers_1_2.dat"
+file_input="../../../AllTriggers/Original_Energy/2019/AllTriggers_1_2_EeV_2019.dat"
 
 #####################################################################################3
 # folder="./Files_AllTriggers_0-5_1_EeV/"
@@ -32,8 +32,10 @@ mkdir "$folder"
 
 sin_peso="sin_peso_v9"
 con_peso="con_peso_v11"
+sin_peso_2="sin_peso_v10_segundo_armonico"
+con_peso_2="con_peso_v11_segundo_armo"
 
-algoritmo="$con_peso"
+algoritmo="$con_peso_2"
 file_output="$folder""output_threshold_""$energy_threshold""$algoritmo"".dat"
 
 g++-9 -g "$algoritmo".cpp -o "$algoritmo"

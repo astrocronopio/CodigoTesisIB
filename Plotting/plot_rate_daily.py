@@ -14,12 +14,12 @@ import numpy as np
 from matplotlib.dates import epoch2num,MonthLocator, MONDAY, WeekdayLocator, DateFormatter, num2date
 
 #Para como yo trabajé a all triggers
-# factor = 0.5#/1.949 # (Area/5)^[-1] == 2.566
+factor = 0.5#/1.949 # (Area/5)^[-1] == 2.566
 
 ## This factor is for hexagons area, and the bins for the aab 2017 were made with 2 hours span 
-factor = 2/(2.566) # (Area)^[-1] ; (2.566/2)^[-1]
+# factor = 2/(2.566) # (Area)^[-1] ; (2.566/2)^[-1]
 
-months = MonthLocator(range(1, 13), bymonthday=1, interval=24)
+months = MonthLocator(range(1, 13), bymonthday=1, interval=12)
 monthsFmt = DateFormatter("%b '%y")
 
 def plot_medi(filepath):
@@ -72,7 +72,7 @@ def plot_medi_prediction(filepath):
 	# fig.autofmt_xdate()
 
 
-AllTriggers_2EeV_rate = "../WeatherCode/wCorrections/Files_AllTriggers/2EeV_rate_day.dat"
+AllTriggers_2EeV_rate = "../WeatherCode/wCorrections/Files_AllTriggers/1EeV_rate_day.dat"
 Main_Array_1EeV_rate = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_1EeV_rate_day.dat"
 Main_Array_2EeV_rate = "../WeatherCode/Main_Array/upto2015/Data/Herald_old/herald_old_above_2EeV_rate_day.dat"
 
@@ -92,7 +92,7 @@ ICRC_2019_S38_over_1EeV_rate = "../WeatherCode/Main_Array/upto2019/Data/Herald_S
 # S38_above_0EeV_rate_day="../WeatherCode/Main_Array/upto2019/Data/Herald_S38/S38_above_0EeV_rate_day.dat"
 
 
-plot_medi(Main_Array_1EeV_rate)
+plot_medi(AllTriggers_2EeV_rate)
 plt.show()
 exit()
 # plot_medi(ICRC_2019_Array_1EeV_rate)

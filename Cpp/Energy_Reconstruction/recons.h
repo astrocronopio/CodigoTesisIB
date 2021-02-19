@@ -37,7 +37,7 @@ double brho(double the2){	double dummy= c06 + c16*the2 + c26*the2*the2;
 
 
 
-double energy_reconstruction(double S38, double p, double rho24, double rhod, 
+double energy_reconstruction(double S38, double p, double rho24, double rhod, double rho,
 							 double the, double phi,double* factor) 
 {	
 		int flag = 3;
@@ -67,27 +67,22 @@ double energy_reconstruction(double S38, double p, double rho24, double rhod,
 	//AllTriggers
 	if (flag==3)
 	{
-	/*aP*/	c07  = -0.0025022   ; 	c17  = -0.00792055  ;	c27  =  0.00316981  ;//
-	/*arho*/c05  = -2.075  ;	c15  = -0.0941  ;  	c25  = 3.268;// 
-	/*brho*/c06  = -0.725 ;	c16 = -0.0724  ; 	c26 = 1.14 ;//    
+	/*aP*/	c07  = -0.0025022    ; 	c17  = -0.00792055    ;	c27  = 0.00316981   ;//
+	/*arho*/c05  =  -2.07455   ;	c15  = -0.0941469 ;  	c25  = 3.26793  ;// 
+	/*brho*/c06  = -0.724809   ;	c16 = -0.0723714   ; 	c26 = 1.13565 ;//    
 	}
 
 }
 	double d2r=M_PI/180.;
 	double the2 = sin(the*d2r)*sin(the*d2r);
 
-	*factor =1.0 + 1.0*(ap(the2)*(p-p0) + arho(the2)*(rho24 -  rho0) + brho(the2)*(rhod - rho24))/Bgamma; 
+	*factor =1.0 - 0.08*(1.1*ap(the2)*(p-p0) + 0.7*arho(the2)*(rho24 -  rho0) + 0.7*brho(the2)*(rhod - rho24))/Bgamma; 
 	double  cosub=sin(the*d2r)*sin(thetaB*d2r)*cos((phi-phiB)*d2r)+ cos(the*d2r)*cos(thetaB*d2r);
     
-	double factor_g= (1.0 - 0.0*g1*pow(cos(the*d2r), -g2)*(1.-pow(cosub,2)));
+	double factor_g= (1.0 - 1.0*g1*pow(cos(the*d2r), -g2)*(1.-pow(cosub,2)));
 	
-	double S38w = S38*factor_g/(*factor);   
-	// S = S_0 * factor, pero S_0 es para calcular la energia
-	// S es lo medido, S_0 es lo que se debería ver en condiciones normales
-	// S_0 = S/factor
-
+	double S38w = S38*(*factor)*factor_g;   
 	return energy(S38w);
 }
-
 
 #endif // recons
