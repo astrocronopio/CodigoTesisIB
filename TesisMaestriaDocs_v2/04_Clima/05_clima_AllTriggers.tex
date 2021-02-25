@@ -40,7 +40,6 @@ En  los eventos de este conjunto de datos, la modulación del clima está correg
 
 
 
-
 \subsection{Parámetros del clima para Todos los Disparos usando $S_{38}$}
 
 
@@ -85,11 +84,11 @@ Se realiza un ajuste de la tasa de eventos de Todos los Disparos y de esta maner
 La tasa de eventos media por día  medida y la tasa predicha según los parámetros del clima obtenidos se observan en la Fig.\ref{fig:rate_dayly_AllTriggers}. En la misma, la modulación anual y diaria del clima sobre los eventos es apreciable, a diferencia de las tasas de la Fig.\,\ref{fig:rate_ALL} donde  la energía de estos eventos están corregidos.  
 \begin{figure}[H]
 \centering
-  \begin{subfigure}[b]{0.9\textwidth}
+  \begin{subfigure}[b]{0.8\textwidth}
   \includegraphics[width=\textwidth]{Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf}
   \caption{Tasa eventos por día}\label{fig:rate_dayly_AllTriggers}
   \end{subfigure}\\
-  \begin{subfigure}[b]{0.9\textwidth}
+  \begin{subfigure}[b]{0.8\textwidth}
   \includegraphics[width=\textwidth]{Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf}
   \caption{Tasa de eventos promediada por hora del día }\label{fig:rate_hod_AllTriggers}
   \end{subfigure}
@@ -100,22 +99,24 @@ Para poder verificar que los parámetros del clima en función de $\sin^2\theta$
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}[b]{0.8\textwidth}
+  \begin{subfigure}[b]{0.75\textwidth}
   \includegraphics[width=\linewidth]{Graphs/params/ap_AllTriggers.pdf}
   \caption{Parámetro $a_P$ }
   \end{subfigure}\\
-  \begin{subfigure}[b]{0.8\textwidth}
+  \begin{subfigure}[b]{0.75\textwidth}
   \includegraphics[width=\linewidth]{Graphs/params/arho_AllTriggers.pdf}
   \caption{Parámetro $a_{\rho}$ }
   \end{subfigure}\\
   \begin{subfigure}[b]{\textwidth}
   \centering
-  \includegraphics[width=0.8\linewidth]{Graphs/params/brho_AllTriggers.pdf}
+  \includegraphics[width=0.75\linewidth]{Graphs/params/brho_AllTriggers.pdf}
   \caption{Parámetro  $b_\rho$   }
   \end{subfigure}
   \caption{Parámetros de la modulación del clima considerando los datos de Todos los Disparos, obtenido en el rango 2014-2020 . Los mismos se comparan con los coeficientes utilizados por la Colaboración \cite{aab2017impact}.}
   \label{fig:ALL-params}
 \end{figure}
+
+Cabe notar que los valores obtenidos de los parámetros del clima siguen el mismo comportamiento que los parámetros de referencia, aunque no son compatibles entre sí. Esto puede deberse a que Todos los Disparos recabó eventos solamente dentro de los últimos 4 años, mientras que el Disparo Estándar tiene datos de más años.
 
 \begin{table}[H]
   \centering

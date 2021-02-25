@@ -176,11 +176,6 @@ Linsley, J.
 \newblock \emph{The Astrophysical Journal}, \textbf{891}~(2), 142, mar 2020.
 \newblock \urlprefix\url{https://doi.org/10.3847/1538-4357/ab7236}.
 
-\bibitem{linsley1975fluctuation}
-Linsley, J.
-\newblock Fluctuation effects on directional data.
-\newblock \emph{Physical Review Letters}, \textbf{34}~(24), 1530, 1975.
-
 \bibitem{codigo}
 Este valor fue obtenido con el código implementado en el trabajo
   \cite{Aab_2020}.
@@ -193,5 +188,10 @@ Abreu, P., Aglietta, M., Ahn, E., Albuquerque, I., Allard, D., Allekotte, I.,
 \newblock \emph{Astroparticle Physics}, \textbf{34}~(8), 627 -- 639, 2011.
 \newblock
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0927650510002422}.
+
+\bibitem{linsley1975fluctuation}
+Linsley, J.
+\newblock Fluctuation effects on directional data.
+\newblock \emph{Physical Review Letters}, \textbf{34}~(24), 1530, 1975.
 
 \end{thebibliography}

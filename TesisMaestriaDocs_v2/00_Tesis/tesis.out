@@ -24,8 +24,8 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Todos los Disparos}{section.2.4}% 24
 \BOOKMARK [1][-]{section.2.5}{Acerca de los eventos utilizados en este trabajo}{chapter.2}% 25
 \BOOKMARK [2][-]{subsection.2.5.1}{Acerca del registro de hex\341gonos}{section.2.5}% 26
-\BOOKMARK [0][-]{chapter.3}{Modulaci\363n del clima sobre los datos del Observatorio Pierre Auger}{}% 27
-\BOOKMARK [1][-]{section.3.1}{La f\355sica detr\341s de la modulaci\363n del clima}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.3}{Modulaci\363n sobre la se\361al medida por el Observatorio Pierre Auger}{}% 27
+\BOOKMARK [1][-]{section.3.1}{La f\355sica detr\341s de la modulaci\363n en la se\361al de las lluvias atmosf\351ricas}{chapter.3}% 28
 \BOOKMARK [2][-]{subsection.3.1.1}{Trabajos anteriores}{section.3.1}% 29
 \BOOKMARK [2][-]{subsection.3.1.2}{Efectos de la atm\363sfera sobre los rayos c\363smicos}{section.3.1}% 30
 \BOOKMARK [2][-]{subsection.3.1.3}{Descripci\363n del modulaci\363n en la se\361al medida}{section.3.1}% 31
@@ -60,23 +60,23 @@
 \BOOKMARK [1][-]{section.5.3}{Verificaci\363n del c\363digo}{chapter.5}% 60
 \BOOKMARK [2][-]{subsection.5.3.1}{Comparaci\363n con el trabajo de la Colaboraci\363n Pierre Auger}{section.5.3}% 61
 \BOOKMARK [2][-]{subsection.5.3.2}{Comparando con la variable \040con la ascensi\363n recta del cenit }{section.5.3}% 62
-\BOOKMARK [0][-]{chapter.6}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 63
-\BOOKMARK [1][-]{section.6.1}{Distribuci\363n de probabilidad de la amplitud}{chapter.6}% 64
-\BOOKMARK [2][-]{subsection.6.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.6.1}% 65
-\BOOKMARK [1][-]{section.6.2}{Distribuci\363n de probabilidad de la fase del dipolo}{chapter.6}% 66
-\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo Rayleigh}{}% 67
-\BOOKMARK [1][-]{section.7.1}{Caracter\355sticas del conjunto de datos}{chapter.7}% 68
-\BOOKMARK [1][-]{section.7.2}{Pesos de los eventos de Todos los Disparos para frecuencias de referencia}{chapter.7}% 69
-\BOOKMARK [1][-]{section.7.3}{An\341lisis de la modulaci\363n en ascensi\363n recta para el primer arm\363nico}{chapter.7}% 70
-\BOOKMARK [2][-]{subsection.7.3.1}{An\341lisis de segundo orden en Fourier}{section.7.3}% 71
-\BOOKMARK [0][-]{chapter.8}{Resultados del m\351todo East - West}{}% 72
-\BOOKMARK [1][-]{section.8.1}{Resultados en distintos rangos de energ\355a}{chapter.8}% 73
-\BOOKMARK [2][-]{subsection.8.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.8.1}% 74
-\BOOKMARK [2][-]{subsection.8.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.8.1}% 75
-\BOOKMARK [2][-]{subsection.8.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.8.1}% 76
-\BOOKMARK [1][-]{section.8.2}{An\341lisis de los resultados}{chapter.8}% 77
-\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 78
-\BOOKMARK [0][-]{appendix.Alph1}{Coordenadas celestes}{}% 79
-\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 80
-\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 81
+\BOOKMARK [0][-]{chapter.6}{Resultados del m\351todo Rayleigh}{}% 63
+\BOOKMARK [1][-]{section.6.1}{Caracter\355sticas del conjunto de datos}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{Pesos de los eventos de Todos los Disparos para frecuencias de referencia}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.3}{An\341lisis de la modulaci\363n en ascensi\363n recta para el primer arm\363nico}{chapter.6}% 66
+\BOOKMARK [2][-]{subsection.6.3.1}{An\341lisis de segundo orden en Fourier}{section.6.3}% 67
+\BOOKMARK [0][-]{chapter.7}{Resultados del m\351todo East - West}{}% 68
+\BOOKMARK [1][-]{section.7.1}{Resultados en distintos rangos de energ\355a}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.1.1}{Resultados en el rango 0.25 EeV - 0.5 EeV}{section.7.1}% 70
+\BOOKMARK [2][-]{subsection.7.1.2}{Resultados en el rango 0.5 EeV - 1 EeV}{section.7.1}% 71
+\BOOKMARK [2][-]{subsection.7.1.3}{Resultados en el rango 1 EeV - 2 EeV}{section.7.1}% 72
+\BOOKMARK [1][-]{section.7.2}{An\341lisis de los resultados}{chapter.7}% 73
+\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 74
+\BOOKMARK [0][-]{appendix.Alph1}{Coordenadas celestes}{}% 75
+\BOOKMARK [1][-]{section.Alph1.1}{Coordenadas Ecuatoriales}{appendix.Alph1}% 76
+\BOOKMARK [1][-]{section.Alph1.2}{Coordenadas Locales}{appendix.Alph1}% 77
+\BOOKMARK [0][-]{appendix.Alph2}{Distribuci\363n de probabilidad de la amplitud y fase del dipolo}{}% 78
+\BOOKMARK [1][-]{section.Alph2.1}{Distribuci\363n de probabilidad de la amplitud}{appendix.Alph2}% 79
+\BOOKMARK [2][-]{subsection.Alph2.1.1}{Haciendo la cuenta de los m\341rgenes de confianza de la amplitud}{section.Alph2.1}% 80
+\BOOKMARK [1][-]{section.Alph2.2}{Distribuci\363n de probabilidad de la fase del dipolo}{appendix.Alph2}% 81
 \BOOKMARK [0][-]{section*.82}{Bibliograf\355a}{}% 82

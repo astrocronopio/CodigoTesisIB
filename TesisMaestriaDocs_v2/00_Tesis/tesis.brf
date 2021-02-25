@@ -6,7 +6,7 @@
 \backcite {aab2017impact}{{\es@scroman {xi}}{(document)}{Doc-Start}}
 \backcite {referencia_pesos}{{\es@scroman {xi}}{(document)}{Doc-Start}}
 \backcite {taborda}{{\es@scroman {xi}}{(document)}{Doc-Start}}
-\backcite {Aab_2020}{{\es@scroman {xii}}{(document)}{Doc-Start}}
+\backcite {Aab_2020}{{\es@scroman {xi}}{(document)}{Doc-Start}}
 \backcite {Aab_2020}{{\es@scroman {xii}}{(document)}{Doc-Start}}
 \backcite {Aab_2020}{{\es@scroman {xii}}{(document)}{Doc-Start}}
 \backcite {Aab_2020}{{\es@scroman {xii}}{(document)}{Doc-Start}}
@@ -55,85 +55,88 @@
 \backcite {gora2006universal}{{21}{3.1.2}{equation.3.1.2}}
 \backcite {aab2017impact}{{22}{3.1.3}{subsection.3.1.3}}
 \backcite {collaboration2009atmospheric}{{22}{3.1.3}{subsection.3.1.3}}
-\backcite {aab2017impact}{{27}{3.2}{section.3.2}}
-\backcite {aab2017impact}{{27}{3.2}{section.3.2}}
-\backcite {aab2017impact}{{28}{3.2.1}{table.caption.26}}
-\backcite {aab2017impact}{{28}{\caption@xref {??}{ on input line 27}}{table.caption.27}}
-\backcite {aab2017impact}{{31}{3.2.1}{section*.30}}
-\backcite {aab2017impact}{{31}{3.2.1}{section*.30}}
-\backcite {aab2017impact}{{32}{3.2.1}{equation.3.2.9}}
-\backcite {aab2017impact}{{32}{\caption@xref {??}{ on input line 109}}{table.caption.32}}
-\backcite {aab2017impact}{{32}{3.2.2}{subsection.3.2.2}}
-\backcite {isabel}{{33}{3.2.2}{subsection.3.2.2}}
-\backcite {tobepublished}{{33}{3.2.2}{subsection.3.2.2}}
-\backcite {data}{{33}{3.2.2}{table.caption.33}}
-\backcite {aab2017impact}{{35}{3.2.3}{subsection.3.2.3}}
-\backcite {aab2017impact}{{35}{3.2.3}{table.caption.36}}
-\backcite {aab2017impact}{{37}{3.2.3}{section*.39}}
-\backcite {aab2017impact}{{38}{\caption@xref {??}{ on input line 142}}{table.caption.41}}
-\backcite {aab2017impact}{{40}{3.3.3}{subsection.3.3.3}}
-\backcite {aab2017impact}{{41}{3.3.3}{table.caption.45}}
-\backcite {aab2017impact}{{41}{\caption@xref {??}{ on input line 75}}{table.caption.46}}
-\backcite {aab2017impact}{{41}{3.10}{table.caption.46}}
-\backcite {aab2017impact}{{43}{3.17}{figure.caption.48}}
-\backcite {aab2017impact}{{44}{\caption@xref {??}{ on input line 123}}{table.caption.49}}
-\backcite {referencia_anis}{{47}{4}{chapter.4}}
-\backcite {taborda}{{47}{4.1}{section.4.1}}
-\backcite {farley1954sidereal}{{47}{4.1}{section.4.1}}
-\backcite {taborda}{{47}{4.1}{section.4.1}}
-\backcite {referencia_pesos}{{49}{4.2.1}{equation.4.2.4}}
-\backcite {referencia_pesos}{{49}{4.1}{figure.caption.51}}
-\backcite {taborda}{{50}{4.3}{equation.4.3.6}}
-\backcite {taborda}{{51}{4.3.1}{equation.4.3.7}}
-\backcite {taborda}{{51}{4.3.2}{subsection.4.3.2}}
-\backcite {analisis_fourier}{{52}{5\emph {b}}{Item.16}}
-\backcite {taborda}{{53}{4.3.3}{equation.4.3.13}}
-\backcite {taborda}{{53}{4.3.3}{equation.4.3.13}}
-\backcite {taborda}{{53}{4.3}{figure.caption.53}}
-\backcite {taborda}{{55}{5}{chapter.5}}
-\backcite {Aab_2020}{{60}{5.2.1}{Item.22}}
-\backcite {Aab_2020}{{61}{1}{Item.23}}
-\backcite {Aab_2020}{{61}{2}{Item.24}}
-\backcite {Aab_2020}{{61}{3}{Item.25}}
-\backcite {Aab_2020}{{62}{\caption@xref {??}{ on input line 225}}{table.caption.54}}
-\backcite {linsley1975fluctuation}{{63}{6}{chapter.6}}
-\backcite {Aab_2020}{{75}{8}{chapter.8}}
-\backcite {Aab_2020}{{76}{8.1.1}{subsection.8.1.1}}
-\backcite {Aab_2020}{{76}{\caption@xref {??}{ on input line 42}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 43}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 44}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 45}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 46}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 48}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 53}}{table.caption.68}}
-\backcite {codigo}{{76}{\caption@xref {??}{ on input line 54}}{table.caption.68}}
-\backcite {Aab_2020}{{76}{8.1}{figure.caption.69}}
-\backcite {Aab_2020}{{76}{8.1.1}{figure.caption.69}}
-\backcite {Aab_2020}{{77}{8.1.2}{subsection.8.1.2}}
-\backcite {Aab_2020}{{77}{8.1.2}{subsection.8.1.2}}
-\backcite {Aab_2020}{{78}{\caption@xref {??}{ on input line 110}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 111}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 112}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 113}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 114}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 116}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 121}}{table.caption.71}}
-\backcite {codigo}{{78}{\caption@xref {??}{ on input line 122}}{table.caption.71}}
-\backcite {Aab_2020}{{79}{8.4}{figure.caption.73}}
-\backcite {Aab_2020}{{79}{8.1.3}{table.caption.74}}
-\backcite {Aab_2020}{{79}{8.1.3}{table.caption.74}}
-\backcite {Aab_2020}{{80}{8.5}{figure.caption.75}}
-\backcite {Aab_2020}{{80}{\caption@xref {??}{ on input line 212}}{table.caption.76}}
-\backcite {codigo}{{80}{\caption@xref {??}{ on input line 214}}{table.caption.76}}
-\backcite {codigo}{{80}{\caption@xref {??}{ on input line 215}}{table.caption.76}}
-\backcite {codigo}{{80}{\caption@xref {??}{ on input line 216}}{table.caption.76}}
-\backcite {codigo}{{80}{\caption@xref {??}{ on input line 217}}{table.caption.76}}
-\backcite {codigo}{{80}{\caption@xref {??}{ on input line 219}}{table.caption.76}}
-\backcite {resolucion_barrido}{{81}{8.2}{section.8.2}}
-\backcite {Aab_2020}{{81}{8.2}{section.8.2}}
-\backcite {Aab_2020}{{81}{8.2}{section.8.2}}
-\backcite {Aab_2020}{{81}{8.2}{section.8.2}}
-\backcite {Aab_2020}{{82}{8.8}{figure.caption.79}}
-\backcite {aab2017impact}{{83}{9}{chapter.9}}
-\backcite {aab2017impact}{{83}{9}{chapter.9}}
-\backcite {Aab_2020}{{89}{A.2}{appendix*.83}}
+\backcite {aab2017impact}{{28}{3.2}{section.3.2}}
+\backcite {aab2017impact}{{28}{3.2}{section.3.2}}
+\backcite {aab2017impact}{{29}{3.2.1}{table.caption.26}}
+\backcite {aab2017impact}{{29}{\caption@xref {??}{ on input line 27}}{table.caption.27}}
+\backcite {aab2017impact}{{32}{3.2.1}{section*.30}}
+\backcite {aab2017impact}{{32}{3.2.1}{section*.30}}
+\backcite {aab2017impact}{{33}{3.2.1}{equation.3.2.9}}
+\backcite {aab2017impact}{{33}{\caption@xref {??}{ on input line 109}}{table.caption.32}}
+\backcite {aab2017impact}{{33}{3.2.2}{subsection.3.2.2}}
+\backcite {isabel}{{34}{3.2.2}{subsection.3.2.2}}
+\backcite {tobepublished}{{34}{3.2.2}{subsection.3.2.2}}
+\backcite {data}{{34}{3.2.2}{table.caption.33}}
+\backcite {aab2017impact}{{36}{3.2.3}{subsection.3.2.3}}
+\backcite {aab2017impact}{{36}{3.2.3}{subsection.3.2.3}}
+\backcite {aab2017impact}{{36}{3.2.3}{table.caption.36}}
+\backcite {aab2017impact}{{38}{3.2.3}{section*.39}}
+\backcite {aab2017impact}{{40}{\caption@xref {??}{ on input line 145}}{table.caption.41}}
+\backcite {aab2017impact}{{42}{3.3.3}{subsection.3.3.3}}
+\backcite {aab2017impact}{{43}{3.3.3}{table.caption.45}}
+\backcite {aab2017impact}{{43}{\caption@xref {??}{ on input line 74}}{table.caption.46}}
+\backcite {aab2017impact}{{43}{3.10}{table.caption.46}}
+\backcite {aab2017impact}{{45}{3.17}{figure.caption.48}}
+\backcite {aab2017impact}{{46}{\caption@xref {??}{ on input line 124}}{table.caption.49}}
+\backcite {referencia_anis}{{49}{4}{chapter.4}}
+\backcite {taborda}{{49}{4.1}{section.4.1}}
+\backcite {farley1954sidereal}{{49}{4.1}{section.4.1}}
+\backcite {taborda}{{49}{4.1}{section.4.1}}
+\backcite {referencia_pesos}{{51}{4.2.1}{equation.4.2.4}}
+\backcite {referencia_pesos}{{51}{4.1}{figure.caption.51}}
+\backcite {taborda}{{52}{4.3}{equation.4.3.6}}
+\backcite {taborda}{{53}{4.3.1}{equation.4.3.7}}
+\backcite {taborda}{{53}{4.3.2}{subsection.4.3.2}}
+\backcite {analisis_fourier}{{54}{5\emph {b}}{Item.16}}
+\backcite {taborda}{{55}{4.3.3}{equation.4.3.13}}
+\backcite {taborda}{{55}{4.3.3}{equation.4.3.13}}
+\backcite {taborda}{{55}{4.3}{figure.caption.53}}
+\backcite {taborda}{{57}{5}{chapter.5}}
+\backcite {Aab_2020}{{62}{5.2.1}{Item.22}}
+\backcite {Aab_2020}{{63}{1}{Item.23}}
+\backcite {Aab_2020}{{63}{2}{Item.24}}
+\backcite {Aab_2020}{{63}{3}{Item.25}}
+\backcite {Aab_2020}{{64}{\caption@xref {??}{ on input line 225}}{table.caption.54}}
+\backcite {Aab_2020}{{71}{7}{chapter.7}}
+\backcite {Aab_2020}{{72}{7.1.1}{subsection.7.1.1}}
+\backcite {Aab_2020}{{72}{\caption@xref {??}{ on input line 42}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 43}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 44}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 45}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 46}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 48}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 53}}{table.caption.64}}
+\backcite {codigo}{{72}{\caption@xref {??}{ on input line 54}}{table.caption.64}}
+\backcite {Aab_2020}{{72}{7.1}{figure.caption.65}}
+\backcite {Aab_2020}{{72}{7.1.1}{figure.caption.65}}
+\backcite {Aab_2020}{{73}{7.1.2}{subsection.7.1.2}}
+\backcite {Aab_2020}{{73}{7.1.2}{subsection.7.1.2}}
+\backcite {Aab_2020}{{74}{\caption@xref {??}{ on input line 110}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 111}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 112}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 113}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 114}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 116}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 121}}{table.caption.67}}
+\backcite {codigo}{{74}{\caption@xref {??}{ on input line 122}}{table.caption.67}}
+\backcite {Aab_2020}{{75}{7.4}{figure.caption.69}}
+\backcite {Aab_2020}{{75}{7.1.3}{table.caption.70}}
+\backcite {Aab_2020}{{75}{7.1.3}{table.caption.70}}
+\backcite {Aab_2020}{{76}{7.5}{figure.caption.71}}
+\backcite {Aab_2020}{{76}{\caption@xref {??}{ on input line 212}}{table.caption.72}}
+\backcite {codigo}{{76}{\caption@xref {??}{ on input line 214}}{table.caption.72}}
+\backcite {codigo}{{76}{\caption@xref {??}{ on input line 215}}{table.caption.72}}
+\backcite {codigo}{{76}{\caption@xref {??}{ on input line 216}}{table.caption.72}}
+\backcite {codigo}{{76}{\caption@xref {??}{ on input line 217}}{table.caption.72}}
+\backcite {codigo}{{76}{\caption@xref {??}{ on input line 219}}{table.caption.72}}
+\backcite {resolucion_barrido}{{77}{7.2}{section.7.2}}
+\backcite {Aab_2020}{{77}{7.2}{section.7.2}}
+\backcite {Aab_2020}{{77}{7.2}{section.7.2}}
+\backcite {Aab_2020}{{77}{7.2}{section.7.2}}
+\backcite {Aab_2020}{{78}{7.2}{figure.caption.74}}
+\backcite {Aab_2020}{{78}{7.2}{figure.caption.74}}
+\backcite {Aab_2020}{{79}{7.8}{figure.caption.75}}
+\backcite {aab2017impact}{{81}{8}{chapter.8}}
+\backcite {aab2017impact}{{81}{8}{chapter.8}}
+\backcite {linsley1975fluctuation}{{85}{B}{appendix.Alph2}}
+\backcite {Aab_2020}{{93}{B.2}{appendix*.83}}

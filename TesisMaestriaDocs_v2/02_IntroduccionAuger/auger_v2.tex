@@ -3,7 +3,7 @@
 \section{Introducción}
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{El observatorio Pierre Auger está ubicado en la ciudad de Malargüe, provincia de Mendoza. El mismo fue construido para detectar las partículas secundarias de las EASs producidas por RCs.  Las propiedades medidas de las lluvias extendidas determinan la energía y la dirección de arribo de cada CR, además de proveer información sobre  la composición de la  misma. El observatorio posee un sistema híbrido de detección, ya que combina un arreglo de detectores de partículas sobre la superficie y un conjunto de telescopios que detectan los fotones de fluorescencia. Cuando el observatorio  registra una EAS que llega a la superficie y reconstruye la dirección de llegada del RC, se dice que se ha detectado un \textit{evento}. La adquisición de datos empezó en el año 2004 y sigue hasta la actualidad.}
+{El observatorio Pierre Auger está ubicado en la provincia de Mendoza cerca de la ciudad de Malargüe,. El mismo fue construido para detectar las partículas secundarias de las EASs producidas por RCs.  Las propiedades medidas de las lluvias extendidas determinan la energía y la dirección de arribo de cada CR, además de proveer información sobre  la composición de la  misma. El observatorio posee un sistema híbrido de detección, ya que combina un arreglo de detectores de partículas sobre la superficie y un conjunto de telescopios que detectan los fotones de fluorescencia. Cuando el observatorio  registra una EAS que llega a la superficie y reconstruye la dirección de llegada del RC, se dice que se ha detectado un \textit{evento}. La adquisición de datos empezó en el año 2004 y sigue hasta la actualidad.}
 
 
 \section{Detección de Rayos Cósmicos}
@@ -76,16 +76,16 @@ La reconstrucción de la energía y la dirección de arribo de los CRs se realiz
 \subsection{Reconstrucción de las lluvias}
 
 %%%%%%%%%%%%%%%%%%%Check%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-En una primera aproximación para la dirección de arribo de la lluvia se obtiene ajustando los tiempos de llegada de la señal en cada tanque. Este ajuste se realiza con un función de distribución lateral (LDF). La LDF también tiene en cuenta la probabilidad de que los tanques no sean disparados y que los tanques con mayor señal estén saturados. Para eventos con suficientes tanques disparados, estos tiempos de llegada pueden ser descritas como la evolución un frente de lluvia como una esfera que crece con la velocidad de la luz.  
+En una primera aproximación para la dirección de arribo de la lluvia se obtiene ajustando los tiempos de llegada de la señal en cada tanque. Este ajuste se realiza con una función de distribución lateral (LDF). La LDF también tiene en cuenta la probabilidad de que los tanques no sean disparados y que los tanques con mayor señal estén saturados. Para eventos con suficientes tanques disparados, estos tiempos de llegada pueden ser descritos como la evolución un frente de lluvia como una esfera que crece con la velocidad de la luz.  
 
-Un ejemplo de la señal que deja un evento sobre el SD 1500 m se muestra en la Fig.\,\ref{fig:evento_sd}. Este evento fue producido por un rayo cósmico de ($104\pm11$)\,EeV con un ángulo cenital de ($25.1\pm0.1 ^o$). La LDF de las señales para este evento se muestra en la Fig.\,\ref{fig:evento_S1000}. La función utilizada para el ajuste de la LDF es una función  $f_{LDF}$ propuesta por Nishimura-Kamata-Greisen \cite{data}
+Un ejemplo de la señal que deja un evento sobre el SD 1500 m se muestra en la Fig.\,\ref{fig:evento_sd}. Este evento fue producido por un rayo cósmico de ($104\pm11$)\,EeV con un ángulo cenital de ($25.1\pm0.1 ^o$). La LDF de las señales para este evento se muestra en la Fig.\,\ref{fig:evento_S1000}. La función utilizada para el ajuste de la LDF $f_{LDF}$  está basada en una función  propuesta por Nishimura-Kamata-Greisen \cite{data}
 \begin{align*}
 	%S(r) = S(r_{opt})\bigg(\frac{r}{r_{opt}}\bigg)^{\beta}\bigg(\frac{r+r_1}{r_{opt}+r_1}\bigg)^{\beta + \gamma}
 	S(r) &= S(r_{opt})f_{LDF}(r)\\
 	f_{LDF}(r)&=\bigg(\frac{r}{r_{opt}}\bigg)^{\beta}\bigg(\frac{r+r_1}{r_{opt}+r_1}\bigg)^{\beta + \gamma}
 \end{align*}
 donde $f_{LDF}$ está normalizado tal que $f_{LDF}(r_{opt})=1$ y $r_{opt}$ es la distancia óptima, %$r_1=700\,$m 
-y $S(r_{opt})$ es usado para estimar la energía. Para el arreglo SD 1500\,m, el parámetro $r_{opt}=1000\,$m, por lo tanto el tamaño de la lluvia o \emph{shower size} es el valor de S(1000). Dado que la forma de la LDF es desconocida, la forma funcional propuesta para la función $f_{LDF}$ fue elegida empíricamente.  El parámetro $\beta$ depende del tamaño de la lluvia y del ángulo cenital. Los eventos verticales, es decir los eventos con $\theta < 60^o$, son medidas en una etapa menos desarrollada que eventos más inclinados. Los eventos con $\theta>60^o$ atraviesan un mayor cantidad de atmósfera.
+y $S(r_{opt})$ es usado para estimar la energía. Para el arreglo SD 1500\,m, el parámetro $r_{opt}=1000\,$m, por lo tanto el tamaño de la lluvia o \emph{shower size} es el valor de S(1000). Dado que la forma de la LDF es desconocida, la forma funcional propuesta para la función $f_{LDF}$ fue elegida empíricamente.  El parámetro $\beta$ depende del tamaño de la lluvia y del ángulo cenital. Los eventos verticales, es decir los eventos con $\theta < 60^o$, son medidos en una etapa menos desarrollada que eventos más inclinados. Los eventos con $\theta>60^o$ atraviesan un mayor cantidad de atmósfera.
 
 \subsection{Calibración de la energía} \label{sec:gamma_B}
 
@@ -97,7 +97,7 @@ Para una energía dada, el valor de S(1000) disminuye para $\theta$ crecientes d
 		\begin{center}
 			\includegraphics[width=0.65\textwidth]{evento_sd.png}
 		\end{center}
-		\caption{Ejemplo de la señal dejada por un evento de ($104\pm11$)\,EeV de energía con un ángulo cenital de ($25.1\pm0.1 ^o$) sobre el arreglo principal SD 1500 m. La flecha indica la dirección de arribo de la lluvia. Los colores de los círculos representan el tiempo de arribo de la lluvia, los primeros en amarillo y los últimos en rojo. En área de los círculos pintados es proporcional al logaritmo de la señal. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}. } 	\label{fig:evento_sd}
+		\caption{Ejemplo de la señal dejada por un evento de ($104\pm11$)\,EeV de energía con un ángulo cenital de ($25.1\pm0.1 ^o$) sobre el arreglo principal SD 1500 m. La flecha indica la dirección de arribo de la lluvia. Los colores de los círculos representan el tiempo de arribo de la lluvia, los primeros en amarillo y los últimos en rojo. El área de los círculos pintados es proporcional al logaritmo de la señal. Figura de la Colaboración Pierre Auger \cite{como_funciona_auger}. } 	\label{fig:evento_sd}
 	\end{small}
 \end{figure}
 \begin{figure}[H]

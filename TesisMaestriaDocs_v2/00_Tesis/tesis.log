@@ -1,47 +1,48 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.2)  15 FEB 2021 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.24)  24 FEB 2021 22:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/00_Tesis/tesis
-(/home/ponci/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/00_Tesis/tesis.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-07-17> (./ibtesis.cls
+**/home/ponci_pop/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/00_Tesis/tesis
+(/home/ponci_pop/Desktop/TesisIB/Coronel/CodigoTesisIB/TesisMaestriaDocs_v2/00_Tesis/tesis.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (./ibtesis.cls
 Document Class: ibtesis 2010/10/25 v0.8 (a4 paper) IB - UnCuyo
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count168
-\c@chapter=\count169
-\c@section=\count170
-\c@subsection=\count171
-\c@subsubsection=\count172
-\c@paragraph=\count173
-\c@subparagraph=\count174
-\c@figure=\count175
-\c@table=\count176
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/07/13 3.47 The Babel package
+Package: babel 2020/02/14 3.40 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
  (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/07/13 3.47 Babel common definitions
-\babel@savecnt=\count177
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count176
 \U@D=\dimen135
-\l@babelnohyphens=\language10
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
+\bbl@dirlevel=\count177
 )
-\bbl@dirlevel=\count178
- (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@british = using hyphenrules for english
 (babel)             (\language0) on input line 82.
 Package babel Info: \l@UKenglish = using hyphenrules for english
@@ -54,8 +55,8 @@ Package babel Info: \l@newzealand = using hyphenrules for english
 (babel)             (\language0) on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-\es@quottoks=\toks15
-\es@quotdepth=\count179
+\es@quottoks=\toks14
+\es@quotdepth=\count178
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -64,13 +65,13 @@ Package babel Info: Making ' an active character on input line 725.
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks15
 )
 \captionmargin=\dimen136
 \captionmargin@=\dimen137
@@ -81,8 +82,8 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \caption@hangindent=\dimen142
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count180
-\c@continuedfloat=\count181
+\c@caption@flags=\count179
+\c@continuedfloat=\count180
 ) (/usr/share/texlive/texmf-dist/tex/latex/yafoot/fnpos.sty
 Package: fnpos 2018/09/03 v1.1 
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -94,7 +95,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks16
 \ex@=\dimen143
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -102,13 +103,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count182
+\inf@bad=\count181
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count183
-\leftroot@=\count184
+\uproot@=\count182
+\leftroot@=\count183
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count185
-\DOTSCASE@=\count186
+\classnum@=\count184
+\DOTSCASE@=\count185
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -117,26 +118,26 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count187
-\c@MaxMatrixCols=\count188
+\macc@depth=\count186
+\c@MaxMatrixCols=\count187
 \dotsspace@=\muskip16
-\c@parentequation=\count189
-\dspbrk@lvl=\count190
-\tag@help=\toks18
-\row@=\count191
-\column@=\count192
-\maxfields@=\count193
-\andhelp@=\toks19
+\c@parentequation=\count188
+\dspbrk@lvl=\count189
+\tag@help=\toks17
+\row@=\count190
+\column@=\count191
+\maxfields@=\count192
+\andhelp@=\toks18
 \eqnshift@=\dimen146
 \alignsep@=\dimen147
 \tagshift@=\dimen148
 \tagwidth@=\dimen149
 \totwidth@=\dimen150
 \lineht@=\dimen151
-\@envbody=\toks20
+\@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
@@ -180,28 +181,28 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@orf=\skip60
 ) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count194
-\cp@tempcnt=\count195
+\c@cp@cntr=\count193
+\cp@tempcnt=\count194
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count196
-\calc@Bcount=\count197
+\calc@Acount=\count195
+\calc@Bcount=\count196
 \calc@Adimen=\dimen154
 \calc@Bdimen=\dimen155
 \calc@Askip=\skip61
 \calc@Bskip=\skip62
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count198
+\calc@Ccount=\count197
 \calc@Cskip=\skip63
 ) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count199
-\Gm@cntv=\count266
-\c@Gm@tempcnt=\count267
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
 \Gm@bindingoffset=\dimen156
 \Gm@wd@mp=\dimen157
 \Gm@odd@mp=\dimen158
@@ -210,15 +211,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen161
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
-\Gm@dimlist=\toks22
+\Gm@dimlist=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
@@ -241,10 +242,10 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen164
-\Hy@linkcounter=\count268
-\Hy@pagecounter=\count269
+\Hy@linkcounter=\count267
+\Hy@pagecounter=\count268
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -252,14 +253,15 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count270
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing ON on input line 4482.
+\Hy@SavedSpaceFactor=\count269
+\pdfmajorversion=\count270
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing ON on input line 4565.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
+Package hyperref Info: Bookmarks ON on input line 4800.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2020/01/14 v1.40 Bibliographical back referencing
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
@@ -279,7 +281,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5076.
+LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen165
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -287,15 +289,15 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 \Fld@menulength=\count272
 \Field@Width=\dimen166
 \Fld@charsize=\dimen167
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing ON on input line 6360.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing ON on input line 6443.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
  (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
@@ -305,7 +307,7 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 \Fld@listcount=\count276
 \c@bookmark@seq@number=\count277
 \Hy@SectionHShift=\skip64
@@ -431,8 +433,8 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count293
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks23
-\inpenc@posthook=\toks24
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 \c@subfigure=\count294
@@ -440,9 +442,9 @@ Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count296
-\float@exts=\toks25
+\float@exts=\toks24
 \float@box=\box93
-\@float@everytoks=\toks26
+\@float@everytoks=\toks25
 \@floatcapt=\box94
 ) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
@@ -452,14 +454,14 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
  (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count297
 \l_MT_multwidth_dim=\dimen191
 \origjot=\skip77
@@ -469,8 +471,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen195
 \l_MT_above_shortintertext_sep=\dimen196
 \l_MT_below_shortintertext_sep=\dimen197
-\xmathstrut@box=\box95
-\xmathstrut@dim=\dimen198
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
@@ -480,7 +480,7 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
  (/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count298
 )) (/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretching of objects, relative to a reference object or in absolute terms
@@ -494,19 +494,18 @@ Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchin
 ) (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
  (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-07-17 L3 programming layer (loader) 
+Package: expl3 2020-02-14 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count299
-\l__pdf_internal_box=\box96
+\l__pdf_internal_box=\box95
 ))
-Package: xparse 2020-05-15 L3 Experimental document command parser
- (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
+Package: xparse 2020-02-14 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count300
 \g__xparse_grabber_int=\count301
 \l__xparse_m_args_int=\count302
 \l__xparse_v_nesting_int=\count303
-))) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -527,9 +526,9 @@ Package: notoccite 2000/07/20
 ) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip85
-\enit@outerparindent=\dimen199
-\enit@toks=\toks27
-\enit@inbox=\box97
+\enit@outerparindent=\dimen198
+\enit@toks=\toks26
+\enit@inbox=\box96
 \enit@count@id=\count304
 \enitdp@description=\count305
 )
@@ -538,8 +537,8 @@ LaTeX Warning: Unused global option(s):
     [12pt,twoside].
 
 (./tesis.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 
 
 LaTeX Warning: Label `fig:' multiply defined.
@@ -566,25 +565,22 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen256
-\caption@adjustwidth@linewidth=\dimen257
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
-\scratchdimen=\dimen258
-\scratchbox=\box98
+\scratchdimen=\dimen199
+\scratchbox=\box97
 \nofMPsegments=\count307
 \nofMParguments=\count308
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count309
-\MPscratchDim=\dimen259
+\MPscratchDim=\dimen256
 \MPnumerator=\count310
 \makeMPintoPDFobject=\count311
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -626,7 +622,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package backref Info: ** backref set up for natbib ** on input line 86.
-\AtBeginShipoutBox=\box99
+\AtBeginShipoutBox=\box98
 Package hyperref Info: Link coloring OFF on input line 86.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -710,8 +706,6 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
  [10]
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
  [11])
@@ -858,62 +852,66 @@ File: ../04_Clima/delay_v2.pdf Graphic file (type pdf)
 <use ../04_Clima/delay_v2.pdf>
 Package pdftex.def Info: ../04_Clima/delay_v2.pdf  used on input line 23.
 (pdftex.def)             Requested size: 441.01772pt x 220.50809pt.
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
- [20 <../04_Clima/delay_v2.pdf>]
-Underfull \vbox (badness 5741) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ [20 <../04_Clima/delay_v2.pdf>]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
  [21]
 <../04_Clima/eas.png, id=1153, 987.69pt x 990.70125pt>
 File: ../04_Clima/eas.png Graphic file (type png)
 <use ../04_Clima/eas.png>
 Package pdftex.def Info: ../04_Clima/eas.png  used on input line 63.
 (pdftex.def)             Requested size: 220.50885pt x 221.17484pt.
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
  [22 <../04_Clima/eas.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
  [23]
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
  [24]
-<../04_Clima/Graphs/clima/presion_v2.png, id=1192, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/clima/presion_v2.png, id=1189, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/clima/presion_v2.png Graphic file (type png)
 <use ../04_Clima/Graphs/clima/presion_v2.png>
 Package pdftex.def Info: ../04_Clima/Graphs/clima/presion_v2.png  used on input line 149.
 (pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-<../04_Clima/Graphs/clima/densidad_diaria_v2.png, id=1194, 867.24pt x 433.62pt>
+LaTeX Info: Redefining \. on input line 155.
+LaTeX Info: Redefining \% on input line 155.
+ [25 <../04_Clima/Graphs/clima/presion_v2.png>]
+<../04_Clima/Graphs/clima/densidad_diaria_v2.png, id=1199, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/clima/densidad_diaria_v2.png Graphic file (type png)
 <use ../04_Clima/Graphs/clima/densidad_diaria_v2.png>
 Package pdftex.def Info: ../04_Clima/Graphs/clima/densidad_diaria_v2.png  used on input line 163.
 (pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-<../04_Clima/Graphs/clima/densidad_media_diaria_v2.png, id=1195, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/clima/densidad_media_diaria_v2.png, id=1200, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/clima/densidad_media_diaria_v2.png Graphic file (type png)
 <use ../04_Clima/Graphs/clima/densidad_media_diaria_v2.png>
 Package pdftex.def Info: ../04_Clima/Graphs/clima/densidad_media_diaria_v2.png  used on input line 169.
 (pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-<../04_Clima/Graphs/clima/densidad_hod_v2.png, id=1196, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/clima/densidad_hod_v2.png, id=1201, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/clima/densidad_hod_v2.png Graphic file (type png)
 <use ../04_Clima/Graphs/clima/densidad_hod_v2.png>
 Package pdftex.def Info: ../04_Clima/Graphs/clima/densidad_hod_v2.png  used on input line 175.
 (pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
 
-Underfull \vbox (badness 5091) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 182.
 LaTeX Info: Redefining \% on input line 182.
- [25 <../04_Clima/Graphs/clima/presion_v2.png>]
+ [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 184.
 LaTeX Info: Redefining \% on input line 184.
- [26 <../04_Clima/Graphs/clima/densidad_diaria_v2.png> <../04_Clima/Graphs/clima/densidad_media_diaria_v2.png> <../04_Clima/Graphs/clima/densidad_hod_v2.png>]
-<../04_Clima/Graphs/clima/area_v2.png, id=1210, 867.24pt x 433.62pt>
+ [27 <../04_Clima/Graphs/clima/densidad_diaria_v2.png> <../04_Clima/Graphs/clima/densidad_media_diaria_v2.png> <../04_Clima/Graphs/clima/densidad_hod_v2.png>]
+<../04_Clima/Graphs/clima/area_v2.png, id=1215, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/clima/area_v2.png Graphic file (type png)
 <use ../04_Clima/Graphs/clima/area_v2.png>
 Package pdftex.def Info: ../04_Clima/Graphs/clima/area_v2.png  used on input line 188.
@@ -923,54 +921,54 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
- [27 <../04_Clima/Graphs/clima/area_v2.png>]
+ [28 <../04_Clima/Graphs/clima/area_v2.png>]
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
- [28]
-<../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf, id=1230, 867.24pt x 433.62pt>
+ [29]
+<../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf, id=1234, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf  used on input line 43.
 (pdftex.def)             Requested size: 385.89049pt x 192.94374pt.
-<../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf, id=1231, 867.24pt x 578.16pt>
+<../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf, id=1235, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf  used on input line 48.
 (pdftex.def)             Requested size: 385.89049pt x 257.25833pt.
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
- [29 <../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf
+ [30 <../04_Clima/Graphs/rate_dayly/herald_old_above_1EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/1EeV_ICRC_2015_old_herald.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf, id=1342, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf, id=1346, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf  used on input line 60.
 (pdftex.def)             Requested size: 385.89049pt x 192.94374pt.
-<../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf, id=1343, 867.24pt x 578.16pt>
+<../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf, id=1347, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf  used on input line 65.
 (pdftex.def)             Requested size: 385.89049pt x 257.25833pt.
-<../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf, id=1350, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf, id=1354, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf  used on input line 78.
 (pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
-<../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf, id=1351, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf, id=1355, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf  used on input line 84.
 (pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
-<../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf, id=1352, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf, id=1356, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf  used on input line 91.
 (pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
- [30 <../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf
+ [31 <../04_Clima/Graphs/rate_dayly/herald_old_above_2EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/herald_old_above_2EeV_hour_of_the_day.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -978,7 +976,7 @@ Underfull \vbox (badness 6708) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
- [31 <../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf> <../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf
+ [32 <../04_Clima/Graphs/params/ap_ICRC_2015_above_1EeV_v2.pdf> <../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/arho_ICRC_2015_above_1EeV_v2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../04_Clima/Graphs/params/brho_ICRC_2015_above_1EeV_v2.pdf
@@ -987,79 +985,90 @@ pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/brho_ICRC_2015_above_1E
 >]) (../04_Clima/04_clima_ICRC_2019.tex
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
- [32]
-<../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf, id=1676, 867.24pt x 542.025pt>
+ [33]
+<../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf, id=1681, 867.24pt x 542.025pt>
 File: ../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf  used on input line 34.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf  used on input line 35.
 (pdftex.def)             Requested size: 352.8155pt x 220.51138pt.
 
-Underfull \vbox (badness 6944) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
- [33]
-<../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf, id=1683, 867.24pt x 578.16pt>
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+ [34]
+<../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf, id=1687, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf  used on input line 42.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf  used on input line 43.
 (pdftex.def)             Requested size: 352.8155pt x 235.21216pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 48.
+(hyperref)                removing `subscript' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 49.
 
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
-[34 <../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+[35 <../04_Clima/Graphs/rate_dayly/herald_above_1EeV_2EeV_rate_day.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/herald_above_1EeV_and_2EeV_hour_of_the_day.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Info: Redefining \. on input line 93.
-LaTeX Info: Redefining \% on input line 93.
- [35]
-<../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf, id=1806, 867.24pt x 433.62pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [36]
+<../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf, id=1811, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf  used on input line 97.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf  used on input line 100.
 (pdftex.def)             Requested size: 374.86774pt x 187.4322pt.
-<../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf, id=1807, 867.24pt x 578.16pt>
+<../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf, id=1812, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf  used on input line 103.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf  used on input line 106.
 (pdftex.def)             Requested size: 374.86774pt x 249.9096pt.
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [36 <../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+ [37]
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
+ [38 <../04_Clima/Graphs/rate_dayly/0EeV_ICRC_2019_S38_05_18.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/S38_above_0EeV_hour_of_the_day.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf, id=1921, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf, id=1930, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf  used on input line 119.
+Package pdftex.def Info: ../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf  used on input line 122.
 (pdftex.def)             Requested size: 321.94104pt x 160.97282pt.
-<../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf, id=1922, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf, id=1931, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf  used on input line 125.
+Package pdftex.def Info: ../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf  used on input line 128.
 (pdftex.def)             Requested size: 321.94104pt x 160.97282pt.
-<../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf, id=1923, 867.24pt x 433.62pt>
+<../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf, id=1932, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf  used on input line 132.
+Package pdftex.def Info: ../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf  used on input line 135.
 (pdftex.def)             Requested size: 321.94104pt x 160.97282pt.
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
- [37 <../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf> <../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+ [39 <../04_Clima/Graphs/params/ap_ICRC_2019_S38_above_0EeV.pdf> <../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/arho_ICRC_2019_S38_above_0EeV.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../04_Clima/Graphs/params/brho_ICRC_2019_S38_above_0EeV.pdf
@@ -1068,13 +1077,13 @@ pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/brho_ICRC_2019_S38_abov
 >]) (../04_Clima/05_clima_AllTriggers.tex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [38]
-<../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf, id=2136, 867.24pt x 578.16pt>
+ [40]
+<../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf, id=2146, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf  used on input line 10.
 (pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-<../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf, id=2137, 867.24pt x 578.16pt>
+<../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf, id=2147, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf>
 Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf  used on input line 15.
@@ -1102,11 +1111,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
-[39 <../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf
+[41 <../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/2EeV_ICRC_2019_S38_S1000_expected_05_18.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../04_Clima/bin_eventos_sin_2_theta.pdf, id=2288, 867.24pt x 505.89pt>
+<../04_Clima/bin_eventos_sin_2_theta.pdf, id=2297, 867.24pt x 505.89pt>
 File: ../04_Clima/bin_eventos_sin_2_theta.pdf Graphic file (type pdf)
 <use ../04_Clima/bin_eventos_sin_2_theta.pdf>
 Package pdftex.def Info: ../04_Clima/bin_eventos_sin_2_theta.pdf  used on input line 29.
@@ -1114,108 +1123,110 @@ Package pdftex.def Info: ../04_Clima/bin_eventos_sin_2_theta.pdf  used on input 
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 43.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 44.
+(hyperref)                removing `subscript' on input line 43.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 43.
 
-<../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf, id=2292, 867.24pt x 542.025pt>
+<../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf, id=2301, 867.24pt x 542.025pt>
 File: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf  used on input line 51.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf  used on input line 50.
 (pdftex.def)             Requested size: 352.8155pt x 220.51138pt.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-[40 <../04_Clima/bin_eventos_sin_2_theta.pdf>]
-<../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf, id=2363, 867.24pt x 433.62pt>
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+[42 <../04_Clima/bin_eventos_sin_2_theta.pdf>]
+<../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf, id=2372, 867.24pt x 433.62pt>
 File: ../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf  used on input line 89.
-(pdftex.def)             Requested size: 396.91324pt x 198.45529pt.
-<../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf, id=2364, 867.24pt x 578.16pt>
+Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf  used on input line 88.
+(pdftex.def)             Requested size: 352.8155pt x 176.40912pt.
+<../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf, id=2373, 867.24pt x 578.16pt>
 File: ../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf  used on input line 93.
-(pdftex.def)             Requested size: 396.91324pt x 264.60706pt.
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [41 <../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf>]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [42 <../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf
+Package pdftex.def Info: ../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf  used on input line 92.
+(pdftex.def)             Requested size: 352.8155pt x 235.21216pt.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [43 <../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate.pdf>]
+<../04_Clima/Graphs/params/ap_AllTriggers.pdf, id=2428, 867.24pt x 433.62pt>
+File: ../04_Clima/Graphs/params/ap_AllTriggers.pdf Graphic file (type pdf)
+<use ../04_Clima/Graphs/params/ap_AllTriggers.pdf>
+Package pdftex.def Info: ../04_Clima/Graphs/params/ap_AllTriggers.pdf  used on input line 103.
+(pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
+<../04_Clima/Graphs/params/arho_AllTriggers.pdf, id=2429, 867.24pt x 433.62pt>
+File: ../04_Clima/Graphs/params/arho_AllTriggers.pdf Graphic file (type pdf)
+<use ../04_Clima/Graphs/params/arho_AllTriggers.pdf>
+Package pdftex.def Info: ../04_Clima/Graphs/params/arho_AllTriggers.pdf  used on input line 107.
+(pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
+<../04_Clima/Graphs/params/brho_AllTriggers.pdf, id=2430, 867.24pt x 433.62pt>
+File: ../04_Clima/Graphs/params/brho_AllTriggers.pdf Graphic file (type pdf)
+<use ../04_Clima/Graphs/params/brho_AllTriggers.pdf>
+Package pdftex.def Info: ../04_Clima/Graphs/params/brho_AllTriggers.pdf  used on input line 112.
+(pdftex.def)             Requested size: 330.76328pt x 165.37941pt.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [44 <../04_Clima/Graphs/rate_dayly/AllTriggers_S38_over_1EeV_rate_v3.pdf> <../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/rate_hour_of_the_day/AllTriggers_S38_over_1EeV_hour_of_the_day.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../04_Clima/Graphs/params/ap_AllTriggers.pdf, id=2527, 867.24pt x 433.62pt>
-File: ../04_Clima/Graphs/params/ap_AllTriggers.pdf Graphic file (type pdf)
-<use ../04_Clima/Graphs/params/ap_AllTriggers.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/ap_AllTriggers.pdf  used on input line 104.
-(pdftex.def)             Requested size: 352.8155pt x 176.40912pt.
-<../04_Clima/Graphs/params/arho_AllTriggers.pdf, id=2528, 867.24pt x 433.62pt>
-File: ../04_Clima/Graphs/params/arho_AllTriggers.pdf Graphic file (type pdf)
-<use ../04_Clima/Graphs/params/arho_AllTriggers.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/arho_AllTriggers.pdf  used on input line 108.
-(pdftex.def)             Requested size: 352.8155pt x 176.40912pt.
-<../04_Clima/Graphs/params/brho_AllTriggers.pdf, id=2529, 867.24pt x 433.62pt>
-File: ../04_Clima/Graphs/params/brho_AllTriggers.pdf Graphic file (type pdf)
-<use ../04_Clima/Graphs/params/brho_AllTriggers.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/params/brho_AllTriggers.pdf  used on input line 113.
-(pdftex.def)             Requested size: 352.8155pt x 176.40912pt.
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
- [43 <../04_Clima/Graphs/params/ap_AllTriggers.pdf> <../04_Clima/Graphs/params/arho_AllTriggers.pdf
+Underfull \vbox (badness 2318) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+ [45 <../04_Clima/Graphs/params/ap_AllTriggers.pdf> <../04_Clima/Graphs/params/arho_AllTriggers.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/arho_AllTriggers.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../04_Clima/Graphs/params/brho_AllTriggers.pdf
 
 pdfTeX warning: pdflatex (file ../04_Clima/Graphs/params/brho_AllTriggers.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf, id=2736, 867.24pt x 542.025pt>
+<../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf, id=2747, 867.24pt x 542.025pt>
 File: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf Graphic file (type pdf)
 <use ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf>
-Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf  used on input line 150.
+Package pdftex.def Info: ../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf  used on input line 151.
 (pdftex.def)             Requested size: 352.8155pt x 220.51138pt.
-LaTeX Info: Redefining \. on input line 155.
-LaTeX Info: Redefining \% on input line 155.
- [44 <../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf>])
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+ [46 <../04_Clima/Graphs/rate_dayly/AllTriggers_1EeV_2EeV_rate_reconstruction.pdf>])
 LaTeX Info: Redefining \. on input line 160.
 LaTeX Info: Redefining \% on input line 160.
- [45] [46
+ [47] [48
 
 ]
 Cap\'{\i }tulo 4.
-(../05_MetodoRayleigh/metodo_v5.tex [47]
+(../05_MetodoRayleigh/metodo_v5.tex [49]
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
- [48]
-<../05_MetodoRayleigh/pesos_referencia.png, id=2827, 571.13374pt x 482.80376pt>
+ [50]
+<../05_MetodoRayleigh/pesos_referencia.png, id=2836, 571.13374pt x 482.80376pt>
 File: ../05_MetodoRayleigh/pesos_referencia.png Graphic file (type png)
 <use ../05_MetodoRayleigh/pesos_referencia.png>
 Package pdftex.def Info: ../05_MetodoRayleigh/pesos_referencia.png  used on input line 55.
 (pdftex.def)             Requested size: 264.61331pt x 223.69106pt.
-<../05_MetodoRayleigh/weigths_2004-2017.pdf, id=2830, 917.82903pt x 485.6544pt>
+<../05_MetodoRayleigh/weigths_2004-2017.pdf, id=2839, 917.82903pt x 485.6544pt>
 File: ../05_MetodoRayleigh/weigths_2004-2017.pdf Graphic file (type pdf)
 <use ../05_MetodoRayleigh/weigths_2004-2017.pdf>
 Package pdftex.def Info: ../05_MetodoRayleigh/weigths_2004-2017.pdf  used on input line 62.
 (pdftex.def)             Requested size: 374.86774pt x 198.35631pt.
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
- [49 <../05_MetodoRayleigh/pesos_referencia.png>]
+ [51 <../05_MetodoRayleigh/pesos_referencia.png>]
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
- [50 <../05_MetodoRayleigh/weigths_2004-2017.pdf>]
+ [52 <../05_MetodoRayleigh/weigths_2004-2017.pdf>]
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
- [51]
+ [53]
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
- [52]
-<../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf, id=2941, 867.24pt x 433.62pt>
+ [54]
+<../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf, id=2950, 867.24pt x 433.62pt>
 File: ../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf Graphic file (type pdf)
 <use ../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf>
 Package pdftex.def Info: ../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf  used on input line 141.
@@ -1223,20 +1234,20 @@ Package pdftex.def Info: ../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf  us
 )
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
- [53 <../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf>] [54
+ [55 <../05_MetodoRayleigh/sin_pesos_referencia_8_EeV.pdf>] [56
 
 ]
 Cap\'{\i }tulo 5.
-(../EW/report_EW_calculo_v3.tex [55]
+(../EW/report_EW_calculo_v3.tex [57]
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
- [56]
+ [58]
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
- [57]
+ [59]
 LaTeX Info: Redefining \. on input line 126.
 LaTeX Info: Redefining \% on input line 126.
- [58]
+ [60]
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
 
@@ -1246,10 +1257,10 @@ Make it at least 27.18335pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[59]
+[61]
 LaTeX Info: Redefining \. on input line 200.
 LaTeX Info: Redefining \% on input line 200.
- [60]
+ [62]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 217.
@@ -1260,68 +1271,31 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Info: Redefining \. on input line 239.
 LaTeX Info: Redefining \% on input line 239.
-[61])
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
- [62]
+[63])
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+ [64]
 Cap\'{\i }tulo 6.
-(../EW/report_EW_PDF.tex [63
+(../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v9.tex [65
 
 ]
-<../EW/bessel_prob_value_s_v2.pdf, id=3131, 867.24pt x 578.16pt>
-File: ../EW/bessel_prob_value_s_v2.pdf Graphic file (type pdf)
-<use ../EW/bessel_prob_value_s_v2.pdf>
-Package pdftex.def Info: ../EW/bessel_prob_value_s_v2.pdf  used on input line 36.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
- [64 <../EW/bessel_prob_value_s_v2.pdf>]
-<../EW/bessel_prob_iterations_v2.pdf, id=3185, 867.24pt x 578.16pt>
-File: ../EW/bessel_prob_iterations_v2.pdf Graphic file (type pdf)
-<use ../EW/bessel_prob_iterations_v2.pdf>
-Package pdftex.def Info: ../EW/bessel_prob_iterations_v2.pdf  used on input line 66.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [65 <../EW/bessel_prob_iterations_v2.pdf>]
-<../EW/bessel_prob_ej_v2.pdf, id=3254, 867.24pt x 578.16pt>
-File: ../EW/bessel_prob_ej_v2.pdf Graphic file (type pdf)
-<use ../EW/bessel_prob_ej_v2.pdf>
-Package pdftex.def Info: ../EW/bessel_prob_ej_v2.pdf  used on input line 88.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [66 <../EW/bessel_prob_ej_v2.pdf>]
-<../EW/phase_prob_ej_v2.pdf, id=3317, 867.24pt x 578.16pt>
-File: ../EW/phase_prob_ej_v2.pdf Graphic file (type pdf)
-<use ../EW/phase_prob_ej_v2.pdf>
-Package pdftex.def Info: ../EW/phase_prob_ej_v2.pdf  used on input line 127.
-(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
-)
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [67 <../EW/phase_prob_ej_v2.pdf>] [68
-
-]
-Cap\'{\i }tulo 7.
-(../Dipole_1-2_EeVReport/dipolo_1-2_EeV_v9.tex [69]
-<../Dipole_1-2_EeVReport/weights_2013_2020.png, id=3389, 867.24pt x 578.16pt>
+<../Dipole_1-2_EeVReport/weights_2013_2020.png, id=3138, 867.24pt x 578.16pt>
 File: ../Dipole_1-2_EeVReport/weights_2013_2020.png Graphic file (type png)
 <use ../Dipole_1-2_EeVReport/weights_2013_2020.png>
 Package pdftex.def Info: ../Dipole_1-2_EeVReport/weights_2013_2020.png  used on input line 26.
 (pdftex.def)             Requested size: 352.8155pt x 235.21216pt.
-<../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf, id=3392, 867.24pt x 578.16pt>
+<../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf, id=3141, 867.24pt x 578.16pt>
 File: ../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf Graphic file (type pdf)
 <use ../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf>
 Package pdftex.def Info: ../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf  used on input line 44.
 (pdftex.def)             Requested size: 374.86774pt x 249.9096pt.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
- [70 <../Dipole_1-2_EeVReport/weights_2013_2020.png>]
+ [66 <../Dipole_1-2_EeVReport/weights_2013_2020.png>]
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
- [71 <../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf>]
-<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png, id=3464, 903.375pt x 602.25pt>
+ [67 <../Dipole_1-2_EeVReport/pesos_sin_con_1_2_EeV.pdf>]
+<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png, id=3212, 903.375pt x 602.25pt>
 File: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png Graphic file (type png)
 <use ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png>
 Package pdftex.def Info: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png  used on input line 114.
@@ -1331,37 +1305,36 @@ Underfull \vbox (badness 1448) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
- [72]
-<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=3470, 903.375pt x 602.25pt>
+ [68]
+<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png, id=3218, 903.375pt x 602.25pt>
 File: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png Graphic file (type png)
 <use ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png>
 Package pdftex.def Info: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png  used on input line 124.
 (pdftex.def)             Requested size: 308.71104pt x 205.80989pt.
-<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=3471, 903.375pt x 602.25pt>
+<../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png, id=3219, 903.375pt x 602.25pt>
 File: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png Graphic file (type png)
 <use ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png>
 Package pdftex.def Info: ../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png  used on input line 130.
 (pdftex.def)             Requested size: 308.71104pt x 205.80989pt.
-)
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
- [73 <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png (PNG copy)> <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
- [74]
-Cap\'{\i }tulo 8.
-(../EW/report_EW_results_Ray.tex [75
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+ [69 <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v4.png (PNG copy)> <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_sin_pesos.png (PNG copy)> <../Dipole_1-2_EeVReport/eventos_clasificados_por_RA_v7_orden_2_con_pesos.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [70]
+Cap\'{\i }tulo 7.
+(../EW/report_EW_results_Ray.tex [71
 
 ]
-<../EW/phase_primer_bin_v3.pdf, id=3497, 650.43pt x 650.43pt>
+<../EW/phase_primer_bin_v3.pdf, id=3246, 650.43pt x 650.43pt>
 File: ../EW/phase_primer_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_primer_bin_v3.pdf>
 Package pdftex.def Info: ../EW/phase_primer_bin_v3.pdf  used on input line 67.
 (pdftex.def)             Requested size: 286.65881pt x 286.66647pt.
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
- [76 <../EW/phase_primer_bin_v3.pdf>]
-<../EW/plot_bin_1_barrido_v3_EW.pdf, id=3549, 867.24pt x 578.16pt>
+ [72 <../EW/phase_primer_bin_v3.pdf>]
+<../EW/plot_bin_1_barrido_v3_EW.pdf, id=3298, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_1_barrido_v3_EW.pdf>
 Package pdftex.def Info: ../EW/plot_bin_1_barrido_v3_EW.pdf  used on input line 86.
@@ -1371,13 +1344,13 @@ Underfull \vbox (badness 6944) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
- [77 <../EW/plot_bin_1_barrido_v3_EW.pdf>]
-<../EW/plot_bin_2_barrido_v3_EW.pdf, id=3621, 867.24pt x 578.16pt>
+ [73 <../EW/plot_bin_1_barrido_v3_EW.pdf>]
+<../EW/plot_bin_2_barrido_v3_EW.pdf, id=3370, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_2_barrido_v3_EW.pdf>
 Package pdftex.def Info: ../EW/plot_bin_2_barrido_v3_EW.pdf  used on input line 138.
 (pdftex.def)             Requested size: 396.91324pt x 264.60706pt.
-<../EW/phase_segundo_bin_v3.pdf, id=3623, 650.43pt x 650.43pt>
+<../EW/phase_segundo_bin_v3.pdf, id=3372, 650.43pt x 650.43pt>
 File: ../EW/phase_segundo_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_segundo_bin_v3.pdf>
 Package pdftex.def Info: ../EW/phase_segundo_bin_v3.pdf  used on input line 156.
@@ -1387,71 +1360,112 @@ Underfull \vbox (badness 3271) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 163.
 LaTeX Info: Redefining \% on input line 163.
- [78 <../EW/plot_bin_2_barrido_v3_EW.pdf>]
+ [74 <../EW/plot_bin_2_barrido_v3_EW.pdf>]
 LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
- [79 <../EW/phase_segundo_bin_v3.pdf>]
-<../EW/phase_tercer_bin_v3.pdf, id=3737, 650.43pt x 650.43pt>
+ [75 <../EW/phase_segundo_bin_v3.pdf>]
+<../EW/phase_tercer_bin_v3.pdf, id=3487, 650.43pt x 650.43pt>
 File: ../EW/phase_tercer_bin_v3.pdf Graphic file (type pdf)
 <use ../EW/phase_tercer_bin_v3.pdf>
 Package pdftex.def Info: ../EW/phase_tercer_bin_v3.pdf  used on input line 199.
 (pdftex.def)             Requested size: 286.65881pt x 286.66647pt.
-<../EW/plot_bin_3_barrido_v3_EW.pdf, id=3748, 867.24pt x 578.16pt>
+<../EW/plot_bin_3_barrido_v3_EW.pdf, id=3498, 867.24pt x 578.16pt>
 File: ../EW/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
 <use ../EW/plot_bin_3_barrido_v3_EW.pdf>
 Package pdftex.def Info: ../EW/plot_bin_3_barrido_v3_EW.pdf  used on input line 240.
 (pdftex.def)             Requested size: 396.91324pt x 264.60706pt.
 LaTeX Info: Redefining \. on input line 247.
 LaTeX Info: Redefining \% on input line 247.
- [80 <../EW/phase_tercer_bin_v3.pdf>]
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
- [81 <../EW/plot_bin_3_barrido_v3_EW.pdf>]
-<../EW/d_perp_normalizado_sigmas_v6.pdf, id=3866, 867.24pt x 578.16pt>
+ [76 <../EW/phase_tercer_bin_v3.pdf>]
+<../EW/d_perp_normalizado_sigmas_v6.pdf, id=3555, 867.24pt x 578.16pt>
 File: ../EW/d_perp_normalizado_sigmas_v6.pdf Graphic file (type pdf)
 <use ../EW/d_perp_normalizado_sigmas_v6.pdf>
-Package pdftex.def Info: ../EW/d_perp_normalizado_sigmas_v6.pdf  used on input line 287.
-(pdftex.def)             Requested size: 396.91324pt x 264.60706pt.
-<../EW/comparando_sigmas_v4.pdf, id=3867, 867.24pt x 706.0779pt>
+Package pdftex.def Info: ../EW/d_perp_normalizado_sigmas_v6.pdf  used on input line 283.
+(pdftex.def)             Requested size: 441.01772pt x 294.01079pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
+ [77 <../EW/plot_bin_3_barrido_v3_EW.pdf>]
+<../EW/comparando_sigmas_v4.pdf, id=3618, 867.24pt x 706.0779pt>
 File: ../EW/comparando_sigmas_v4.pdf Graphic file (type pdf)
 <use ../EW/comparando_sigmas_v4.pdf>
-Package pdftex.def Info: ../EW/comparando_sigmas_v4.pdf  used on input line 302.
-(pdftex.def)             Requested size: 396.91324pt x 323.15137pt.
-)
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [82 <../EW/d_perp_normalizado_sigmas_v6.pdf> <../EW/comparando_sigmas_v4.pdf
+Package pdftex.def Info: ../EW/comparando_sigmas_v4.pdf  used on input line 304.
+(pdftex.def)             Requested size: 441.01772pt x 359.06067pt.
+LaTeX Info: Redefining \. on input line 311.
+LaTeX Info: Redefining \% on input line 311.
+ [78 <../EW/d_perp_normalizado_sigmas_v6.pdf>])
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
+ [79 <../EW/comparando_sigmas_v4.pdf>] [80
 
-pdfTeX warning: pdflatex (file ../EW/comparando_sigmas_v4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Cap\'{\i }tulo 9.
+]
+Cap\'{\i }tulo 8.
 (../Conclusiones/conclusiones_v2.tex
 Underfull \vbox (badness 3323) has occurred while \output is active []
 
- [83
-
-])
-LaTeX Info: Redefining \. on input line 187.
-LaTeX Info: Redefining \% on input line 187.
- [84]
+ [81])
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+ [82]
 Ap\'{e}ndice A.
-(../Apendice/apend_v2.tex [85
+(../Apendice/apend_v2.tex [83
 
 ]
-<../Apendice/EC.png, id=4000, 650.43pt x 726.715pt>
+<../Apendice/EC.png, id=3761, 650.43pt x 726.715pt>
 File: ../Apendice/EC.png Graphic file (type png)
 <use ../Apendice/EC.png>
 Package pdftex.def Info: ../Apendice/EC.png  used on input line 20.
 (pdftex.def)             Requested size: 264.61331pt x 295.6486pt.
-<../Apendice/LC.png, id=4001, 607.26875pt x 412.54124pt>
+<../Apendice/LC.png, id=3762, 607.26875pt x 412.54124pt>
 File: ../Apendice/LC.png Graphic file (type png)
 <use ../Apendice/LC.png>
 Package pdftex.def Info: ../Apendice/LC.png  used on input line 30.
 (pdftex.def)             Requested size: 330.76328pt x 224.70148pt.
 )
-LaTeX Info: Redefining \. on input line 191.
-LaTeX Info: Redefining \% on input line 191.
- [86 <../Apendice/EC.png> <../Apendice/LC.png>] (./tesis.bbl (./tesis.brf)
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+ [84 <../Apendice/EC.png> <../Apendice/LC.png>]
+Ap\'{e}ndice B.
+(../EW/report_EW_PDF.tex [85
+
+]
+<../EW/bessel_prob_value_s_v2.pdf, id=3780, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_value_s_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_value_s_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_value_s_v2.pdf  used on input line 36.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [86 <../EW/bessel_prob_value_s_v2.pdf>]
+<../EW/bessel_prob_iterations_v2.pdf, id=3834, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_iterations_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_iterations_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_iterations_v2.pdf  used on input line 66.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [87 <../EW/bessel_prob_iterations_v2.pdf>]
+<../EW/bessel_prob_ej_v2.pdf, id=3904, 867.24pt x 578.16pt>
+File: ../EW/bessel_prob_ej_v2.pdf Graphic file (type pdf)
+<use ../EW/bessel_prob_ej_v2.pdf>
+Package pdftex.def Info: ../EW/bessel_prob_ej_v2.pdf  used on input line 88.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+ [88 <../EW/bessel_prob_ej_v2.pdf>]
+<../EW/phase_prob_ej_v2.pdf, id=3967, 867.24pt x 578.16pt>
+File: ../EW/phase_prob_ej_v2.pdf Graphic file (type pdf)
+<use ../EW/phase_prob_ej_v2.pdf>
+Package pdftex.def Info: ../EW/phase_prob_ej_v2.pdf  used on input line 127.
+(pdftex.def)             Requested size: 330.76328pt x 220.50587pt.
+)
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+ [89 <../EW/phase_prob_ej_v2.pdf>] [90
+
+] (./tesis.bbl (./tesis.brf)
 \tf@brf=\write7
 \openout7 = `tesis.brf'.
 
@@ -1460,44 +1474,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []$\OT1/cmtt/m/n/12 https : / / web . ikp . kit . edu / augeroracle / lib / exe / fetch . php ? media = auger :
  []
 
-[87
-
+[91
 
 ]
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
- [88])
-LaTeX Info: Redefining \. on input line 193.
-LaTeX Info: Redefining \% on input line 193.
- [89] [90
+ [92])
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [93] [94
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
  (./tesis.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 48F320F0645C0FD4CD0EFF678D8B095D;7291.
+(rerunfilecheck)             Checksum: 75626AA24AD1925215E57A961B699247;7360.
 Package rerunfilecheck Info: File `tesis.brf' has not changed.
-(rerunfilecheck)             Checksum: ACF94701934B57BBC9415D34EAB7FCE6;8356.
+(rerunfilecheck)             Checksum: E3073704D4F8BB6AB5C59C526C37556B;8519.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 14588 strings out of 482719
- 234269 string characters out of 5953361
- 552237 words of memory out of 5000000
- 29094 multiletter control sequences out of 15000+600000
- 555415 words of font info for 108 fonts, out of 8000000 for 9000
+ 14398 strings out of 483048
+ 230596 string characters out of 5962772
+ 540270 words of memory out of 5000000
+ 28572 multiletter control sequences out of 15000+600000
+ 552665 words of font info for 103 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 64i,18n,53p,1746b,896s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,53p,1750b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.\\protect\040xii} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{page.\\protect\040xiii} has been referenced but does not exist, replaced by a fixed one
@@ -1507,10 +1520,10 @@ pdfTeX warning (dest): name{page.\\protect\040xi} has been referenced but does n
 pdfTeX warning (dest): name{page.\\protect\040ix} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis.pdf (106 pages, 4301926 bytes).
+Output written on tesis.pdf (110 pages, 4306707 bytes).
 PDF statistics:
- 4314 PDF objects out of 5155 (max. 8388607)
- 2263 compressed objects within 23 object streams
- 409 named destinations out of 1000 (max. 500000)
+ 4337 PDF objects out of 5155 (max. 8388607)
+ 2282 compressed objects within 23 object streams
+ 413 named destinations out of 1000 (max. 500000)
  977 words of extra memory for PDF output out of 10000 (max. 10000000)
 
