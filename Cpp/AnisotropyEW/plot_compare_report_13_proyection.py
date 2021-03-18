@@ -42,12 +42,16 @@ ref_d99_EW=np.array([0.018  , 0.011 , 0.011 ])
 
 
 # colors=['red', 'blue', 'green', 'red']
-colors = ['blue','red',cmap(1),cmap(7),cmap(0)]
+colors = ['red','red',cmap(1),cmap(7),cmap(0)]
 ref_colors=[cmap(1),cmap(7),cmap(0)]
 
 legend=["[1 - 2] Ray","[1 - 2] Ray,mod","[0.25 - 0.5] EW", "[0.5 - 1] EW", "[1 - 2] EW"]
 ref_legend=["[0.25 - 0.5] EW,Ref.", "[0.5 - 1] EW,Ref.", "[1 - 2] EW,Ref."]
 ref_lines =[":", "-.", "--"]
+
+order = [4,1,2,3,0]
+
+
 
 ticks=np.arange(-1.6, 1.6, 0.2)
 plt.xticks(ticks)
@@ -63,7 +67,7 @@ def create_circle_ref(x=0,y=0,r=3, c='red', label="", ls="-"):
 
 def create_circle(x=0,y=0,r=3, c='red', label=""):
     circle= plt.Circle((x,y), radius= r, 
-                       color=c, alpha=.2,
+                       color=c, alpha=.12,
                        label=label)
     return circle
 
@@ -80,7 +84,9 @@ if __name__== '__main__':
     plt.ylabel("$d_y$[%]")
     
     
-    for  i in range(len(vec_EW)):
+    for  i in order:
+        if i==1:
+            continue
         
         c= create_circle(x=100*vec_EW[i]*np.cos(theta[i]),
                          y=100*vec_EW[i]*np.sin(theta[i]),
@@ -101,10 +107,12 @@ if __name__== '__main__':
     galactic= 2.*np.pi*(1./360.)*266.4167
 
     plt.plot([0.0,2.50*np.cos(galactic)],[0,2.50*np.sin(galactic)],
-               color='black', ls=":", lw=3,alpha=0.8, label="Centro Galáctico")#, color=colors[i], arrowprops=dict(arrowstyle="->"))
+               color='black', ls=":", lw=3,alpha=0.8, label="Galactic Center")#, color=colors[i], arrowprops=dict(arrowstyle="->"))
 
 
     for  i in range(len(ref_EW)):
+        # if i==1:
+        #     continue
         c_ref= create_circle_ref(x=100*ref_EW[i]*np.cos(ref_theta[i]),
                          y=100*ref_EW[i]*np.sin(ref_theta[i]),
                          r=100*ref_sigma[i],
@@ -118,8 +126,8 @@ if __name__== '__main__':
     plt.ylim(bottom=-1., top=0.4)
     plt.scatter([0],[0], marker="x", color="black", lw=3, s=330)
     # plt.text( 0.45,-0.1, "Ref: Aab A. et al. 2020",bbox=dict(facecolor='white', alpha=0.5))
-    plt.legend(loc='lower right', ncol=3, 
-               bbox_to_anchor=(0.95, 1.02),
+    plt.legend(loc='lower right', ncol=2, 
+               bbox_to_anchor=(0.8, 1.02),
                fontsize=16,
                title="Ref: Aab A. et al. 2020"
                )

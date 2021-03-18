@@ -22,20 +22,22 @@ output_file_Ray_3="../Anisotropy/Files_AllTriggers_1_2_EeV/output_threshold_0con
 
 out_file_mod="../Anisotropy/Files_AllTriggers_Wide_Range/output_threshold_0con_peso_v11.dat"
 
+legend_=["0.25 EeV - 0.5 EeV", "0.5 EeV - 1  EeV", "1 EeV - 2 EeV"]
+title_ = legend_[1]
 
-file_plot_EW =output_file_EW_3
-file_plot_Ray=output_file_Ray_3
+file_plot_EW =output_file_EW_2
+file_plot_Ray=output_file_Ray_2
 average_cos_dec = 0.786207199 
 average_sin_theta = 0.523010254      
 factor 	= 0.5*np.pi*average_cos_dec/average_sin_theta
 
 f_EW,r_EW,r99_EW= np.loadtxt(file_plot_EW, usecols=(0,4,8), unpack=True)
-f_Ray,r_Ray,r99_Ray= np.loadtxt(file_plot_Ray, usecols=(0,4,8), unpack=True)
+# f_Ray,r_Ray,r99_Ray= np.loadtxt(file_plot_Ray, usecols=(0,4,8), unpack=True)
 f_mod,r_mod,r99_mod= np.loadtxt(out_file_mod, usecols=(0,4,8), unpack=True)
 
 
 r_EW, r99_EW = 100*r_EW, 100*r99_EW
-r_Ray, r99_Ray = 100*r_Ray, 100*r99_Ray
+# r_Ray, r99_Ray = 100*r_Ray, 100*r99_Ray
 r_mod, r99_mod = 100*r_mod, 100*r99_mod
 
 def  plot_same_fig():
@@ -86,9 +88,10 @@ def  plot_same_fig():
 
 def plot_dif_figs():
 	plt.figure(1)
+	plt.title(title_)
 	
-	plt.ylabel("Amplitud r [%] (EW)")
-	plt.xlabel("Frecuencia [ciclos/año]")
+	plt.ylabel("Amplitude r [%] (EW)")
+	plt.xlabel("Frequency [cicles/year]")
 	plt.plot(f_EW, r_EW,label="EW", color='red', alpha=1)
 	plt.plot(f_EW, r99_EW, ls=":", label="$r_{99}$ - EW", color='red', alpha=1)
 	plt.legend(loc=(0.08,0.759))
@@ -98,17 +101,18 @@ def plot_dif_figs():
 	plt.axvline(x=365.25, ls=":", color="blue", alpha=0.5)
 	plt.axvline(x=366.25, ls=":", color="blue", alpha=0.5)
  
-	plt.figure(2)
-	plt.ylabel("Amplitud r [%] (Rayleigh)")
-	plt.xlabel("Frecuencia [ciclos/año]")
-	plt.plot(f_Ray, r_Ray,label="Rayleigh", color='blue', alpha=1)
-	plt.plot(f_Ray, r99_Ray, ls=":", label="$r_{99}$ - Rayleigh", color='blue', alpha=1)
-	plt.legend(loc=(0.65,0.759))
-	y_ticks = np.arange(0.00, 1.3*np.max(r_Ray), 0.0008*100)
-	plt.yticks(y_ticks)
-	plt.axvline(x=364.25, ls=":", color="blue", alpha=0.5)
-	plt.axvline(x=365.25, ls=":", color="blue", alpha=0.5)
-	plt.axvline(x=366.25, ls=":", color="blue", alpha=0.5)
+	# plt.figure(2)
+	# plt.title(title_)
+	# plt.ylabel("Amplitude r [%] (Rayleigh)")
+	# plt.xlabel("Frequency [cicles/year]")
+	# plt.plot(f_Ray, r_Ray,label="Rayleigh", color='blue', alpha=1)
+	# plt.plot(f_Ray, r99_Ray, ls=":", label="$r_{99}$ - Rayleigh", color='blue', alpha=1)
+	# plt.legend(loc=(0.65,0.759))
+	# y_ticks = np.arange(0.00, 1.3*np.max(r_Ray), 0.0008*100)
+	# plt.yticks(y_ticks)
+	# plt.axvline(x=364.25, ls=":", color="blue", alpha=0.5)
+	# plt.axvline(x=365.25, ls=":", color="blue", alpha=0.5)
+	# plt.axvline(x=366.25, ls=":", color="blue", alpha=0.5)
  
 	plt.show()
  

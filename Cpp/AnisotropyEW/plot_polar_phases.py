@@ -15,7 +15,7 @@ import numpy as np
 
 ########################
 #Select bin: 0,1,2
-bin_sel=1
+bin_sel=2
 # Compute pie slices
 theta 	= np.array([280,258,320])
 width 	= 2*np.array([90,34,48])
@@ -43,7 +43,7 @@ ray_width = 2*np.pi*(1./360.)*ray_width
 N = len(theta)
 radii 	= 0.9*np.ones(len(theta))#np.linspace(0.85, 1, num=3) 
 #colors 	= plt.cm.viridis( np.random.rand(N+5))
-colors=['red', 'indianred', 'blue', 'red']
+colors=['red', 'orange', 'blue', 'red']
 ref_colors=['black', 'black', 'black']
 
 legend_=["0.25 EeV - 0.5 EeV", "0.5 EeV - 1  EeV", "1 EeV - 2 EeV"]
@@ -103,7 +103,7 @@ ax.set_ylim(top=1.2)
 
 #  266.4167
 galactic= 266.4167
-ax.axvline(np.pi*galactic/180., ls='-.', color='black', linewidth=2.5, label="Centro Galáctico" )
+ax.axvline(np.pi*galactic/180., ls='-.', color='black', linewidth=2.5, label="Galactic Center" )
 #ax.errorbar(theta, radii, xerr=width,  fmt=".")
 ax.yaxis.set_major_locator(plt.NullLocator())
 # pos : [left, bottom, width, height] or Bbox
@@ -113,6 +113,6 @@ ax.yaxis.set_major_locator(plt.NullLocator())
 plt.legend(loc='upper left', 
            framealpha =1, 
            bbox_to_anchor=(0.2, 1.02), 
-           title="  Rango "+legend_[bin_sel]+"\n  Ref: Aab A. et al. 2020")
+           title="     "+legend_[bin_sel]+"\nRef: Aab A. et al. 2020")
 ax.grid(linewidth=1.5, linestyle=':', alpha=0.51)
 plt.show()

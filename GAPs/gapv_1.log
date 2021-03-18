@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.24)  13 MAR 2021 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.24)  17 MAR 2021 23:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,39 +279,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen159
 \Gm@dimlist=\toks24
 )
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: 
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(68.2866pt, 477.72179pt, 68.2866pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=477.72179pt
-* \textheight=556.47656pt
-* \oddsidemargin=-3.98338pt
-* \evensidemargin=-3.98338pt
-* \topmargin=-13.87262pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 
 LaTeX Warning: Unused global option(s):
     [doublespace].
@@ -323,22 +290,22 @@ LaTeX Warning: Label `dperp' multiply defined.
 )
 \openout1 = `gapv_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
@@ -359,7 +326,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 27.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -369,9 +336,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  (./gapv_1.out) (./gapv_1.out)
 \@outlinefile=\write3
 \openout3 = `gapv_1.out'.
@@ -385,15 +352,15 @@ LaTeX Info: Redefining \nameref on input line 23.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(68.2866pt, 477.72179pt, 68.2866pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* v-part:(T,H,B)=(76.82234pt, 641.3253pt, 76.82234pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=477.72179pt
-* \textheight=556.47656pt
-* \oddsidemargin=-3.98338pt
-* \evensidemargin=-3.98338pt
-* \topmargin=-13.87262pt
+* \textwidth=500.484pt
+* \textheight=641.3253pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-32.44765pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -411,88 +378,79 @@ LaTeX Info: Redefining \nameref on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (6.73145pt too wide) in paragraph at lines 58--70
-[] \OT1/cmr/m/n/12 where the
- []
-
-[2] [3]
-<Figs/phase_primer_bin_v3.pdf, id=83, 650.43pt x 650.43pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+<Figs/phase_primer_bin_v3.pdf, id=111, 650.43pt x 650.43pt>
 File: Figs/phase_primer_bin_v3.pdf Graphic file (type pdf)
 <use Figs/phase_primer_bin_v3.pdf>
-Package pdftex.def Info: Figs/phase_primer_bin_v3.pdf  used on input line 167.
-(pdftex.def)             Requested size: 310.51624pt x 310.52556pt.
- [4]
-
-LaTeX Warning: Reference `ra_arb' on page 5 undefined on input line 178.
-
-<Figs/plot_bin_1_barrido_v3_EW.pdf, id=94, 867.24pt x 578.16pt>
+Package pdftex.def Info: Figs/phase_primer_bin_v3.pdf  used on input line 192.
+(pdftex.def)             Requested size: 325.31154pt x 325.31345pt.
+<Figs/plot_bin_1_barrido_v3_EW.pdf, id=116, 867.24pt x 578.16pt>
 File: Figs/plot_bin_1_barrido_v3_EW.pdf Graphic file (type pdf)
 <use Figs/plot_bin_1_barrido_v3_EW.pdf>
-Package pdftex.def Info: Figs/plot_bin_1_barrido_v3_EW.pdf  used on input line 186.
-(pdftex.def)             Requested size: 429.94669pt x 286.63559pt.
-[5 <./Figs/phase_primer_bin_v3.pdf>]
-
-LaTeX Warning: Reference `ra_arb' on page 6 undefined on input line 199.
-
-[6 <./Figs/plot_bin_1_barrido_v3_EW.pdf>]
-<Figs/plot_bin_2_barrido_v3_EW.pdf, id=213, 867.24pt x 578.16pt>
+Package pdftex.def Info: Figs/plot_bin_1_barrido_v3_EW.pdf  used on input line 209.
+(pdftex.def)             Requested size: 400.38872pt x 266.92725pt.
+ [5 <./Figs/phase_primer_bin_v3.pdf>] [6 <./Figs/plot_bin_1_barrido_v3_EW.pdf>]
+<Figs/plot_bin_2_barrido_v3_EW.pdf, id=237, 867.24pt x 578.16pt>
 File: Figs/plot_bin_2_barrido_v3_EW.pdf Graphic file (type pdf)
 <use Figs/plot_bin_2_barrido_v3_EW.pdf>
-Package pdftex.def Info: Figs/plot_bin_2_barrido_v3_EW.pdf  used on input line 239.
-(pdftex.def)             Requested size: 429.94669pt x 286.63559pt.
- [7]
-<Figs/phase_segundo_bin_v3.pdf, id=222, 650.43pt x 650.43pt>
+Package pdftex.def Info: Figs/plot_bin_2_barrido_v3_EW.pdf  used on input line 262.
+(pdftex.def)             Requested size: 400.38872pt x 266.92725pt.
+<Figs/phase_segundo_bin_v3.pdf, id=238, 650.43pt x 650.43pt>
 File: Figs/phase_segundo_bin_v3.pdf Graphic file (type pdf)
 <use Figs/phase_segundo_bin_v3.pdf>
-Package pdftex.def Info: Figs/phase_segundo_bin_v3.pdf  used on input line 256.
-(pdftex.def)             Requested size: 310.51624pt x 310.52556pt.
- [8 <./Figs/plot_bin_2_barrido_v3_EW.pdf>] [9 <./Figs/phase_segundo_bin_v3.pdf>]
+Package pdftex.def Info: Figs/phase_segundo_bin_v3.pdf  used on input line 276.
+(pdftex.def)             Requested size: 325.31154pt x 325.31345pt.
+ [7 <./Figs/plot_bin_2_barrido_v3_EW.pdf>] [8 <./Figs/phase_segundo_bin_v3.pdf>]
 
-LaTeX Warning: Reference `ra_arb' on page 10 undefined on input line 292.
+LaTeX Warning: Reference `tercer_barrido_Ray' on page 9 undefined on input line 315.
 
-<Figs/phase_tercer_bin_v3.pdf, id=332, 650.43pt x 650.43pt>
-File: Figs/phase_tercer_bin_v3.pdf Graphic file (type pdf)
-<use Figs/phase_tercer_bin_v3.pdf>
-Package pdftex.def Info: Figs/phase_tercer_bin_v3.pdf  used on input line 299.
-(pdftex.def)             Requested size: 310.51624pt x 310.52556pt.
-[10] [11 <./Figs/phase_tercer_bin_v3.pdf>]
-<Figs/plot_bin_3_barrido_v3_EW.pdf, id=394, 867.24pt x 578.16pt>
+<Figs/plot_bin_3_barrido_v3_Ray.pdf, id=343, 867.24pt x 578.16pt>
+File: Figs/plot_bin_3_barrido_v3_Ray.pdf Graphic file (type pdf)
+<use Figs/plot_bin_3_barrido_v3_Ray.pdf>
+Package pdftex.def Info: Figs/plot_bin_3_barrido_v3_Ray.pdf  used on input line 322.
+(pdftex.def)             Requested size: 450.43253pt x 300.29205pt.
+[9]
+<Figs/plot_bin_3_barrido_v3_EW.pdf, id=349, 867.24pt x 578.16pt>
 File: Figs/plot_bin_3_barrido_v3_EW.pdf Graphic file (type pdf)
 <use Figs/plot_bin_3_barrido_v3_EW.pdf>
-Package pdftex.def Info: Figs/plot_bin_3_barrido_v3_EW.pdf  used on input line 340.
-(pdftex.def)             Requested size: 429.94669pt x 286.63559pt.
- [12] [13 <./Figs/plot_bin_3_barrido_v3_EW.pdf>]
-<Figs/d_perp_normalizado_sigmas_v6.pdf, id=468, 867.24pt x 578.16pt>
+Package pdftex.def Info: Figs/plot_bin_3_barrido_v3_EW.pdf  used on input line 338.
+(pdftex.def)             Requested size: 450.43253pt x 300.29205pt.
+ [10 <./Figs/plot_bin_3_barrido_v3_Ray.pdf>] [11 <./Figs/plot_bin_3_barrido_v3_EW.pdf>]
+<Figs/phase_tercer_bin_v3.pdf, id=483, 650.43pt x 650.43pt>
+File: Figs/phase_tercer_bin_v3.pdf Graphic file (type pdf)
+<use Figs/phase_tercer_bin_v3.pdf>
+Package pdftex.def Info: Figs/phase_tercer_bin_v3.pdf  used on input line 391.
+(pdftex.def)             Requested size: 325.31154pt x 325.31345pt.
+ [12]
+<Figs/d_perp_normalizado_sigmas_v6.pdf, id=492, 867.24pt x 578.16pt>
 File: Figs/d_perp_normalizado_sigmas_v6.pdf Graphic file (type pdf)
 <use Figs/d_perp_normalizado_sigmas_v6.pdf>
-Package pdftex.def Info: Figs/d_perp_normalizado_sigmas_v6.pdf  used on input line 383.
-(pdftex.def)             Requested size: 477.72179pt x 318.48302pt.
- [14 <./Figs/d_perp_normalizado_sigmas_v6.pdf>]
-<Figs/comparando_sigmas_v4.pdf, id=539, 867.24pt x 706.0779pt>
+Package pdftex.def Info: Figs/d_perp_normalizado_sigmas_v6.pdf  used on input line 409.
+(pdftex.def)             Requested size: 500.484pt x 333.65685pt.
+ [13 <./Figs/phase_tercer_bin_v3.pdf>]
+<Figs/comparando_sigmas_v4.pdf, id=538, 867.24pt x 706.0779pt>
 File: Figs/comparando_sigmas_v4.pdf Graphic file (type pdf)
 <use Figs/comparando_sigmas_v4.pdf>
-Package pdftex.def Info: Figs/comparando_sigmas_v4.pdf  used on input line 404.
-(pdftex.def)             Requested size: 477.72179pt x 388.94737pt.
- [15] [16 <./Figs/comparando_sigmas_v4.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
+Package pdftex.def Info: Figs/comparando_sigmas_v4.pdf  used on input line 429.
+(pdftex.def)             Requested size: 500.484pt x 407.47842pt.
+ [14 <./Figs/d_perp_normalizado_sigmas_v6.pdf>] [15 <./Figs/comparando_sigmas_v4.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 464.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
  (./gapv_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
 Package rerunfilecheck Info: File `gapv_1.out' has not changed.
-(rerunfilecheck)             Checksum: AB38D84F8C159F1A5963F0FAFE2C4166;472.
+(rerunfilecheck)             Checksum: C99143C4A9CF964C7DD69A6699C0284D;552.
 
 
 LaTeX Warning: There were undefined references.
@@ -500,21 +458,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 464.
  ) 
 Here is how much of TeX's memory you used:
- 8246 strings out of 483048
- 126030 string characters out of 5962772
- 417512 words of memory out of 5000000
- 23057 multiletter control sequences out of 15000+600000
+ 8264 strings out of 483048
+ 126456 string characters out of 5962772
+ 419530 words of memory out of 5000000
+ 23063 multiletter control sequences out of 15000+600000
  544484 words of font info for 71 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 43i,18n,38p,1289b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,50p,1247b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ponci_pop/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk> </home/ponci_pop/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on gapv_1.pdf (17 pages, 294501 bytes).
+Output written on gapv_1.pdf (16 pages, 318810 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 53 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 734 PDF objects out of 1000 (max. 8388607)
+ 344 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

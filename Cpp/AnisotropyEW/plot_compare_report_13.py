@@ -18,7 +18,7 @@ vec_mean=[0.25+ np.log2(0.25),0.75,1.5]
 ######################
 
 plt.ylabel("$d_\perp$ [\%]")
-plt.xlabel("Energía [EeV]")
+plt.xlabel("Energy [EeV]")
 bbox_args = dict(boxstyle="round", fc="1.0")
 arrow_args = dict(arrowstyle="]-")
 
@@ -93,7 +93,7 @@ plt.legend(loc=0, ncol=2,  bbox_to_anchor=(0.39, 0.81), columnspacing=0.1, fonts
 
 plt.figure(2)
 plt.ylabel("$d_\perp / d_{\perp,99}$")
-plt.xlabel("Energía [EeV]")
+plt.xlabel("Energy [EeV]")
 
 for i in range(len(vec)):
     plt.axvline(x=vec[i], ls=':')
@@ -126,7 +126,7 @@ plt.legend(loc=0)
 
 plt.figure(3)
 plt.ylabel("$d_\perp / \sigma_{x,y}$")
-plt.xlabel("Energía [EeV]")
+plt.xlabel("Energy [EeV]")
 
 for i in range(len(vec)):
     plt.axvline(x=vec[i], ls=':')
